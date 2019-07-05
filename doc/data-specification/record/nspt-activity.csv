@@ -1,0 +1,96 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`NSPT Activity Key`_ (nspt_activity_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each activity record associated with the commissioned organisation. The activity identifier is unique and stable for each activity within the Provider Organisation."
+"`NSPT Activity - Name`_ (nspt_activity_name)
+
+","string (2,100)",yes,"Short descriptive title identifying the activity."
+"`NSPT Activity - Summary`_ (nspt_activity_summary)
+
+","string (2,1000)",yes,"Brief description of the activity."
+"`NSPT Activity - Start Date`_ (nspt_activity_start_date)
+
+",date,yes,"Day, month and year the Activity commenced."
+"`NSPT Activity - End Date`_ (nspt_activity_end_date)
+
+",date,yes,"Day, month and year the Activity is expected to end."
+"`NSPT Activity - Area`_ (nspt_activity_area)
+
+",string,yes,":1: Workforce related activities
+:2: Media and communication strategies
+:3: Community education and support services"
+"`NSPT Activity - Location`_ (nspt_activity_location)
+
+",string,yes,"Location or area in which the activity is undertaken or that it targets when not undertaken face to face."
+"`NSPT Activity - Mode of Delivery`_ (nspt_activity_mode_of_delivery)
+
+",string,yes,":1: Face-to-face
+:2: Telephone
+:3: Video-link
+:4: Online
+:5: Print media
+:6: Radio
+:7: Television
+:8: Other
+Multiple space separated values allowed"
+"`NSPT Activity - Mode of Delivery Other`_ (nspt_activity_mode_of_delivery_other)
+
+","string (2,100)","—","Description of other activity mode of delivery."
+"`NSPT Activity - Focus`_ (nspt_activity_focus)
+
+",string,yes,":1: Awareness raising and engagement
+:2: Implementation of standards and other quality improvements
+:3: Capacity building with service providers, organisations, communities or other groups to identify and/or support with people at risk or affected by suicide
+:4: Professional development and training
+:5: Information, services or other activities for at-risk individuals or groups of people at higher risk of suicide
+:6: Other
+Multiple space separated values allowed"
+"`NSPT Activity - Focus Other`_ (nspt_activity_focus_other)
+
+","string (2,100)","—","Description of other activity focus."
+"`NSPT Activity - Target Group`_ (nspt_activity_target_group)
+
+",string,yes,":1: Generic or national
+:2: Community, town or other geographical area
+:3: People from an at-risk population"
+"`NSPT Activity - At-Risk Population`_ (nspt_activity_at_risk_population)
+
+",string,yes,":0: N/A (not an at-risk population group)
+:1: Aboriginal and Torres Strait Islander peoples
+:2: Veterans and/or their families
+:3: Young people (aged 16-25 years)
+:4: Lesbian, gay, bisexual, transgender or intersex (LGBTI) people
+:5: Men aged 25-54 years
+:6: People aged 65 years and older
+:7: People who have previously attempted suicide
+:8: People with lived experience of suicide
+:9: Other
+Multiple space separated values allowed"
+"`NSPT Activity - At-Risk Population Other`_ (nspt_activity_at_risk_population_other)
+
+","string (2,100)","—","Description of other at-risk target group."
+"`NSPT Activity - Target Workforce`_ (nspt_activity_target_workforce)
+
+",string,yes,":0: N/A not a workforce related activity
+:1: Community health organisations and related services
+:2: Aboriginal and Torres Strait Islander service providers and other organisations
+:3: Emergency or crisis response services
+:4: Primary Health Network commissioned services
+:5: School or other educational institution personnel
+:6: Police and law enforcement agencies
+:7: Media
+:8: Volunteer or community group providing services or support (including peer workers)
+:9: Other
+Multiple space separated values allowed"
+"`NSPT Activity - Target Workforce Other`_ (nspt_activity_target_workforce_other)
+
+","string (2,100)","—","Description of target workforce."
+"`NSPT Activity - Number Participating`_ (nspt_activity_number_participating)
+
+",integer,yes,"0 - 30000000"
+"`NSPT Activity - Tags`_ (nspt_activity_tags)
+
+",string,"—","List of tags for the NSPT activity."

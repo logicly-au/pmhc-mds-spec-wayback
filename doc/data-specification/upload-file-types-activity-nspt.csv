@@ -1,0 +1,4 @@
+File Type,CSV filename,Excel worksheet name,Required
+:ref:`Metadata <nspt-metadata-format>`,metadata.csv,Metadata,Required
+:ref:`Organisation <nspt-organisation-format>`,organisations.csv,Organisations,Optional and only available if the user has the Organisation Management role
+:ref:`NSPT Activity <nspt-only-activity-format>`,nspt-activities.csv,NSPT Activites,Required

@@ -1,0 +1,7 @@
+File Type,CSV filename,Excel worksheet name,Required
+:ref:`Metadata <nspt-metadata-format>`,metadata.csv,Metadata,Required
+:ref:`Organisation <nspt-organisation-format>`,organisations.csv,Organisations,Optional and only available if the user has the Organisation Management role
+:ref:`Client <nspt-client-format>`,clients.csv,Clients,Optional
+:ref:`Episodes <nspt-episode-format>`,episodes.csv,Episodes,Optional
+:ref:`NSPT Episodes <nspt-only-episode-format>`,nspt-episodes.csv,NSPT Episodes,Required
+:ref:`NSPT SIDAS Collection Occasions <nspt-only-sidas-format>`,sidas.csv,SIDAS,Required

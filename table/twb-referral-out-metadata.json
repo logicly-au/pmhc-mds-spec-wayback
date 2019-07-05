@@ -1,0 +1,119 @@
+{
+  "@id": "twb-referral-out-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2018-08-01",
+    "schema:dateDeleted": "2018-08-01",
+    "schema:dateModified": "2018-08-01",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true,
+    "schema:formOrder": "1"
+  },{
+     "name": "twb_referral_out_key",
+    "titles": [ "twb_referral_out_key" ],
+    "dc:title": "TWB Referral Out Key",
+    "schema:description": "This is a number or code assigned to each referral out. The Referral Out Key is unique and stable for each referral out at the lvel of the organisation.",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+      },
+    "required": true,
+    "schema:formOrder": "2"
+  },{
+    "name": "service_contact_key",
+    "titles": [ "service_contact_key" ],
+    "dc:title": "Service Contact Key",
+    "schema:description": "This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/service-contact/key.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "twb_referral_out_provider_type",
+    "titles": [ "twb_referral_out_provider_type" ],
+    "dc:title": "TWB Referral Out - Provider Type",
+    "schema:description": "The provider type of the referral out made for and on behalf of the client. ",
+    "schema:disambiguatingDescription": "table/twb-referral-out/twb-referral-out-provider-type.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_referral_out_date",
+    "titles": [ "twb_referral_out_date" ],
+    "dc:title": "TWB Referral Out - Date",
+    "schema:description": "The date the Service Provider made the referral out to an external service/organisation.",
+    "schema:disambiguatingDescription": "table/twb-referral-out/twb-referral-out-date.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "twb_referral_out_status",
+    "titles": [ "twb_referral_out_status" ],
+    "dc:title": "TWB Referral Out - Status",
+    "schema:description": "The status of a referral out made by the Service Provider on behalf of a client.",
+    "schema:disambiguatingDescription": "table/twb-referral-out/twb-referral-out-status.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_referral_out_tags",
+    "titles": [ "twb_referral_out_tags" ],
+    "dc:title" : "TWB Referral Out - Tags",
+    "schema:description": "List of tags for TWB Referral Out.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+      },
+    "required": false
+  }],
+  "primaryKey": [ "organisation_path", "twb_referral_out_key" ],
+  "foreignKeys": [{
+    "columnReference": "organisation_path",
+    "reference": {
+      "resource": "data/organisations.csv",
+      "columnReference": "organisation_path"
+    }
+  }, {
+    "columnReference": "twb_referral_out_provider_type",
+    "reference": {
+      "resource": "table/twb-referral-out/twb-referral-out-provider-type.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "twb_referral_out_status",
+    "reference": {
+      "resource": "table/twb-referral-out/twb-referral-out-status.csv",
+      "columnReference": "id"
+    }
+  }
+  }]
+}

@@ -1,0 +1,11 @@
+version: "2.2"
+
+services:
+  csvlint:
+    build:
+      context: ../
+      dockerfile: ./csvlint/Dockerfile
+    image: docker.sdlocal.net/pmhcnspt/csvlint:master
+    volumes:
+      - ../data:/spec/data
+
