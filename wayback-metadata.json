@@ -271,5 +271,8 @@
   }, {
     "url": "table/collection-occasion/who5.csv",
     "tableSchema": "table/collection-occasion/who5.json"
+  }, {
+    "url": "table/collection-occasion/mspss.csv",
+    "tableSchema": "table/collection-occasion/mspss.json"
   }]
 }

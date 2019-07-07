@@ -1,0 +1,367 @@
+{
+  "@id": "mspss-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "collection_occasion_key",
+    "titles": [ "collection_occasion_key" ],
+    "dc:title": "Collection Occasion Key",
+    "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+     "name": "episode_key",
+    "titles": [ "episode_key" ],
+    "dc:title": "Episode Key",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "measure_date",
+    "titles": [ "measure_date" ],
+    "dc:title": "Collection Occasion - Measure Date",
+    "schema:description": "The date the measure was given.",
+    "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2018-01-02",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2016-01-01"
+    },
+    "schema:dateMissingUnknown": "9999-09-09",
+    "required": true
+  },{
+    "name": "reason_for_collection",
+    "titles": [ "reason_for_collection" ],
+    "dc:title": "Collection Occasion - Reason",
+    "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
+    "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
+    "schema:dateCreated": "2016-07-08",
+    "schema:dateModified": "2016-07-08",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item1",
+    "titles": [ "mspss_item1" ],
+    "dc:title": "MSPSS - Question 1",
+    "schema:description": "There is a special person who is around when I am in need",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q1.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item2",
+    "titles": [ "mspss_item2" ],
+    "dc:title": "MSPSS - Question 2",
+    "schema:description": "There is a special person with whom I can share joys and sorrows",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q2.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item3",
+    "titles": [ "mspss_item3" ],
+    "dc:title": "MSPSS - Question 3",
+    "schema:description": "My family really tries to help me",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q3.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item4",
+    "titles": [ "mspss_item4" ],
+    "dc:title": "MSPSS - Question 4",
+    "schema:description": "I get the emotional help & support I need from my family",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q4.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item5",
+    "titles": [ "mspss_item5" ],
+    "dc:title": "MSPSS - Question 5",
+    "schema:description": "I have a special person who is a real source of comfort to me",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q5.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item6",
+    "titles": [ "mspss_item6" ],
+    "dc:title": "MSPSS - Question 6",
+    "schema:description": "My friends really try to help me",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q6.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item7",
+    "titles": [ "mspss_item7" ],
+    "dc:title": "MSPSS - Question 7",
+    "schema:description": "I can count on my friends when things go wrong",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q7.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item8",
+    "titles": [ "mspss_item8" ],
+    "dc:title": "MSPSS - Question 8",
+    "schema:description": "I can talk about my problems with my family",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q8.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item9",
+    "titles": [ "mspss_item9" ],
+    "dc:title": "MSPSS - Question 9",
+    "schema:description": "I have friends with whom I can share my joys and sorrows",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q9.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item10",
+    "titles": [ "mspss_item10" ],
+    "dc:title": "MSPSS - Question 10",
+    "schema:description": "There is a special person in my life who cares about my feelings",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q10.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item11",
+    "titles": [ "mspss_item11" ],
+    "dc:title": "MSPSS - Question 11",
+    "schema:description": "My family is willing to help me make decisions",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q11.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_item12",
+    "titles": [ "mspss_item12" ],
+    "dc:title": "MSPSS - Question 12",
+    "schema:description": "I can talk about my problems with my friends",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/Q12.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "mspss_significant_other_subscale",
+    "titles": [ "mspss_significant_other_subscale" ],
+    "dc:title" : "MSPSS - Significant Other Subscale",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/mspss-significant-other-subscale.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 1,
+      "maximum": 7
+      }
+  },{
+    "name": "mspss_family_subscale",
+    "titles": [ "mspss_family_subscale" ],
+    "dc:title" : "MSPSS - Family Subscale",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/mspss-family-subscale.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 1,
+      "maximum": 7
+      }
+  },{
+    "name": "mspss_friends_subscale",
+    "titles": [ "mspss_friends_subscale" ],
+    "dc:title" : "MSPSS - Friends Subscale",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/mspss-friends-subscale.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 1,
+      "maximum": 7
+      }
+  },{
+    "name": "mspss_total_scale",
+    "titles": [ "mspss_total_scale" ],
+    "dc:title" : "MSPSS - Total Scale",
+    "schema:disambiguatingDescription": "table/collection-occasion/mspss/mspss-total-scale.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 1,
+      "maximum": 7
+      }
+  },{
+    "name": "mspss_tags",
+    "titles": [ "mspss_tags" ],
+    "dc:title" : "MSPSS - Tags",
+    "schema:description": "List of tags for the collection occasion.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+      }
+  }],
+  "primaryKey": [ "organisation_path", "collection_occasion_key" ],
+  "foreignKeys": [{
+    "columnReference": "reason_for_collection",
+    "reference": {
+      "resource": "table/collection-occasion/reason.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": [ "organisation_path", "episode_key" ],
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
+    }
+  }, {
+    "columnReference": "mspss_item1",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item2",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item3",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item4",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item5",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item6",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item7",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item8",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item9",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item10",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item11",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "mspss_item12",
+    "reference": {
+      "resource": "table/collection-occasion/mspss.csv",
+      "columnReference": "id"
+    }
+  }]
+}
