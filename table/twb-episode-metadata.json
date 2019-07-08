@@ -114,13 +114,13 @@
       "minimum": "2019-01-01"
     },
     "required": true,
-    "schema:dateMissingUnknown": "9999-09-09",
+    "schema:dateMissingUnknown": "9999-09-09"
   },{
     "name": "twb_critical_incident_type",
     "titles": [ "twb_critical_incident_type" ],
     "dc:title": "TWB Episode - Critical Incident Type",
     "schema:description": "The type of critical incident reported by the service provider.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-critical-incident-report.rst",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-critical-incident-type.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -132,7 +132,7 @@
     "titles": [ "twb_critical_incident_datetime" ],
     "dc:title": "TWB Episode - Critical Incident Date Time",
     "schema:description": "The date and time the service was advised of a critical incident.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-critical-incident-date-time.rst",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-critical-incident-datetime.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -141,7 +141,7 @@
       "minimum": "2019-01-01"
     },
     "required": true,
-    "schema:dateMissingUnknown": "9999-09-09",
+    "schema:dateMissingUnknown": "9999-09-09"
   },{
     "name": "twb_episode_tags",
     "titles": [ "twb_episode_tags" ],

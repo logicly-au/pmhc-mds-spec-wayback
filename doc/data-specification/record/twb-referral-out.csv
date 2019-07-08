@@ -1,0 +1,72 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`TWB Referral Out Key`_ (twb_referral_out_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each referral out. The Referral Out Key is unique and stable for each referral out at the lvel of the organisation."
+"`Service Contact Key`_ (service_contact_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation."
+"`TWB Referral Out - Provider Type`_ (twb_referral_out_provider_type)
+
+",string,yes,":3: GP/Medical Practitioner
+:4: Hospital
+:5: Psychiatric/mental health service or facility
+:6: Alcohol and other drug treatment service
+:7: Other community/health care service
+:8: Correctional service
+:9: Police diversion
+:10: Court diversion
+:11: Legal service
+:12: Child protection agency
+:13: Community support groups/agencies
+:14: Centrelink or employment service
+:15: Housing and homelessness service
+:16: Telephone & online services/referral agency e.g. direct line
+:17: Disability support service
+:18: Aged care facility/service
+:19: Immigration department or asylum seeker/refugee support service
+:20: School/other education or training institution
+:22: Community based Drug and Alcohol Service
+:23: Youth service (non-AOD)
+:24: Indigenous service (non-AOD)
+:25: Extended care/rehabilitation facility
+:26: Palliative care service
+:27: Police (not diversion)
+:28: Public dental provider - community dental agency
+:29: Dental Hospital
+:30: Private Dental Provider
+:31: Early childhood service
+:32: Maternal and Child Health Service
+:33: Community nursing service
+:34: Emergency relief
+:35: Family support service (excl family violence)
+:36: Family violence service
+:37: Gambling support service
+:38: Maternity services
+:39: Peer support/self-help group
+:40: Private allied health provider
+:41: Sexual Assault service
+:42: Financial counsellor
+:43: Sexual health service
+:44: Medical specialist
+:97: No Referral
+:98: Other
+:99: Not stated/Inadequately described"
+"`TWB Referral Out - Date`_ (twb_referral_out_date)
+
+",date,yes,"The date the Service Provider made the referral out to an external service/organisation."
+"`TWB Referral Out - Status`_ (twb_referral_out_status)
+
+",string,yes,":1: Service commenced
+:2: Service completed
+:3: Waitlisted
+:4: Referral not accepted 
+:5: Client declined to take up referral 
+:6: Client deceased prior to service commencement
+:98: Other
+:99: Not stated/Inadequately described"
+"`TWB Referral Out - Tags`_ (twb_referral_out_tags)
+
+",string,"—","List of tags for TWB Referral Out."

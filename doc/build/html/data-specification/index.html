@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Specification &mdash; The Way Back Version 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="The Way Back Version 2.0 documentation" href="../index.html"/>
+        <link rel="next" title="Key Concepts" href="key-concepts.html"/>
+        <link rel="prev" title="Introduction" href="../twb-docs/about-twb.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> The Way Back
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                Version 2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../twb-docs/index.html">The Way Back</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html">Key Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html">Identifier Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html">Data Model and Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html">Upload Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html">Validation Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">The Way Back</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Data Specification</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/data-specification/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-specification">
+<span id="data-docs"></span><h1>Data Specification<a class="headerlink" href="#data-specification" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="key-concepts.html">Key Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#pmhc-mds">PMHC MDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#primary-health-network">Primary Health Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#provider-organisation">Provider Organisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#practitioner">Practitioner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#client">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#episode">Episode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#twb-episode">TWB-Episode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#service-contact">Service Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key-concepts.html#outcome-collection-occasion">Outcome Collection Occasion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="identifier-management.html">Identifier Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html#managing-collection-occasion-keys">Managing Collection Occasion Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html#managing-pmhc-mds-episode-key">Managing PMHC MDS Episode Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html#identifying-twb-episode-data-records">Identifying TWB-Episode data records</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model-and-specifications.html">Data Model and Specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#data-model">Data model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#twb-record-formats">TWB Record formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-data-elements">Episode Data Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#twb-episode">TWB-Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#twb-referral-out">TWB-Referral Out</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#collection-occasion-data-elements"><cite>-</cite> Collection Occasion Data Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#twb-plan-outcome-collection-occasion">TWB Plan Outcome Collection Occasion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#twb-ini-outcome-collection-occasion">TWB INI Outcome Collection Occasion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#who-5-outcome-collection-occasion">WHO-5 Outcome Collection Occasion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#sidas-outcome-collection-occasion">SIDAS Outcome Collection Occasion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#mspss-outcome-collection-occasion">MSPSS Outcome Collection Occasion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#metadata">Metadata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="data-model-and-specifications.html#pmhc-mds-record-formats">PMHC MDS Record Formats</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#twb-definitions">TWB Definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#definitions">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#collection-occasion-measure-date">Collection Occasion - Measure Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#collection-occasion-reason">Collection Occasion - Reason</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#collection-occasion-key">Collection Occasion Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#episode-key">Episode Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#key">Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-family-subscale">MSPSS - Family Subscale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-friends-subscale">MSPSS - Friends Subscale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-1">MSPSS - Question 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-2">MSPSS - Question 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-3">MSPSS - Question 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-4">MSPSS - Question 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-5">MSPSS - Question 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-6">MSPSS - Question 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-7">MSPSS - Question 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-8">MSPSS - Question 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-9">MSPSS - Question 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-10">MSPSS - Question 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-11">MSPSS - Question 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-question-12">MSPSS - Question 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-significant-other-subscale">MSPSS - Significant Other Subscale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-tags">MSPSS - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#mspss-total-scale">MSPSS - Total Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#organisation-path">Organisation Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#service-contact-key">Service Contact Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sidas-question-1">SIDAS - Question 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sidas-question-2">SIDAS - Question 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sidas-question-3">SIDAS - Question 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sidas-question-4">SIDAS - Question 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sidas-question-5">SIDAS - Question 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#sidas-tags">SIDAS - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-consent-type">TWB Episode - Consent Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-critical-incident-date-time">TWB Episode - Critical Incident Date Time</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-critical-incident-type">TWB Episode - Critical Incident Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-eligibility-type">TWB Episode - Eligibility Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-other-consent-type">TWB Episode - Other Consent Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-primary-nominated-professional">TWB Episode - Primary Nominated Professional</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-primary-nominated-professional-date">TWB Episode - Primary Nominated Professional Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-sexual-identity">TWB Episode - Sexual Identity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-tags">TWB Episode - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-episode-veteran">TWB Episode - Veteran</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-ini-tags">TWB INI - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-ini-type">TWB INI - Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-plan-plan-type">TWB Plan - Plan Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-plan-tags">TWB Plan - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-referral-out-date">TWB Referral Out - Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-referral-out-provider-type">TWB Referral Out - Provider Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-referral-out-status">TWB Referral Out - Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-referral-out-tags">TWB Referral Out - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#twb-referral-out-key">TWB Referral Out Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#value">Value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#who-5-percentage-score">WHO-5 - Percentage Score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#who-5-question-1">WHO-5 - Question 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#who-5-question-2">WHO-5 - Question 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#who-5-question-3">WHO-5 - Question 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#who-5-question-4">WHO-5 - Question 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#who-5-question-5">WHO-5 - Question 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#who-5-raw-score">WHO-5 - Raw Score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-model-and-specifications.html#who-5-tags">WHO-5 - Tags</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html#download-specification-files">Download Specification Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">Upload Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#file-types">File types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#comma-separated-values-csv">Comma Separated Values (CSV)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#excel-xlsx">Excel (XLSX)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#files-or-worksheets-to-upload">Files or worksheets to upload</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#option-a-uploading-twb-data-files-only">Option A: Uploading TWB data files only</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#option-b-uploading-both-pmhc-mds-and-twb-data-files">Option B: Uploading both PMHC MDS and TWB data files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#file-format">File format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#twb-metadata-file">TWB Metadata file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#twb-organisation-file-format">TWB Organisation file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#twb-only-episode-file-format">TWB only Episode file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#twb-only-sidas-collection-occasion-file-format">TWB only SIDAS Collection Occasion file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#client-file-format-when-combined-with-twb-data">Client file format when combined with TWB data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#episode-file-format-when-combined-with-twb-data">Episode file format when combined with TWB data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#service-contact-file-format-when-combined-with-twb-data">Service Contact file format when combined with TWB data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#k10-file-format-when-combined-with-twb-data">K10+ file format when combined with TWB data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#k5-file-format-when-combined-with-twb-data">K5 file format when combined with TWB data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#sdq-file-format-when-combined-with-twb-data">SDQ file format when combined with TWB data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#practitioners-file-format-when-combined-with-twb-data">Practitioners file format when combined with TWB data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#deleting-records">Deleting records</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="upload-specification.html#twb-episode-data">TWB Episode data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">Validation Rules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html#current-twb-validations">Current TWB Validations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#twb-episode">1. TWB Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#sidas">3. SIDAS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html#current-pmhc-validations">Current PMHC Validations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="change-log.html">Data Specification Change log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-2-0">8/7/2019 - Version 2.0</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="key-concepts.html" class="btn btn-neutral float-right" title="Key Concepts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../twb-docs/about-twb.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Beyond Blue.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'Version 2.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84023505-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

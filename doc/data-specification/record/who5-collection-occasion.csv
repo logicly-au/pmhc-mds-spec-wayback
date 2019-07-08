@@ -1,0 +1,72 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Collection Occasion Key`_ (collection_occasion_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation."
+"`Episode Key`_ (episode_key)
+
+","string (2,50)",yes
+"`Collection Occasion - Measure Date`_ (measure_date)
+
+",date,yes,"The date the measure was given."
+"`Collection Occasion - Reason`_ (reason_for_collection)
+
+",string,yes,":1: Episode start
+:2: Review
+:3: Episode end"
+"`WHO-5 - Question 1`_ (who5_item1)
+
+",string,yes,":0: At no time
+:1: Some of the time
+:2: Less than half of the time
+:3: More than half of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`WHO-5 - Question 2`_ (who5_item2)
+
+",string,yes,":0: At no time
+:1: Some of the time
+:2: Less than half of the time
+:3: More than half of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`WHO-5 - Question 3`_ (who5_item3)
+
+",string,yes,":0: At no time
+:1: Some of the time
+:2: Less than half of the time
+:3: More than half of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`WHO-5 - Question 4`_ (who5_item4)
+
+",string,yes,":0: At no time
+:1: Some of the time
+:2: Less than half of the time
+:3: More than half of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`WHO-5 - Question 5`_ (who5_item5)
+
+",string,yes,":0: At no time
+:1: Some of the time
+:2: Less than half of the time
+:3: More than half of the time
+:4: Most of the time
+:5: All of the time
+:9: Not stated / Missing"
+"`WHO-5 - Raw Score`_ (who5_raw_score)
+
+",integer,yes,"0 - 25, 99 = Not stated / Missing"
+"`WHO-5 - Percentage Score`_ (who5_percentage_score)
+
+",integer,yes,"0 - 100, 999 = Not stated / Missing"
+"`WHO-5 - Tags`_ (who5_tags)
+
+",string,"—","List of tags for the collection occasion."

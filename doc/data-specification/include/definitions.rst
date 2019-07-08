@@ -124,982 +124,425 @@ A metadata key name.
 
 ----------
 
-.. _dfn-nspt_activity_area:
+.. _dfn-mspss_family_subscale:
 
-NSPT Activity - Area
-^^^^^^^^^^^^^^^^^^^^
+MSPSS - Family Subscale
+^^^^^^^^^^^^^^^^^^^^^^^
 
-Main area in which an activity or activities have been undertaken.
 
-:Field name: nspt_activity_area
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Workforce related activities
-  :2: Media and communication strategies
-  :3: Community education and support services
-:Notes:
-  **Reporting requirement**
-  If the activity occurs in multiple main areas then record each as a separate activity.
-  
-  **Categories**
-  There are three broad areas covering activities undertaken as part of the NSPT.
-  Definitions and examples of the work included under each are provided below.
-  
-  1 - Workforce Related Activities
-      Activities that are provided to an organisation, in a workplace setting
-      and/or to a group of service providers to enhance their capacity to prevent
-      and/or respond to suicide.
-  
-      These include the following:
-  
-      * Implementing standards and other quality measures in suicide prevention.
-      * Capacity building within an organisation
-      * Training and delivery of programs to professionals, organisations and
-        groups responding to or providing suicide prevention services
-      * Building the capacity of other service providers to respond to the needs
-        particular communities or groups of people, for example Aboriginal and
-        Torres Strait Islander peoples, LGBTI people etc.
-      * Organisational support, including awareness raising around issues of
-        suicide prevention and/or postvention.
-  
-  2 - Media and Communication Strategies
-      Activities where the primary focus is the production of content for
-      dissemination via a form of media, and/or materials or activities that
-      influence how the media reports and deals with suicide related matters.
-  
-      Work in this activity area includes the following:
-  
-      * Development of guidelines or other resources for use by media
-      * Development of campaigns and messaging for all media types
-      * Monitoring of media
-      * Promotion of resources and services.
-  
-  3 - Community Education and Support Services
-      Activities that are tailored for or targeted to a group of people living
-      in the same place or having a particular characteristic in common.
-  
-      These include the following:
-  
-      * Community awareness raising, engagement and capacity in suicide prevention
-      * Initiatives targeting at-risk populations, including people who have
-        made a suicide attempt or who are at-risk for suicide, men aged 25-54,
-        young people, Aboriginal and Torres Strait Islander peoples, veterans
-        and their families, LGBTI people, and other Trial site target populations
-      * Workplace based suicide prevention awareness and support services
-      * Suicide awareness and prevention initiatives in schools and other educational institutions.
-      * Support services for communities or groups of people affected by suicide
-  
-  *Out of scope*
-  Core activities that are fundamental to the running of the organisation
-  and/or the project are not within scope.
-  
-  These include the following:
-  
-  * Staff recruitment, training and development
-  * Planning and development of agreements with other service providers
-  * Consultation and liaison with stakeholders, and other activities to promote
-    integration of project activities with other services
-  * Service promotion
-  * Governance, governance, including meetings and associated tasks
-  * Reporting requirements
-  * Evaluation related activities
-  * Travel
-  * Other administrative tasks
-  
-
-----------
-
-.. _dfn-nspt_activity_at_risk_population:
-
-NSPT Activity - At-Risk Population
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This includes those population groups for which the activity has been tailored or to which it is specifically targeted.
-
-:Field name: nspt_activity_at_risk_population
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :0: N/A (not an at-risk population group)
-  :1: Aboriginal and Torres Strait Islander peoples
-  :2: Veterans and/or their families
-  :3: Young people (aged 16-25 years)
-  :4: Lesbian, gay, bisexual, transgender or intersex (LGBTI) people
-  :5: Men aged 25-54 years
-  :6: People aged 65 years and older
-  :7: People who have previously attempted suicide
-  :8: People with lived experience of suicide
-  :9: Other
-  Multiple space separated values allowed
-:Notes:
-  **Reporting requirement**
-  
-  0 - N/A (not an at-risk population group)
-    This response must be selected where Activity - Target Group
-    Options '1 - Generic or national' or
-    '2 - Community, town or other geographical area' have been selected
-  
-  One or more of responses 1-9 must be selected where Activity - Target group
-  Option '3 - People from an at-risk population' has been selected.
-  More than one response can be selected if participants fit multiple categories.
-  
-  8 - People with lived experience of suicide
-    People with lived experience of suicide includes carers, people who have experienced suicidal
-    thoughts or attempts, and/or people bereaved by suicide.
-  
-  9 - Other
-    This list reflects the main trial target groups, however if we haven’t
-    specified your target group – please enter  9 -‘Other’ and then specify in
-    the item: Activity At-Risk Population Other
-  
-
-----------
-
-.. _dfn-nspt_activity_at_risk_population_other:
-
-NSPT Activity - At-Risk Population Other
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Description of other at-risk target group.
-
-:Field name: nspt_activity_at_risk_population_other
-
-:Data type: string (2,100)
-
-:Required: no
-:Notes:
-  **Reporting requirement**
-  If the response to “Activity – At-Risk Target Group” is entered as 9 – ‘Other’.
-  
-  **Notes**
-  Briefly describe the target at-risk population, for example
-  “men – fly-in-fly-out workers, men-farmers”.
-  
-
-----------
-
-.. _dfn-nspt_activity_end_date:
-
-NSPT Activity - End Date
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Day, month and year the Activity is expected to end.
-
-:Field name: nspt_activity_end_date
-
-:Data type: date
-
-:Required: yes
-:Notes:
-  If an activity is completed in a single day enter the same end date as the start date.
-  
-  If an activity has multiple sessions enter the expected end date of the final session.
-  
-  If the end date of an activity is unknown enter 09099999.
-  
-  The period is to be in a valid format, DDMMYYYY, with leading zeros used when
-  necessary to pad out a value - in compliance with the standard format used
-  across the National Health Data Dictionary.
-  
-
-----------
-
-.. _dfn-nspt_activity_focus:
-
-NSPT Activity - Focus
-^^^^^^^^^^^^^^^^^^^^^
-
-Focus of activities in terms of the aim of the activity.
-
-:Field name: nspt_activity_focus
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Awareness raising and engagement
-  :2: Implementation of standards and other quality improvements
-  :3: Capacity building with service providers, organisations, communities or other groups to identify and/or support with people at risk or affected by suicide
-  :4: Professional development and training
-  :5: Information, services or other activities for at-risk individuals or groups of people at higher risk of suicide
-  :6: Other
-  Multiple space separated values allowed
-:Notes:
-  **Reporting requirement**
-  More than one category may apply.
-  
-  **Notes**
-  
-  Examples of focus areas are:
-  
-  1 - *Awareness raising and engagement* – for example community events, media campaigns.
-  
-  2 - *Implementation of standards and other quality improvements* - for example, media guidelines on responsible reporting of suicide, creating health pathways.
-  
-  3 - *Capacity building with service providers, organisations, communities or other groups to identify and/or support people at risk or affected by suicide* – for example peer-worker training, QPR training, Roses in the Ocean training.
-  
-  4 - *Professional development and training* – for example GP training, frontline worker training
-  
-  5 - *Information, services or other activities for at-risk individuals or groups of people at higher risk of suicide* - for example providing psychoeducation resources.
-  
-  6 - *Other* –  any other target or reason for the activity not included above. Enter details of target or reason in the item ‘Activity – Target Focus Other’
-  
-  *Related items:* 
-  Information on the workforce, group of people or population for which the activity has been tailored or to which it has been targeted is covered separately in the following items:
-  
-  * Activity – Target Group
-  * Activity – Target Workforce
-  
-
-----------
-
-.. _dfn-nspt_activity_focus_other:
-
-NSPT Activity - Focus Other
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Description of other activity focus.
-
-:Field name: nspt_activity_focus_other
-
-:Data type: string (2,100)
-
-:Required: no
-:Notes:
-  **Reporting requirement**
-  If the response to Activity – Focus is entered as 6 – ‘Other’.
-  
-  **Notes:**
-  Briefly describe the focus of the activity.
-  
-
-----------
-
-.. _dfn-nspt_activity_location:
-
-NSPT Activity - Location
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-Location or area in which the activity is undertaken or that it targets when not undertaken face to face.
-
-:Field name: nspt_activity_location
-
-:Data type: string
-
-:Required: yes
-:Notes:
-  One of the following codes should be entered for state/territory/national focus,
-  otherwise a valid Australian postcode.
-  
-  * 0000: Primary Health Network region
-  * 0001: New South Wales
-  * 0002: Victoria
-  * 0003: Queensland
-  * 0004: South Australia
-  * 0005: Western Australia
-  * 0006: Tasmania
-  * 0007: Northern Territory
-  * 0008: Australian Capital Territory
-  * 0009: National coverage
-  * 9999: Unknown/Not applicable
-  
-  **Reporting requirement**
-  The location or target area is to be recorded for the Activity. Please record
-  the one that most closely describes the location or target area.
-  
-  Enter a valid Australian postcode for activities conducted face-to face or
-  where the location of those participating in an activity is known.
-  
-  * The full list of Australian postcodes is available from Australian
-    Post at https://auspost.com.au/apps/postcode.html
-  * Postcodes are deemed valid if they are in the range 0200-0299 and 0800-9999.
-  
-  Where an area includes more than one postcode enter the postcode of the
-  bigger population area.
-  
-  *State/Territory focus*
-  This should be used when the activity targets or is tailored for state wide
-  use, for example a media campaign using state-wide media.
-  
-  *National coverage*
-  National coverage should be used when the activity targets or is tailored
-  for Australia-wide use or for members of a target population group irrespective
-  of where they are located in Australia. For example, producing resources for
-  ex-ADF members.
-  
-  *Unknown/Not applicable*
-  If the activity is not conducted face-to-face or the location which is
-  targeted is unknown enter 9999. For example, non-targeted social media campaigns
-  
-
-----------
-
-.. _dfn-nspt_activity_mode_of_delivery:
-
-NSPT Activity - Mode of Delivery
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-How the Activity was delivered
-
-:Field name: nspt_activity_mode_of_delivery
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Face-to-face
-  :2: Telephone
-  :3: Video-link
-  :4: Online
-  :5: Print media
-  :6: Radio
-  :7: Television
-  :8: Other
-  Multiple space separated values allowed
-:Notes:
-  **Reporting requirement**
-  More than one mode of delivery may be applicable.
-  
-  1 - Face-to-face
-      The activity is undertaken directly with participants– not by phone,
-      email or online.
-  
-  2 - Telephone
-      The activity is undertaken by phone or by teleconference when there are
-      more than two participants.
-  
-  3 - Video-link
-      The activity is undertaken using an electronic facility that enables
-      audio-visual communication between participants in different locations.
-  
-      This includes various forms of videoconferencing, telepsychiatry and
-      software applications, such as Skype, Zoom, Google Hangouts, WebEx and
-      FaceTime
-  
-  4 - Online
-      The activity is undertaken using the internet, but there is no visual
-      or audio contact between participants.
-  
-      This includes the use of email, instant messaging, social media or
-      interactions through a website or chatroom.
-  
-  5 - Print media
-      Information produced as part of the activity are communicated or
-      disseminated using newspapers, magazines, or any other written or
-      pictorial form of communication such as posters, brochures, billboards etc.
-  
-  6 - Radio
-      Information produced as part of the activity are communicated or broadcast by radio.
-  
-  7 - Television
-      Information produced as part of the activity are communicated or broadcast by television.
-  
-  8 - Other
-      Any other mode of delivery for the activity not included above. Enter details of mode of delivery in the item ‘Activity – Mode of Delivery Other’
-  
-
-----------
-
-.. _dfn-nspt_activity_mode_of_delivery_other:
-
-NSPT Activity - Mode of Delivery Other
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Description of other activity mode of delivery.
-
-:Field name: nspt_activity_mode_of_delivery_other
-
-:Data type: string (2,100)
-
-:Required: no
-:Notes:
-  **Reporting requirement**
-  If the response to Activity – Mode of Delivery is entered as 8 – ‘Other’.
-  
-  **Notes:**
-  Briefly describe the mode of delivery of the activity.
-  
-
-----------
-
-.. _dfn-nspt_activity_name:
-
-NSPT Activity - Name
-^^^^^^^^^^^^^^^^^^^^
-
-Short descriptive title identifying the activity.
-
-:Field name: nspt_activity_name
-
-:Data type: string (2,100)
-
-:Required: yes
-:Notes:
-  The Activity Name is to be provided by the PHN and is be consistent with what
-  is used in the contract, work plans and performance reports.
-  
-
-----------
-
-.. _dfn-nspt_activity_number_participating:
-
-NSPT Activity - Number Participating
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Number of people who participated in or attended the Activity.
-
-:Field name: nspt_activity_number_participating
+:Field name: mspss_family_subscale
 
 :Data type: integer
 
 :Required: yes
 
 :Domain:
-  0 - 30000000
+  1 - 7, 99 = Not stated / Missing
 :Notes:
-  **Reporting requirement**
-  Where no estimate of participation is possible enter 0.
+  To obtain a MSPSS Family Subscale ranging from 1 to 7, sum across
+  items 3, 4, 8 & 11, then divide by 4.
   
-  For all other activities include the number of participants/attendees who
-  attended all, or part of, the Activity.
+  For the Family Subscale, the missing value used should be 99.
   
-  **Notes:**
-  Numbers may be estimated where true counts are unknown, or for media
-  ‘audience reach’ data provided by an outlet can be included.  This may be
-  necessary for many activities that are not undertaken face to face and when
-  attendance is not formally recorded for larger events.
-  
-  For activities that may have multiple sessions, include participants even
-  if they did not attend all sessions. 
+  When reporting individual item scores use ‘99 - Not stated / Missing’
   
 
 ----------
 
-.. _dfn-nspt_activity_start_date:
+.. _dfn-mspss_friends_subscale:
 
-NSPT Activity - Start Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Friends Subscale
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Day, month and year the Activity commenced.
 
-:Field name: nspt_activity_start_date
+:Field name: mspss_friends_subscale
 
-:Data type: date
+:Data type: integer
 
 :Required: yes
+
+:Domain:
+  1 - 7, 99 = Not stated / Missing
 :Notes:
-  If an activity has multiple sessions enter the start date of the first session.
+  To obtain a MSPSS Friends Subscale ranging from 1 to 7, sum across
+  items 6, 7, 9 & 12, then divide by 4.
   
-  The period is to be in a valid format, DDMMYYYY, with leading zeros used when
-  necessary to pad out a value - in compliance with the standard format used
-  across the National Health Data Dictionary.
+  For the Friends Subscale, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’
   
 
 ----------
 
-.. _dfn-nspt_activity_summary:
+.. _dfn-mspss_item1:
 
-NSPT Activity - Summary
-^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 1
+^^^^^^^^^^^^^^^^^^
 
-Brief description of the activity.
+There is a special person who is around when I am in need
 
-:Field name: nspt_activity_summary
-
-:Data type: string (2,1000)
-
-:Required: yes
-:Notes:
-  Where possible, the description should be consistent with that used in
-  workplans and other documentation.
-  
-
-----------
-
-.. _dfn-nspt_activity_tags:
-
-NSPT Activity - Tags
-^^^^^^^^^^^^^^^^^^^^
-
-List of tags for the NSPT activity.
-
-:Field name: nspt_activity_tags
-
-:Data type: string
-
-:Required: no
-:Notes:
-  A comma separated list of tags.
-  
-  Organisations can use this field to tag records in order to partition them as
-  per local requirements.
-  
-  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
-  nurse required, pending-outcome-1`` would all be legitimate.
-  
-  Tags beginning with an exclamation mark (!) are reserved for future use by the
-  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-  
-
-----------
-
-.. _dfn-nspt_activity_target_group:
-
-NSPT Activity - Target Group
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Group of people, population or audience for which the activity has been tailored or to which it has been targeted.
-
-:Field name: nspt_activity_target_group
+:Field name: mspss_item1
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Generic or national
-  :2: Community, town or other geographical area
-  :3: People from an at-risk population
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
-  **Reporting requirement**
-  The main group to which an activity is targeted or has been tailored.
-  
-  **Notes**
-  This item is only relevant for activities that have been targeted or tailored
-  for a particular group of people, population or audience.  It is not intended
-  to pick up data on the various types of people that might have, or actually,
-  participated or used a product or service.
-  
-  Record the ONE option that most closely describes the target group.
-  
-  1 - Generic or national
-    For activities targeted at whole of population.
-  
-  2 - Community, town or other geographical area
-    For activities targeted at whole of population.
-  
-  3 - People from an at-risk population
-    For activities targeted at an at-risk population. Where this option is
-    selected then record the at-risk population in the
-    'NSPT Activity - At-Risk Population' data item.
-  
-  *Related items*
-  When activities target or are tailored for a particular workforce, sector or
-  professional group, this is to be recorded separately using the following item:
-  
-  * NSPT Activity – Target Workforce
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_activity_target_workforce:
+.. _dfn-mspss_item2:
 
-NSPT Activity - Target Workforce
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 2
+^^^^^^^^^^^^^^^^^^
 
-Workforce, professional group or sector that the Activity targeted or with which participants were affiliated.
+There is a special person with whom I can share joys and sorrows
 
-:Field name: nspt_activity_target_workforce
+:Field name: mspss_item2
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :0: N/A not a workforce related activity
-  :1: Community health organisations and related services
-  :2: Aboriginal and Torres Strait Islander service providers and other organisations
-  :3: Emergency or crisis response services
-  :4: Primary Health Network commissioned services
-  :5: School or other educational institution personnel
-  :6: Police and law enforcement agencies
-  :7: Media
-  :8: Volunteer or community group providing services or support (including peer workers)
-  :9: Other
-  Multiple space separated values allowed
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
-  **Reporting requirement**
-  This is to be recorded for each workforce related activity.
-  More than one workforce may be applicable.
-  
-  If the Activity is not workforce related enter 0.
-  
-  If target workforce is not listed, enter 9 ‘Other’ and describe the target
-  workforce in the item ‘Activity - Target Workforce Other’.
-  
-  **Notes**
-  This is relevant for all activities targeted at:
-  
-  * improving the knowledge about suicide and suicide prevention within a
-    workforce group or profession
-  * the ability of a workforce group or profession to recognise and respond
-    to suicidal behaviour or risk the ability of a workforce group or profession
-    to provide suicide prevention related services.
-  
-  *Related items*
-  When activities target or are tailored for members of the general population
-  or at risk populations, this is to be recorded separately using the following items:
-  
-  * Activity – Target Group
-  * Activity – At-risk Target Group
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_activity_target_workforce_other:
+.. _dfn-mspss_item3:
 
-NSPT Activity - Target Workforce Other
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 3
+^^^^^^^^^^^^^^^^^^
 
-Description of target workforce.
+My family really tries to help me
 
-:Field name: nspt_activity_target_workforce_other
-
-:Data type: string (2,100)
-
-:Required: no
-:Notes:
-  **Reporting requirement**
-  If the response to “Activity – Target Workforce” is entered as 9 – ‘Other’
-  
-  **Notes:**
-  Briefly describe the target workforce.
-  
-
-----------
-
-.. _dfn-nspt_activity_key:
-
-NSPT Activity Key
-^^^^^^^^^^^^^^^^^
-
-This is a number or code assigned to each activity record associated with the commissioned organisation. The activity identifier is unique and stable for each activity within the Provider Organisation.
-
-:Field name: nspt_activity_key
-
-:Data type: string (2,50)
-
-:Required: yes
-
-----------
-
-.. _dfn-nspt_consent_flag:
-
-NSPT Episode - Consent 1: NSPT evaluation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Consent 1: for NSPT Individual Service data collection, linkage and sharing with evaluation.
-
-:Field name: nspt_consent_flag
+:Field name: mspss_item3
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Yes
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
-  Provider statement:
-  
-  *Have you read the background information and do you agree to provide
-  additional information for the National Trial data, for that data to be
-  linked with the routine data collected by me [service provider], and for
-  the University of Melbourne researchers to access the linked dataset? The
-  dataset will not include your name or any other identifying information.*
-  
-  Client response options:
-  
-  1 - Yes
-      The client has read the background information and agrees to provide
-      additional information for the National Trial data, for that data to be
-      linked with the routine data collected by me, and for the University of
-      Melbourne researchers to access the linked dataset.
-  
-  **Note**
-  Data where consent has not been given for NSPT Individiual Service data collection,
-  linkage and sharing with evaluation must not be entered.
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_consumer_survey:
+.. _dfn-mspss_item4:
 
-NSPT Episode - Consent 2: for Consumer Survey
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 4
+^^^^^^^^^^^^^^^^^^
 
-Consent 2: sharing contact data for the Consumer Survey.
+I get the emotional help & support I need from my family
 
-:Field name: nspt_consumer_survey
+:Field name: mspss_item4
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Yes
-  :2: No
-  :3: Not required
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
-  Provider statement:
-  
-  *Do you agree that your contact information, including your minimum dataset
-  identifying number, can be provided to Strategic Data so they can invite you to
-  participate in the consumer survey?*
-  
-  1 - Yes
-      The client agrees that their contact information, including their minimum
-      dataset identifying number, can be provided to Strategic Data so they can
-      invite them to participate in the consumer survey.
-  
-  2 - No
-  
-  3 - Not required
-      The client refused consent for NSPT evaluation.
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_lifetime_suicide_attempt:
+.. _dfn-mspss_item5:
 
-NSPT Episode - Lifetime suicide attempt and ideation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 5
+^^^^^^^^^^^^^^^^^^
 
-Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?
+I have a special person who is a real source of comfort to me
 
-:Field name: nspt_lifetime_suicide_attempt
+:Field name: mspss_item5
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Suicide attempt
-  :2: Suicide ideation, no attempt
-  :3: Neither suicide attempt nor ideation
-  :4: Not known
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
-  1 – Suicide attempt
-      A non-fatal, self-directed, potentially injurious behaviour with an 
-      intent to die as a result of the behaviour; might not result in injury. 
-  
-  2 – Suicidal ideation
-      Thinking about, considering, or planning suicide.
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_other_services:
+.. _dfn-mspss_item6:
 
-NSPT Episode - Other services used in the last six months
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 6
+^^^^^^^^^^^^^^^^^^
 
-What other services has the client used in the past six months?
+My friends really try to help me
 
-:Field name: nspt_other_services
+:Field name: mspss_item6
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :0: None
-  :1: General Practice
-  :2: Medical Specialist Consulting Rooms
-  :3: Private practice
-  :4: Public mental health service
-  :5: Public Hospital
-  :6: Private Hospital
-  :7: Emergency Department
-  :8: Community Health Centre
-  :9: Drug and Alcohol Service
-  :10: Community Support Organisation NFP
-  :11: Indigenous Health Organisation
-  :12: Child and Maternal Health
-  :13: Nursing Service
-  :14: Telephone helpline
-  :15: Digital health service
-  :16: Family Support Service
-  :17: School
-  :18: Tertiary Education institution
-  :19: Housing service
-  :20: Centrelink
-  :21: PHN psychological therapies
-  :22: Veteran/defence support services
-  :23: Other
-  :99: Not stated
-  Multiple space separated values allowed
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
-  Multiple responses accepted.
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_referral_made:
+.. _dfn-mspss_item7:
 
-NSPT Episode - Referral made
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 7
+^^^^^^^^^^^^^^^^^^
 
-What type of services were the client referred on to throughout this episode of care?
+I can count on my friends when things go wrong
 
-:Field name: nspt_referral_made
+:Field name: mspss_item7
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :0: None
-  :1: General Practice
-  :2: Medical Specialist Consulting Rooms
-  :3: Private practice
-  :4: Public mental health service
-  :5: Public Hospital
-  :6: Private Hospital
-  :7: Emergency Department
-  :8: Community Health Centre
-  :9: Drug and Alcohol Service
-  :10: Community Support Organisation NFP
-  :11: Indigenous Health Organisation
-  :12: Child and Maternal Health
-  :13: Nursing Service
-  :14: Telephone helpline
-  :15: Digital health service
-  :16: Family Support Service
-  :17: School
-  :18: Tertiary Education institution
-  :19: Housing service
-  :20: Centrelink
-  :21: PHN psychological therapies
-  :22: Veteran/defence support services
-  :23: Other
-  :99: Not stated
-  Multiple space separated values allowed
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
-  Multiple responses accepted.
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_sexual_identity:
+.. _dfn-mspss_item8:
 
-NSPT Episode - Sexual Identity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 8
+^^^^^^^^^^^^^^^^^^
 
-Sexual Identity client self-identification.
+I can talk about my problems with my family
 
-:Field name: nspt_sexual_identity
+:Field name: mspss_item8
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Lesbian, gay or homosexual
-  :2: Straight or heterosexual
-  :3: Bisexual
-  :4: Something else
-  :5: Don't know
-  :6: Not stated
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_main_treatment_focus:
+.. _dfn-mspss_item9:
 
-NSPT Episode - Suicide Trial Main Treatment Focus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Question 9
+^^^^^^^^^^^^^^^^^^
 
-What is the main focus of suicide prevention treatment being provided by the trial service?
+I have friends with whom I can share my joys and sorrows
 
-:Field name: nspt_main_treatment_focus
+:Field name: mspss_item9
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Suicide Mitigation
-  :2: Postvention
-  :4: Psychological therapy
-  :5: Culturally specific assistance
-  :6: Case management
-  :7: Other support
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
 :Notes:
-  Describes the main focus of suicide prevention services to be delivered to the 
-  client (or family member/carer) for the current Episode of Care being 
-  delivered as part of the National Suicide Prevention Trial.
-  
-  1 – Suicide Mitigation
-      When the focus of the service is to actively prevent the client’s suicide 
-      primarily through the development of a plan with the client for when 
-      they are experiencing suicidal thoughts, feelings, distress or are in 
-      crisis. Includes suicide prevention plan or patient safety plan. 
-  
-  2 – Postvention 
-      Services and support for those bereaved or otherwise affected by suicide.
-  
-  4 - Psychological therapy
-      The treatment plan for the client is primarily based around the delivery of 
-      psychological therapy by one or more mental health professionals.
-  
-  5 - Culturally specific assistance
-      Culturally appropriate services delivered to, or on behalf, of an Aboriginal 
-      or Torres Strait Islander client that cannot be described elsewhere.
-  
-  6 - Case management
-      Immediate or ongoing psychosocial care and support.
-  
-  7 - Other support
-      Any other main treatment focus of the suicide prevention services not included above. 
-      Enter details of main focus in the item ‘Episode – Suicide Trial Main Treatment Focus Other’.
-      
-      
-  *Please note:* '3 – Crisis Management' has been retired and will no longer be accepted as the the main focus.
+  When reporting total score use ‘9 - Not stated / Missing’ 
   
 
 ----------
 
-.. _dfn-nspt_main_treatment_focus_other:
+.. _dfn-mspss_item10:
 
-NSPT Episode - Suicide Trial Main Treatment Focus Other
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Description of other main focus of treatment.
-
-:Field name: nspt_main_treatment_focus_other
-
-:Data type: string (2,100)
-
-:Required: no
-:Notes:
-  **Reporting requirement**
-  If the response to Suicide Trial Main Treatment Focus is entered as 7 – ‘Other support’.
-  
-  **Notes:**
-  Briefly describe the other main focus of suicide prevention services to be delivered.
-  
-
-----------
-
-.. _dfn-nspt_tags:
-
-NSPT Episode - Tags
+MSPSS - Question 10
 ^^^^^^^^^^^^^^^^^^^
 
-List of tags for the NSPT Episode.
+There is a special person in my life who cares about my feelings
 
-:Field name: nspt_tags
+:Field name: mspss_item10
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-mspss_item11:
+
+MSPSS - Question 11
+^^^^^^^^^^^^^^^^^^^
+
+My family is willing to help me make decisions
+
+:Field name: mspss_item11
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-mspss_item12:
+
+MSPSS - Question 12
+^^^^^^^^^^^^^^^^^^^
+
+I can talk about my problems with my friends
+
+:Field name: mspss_item12
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Very Strongly Disagree
+  :2: Strongly Disagree
+  :3: Mildly Disagree
+  :4: Neutral
+  :5: Mildly Agree
+  :6: Strongly Agree
+  :7: Very Strongly Agree
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-mspss_significant_other_subscale:
+
+MSPSS - Significant Other Subscale
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+:Field name: mspss_significant_other_subscale
+
+:Data type: integer
+
+:Required: yes
+
+:Domain:
+  1 - 7, 99 = Not stated / Missing
+:Notes:
+  To obtain a MSPSS Significant Other Subscale ranging from 1 to 7, sum across
+  items 1, 2, 5 & 10, then divide by 4.
+  
+  For the Significant Other Subscale, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’
+  
+
+----------
+
+.. _dfn-mspss_tags:
+
+MSPSS - Tags
+^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: mspss_tags
 
 :Data type: string
 
@@ -1120,24 +563,27 @@ List of tags for the NSPT Episode.
 
 ----------
 
-.. _dfn-nspt_veteran:
+.. _dfn-mspss_total_scale:
 
-NSPT Episode - Veteran
-^^^^^^^^^^^^^^^^^^^^^^
+MSPSS - Total Scale
+^^^^^^^^^^^^^^^^^^^
 
-Is the client a former defence force member (Australian or International)?
 
-:Field name: nspt_veteran
+:Field name: mspss_total_scale
 
-:Data type: string
+:Data type: integer
 
 :Required: yes
 
 :Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
+  1 - 7, 99 = Not stated / Missing
 :Notes:
+  To obtain a MSPSS Total Scale ranging from 1 to 7, sum across
+  all 12 items, then divide by 12.
+  
+  For the Total Scale, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’
   
 
 ----------
@@ -1167,6 +613,24 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
   +------------------+-------------------------------+---------------------------------------------+---------------------+-------------------+
   | PO101            | Test Provider Organisation    | Private Allied Health Professional Practice | PHN999              | PHN999:PO101      |
   +------------------+-------------------------------+---------------------------------------------+---------------------+-------------------+
+  
+
+----------
+
+.. _dfn-service_contact_key:
+
+Service Contact Key
+^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.
+
+:Field name: service_contact_key
+
+:Data type: string (2,50)
+
+:Required: yes
+:Notes:
+  Service contact keys are case sensitive and must be valid unicode characters.
   
 
 ----------
@@ -1304,6 +768,677 @@ List of tags for the collection occasion.
 
 ----------
 
+.. _dfn-twb_consent_type:
+
+TWB Episode - Consent Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The status of whether the client has consented to participate in The Way Back.
+
+:Field name: twb_consent_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Consented to participate in The Way Back
+  :2: Declined to participate - already linked in to a support service
+  :3: Declined to participate - does not wish to be supported
+  :4: Declined to participate at this time but consented to be contacted at a later time to review/reconsider participation
+  :5: Unsuitable for participation due to Language barriers
+  :98: Other
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory – All clients
+  
+  **Guide for use**
+  A client may decline to participate in The Way Back Support Service but agree to be contacted in the future to reconsider their participation.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  Understanding service demand and presenting client profile.
+  
+
+----------
+
+.. _dfn-twb_critical_incident_datetime:
+
+TWB Episode - Critical Incident Date Time
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date and time the service was advised of a critical incident.
+
+:Field name: twb_critical_incident_datetime
+
+:Data type: datetime
+
+:Required: yes
+:Notes:
+  **Reporting requirements**
+  Mandatory where critical incident type is present.
+  
+  **Guide for use**
+  Requires services to record the date and time of when a critical incident was reported.
+  
+  **Purpose/context**
+  Program monitoring, service planning, funding and accountability.
+  Measurement of waiting times.
+  
+
+----------
+
+.. _dfn-twb_critical_incident_type:
+
+TWB Episode - Critical Incident Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The type of critical incident reported by the service provider.
+
+:Field name: twb_critical_incident_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Suicide attempt of an active client
+  :2: Suicide death of an active client
+  :3: Death by other cause of an active client
+  :9: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory where a critical incident is reported.
+  
+  **Guide for use**
+  It is acknowledged that due to the nature of the project and the reporting of suicide, Beyond Blue and stakeholders may not be advised of all critical incidents, particularly if individuals are no longer involved with the service.
+  It is also acknowledged that each Service Provider will have the appropriate risk management strategies in place for handling Critical Incidents.
+  
+  **Purpose/context**
+  Program monitoring, service planning, funding and accountability.
+  
+
+----------
+
+.. _dfn-twb_eligibility_type:
+
+TWB Episode - Eligibility Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The criteria by which the client is eligible for service.
+
+:Field name: twb_eligibility_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Primary Criteria
+  :2: Secondary Criteria
+  :3: Ineligible
+  :98: Other
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory – All clients
+  
+  **Guide for use**
+  It is best to record eligibility type when the client is referred to the service, when first in contact with the client or during an initial assessment.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  Understanding service demand and presenting client profile.
+  
+
+----------
+
+.. _dfn-twb_other_consent_type:
+
+TWB Episode - Other Consent Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The status of whether the client has consented to contacted.
+
+:Field name: twb_other_consent_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Consented to to be contacted by external evaluators
+  :2: Not consented to be contactd by external evaluators
+  :3: Consented to be contacted by Beyond Blue for the purposes of sharing my experience
+  :4: Not consented to be contacted by Beyond Blue for the purposes of sharing my experience
+  :5: Unsuitable for participation due to Language barriers
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory – All clients
+  
+  **Guide for use**
+  A client may decline to participate in external evaluations or contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.
+  **Purpose/context**
+  Program monitoring, service planning.
+  Understanding service demand and presenting client profile.
+  
+
+----------
+
+.. _dfn-twb_primary_nominated_professional:
+
+TWB Episode - Primary Nominated Professional
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The primary nominated professional of the client for contact regarding participation in the service.
+
+:Field name: twb_primary_nominated_professional
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: GP/Medical Practitioner
+  :2: Psychologist
+  :3: Psychiatrist
+  :4: Alcohol and other drug support worker
+  :5: Family violence support worker
+  :6: Disability support worker
+  :7: Aged care facility/service support worker
+  :8: Correctional Case Manager
+  :9: Sexual Assault service
+  :10: Financial counsellor
+  :11: Sexual health support service
+  :12: Other medical specialist
+  :97: No nomination provided
+  :98: Other
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory where Episode—TWB Consent type =1
+  
+  **Guide for use**
+  The primary nominated professional of the client is the professional or support worker that the client consents to be advised of their participation in The Way Back Support Service.
+  If a client does not wish for anyone to be advised then code 97 indicates no consent.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  
+
+----------
+
+.. _dfn-twb_primary_nominated_professional_date:
+
+TWB Episode - Primary Nominated Professional Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The date of service contact between a service provider and the clients primary nominated professional.
+
+:Field name: twb_primary_nominated_professional_date
+
+:Data type: date
+
+:Required: yes
+:Notes:
+  **Reporting requirements**
+  Mandatory where Episode—Primary Nominated Professional =  1 -12
+  
+  **Guide for use**
+  Requires services to record the date of each contact with the primary nominated professional identified by the client.
+  At a minimum written advice (email or letter) advising of the client’s participation in The Way Back Support Service must be sent to the primary nominated professional on commencement of the service and at service end.
+  The contact date is the date of the service provider initiates or responds to a communication with the primary nominated professional.
+  
+  **Does this imply that there can be multiple dates per episode? If so we need another record**
+  
+  **Purpose/context**
+  Program monitoring, service planning, funding and accountability.
+  
+
+----------
+
+.. _dfn-twb_sexual_identity:
+
+TWB Episode - Sexual Identity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sexual Identity client self-identification.
+
+:Field name: twb_sexual_identity
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Lesbian, gay or homosexual
+  :2: Straight or heterosexual
+  :3: Bisexual
+  :4: Something else
+  :5: Don't know
+  :6: Not stated
+:Notes:
+  **Reporting requirements**
+  Mandatory where Episode—TWB Consent type =1
+  
+  **Guide for use**
+  
+  **Purpose/context**
+  Program monitoring, service planning
+  Understanding access and service utilisation of population groups.
+  
+
+----------
+
+.. _dfn-twb_episode_tags:
+
+TWB Episode - Tags
+^^^^^^^^^^^^^^^^^^
+
+List of tags for the TWB Episode.
+
+:Field name: twb_episode_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-twb_veteran:
+
+TWB Episode - Veteran
+^^^^^^^^^^^^^^^^^^^^^
+
+Whether the client identifies as a veteran.
+
+:Field name: twb_veteran
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Identifies as a veteran
+  :2: Does not identify as a veteran
+  :9: Not stated/Inadequately described
+:Notes:
+  A ‘veteran’ is defined in s.5C of the VEA as a person who:
+  * has rendered ‘eligible war service’;
+  * was a member of the Australian armed services forces who, after 31 July 1962, was engaged in warlike operations against hostile forces outside Australia but not on ‘operational service’ in an operational area and was injured, contracted a disease or died due to action of hostile forces; or
+  * is a ‘Commonwealth veteran’, ‘allied veteran’ or ‘allied mariner’ (for service pension, Repatriation Pharmaceutical Benefits Card and Commonwealth Seniors Health Card purposes only).
+  
+  ‘Eligible war service’ is defined in s.7 of the VEA and includes:
+  * ‘operational service’;
+  * continuous full-time service (CFTS) in the Australian armed services in World War I;
+  * CFTS in World War II in the Australian armed services (enlistment before 1 July 1947);
+  * CFTS service as a member of the Australian Interim Forces after 1 July 1947; and
+  * service in World War II by Australian mariners
+  
+  **Report requirements**
+  Mandatory where Episode—TWB Consent type =1
+  
+  **Guide for use**
+  Clients are able to report their veteran status given that this may in some instances lead to a different level of service. The client’s recorded response should not be altered or annotated in any way.
+  
+  **Purpose/context**
+  Program monitoring, service planning
+  Understanding access and service utilisation of population groups.
+  
+
+----------
+
+.. _dfn-twb_ini_tags:
+
+TWB INI - Tags
+^^^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: twb_ini_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-twb_ini_type:
+
+TWB INI - Type
+^^^^^^^^^^^^^^
+
+The identified needs of the client at commencement or review of the service.
+
+:Field name: twb_ini_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Self-care and diet (Incl. Self-Neglect)
+  :2: Mental Health
+  :3: Safety to Self/Others
+  :4: Accommodation
+  :5: Financial
+  :6: Daily Structure and Interests
+  :7: Stigma and Harassment
+  :8: Social Contacts
+  :9: Close Relationships (Incl. Carer, If Applicable)
+  :10: Language and Culture
+  :11: Physical Health and Disability
+  :12: Daily Living
+  :13: Employment
+  :14: Information About Condition and Treatment
+  :15: Alcohol and Drugs
+  :16: Childcare and Parenting
+  :17: Educational Needs (Incl. Literacy &  Numeracy)
+  :18: Transport
+  :19: Sexual Issues
+  :20: Spirituality
+  :98: Other
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory where Episode—TWB Consent type =1
+  
+  The Initial Needs Identification (INI) is a screening process where the underlying issues as well as the presenting issues are uncovered to the extent possible. It is not a diagnostic process but is a determination of the client's risk, eligibility and priority for service, a balancing for the service capacity and client needs
+  Needs identification can occur via phone, face-to-face interaction or written survey intervention. However, Needs Identification is ongoing and as a client receives care, other needs or circumstances may be identified which require attention by other disciplines. External referral or re-entry onto the waiting list to access the other disciplines may then occur. This question allows for more than one response. The INI must be administered at a minimum at the following points of service participation:
+  * At the start of The Way Back
+  * At the six-week or mid-point of the expected support period
+  * At exit from the service
+  
+
+----------
+
+.. _dfn-twb_plan_type:
+
+TWB Plan - Plan Type
+^^^^^^^^^^^^^^^^^^^^
+
+The type of plan.
+
+:Field name: twb_plan_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Safety
+  :2: Support
+:Notes:
+  **1 - Safety Plan**
+  Clients referred to The Way Back may have commenced the process of safety planning as part of their discussions with Emergency Department or Ward staff. Any existing safety plans completed by hospital or staff should be shared with or requested by The Way Back service provider and updated as part of preliminary discussions with The Way Back clients.
+  Where clients referred to The Way Back have not completed any safety planning prior to their referral this should be completed as a priority once the client has consented to participate in The Way Back. Safety Plans must be updated/developed within the first contact with the client and no later than the second contact.
+  
+  Safety plans should be reviewed with a client as needed. Each instance of the review and update of a safety plan should be recorded.
+  
+  **2 - Support Plan**
+  Mandatory when Episode TWB consent type = 1
+  
+  All Way Back service providers must work with their clients to collaboratively develop a support plan that articulates:
+  * The client’s needs based on the INI
+  * The client’s goals in response to needs identified
+  * Proposed actions, referrals and interventions
+  
+  The support plan must be reviewed on a regular basis and at a minimum at the following points of service participation:
+  * At the start of The Way Back
+  * At the six-week or mid-point of the expected support period
+  * At exit from the service
+  
+  Plan – initial support plan date cannot be in the future
+  Plan — initial support plan date cannot be before client – date of birth
+  Plan — initial support plan date cannot be after Service – support plan review date
+  Plan — initial support plan date cannot be before the service -  initial contact date
+  Plan — initial support plan date cannot be before the Service - initial needs identification date
+  Plan — initial support plan date cannot be before the service -  start date contact date
+  Plan — initial support plan date cannot be after Service – Service end date
+  
+  Plan – support plan review date cannot be in the future
+  Plan – support plan review date cannot be before client – date of birth
+  Plan – support plan review date cannot be before  Service – Initial support plan date
+  Plan – support plan review date cannot be before the service -  initial contact date
+  Plan - support plan review date cannot be after Service – Service end date
+  
+
+----------
+
+.. _dfn-twb_plan_tags:
+
+TWB Plan - Tags
+^^^^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: twb_plan_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-twb_referral_out_date:
+
+TWB Referral Out - Date
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The date the Service Provider made the referral out to an external service/organisation.
+
+:Field name: twb_referral_out_date
+
+:Data type: date
+
+:Required: yes
+:Notes:
+  **Reporting requirements**
+  Mandatory where Service Contact- Referral out provider type 1-44 is present.
+  
+  **Guide for use**
+  Requires services to record the date that a referral out is made to an external service/organisation
+  The same date should be recorded for multiple referrals on the same day.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  
+
+----------
+
+.. _dfn-twb_referral_out_provider_type:
+
+TWB Referral Out - Provider Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The provider type of the referral out made for and on behalf of the client. 
+
+:Field name: twb_referral_out_provider_type
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :3: GP/Medical Practitioner
+  :4: Hospital
+  :5: Psychiatric/mental health service or facility
+  :6: Alcohol and other drug treatment service
+  :7: Other community/health care service
+  :8: Correctional service
+  :9: Police diversion
+  :10: Court diversion
+  :11: Legal service
+  :12: Child protection agency
+  :13: Community support groups/agencies
+  :14: Centrelink or employment service
+  :15: Housing and homelessness service
+  :16: Telephone & online services/referral agency e.g. direct line
+  :17: Disability support service
+  :18: Aged care facility/service
+  :19: Immigration department or asylum seeker/refugee support service
+  :20: School/other education or training institution
+  :22: Community based Drug and Alcohol Service
+  :23: Youth service (non-AOD)
+  :24: Indigenous service (non-AOD)
+  :25: Extended care/rehabilitation facility
+  :26: Palliative care service
+  :27: Police (not diversion)
+  :28: Public dental provider - community dental agency
+  :29: Dental Hospital
+  :30: Private Dental Provider
+  :31: Early childhood service
+  :32: Maternal and Child Health Service
+  :33: Community nursing service
+  :34: Emergency relief
+  :35: Family support service (excl family violence)
+  :36: Family violence service
+  :37: Gambling support service
+  :38: Maternity services
+  :39: Peer support/self-help group
+  :40: Private allied health provider
+  :41: Sexual Assault service
+  :42: Financial counsellor
+  :43: Sexual health service
+  :44: Medical specialist
+  :97: No Referral
+  :98: Other
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  
+  **Guide for use**
+  It is best to record the referral information as soon as the client is referred to an agency/community service as it may be difficult to track this information later.
+  To assist staff, service providers may find it useful to make a list of the agencies from which they most frequently send referrals and note the corresponding Source of Referral code.
+  Report the Referral starting with the most relevant or urgent one first. This will help to gain an understanding of the client profile.
+  Up to 10 referrals out provider type may be reported each instance, from the most important to the least.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  
+
+----------
+
+.. _dfn-twb_referral_out_status:
+
+TWB Referral Out - Status
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The status of a referral out made by the Service Provider on behalf of a client.
+
+:Field name: twb_referral_out_status
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Service commenced
+  :2: Service completed
+  :3: Waitlisted
+  :4: Referral not accepted 
+  :5: Client declined to take up referral 
+  :6: Client deceased prior to service commencement
+  :98: Other
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory where Service Contact- Referral out provider type 1-44 is present
+  
+  **Guide for use**
+  Requires services to record the status of a referral out to an alternative service.
+  
+  **Purpose/context**
+  Program monitoring, service planning, funding and accountability.
+  Measurement of waiting times.
+  
+
+----------
+
+.. _dfn-twb_referral_out_tags:
+
+TWB Referral Out - Tags
+^^^^^^^^^^^^^^^^^^^^^^^
+
+List of tags for TWB Referral Out.
+
+:Field name: twb_referral_out_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-twb_referral_out_key:
+
+TWB Referral Out Key
+^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each referral out. The Referral Out Key is unique and stable for each referral out at the lvel of the organisation.
+
+:Field name: twb_referral_out_key
+
+:Data type: string (2,50)
+
+:Required: yes
+
+----------
+
 .. _dfn-value:
 
 Value
@@ -1316,6 +1451,223 @@ The metadata value.
 :Data type: string
 
 :Required: yes
+
+----------
+
+.. _dfn-who5_percentage_score:
+
+WHO-5 - Percentage Score
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The WHO-5 percentage score.
+
+:Field name: who5_percentage_score
+
+:Data type: integer
+
+:Required: yes
+
+:Domain:
+  0 - 100, 999 = Not stated / Missing
+:Notes:
+  To obtain a WHO-5 percentage score ranging from 0 to 100, the raw score is
+  multiplied by 4. A percentage score of 0 represents
+  worst possible, whereas a score of 100 represents best possible quality of life.
+  
+  For the Percentage score, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’
+  
+
+----------
+
+.. _dfn-who5_item1:
+
+WHO-5 - Question 1
+^^^^^^^^^^^^^^^^^^
+
+I have felt cheerful and in good spirits
+
+:Field name: who5_item1
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_item2:
+
+WHO-5 - Question 2
+^^^^^^^^^^^^^^^^^^
+
+I have felt calm and relaxed
+
+:Field name: who5_item2
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_item3:
+
+WHO-5 - Question 3
+^^^^^^^^^^^^^^^^^^
+
+I have felt active and vigorous
+
+:Field name: who5_item3
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_item4:
+
+WHO-5 - Question 4
+^^^^^^^^^^^^^^^^^^
+
+I woke up feeling fresh and rested
+
+:Field name: who5_item4
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_item5:
+
+WHO-5 - Question 5
+^^^^^^^^^^^^^^^^^^
+
+I woke up feeling fresh and rested
+
+:Field name: who5_item5
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: At no time
+  :1: Some of the time
+  :2: Less than half of the time
+  :3: More than half of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-who5_raw_score:
+
+WHO-5 - Raw Score
+^^^^^^^^^^^^^^^^^
+
+The WHO-5 raw score.
+
+:Field name: who5_raw_score
+
+:Data type: integer
+
+:Required: yes
+
+:Domain:
+  0 - 25, 99 = Not stated / Missing
+:Notes:
+  The WHO-5 Raw score is calculated by totalling the figures of the five answers.
+  The raw score ranges from 0 to 25, 0 representing worst possible and
+  25 representing best possible quality of life.
+  
+  For the Raw score, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’
+  
+
+----------
+
+.. _dfn-who5_tags:
+
+WHO-5 - Tags
+^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: who5_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
 
 ----------
 

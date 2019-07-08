@@ -40,7 +40,7 @@
   }, {
     "dc:title": "TWB Episode",
     "url": "data/twb-episodes.csv",
-    "schema:name": "episode",
+    "schema:name": "twb-episode",
     "schema:description": "table/twb-episode.rst",
     "tableSchema": "table/twb-episode-metadata.json"
   }, {

@@ -114,6 +114,5 @@
       "resource": "table/twb-referral-out/twb-referral-out-status.csv",
       "columnReference": "id"
     }
-  }
   }]
 }

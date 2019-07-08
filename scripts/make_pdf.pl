@@ -25,7 +25,7 @@ GetOptions (
 ) or die("Error in command line arguments\n");
 
 # Quick and dirty say to work out which spec we're rendering
-my $spec_type = 'NSPT';
+my $spec_type = 'WAYBACK';
 $webservice  ||= 'https://prince.sdintra.net';
 $output_file ||= $dst . "/$spec_type.pdf";
 

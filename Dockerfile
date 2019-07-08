@@ -12,5 +12,4 @@ ENV PERL5LIB=/usr/local/lib
 
 WORKDIR /mnt/cwd
 
-CMD ["metadata2rst.sh", "nspt-metadata.json"]
-
+CMD ["metadata2rst.sh", "wayback-metadata.json"]

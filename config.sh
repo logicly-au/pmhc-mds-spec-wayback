@@ -1,4 +1,4 @@
-METADATA_FILE="nspt-metadata.json"
-SPEC_ZIP_FILE="nspt-spec-meta.zip"
-SPEC_NAME="NSPT"
-RECORD_MATCH="^NSPT|^SIDAS|^Metadata$"
+METADATA_FILE="wayback-metadata.json"
+SPEC_ZIP_FILE="wayback-spec-meta.zip"
+SPEC_NAME="WAYBACK"
+RECORD_MATCH="^TWB|^SIDAS|^WHO|^MSPSS|^Metadata$"
