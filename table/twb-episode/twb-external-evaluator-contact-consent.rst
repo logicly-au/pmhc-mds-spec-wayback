@@ -2,7 +2,7 @@
 Mandatory – All clients
 
 **Guide for use**
-A client may decline to participate in The Way Back Support Service but agree to be contacted in the future to reconsider their participation.
+A client may decline to participate in external evaluations for the purpose of sharing experiences. This does not effect their eligibility for the service.
 
 **Purpose/context**
 Program monitoring, service planning.

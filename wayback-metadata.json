@@ -44,6 +44,18 @@
     "schema:description": "table/twb-episode.rst",
     "tableSchema": "table/twb-episode-metadata.json"
   }, {
+    "dc:title": "TWB Primary Nominated Professional Contact",
+    "url": "data/twb-primary-nominated-professional-contacts.csv",
+    "schema:name": "twb-primary-nominated-professional-contact",
+    "schema:description": "table/twb-primary-nominated-professional-contact.rst",
+    "tableSchema": "table/twb-primary-nominated-professional-contact-metadata.json"
+  }, {
+    "dc:title": "TWB Critical Incident",
+    "url": "data/twb-critical-incidents.csv",
+    "schema:name": "twb-critical-incident",
+    "schema:description": "table/twb-critical-incident.rst",
+    "tableSchema": "table/twb-critical-incident-metadata.json"
+  }, {
     "dc:title": "Service Contact",
     "url": "data/service-contacts.csv",
     "schema:name": "service-contact",
@@ -191,8 +203,8 @@
     "url": "table/episode/continuity-of-support.csv",
     "tableSchema": "table/episode/continuity-of-support.json"
   }, {
-    "url": "table/twb-episode/twb-consent-type.csv",
-    "tableSchema": "table/twb-episode/twb-consent-type.json"
+    "url": "table/twb-episode/twb-external-evaluator-contact-consent.csv",
+    "tableSchema": "table/twb-episode/twb-external-evaluator-contact-consent.json"
   }, {
     "url": "table/twb-episode/twb-critical-incident-type.csv",
     "tableSchema": "table/twb-episode/twb-critical-incident-type.json"
@@ -200,8 +212,8 @@
     "url": "table/twb-episode/twb-eligibility-type.csv",
     "tableSchema": "table/twb-episode/twb-eligibility-type.json"
   }, {
-    "url": "table/twb-episode/twb-other-consent-type.csv",
-    "tableSchema": "table/twb-episode/twb-other-consent-type.json"
+    "url": "table/twb-episode/twb-beyond-blue-contact-consent.csv",
+    "tableSchema": "table/twb-episode/twb-beyond-blue-contact-consent.json"
   }, {
     "url": "table/twb-episode/twb-primary-nominated-professional.csv",
     "tableSchema": "table/twb-episode/twb-primary-nominated-professional.json"
@@ -217,6 +229,12 @@
   }, {
     "url": "table/twb-referral-out/twb-referral-out-status.csv",
     "tableSchema": "table/twb-referral-out/twb-referral-out-status.json"
+  }, {
+    "url": "table/twb-pnpc/reason.csv",
+    "tableSchema": "table/twb-pnpc/reason.json"
+  }, {
+    "url": "table/twb-critical-incident/type.csv",
+    "tableSchema": "table/twb-critical-incident/type.json"
   }, {
     "url": "table/service-contact/type.csv",
     "tableSchema": "table/service-contact/type.json"

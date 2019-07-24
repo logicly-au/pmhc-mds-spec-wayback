@@ -41,6 +41,8 @@ TWB Record formats
 The Way Back adds the following records on top of PMHC MDS current specifications:
 
 - See :ref:`TWB-Episode data specifications <twb-episode-data-elements>` for Individual Services Data.
+- See :ref:`TWB-Primary Nominated Professional Contact data specifications <twb-pnpc-data-elements>` for Primary Nominated Professional Contact Data.
+- See :ref:`TWB-Critical Incident data specifications <twb-critical-incident-data-elements>` for Critical Incident Data.
 - See :ref:`TWB-Referral Out data specifications <twb-referral-out-data-elements>` for Referral Out Data.
 - See :ref:`TWB-Plan Outcome Collection Occasion data specifications <twb-plan-data-elements>` for Individual Services Data.
 - See :ref:`TWB-INI Outcome Collection Occasion data specifications <twb-ini-data-elements>` for Individual Services Data.
@@ -64,6 +66,36 @@ Episodes are managed by the provider organisations via upload or data entry.
 
 .. csv-table:: Episode record layout
   :file: record/twb-episode.csv
+  :header-rows: 1
+
+----------
+
+.. _twb-pnpc-data-elements:
+
+TWB-Primary Nominated Professional Contact
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+See :ref:`key-concepts-episode` for definition of a Primary Nominated Professional Contact.
+
+Primary Nominated Professional Contacts are managed by the provider organisations via upload or data entry.
+
+.. csv-table:: Primary Nominated Professional Contact record layout
+  :file: record/twb-primary-nominated-professional-contact.csv
+  :header-rows: 1
+
+----------
+
+.. _twb-critical-incident-data-elements:
+
+TWB-Critical Incident
+~~~~~~~~~~~~~~~~~~~~~
+
+See :ref:`key-concepts-episode` for definition of a Critical Incident.
+
+Critical Incidents are managed by the provider organisations via upload or data entry.
+
+.. csv-table:: Critical Incident record layout
+  :file: record/twb-critical-incident.csv
   :header-rows: 1
 
 ----------

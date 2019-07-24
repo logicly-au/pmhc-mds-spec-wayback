@@ -145,20 +145,6 @@
       "maximum": 25
       }
   },{
-    "name": "who5_percentage_score",
-    "titles": [ "who5_percentage_score" ],
-    "dc:title" : "WHO-5 - Percentage Score",
-    "schema:description": "The WHO-5 percentage score.",
-    "schema:disambiguatingDescription": "table/collection-occasion/who5/percentage-score.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "null": "999",
-    "datatype": {
-      "base": "integer",
-      "minimum": 0,
-      "maximum": 100
-      }
-  },{
     "name": "who5_tags",
     "titles": [ "who5_tags" ],
     "dc:title" : "WHO-5 - Tags",

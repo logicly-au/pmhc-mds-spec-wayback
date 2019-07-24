@@ -30,13 +30,13 @@
     "required": true,
     "schema:formOrder": "2"
   },{
-    "name": "service_contact_key",
-    "titles": [ "service_contact_key" ],
-    "dc:title": "Service Contact Key",
-    "schema:description": "This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.",
-    "schema:disambiguatingDescription": "table/service-contact/key.rst",
+    "name": "episode_key",
+    "titles": [ "episode_key" ],
+    "dc:title": "Episode Key",
+    "schema:description": "This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.",
+    "schema:disambiguatingDescription": "table/episode/key.rst",
     "schema:dateCreated": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
+    "schema:dateModified": "2016-07-08",
     "datatype": {
       "base": "string",
       "minLength": 2,
@@ -97,10 +97,10 @@
   }],
   "primaryKey": [ "organisation_path", "twb_referral_out_key" ],
   "foreignKeys": [{
-    "columnReference": "organisation_path",
+    "columnReference": [ "organisation_path", "episode_key" ],
     "reference": {
-      "resource": "data/organisations.csv",
-      "columnReference": "organisation_path"
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
     "columnReference": "twb_referral_out_provider_type",

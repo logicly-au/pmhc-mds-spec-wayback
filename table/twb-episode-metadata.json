@@ -65,11 +65,11 @@
     },
     "required": true
   },{
-    "name": "twb_consent_type",
-    "titles": [ "twb_consent_type" ],
-    "dc:title": "TWB Episode - Consent Type",
-    "schema:description": "The status of whether the client has consented to participate in The Way Back.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-consent-type.rst",
+    "name": "twb_external_evaluator_contact_consent",
+    "titles": [ "twb_external_evaluator_contact_consent" ],
+    "dc:title": "TWB Episode - External Evaluator Contact Consent",
+    "schema:description": "The status of whether the client has consented to be contacted by external evaluators.",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-external-evaluator-contact-consent.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -77,11 +77,11 @@
     },
     "required": true
   },{
-    "name": "twb_other_consent_type",
-    "titles": [ "twb_other_consent_type" ],
+    "name": "twb_beyond_blue_contact_consent",
+    "titles": [ "twb_beyond_blue_contact_consent" ],
     "dc:title": "TWB Episode - Other Consent Type",
-    "schema:description": "The status of whether the client has consented to contacted.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-other-consent-type.rst",
+    "schema:description": "The status of whether the client has consented to be contacted by Beyond Blue.",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-beyond-blue-contact-consent.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -100,48 +100,6 @@
       "base": "string"
     },
     "required": true
-  },{
-    "name": "twb_primary_nominated_professional_date",
-    "titles": [ "twb_primary_nominated_professional_date" ],
-    "dc:title": "TWB Episode - Primary Nominated Professional Date",
-    "schema:description": "The date of service contact between a service provider and the clients primary nominated professional.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional-date.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "date",
-      "format": "dMMyyyy",
-      "minimum": "2019-01-01"
-    },
-    "required": true,
-    "schema:dateMissingUnknown": "9999-09-09"
-  },{
-    "name": "twb_critical_incident_type",
-    "titles": [ "twb_critical_incident_type" ],
-    "dc:title": "TWB Episode - Critical Incident Type",
-    "schema:description": "The type of critical incident reported by the service provider.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-critical-incident-type.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
-    "name": "twb_critical_incident_datetime",
-    "titles": [ "twb_critical_incident_datetime" ],
-    "dc:title": "TWB Episode - Critical Incident Date Time",
-    "schema:description": "The date and time the service was advised of a critical incident.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-critical-incident-datetime.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "datetime",
-      "format": "dMMyyyyHHMM",
-      "minimum": "2019-01-01"
-    },
-    "required": true,
-    "schema:dateMissingUnknown": "9999-09-09"
   },{
     "name": "twb_episode_tags",
     "titles": [ "twb_episode_tags" ],
@@ -162,15 +120,9 @@
       "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
-    "columnReference": "twb_consent_type",
+    "columnReference": "twb_external_evaluator_contact_consent",
     "reference": {
-      "resource": "table/twb-episode/twb-consent-type.csv",
-      "columnReference": "id"
-    }
-  }, {
-    "columnReference": "twb_critical_incident_type",
-    "reference": {
-      "resource": "table/twb-episode/twb-critical-incident-type.csv",
+      "resource": "table/twb-episode/twb-external-evaluator-contact-consent.csv",
       "columnReference": "id"
     }
   }, {
@@ -180,9 +132,9 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "twb_other_consent_type",
+    "columnReference": "twb_beyond_blue_contact_consent",
     "reference": {
-      "resource": "table/twb-episode/twb-other-consent-type.csv",
+      "resource": "table/twb-episode/twb-beyond-blue-contact-consent.csv",
       "columnReference": "id"
     }
   }, {

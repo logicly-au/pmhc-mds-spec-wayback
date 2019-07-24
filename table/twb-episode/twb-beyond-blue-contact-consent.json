@@ -1,5 +1,5 @@
 {
-  "@id": "table/twb-episode/twb-consent-type.json",
+  "@id": "table/twb-episode/twb-beyond-blue-contact-consent.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",

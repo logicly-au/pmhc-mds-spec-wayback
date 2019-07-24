@@ -1,0 +1,99 @@
+{
+  "@id": "twb-critical-incident-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_critical_incident_key",
+    "titles": [ "twb_critical_incident_key" ],
+    "dc:title": "TWB Critical Incident Key",
+    "schema:description": "This is a number or code assigned to each critical incident. The Critical Incident Key is unique and stable for each Critical Incident at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/twb-critical-incident/key.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "episode_key",
+    "titles": [ "episode_key" ],
+    "dc:title": "Episode Key",
+    "schema:description": "This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.",
+    "schema:disambiguatingDescription": "table/episode/key.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateModified": "2016-07-08",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "twb_critical_incident_type",
+    "titles": [ "twb_critical_incident_type" ],
+    "dc:title": "TWB Critical Incident - Type",
+    "schema:description": "The type of critical incident.",
+    "schema:disambiguatingDescription": "table/twb-critical-incident/type.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_critical_incident_date",
+    "titles": [ "twb_critical_incident_date" ],
+    "dc:title": "TWB Critical Incident - Date",
+    "schema:description": "The date of the critical incident.",
+    "schema:disambiguatingDescription": "table/twb-critical-incident/twb-critical-incident-date.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "twb_critical_incident_tags",
+    "titles": [ "twb_critical_incident_tags" ],
+    "dc:title" : "TWB Critical Incident - Tags",
+    "schema:description": "List of tags for the TWB Critical Incident.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+      }
+  }],
+  "primaryKey": [ "organisation_path", "twb_critical_incident_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path", "episode_key" ],
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
+    }
+  }, {
+    "columnReference": "twb_critical_incident_type",
+    "reference": {
+      "resource": "table/twb-critical-incident/type.csv",
+      "columnReference": "id"
+    }
+  }]
+}

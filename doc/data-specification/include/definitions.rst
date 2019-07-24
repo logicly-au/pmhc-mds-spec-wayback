@@ -617,24 +617,6 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 
 ----------
 
-.. _dfn-service_contact_key:
-
-Service Contact Key
-^^^^^^^^^^^^^^^^^^^
-
-This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.
-
-:Field name: service_contact_key
-
-:Data type: string (2,50)
-
-:Required: yes
-:Notes:
-  Service contact keys are case sensitive and must be valid unicode characters.
-  
-
-----------
-
 .. _dfn-sidas_item1:
 
 SIDAS - Question 1
@@ -768,51 +750,16 @@ List of tags for the collection occasion.
 
 ----------
 
-.. _dfn-twb_consent_type:
+.. _dfn-twb_critical_incident_date:
 
-TWB Episode - Consent Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+TWB Critical Incident - Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The status of whether the client has consented to participate in The Way Back.
+The date of the critical incident.
 
-:Field name: twb_consent_type
+:Field name: twb_critical_incident_date
 
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Consented to participate in The Way Back
-  :2: Declined to participate - already linked in to a support service
-  :3: Declined to participate - does not wish to be supported
-  :4: Declined to participate at this time but consented to be contacted at a later time to review/reconsider participation
-  :5: Unsuitable for participation due to Language barriers
-  :98: Other
-  :99: Not stated/Inadequately described
-:Notes:
-  **Reporting requirements**
-  Mandatory – All clients
-  
-  **Guide for use**
-  A client may decline to participate in The Way Back Support Service but agree to be contacted in the future to reconsider their participation.
-  
-  **Purpose/context**
-  Program monitoring, service planning.
-  Understanding service demand and presenting client profile.
-  
-
-----------
-
-.. _dfn-twb_critical_incident_datetime:
-
-TWB Episode - Critical Incident Date Time
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The date and time the service was advised of a critical incident.
-
-:Field name: twb_critical_incident_datetime
-
-:Data type: datetime
+:Data type: date
 
 :Required: yes
 :Notes:
@@ -829,12 +776,40 @@ The date and time the service was advised of a critical incident.
 
 ----------
 
+.. _dfn-twb_critical_incident_tags:
+
+TWB Critical Incident - Tags
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+List of tags for the TWB Critical Incident.
+
+:Field name: twb_critical_incident_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
 .. _dfn-twb_critical_incident_type:
 
-TWB Episode - Critical Incident Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TWB Critical Incident - Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The type of critical incident reported by the service provider.
+The type of critical incident.
 
 :Field name: twb_critical_incident_type
 
@@ -857,6 +832,25 @@ The type of critical incident reported by the service provider.
   
   **Purpose/context**
   Program monitoring, service planning, funding and accountability.
+  
+
+----------
+
+.. _dfn-twb_critical_incident_key:
+
+TWB Critical Incident Key
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each critical incident. The Critical Incident Key is unique and stable for each Critical Incident at the level of the organisation.
+
+:Field name: twb_critical_incident_key
+
+:Data type: string (2,50)
+
+:Required: yes
+:Notes:
+  TWB Critical Incident keys are case sensitive and must be
+  valid unicode characters.
   
 
 ----------
@@ -894,14 +888,14 @@ The criteria by which the client is eligible for service.
 
 ----------
 
-.. _dfn-twb_other_consent_type:
+.. _dfn-twb_external_evaluator_contact_consent:
 
-TWB Episode - Other Consent Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TWB Episode - External Evaluator Contact Consent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The status of whether the client has consented to contacted.
+The status of whether the client has consented to be contacted by external evaluators.
 
-:Field name: twb_other_consent_type
+:Field name: twb_external_evaluator_contact_consent
 
 :Data type: string
 
@@ -909,17 +903,46 @@ The status of whether the client has consented to contacted.
 
 :Domain:
   :1: Consented to to be contacted by external evaluators
-  :2: Not consented to be contactd by external evaluators
-  :3: Consented to be contacted by Beyond Blue for the purposes of sharing my experience
-  :4: Not consented to be contacted by Beyond Blue for the purposes of sharing my experience
-  :5: Unsuitable for participation due to Language barriers
+  :2: Not consented to be contacted by external evaluators
   :99: Not stated/Inadequately described
 :Notes:
   **Reporting requirements**
   Mandatory – All clients
   
   **Guide for use**
-  A client may decline to participate in external evaluations or contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.
+  A client may decline to participate in external evaluations for the purpose of sharing experiences. This does not effect their eligibility for the service.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  Understanding service demand and presenting client profile.
+  
+
+----------
+
+.. _dfn-twb_beyond_blue_contact_consent:
+
+TWB Episode - Other Consent Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The status of whether the client has consented to be contacted by Beyond Blue.
+
+:Field name: twb_beyond_blue_contact_consent
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Consented to be contacted by Beyond Blue for the purposes of sharing my experience
+  :2: Not consented to be contacted by Beyond Blue for the purposes of sharing my experience
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory – All clients
+  
+  **Guide for use**
+  A client may decline to participate in contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.
+  
   **Purpose/context**
   Program monitoring, service planning.
   Understanding service demand and presenting client profile.
@@ -966,35 +989,6 @@ The primary nominated professional of the client for contact regarding participa
   
   **Purpose/context**
   Program monitoring, service planning.
-  
-
-----------
-
-.. _dfn-twb_primary_nominated_professional_date:
-
-TWB Episode - Primary Nominated Professional Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The date of service contact between a service provider and the clients primary nominated professional.
-
-:Field name: twb_primary_nominated_professional_date
-
-:Data type: date
-
-:Required: yes
-:Notes:
-  **Reporting requirements**
-  Mandatory where Episode—Primary Nominated Professional =  1 -12
-  
-  **Guide for use**
-  Requires services to record the date of each contact with the primary nominated professional identified by the client.
-  At a minimum written advice (email or letter) advising of the client’s participation in The Way Back Support Service must be sent to the primary nominated professional on commencement of the service and at service end.
-  The contact date is the date of the service provider initiates or responds to a communication with the primary nominated professional.
-  
-  **Does this imply that there can be multiple dates per episode? If so we need another record**
-  
-  **Purpose/context**
-  Program monitoring, service planning, funding and accountability.
   
 
 ----------
@@ -1261,6 +1255,107 @@ List of tags for the collection occasion.
 
 ----------
 
+.. _dfn-twb_pnpc_date:
+
+TWB PNPC - Date
+^^^^^^^^^^^^^^^
+
+The date of contact between a service provider and the clients primary nominated professional.
+
+:Field name: twb_pnpc_date
+
+:Data type: date
+
+:Required: yes
+:Notes:
+  **Reporting requirements**
+  Mandatory where Episode—Primary Nominated Professional =  1 - 12
+  
+  **Guide for use**
+  Requires services to record the date of each contact with the primary nominated professional identified by the client.
+  At a minimum written advice (email or letter) advising of the client’s participation in The Way Back Support Service must be sent to the primary nominated professional on commencement of the service and at service end.
+  The contact date is the date of the service provider initiates or responds to a communication with the primary nominated professional.
+  
+  **Does this imply that there can be multiple dates per episode? If so we need another record**
+  
+  **Purpose/context**
+  Program monitoring, service planning, funding and accountability.
+  
+
+----------
+
+.. _dfn-twb_pnpc_reason:
+
+TWB PNPC - Reason
+^^^^^^^^^^^^^^^^^
+
+The reason for the contact.
+
+:Field name: twb_pnpc_reason
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Entry
+  :2: Exit
+:Notes:
+  1 - Entry
+    Refers to a contact with the Primary Nominated Professional at entry to TWS.
+  2 - Exit
+    Refers to a contact with the Primary Nominated Professional at exit from TWS.
+  
+
+----------
+
+.. _dfn-twb_pnpc_tags:
+
+TWB PNPC - Tags
+^^^^^^^^^^^^^^^
+
+List of tags for the TWB PNPC.
+
+:Field name: twb_pnpc_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-twb_pnpc_key:
+
+TWB Primary Nominated Professional Contact Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a number or code assigned to each primary nominated professional contact. The Primary Nominated Professional Contact Key is unique and stable for each Primary Nominated Professional Contact at the level of the organisation.
+
+:Field name: twb_pnpc_key
+
+:Data type: string (2,50)
+
+:Required: yes
+:Notes:
+  Primary Nominated Professional Contact keys are case sensitive and must be
+  valid unicode characters.
+  
+
+----------
+
 .. _dfn-twb_referral_out_date:
 
 TWB Referral Out - Date
@@ -1451,33 +1546,6 @@ The metadata value.
 :Data type: string
 
 :Required: yes
-
-----------
-
-.. _dfn-who5_percentage_score:
-
-WHO-5 - Percentage Score
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-The WHO-5 percentage score.
-
-:Field name: who5_percentage_score
-
-:Data type: integer
-
-:Required: yes
-
-:Domain:
-  0 - 100, 999 = Not stated / Missing
-:Notes:
-  To obtain a WHO-5 percentage score ranging from 0 to 100, the raw score is
-  multiplied by 4. A percentage score of 0 represents
-  worst possible, whereas a score of 100 represents best possible quality of life.
-  
-  For the Percentage score, the missing value used should be 99.
-  
-  When reporting individual item scores use ‘99 - Not stated / Missing’
-  
 
 ----------
 

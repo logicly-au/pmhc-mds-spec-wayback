@@ -1,0 +1,99 @@
+{
+  "@id": "twb-primary-nominated-professional-contact-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_pnpc_key",
+    "titles": [ "twb_pnpc_key" ],
+    "dc:title": "TWB Primary Nominated Professional Contact Key",
+    "schema:description": "This is a number or code assigned to each primary nominated professional contact. The Primary Nominated Professional Contact Key is unique and stable for each Primary Nominated Professional Contact at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/twb-pnpc/key.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "episode_key",
+    "titles": [ "episode_key" ],
+    "dc:title": "Episode Key",
+    "schema:description": "This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.",
+    "schema:disambiguatingDescription": "table/episode/key.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateModified": "2016-07-08",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "twb_pnpc_reason",
+    "titles": [ "twb_pnpc_reason" ],
+    "dc:title": "TWB PNPC - Reason",
+    "schema:description": "The reason for the contact.",
+    "schema:disambiguatingDescription": "table/twb-pnpc/reason.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_pnpc_date",
+    "titles": [ "twb_pnpc_date" ],
+    "dc:title": "TWB PNPC - Date",
+    "schema:description": "The date of contact between a service provider and the clients primary nominated professional.",
+    "schema:disambiguatingDescription": "table/twb-pnpc/twb-pnpc-date.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "twb_pnpc_tags",
+    "titles": [ "twb_pnpc_tags" ],
+    "dc:title" : "TWB PNPC - Tags",
+    "schema:description": "List of tags for the TWB PNPC.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+      }
+  }],
+  "primaryKey": [ "organisation_path", "twb_pnpc_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path", "episode_key" ],
+    "reference": {
+      "resource": "data/episodes.csv",
+      "columnReference": [ "organisation_path", "episode_key" ]
+    }
+  }, {
+    "columnReference": "twb_pnpc_reason",
+    "reference": {
+      "resource": "table/twb-pnpc/reason.csv",
+      "columnReference": "id"
+    }
+  }]
+}
