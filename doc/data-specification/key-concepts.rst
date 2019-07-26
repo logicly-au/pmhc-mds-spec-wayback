@@ -106,7 +106,7 @@ See :ref:`twb-episode-data-elements` for the data elements for TWB-Episode.
 Service Contact
 ---------------
 
-PMHC Service Contact data linked to an :ref:`key-concepts-twb-episode` will be used in TWB.
+PMHC Service Contact data linked to an :ref:`key-concepts-episode` will be used in TWB.
 
 .. _key-concepts-outcome-collection-occasion:
 
@@ -118,6 +118,10 @@ the required outcome measure is to be collected. At a minimum, collection of
 outcome data is required at both Episode Start and Episode End, but may be more
 frequent if clinically indicated and agreed by the client.
 
-The required TWB measure will be the :ref:`sidas-data-elements`.
+TWB will use the following measures:
 
-See :ref:`outcome-collection-occasion-data-elements` data elements for TWB Individual Services.
+* :ref:`who5-data-elements`
+* :ref:`sidas-data-elements`
+* :ref:`mspss-data-elements`
+
+See :ref:`outcome-collection-occasion-data-elements` data elements.

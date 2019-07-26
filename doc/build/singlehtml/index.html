@@ -135,6 +135,23 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-resources/index">Resources</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-resources/resources">TWB Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#key-concepts">1. Key Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#specifications">2. Specifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#outcome-measures-and-scoring-rules">3. Outcome measures and scoring rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#primary-mental-health-care-minimum-data-set">4. Primary Mental Health Care Minimum Data Set</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-faqs/index">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-faqs/PMHC-FAQs">PMHC FAQs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-faqs/help-desk">Getting Help</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#pmhc-mds-helpdesk">PMHC MDS Helpdesk</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#document-faqs/change-log">Frequently Asked Questions Change log</a></li>
+</ul>
+</li>
 </ul>
 </div>
             
@@ -315,7 +332,7 @@ person re-presents to the organisation.</p>
 </div>
 <div class="section" id="service-contact">
 <span id="key-concepts-service-contact"></span><h4>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h4>
-<p>PMHC Service Contact data linked to an <a class="reference internal" href="#key-concepts-twb-episode"><span class="std std-ref">TWB-Episode</span></a> will be used in TWB.</p>
+<p>PMHC Service Contact data linked to an <a class="reference internal" href="#key-concepts-episode"><span class="std std-ref">Episode</span></a> will be used in TWB.</p>
 </div>
 <div class="section" id="outcome-collection-occasion">
 <span id="key-concepts-outcome-collection-occasion"></span><h4>Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion" title="Permalink to this headline">¶</a></h4>
@@ -323,8 +340,13 @@ person re-presents to the organisation.</p>
 the required outcome measure is to be collected. At a minimum, collection of
 outcome data is required at both Episode Start and Episode End, but may be more
 frequent if clinically indicated and agreed by the client.</p>
-<p>The required TWB measure will be the <a class="reference internal" href="index.html#sidas-data-elements"><span class="std std-ref">SIDAS Outcome Collection Occasion</span></a>.</p>
-<p>See <a class="reference internal" href="index.html#outcome-collection-occasion-data-elements"><span class="std std-ref">- Collection Occasion Data Elements</span></a> data elements for TWB Individual Services.</p>
+<p>TWB will use the following measures:</p>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#who5-data-elements"><span class="std std-ref">WHO-5 Outcome Collection Occasion</span></a></li>
+<li><a class="reference internal" href="index.html#sidas-data-elements"><span class="std std-ref">SIDAS Outcome Collection Occasion</span></a></li>
+<li><a class="reference internal" href="index.html#mspss-data-elements"><span class="std std-ref">MSPSS Outcome Collection Occasion</span></a></li>
+</ul>
+<p>See <a class="reference internal" href="index.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Collection Occasion Data Elements</span></a> data elements.</p>
 </div>
 </div>
 <span id="document-data-specification/identifier-management"></span><div class="section" id="identifier-management">
@@ -347,8 +369,6 @@ each item when uploading/entering data. These keys will be created and managed b
 the Provider Organisation.</p>
 <p>Where data is being exported from client systems, these keys can be auto generated,
 providing that a key does not change once it is assigned.</p>
-<p>Where data is being manually entered, please see <span class="xref std std-ref">Data Entry - Manual Identifier Management</span>
-for more information on creating and managing unique keys.</p>
 </div>
 <div class="section" id="managing-pmhc-mds-episode-key">
 <h4>Managing PMHC MDS Episode Key<a class="headerlink" href="#managing-pmhc-mds-episode-key" title="Permalink to this headline">¶</a></h4>
@@ -362,16 +382,16 @@ adding/updating/deleting each item when uploading/entering TWB data.</p>
 </ul>
 </dd>
 </dl>
-<p>To see more information on how to link TWB Episode data to the PMHC Episode data,
-please see the ‘Submitting Individual Services Data’ under <span class="xref std std-ref">data-collection-individual</span></p>
 </div>
 <div class="section" id="identifying-twb-episode-data-records">
 <h4>Identifying TWB-Episode data records<a class="headerlink" href="#identifying-twb-episode-data-records" title="Permalink to this headline">¶</a></h4>
-<p>To enable the PMHC MDS to add an TWB-Episode record to a PMHC Episode, the ‘<strong>!wayback</strong>’
+<p>To enable the PMHC MDS to add a TWB-Episode record to a PMHC Episode, the ‘<strong>!wayback</strong>’
 tag must be included on the ‘Tags’ field of all TWB-Episode data records. If not
 included, the system will automatically include it.</p>
-<p>For users inputting data through the PMHC-MDS data entry interface adding this tag will enable the additional TWB specific data entry elements.</p>
-<p>For users uploading data where the tag is not included but the upload includes the additional TWB fields, the system will automatically add the tag.</p>
+<p>For users inputting data through the PMHC-MDS data entry interface adding this
+tag will enable the additional TWB specific data entry elements.</p>
+<p>For users uploading data where the tag is not included but the upload includes
+the additional TWB fields, the system will automatically add the tag.</p>
 </div>
 </div>
 <span id="document-data-specification/data-model-and-specifications"></span><div class="section" id="data-model-and-specifications">
@@ -400,11 +420,11 @@ Collection Occasion records fit into the overall structure.</p>
 <li>See <a class="reference internal" href="#twb-pnpc-data-elements"><span class="std std-ref">TWB-Primary Nominated Professional Contact data specifications</span></a> for Primary Nominated Professional Contact Data.</li>
 <li>See <a class="reference internal" href="#twb-critical-incident-data-elements"><span class="std std-ref">TWB-Critical Incident data specifications</span></a> for Critical Incident Data.</li>
 <li>See <a class="reference internal" href="#twb-referral-out-data-elements"><span class="std std-ref">TWB-Referral Out data specifications</span></a> for Referral Out Data.</li>
-<li>See <a class="reference internal" href="#twb-plan-data-elements"><span class="std std-ref">TWB-Plan Outcome Collection Occasion data specifications</span></a> for Individual Services Data.</li>
-<li>See <a class="reference internal" href="#twb-ini-data-elements"><span class="std std-ref">TWB-INI Outcome Collection Occasion data specifications</span></a> for Individual Services Data.</li>
-<li>See <a class="reference internal" href="#who5-data-elements"><span class="std std-ref">WHO-5 Outcome Collection Occasion data specifications</span></a> for Individual Services Data.</li>
-<li>See <a class="reference internal" href="#sidas-data-elements"><span class="std std-ref">SIDAS Outcome Collection Occasion data specifications</span></a> for Individual Services Data.</li>
-<li>See <a class="reference internal" href="#mspss-data-elements"><span class="std std-ref">MSPSS Outcome Collection Occasion data specifications</span></a> for Individual Services Data.</li>
+<li>See <a class="reference internal" href="#twb-plan-data-elements"><span class="std std-ref">TWB-Plan Outcome Collection Occasion data specifications</span></a> for Planning Data.</li>
+<li>See <a class="reference internal" href="#twb-ini-data-elements"><span class="std std-ref">TWB-INI Outcome Collection Occasion data specifications</span></a>.</li>
+<li>See <a class="reference internal" href="#who5-data-elements"><span class="std std-ref">WHO-5 Outcome Collection Occasion data specifications</span></a>.</li>
+<li>See <a class="reference internal" href="#sidas-data-elements"><span class="std std-ref">SIDAS Outcome Collection Occasion data specifications</span></a>.</li>
+<li>See <a class="reference internal" href="#mspss-data-elements"><span class="std std-ref">MSPSS Outcome Collection Occasion data specifications</span></a>.</li>
 </ul>
 <div class="section" id="episode-data-elements">
 <span id="id3"></span><h5>Episode Data Elements<a class="headerlink" href="#episode-data-elements" title="Permalink to this headline">¶</a></h5>
@@ -516,7 +536,7 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-episode-other-consent-type">TWB Episode - Other Consent Type</a> (twb_beyond_blue_contact_consent)</td>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-beyond-blue-contact-consent">TWB Episode - Beyond Blue Contact Consent</a> (twb_beyond_blue_contact_consent)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
@@ -892,7 +912,7 @@ Collection Occasion records fit into the overall structure.</p>
 </div>
 </div>
 <div class="section" id="collection-occasion-data-elements">
-<span id="outcome-collection-occasion-data-elements"></span><h5><cite>-</cite> Collection Occasion Data Elements<a class="headerlink" href="#collection-occasion-data-elements" title="Permalink to this headline">¶</a></h5>
+<span id="outcome-collection-occasion-data-elements"></span><h5>Collection Occasion Data Elements<a class="headerlink" href="#collection-occasion-data-elements" title="Permalink to this headline">¶</a></h5>
 <p>See <a class="reference internal" href="index.html#key-concepts-outcome-collection-occasion"><span class="std std-ref">Outcome Collection Occasion</span></a> for definition of an outcome
 collection occasion.</p>
 <p>Outcome collection occasions are managed by the provider organisations via upload or data entry.</p>
@@ -1834,7 +1854,7 @@ following table:</p>
 <td>wayback</td>
 </tr>
 <tr class="row-odd"><td>version</td>
-<td>2</td>
+<td>2.0</td>
 </tr>
 </tbody>
 </table>
@@ -3025,6 +3045,49 @@ valid unicode characters.</td>
 </table>
 <hr class="docutils" />
 </div>
+<div class="section" id="twb-episode-beyond-blue-contact-consent">
+<span id="dfn-twb-beyond-blue-contact-consent"></span><h5>TWB Episode - Beyond Blue Contact Consent<a class="headerlink" href="#twb-episode-beyond-blue-contact-consent" title="Permalink to this headline">¶</a></h5>
+<p>The status of whether the client has consented to be contacted by Beyond Blue.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_beyond_blue_contact_consent</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Consented to be contacted by Beyond Blue for the purposes of sharing my experience</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Not consented to be contacted by Beyond Blue for the purposes of sharing my experience</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
+Mandatory – All clients</p>
+<p><strong>Guide for use</strong>
+A client may decline to participate in contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.</p>
+<p class="last"><strong>Purpose/context</strong>
+Program monitoring, service planning.
+Understanding service demand and presenting client profile.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
 <div class="section" id="twb-episode-eligibility-type">
 <span id="dfn-twb-eligibility-type"></span><h5>TWB Episode - Eligibility Type<a class="headerlink" href="#twb-episode-eligibility-type" title="Permalink to this headline">¶</a></h5>
 <p>The criteria by which the client is eligible for service.</p>
@@ -3106,49 +3169,6 @@ Understanding service demand and presenting client profile.</p>
 Mandatory – All clients</p>
 <p><strong>Guide for use</strong>
 A client may decline to participate in external evaluations for the purpose of sharing experiences. This does not effect their eligibility for the service.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning.
-Understanding service demand and presenting client profile.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
-<div class="section" id="twb-episode-other-consent-type">
-<span id="dfn-twb-beyond-blue-contact-consent"></span><h5>TWB Episode - Other Consent Type<a class="headerlink" href="#twb-episode-other-consent-type" title="Permalink to this headline">¶</a></h5>
-<p>The status of whether the client has consented to be contacted by Beyond Blue.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_beyond_blue_contact_consent</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Consented to be contacted by Beyond Blue for the purposes of sharing my experience</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Not consented to be contacted by Beyond Blue for the purposes of sharing my experience</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
-Mandatory – All clients</p>
-<p><strong>Guide for use</strong>
-A client may decline to participate in contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.</p>
 <p class="last"><strong>Purpose/context</strong>
 Program monitoring, service planning.
 Understanding service demand and presenting client profile.</p>
@@ -3456,11 +3476,13 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
 Mandatory where Episode—TWB Consent type =1</p>
-<p class="last">The Initial Needs Identification (INI) is a screening process where the underlying issues as well as the presenting issues are uncovered to the extent possible. It is not a diagnostic process but is a determination of the client’s risk, eligibility and priority for service, a balancing for the service capacity and client needs
-Needs identification can occur via phone, face-to-face interaction or written survey intervention. However, Needs Identification is ongoing and as a client receives care, other needs or circumstances may be identified which require attention by other disciplines. External referral or re-entry onto the waiting list to access the other disciplines may then occur. This question allows for more than one response. The INI must be administered at a minimum at the following points of service participation:
-* At the start of The Way Back
-* At the six-week or mid-point of the expected support period
-* At exit from the service</p>
+<p>The Initial Needs Identification (INI) is a screening process where the underlying issues as well as the presenting issues are uncovered to the extent possible. It is not a diagnostic process but is a determination of the client’s risk, eligibility and priority for service, a balancing for the service capacity and client needs
+Needs identification can occur via phone, face-to-face interaction or written survey intervention. However, Needs Identification is ongoing and as a client receives care, other needs or circumstances may be identified which require attention by other disciplines. External referral or re-entry onto the waiting list to access the other disciplines may then occur. This question allows for more than one response. The INI must be administered at a minimum at the following points of service participation:</p>
+<ul class="last simple">
+<li>At the start of The Way Back</li>
+<li>At the six-week or mid-point of the expected support period</li>
+<li>At exit from the service</li>
+</ul>
 </td>
 </tr>
 </tbody>
@@ -3501,26 +3523,18 @@ Where clients referred to The Way Back have not completed any safety planning pr
 <p>Safety plans should be reviewed with a client as needed. Each instance of the review and update of a safety plan should be recorded.</p>
 <p><strong>2 - Support Plan</strong>
 Mandatory when Episode TWB consent type = 1</p>
-<p>All Way Back service providers must work with their clients to collaboratively develop a support plan that articulates:
-* The client’s needs based on the INI
-* The client’s goals in response to needs identified
-* Proposed actions, referrals and interventions</p>
-<p>The support plan must be reviewed on a regular basis and at a minimum at the following points of service participation:
-* At the start of The Way Back
-* At the six-week or mid-point of the expected support period
-* At exit from the service</p>
-<p>Plan – initial support plan date cannot be in the future
-Plan — initial support plan date cannot be before client – date of birth
-Plan — initial support plan date cannot be after Service – support plan review date
-Plan — initial support plan date cannot be before the service -  initial contact date
-Plan — initial support plan date cannot be before the Service - initial needs identification date
-Plan — initial support plan date cannot be before the service -  start date contact date
-Plan — initial support plan date cannot be after Service – Service end date</p>
-<p class="last">Plan – support plan review date cannot be in the future
-Plan – support plan review date cannot be before client – date of birth
-Plan – support plan review date cannot be before  Service – Initial support plan date
-Plan – support plan review date cannot be before the service -  initial contact date
-Plan - support plan review date cannot be after Service – Service end date</p>
+<p>All Way Back service providers must work with their clients to collaboratively develop a support plan that articulates:</p>
+<ul class="simple">
+<li>The client’s needs based on the INI</li>
+<li>The client’s goals in response to needs identified</li>
+<li>Proposed actions, referrals and interventions</li>
+</ul>
+<p>The support plan must be reviewed on a regular basis and at a minimum at the following points of service participation:</p>
+<ul class="last simple">
+<li>At the start of The Way Back</li>
+<li>At the six-week or mid-point of the expected support period</li>
+<li>At exit from the service</li>
+</ul>
 </td>
 </tr>
 </tbody>
@@ -3579,7 +3593,6 @@ Mandatory where Episode—Primary Nominated Professional =  1 - 12</p>
 Requires services to record the date of each contact with the primary nominated professional identified by the client.
 At a minimum written advice (email or letter) advising of the client’s participation in The Way Back Support Service must be sent to the primary nominated professional on commencement of the service and at service end.
 The contact date is the date of the service provider initiates or responds to a communication with the primary nominated professional.</p>
-<p><strong>Does this imply that there can be multiple dates per episode? If so we need another record</strong></p>
 <p class="last"><strong>Purpose/context</strong>
 Program monitoring, service planning, funding and accountability.</p>
 </td>
@@ -4289,7 +4302,7 @@ for each format described <a class="reference internal" href="#twb-files-to-uplo
 <div class="section" id="files-or-worksheets-to-upload">
 <span id="twb-files-to-upload"></span><h4>Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this headline">¶</a></h4>
 <p>The TWB upload format is  aligned with the
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2 upload format</a>.</p>
+<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2.0 upload format</a>.</p>
 <p>TWB files/worksheets can be uploaded to the PMHC MDS in one of two ways:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#upload-option-a"><span class="std std-ref">Option A: TWB data files only</span></a> - Option A is
@@ -4381,7 +4394,7 @@ the column headings. The columns must be kept in the same order.</li>
 <td>value</td>
 </tr>
 <tr class="row-even"><td>type</td>
-<td>WAYBACK</td>
+<td>wayback</td>
 </tr>
 <tr class="row-odd"><td>version</td>
 <td>2.0</td>
@@ -4518,7 +4531,14 @@ at <a class="reference external" href="https://docs.pmhc-mds.com/data-specificat
 <ul class="simple">
 <li>Records of the following type can be deleted via upload:<ul>
 <li>TWB Episode</li>
+<li>TWB Primary Nominated Professional Contact</li>
+<li>TWB Critical Incident</li>
+<li>TWB Referral Out</li>
+<li>TWB Plan</li>
+<li>TWB INI</li>
+<li>WHO-5</li>
 <li>SIDAS</li>
+<li>MSPSS</li>
 </ul>
 </li>
 <li>An extra optional “delete” column can be added to each of the supported
@@ -4564,8 +4584,21 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <li><code class="docutils literal"><span class="pre">!wayback</span></code> tag should be included in the <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags">Episode - Tags</a> field of the corresponding PMHC episode, otherwise the system will automatically include it.</li>
 </ol>
 </div>
+<div class="section" id="twb-plan">
+<span id="twb-plan-current-validations"></span><h5>3. TWB-Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h5>
+<ol class="arabic simple">
+<li><a class="reference internal" href="index.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be
+before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a>.</li>
+<li><a class="reference internal" href="index.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be
+after <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date">Episode - End Date</a>.</li>
+<li><a class="reference internal" href="index.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be
+before 1 January 2016 and must not be in the future</li>
+<li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC
+MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB-Episode</span></a> data.</li>
+</ol>
+</div>
 <div class="section" id="sidas">
-<span id="sidas-twb-current-validations"></span><h5>3. SIDAS<a class="headerlink" href="#sidas" title="Permalink to this headline">¶</a></h5>
+<span id="sidas-twb-current-validations"></span><h5>4. SIDAS<a class="headerlink" href="#sidas" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic simple">
 <li><a class="reference internal" href="index.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a>.</li>
 <li><a class="reference internal" href="index.html#dfn-measure-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be after <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date">Episode - End Date</a>.</li>
@@ -4575,7 +4608,7 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 </div>
 </div>
 <div class="section" id="current-pmhc-validations">
-<span id="id3"></span><h4>Current PMHC Validations<a class="headerlink" href="#current-pmhc-validations" title="Permalink to this headline">¶</a></h4>
+<span id="id5"></span><h4>Current PMHC Validations<a class="headerlink" href="#current-pmhc-validations" title="Permalink to this headline">¶</a></h4>
 <p>TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
 the current PMHC MDS Validations rules may apply, depending on how you add your
 TWB data. The current PMHC MDS validations rules are available to be viewed at
@@ -4590,6 +4623,66 @@ TWB data. The current PMHC MDS validations rules are available to be viewed at
 <li>Initial release</li>
 </ul>
 </div>
+</div>
+</div>
+</div>
+<span id="document-resources/index"></span><div class="section" id="resources">
+<span id="resources-docs"></span><h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<p>The following resources have been provided to explain the purpose of the PMHC MDS,
+to describe all NSPT data collection and file formats required to submit NSPT data.</p>
+<div class="toctree-wrapper compound">
+<span id="document-resources/resources"></span><div class="section" id="twb-resources">
+<span id="id1"></span><h3>TWB Resources<a class="headerlink" href="#twb-resources" title="Permalink to this headline">¶</a></h3>
+<p>The following resources have been provided to explain the purpose of the PMHC MDS,
+to describe all TWB data collection and file formats required to submit TWB data.</p>
+</div>
+<div class="section" id="key-concepts">
+<h3>1. Key Concepts<a class="headerlink" href="#key-concepts" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="index.html#key-concepts"><span class="std std-ref">Key Concepts</span></a> is a list of key words that are commonly used within the
+PMHC MDS and their definitions.</p>
+</div>
+<div class="section" id="specifications">
+<h3>2. Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a> website defines what data items are
+collected in the TWB, what file formats are accepted for upload and associated
+reporting requirements.</p>
+</div>
+<div class="section" id="outcome-measures-and-scoring-rules">
+<h3>3. Outcome measures and scoring rules<a class="headerlink" href="#outcome-measures-and-scoring-rules" title="Permalink to this headline">¶</a></h3>
+<p>The following document provides an example of each of the TWB outcome measures and an
+explanation of how it is scored.</p>
+<ul class="simple">
+<li><a class="reference download internal" href="_downloads/PMHC MDS - Scoring SIDAS.pdf" download=""><code class="xref download docutils literal"><span class="pre">SIDAS</span> <span class="pre">Collection</span> <span class="pre">Occasion</span> <span class="pre">PDF</span></code></a></li>
+</ul>
+</div>
+<div class="section" id="primary-mental-health-care-minimum-data-set">
+<h3>4. Primary Mental Health Care Minimum Data Set<a class="headerlink" href="#primary-mental-health-care-minimum-data-set" title="Permalink to this headline">¶</a></h3>
+<p>TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
+the PMHC MDS information is available to be viewed at <a class="reference external" href="https://pmhc-mds.com">https://pmhc-mds.com</a>.</p>
+</div>
+</div>
+</div>
+<span id="document-faqs/index"></span><div class="section" id="frequently-asked-questions">
+<span id="twb-faqs"></span><h2>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-faqs/PMHC-FAQs"></span><div class="section" id="pmhc-faqs">
+<span id="id1"></span><h3>PMHC FAQs<a class="headerlink" href="#pmhc-faqs" title="Permalink to this headline">¶</a></h3>
+<p>As the TWB is an extension of the Primary Mental Health Care Minimum Data Set
+(PMHC MDS), the current PMHC MDS Frequently Asked Questions (FAQs) are available
+to be viewed at <a class="reference external" href="https://docs.pmhc-mds.com/faqs/index.html">https://docs.pmhc-mds.com/faqs/index.html</a>.</p>
+</div>
+<span id="document-faqs/help-desk"></span><div class="section" id="getting-help">
+<span id="getting-help-faqs"></span><h3>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="pmhc-mds-helpdesk">
+<span id="helpdesk-faqs"></span><h4>PMHC MDS Helpdesk<a class="headerlink" href="#pmhc-mds-helpdesk" title="Permalink to this headline">¶</a></h4>
+<p>Strategic Data offers a dedicated <strong>Helpdesk</strong> which is available to support
+Primary Health Networks and Provider Organisations implementing NSPT in relation
+to the PMHC minimum dataset system (MDS).</p>
+<p>All MDS enquiries should be directed to <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+</div>
+</div>
+<span id="document-faqs/change-log"></span><div class="section" id="frequently-asked-questions-change-log">
+<span id="faq-changelog"></span><h3>Frequently Asked Questions Change log<a class="headerlink" href="#frequently-asked-questions-change-log" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>

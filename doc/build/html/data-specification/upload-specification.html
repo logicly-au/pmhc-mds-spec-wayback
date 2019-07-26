@@ -132,6 +132,8 @@
 <li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/index.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">Frequently Asked Questions</a></li>
 </ul>
 
             
@@ -239,7 +241,7 @@ for each format described <a class="reference internal" href="#twb-files-to-uplo
 <div class="section" id="files-or-worksheets-to-upload">
 <span id="twb-files-to-upload"></span><h2>Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this headline">¶</a></h2>
 <p>The TWB upload format is  aligned with the
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2 upload format</a>.</p>
+<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2.0 upload format</a>.</p>
 <p>TWB files/worksheets can be uploaded to the PMHC MDS in one of two ways:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#upload-option-a"><span class="std std-ref">Option A: TWB data files only</span></a> - Option A is
@@ -331,7 +333,7 @@ the column headings. The columns must be kept in the same order.</li>
 <td>value</td>
 </tr>
 <tr class="row-even"><td>type</td>
-<td>WAYBACK</td>
+<td>wayback</td>
 </tr>
 <tr class="row-odd"><td>version</td>
 <td>2.0</td>
@@ -468,7 +470,14 @@ at <a class="reference external" href="https://docs.pmhc-mds.com/data-specificat
 <ul class="simple">
 <li>Records of the following type can be deleted via upload:<ul>
 <li>TWB Episode</li>
+<li>TWB Primary Nominated Professional Contact</li>
+<li>TWB Critical Incident</li>
+<li>TWB Referral Out</li>
+<li>TWB Plan</li>
+<li>TWB INI</li>
+<li>WHO-5</li>
 <li>SIDAS</li>
+<li>MSPSS</li>
 </ul>
 </li>
 <li>An extra optional “delete” column can be added to each of the supported

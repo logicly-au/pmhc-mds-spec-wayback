@@ -44,11 +44,11 @@ The Way Back adds the following records on top of PMHC MDS current specification
 - See :ref:`TWB-Primary Nominated Professional Contact data specifications <twb-pnpc-data-elements>` for Primary Nominated Professional Contact Data.
 - See :ref:`TWB-Critical Incident data specifications <twb-critical-incident-data-elements>` for Critical Incident Data.
 - See :ref:`TWB-Referral Out data specifications <twb-referral-out-data-elements>` for Referral Out Data.
-- See :ref:`TWB-Plan Outcome Collection Occasion data specifications <twb-plan-data-elements>` for Individual Services Data.
-- See :ref:`TWB-INI Outcome Collection Occasion data specifications <twb-ini-data-elements>` for Individual Services Data.
-- See :ref:`WHO-5 Outcome Collection Occasion data specifications <who5-data-elements>` for Individual Services Data.
-- See :ref:`SIDAS Outcome Collection Occasion data specifications <sidas-data-elements>` for Individual Services Data.
-- See :ref:`MSPSS Outcome Collection Occasion data specifications <mspss-data-elements>` for Individual Services Data.
+- See :ref:`TWB-Plan Outcome Collection Occasion data specifications <twb-plan-data-elements>` for Planning Data.
+- See :ref:`TWB-INI Outcome Collection Occasion data specifications <twb-ini-data-elements>`.
+- See :ref:`WHO-5 Outcome Collection Occasion data specifications <who5-data-elements>`.
+- See :ref:`SIDAS Outcome Collection Occasion data specifications <sidas-data-elements>`.
+- See :ref:`MSPSS Outcome Collection Occasion data specifications <mspss-data-elements>`.
 
 .. _episode-data-elements:
 
@@ -117,8 +117,8 @@ Referral Outs are managed by the provider organisations via upload or data entry
 
 .. _outcome-collection-occasion-data-elements:
 
-`-` Collection Occasion Data Elements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Collection Occasion Data Elements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See :ref:`key-concepts-outcome-collection-occasion` for definition of an outcome
 collection occasion.
@@ -202,7 +202,7 @@ following table:
 +--------------+------------+
 | type         | wayback    |
 +--------------+------------+
-| version      | 2          |
+| version      | 2.0        |
 +--------------+------------+
 
 .. _pmhc-data-elements:

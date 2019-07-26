@@ -855,6 +855,37 @@ This is a number or code assigned to each critical incident. The Critical Incide
 
 ----------
 
+.. _dfn-twb_beyond_blue_contact_consent:
+
+TWB Episode - Beyond Blue Contact Consent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The status of whether the client has consented to be contacted by Beyond Blue.
+
+:Field name: twb_beyond_blue_contact_consent
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Consented to be contacted by Beyond Blue for the purposes of sharing my experience
+  :2: Not consented to be contacted by Beyond Blue for the purposes of sharing my experience
+  :99: Not stated/Inadequately described
+:Notes:
+  **Reporting requirements**
+  Mandatory – All clients
+  
+  **Guide for use**
+  A client may decline to participate in contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  Understanding service demand and presenting client profile.
+  
+
+----------
+
 .. _dfn-twb_eligibility_type:
 
 TWB Episode - Eligibility Type
@@ -911,37 +942,6 @@ The status of whether the client has consented to be contacted by external evalu
   
   **Guide for use**
   A client may decline to participate in external evaluations for the purpose of sharing experiences. This does not effect their eligibility for the service.
-  
-  **Purpose/context**
-  Program monitoring, service planning.
-  Understanding service demand and presenting client profile.
-  
-
-----------
-
-.. _dfn-twb_beyond_blue_contact_consent:
-
-TWB Episode - Other Consent Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The status of whether the client has consented to be contacted by Beyond Blue.
-
-:Field name: twb_beyond_blue_contact_consent
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Consented to be contacted by Beyond Blue for the purposes of sharing my experience
-  :2: Not consented to be contacted by Beyond Blue for the purposes of sharing my experience
-  :99: Not stated/Inadequately described
-:Notes:
-  **Reporting requirements**
-  Mandatory – All clients
-  
-  **Guide for use**
-  A client may decline to participate in contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.
   
   **Purpose/context**
   Program monitoring, service planning.
@@ -1167,6 +1167,7 @@ The identified needs of the client at commencement or review of the service.
   
   The Initial Needs Identification (INI) is a screening process where the underlying issues as well as the presenting issues are uncovered to the extent possible. It is not a diagnostic process but is a determination of the client's risk, eligibility and priority for service, a balancing for the service capacity and client needs
   Needs identification can occur via phone, face-to-face interaction or written survey intervention. However, Needs Identification is ongoing and as a client receives care, other needs or circumstances may be identified which require attention by other disciplines. External referral or re-entry onto the waiting list to access the other disciplines may then occur. This question allows for more than one response. The INI must be administered at a minimum at the following points of service participation:
+  
   * At the start of The Way Back
   * At the six-week or mid-point of the expected support period
   * At exit from the service
@@ -1201,28 +1202,16 @@ The type of plan.
   Mandatory when Episode TWB consent type = 1
   
   All Way Back service providers must work with their clients to collaboratively develop a support plan that articulates:
+  
   * The client’s needs based on the INI
   * The client’s goals in response to needs identified
   * Proposed actions, referrals and interventions
   
   The support plan must be reviewed on a regular basis and at a minimum at the following points of service participation:
+  
   * At the start of The Way Back
   * At the six-week or mid-point of the expected support period
   * At exit from the service
-  
-  Plan – initial support plan date cannot be in the future
-  Plan — initial support plan date cannot be before client – date of birth
-  Plan — initial support plan date cannot be after Service – support plan review date
-  Plan — initial support plan date cannot be before the service -  initial contact date
-  Plan — initial support plan date cannot be before the Service - initial needs identification date
-  Plan — initial support plan date cannot be before the service -  start date contact date
-  Plan — initial support plan date cannot be after Service – Service end date
-  
-  Plan – support plan review date cannot be in the future
-  Plan – support plan review date cannot be before client – date of birth
-  Plan – support plan review date cannot be before  Service – Initial support plan date
-  Plan – support plan review date cannot be before the service -  initial contact date
-  Plan - support plan review date cannot be after Service – Service end date
   
 
 ----------
@@ -1275,8 +1264,6 @@ The date of contact between a service provider and the clients primary nominated
   Requires services to record the date of each contact with the primary nominated professional identified by the client.
   At a minimum written advice (email or letter) advising of the client’s participation in The Way Back Support Service must be sent to the primary nominated professional on commencement of the service and at service end.
   The contact date is the date of the service provider initiates or responds to a communication with the primary nominated professional.
-  
-  **Does this imply that there can be multiple dates per episode? If so we need another record**
   
   **Purpose/context**
   Program monitoring, service planning, funding and accountability.

@@ -26,9 +26,6 @@ the Provider Organisation.
 Where data is being exported from client systems, these keys can be auto generated,
 providing that a key does not change once it is assigned.
 
-Where data is being manually entered, please see :ref:`Data Entry - Manual Identifier Management <getting-started-data-entry-key-mangement>`
-for more information on creating and managing unique keys.
-
 Managing PMHC MDS Episode Key
 -----------------------------
 
@@ -39,16 +36,15 @@ adding/updating/deleting each item when uploading/entering TWB data.
 See below links for the specification requirements for these data elements:
  - :ref:`dfn-episode_key`
 
-To see more information on how to link TWB Episode data to the PMHC Episode data,
-please see the 'Submitting Individual Services Data' under :ref:`data-collection-individual`
-
 Identifying TWB-Episode data records
 ------------------------------------
 
-To enable the PMHC MDS to add an TWB-Episode record to a PMHC Episode, the '**!wayback**'
+To enable the PMHC MDS to add a TWB-Episode record to a PMHC Episode, the '**!wayback**'
 tag must be included on the 'Tags' field of all TWB-Episode data records. If not
 included, the system will automatically include it.
 
-For users inputting data through the PMHC-MDS data entry interface adding this tag will enable the additional TWB specific data entry elements.
+For users inputting data through the PMHC-MDS data entry interface adding this
+tag will enable the additional TWB specific data entry elements.
 
-For users uploading data where the tag is not included but the upload includes the additional TWB fields, the system will automatically add the tag.
+For users uploading data where the tag is not included but the upload includes
+the additional TWB fields, the system will automatically add the tag.

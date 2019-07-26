@@ -14,6 +14,8 @@ The Way Back Support Service Minimum Data Set and Dictionary
 
    * :ref:`twb-docs`
    * :ref:`data-docs`
+   * :ref:`resources-docs`
+   * :ref:`twb-faqs`
 
    .. The LINK TO THE PDF will only appear in the online HTML version
       (make.sh html) and not in PDF itself (or any other renderings)
@@ -39,3 +41,5 @@ The Way Back Support Service Minimum Data Set and Dictionary
 
    twb-docs/index
    data-specification/index
+   resources/index
+   faqs/index

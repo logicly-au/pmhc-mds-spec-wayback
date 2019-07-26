@@ -79,7 +79,7 @@
   },{
     "name": "twb_beyond_blue_contact_consent",
     "titles": [ "twb_beyond_blue_contact_consent" ],
-    "dc:title": "TWB Episode - Other Consent Type",
+    "dc:title": "TWB Episode - Beyond Blue Contact Consent",
     "schema:description": "The status of whether the client has consented to be contacted by Beyond Blue.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-beyond-blue-contact-consent.rst",
     "schema:dateCreated": "2019-07-05",

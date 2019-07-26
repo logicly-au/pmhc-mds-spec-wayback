@@ -48,7 +48,7 @@ Files or worksheets to upload
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The TWB upload format is  aligned with the
-`PMHC MDS Version 2 upload format <https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format>`_.
+`PMHC MDS Version 2.0 upload format <https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format>`_.
 
 TWB files/worksheets can be uploaded to the PMHC MDS in one of two ways:
 
@@ -138,7 +138,7 @@ i.e.:
 +--------------+------------+
 | key          | value      |
 +--------------+------------+
-| type         | WAYBACK    |
+| type         | wayback    |
 +--------------+------------+
 | version      | 2.0        |
 +--------------+------------+
@@ -319,7 +319,14 @@ Deleting records
 * Records of the following type can be deleted via upload:
 
   * TWB Episode
+  * TWB Primary Nominated Professional Contact
+  * TWB Critical Incident
+  * TWB Referral Out
+  * TWB Plan
+  * TWB INI
+  * WHO-5
   * SIDAS
+  * MSPSS
 
 * An extra optional "delete" column can be added to each of the supported
   upload files/worksheets.
