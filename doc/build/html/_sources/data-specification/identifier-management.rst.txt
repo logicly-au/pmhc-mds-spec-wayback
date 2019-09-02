@@ -7,17 +7,16 @@ TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS
 the current PMHC MDS Identifier Management rules apply. These are available to be viewed at
 https://docs.pmhc-mds.com/data-specification/identifier-management.html.
 
-Managing Collection Occasion Keys
----------------------------------
+Managing  Keys
+---------------
 
-The :ref:`dfn-collection_occasion_key` will be
-created and managed by Provider Organisations.
+The :ref:`dfn-twb_pnpc_key`, :ref:`dfn-twb_critical_incident_key`,
+:ref:`dfn-twb_referral_out_key`, :ref:`dfn-collection_occasion_key` and
+:ref:`dfn-measure_key` will be created and managed by Provider Organisations.
 
 The PMHC MDS specification requires each of these keys to be unique and stable
-at the Provider Organisation level. See below links for the specification requirements
+at the Provider Organisation level. See above links for the specification requirements
 for these data elements:
-
-- :ref:`dfn-collection_occasion_key`
 
 Each record needs to be assigned a unique key in order to facilitate adding/updating/deleting
 each item when uploading/entering data. These keys will be created and managed by

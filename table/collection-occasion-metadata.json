@@ -1,5 +1,5 @@
 {
-  "@id": "twb-plan-metadata.json",
+  "@id": "collection-occasion-metadata.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "organisation_path",
@@ -43,10 +43,10 @@
     },
     "required": true
   },{
-    "name": "measure_date",
-    "titles": [ "measure_date" ],
-    "dc:title": "Collection Occasion - Measure Date",
-    "schema:description": "The date the measure was given.",
+    "name": "collection_occasion_date",
+    "titles": [ "collection_occasion_date" ],
+    "dc:title": "Collection Occasion - Date",
+    "schema:description": "The date of the collection occasion.",
     "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
@@ -71,25 +71,14 @@
     },
     "required": true
   },{
-    "name": "twb_plan_type",
-    "titles": [ "twb_plan_type" ],
-    "dc:title": "TWB Plan - Plan Type",
-    "schema:description": "The type of plan.",
-    "schema:disambiguatingDescription": "table/collection-occasion/twb-plan/twb-plan-type.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
-    "name": "twb_plan_tags",
-    "titles": [ "twb_plan_tags" ],
-    "dc:title" : "TWB Plan - Tags",
+    "name": "collection_occasion_tags",
+    "titles": [ "collection_occasion_tags" ],
+    "dc:title" : "Collection Occasion - Tags",
     "schema:description": "List of tags for the collection occasion.",
     "schema:disambiguatingDescription": "type/tags.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
     "datatype": {
       "base": "string"
       }
@@ -106,12 +95,6 @@
     "reference": {
       "resource": "data/episodes.csv",
       "columnReference": [ "organisation_path", "episode_key" ]
-    }
-  }, {
-    "columnReference": "twb_plan_type",
-    "reference": {
-      "resource": "table/collection-occasion/twb-plan/twb-plan-type.csv",
-      "columnReference": "id"
     }
   }]
 }

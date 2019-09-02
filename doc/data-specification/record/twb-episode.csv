@@ -10,46 +10,64 @@
 ",string,yes,":1: Identifies as a veteran
 :2: Does not identify as a veteran
 :9: Not stated/Inadequately described"
-"`TWB Episode - Sexual Identity`_ (twb_sexual_identity)
+"`TWB Episode - Sexual Orientation`_ (twb_sexual_orientation)
 
-",string,yes,":1: Lesbian, gay or homosexual
-:2: Straight or heterosexual
-:3: Bisexual
-:4: Something else
-:5: Don't know
-:6: Not stated"
+",string,yes,":1: Straight or heterosexual
+:2: Lesbian, gay or homosexual
+:3: Bisexual or pansexual
+:4: Asexual
+:5: Questioning
+:6: Other
+:7: Does not want to disclose"
+"`TWB Episode - Transgender Status`_ (twb_transgender_status)
+
+",string,yes,":1: Yes
+:2: No
+:3: Does not want to disclose"
+"`TWB Episode - Intersex Status`_ (twb_intersex_status)
+
+",string,yes,":1: Yes
+:2: No
+:3: Does not want to disclose"
 "`TWB Episode - Eligibility Type`_ (twb_eligibility_type)
 
 ",string,yes,":1: Primary Criteria
 :2: Secondary Criteria
-:3: Ineligible
 :98: Other
 :99: Not stated/Inadequately described"
 "`TWB Episode - External Evaluator Contact Consent`_ (twb_external_evaluator_contact_consent)
 
 ",string,yes,":1: Consented to to be contacted by external evaluators
 :2: Not consented to be contacted by external evaluators
-:99: Not stated/Inadequately described"
+:9: Not stated/Inadequately described"
 "`TWB Episode - Beyond Blue Contact Consent`_ (twb_beyond_blue_contact_consent)
 
-",string,yes,":1: Consented to be contacted by Beyond Blue for the purposes of sharing my experience
-:2: Not consented to be contacted by Beyond Blue for the purposes of sharing my experience
-:99: Not stated/Inadequately described"
+",string,yes,":1: Yes"
 "`TWB Episode - Primary Nominated Professional`_ (twb_primary_nominated_professional)
 
-",string,yes,":1: GP/Medical Practitioner
-:2: Psychologist
-:3: Psychiatrist
-:4: Alcohol and other drug support worker
-:5: Family violence support worker
-:6: Disability support worker
-:7: Aged care facility/service support worker
-:8: Correctional Case Manager
-:9: Sexual Assault service
-:10: Financial counsellor
-:11: Sexual health support service
-:12: Other medical specialist
-:97: No nomination provided
+",string,yes,":1: Aboriginal and Torres Strait Islander Health Practice
+:2: Medical
+:3: Nursing and Midwifery
+:4: Occupational Therapy
+:5: Psychology
+:6: Mental Health Social Worker
+:98: Other
+:99: Not stated/Inadequately described"
+"`TWB Episode - Lifetime suicide attempt and ideation`_ (twb_lifetime_suicide_attempt)
+
+",string,yes,":1: Suicide attempt
+:2: Suicide ideation, no attempt
+:3: Neither suicide attempt nor ideation
+:4: Not known
+:9: Not stated/Inadequately described"
+"`TWB Episode - Method of suicide attempt`_ (twb_method_of_suicide_attempt)
+
+",string,yes,":1: Poisoning
+:2: Hanging
+:3: Drowning
+:4: Contact with a sharp object
+:5: Firearm
+:6: Fall
 :98: Other
 :99: Not stated/Inadequately described"
 "`TWB Episode - Tags`_ (twb_episode_tags)

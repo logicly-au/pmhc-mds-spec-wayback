@@ -15,6 +15,21 @@
     },
     "required": true
   },{
+     "name": "measure_key",
+    "titles": [ "measure_key" ],
+    "dc:title": "Measure Key",
+    "schema:description": "This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/measure/key.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
     "name": "collection_occasion_key",
     "titles": [ "collection_occasion_key" ],
     "dc:title": "Collection Occasion Key",
@@ -30,52 +45,11 @@
     },
     "required": true
   },{
-     "name": "episode_key",
-    "titles": [ "episode_key" ],
-    "dc:title": "Episode Key",
-    "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
-    "datatype": {
-      "base": "string",
-      "minLength": 2,
-      "maxLength": 50
-    },
-    "required": true
-  },{
-    "name": "measure_date",
-    "titles": [ "measure_date" ],
-    "dc:title": "Collection Occasion - Measure Date",
-    "schema:description": "The date the measure was given.",
-    "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
-    "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2018-01-02",
-    "datatype": {
-      "base": "date",
-      "format": "dMMyyyy",
-      "minimum": "2016-01-01"
-    },
-    "schema:dateMissingUnknown": "9999-09-09",
-    "required": true
-  },{
-    "name": "reason_for_collection",
-    "titles": [ "reason_for_collection" ],
-    "dc:title": "Collection Occasion - Reason",
-    "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
-    "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
-    "schema:dateCreated": "2016-07-08",
-    "schema:dateModified": "2016-07-08",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
     "name": "who5_item1",
     "titles": [ "who5_item1" ],
     "dc:title": "WHO-5 - Question 1",
     "schema:description": "I have felt cheerful and in good spirits",
-    "schema:disambiguatingDescription": "table/collection-occasion/who5/Q1.rst",
+    "schema:disambiguatingDescription": "table/measure/who5/Q1.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -87,7 +61,7 @@
     "titles": [ "who5_item2" ],
     "dc:title": "WHO-5 - Question 2",
     "schema:description": "I have felt calm and relaxed",
-    "schema:disambiguatingDescription": "table/collection-occasion/who5/Q2.rst",
+    "schema:disambiguatingDescription": "table/measure/who5/Q2.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -99,7 +73,7 @@
     "titles": [ "who5_item3" ],
     "dc:title": "WHO-5 - Question 3",
     "schema:description": "I have felt active and vigorous",
-    "schema:disambiguatingDescription": "table/collection-occasion/who5/Q3.rst",
+    "schema:disambiguatingDescription": "table/measure/who5/Q3.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -111,7 +85,7 @@
     "titles": [ "who5_item4" ],
     "dc:title": "WHO-5 - Question 4",
     "schema:description": "I woke up feeling fresh and rested",
-    "schema:disambiguatingDescription": "table/collection-occasion/who5/Q4.rst",
+    "schema:disambiguatingDescription": "table/measure/who5/Q4.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -123,7 +97,7 @@
     "titles": [ "who5_item5" ],
     "dc:title": "WHO-5 - Question 5",
     "schema:description": "I woke up feeling fresh and rested",
-    "schema:disambiguatingDescription": "table/collection-occasion/who5/Q5.rst",
+    "schema:disambiguatingDescription": "table/measure/who5/Q5.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -135,7 +109,7 @@
     "titles": [ "who5_raw_score" ],
     "dc:title" : "WHO-5 - Raw Score",
     "schema:description": "The WHO-5 raw score.",
-    "schema:disambiguatingDescription": "table/collection-occasion/who5/raw-score.rst",
+    "schema:disambiguatingDescription": "table/measure/who5/raw-score.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "null": "99",
@@ -156,47 +130,41 @@
       "base": "string"
       }
   }],
-  "primaryKey": [ "organisation_path", "collection_occasion_key" ],
+  "primaryKey": [ "organisation_path", "measure_key" ],
   "foreignKeys": [{
-    "columnReference": "reason_for_collection",
+    "columnReference": [ "organisation_path", "collection_occasion_key" ],
     "reference": {
-      "resource": "table/collection-occasion/reason.csv",
-      "columnReference": "id"
-    }
-  }, {
-    "columnReference": [ "organisation_path", "episode_key" ],
-    "reference": {
-      "resource": "data/episodes.csv",
-      "columnReference": [ "organisation_path", "episode_key" ]
+      "resource": "data/collection_occasions.csv",
+      "columnReference": [ "organisation_path", "collection_occasion_key" ]
     }
   }, {
     "columnReference": "who5_item1",
     "reference": {
-      "resource": "table/collection-occasion/who5.csv",
+      "resource": "table/measure/who5.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "who5_item2",
     "reference": {
-      "resource": "table/collection-occasion/who5.csv",
+      "resource": "table/measure/who5.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "who5_item3",
     "reference": {
-      "resource": "table/collection-occasion/who5.csv",
+      "resource": "table/measure/who5.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "who5_item4",
     "reference": {
-      "resource": "table/collection-occasion/who5.csv",
+      "resource": "table/measure/who5.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "who5_item5",
     "reference": {
-      "resource": "table/collection-occasion/who5.csv",
+      "resource": "table/measure/who5.csv",
       "columnReference": "id"
     }
   }]

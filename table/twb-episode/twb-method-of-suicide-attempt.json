@@ -1,0 +1,22 @@
+{
+  "@id": "table/twb-episode/twb-method-of-suicide-attempt.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "id",
+    "titles": [ "id" ],
+    "schema:dateCreated": "2018-04-30",
+    "schema:dateDeleted": "2018-04-30",
+    "schema:dateModified": "2018-04-30",
+    "datatype": "string"
+  },{
+    "name": "description",
+    "titles": [ "description" ],
+    "schema:dateCreated": "2018-04-30",
+    "schema:dateDeleted": "2018-04-30",
+    "schema:dateModified": "2018-04-30",
+    "datatype": {
+      "base": "string"
+    }
+  }],
+  "primaryKey": "id"
+}

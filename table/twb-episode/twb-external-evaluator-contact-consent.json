@@ -4,14 +4,16 @@
   "columns": [{
     "name": "id",
     "titles": [ "id" ],
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
+    "schema:dateCreated": "2018-04-30",
+    "schema:dateDeleted": "2018-04-30",
+    "schema:dateModified": "2018-04-30",
     "datatype": "string"
   },{
     "name": "description",
     "titles": [ "description" ],
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
+    "schema:dateCreated": "2018-04-30",
+    "schema:dateDeleted": "2018-04-30",
+    "schema:dateModified": "2018-04-30",
     "datatype": {
       "base": "string"
     }

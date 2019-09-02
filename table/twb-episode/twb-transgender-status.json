@@ -1,5 +1,5 @@
 {
-  "@id": "table/twb-episode/twb-sexual-identity.json",
+  "@id": "table/twb-episode/twb-transgender-status.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",

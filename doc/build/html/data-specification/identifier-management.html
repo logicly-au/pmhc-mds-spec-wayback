@@ -99,7 +99,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Specification</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="key-concepts.html">Key Concepts</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Identifier Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#managing-collection-occasion-keys">Managing Collection Occasion Keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#managing-keys">Managing  Keys</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#managing-pmhc-mds-episode-key">Managing PMHC MDS Episode Key</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#identifying-twb-episode-data-records">Identifying TWB-Episode data records</a></li>
 </ul>
@@ -182,16 +182,14 @@
 <p>TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
 the current PMHC MDS Identifier Management rules apply. These are available to be viewed at
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/identifier-management.html">https://docs.pmhc-mds.com/data-specification/identifier-management.html</a>.</p>
-<div class="section" id="managing-collection-occasion-keys">
-<h2>Managing Collection Occasion Keys<a class="headerlink" href="#managing-collection-occasion-keys" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> will be
-created and managed by Provider Organisations.</p>
+<div class="section" id="managing-keys">
+<h2>Managing  Keys<a class="headerlink" href="#managing-keys" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-pnpc-key"><span class="std std-ref">TWB Primary Nominated Professional Contact Key</span></a>, <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-critical-incident-key"><span class="std std-ref">TWB Critical Incident Key</span></a>,
+<a class="reference internal" href="data-model-and-specifications.html#dfn-twb-referral-out-key"><span class="std std-ref">TWB Referral Out Key</span></a>, <a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> and
+<a class="reference internal" href="data-model-and-specifications.html#dfn-measure-key"><span class="std std-ref">Measure Key</span></a> will be created and managed by Provider Organisations.</p>
 <p>The PMHC MDS specification requires each of these keys to be unique and stable
-at the Provider Organisation level. See below links for the specification requirements
+at the Provider Organisation level. See above links for the specification requirements
 for these data elements:</p>
-<ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a></li>
-</ul>
 <p>Each record needs to be assigned a unique key in order to facilitate adding/updating/deleting
 each item when uploading/entering data. These keys will be created and managed by
 the Provider Organisation.</p>

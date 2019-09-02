@@ -1,14 +1,14 @@
 Definitions
 -----------
 
-.. _dfn-measure_date:
+.. _dfn-collection_occasion_date:
 
-Collection Occasion - Measure Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Collection Occasion - Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The date the measure was given.
+The date of the collection occasion.
 
-:Field name: measure_date
+:Field name: collection_occasion_date
 
 :Data type: date
 
@@ -62,6 +62,34 @@ The reason for the collection of the outcome measures on the identified Outcome 
   
   3 - Episode end
     Refers to the outcome measures collected at the end of an Episode of Care.
+  
+
+----------
+
+.. _dfn-collection_occasion_tags:
+
+Collection Occasion - Tags
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: collection_occasion_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
   
 
 ----------
@@ -121,6 +149,443 @@ A metadata key name.
 :Data type: string
 
 :Required: yes
+
+----------
+
+.. _dfn-k10p_item1:
+
+K10+ - Question 1
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, about how often did you feel tired out for no good reason?
+
+:Field name: k10p_item1
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item2:
+
+K10+ - Question 2
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, about how often did you feel nervous?
+
+:Field name: k10p_item2
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item3:
+
+K10+ - Question 3
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, about how often did you feel so nervous that nothing could calm you down?
+
+:Field name: k10p_item3
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item4:
+
+K10+ - Question 4
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, how often did you feel hopeless?
+
+:Field name: k10p_item4
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item5:
+
+K10+ - Question 5
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, how often did you feel restless or fidgety?
+
+:Field name: k10p_item5
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item6:
+
+K10+ - Question 6
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, how often did you feel so restless you could not sit still?
+
+:Field name: k10p_item6
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item7:
+
+K10+ - Question 7
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, how often did you feel depressed?
+
+:Field name: k10p_item7
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item8:
+
+K10+ - Question 8
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, how often did you feel that everything was an effort?
+
+:Field name: k10p_item8
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item9:
+
+K10+ - Question 9
+^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, how often did you feel so sad that nothing could cheer you up?
+
+:Field name: k10p_item9
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item10:
+
+K10+ - Question 10
+^^^^^^^^^^^^^^^^^^
+
+In the past 4 weeks, how often did you feel worthless?
+
+:Field name: k10p_item10
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When reporting total score use ‘9 - Not stated / Missing’ 
+  
+
+----------
+
+.. _dfn-k10p_item11:
+
+K10+ - Question 11
+^^^^^^^^^^^^^^^^^^
+
+In the past four weeks, how many days were you totally unable to work, study or manage your day to day activities because of these feelings?
+
+:Field name: k10p_item11
+
+:Data type: integer
+
+:Required: yes
+
+:Domain:
+  0 - 28, 99 = Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time', 
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of '99 - Not stated / Missing' should be selected.
+  
+
+----------
+
+.. _dfn-k10p_item12:
+
+K10+ - Question 12
+^^^^^^^^^^^^^^^^^^
+
+Aside from those days, in the past four weeks, how many days were you able to work or study or manage your day to day activities, but had to cut down on what you did because of these feelings?
+
+:Field name: k10p_item12
+
+:Data type: integer
+
+:Required: yes
+
+:Domain:
+  0 - 28, 99 = Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of '99 - Not stated / Missing' should be selected.
+  
+
+----------
+
+.. _dfn-k10p_item13:
+
+K10+ - Question 13
+^^^^^^^^^^^^^^^^^^
+
+In the past four weeks, how many times have you seen a doctor or any other health professional about these feelings?
+
+:Field name: k10p_item13
+
+:Data type: integer
+
+:Required: yes
+
+:Domain:
+  0 - 89, 99 = Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of '99 - Not stated / Missing' should be selected.
+  
+
+----------
+
+.. _dfn-k10p_item14:
+
+K10+ - Question 14
+^^^^^^^^^^^^^^^^^^
+
+In the past four weeks, how often have physical health problems been the main cause of these feelings?
+
+:Field name: k10p_item14
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: None of the time
+  :2: A little of the time
+  :3: Some of the time
+  :4: Most of the time
+  :5: All of the time
+  :9: Not stated / Missing
+:Notes:
+  When the client's responses to Q1-10 are all recorded as 1 'None of the time',
+  they are not required to answer questions 11-14. Where this question has not been
+  answered a response of '99 - Not stated / Missing' should be selected.
+  
+
+----------
+
+.. _dfn-k10p_score:
+
+K10+ - Score
+^^^^^^^^^^^^
+
+The overall K10 score.
+
+:Field name: k10p_score
+
+:Data type: integer
+
+:Required: yes
+
+:Domain:
+  10 - 50, 99 = Not stated / Missing
+:Notes:
+  The K10 Total score is based on the sum of K10 item 01 through 10 (range: 10-50).
+  Items 11 through 14 are excluded from the total because they are separate
+  measures of disability associated with the problems referred to in the preceding
+  ten items.
+  
+  The Total score is computed as the sum of the scores for items 1 to 10. If any
+  item has not been completed (that is, has not been coded 1, 2, 3, 4, 5), it is
+  excluded from the total with the proviso that a competed K10 with more than one
+  missing item is regarded as invalid.
+  
+  If more than one item of items 1 to 10 are missing, the Total Score is set as
+  missing. Where this is the case, the missing value used should be 99.
+  
+  When reporting individual item scores use ‘99 - Not stated / Missing’.
+  
+
+----------
+
+.. _dfn-k10p_tags:
+
+K10+ - Tags
+^^^^^^^^^^^
+
+List of tags for the collection occasion.
+
+:Field name: k10p_tags
+
+:Data type: string
+
+:Required: no
+:Notes:
+  A comma separated list of tags.
+  
+  Organisations can use this field to tag records in order to partition them as
+  per local requirements.
+  
+  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
+  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
+  nurse required, pending-outcome-1`` would all be legitimate.
+  
+  Tags beginning with an exclamation mark (!) are reserved for future use by the
+  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-measure_key:
+
+Measure Key
+^^^^^^^^^^^
+
+This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation.
+
+:Field name: measure_key
+
+:Data type: string (2,50)
+
+:Required: yes
+:Notes:
+  Measure keys are case sensitive and must be valid unicode characters.
+  
 
 ----------
 
@@ -827,8 +1292,10 @@ The type of critical incident.
   Mandatory where a critical incident is reported.
   
   **Guide for use**
-  It is acknowledged that due to the nature of the project and the reporting of suicide, Beyond Blue and stakeholders may not be advised of all critical incidents, particularly if individuals are no longer involved with the service.
-  It is also acknowledged that each Service Provider will have the appropriate risk management strategies in place for handling Critical Incidents.
+  It is acknowledged that due to the nature of the project and the reporting of
+  suicide, Beyond Blue and stakeholders may not be advised of all critical
+  incidents. It is also acknowledged that each Service Provider will have the
+  appropriate management strategies in place for handling Critical Incidents.
   
   **Purpose/context**
   Program monitoring, service planning, funding and accountability.
@@ -860,7 +1327,7 @@ This is a number or code assigned to each critical incident. The Critical Incide
 TWB Episode - Beyond Blue Contact Consent
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The status of whether the client has consented to be contacted by Beyond Blue.
+Consent for the Way Back data collection, linkage and sharing with evaluation.
 
 :Field name: twb_beyond_blue_contact_consent
 
@@ -869,19 +1336,26 @@ The status of whether the client has consented to be contacted by Beyond Blue.
 :Required: yes
 
 :Domain:
-  :1: Consented to be contacted by Beyond Blue for the purposes of sharing my experience
-  :2: Not consented to be contacted by Beyond Blue for the purposes of sharing my experience
-  :99: Not stated/Inadequately described
+  :1: Yes
 :Notes:
-  **Reporting requirements**
-  Mandatory – All clients
+  Provider statement:
   
-  **Guide for use**
-  A client may decline to participate in contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.
+  *Have you read the background information, and do you agree to provide
+  additional information to be collected for the Way Back data, for that data to
+  be linked with the routine data collected by me [service provider], and for
+  the evaluator to access the linked dataset? The dataset will not include your
+  name or any other identifying information.*
   
-  **Purpose/context**
-  Program monitoring, service planning.
-  Understanding service demand and presenting client profile.
+  Client response options:
+  
+  1 - Yes
+    The client has read the background information and agrees to provide
+    additional information for the Way Back, for that data to be linked with
+    the routine data collected by me, and for the evaluator's to access the
+    linked dataset.
+  
+  **Note** Data where consent has not been given for Way Back data collection,
+  linkage and sharing with evaluation must not be entered.
   
 
 ----------
@@ -902,10 +1376,26 @@ The criteria by which the client is eligible for service.
 :Domain:
   :1: Primary Criteria
   :2: Secondary Criteria
-  :3: Ineligible
   :98: Other
   :99: Not stated/Inadequately described
 :Notes:
+  1 - Primary Eligibility Criteria
+    The primary eligibility criteria are met when a person is referred to
+    The Way Back after presenting to a hospital emergency department or
+    community mental health service12 following a suicide attempt. A suicide
+    attempt is defined as a “non-fatal self-directed potentially injurious
+    behaviour with any intent to die as a result of the behaviour”. A suicide
+    attempt may or may not result in physical injury and may or may not result
+    in a hospital admission.
+  
+  2 - Secondary Eligibility Criteria
+    The secondary eligibility criteria are met when a person is referred to The
+    Way Back after presenting to a hospital emergency department or community
+    mental health service in or following a suicidal crisis and whose risk of
+    suicide is identified as imminent. A suicidal crisis is defined as a
+    person experiencing distress, suicidal thoughts and articulating an intent
+    to die. A suicidal crisis may or may not result in a hospital admission. 
+  
   **Reporting requirements**
   Mandatory – All clients
   
@@ -935,17 +1425,93 @@ The status of whether the client has consented to be contacted by external evalu
 :Domain:
   :1: Consented to to be contacted by external evaluators
   :2: Not consented to be contacted by external evaluators
+  :9: Not stated/Inadequately described
+:Notes:
+  
+  
+
+----------
+
+.. _dfn-twb_intersex_status:
+
+TWB Episode - Intersex Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Do you wish to disclose intersex status?
+
+:Field name: twb_intersex_status
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Yes
+  :2: No
+  :3: Does not want to disclose
+:Notes:
+  **Note**
+  Intersex: The term intersex is used to describe people who are born with sex
+  characteristics, including genitals, gonads and chromosome patterns, that do
+  not fit typical binary notions of male and female bodies
+  
+
+----------
+
+.. _dfn-twb_lifetime_suicide_attempt:
+
+TWB Episode - Lifetime suicide attempt and ideation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?
+
+:Field name: twb_lifetime_suicide_attempt
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Suicide attempt
+  :2: Suicide ideation, no attempt
+  :3: Neither suicide attempt nor ideation
+  :4: Not known
+  :9: Not stated/Inadequately described
+:Notes:
+  1 – Suicide attempt
+    A non-fatal, self-directed, potentially injurious behaviour with an intent
+    to die as a result of the behaviour; might not result in injury.
+  
+  2 – Suicidal ideation
+    Thinking about, considering, or planning suicide.
+  
+
+----------
+
+.. _dfn-twb_method_of_suicide_attempt:
+
+TWB Episode - Method of suicide attempt
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For clients referred to The Way Back for a suicide attempt, what was the method of their most recent attempt?
+
+:Field name: twb_method_of_suicide_attempt
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Poisoning
+  :2: Hanging
+  :3: Drowning
+  :4: Contact with a sharp object
+  :5: Firearm
+  :6: Fall
+  :98: Other
   :99: Not stated/Inadequately described
 :Notes:
-  **Reporting requirements**
-  Mandatory – All clients
   
-  **Guide for use**
-  A client may decline to participate in external evaluations for the purpose of sharing experiences. This does not effect their eligibility for the service.
-  
-  **Purpose/context**
-  Program monitoring, service planning.
-  Understanding service demand and presenting client profile.
   
 
 ----------
@@ -964,19 +1530,12 @@ The primary nominated professional of the client for contact regarding participa
 :Required: yes
 
 :Domain:
-  :1: GP/Medical Practitioner
-  :2: Psychologist
-  :3: Psychiatrist
-  :4: Alcohol and other drug support worker
-  :5: Family violence support worker
-  :6: Disability support worker
-  :7: Aged care facility/service support worker
-  :8: Correctional Case Manager
-  :9: Sexual Assault service
-  :10: Financial counsellor
-  :11: Sexual health support service
-  :12: Other medical specialist
-  :97: No nomination provided
+  :1: Aboriginal and Torres Strait Islander Health Practice
+  :2: Medical
+  :3: Nursing and Midwifery
+  :4: Occupational Therapy
+  :5: Psychology
+  :6: Mental Health Social Worker
   :98: Other
   :99: Not stated/Inadequately described
 :Notes:
@@ -993,36 +1552,27 @@ The primary nominated professional of the client for contact regarding participa
 
 ----------
 
-.. _dfn-twb_sexual_identity:
+.. _dfn-twb_sexual_orientation:
 
-TWB Episode - Sexual Identity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TWB Episode - Sexual Orientation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Sexual Identity client self-identification.
+How do you describe your sexual orientation?
 
-:Field name: twb_sexual_identity
+:Field name: twb_sexual_orientation
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Lesbian, gay or homosexual
-  :2: Straight or heterosexual
-  :3: Bisexual
-  :4: Something else
-  :5: Don't know
-  :6: Not stated
-:Notes:
-  **Reporting requirements**
-  Mandatory where Episode—TWB Consent type =1
-  
-  **Guide for use**
-  
-  **Purpose/context**
-  Program monitoring, service planning
-  Understanding access and service utilisation of population groups.
-  
+  :1: Straight or heterosexual
+  :2: Lesbian, gay or homosexual
+  :3: Bisexual or pansexual
+  :4: Asexual
+  :5: Questioning
+  :6: Other
+  :7: Does not want to disclose
 
 ----------
 
@@ -1054,6 +1604,31 @@ List of tags for the TWB Episode.
 
 ----------
 
+.. _dfn-twb_transgender_status:
+
+TWB Episode - Transgender Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Do you have a transgender history, experience, or identity?
+
+:Field name: twb_transgender_status
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: Yes
+  :2: No
+  :3: Does not want to disclose
+:Notes:
+  **Note**
+  Transgender:  The term transgender is used to describe people whose gender
+  identity does not align with the sex they were assigned at birth.
+  
+
+----------
+
 .. _dfn-twb_veteran:
 
 TWB Episode - Veteran
@@ -1072,18 +1647,6 @@ Whether the client identifies as a veteran.
   :2: Does not identify as a veteran
   :9: Not stated/Inadequately described
 :Notes:
-  A ‘veteran’ is defined in s.5C of the VEA as a person who:
-  * has rendered ‘eligible war service’;
-  * was a member of the Australian armed services forces who, after 31 July 1962, was engaged in warlike operations against hostile forces outside Australia but not on ‘operational service’ in an operational area and was injured, contracted a disease or died due to action of hostile forces; or
-  * is a ‘Commonwealth veteran’, ‘allied veteran’ or ‘allied mariner’ (for service pension, Repatriation Pharmaceutical Benefits Card and Commonwealth Seniors Health Card purposes only).
-  
-  ‘Eligible war service’ is defined in s.7 of the VEA and includes:
-  * ‘operational service’;
-  * continuous full-time service (CFTS) in the Australian armed services in World War I;
-  * CFTS in World War II in the Australian armed services (enlistment before 1 July 1947);
-  * CFTS service as a member of the Australian Interim Forces after 1 July 1947; and
-  * service in World War II by Australian mariners
-  
   **Report requirements**
   Mandatory where Episode—TWB Consent type =1
   
@@ -1097,14 +1660,14 @@ Whether the client identifies as a veteran.
 
 ----------
 
-.. _dfn-twb_ini_tags:
+.. _dfn-twb_ni_tags:
 
-TWB INI - Tags
-^^^^^^^^^^^^^^
+TWB NI - Tags
+^^^^^^^^^^^^^
 
 List of tags for the collection occasion.
 
-:Field name: twb_ini_tags
+:Field name: twb_ni_tags
 
 :Data type: string
 
@@ -1125,52 +1688,59 @@ List of tags for the collection occasion.
 
 ----------
 
-.. _dfn-twb_ini_type:
+.. _dfn-twb_ni_type:
 
-TWB INI - Type
-^^^^^^^^^^^^^^
+TWB NI - Type
+^^^^^^^^^^^^^
 
 The identified needs of the client at commencement or review of the service.
 
-:Field name: twb_ini_type
+:Field name: twb_ni_type
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Self-care and diet (Incl. Self-Neglect)
-  :2: Mental Health
-  :3: Safety to Self/Others
-  :4: Accommodation
-  :5: Financial
-  :6: Daily Structure and Interests
-  :7: Stigma and Harassment
-  :8: Social Contacts
-  :9: Close Relationships (Incl. Carer, If Applicable)
-  :10: Language and Culture
-  :11: Physical Health and Disability
-  :12: Daily Living
-  :13: Employment
-  :14: Information About Condition and Treatment
-  :15: Alcohol and Drugs
-  :16: Childcare and Parenting
-  :17: Educational Needs (Incl. Literacy &  Numeracy)
-  :18: Transport
-  :19: Sexual Issues
-  :20: Spirituality
-  :98: Other
-  :99: Not stated/Inadequately described
+  
+  Multiple space separated values allowed
 :Notes:
   **Reporting requirements**
-  Mandatory where Episode—TWB Consent type =1
+  The Needs Identification (NI) is a screening process where the psychosocial
+  needs of a client are identified. It provides the basis for the creation of a
+  Support Plan and is considered a useful way to help understand client support
+  needs and service goals.  The needs identified through this process should
+  inform the client’s goals and referrals to community-based services.
   
-  The Initial Needs Identification (INI) is a screening process where the underlying issues as well as the presenting issues are uncovered to the extent possible. It is not a diagnostic process but is a determination of the client's risk, eligibility and priority for service, a balancing for the service capacity and client needs
-  Needs identification can occur via phone, face-to-face interaction or written survey intervention. However, Needs Identification is ongoing and as a client receives care, other needs or circumstances may be identified which require attention by other disciplines. External referral or re-entry onto the waiting list to access the other disciplines may then occur. This question allows for more than one response. The INI must be administered at a minimum at the following points of service participation:
+  Needs identification can occur via phone, face-to-face interaction or written
+  survey intervention. However, Needs Identification is ongoing and as a client
+  receives care, other needs or circumstances may be identified which require
+  attention by other disciplines. External referral or re-entry onto the
+  waiting list to access the other disciplines may then occur. This question
+  allows for more than one response. The INI must be administered at a minimum
+  at the following points of service participation:
   
   * At the start of The Way Back
   * At the six-week or mid-point of the expected support period
   * At exit from the service
+  
+
+----------
+
+.. _dfn-twb_ni_key:
+
+TWB NI Key
+^^^^^^^^^^
+
+This is a number or code assigned to each instance of a TWB NI. The TWB NI Key is unique and stable for each instance of a TWB NI at the level of the organisation.
+
+:Field name: twb_ni_key
+
+:Data type: string (2,50)
+
+:Required: yes
+:Notes:
+  Measure keys are case sensitive and must be valid unicode characters.
   
 
 ----------
@@ -1193,15 +1763,46 @@ The type of plan.
   :2: Support
 :Notes:
   **1 - Safety Plan**
-  Clients referred to The Way Back may have commenced the process of safety planning as part of their discussions with Emergency Department or Ward staff. Any existing safety plans completed by hospital or staff should be shared with or requested by The Way Back service provider and updated as part of preliminary discussions with The Way Back clients.
-  Where clients referred to The Way Back have not completed any safety planning prior to their referral this should be completed as a priority once the client has consented to participate in The Way Back. Safety Plans must be updated/developed within the first contact with the client and no later than the second contact.
   
-  Safety plans should be reviewed with a client as needed. Each instance of the review and update of a safety plan should be recorded.
+  Clients referred to The Way Back may have commenced the process of safety
+  planning as part of their discussions with Emergency Department or Ward staff.
+  Any existing safety plans completed by hospital or staff should be shared with
+  or requested by The Way Back service provider and updated as part of
+  preliminary discussions with The Way Back clients.
+  Where clients referred to The Way Back have not completed any safety planning
+  prior to their referral this should be completed as a priority once the client
+  has consented to participate in The Way Back. Safety Plans must be
+  updated/developed within the first contact with the client and no later than
+  the second contact.
+  
+  Safety plans should be reviewed with a client as needed. Each instance of the
+  review and update of a safety plan should be recorded.
   
   **2 - Support Plan**
+  
   Mandatory when Episode TWB consent type = 1
   
-  All Way Back service providers must work with their clients to collaboratively develop a support plan that articulates:
+  A support plan articulates:
+  
+  * the client’s **needs** as assessed using the Support Tools
+  * the client’s **goals** of participating in The Way Back
+  * proposed **actions and interventions** planned to address identified needs
+    and goals including referrals to be made
+  
+  In developing a Support Plan, discussion with clients should consider warning
+  signs, strengths, support mechanisms and strategies that have enabled them to
+  take the next steps.
+  
+  A Support Plan must be completed with a client within two weeks of their 
+  consenting to participate in the service. To identify a client’s needs and
+  build an understanding of what support will be of benefit, all Support Tools
+  and Measures should be completed prior to completing the Support Plan.
+  Support Plans are also required to be reviewed at 6 weeks, or a regular basis
+  throughout the support period to ensure that strategies are current and upon
+  Service Exit. Each review must be documented.
+  
+  All Way Back service providers must work with their clients to collaboratively
+  develop a support plan that articulates:
   
   * The client’s needs based on the INI
   * The client’s goals in response to needs identified
@@ -1240,6 +1841,24 @@ List of tags for the collection occasion.
   
   Tags beginning with an exclamation mark (!) are reserved for future use by the
   Department. e.g. ``!reserved, ! reserved, !department-use-only``.
+  
+
+----------
+
+.. _dfn-twb_plan_key:
+
+TWB Plan Key
+^^^^^^^^^^^^
+
+This is a number or code assigned to each instance of a TWB Plan. The TWB Plan Key is unique and stable for each instance of a measure at the level of the organisation.
+
+:Field name: twb_plan_key
+
+:Data type: string (2,50)
+
+:Required: yes
+:Notes:
+  Measure keys are case sensitive and must be valid unicode characters.
   
 
 ----------
@@ -1343,32 +1962,6 @@ This is a number or code assigned to each primary nominated professional contact
 
 ----------
 
-.. _dfn-twb_referral_out_date:
-
-TWB Referral Out - Date
-^^^^^^^^^^^^^^^^^^^^^^^
-
-The date the Service Provider made the referral out to an external service/organisation.
-
-:Field name: twb_referral_out_date
-
-:Data type: date
-
-:Required: yes
-:Notes:
-  **Reporting requirements**
-  Mandatory where Service Contact- Referral out provider type 1-44 is present.
-  
-  **Guide for use**
-  Requires services to record the date that a referral out is made to an external service/organisation
-  The same date should be recorded for multiple referrals on the same day.
-  
-  **Purpose/context**
-  Program monitoring, service planning.
-  
-
-----------
-
 .. _dfn-twb_referral_out_provider_type:
 
 TWB Referral Out - Provider Type
@@ -1431,10 +2024,15 @@ The provider type of the referral out made for and on behalf of the client.
   **Reporting requirements**
   
   **Guide for use**
-  It is best to record the referral information as soon as the client is referred to an agency/community service as it may be difficult to track this information later.
-  To assist staff, service providers may find it useful to make a list of the agencies from which they most frequently send referrals and note the corresponding Source of Referral code.
-  Report the Referral starting with the most relevant or urgent one first. This will help to gain an understanding of the client profile.
-  Up to 10 referrals out provider type may be reported each instance, from the most important to the least.
+  
+  It is best to record the referral information as soon as the client is
+  referred to an agency/community service as it may be difficult to track this
+  information later.
+  
+  To assist staff, service providers may find it useful to make a list of the
+  agencies from which they most frequently send referrals and note the
+  corresponding Source of Referral code.
+  Report the Referral starting with the most relevant or urgent one first. 
   
   **Purpose/context**
   Program monitoring, service planning.

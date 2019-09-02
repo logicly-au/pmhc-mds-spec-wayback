@@ -41,11 +41,34 @@
     },
     "required": true
   },{
-    "name": "twb_sexual_identity",
-    "titles": [ "twb_sexual_identity" ],
-    "dc:title": "TWB Episode - Sexual Identity",
-    "schema:description": "Sexual Identity client self-identification.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-sexual-identity.rst",
+    "name": "twb_sexual_orientation",
+    "titles": [ "twb_sexual_orientation" ],
+    "dc:title": "TWB Episode - Sexual Orientation",
+    "schema:description": "How do you describe your sexual orientation?",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_transgender_status",
+    "titles": [ "twb_transgender_status" ],
+    "dc:title": "TWB Episode - Transgender Status",
+    "schema:description": "Do you have a transgender history, experience, or identity?",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-transgender-status.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_intersex_status",
+    "titles": [ "twb_intersex_status" ],
+    "dc:title": "TWB Episode - Intersex Status",
+    "schema:description": "Do you wish to disclose intersex status?",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-intersex-status.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -80,7 +103,7 @@
     "name": "twb_beyond_blue_contact_consent",
     "titles": [ "twb_beyond_blue_contact_consent" ],
     "dc:title": "TWB Episode - Beyond Blue Contact Consent",
-    "schema:description": "The status of whether the client has consented to be contacted by Beyond Blue.",
+    "schema:description": "Consent for the Way Back data collection, linkage and sharing with evaluation.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-beyond-blue-contact-consent.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -94,6 +117,30 @@
     "dc:title": "TWB Episode - Primary Nominated Professional",
     "schema:description": "The primary nominated professional of the client for contact regarding participation in the service.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_lifetime_suicide_attempt",
+    "titles": [ "twb_lifetime_suicide_attempt" ],
+    "dc:title": "TWB Episode - Lifetime suicide attempt and ideation",
+    "schema:description": "Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-lifetime-suicide-attempt.rst",
+    "schema:dateCreated": "2019-07-05",
+    "schema:dateModified": "2019-07-05",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "twb_method_of_suicide_attempt",
+    "titles": [ "twb_method_of_suicide_attempt" ],
+    "dc:title": "TWB Episode - Method of suicide attempt",
+    "schema:description": "For clients referred to The Way Back for a suicide attempt, what was the method of their most recent attempt?",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-method-of-suicide-attempt.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -120,21 +167,9 @@
       "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
-    "columnReference": "twb_external_evaluator_contact_consent",
-    "reference": {
-      "resource": "table/twb-episode/twb-external-evaluator-contact-consent.csv",
-      "columnReference": "id"
-    }
-  }, {
     "columnReference": "twb_eligibility_type",
     "reference": {
       "resource": "table/twb-episode/twb-eligibility-type.csv",
-      "columnReference": "id"
-    }
-  }, {
-    "columnReference": "twb_beyond_blue_contact_consent",
-    "reference": {
-      "resource": "table/twb-episode/twb-beyond-blue-contact-consent.csv",
       "columnReference": "id"
     }
   }, {
@@ -144,15 +179,51 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "twb_sexual_identity",
+    "columnReference": "twb_sexual_orientation",
     "reference": {
-      "resource": "table/twb-episode/twb-sexual-identity.csv",
+      "resource": "table/twb-episode/twb-sexual-orientation.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "twb_transgender_status",
+    "reference": {
+      "resource": "table/twb-episode/twb-transgender-status.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "twb_intersex_status",
+    "reference": {
+      "resource": "table/twb-episode/twb-intersex-status.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "twb_veteran",
     "reference": {
       "resource": "table/twb-episode/twb-veteran.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "twb_lifetime_suicide_attempt",
+    "reference": {
+      "resource": "table/twb-episode/twb-lifetime-suicide-attempt.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "twb_method_of_suicide_attempt",
+    "reference": {
+      "resource": "table/twb-episode/twb-method-of-suicide-attempt.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "twb_external_evaluator_contact_consent",
+    "reference": {
+      "resource": "table/twb-episode/twb-external-evaluator-contact-consent.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "twb_beyond_blue_contact_consent",
+    "reference": {
+      "resource": "table/twb-episode/twb-beyond-blue-contact-consent.csv",
       "columnReference": "id"
     }
   }]

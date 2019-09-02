@@ -56,21 +56,6 @@
     },
     "required": true
   },{
-    "name": "twb_referral_out_date",
-    "titles": [ "twb_referral_out_date" ],
-    "dc:title": "TWB Referral Out - Date",
-    "schema:description": "The date the Service Provider made the referral out to an external service/organisation.",
-    "schema:disambiguatingDescription": "table/twb-referral-out/twb-referral-out-date.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "date",
-      "format": "dMMyyyy",
-      "minimum": "2019-01-01"
-    },
-    "required": true,
-    "schema:dateMissingUnknown": "9999-09-09"
-  },{
     "name": "twb_referral_out_status",
     "titles": [ "twb_referral_out_status" ],
     "dc:title": "TWB Referral Out - Status",

@@ -68,53 +68,59 @@
     "schema:description": "table/twb-referral-out.rst",
     "tableSchema": "table/twb-referral-out-metadata.json"
   }, {
-    "dc:title": "K10+ Collection Occasion",
+    "dc:title": "Collection Occasion",
+    "url": "data/collection-occasions.csv",
+    "schema:name": "collection-occasion",
+    "schema:description": "table/collection-occasion.rst",
+    "tableSchema": "table/collection-occasion-metadata.json"
+  }, {
+    "dc:title": "K10+ Measure",
     "url": "data/k10p.csv",
-    "schema:name": "k10p-collection-occasion",
-    "schema:description": "table/collection-occasion/k10p-collection-occasion.rst",
-    "tableSchema": "table/collection-occasion/k10p-metadata.json"
+    "schema:name": "k10p-measure",
+    "schema:description": "table/measure/k10p-measure.rst",
+    "tableSchema": "table/measure/k10p-metadata.json"
   }, {
-    "dc:title": "K5 Collection Occasion",
+    "dc:title": "K5 Measure",
     "url": "data/k5.csv",
-    "schema:name": "k5-collection-occasion",
-    "schema:description": "table/collection-occasion/k5-collection-occasion.rst",
-    "tableSchema": "table/collection-occasion/k5-metadata.json"
+    "schema:name": "k5-measure",
+    "schema:description": "table/measure/k5-measure.rst",
+    "tableSchema": "table/measure/k5-metadata.json"
   }, {
-    "dc:title": "SDQ Collection Occasion",
+    "dc:title": "SDQ Measure",
     "url": "data/sdq.csv",
-    "schema:name": "sdq-collection-occasion",
-    "schema:description": "table/collection-occasion/sdq-collection-occasion.rst",
-    "tableSchema": "table/collection-occasion/sdq-metadata.json"
+    "schema:name": "sdq-measure",
+    "schema:description": "table/measure/sdq-measure.rst",
+    "tableSchema": "table/measure/sdq-metadata.json"
   }, {
-    "dc:title": "TWB Plan Collection Occasion",
+    "dc:title": "TWB Plan",
     "url": "data/twb-plan.csv",
-    "schema:name": "twb-plan-collection-occasion",
-    "schema:description": "table/collection-occasion/twb-plan-collection-occasion.rst",
-    "tableSchema": "table/collection-occasion/twb-plan-metadata.json"
+    "schema:name": "twb-plan",
+    "schema:description": "table/measure/twb-plan.rst",
+    "tableSchema": "table/measure/twb-plan-metadata.json"
   }, {
-    "dc:title": "TWB INI Collection Occasion",
-    "url": "data/twb-ini.csv",
-    "schema:name": "twb-ini-collection-occasion",
-    "schema:description": "table/collection-occasion/twb-ini-collection-occasion.rst",
-    "tableSchema": "table/collection-occasion/twb-ini-metadata.json"
+    "dc:title": "TWB NI",
+    "url": "data/twb-ni.csv",
+    "schema:name": "twb-ni",
+    "schema:description": "table/measure/twb-ni.rst",
+    "tableSchema": "table/measure/twb-ni-metadata.json"
   }, {
-    "dc:title": "WHO-5 Collection Occasion",
+    "dc:title": "WHO-5 Measure",
     "url": "data/who5.csv",
-    "schema:name": "who5-collection-occasion",
-    "schema:description": "table/collection-occasion/who5-collection-occasion.rst",
-    "tableSchema": "table/collection-occasion/who5-metadata.json"
+    "schema:name": "who5-measure",
+    "schema:description": "table/measure/who5-measure.rst",
+    "tableSchema": "table/measure/who5-metadata.json"
   }, {
-    "dc:title": "SIDAS Collection Occasion",
+    "dc:title": "SIDAS Measure",
     "url": "data/sidas.csv",
-    "schema:name": "sidas-collection-occasion",
-    "schema:description": "table/collection-occasion/sidas-collection-occasion.rst",
-    "tableSchema": "table/collection-occasion/sidas-metadata.json"
+    "schema:name": "sidas-measure",
+    "schema:description": "table/measure/sidas-measure.rst",
+    "tableSchema": "table/measure/sidas-metadata.json"
   }, {
-    "dc:title": "MSPSS Collection Occasion",
+    "dc:title": "MSPSS Measure",
     "url": "data/mspss.csv",
-    "schema:name": "mspss-collection-occasion",
-    "schema:description": "table/collection-occasion/mspss-collection-occasion.rst",
-    "tableSchema": "table/collection-occasion/mspss-metadata.json"
+    "schema:name": "mspss-measure",
+    "schema:description": "table/measure/mspss-measure.rst",
+    "tableSchema": "table/measure/mspss-metadata.json"
   }, {
     "url": "type/gender.csv",
     "tableSchema": "type/gender.json"
@@ -218,11 +224,23 @@
     "url": "table/twb-episode/twb-primary-nominated-professional.csv",
     "tableSchema": "table/twb-episode/twb-primary-nominated-professional.json"
   }, {
-    "url": "table/twb-episode/twb-sexual-identity.csv",
-    "tableSchema": "table/twb-episode/twb-sexual-identity.json"
+    "url": "table/twb-episode/twb-sexual-orientation.csv",
+    "tableSchema": "table/twb-episode/twb-sexual-orientation.json"
+  }, {
+    "url": "table/twb-episode/twb-transgender-status.csv",
+    "tableSchema": "table/twb-episode/twb-transgender-status.json"
+  }, {
+    "url": "table/twb-episode/twb-intersex-status.csv",
+    "tableSchema": "table/twb-episode/twb-intersex-status.json"
   }, {
     "url": "table/twb-episode/twb-veteran.csv",
     "tableSchema": "table/twb-episode/twb-veteran.json"
+  }, {
+    "url": "table/twb-episode/twb-lifetime-suicide-attempt.csv",
+    "tableSchema": "table/twb-episode/twb-lifetime-suicide-attempt.json"
+  }, {
+    "url": "table/twb-episode/twb-method-of-suicide-attempt.csv",
+    "tableSchema": "table/twb-episode/twb-method-of-suicide-attempt.json"
   }, {
     "url": "table/twb-referral-out/twb-referral-out-provider-type.csv",
     "tableSchema": "table/twb-referral-out/twb-referral-out-provider-type.json"
@@ -260,37 +278,37 @@
     "url": "table/collection-occasion/reason.csv",
     "tableSchema": "table/collection-occasion/reason.json"
   }, {
-    "url": "table/collection-occasion/k10p-k5.csv",
-    "tableSchema": "table/collection-occasion/k10p-k5.json"
+    "url": "table/measure/k10p-k5.csv",
+    "tableSchema": "table/measure/k10p-k5.json"
   }, {
-    "url": "table/collection-occasion/sdq/sdq-1-25.csv",
-    "tableSchema": "table/collection-occasion/sdq/sdq-1-25.json"
+    "url": "table/measure/sdq/sdq-1-25.csv",
+    "tableSchema": "table/measure/sdq/sdq-1-25.json"
   }, {
-    "url": "table/collection-occasion/sdq/sdq-26.csv",
-    "tableSchema": "table/collection-occasion/sdq/sdq-26.json"
+    "url": "table/measure/sdq/sdq-26.csv",
+    "tableSchema": "table/measure/sdq/sdq-26.json"
   }, {
-    "url": "table/collection-occasion/sdq/sdq-27.csv",
-    "tableSchema": "table/collection-occasion/sdq/sdq-27.json"
+    "url": "table/measure/sdq/sdq-27.csv",
+    "tableSchema": "table/measure/sdq/sdq-27.json"
   }, {
-    "url": "table/collection-occasion/sdq/sdq-28-33_35.csv",
-    "tableSchema": "table/collection-occasion/sdq/sdq-28-33_35.json"
+    "url": "table/measure/sdq/sdq-28-33_35.csv",
+    "tableSchema": "table/measure/sdq/sdq-28-33_35.json"
   }, {
-    "url": "table/collection-occasion/sdq/sdq-34.csv",
-    "tableSchema": "table/collection-occasion/sdq/sdq-34.json"
+    "url": "table/measure/sdq/sdq-34.csv",
+    "tableSchema": "table/measure/sdq/sdq-34.json"
   }, {
-    "url": "table/collection-occasion/sdq/sdq-36-42.csv",
-    "tableSchema": "table/collection-occasion/sdq/sdq-36-42.json"
+    "url": "table/measure/sdq/sdq-36-42.csv",
+    "tableSchema": "table/measure/sdq/sdq-36-42.json"
   }, {
-    "url": "table/collection-occasion/sdq/sdq-version.csv",
-    "tableSchema": "table/collection-occasion/sdq/sdq-version.json"
+    "url": "table/measure/sdq/sdq-version.csv",
+    "tableSchema": "table/measure/sdq/sdq-version.json"
   }, {
-    "url": "table/collection-occasion/twb-plan/twb-plan-type.csv",
-    "tableSchema": "table/collection-occasion/twb-plan/twb-plan-type.json"
+    "url": "table/measure/twb-plan/twb-plan-type.csv",
+    "tableSchema": "table/measure/twb-plan/twb-plan-type.json"
   }, {
-    "url": "table/collection-occasion/who5.csv",
-    "tableSchema": "table/collection-occasion/who5.json"
+    "url": "table/measure/who5.csv",
+    "tableSchema": "table/measure/who5.json"
   }, {
-    "url": "table/collection-occasion/mspss.csv",
-    "tableSchema": "table/collection-occasion/mspss.json"
+    "url": "table/measure/mspss.csv",
+    "tableSchema": "table/measure/mspss.json"
   }]
 }

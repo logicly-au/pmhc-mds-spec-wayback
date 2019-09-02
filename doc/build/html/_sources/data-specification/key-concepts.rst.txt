@@ -114,12 +114,15 @@ Outcome Collection Occasion
 ---------------------------
 
 A Collection Occasion is defined as an occasion during an Episode of Care when
-the required outcome measure is to be collected. At a minimum, collection of
+the required outcome measures are to be collected. At a minimum, collection of
 outcome data is required at both Episode Start and Episode End, but may be more
 frequent if clinically indicated and agreed by the client.
 
-TWB will use the following measures:
+TWB will allow the following data records to be collected at a collection occasion:
 
+* :ref:`twb-plan-data-elements`
+* :ref:`twb-ni-data-elements`
+* :ref:`k10p-data-elements`
 * :ref:`who5-data-elements`
 * :ref:`sidas-data-elements`
 * :ref:`mspss-data-elements`

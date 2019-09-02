@@ -15,6 +15,21 @@
     },
     "required": true
   },{
+     "name": "measure_key",
+    "titles": [ "measure_key" ],
+    "dc:title": "Measure Key",
+    "schema:description": "This is a number or code assigned to each instance of a measure. The Measure Key is unique and stable for each instance of a measure at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/measure/key.rst",
+    "schema:dateCreated": "2016-06-22",
+    "schema:dateDeleted": "2016-06-22",
+    "schema:dateModified": "2016-06-22",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
     "name": "collection_occasion_key",
     "titles": [ "collection_occasion_key" ],
     "dc:title": "Collection Occasion Key",
@@ -30,52 +45,11 @@
     },
     "required": true
   },{
-     "name": "episode_key",
-    "titles": [ "episode_key" ],
-    "dc:title": "Episode Key",
-    "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2016-06-22",
-    "datatype": {
-      "base": "string",
-      "minLength": 2,
-      "maxLength": 50
-    },
-    "required": true
-  },{
-    "name": "measure_date",
-    "titles": [ "measure_date" ],
-    "dc:title": "Collection Occasion - Measure Date",
-    "schema:description": "The date the measure was given.",
-    "schema:disambiguatingDescription": "table/collection-occasion/date.rst",
-    "schema:dateCreated": "2016-06-22",
-    "schema:dateDeleted": "2016-06-22",
-    "schema:dateModified": "2018-01-02",
-    "datatype": {
-      "base": "date",
-      "format": "dMMyyyy",
-      "minimum": "2016-01-01"
-    },
-    "schema:dateMissingUnknown": "9999-09-09",
-    "required": true
-  },{
-    "name": "reason_for_collection",
-    "titles": [ "reason_for_collection" ],
-    "dc:title": "Collection Occasion - Reason",
-    "schema:description": "The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.",
-    "schema:disambiguatingDescription": "table/collection-occasion/reason.rst",
-    "schema:dateCreated": "2016-07-08",
-    "schema:dateModified": "2016-07-08",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
     "name": "sidas_item1",
     "titles": [ "sidas_item1" ],
     "dc:title": "SIDAS - Question 1",
     "schema:description": "In the past month, how often have you had thoughts about suicide?",
-    "schema:disambiguatingDescription": "table/collection-occasion/sidas/Q1.rst",
+    "schema:disambiguatingDescription": "table/measure/sidas/Q1.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateDeleted": "2018-04-30",
     "schema:dateModified": "2018-04-30",
@@ -90,7 +64,7 @@
     "titles": [ "sidas_item2" ],
     "dc:title": "SIDAS - Question 2",
     "schema:description": "In the past month, how much control have you had over these thoughts?",
-    "schema:disambiguatingDescription": "table/collection-occasion/sidas/Q2.rst",
+    "schema:disambiguatingDescription": "table/measure/sidas/Q2.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateDeleted": "2018-04-30",
     "schema:dateModified": "2018-04-30",
@@ -105,7 +79,7 @@
     "titles": [ "sidas_item3" ],
     "dc:title": "SIDAS - Question 3",
     "schema:description": "In the past month, how close have you come to making an attempt?",
-    "schema:disambiguatingDescription": "table/collection-occasion/sidas/Q3.rst",
+    "schema:disambiguatingDescription": "table/measure/sidas/Q3.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateDeleted": "2018-04-30",
     "schema:dateModified": "2018-04-30",
@@ -120,7 +94,7 @@
     "titles": [ "sidas_item4" ],
     "dc:title": "SIDAS - Question 4",
     "schema:description": "In the past month, to what extent have you felt tormented by thoughts about suicide?",
-    "schema:disambiguatingDescription": "table/collection-occasion/sidas/Q4.rst",
+    "schema:disambiguatingDescription": "table/measure/sidas/Q4.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateDeleted": "2018-04-30",
     "schema:dateModified": "2018-04-30",
@@ -135,7 +109,7 @@
     "titles": [ "sidas_item5" ],
     "dc:title": "SIDAS - Question 5",
     "schema:description": "In the past month, how much have thoughts about suicide interfered with your ability to carry out daily activities, such as work, household tasks or social activities?",
-    "schema:disambiguatingDescription": "table/collection-occasion/sidas/Q5.rst",
+    "schema:disambiguatingDescription": "table/measure/sidas/Q5.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateDeleted": "2018-04-30",
     "schema:dateModified": "2018-04-30",
@@ -158,18 +132,12 @@
       "base": "string"
       }
   }],
-  "primaryKey": [ "organisation_path", "collection_occasion_key" ],
+  "primaryKey": [ "organisation_path", "measure_key" ],
   "foreignKeys": [{
-    "columnReference": "reason_for_collection",
+    "columnReference": [ "organisation_path", "collection_occasion_key" ],
     "reference": {
-      "resource": "table/collection-occasion/reason.csv",
-      "columnReference": "id"
-    }
-  }, {
-    "columnReference": [ "organisation_path", "episode_key" ],
-    "reference": {
-      "resource": "data/nspt-episodes.csv",
-      "columnReference": [ "organisation_path", "episode_key" ]
+      "resource": "data/collection_occasions.csv",
+      "columnReference": [ "organisation_path", "collection_occasion_key" ]
     }
   }]
 }

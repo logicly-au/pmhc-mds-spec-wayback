@@ -54,9 +54,6 @@
 :97: No Referral
 :98: Other
 :99: Not stated/Inadequately described"
-"`TWB Referral Out - Date`_ (twb_referral_out_date)
-
-",date,yes,"The date the Service Provider made the referral out to an external service/organisation."
 "`TWB Referral Out - Status`_ (twb_referral_out_status)
 
 ",string,yes,":1: Service commenced

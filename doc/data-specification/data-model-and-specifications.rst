@@ -44,11 +44,13 @@ The Way Back adds the following records on top of PMHC MDS current specification
 - See :ref:`TWB-Primary Nominated Professional Contact data specifications <twb-pnpc-data-elements>` for Primary Nominated Professional Contact Data.
 - See :ref:`TWB-Critical Incident data specifications <twb-critical-incident-data-elements>` for Critical Incident Data.
 - See :ref:`TWB-Referral Out data specifications <twb-referral-out-data-elements>` for Referral Out Data.
-- See :ref:`TWB-Plan Outcome Collection Occasion data specifications <twb-plan-data-elements>` for Planning Data.
-- See :ref:`TWB-INI Outcome Collection Occasion data specifications <twb-ini-data-elements>`.
-- See :ref:`WHO-5 Outcome Collection Occasion data specifications <who5-data-elements>`.
-- See :ref:`SIDAS Outcome Collection Occasion data specifications <sidas-data-elements>`.
-- See :ref:`MSPSS Outcome Collection Occasion data specifications <mspss-data-elements>`.
+- See :ref:`Collection Occasion data specifications <collection-occasion-data-elements>` for Collection Occasions.
+- See :ref:`TWB-Plan data specifications <twb-plan-data-elements>` for Planning Data.
+- See :ref:`TWB-NI data specifications <twb-ni-data-elements>` for Needs Identification Data.
+- See :ref:`K10+ Measure data specifications <k10p-data-elements>`.
+- See :ref:`WHO-5 Measure data specifications <who5-data-elements>`.
+- See :ref:`SIDAS Measure data specifications <sidas-data-elements>`.
+- See :ref:`MSPSS Measure data specifications <mspss-data-elements>`.
 
 .. _episode-data-elements:
 
@@ -125,59 +127,81 @@ collection occasion.
 
 Outcome collection occasions are managed by the provider organisations via upload or data entry.
 
-TWB requires the use of the following outcome collection occasion measures.
+TWB requires the use of the following outcome collection occasion records.
 
-.. _twb-plan-data-elements:
+.. _collection-occasion-data-elements:
 
-TWB Plan Outcome Collection Occasion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Collection Occasion
+~~~~~~~~~~~~~~~~~~~
 
-.. csv-table:: TWB Plan record layout
-  :file: record/twb-plan-collection-occasion.csv
+.. csv-table:: Collection Occasions record layout
+  :file: record/collection-occasion.csv
   :header-rows: 1
 
 ----------
 
-.. _twb-ini-data-elements:
+.. _twb-plan-data-elements:
 
-TWB INI Outcome Collection Occasion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TWB Plan
+~~~~~~~~
 
 .. csv-table:: TWB Plan record layout
-  :file: record/twb-ini-collection-occasion.csv
+  :file: record/twb-plan.csv
+  :header-rows: 1
+
+----------
+
+.. _twb-ni-data-elements:
+
+TWB NI
+~~~~~~
+
+.. csv-table:: TWB Plan record layout
+  :file: record/twb-ni.csv
+  :header-rows: 1
+
+----------
+
+.. _k10p-data-elements:
+
+K10+ Measure
+~~~~~~~~~~~~
+
+.. csv-table:: K10+ record layout
+  :file: record/k10p-measure.csv
   :header-rows: 1
 
 ----------
 
 .. _who5-data-elements:
 
-WHO-5 Outcome Collection Occasion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WHO-5 Measure
+~~~~~~~~~~~~~
 
 .. csv-table:: WHO-5 record layout
-  :file: record/who5-collection-occasion.csv
+  :file: record/who5-measure.csv
   :header-rows: 1
 
 ----------
 
 .. _sidas-data-elements:
 
-SIDAS Outcome Collection Occasion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SIDAS Measure
+~~~~~~~~~~~~~
 
 .. csv-table:: SIDAS record layout
-  :file: record/sidas-collection-occasion.csv
+  :file: record/sidas-measure.csv
   :header-rows: 1
 
 ----------
 
 .. _mspss-data-elements:
 
-MSPSS Outcome Collection Occasion
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MSPSS Measure
+~~~~~~~~~~~~~
 
 .. csv-table:: MSPSS record layout
-  :file: record/mspss-collection-occasion.csv
+  :file: record/mspss-measure.csv
   :header-rows: 1
 
 ----------

@@ -1,9 +1,18 @@
-**Reporting requirements**
-Mandatory – All clients
+Provider statement:
 
-**Guide for use**
-A client may decline to participate in contact by Beyond Blue for the purpose of sharing experiences. This does not effect their eligibility for the service.
+*Have you read the background information, and do you agree to provide
+additional information to be collected for the Way Back data, for that data to
+be linked with the routine data collected by me [service provider], and for
+the evaluator to access the linked dataset? The dataset will not include your
+name or any other identifying information.*
 
-**Purpose/context**
-Program monitoring, service planning.
-Understanding service demand and presenting client profile.
+Client response options:
+
+1 - Yes
+  The client has read the background information and agrees to provide
+  additional information for the Way Back, for that data to be linked with
+  the routine data collected by me, and for the evaluator's to access the
+  linked dataset.
+
+**Note** Data where consent has not been given for Way Back data collection,
+linkage and sharing with evaluation must not be entered.
