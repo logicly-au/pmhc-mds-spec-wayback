@@ -1,5 +1,5 @@
-version: v0.0.1-1-gfe151ab
+version: v0.0.1-2-g6bf8d57
 
-commit_hash: fe151ab4ff0867096acfd540af33082b91318296
-commit_date: Mon Sep 2 15:02:39 2019
+commit_hash: 6bf8d5757842865795c539b2838f7551f394ccf2
+commit_date: Mon Sep 9 15:41:35 2019
 
