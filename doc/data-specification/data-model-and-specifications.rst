@@ -57,16 +57,22 @@ The Way Back adds the following records on top of PMHC MDS current specification
 Episode Data Elements
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. _twb-episode-data-elements:
-
-TWB-Episode
-~~~~~~~~~~~
-
 See :ref:`key-concepts-episode` for definition of an episode.
 
 Episodes are managed by the provider organisations via upload or data entry.
 
 .. csv-table:: Episode record layout
+  :file: record/episode.csv
+  :header-rows: 1
+
+----------
+
+.. _twb-episode-data-elements:
+
+TWB-Episode
+~~~~~~~~~~~
+
+.. csv-table:: TWB Episode record layout
   :file: record/twb-episode.csv
   :header-rows: 1
 
@@ -113,6 +119,21 @@ Referral Outs are managed by the provider organisations via upload or data entry
 
 .. csv-table:: Referral Out record layout
   :file: record/twb-referral-out.csv
+  :header-rows: 1
+
+----------
+
+.. _servive-contact-data-elements:
+
+Service Contact Data Elements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See :ref:`key-concepts-service-contact` for definition of a service-contact.
+
+Service Contacts are managed by the provider organisations via upload or data entry.
+
+.. csv-table:: Service Contact record layout
+  :file: record/service-contact.csv
   :header-rows: 1
 
 ----------
