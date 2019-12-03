@@ -67,7 +67,7 @@ a.headerlink {
 /* Page Numbers */
 @page {
     @bottom-center {
-        content: "Page " counter(page) " of " counter(pages);
+        content: "Page test " counter(page) " of " counter(pages);
         font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
         font-size: 0.7em;
         margin-bottom: 2em;
@@ -92,3 +92,15 @@ a.headerlink {
     font-style:normal;
     src:local("Arial"),url(arial.ttf) format("truetype");
 }
+
+/* Shrinks images to fit when using prince */
+@page {
+	prince-shrink-to-fit: auto 
+}
+
+@media print {
+	img {
+		max-height: 297mm;
+	}
+}
+
