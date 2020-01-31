@@ -134,6 +134,9 @@
     "url": "type/boolean.csv",
     "tableSchema": "type/boolean.json"
   }, {
+    "url": "type/unknown.csv",
+    "tableSchema": "type/unknown.json"
+  }, {
     "url": "type/active.csv",
     "tableSchema": "type/active.json"
   }, {
@@ -218,9 +221,6 @@
     "url": "table/twb-episode/twb-eligibility-type.csv",
     "tableSchema": "table/twb-episode/twb-eligibility-type.json"
   }, {
-    "url": "table/twb-episode/twb-beyond-blue-contact-consent.csv",
-    "tableSchema": "table/twb-episode/twb-beyond-blue-contact-consent.json"
-  }, {
     "url": "table/twb-episode/twb-primary-nominated-professional.csv",
     "tableSchema": "table/twb-episode/twb-primary-nominated-professional.json"
   }, {
@@ -236,8 +236,8 @@
     "url": "table/twb-episode/twb-veteran.csv",
     "tableSchema": "table/twb-episode/twb-veteran.json"
   }, {
-    "url": "table/twb-episode/twb-lifetime-suicide-attempt.csv",
-    "tableSchema": "table/twb-episode/twb-lifetime-suicide-attempt.json"
+    "url": "table/twb-episode/twb-previous-suicide-attempts.csv",
+    "tableSchema": "table/twb-episode/twb-previous-suicide-attempts.json"
   }, {
     "url": "table/twb-episode/twb-method-of-suicide-attempt.csv",
     "tableSchema": "table/twb-episode/twb-method-of-suicide-attempt.json"

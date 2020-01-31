@@ -12,7 +12,7 @@
 
 
 
-METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",date,"—","The date on which an *Episode of Care* is formally or administratively ended"
+`METeOR ID 614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__",date,"—","The date on which an *Episode of Care* is formally or administratively ended"
 "`Episode - Client Consent to Anonymised Data`_ (client_consent)
 
 ",string,yes,":1: Yes
@@ -31,7 +31,7 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 ",date,"—","The date the referrer made the referral."
 "`Episode - Principal Focus of Treatment Plan`_ (principal_focus)
 
-",string,yes,":7: Other"
+",string,yes,":7: Psychosocial"
 "`Episode - GP Mental Health Treatment Plan Flag`_ (mental_health_treatment_plan)
 
 ",string,yes,":1: Yes
@@ -48,12 +48,12 @@ METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 
 
 
-METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,yes,"The Australian postcode of the client."
+`METeOR ID 429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__",string,yes,"The Australian postcode of the client."
 "`Episode - Labour Force Status`_ (labour_force_status)
 
 
 
-METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__",string,yes,":1: Employed
+`METeOR ID 621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__",string,yes,":1: Employed
 :2: Unemployed
 :3: Not in the Labour Force
 :9: Not stated/inadequately described"
@@ -61,7 +61,7 @@ METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
 
 
 
-METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__",string,yes,":1: Full-time
+`METeOR ID 269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__",string,yes,":1: Full-time
 :2: Part-time
 :3: Not applicable - not in the labour force
 :9: Not stated/inadequately described"
@@ -69,7 +69,7 @@ METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
 
 
 
-METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__",string,yes,":0: N/A - Client aged less than 16 years
+`METeOR ID 386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__",string,yes,":0: N/A - Client aged less than 16 years
 :1: Disability Support Pension
 :2: Other pension or benefit (not superannuation)
 :3: Paid employment
@@ -82,7 +82,7 @@ METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
 
 
 
-METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__",string,yes,":1: Yes
+`METeOR ID 605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__",string,yes,":1: Yes
 :2: No
 :3: Not Known
 :9: Not stated"
@@ -95,7 +95,7 @@ METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 
 
 
-METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__",string,yes,":1: Never married
+`METeOR ID 291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__",string,yes,":1: Never married
 :2: Widowed
 :3: Divorced
 :4: Separated
@@ -154,76 +154,22 @@ METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 :999: Missing"
 "`Episode - Additional Diagnosis`_ (additional_diagnosis)
 
-",string,yes,":000: No additional diagnosis
-:100: Anxiety disorders (ATAPS)
-:101: Panic disorder
-:102: Agoraphobia
-:103: Social phobia
-:104: Generalised anxiety disorder
-:105: Obsessive-compulsive disorder
-:106: Post-traumatic stress disorder
-:107: Acute stress disorder
-:108: Other anxiety disorder
-:200: Affective (Mood) disorders (ATAPS)
-:201: Major depressive disorder
-:202: Dysthymia
-:203: Depressive disorder NOS
-:204: Bipolar disorder
-:205: Cyclothymic disorder
-:206: Other affective disorder
-:300: Substance use disorders (ATAPS)
-:301: Alcohol harmful use
-:302: Alcohol dependence
-:303: Other drug harmful use
-:304: Other drug dependence
-:305: Other substance use disorder
-:400: Psychotic disorders (ATAPS)
-:401: Schizophrenia
-:402: Schizoaffective disorder
-:403: Brief psychotic disorder
-:404: Other psychotic disorder
-:501: Separation anxiety disorder
-:502: Attention deficit hyperactivity disorder (ADHD)
-:503: Conduct disorder
-:504: Oppositional defiant disorder
-:505: Pervasive developmental disorder
-:506: Other disorder of childhood and adolescence
-:601: Adjustment disorder
-:602: Eating disorder
-:603: Somatoform disorder
-:604: Personality disorder
-:605: Other mental disorder
-:901: Anxiety symptoms
-:902: Depressive symptoms
-:903: Mixed anxiety and depressive symptoms
-:904: Stress related
-:905: Other
-:999: Missing"
+",string,yes,":000: No additional diagnosis"
 "`Episode - Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)
 
-",string,yes,":1: Yes
-:2: No
-:9: Unknown"
+",string,yes,":9: Unknown"
 "`Episode - Medication - Anxiolytics (N05B)`_ (medication_anxiolytics)
 
-",string,yes,":1: Yes
-:2: No
-:9: Unknown"
+",string,yes,":9: Unknown"
 "`Episode - Medication - Hypnotics and sedatives (N05C)`_ (medication_hypnotics)
 
-",string,yes,":1: Yes
-:2: No
-:9: Unknown"
+",string,yes,":9: Unknown"
 "`Episode - Medication - Antidepressants (N06A)`_ (medication_antidepressants)
 
-",string,yes,":1: Yes
-:2: No
-:9: Unknown"
+",string,yes,":9: Unknown"
 "`Episode - Medication - Psychostimulants and nootropics (N06B)`_ (medication_psychostimulants)
 
-",string,yes,":1: Yes
-:2: No
-:9: Unknown"
+",string,yes,":9: Unknown"
 "`Episode - Referrer Profession`_ (referrer_profession)
 
 ",string,yes,":1: General Practitioner

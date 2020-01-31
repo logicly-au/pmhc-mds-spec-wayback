@@ -92,3 +92,15 @@ a.headerlink {
     font-style:normal;
     src:local("Arial"),url(arial.ttf) format("truetype");
 }
+
+/* Shrinks images to fit when using prince */
+@page {
+	prince-shrink-to-fit: auto 
+}
+
+@media print {
+	img {
+		max-height: 297mm;
+	}
+}
+

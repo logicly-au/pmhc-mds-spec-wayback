@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -17,49 +16,43 @@
   
 
   
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="The Way Back Version 2.0 documentation" href="../index.html"/>
-        <link rel="up" title="Data Specification" href="index.html"/>
-        <link rel="next" title="Upload Specification" href="upload-specification.html"/>
-        <link rel="prev" title="Identifier Management" href="identifier-management.html"/> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Upload Specification" href="upload-specification.html" />
+    <link rel="prev" title="Identifier Management" href="identifier-management.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
-            <a href="../index.html" class="icon icon-home"> The Way Back
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> The Way Back
           
 
           
@@ -86,6 +79,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -203,12 +197,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#twb-critical-incident-tags">TWB Critical Incident - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-critical-incident-type">TWB Critical Incident - Type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-critical-incident-key">TWB Critical Incident Key</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-episode-beyond-blue-contact-consent">TWB Episode - Beyond Blue Contact Consent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-eligibility-type">TWB Episode - Eligibility Type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-external-evaluator-contact-consent">TWB Episode - External Evaluator Contact Consent</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-intersex-status">TWB Episode - Intersex Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-episode-lifetime-suicide-attempt-and-ideation">TWB Episode - Lifetime suicide attempt and ideation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-method-of-suicide-attempt">TWB Episode - Method of suicide attempt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional">TWB Episode - Primary Nominated Professional</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-sexual-orientation">TWB Episode - Sexual Orientation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a></li>
@@ -253,13 +246,14 @@
             
           
         </div>
+        
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">The Way Back</a>
@@ -267,9 +261,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -290,7 +285,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="index.html">Data Specification</a> &raquo;</li>
         
@@ -383,7 +378,7 @@ Collection Occasion records fit into the overall structure.</p>
 <td>This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.</td>
 </tr>
 <tr class="row-odd"><td><p class="first"><a class="reference internal" href="#episode-end-date">Episode - End Date</a> (episode_end_date)</p>
-<p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/614094">614094</a></p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/614094">METeOR ID 614094</a></p>
 </td>
 <td>date</td>
 <td>—</td>
@@ -441,7 +436,7 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Other</td>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Psychosocial</td>
 </tr>
 </tbody>
 </table>
@@ -486,14 +481,14 @@ Collection Occasion records fit into the overall structure.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-area-of-usual-residence-postcode">Episode - Area of usual residence, postcode</a> (client_postcode)</p>
-<p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">METeOR ID 429894</a></p>
 </td>
 <td>string</td>
 <td>yes</td>
 <td>The Australian postcode of the client.</td>
 </tr>
 <tr class="row-odd"><td><p class="first"><a class="reference internal" href="#episode-labour-force-status">Episode - Labour Force Status</a> (labour_force_status)</p>
-<p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/621450">621450</a></p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/621450">METeOR ID 621450</a></p>
 </td>
 <td>string</td>
 <td>yes</td>
@@ -514,7 +509,7 @@ Collection Occasion records fit into the overall structure.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-employment-participation">Episode - Employment Participation</a> (employment_participation)</p>
-<p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/269950">269950</a></p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/269950">METeOR ID 269950</a></p>
 </td>
 <td>string</td>
 <td>yes</td>
@@ -535,7 +530,7 @@ Collection Occasion records fit into the overall structure.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p class="first"><a class="reference internal" href="#episode-source-of-cash-income">Episode - Source of Cash Income</a> (income_source)</p>
-<p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/386449">386449</a></p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/386449">METeOR ID 386449</a></p>
 </td>
 <td>string</td>
 <td>yes</td>
@@ -566,7 +561,7 @@ Collection Occasion records fit into the overall structure.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-health-care-card">Episode - Health Care Card</a> (health_care_card)</p>
-<p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/605149">605149</a></p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/605149">METeOR ID 605149</a></p>
 </td>
 <td>string</td>
 <td>yes</td>
@@ -604,7 +599,7 @@ Collection Occasion records fit into the overall structure.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-marital-status">Episode - Marital Status</a> (marital_status)</p>
-<p class="last">METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/291045">291045</a></p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/291045">METeOR ID 291045</a></p>
 </td>
 <td>string</td>
 <td>yes</td>
@@ -753,94 +748,6 @@ Collection Occasion records fit into the overall structure.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">000:</th><td class="field-body">No additional diagnosis</td>
 </tr>
-<tr class="field-even field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
-</tr>
-<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
-</tr>
-<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
-</tr>
-<tr class="field-even field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
-</tr>
-<tr class="field-even field"><th class="field-name">905:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
-</tr>
 </tbody>
 </table>
 </td>
@@ -852,10 +759,6 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -869,10 +772,6 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -886,10 +785,6 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -903,10 +798,6 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -920,10 +811,6 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -1121,7 +1008,7 @@ Collection Occasion records fit into the overall structure.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Other</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Does not want to disclose</td>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated</td>
 </tr>
 </tbody>
 </table>
@@ -1197,20 +1084,7 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-episode-beyond-blue-contact-consent">TWB Episode - Beyond Blue Contact Consent</a> (twb_beyond_blue_contact_consent)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional">TWB Episode - Primary Nominated Professional</a> (twb_primary_nominated_professional)</td>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional">TWB Episode - Primary Nominated Professional</a> (twb_primary_nominated_professional)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
@@ -1237,20 +1111,20 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-episode-lifetime-suicide-attempt-and-ideation">TWB Episode - Lifetime suicide attempt and ideation</a> (twb_lifetime_suicide_attempt)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a> (twb_previous_suicide_attempts)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Suicide attempt</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">No</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Suicide ideation, no attempt</td>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Previous attempt(s) made in the past 12 months</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Neither suicide attempt nor ideation</td>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Previous attempt(s) made within their lifetime</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Not known</td>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Not known</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/Inadequately described</td>
 </tr>
@@ -1258,24 +1132,24 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-method-of-suicide-attempt">TWB Episode - Method of suicide attempt</a> (twb_method_of_suicide_attempt)</td>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-method-of-suicide-attempt">TWB Episode - Method of suicide attempt</a> (twb_method_of_suicide_attempt)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Poisoning</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Intentional self-poisoning</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Hanging</td>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Intentional self-harm by hanging, strangulation and suffocation</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Drowning</td>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Intentional self-harm by drowning and submersion</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Contact with a sharp object</td>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Intentional self-harm by sharp object</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Firearm</td>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Intentional self-harm by Firearm</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Fall</td>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Intentional self-harm by jumping from a high place</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
 </tr>
@@ -1285,7 +1159,7 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a> (twb_episode_tags)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a> (twb_episode_tags)</td>
 <td>string</td>
 <td>—</td>
 <td>List of tags for the TWB Episode.</td>
@@ -1601,6 +1475,263 @@ Collection Occasion records fit into the overall structure.</p>
 <span id="servive-contact-data-elements"></span><h3>Service Contact Data Elements<a class="headerlink" href="#service-contact-data-elements" title="Permalink to this headline">¶</a></h3>
 <p>See <a class="reference internal" href="key-concepts.html#key-concepts-service-contact"><span class="std std-ref">Service Contact</span></a> for definition of a service-contact.</p>
 <p>Service Contacts are managed by the provider organisations via upload or data entry.</p>
+<table border="1" class="docutils" id="id13">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">Service Contact record layout</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
+<th class="head">Type (min,max)</th>
+<th class="head">Required</th>
+<th class="head">Format / Values</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
+<td>string</td>
+<td>yes</td>
+<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#service-contact-key">Service Contact Key</a> (service_contact_key)</td>
+<td>string (2,50)</td>
+<td>yes</td>
+<td>This is a number or code assigned to each service contact. The Service Contact Key is unique and stable for each service contact at the level of the organisation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#episode-key">Episode Key</a> (episode_key)</td>
+<td>string (2,50)</td>
+<td>yes</td>
+<td>This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#practitioner-key">Practitioner Key</a> (practitioner_key)</td>
+<td>string (2,50)</td>
+<td>yes</td>
+<td>A unique identifier for a practitioner within the provider organisation.</td>
+</tr>
+<tr class="row-even"><td><p class="first"><a class="reference internal" href="#service-contact-date">Service Contact - Date</a> (service_contact_date)</p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">METeOR ID 494356</a></p>
+</td>
+<td>date</td>
+<td>yes</td>
+<td>The date of each mental health service contact between a health service provider and patient/client.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#service-contact-type">Service Contact - Type</a> (service_contact_type)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
+</tr>
+<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Psychosocial support</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><p class="first"><a class="reference internal" href="#service-contact-postcode">Service Contact - Postcode</a> (service_contact_postcode)</p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">METeOR ID 429894</a></p>
+</td>
+<td>string</td>
+<td>yes</td>
+<td>The Australian postcode where the service contact took place.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#service-contact-modality">Service Contact - Modality</a> (service_contact_modality)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Face to Face</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Telephone</td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Video</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Internet-based</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#service-contact-participants">Service Contact - Participants</a> (service_contact_participants)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Individual client</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Client group</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Family / Client Support Network</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Other health professional or service provider</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#service-contact-venue">Service Contact - Venue</a> (service_contact_venue)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Client’s Home</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Service provider’s office</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">GP Practice</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Other medical practice</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Headspace Centre</td>
+</tr>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Other primary care setting</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Public or private hospital</td>
+</tr>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Residential aged care facility</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">School or other educational centre</td>
+</tr>
+<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Client’s Workplace</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Aged care centre - non-residential</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Not applicable (Service Contact Modality is not face to face)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">99:</th><td class="field-body">Not stated</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#service-contact-duration">Service Contact - Duration</a> (service_contact_duration)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">1-15 mins</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">16-30 mins</td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">31-45 mins</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">46-60 mins</td>
+</tr>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">61-75 mins</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">76-90 mins</td>
+</tr>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">91-105 mins</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">106-120 mins</td>
+</tr>
+<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">over 120 mins</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#service-contact-copayment">Service Contact - Copayment</a> (service_contact_copayment)</td>
+<td>number</td>
+<td>yes</td>
+<td>0 - 999999.99</td>
+</tr>
+<tr class="row-even"><td><p class="first"><a class="reference internal" href="#service-contact-client-participation-indicator">Service Contact - Client Participation Indicator</a> (service_contact_participation_indicator)</p>
+<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">METeOR ID 494341</a></p>
+</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#service-contact-interpreter-used">Service Contact - Interpreter Used</a> (service_contact_interpreter)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#service-contact-no-show">Service Contact - No Show</a> (service_contact_no_show)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#service-contact-final">Service Contact - Final</a> (service_contact_final)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">No further services are planned for the client in the current episode</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Further services are planned for the client in the current episode</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Not known at this stage</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#service-contact-tags">Service Contact - Tags</a> (service_contact_tags)</td>
+<td>string</td>
+<td>—</td>
+<td>List of tags for the service contact.</td>
+</tr>
+</tbody>
+</table>
 <hr class="docutils" />
 </div>
 <div class="section" id="collection-occasion-data-elements">
@@ -1611,8 +1742,8 @@ collection occasion.</p>
 <p>TWB requires the use of the following outcome collection occasion records.</p>
 <div class="section" id="collection-occasion">
 <span id="id4"></span><h4>Collection Occasion<a class="headerlink" href="#collection-occasion" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id13">
-<caption><span class="caption-number">Table 6 </span><span class="caption-text">Collection Occasions record layout</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id14">
+<caption><span class="caption-number">Table 7 </span><span class="caption-text">Collection Occasions record layout</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1675,8 +1806,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="twb-plan">
 <span id="twb-plan-data-elements"></span><h4>TWB Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id14">
-<caption><span class="caption-number">Table 7 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id15">
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1732,8 +1863,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="twb-ni">
 <span id="twb-ni-data-elements"></span><h4>TWB NI<a class="headerlink" href="#twb-ni" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id15">
-<caption><span class="caption-number">Table 8 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id16">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1779,8 +1910,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="k10-measure">
 <span id="k10p-data-elements"></span><h4>K10+ Measure<a class="headerlink" href="#k10-measure" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id16">
-<caption><span class="caption-number">Table 9 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id17">
+<caption><span class="caption-number">Table 10 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -2094,8 +2225,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="who-5-measure">
 <span id="who5-data-elements"></span><h4>WHO-5 Measure<a class="headerlink" href="#who-5-measure" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id17">
-<caption><span class="caption-number">Table 10 </span><span class="caption-text">WHO-5 record layout</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id18">
+<caption><span class="caption-number">Table 11 </span><span class="caption-text">WHO-5 record layout</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -2266,8 +2397,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="sidas-measure">
 <span id="sidas-data-elements"></span><h4>SIDAS Measure<a class="headerlink" href="#sidas-measure" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id18">
-<caption><span class="caption-number">Table 11 </span><span class="caption-text">SIDAS record layout</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id19">
+<caption><span class="caption-number">Table 12 </span><span class="caption-text">SIDAS record layout</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -2333,8 +2464,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="mspss-measure">
 <span id="mspss-data-elements"></span><h4>MSPSS Measure<a class="headerlink" href="#mspss-measure" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id19">
-<caption><span class="caption-number">Table 12 </span><span class="caption-text">MSPSS record layout</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id20">
+<caption><span class="caption-number">Table 13 </span><span class="caption-text">MSPSS record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -2722,8 +2853,8 @@ collection occasion.</p>
 <span id="metadata-data-elements"></span><h3>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h3>
 <p>The Metadata table must be included in file uploads in order to identify
 the type and version of the uploaded data.</p>
-<table border="1" class="docutils" id="id20">
-<caption><span class="caption-number">Table 13 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id21">
+<caption><span class="caption-number">Table 14 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -2907,10 +3038,10 @@ health status;</li>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -2957,94 +3088,6 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">000:</th><td class="field-body">No additional diagnosis</td>
-</tr>
-<tr class="field-even field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
-</tr>
-<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
-</tr>
-<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
-</tr>
-<tr class="field-even field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
-</tr>
-<tr class="field-even field"><th class="field-name">905:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
 </tr>
 </tbody>
 </table>
@@ -3112,7 +3155,7 @@ they currently reside.’</p>
 <p>Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">METeOR ID 429894</a></p>
 </td>
 </tr>
 </tbody>
@@ -3401,7 +3444,7 @@ item has not been collected.</p>
 </dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/269950">269950</a></p>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/269950">METeOR ID 269950</a></p>
 </td>
 </tr>
 </tbody>
@@ -3458,7 +3501,7 @@ date on which the organisation made the decision to close episode.</p>
 </dl>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/614094">614094</a></p>
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/614094">METeOR ID 614094</a></p>
 </td>
 </tr>
 </tbody>
@@ -3537,7 +3580,7 @@ date on which the organisation made the decision to close episode.</p>
 <a class="reference external" href="https://www.humanservices.gov.au/customer/services/centrelink/health-care-card">https://www.humanservices.gov.au/customer/services/centrelink/health-care-card</a></p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/605149">605149</a></p>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/605149">METeOR ID 605149</a></p>
 </td>
 </tr>
 </tbody>
@@ -3734,7 +3777,7 @@ permanently unable to work.</p>
 </dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/621450">621450</a></p>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/621450">METeOR ID 621450</a></p>
 </td>
 </tr>
 </tbody>
@@ -3800,7 +3843,7 @@ where the item has not been collected.</p>
 </dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/291045">291045</a></p>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/291045">METeOR ID 291045</a></p>
 </td>
 </tr>
 </tbody>
@@ -3827,10 +3870,6 @@ where the item has not been collected.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -3869,10 +3908,6 @@ medical products. It covers drugs designed for the depressive disorders.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -3912,10 +3947,6 @@ disorders.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -3955,10 +3986,6 @@ associated with anxiety and tension.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -3999,10 +4026,6 @@ Sedative drugs are prescribed to reduce excitability or anxiety.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -4248,7 +4271,7 @@ ATAPS referral date was before 1 July 2017</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Other</td>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Psychosocial</td>
 </tr>
 </tbody>
 </table>
@@ -4506,7 +4529,7 @@ the service user or their carer/family/advocate to provide the information
 (i.e. they have been asked but do not know).</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/386449">386449</a></p>
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/386449">METeOR ID 386449</a></p>
 </td>
 </tr>
 </tbody>
@@ -4567,10 +4590,10 @@ the service user or their carer/family/advocate to provide the information
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -5194,10 +5217,10 @@ missing. Where this is the case, the missing value used should be 99.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -5891,10 +5914,10 @@ items 1, 2, 5 &amp; 10, then divide by 4.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -6051,7 +6074,7 @@ to attend, <a class="reference internal" href="#dfn-service-contact-participatio
 as ‘1: Yes’ and <a class="reference internal" href="#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> should be recorded as ‘1: Yes’.</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">494341</a></p>
+<tr class="field-even field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">METeOR ID 494341</a></p>
 </td>
 </tr>
 </tbody>
@@ -6117,7 +6140,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 </ul>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></p>
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">METeOR ID 494356</a></p>
 </td>
 </tr>
 </tbody>
@@ -6488,7 +6511,7 @@ range 0200-0299 or 0800-9999.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">METeOR:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
+<tr class="field-odd field"><th class="field-name">Source:</th><td class="field-body"><p class="first last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">METeOR ID 429894</a></p>
 </td>
 </tr>
 </tbody>
@@ -6515,10 +6538,10 @@ range 0200-0299 or 0800-9999.</li>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -6776,10 +6799,10 @@ such as community health centres.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -6835,10 +6858,10 @@ Measurement of waiting times.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -6907,55 +6930,6 @@ Program monitoring, service planning, funding and accountability.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">TWB Critical Incident keys are case sensitive and must be
 valid unicode characters.</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
-<div class="section" id="twb-episode-beyond-blue-contact-consent">
-<span id="dfn-twb-beyond-blue-contact-consent"></span><h3>TWB Episode - Beyond Blue Contact Consent<a class="headerlink" href="#twb-episode-beyond-blue-contact-consent" title="Permalink to this headline">¶</a></h3>
-<p>Consent for the Way Back data collection, linkage and sharing with evaluation.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_beyond_blue_contact_consent</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Provider statement:</p>
-<p><em>Have you read the background information, and do you agree to provide
-additional information to be collected for the Way Back data, for that data to
-be linked with the routine data collected by me [service provider], and for
-the evaluator to access the linked dataset? The dataset will not include your
-name or any other identifying information.</em></p>
-<p>Client response options:</p>
-<dl class="docutils">
-<dt>1 - Yes</dt>
-<dd><p class="first last">The client has read the background information and agrees to provide
-additional information for the Way Back, for that data to be linked with
-the routine data collected by me, and for the evaluator’s to access the
-linked dataset.</p>
-</dd>
-</dl>
-<p class="last"><strong>Note</strong> Data where consent has not been given for Way Back data collection,
-linkage and sharing with evaluation must not be entered.</p>
-</td>
 </tr>
 </tbody>
 </table>
@@ -7101,55 +7075,6 @@ not fit typical binary notions of male and female bodies</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-episode-lifetime-suicide-attempt-and-ideation">
-<span id="dfn-twb-lifetime-suicide-attempt"></span><h3>TWB Episode - Lifetime suicide attempt and ideation<a class="headerlink" href="#twb-episode-lifetime-suicide-attempt-and-ideation" title="Permalink to this headline">¶</a></h3>
-<p>Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_lifetime_suicide_attempt</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Suicide attempt</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Suicide ideation, no attempt</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Neither suicide attempt nor ideation</td>
-</tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Not known</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/Inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first last docutils">
-<dt>1 – Suicide attempt</dt>
-<dd><p class="first last">A non-fatal, self-directed, potentially injurious behaviour with an intent
-to die as a result of the behaviour; might not result in injury.</p>
-</dd>
-<dt>2 – Suicidal ideation</dt>
-<dd><p class="first last">Thinking about, considering, or planning suicide.</p>
-</dd>
-</dl>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
 <div class="section" id="twb-episode-method-of-suicide-attempt">
 <span id="dfn-twb-method-of-suicide-attempt"></span><h3>TWB Episode - Method of suicide attempt<a class="headerlink" href="#twb-episode-method-of-suicide-attempt" title="Permalink to this headline">¶</a></h3>
 <p>For clients referred to The Way Back for a suicide attempt, what was the method of their most recent attempt?</p>
@@ -7170,17 +7095,17 @@ to die as a result of the behaviour; might not result in injury.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Poisoning</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Intentional self-poisoning</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Hanging</td>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Intentional self-harm by hanging, strangulation and suffocation</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Drowning</td>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Intentional self-harm by drowning and submersion</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Contact with a sharp object</td>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Intentional self-harm by sharp object</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Firearm</td>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Intentional self-harm by Firearm</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Fall</td>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Intentional self-harm by jumping from a high place</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
 </tr>
@@ -7191,6 +7116,55 @@ to die as a result of the behaviour; might not result in injury.</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="twb-episode-previous-suicide-attempts">
+<span id="dfn-twb-previous-suicide-attempts"></span><h3>TWB Episode - Previous suicide attempts<a class="headerlink" href="#twb-episode-previous-suicide-attempts" title="Permalink to this headline">¶</a></h3>
+<p>Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_previous_suicide_attempts</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Previous attempt(s) made in the past 12 months</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Previous attempt(s) made within their lifetime</td>
+</tr>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Not known</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/Inadequately described</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first last docutils">
+<dt>1 – Suicide attempt</dt>
+<dd><p class="first last">A non-fatal, self-directed, potentially injurious behaviour with an intent
+to die as a result of the behaviour; might not result in injury.</p>
+</dd>
+<dt>2 – Suicidal ideation</dt>
+<dd><p class="first last">Thinking about, considering, or planning suicide.</p>
+</dd>
+</dl>
+</td>
 </tr>
 </tbody>
 </table>
@@ -7281,7 +7255,7 @@ Program monitoring, service planning.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Other</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Does not want to disclose</td>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated</td>
 </tr>
 </tbody>
 </table>
@@ -7311,10 +7285,10 @@ Program monitoring, service planning.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -7423,10 +7397,10 @@ Understanding access and service utilisation of population groups.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -7594,10 +7568,10 @@ develop a support plan that articulates:</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -7715,10 +7689,10 @@ Program monitoring, service planning, funding and accountability.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -7947,10 +7921,10 @@ Measurement of waiting times.</p>
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -8266,10 +8240,10 @@ The raw score ranges from 0 to 25, 0 representing worst possible and
 <p>Organisations can use this field to tag records in order to partition them as
 per local requirements.</p>
 <p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal"><span class="pre">priority!,</span>
+spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
 <span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
 <p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
+Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -8282,16 +8256,14 @@ Department. e.g. <code class="docutils literal"><span class="pre">!reserved,</sp
 <p>Available for software developers designing extracts for TWB, please
 click the link below to download TWB Specification files for the PMHC MDS:</p>
 <ul class="simple">
-<li><code class="xref download docutils literal"><span class="pre">TWB</span> <span class="pre">Specification</span> <span class="pre">zip</span></code></li>
+<li><code class="xref download docutils literal notranslate"><span class="pre">TWB</span> <span class="pre">Specification</span> <span class="pre">zip</span></code></li>
 </ul>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -8300,7 +8272,7 @@ click the link below to download TWB Specification files for the PMHC MDS:</p>
         <a href="upload-specification.html" class="btn btn-neutral float-right" title="Upload Specification" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="identifier-management.html" class="btn btn-neutral" title="Identifier Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="identifier-management.html" class="btn btn-neutral float-left" title="Identifier Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -8309,11 +8281,14 @@ click the link below to download TWB Specification files for the PMHC MDS:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Beyond Blue.
+        
+        &copy; Copyright 2019, Beyond Blue
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -8325,37 +8300,15 @@ click the link below to download TWB Specification files for the PMHC MDS:</p>
   </div>
   
 
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'Version 2.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
   
  
 <script>

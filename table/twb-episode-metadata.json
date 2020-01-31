@@ -100,18 +100,6 @@
     },
     "required": true
   },{
-    "name": "twb_beyond_blue_contact_consent",
-    "titles": [ "twb_beyond_blue_contact_consent" ],
-    "dc:title": "TWB Episode - Beyond Blue Contact Consent",
-    "schema:description": "Consent for the Way Back data collection, linkage and sharing with evaluation.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-beyond-blue-contact-consent.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "string"
-    },
-    "required": true
-  },{
     "name": "twb_primary_nominated_professional",
     "titles": [ "twb_primary_nominated_professional" ],
     "dc:title": "TWB Episode - Primary Nominated Professional",
@@ -124,11 +112,11 @@
     },
     "required": true
   },{
-    "name": "twb_lifetime_suicide_attempt",
-    "titles": [ "twb_lifetime_suicide_attempt" ],
-    "dc:title": "TWB Episode - Lifetime suicide attempt and ideation",
+    "name": "twb_previous_suicide_attempts",
+    "titles": [ "twb_previous_suicide_attempts" ],
+    "dc:title": "TWB Episode - Previous suicide attempts",
     "schema:description": "Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-lifetime-suicide-attempt.rst",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-previous-suicide-attempts.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -203,9 +191,9 @@
       "columnReference": "id"
     }
   }, {
-    "columnReference": "twb_lifetime_suicide_attempt",
+    "columnReference": "twb_previous_suicide_attempts",
     "reference": {
-      "resource": "table/twb-episode/twb-lifetime-suicide-attempt.csv",
+      "resource": "table/twb-episode/twb-previous-suicide-attempts.csv",
       "columnReference": "id"
     }
   }, {
@@ -218,12 +206,6 @@
     "columnReference": "twb_external_evaluator_contact_consent",
     "reference": {
       "resource": "table/twb-episode/twb-external-evaluator-contact-consent.csv",
-      "columnReference": "id"
-    }
-  }, {
-    "columnReference": "twb_beyond_blue_contact_consent",
-    "reference": {
-      "resource": "table/twb-episode/twb-beyond-blue-contact-consent.csv",
       "columnReference": "id"
     }
   }]

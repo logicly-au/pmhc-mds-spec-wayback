@@ -142,50 +142,6 @@ The main additional condition or complaint co-existing with the Principal Diagno
 
 :Domain:
   :000: No additional diagnosis
-  :100: Anxiety disorders (ATAPS)
-  :101: Panic disorder
-  :102: Agoraphobia
-  :103: Social phobia
-  :104: Generalised anxiety disorder
-  :105: Obsessive-compulsive disorder
-  :106: Post-traumatic stress disorder
-  :107: Acute stress disorder
-  :108: Other anxiety disorder
-  :200: Affective (Mood) disorders (ATAPS)
-  :201: Major depressive disorder
-  :202: Dysthymia
-  :203: Depressive disorder NOS
-  :204: Bipolar disorder
-  :205: Cyclothymic disorder
-  :206: Other affective disorder
-  :300: Substance use disorders (ATAPS)
-  :301: Alcohol harmful use
-  :302: Alcohol dependence
-  :303: Other drug harmful use
-  :304: Other drug dependence
-  :305: Other substance use disorder
-  :400: Psychotic disorders (ATAPS)
-  :401: Schizophrenia
-  :402: Schizoaffective disorder
-  :403: Brief psychotic disorder
-  :404: Other psychotic disorder
-  :501: Separation anxiety disorder
-  :502: Attention deficit hyperactivity disorder (ADHD)
-  :503: Conduct disorder
-  :504: Oppositional defiant disorder
-  :505: Pervasive developmental disorder
-  :506: Other disorder of childhood and adolescence
-  :601: Adjustment disorder
-  :602: Eating disorder
-  :603: Somatoform disorder
-  :604: Personality disorder
-  :605: Other mental disorder
-  :901: Anxiety symptoms
-  :902: Depressive symptoms
-  :903: Mixed anxiety and depressive symptoms
-  :904: Stress related
-  :905: Other
-  :999: Missing
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in
   terms of treatment required and resources used during the episode of care.
@@ -252,7 +208,7 @@ The Australian postcode of the client.
   Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.
   
 
-:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+:Source: `METeOR ID 429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
 ----------
 
@@ -478,7 +434,7 @@ Whether a person in paid employment is employed full-time or part-time, as repre
     item has not been collected.
   
 
-:METeOR: `269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
+:Source: `METeOR ID 269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
 
 ----------
 
@@ -528,7 +484,7 @@ The date on which an *Episode of Care* is formally or administratively ended
     date on which the organisation made the decision to close episode.
   
 
-:METeOR: `614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
+:Source: `METeOR ID 614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
 
 ----------
 
@@ -576,7 +532,7 @@ An indication of whether the person is a current holder of a Health Care Card th
   https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
   
 
-:METeOR: `605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
+:Source: `METeOR ID 605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
 
 ----------
 
@@ -725,7 +681,7 @@ The self-reported status the person currently has in being either in the labour 
     permanently unable to work.
   
 
-:METeOR: `621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
+:Source: `METeOR ID 621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
 
 ----------
 
@@ -771,7 +727,7 @@ A person's current relationship status in terms of a couple relationship or, for
     where the item has not been collected.
   
 
-:METeOR: `291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
+:Source: `METeOR ID 291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
 
 ----------
 
@@ -789,8 +745,6 @@ Whether the client is taking prescribed antidepressants for a mental health cond
 :Required: yes
 
 :Domain:
-  :1: Yes
-  :2: No
   :9: Unknown
 :Notes:
   The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -818,8 +772,6 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
 :Required: yes
 
 :Domain:
-  :1: Yes
-  :2: No
   :9: Unknown
 :Notes:
   The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -848,8 +800,6 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
 :Required: yes
 
 :Domain:
-  :1: Yes
-  :2: No
   :9: Unknown
 :Notes:
   The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -878,8 +828,6 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
 :Required: yes
 
 :Domain:
-  :1: Yes
-  :2: No
   :9: Unknown
 :Notes:
   The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -909,8 +857,6 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
 :Required: yes
 
 :Domain:
-  :1: Yes
-  :2: No
   :9: Unknown
 :Notes:
   The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -1082,7 +1028,7 @@ The range of activities that best describes the overall services intended to be 
 :Required: yes
 
 :Domain:
-  :7: Other
+  :7: Psychosocial
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
   current Episode of Care.
@@ -1252,7 +1198,7 @@ The source from which a person derives the greatest proportion of his/her income
   (i.e. they have been asked but do not know).
   
 
-:METeOR: `386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
+:Source: `METeOR ID 386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
 
 ----------
 
@@ -2301,7 +2247,7 @@ An indicator of whether the client participated, or intended to participate, in 
   as '1: Yes' and :ref:`dfn-service_contact_no_show` should be recorded as '1: Yes'.
   
 
-:METeOR: `494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
+:Source: `METeOR ID 494341 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494341>`__
 
 ----------
 
@@ -2357,7 +2303,7 @@ The date of each mental health service contact between a health service provider
   - The service contact date must not be in the future.
   
 
-:METeOR: `494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
+:Source: `METeOR ID 494356 <http://meteor.aihw.gov.au/content/index.phtml/itemId/494356>`__
 
 ----------
 
@@ -2614,7 +2560,7 @@ The Australian postcode where the service contact took place.
     range 0200-0299 or 0800-9999.
   
 
-:METeOR: `429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
+:Source: `METeOR ID 429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
 
 ----------
 
@@ -2972,44 +2918,6 @@ This is a number or code assigned to each critical incident. The Critical Incide
 
 ----------
 
-.. _dfn-twb_beyond_blue_contact_consent:
-
-TWB Episode - Beyond Blue Contact Consent
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Consent for the Way Back data collection, linkage and sharing with evaluation.
-
-:Field name: twb_beyond_blue_contact_consent
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-:Notes:
-  Provider statement:
-  
-  *Have you read the background information, and do you agree to provide
-  additional information to be collected for the Way Back data, for that data to
-  be linked with the routine data collected by me [service provider], and for
-  the evaluator to access the linked dataset? The dataset will not include your
-  name or any other identifying information.*
-  
-  Client response options:
-  
-  1 - Yes
-    The client has read the background information and agrees to provide
-    additional information for the Way Back, for that data to be linked with
-    the routine data collected by me, and for the evaluator's to access the
-    linked dataset.
-  
-  **Note** Data where consent has not been given for Way Back data collection,
-  linkage and sharing with evaluation must not be entered.
-  
-
-----------
-
 .. _dfn-twb_eligibility_type:
 
 TWB Episode - Eligibility Type
@@ -3108,36 +3016,6 @@ Do you wish to disclose intersex status?
 
 ----------
 
-.. _dfn-twb_lifetime_suicide_attempt:
-
-TWB Episode - Lifetime suicide attempt and ideation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?
-
-:Field name: twb_lifetime_suicide_attempt
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Suicide attempt
-  :2: Suicide ideation, no attempt
-  :3: Neither suicide attempt nor ideation
-  :4: Not known
-  :9: Not stated/Inadequately described
-:Notes:
-  1 – Suicide attempt
-    A non-fatal, self-directed, potentially injurious behaviour with an intent
-    to die as a result of the behaviour; might not result in injury.
-  
-  2 – Suicidal ideation
-    Thinking about, considering, or planning suicide.
-  
-
-----------
-
 .. _dfn-twb_method_of_suicide_attempt:
 
 TWB Episode - Method of suicide attempt
@@ -3152,16 +3030,46 @@ For clients referred to The Way Back for a suicide attempt, what was the method 
 :Required: yes
 
 :Domain:
-  :1: Poisoning
-  :2: Hanging
-  :3: Drowning
-  :4: Contact with a sharp object
-  :5: Firearm
-  :6: Fall
+  :1: Intentional self-poisoning
+  :2: Intentional self-harm by hanging, strangulation and suffocation
+  :3: Intentional self-harm by drowning and submersion
+  :4: Intentional self-harm by sharp object
+  :5: Intentional self-harm by Firearm
+  :6: Intentional self-harm by jumping from a high place
   :98: Other
   :99: Not stated/Inadequately described
 :Notes:
   
+  
+
+----------
+
+.. _dfn-twb_previous_suicide_attempts:
+
+TWB Episode - Previous suicide attempts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?
+
+:Field name: twb_previous_suicide_attempts
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: No
+  :2: Previous attempt(s) made in the past 12 months
+  :3: Previous attempt(s) made within their lifetime
+  :7: Not known
+  :9: Not stated/Inadequately described
+:Notes:
+  1 – Suicide attempt
+    A non-fatal, self-directed, potentially injurious behaviour with an intent
+    to die as a result of the behaviour; might not result in injury.
+  
+  2 – Suicidal ideation
+    Thinking about, considering, or planning suicide.
   
 
 ----------
@@ -3222,7 +3130,7 @@ How do you describe your sexual orientation?
   :4: Asexual
   :5: Questioning
   :6: Other
-  :7: Does not want to disclose
+  :9: Not stated
 
 ----------
 

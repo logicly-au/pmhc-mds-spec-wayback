@@ -18,7 +18,7 @@
 :4: Asexual
 :5: Questioning
 :6: Other
-:7: Does not want to disclose"
+:9: Not stated"
 "`TWB Episode - Transgender Status`_ (twb_transgender_status)
 
 ",string,yes,":1: Yes
@@ -40,9 +40,6 @@
 ",string,yes,":1: Consented to to be contacted by external evaluators
 :2: Not consented to be contacted by external evaluators
 :9: Not stated/Inadequately described"
-"`TWB Episode - Beyond Blue Contact Consent`_ (twb_beyond_blue_contact_consent)
-
-",string,yes,":1: Yes"
 "`TWB Episode - Primary Nominated Professional`_ (twb_primary_nominated_professional)
 
 ",string,yes,":1: Aboriginal and Torres Strait Islander Health Practice
@@ -53,21 +50,21 @@
 :6: Mental Health Social Worker
 :98: Other
 :99: Not stated/Inadequately described"
-"`TWB Episode - Lifetime suicide attempt and ideation`_ (twb_lifetime_suicide_attempt)
+"`TWB Episode - Previous suicide attempts`_ (twb_previous_suicide_attempts)
 
-",string,yes,":1: Suicide attempt
-:2: Suicide ideation, no attempt
-:3: Neither suicide attempt nor ideation
-:4: Not known
+",string,yes,":1: No
+:2: Previous attempt(s) made in the past 12 months
+:3: Previous attempt(s) made within their lifetime
+:7: Not known
 :9: Not stated/Inadequately described"
 "`TWB Episode - Method of suicide attempt`_ (twb_method_of_suicide_attempt)
 
-",string,yes,":1: Poisoning
-:2: Hanging
-:3: Drowning
-:4: Contact with a sharp object
-:5: Firearm
-:6: Fall
+",string,yes,":1: Intentional self-poisoning
+:2: Intentional self-harm by hanging, strangulation and suffocation
+:3: Intentional self-harm by drowning and submersion
+:4: Intentional self-harm by sharp object
+:5: Intentional self-harm by Firearm
+:6: Intentional self-harm by jumping from a high place
 :98: Other
 :99: Not stated/Inadequately described"
 "`TWB Episode - Tags`_ (twb_episode_tags)
