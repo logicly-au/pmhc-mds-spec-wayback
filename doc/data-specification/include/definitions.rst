@@ -142,6 +142,50 @@ The main additional condition or complaint co-existing with the Principal Diagno
 
 :Domain:
   :000: No additional diagnosis
+  :100: Anxiety disorders (ATAPS)
+  :101: Panic disorder
+  :102: Agoraphobia
+  :103: Social phobia
+  :104: Generalised anxiety disorder
+  :105: Obsessive-compulsive disorder
+  :106: Post-traumatic stress disorder
+  :107: Acute stress disorder
+  :108: Other anxiety disorder
+  :200: Affective (Mood) disorders (ATAPS)
+  :201: Major depressive disorder
+  :202: Dysthymia
+  :203: Depressive disorder NOS
+  :204: Bipolar disorder
+  :205: Cyclothymic disorder
+  :206: Other affective disorder
+  :300: Substance use disorders (ATAPS)
+  :301: Alcohol harmful use
+  :302: Alcohol dependence
+  :303: Other drug harmful use
+  :304: Other drug dependence
+  :305: Other substance use disorder
+  :400: Psychotic disorders (ATAPS)
+  :401: Schizophrenia
+  :402: Schizoaffective disorder
+  :403: Brief psychotic disorder
+  :404: Other psychotic disorder
+  :501: Separation anxiety disorder
+  :502: Attention deficit hyperactivity disorder (ADHD)
+  :503: Conduct disorder
+  :504: Oppositional defiant disorder
+  :505: Pervasive developmental disorder
+  :506: Other disorder of childhood and adolescence
+  :601: Adjustment disorder
+  :602: Eating disorder
+  :603: Somatoform disorder
+  :604: Personality disorder
+  :605: Other mental disorder
+  :901: Anxiety symptoms
+  :902: Depressive symptoms
+  :903: Mixed anxiety and depressive symptoms
+  :904: Stress related
+  :905: Other
+  :999: Missing
 :Notes:
   Additional Diagnosis gives information on conditions that are significant in
   terms of treatment required and resources used during the episode of care.
@@ -745,6 +789,8 @@ Whether the client is taking prescribed antidepressants for a mental health cond
 :Required: yes
 
 :Domain:
+  :1: Yes
+  :2: No
   :9: Unknown
 :Notes:
   The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -772,6 +818,8 @@ Whether the client is taking prescribed antipsychotics for a mental health condi
 :Required: yes
 
 :Domain:
+  :1: Yes
+  :2: No
   :9: Unknown
 :Notes:
   The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -800,6 +848,8 @@ Whether the client is taking prescribed anxiolytics for a mental health conditio
 :Required: yes
 
 :Domain:
+  :1: Yes
+  :2: No
   :9: Unknown
 :Notes:
   The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -828,6 +878,8 @@ Whether the client is taking prescribed hypnotics and sedatives for a mental hea
 :Required: yes
 
 :Domain:
+  :1: Yes
+  :2: No
   :9: Unknown
 :Notes:
   The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -857,6 +909,8 @@ Whether the client is taking prescribed psychostimulants and nootropics for a me
 :Required: yes
 
 :Domain:
+  :1: Yes
+  :2: No
   :9: Unknown
 :Notes:
   The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
@@ -1028,7 +1082,14 @@ The range of activities that best describes the overall services intended to be 
 :Required: yes
 
 :Domain:
-  :7: Psychosocial
+  :1: Psychological therapy
+  :2: Low intensity psychological intervention
+  :3: Clinical care coordination
+  :4: Complex care package
+  :5: Child and youth-specific mental health services
+  :6: Indigenous-specific mental health services
+  :7: Other
+  :8: Psychosocial Support
 :Notes:
   Describes the main focus of the services to be delivered to the client for the
   current Episode of Care.
@@ -2607,7 +2668,16 @@ The main type of service provided in the service contact, as represented by the 
 
 :Domain:
   :0: No contact took place
+  :1: Assessment
+  :2: Structured psychological intervention
+  :3: Other psychological intervention
+  :4: Clinical care coordination/liaison
+  :5: Clinical nursing services
+  :6: Child or youth specific assistance NEC
+  :7: Suicide prevention specific assistance NEC
+  :8: Cultural specific assistance NEC
   :9: Psychosocial support
+  :98: ATAPS
 :Notes:
   Describes the main type of service delivered in the contact, selected from a
   defined list of categories.  Service providers are required
@@ -3520,62 +3590,62 @@ This is a number or code assigned to each primary nominated professional contact
 
 ----------
 
-.. _dfn-twb_referral_out_provider_type:
+.. _dfn-twb_recommendation_out_provider_type:
 
-TWB Referral Out - Provider Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TWB Recommendation Out - Provider Type
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The provider type of the referral out made for and on behalf of the client. 
+The provider type of the recommendation out made for and on behalf of the client. 
 
-:Field name: twb_referral_out_provider_type
+:Field name: twb_recommendation_out_provider_type
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :3: GP/Medical Practitioner
-  :4: Hospital
-  :5: Psychiatric/mental health service or facility
-  :6: Alcohol and other drug treatment service
-  :7: Other community/health care service
-  :8: Correctional service
-  :9: Police diversion
-  :10: Court diversion
-  :11: Legal service
-  :12: Child protection agency
-  :13: Community support groups/agencies
-  :14: Centrelink or employment service
-  :15: Housing and homelessness service
-  :16: Telephone & online services/referral agency e.g. direct line
-  :17: Disability support service
-  :18: Aged care facility/service
-  :19: Immigration department or asylum seeker/refugee support service
-  :20: School/other education or training institution
-  :22: Community based Drug and Alcohol Service
-  :23: Youth service (non-AOD)
-  :24: Indigenous service (non-AOD)
-  :25: Extended care/rehabilitation facility
-  :26: Palliative care service
-  :27: Police (not diversion)
-  :28: Public dental provider - community dental agency
-  :29: Dental Hospital
-  :30: Private Dental Provider
-  :31: Early childhood service
-  :32: Maternal and Child Health Service
-  :33: Community nursing service
-  :34: Emergency relief
-  :35: Family support service (excl family violence)
-  :36: Family violence service
-  :37: Gambling support service
-  :38: Maternity services
-  :39: Peer support/self-help group
-  :40: Private allied health provider
-  :41: Sexual Assault service
-  :42: Financial counsellor
-  :43: Sexual health service
-  :44: Medical specialist
-  :97: No Referral
+  :1: GP/Medical Practitioner
+  :2: Hospital
+  :3: Psychiatric/mental health service or facility
+  :4: Alcohol and other drug treatment service
+  :5: Other community/health care service
+  :6: Correctional service
+  :7: Police diversion
+  :8: Court diversion
+  :9: Legal service
+  :10: Child protection agency
+  :11: Community support groups/agencies
+  :12: Centrelink or employment service
+  :13: Housing and homelessness service
+  :14: Telephone & online services/referral agency e.g. direct line
+  :15: Disability support service
+  :16: Aged care facility/service
+  :17: Immigration department or asylum seeker/refugee support service
+  :18: School/other education or training institution
+  :19: Community based Drug and Alcohol Service
+  :20: Youth service (non-AOD)
+  :21: Indigenous service (non-AOD)
+  :22: Extended care/rehabilitation facility
+  :23: Palliative care service
+  :24: Police (not diversion)
+  :25: Public dental provider - community dental agency
+  :26: Dental Hospital
+  :27: Private Dental Provider
+  :28: Early childhood service
+  :29: Maternal and Child Health Service
+  :30: Community nursing service
+  :31: Emergency relief
+  :32: Family support service (excl family violence)
+  :33: Family violence service
+  :34: Gambling support service
+  :35: Maternity services
+  :36: Peer support/self-help group
+  :37: Private allied health provider
+  :38: Sexual Assault service
+  :39: Financial counsellor
+  :40: Sexual health service
+  :41: Medical specialist
+  :97: No Recommendation
   :98: Other
   :99: Not stated/Inadequately described
 :Notes:
@@ -3583,14 +3653,14 @@ The provider type of the referral out made for and on behalf of the client.
   
   **Guide for use**
   
-  It is best to record the referral information as soon as the client is
+  It is best to record the recommendation information as soon as the client is
   referred to an agency/community service as it may be difficult to track this
   information later.
   
   To assist staff, service providers may find it useful to make a list of the
-  agencies from which they most frequently send referrals and note the
-  corresponding Source of Referral code.
-  Report the Referral starting with the most relevant or urgent one first. 
+  agencies from which they most frequently send recommendations and note the
+  corresponding Source of Recommendation code.
+  Report the Recommendation starting with the most relevant or urgent one first. 
   
   **Purpose/context**
   Program monitoring, service planning.
@@ -3598,34 +3668,33 @@ The provider type of the referral out made for and on behalf of the client.
 
 ----------
 
-.. _dfn-twb_referral_out_status:
+.. _dfn-twb_recommendation_out_status:
 
-TWB Referral Out - Status
-^^^^^^^^^^^^^^^^^^^^^^^^^
+TWB Recommendation Out - Status
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The status of a referral out made by the Service Provider on behalf of a client.
+The status of a recommendation out made by the Service Provider on behalf of a client.
 
-:Field name: twb_referral_out_status
+:Field name: twb_recommendation_out_status
 
 :Data type: string
 
 :Required: yes
 
 :Domain:
-  :1: Service commenced
-  :2: Service completed
-  :3: Waitlisted
-  :4: Referral not accepted 
-  :5: Client declined to take up referral 
-  :6: Client deceased prior to service commencement
+  :1: Client declined to take up recommendation
+  :2: Service commenced
+  :3: Service completed
+  :4: Waitlisted
+  :5: Client deceased prior to service commencement
   :98: Other
   :99: Not stated/Inadequately described
 :Notes:
   **Reporting requirements**
-  Mandatory where Service Contact- Referral out provider type 1-44 is present
+  Mandatory where TWB Recommendation Out - Provider Type 1-41 is present
   
   **Guide for use**
-  Requires services to record the status of a referral out to an alternative service.
+  Requires services to record the status of a recommendation out to an alternative service.
   
   **Purpose/context**
   Program monitoring, service planning, funding and accountability.
@@ -3634,14 +3703,14 @@ The status of a referral out made by the Service Provider on behalf of a client.
 
 ----------
 
-.. _dfn-twb_referral_out_tags:
+.. _dfn-twb_recommendation_out_tags:
 
-TWB Referral Out - Tags
-^^^^^^^^^^^^^^^^^^^^^^^
+TWB Recommendation Out - Tags
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-List of tags for TWB Referral Out.
+List of tags for TWB Recommendation Out.
 
-:Field name: twb_referral_out_tags
+:Field name: twb_recommendation_out_tags
 
 :Data type: string
 
@@ -3662,14 +3731,14 @@ List of tags for TWB Referral Out.
 
 ----------
 
-.. _dfn-twb_referral_out_key:
+.. _dfn-twb_recommendation_out_key:
 
-TWB Referral Out Key
-^^^^^^^^^^^^^^^^^^^^
+TWB Recommendation Out Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a number or code assigned to each referral out. The Referral Out Key is unique and stable for each referral out at the lvel of the organisation.
+This is a number or code assigned to each recommendation out. The Recommendation Out Key is unique and stable for each recommendation out at the lvel of the organisation.
 
-:Field name: twb_referral_out_key
+:Field name: twb_recommendation_out_key
 
 :Data type: string (2,50)
 

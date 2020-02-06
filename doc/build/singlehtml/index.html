@@ -357,7 +357,7 @@ the current PMHC MDS Identifier Management rules apply. These are available to b
 <div class="section" id="managing-keys">
 <h4>Managing  Keys<a class="headerlink" href="#managing-keys" title="Permalink to this headline">¶</a></h4>
 <p>The <a class="reference internal" href="index.html#dfn-twb-pnpc-key"><span class="std std-ref">TWB Primary Nominated Professional Contact Key</span></a>, <a class="reference internal" href="index.html#dfn-twb-critical-incident-key"><span class="std std-ref">TWB Critical Incident Key</span></a>,
-<a class="reference internal" href="index.html#dfn-twb-referral-out-key"><span class="std std-ref">TWB Referral Out Key</span></a>, <a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> and
+<span class="xref std std-ref">dfn-twb_referral_out_key</span>, <a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> and
 <a class="reference internal" href="index.html#dfn-measure-key"><span class="std std-ref">Measure Key</span></a> will be created and managed by Provider Organisations.</p>
 <p>The PMHC MDS specification requires each of these keys to be unique and stable
 at the Provider Organisation level. See above links for the specification requirements
@@ -417,7 +417,7 @@ Collection Occasion records fit into the overall structure.</p>
 <li>See <a class="reference internal" href="#twb-episode-data-elements"><span class="std std-ref">TWB-Episode data specifications</span></a> for Individual Services Data.</li>
 <li>See <a class="reference internal" href="#twb-pnpc-data-elements"><span class="std std-ref">TWB-Primary Nominated Professional Contact data specifications</span></a> for Primary Nominated Professional Contact Data.</li>
 <li>See <a class="reference internal" href="#twb-critical-incident-data-elements"><span class="std std-ref">TWB-Critical Incident data specifications</span></a> for Critical Incident Data.</li>
-<li>See <a class="reference internal" href="#twb-referral-out-data-elements"><span class="std std-ref">TWB-Referral Out data specifications</span></a> for Referral Out Data.</li>
+<li>See <a class="reference internal" href="#twb-recommendation-out-data-elements"><span class="std std-ref">TWB-Recommendation Out data specifications</span></a> for Recommendation Out Data.</li>
 <li>See <a class="reference internal" href="#id4"><span class="std std-ref">Collection Occasion data specifications</span></a> for Collection Occasions.</li>
 <li>See <a class="reference internal" href="#twb-plan-data-elements"><span class="std std-ref">TWB-Plan data specifications</span></a> for Planning Data.</li>
 <li>See <a class="reference internal" href="#twb-ni-data-elements"><span class="std std-ref">TWB-NI data specifications</span></a> for Needs Identification Data.</li>
@@ -520,7 +520,21 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Psychosocial</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Psychological therapy</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Low intensity psychological intervention</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Clinical care coordination</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Complex care package</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Child and youth-specific mental health services</td>
+</tr>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Indigenous-specific mental health services</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Psychosocial Support</td>
 </tr>
 </tbody>
 </table>
@@ -832,6 +846,94 @@ Collection Occasion records fit into the overall structure.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">000:</th><td class="field-body">No additional diagnosis</td>
 </tr>
+<tr class="field-even field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
+</tr>
+<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
+</tr>
+<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
+</tr>
+<tr class="field-even field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
+</tr>
+<tr class="field-even field"><th class="field-name">905:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -843,6 +945,10 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -856,6 +962,10 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -869,6 +979,10 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -882,6 +996,10 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -895,6 +1013,10 @@ Collection Occasion records fit into the overall structure.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -1384,12 +1506,12 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-referral-out">
-<span id="twb-referral-out-data-elements"></span><h6>TWB-Referral Out<a class="headerlink" href="#twb-referral-out" title="Permalink to this headline">¶</a></h6>
-<p>See <a class="reference internal" href="index.html#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of a Referral Out.</p>
-<p>Referral Outs are managed by the provider organisations via upload or data entry.</p>
+<div class="section" id="twb-recommendation-out">
+<span id="twb-recommendation-out-data-elements"></span><h6>TWB-Recommendation Out<a class="headerlink" href="#twb-recommendation-out" title="Permalink to this headline">¶</a></h6>
+<p>See <a class="reference internal" href="index.html#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of a Recommendation Out.</p>
+<p>Recommendation Outs are managed by the provider organisations via upload or data entry.</p>
 <table border="1" class="docutils" id="id12">
-<caption><span class="caption-number">Table 5 </span><span class="caption-text">Referral Out record layout</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">Recommendation Out record layout</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1409,106 +1531,106 @@ Collection Occasion records fit into the overall structure.</p>
 <td>yes</td>
 <td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-referral-out-key">TWB Referral Out Key</a> (twb_referral_out_key)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-recommendation-out-key">TWB Recommendation Out Key</a> (twb_recommendation_out_key)</td>
 <td>string (2,50)</td>
 <td>yes</td>
-<td>This is a number or code assigned to each referral out. The Referral Out Key is unique and stable for each referral out at the lvel of the organisation.</td>
+<td>This is a number or code assigned to each recommendation out. The Recommendation Out Key is unique and stable for each recommendation out at the lvel of the organisation.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#episode-key">Episode Key</a> (episode_key)</td>
 <td>string (2,50)</td>
 <td>yes</td>
 <td>This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-referral-out-provider-type">TWB Referral Out - Provider Type</a> (twb_referral_out_provider_type)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-recommendation-out-provider-type">TWB Recommendation Out - Provider Type</a> (twb_recommendation_out_provider_type)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">GP/Medical Practitioner</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">GP/Medical Practitioner</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Hospital</td>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Hospital</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Psychiatric/mental health service or facility</td>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Psychiatric/mental health service or facility</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Alcohol and other drug treatment service</td>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Alcohol and other drug treatment service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Other community/health care service</td>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Other community/health care service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Correctional service</td>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Correctional service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Police diversion</td>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Police diversion</td>
 </tr>
-<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Court diversion</td>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Court diversion</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Legal service</td>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Legal service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Child protection agency</td>
+<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Child protection agency</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Community support groups/agencies</td>
+<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Community support groups/agencies</td>
 </tr>
-<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Centrelink or employment service</td>
+<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Centrelink or employment service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Housing and homelessness service</td>
+<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Housing and homelessness service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Telephone &amp; online services/referral agency e.g. direct line</td>
+<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Telephone &amp; online services/referral agency e.g. direct line</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">Disability support service</td>
+<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Disability support service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">Aged care facility/service</td>
+<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Aged care facility/service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Immigration department or asylum seeker/refugee support service</td>
+<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">Immigration department or asylum seeker/refugee support service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">School/other education or training institution</td>
+<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">School/other education or training institution</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">22:</th><td class="field-body">Community based Drug and Alcohol Service</td>
+<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Community based Drug and Alcohol Service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">23:</th><td class="field-body">Youth service (non-AOD)</td>
+<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">Youth service (non-AOD)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">24:</th><td class="field-body">Indigenous service (non-AOD)</td>
+<tr class="field-odd field"><th class="field-name">21:</th><td class="field-body">Indigenous service (non-AOD)</td>
 </tr>
-<tr class="field-even field"><th class="field-name">25:</th><td class="field-body">Extended care/rehabilitation facility</td>
+<tr class="field-even field"><th class="field-name">22:</th><td class="field-body">Extended care/rehabilitation facility</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">26:</th><td class="field-body">Palliative care service</td>
+<tr class="field-odd field"><th class="field-name">23:</th><td class="field-body">Palliative care service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">27:</th><td class="field-body">Police (not diversion)</td>
+<tr class="field-even field"><th class="field-name">24:</th><td class="field-body">Police (not diversion)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">28:</th><td class="field-body">Public dental provider - community dental agency</td>
+<tr class="field-odd field"><th class="field-name">25:</th><td class="field-body">Public dental provider - community dental agency</td>
 </tr>
-<tr class="field-even field"><th class="field-name">29:</th><td class="field-body">Dental Hospital</td>
+<tr class="field-even field"><th class="field-name">26:</th><td class="field-body">Dental Hospital</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">30:</th><td class="field-body">Private Dental Provider</td>
+<tr class="field-odd field"><th class="field-name">27:</th><td class="field-body">Private Dental Provider</td>
 </tr>
-<tr class="field-even field"><th class="field-name">31:</th><td class="field-body">Early childhood service</td>
+<tr class="field-even field"><th class="field-name">28:</th><td class="field-body">Early childhood service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">32:</th><td class="field-body">Maternal and Child Health Service</td>
+<tr class="field-odd field"><th class="field-name">29:</th><td class="field-body">Maternal and Child Health Service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">33:</th><td class="field-body">Community nursing service</td>
+<tr class="field-even field"><th class="field-name">30:</th><td class="field-body">Community nursing service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">34:</th><td class="field-body">Emergency relief</td>
+<tr class="field-odd field"><th class="field-name">31:</th><td class="field-body">Emergency relief</td>
 </tr>
-<tr class="field-even field"><th class="field-name">35:</th><td class="field-body">Family support service (excl family violence)</td>
+<tr class="field-even field"><th class="field-name">32:</th><td class="field-body">Family support service (excl family violence)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">36:</th><td class="field-body">Family violence service</td>
+<tr class="field-odd field"><th class="field-name">33:</th><td class="field-body">Family violence service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">37:</th><td class="field-body">Gambling support service</td>
+<tr class="field-even field"><th class="field-name">34:</th><td class="field-body">Gambling support service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">38:</th><td class="field-body">Maternity services</td>
+<tr class="field-odd field"><th class="field-name">35:</th><td class="field-body">Maternity services</td>
 </tr>
-<tr class="field-even field"><th class="field-name">39:</th><td class="field-body">Peer support/self-help group</td>
+<tr class="field-even field"><th class="field-name">36:</th><td class="field-body">Peer support/self-help group</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">40:</th><td class="field-body">Private allied health provider</td>
+<tr class="field-odd field"><th class="field-name">37:</th><td class="field-body">Private allied health provider</td>
 </tr>
-<tr class="field-even field"><th class="field-name">41:</th><td class="field-body">Sexual Assault service</td>
+<tr class="field-even field"><th class="field-name">38:</th><td class="field-body">Sexual Assault service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">42:</th><td class="field-body">Financial counsellor</td>
+<tr class="field-odd field"><th class="field-name">39:</th><td class="field-body">Financial counsellor</td>
 </tr>
-<tr class="field-even field"><th class="field-name">43:</th><td class="field-body">Sexual health service</td>
+<tr class="field-even field"><th class="field-name">40:</th><td class="field-body">Sexual health service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">44:</th><td class="field-body">Medical specialist</td>
+<tr class="field-odd field"><th class="field-name">41:</th><td class="field-body">Medical specialist</td>
 </tr>
-<tr class="field-even field"><th class="field-name">97:</th><td class="field-body">No Referral</td>
+<tr class="field-even field"><th class="field-name">97:</th><td class="field-body">No Recommendation</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
 </tr>
@@ -1518,37 +1640,35 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-referral-out-status">TWB Referral Out - Status</a> (twb_referral_out_status)</td>
+<tr class="row-even"><td><a class="reference internal" href="#twb-recommendation-out-status">TWB Recommendation Out - Status</a> (twb_recommendation_out_status)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Service commenced</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Client declined to take up recommendation</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Service completed</td>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Service commenced</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Waitlisted</td>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Service completed</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Referral not accepted</td>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Waitlisted</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Client declined to take up referral</td>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Client deceased prior to service commencement</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Client deceased prior to service commencement</td>
+<tr class="field-even field"><th class="field-name">98:</th><td class="field-body">Other</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-even field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
+<tr class="field-odd field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
 </tr>
 </tbody>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-referral-out-tags">TWB Referral Out - Tags</a> (twb_referral_out_tags)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-recommendation-out-tags">TWB Recommendation Out - Tags</a> (twb_recommendation_out_tags)</td>
 <td>string</td>
 <td>—</td>
-<td>List of tags for TWB Referral Out.</td>
+<td>List of tags for TWB Recommendation Out.</td>
 </tr>
 </tbody>
 </table>
@@ -1611,7 +1731,25 @@ Collection Occasion records fit into the overall structure.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Assessment</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Structured psychological intervention</td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Other psychological intervention</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Clinical care coordination/liaison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Clinical nursing services</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Child or youth specific assistance NEC</td>
+</tr>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Suicide prevention specific assistance NEC</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">Cultural specific assistance NEC</td>
+</tr>
 <tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Psychosocial support</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">ATAPS</td>
 </tr>
 </tbody>
 </table>
@@ -3173,6 +3311,94 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">000:</th><td class="field-body">No additional diagnosis</td>
 </tr>
+<tr class="field-even field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
+</tr>
+<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
+</tr>
+<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
+</tr>
+<tr class="field-even field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
+</tr>
+<tr class="field-even field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
+</tr>
+<tr class="field-even field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
+</tr>
+<tr class="field-even field"><th class="field-name">905:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -3954,6 +4180,10 @@ where the item has not been collected.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -3992,6 +4222,10 @@ medical products. It covers drugs designed for the depressive disorders.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -4031,6 +4265,10 @@ disorders.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -4070,6 +4308,10 @@ associated with anxiety and tension.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -4110,6 +4352,10 @@ Sedative drugs are prescribed to reduce excitability or anxiety.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+</tr>
 <tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
 </tr>
 </tbody>
@@ -4355,13 +4601,27 @@ ATAPS referral date was before 1 July 2017</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Psychosocial</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Psychological therapy</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Low intensity psychological intervention</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Clinical care coordination</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Complex care package</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Child and youth-specific mental health services</td>
+</tr>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Indigenous-specific mental health services</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Psychosocial Support</td>
 </tr>
 </tbody>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Describes the main focus of the services to be delivered to the client for the
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Describes the main focus of the services to be delivered to the client for the
 current Episode of Care.</p>
 <dl class="last docutils">
 <dt>7 - Other</dt>
@@ -6654,13 +6914,31 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Assessment</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Structured psychological intervention</td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Other psychological intervention</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Clinical care coordination/liaison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Clinical nursing services</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Child or youth specific assistance NEC</td>
+</tr>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Suicide prevention specific assistance NEC</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">Cultural specific assistance NEC</td>
+</tr>
 <tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Psychosocial support</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">ATAPS</td>
 </tr>
 </tbody>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Describes the main type of service delivered in the contact, selected from a
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Describes the main type of service delivered in the contact, selected from a
 defined list of categories.  Service providers are required
 to report on Service Type for all Service Contacts.</p>
 <dl class="last docutils">
@@ -7803,14 +8081,14 @@ valid unicode characters.</td>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-referral-out-provider-type">
-<span id="dfn-twb-referral-out-provider-type"></span><h5>TWB Referral Out - Provider Type<a class="headerlink" href="#twb-referral-out-provider-type" title="Permalink to this headline">¶</a></h5>
-<p>The provider type of the referral out made for and on behalf of the client.</p>
+<div class="section" id="twb-recommendation-out-provider-type">
+<span id="dfn-twb-recommendation-out-provider-type"></span><h5>TWB Recommendation Out - Provider Type<a class="headerlink" href="#twb-recommendation-out-provider-type" title="Permalink to this headline">¶</a></h5>
+<p>The provider type of the recommendation out made for and on behalf of the client.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_referral_out_provider_type</p>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_recommendation_out_provider_type</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
@@ -7823,89 +8101,89 @@ valid unicode characters.</td>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">GP/Medical Practitioner</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">GP/Medical Practitioner</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Hospital</td>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Hospital</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Psychiatric/mental health service or facility</td>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Psychiatric/mental health service or facility</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Alcohol and other drug treatment service</td>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Alcohol and other drug treatment service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Other community/health care service</td>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Other community/health care service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Correctional service</td>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Correctional service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Police diversion</td>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Police diversion</td>
 </tr>
-<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Court diversion</td>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Court diversion</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Legal service</td>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Legal service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Child protection agency</td>
+<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Child protection agency</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Community support groups/agencies</td>
+<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Community support groups/agencies</td>
 </tr>
-<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Centrelink or employment service</td>
+<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Centrelink or employment service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Housing and homelessness service</td>
+<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Housing and homelessness service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Telephone &amp; online services/referral agency e.g. direct line</td>
+<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Telephone &amp; online services/referral agency e.g. direct line</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">Disability support service</td>
+<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Disability support service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">Aged care facility/service</td>
+<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Aged care facility/service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Immigration department or asylum seeker/refugee support service</td>
+<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">Immigration department or asylum seeker/refugee support service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">School/other education or training institution</td>
+<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">School/other education or training institution</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">22:</th><td class="field-body">Community based Drug and Alcohol Service</td>
+<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Community based Drug and Alcohol Service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">23:</th><td class="field-body">Youth service (non-AOD)</td>
+<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">Youth service (non-AOD)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">24:</th><td class="field-body">Indigenous service (non-AOD)</td>
+<tr class="field-odd field"><th class="field-name">21:</th><td class="field-body">Indigenous service (non-AOD)</td>
 </tr>
-<tr class="field-even field"><th class="field-name">25:</th><td class="field-body">Extended care/rehabilitation facility</td>
+<tr class="field-even field"><th class="field-name">22:</th><td class="field-body">Extended care/rehabilitation facility</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">26:</th><td class="field-body">Palliative care service</td>
+<tr class="field-odd field"><th class="field-name">23:</th><td class="field-body">Palliative care service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">27:</th><td class="field-body">Police (not diversion)</td>
+<tr class="field-even field"><th class="field-name">24:</th><td class="field-body">Police (not diversion)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">28:</th><td class="field-body">Public dental provider - community dental agency</td>
+<tr class="field-odd field"><th class="field-name">25:</th><td class="field-body">Public dental provider - community dental agency</td>
 </tr>
-<tr class="field-even field"><th class="field-name">29:</th><td class="field-body">Dental Hospital</td>
+<tr class="field-even field"><th class="field-name">26:</th><td class="field-body">Dental Hospital</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">30:</th><td class="field-body">Private Dental Provider</td>
+<tr class="field-odd field"><th class="field-name">27:</th><td class="field-body">Private Dental Provider</td>
 </tr>
-<tr class="field-even field"><th class="field-name">31:</th><td class="field-body">Early childhood service</td>
+<tr class="field-even field"><th class="field-name">28:</th><td class="field-body">Early childhood service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">32:</th><td class="field-body">Maternal and Child Health Service</td>
+<tr class="field-odd field"><th class="field-name">29:</th><td class="field-body">Maternal and Child Health Service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">33:</th><td class="field-body">Community nursing service</td>
+<tr class="field-even field"><th class="field-name">30:</th><td class="field-body">Community nursing service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">34:</th><td class="field-body">Emergency relief</td>
+<tr class="field-odd field"><th class="field-name">31:</th><td class="field-body">Emergency relief</td>
 </tr>
-<tr class="field-even field"><th class="field-name">35:</th><td class="field-body">Family support service (excl family violence)</td>
+<tr class="field-even field"><th class="field-name">32:</th><td class="field-body">Family support service (excl family violence)</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">36:</th><td class="field-body">Family violence service</td>
+<tr class="field-odd field"><th class="field-name">33:</th><td class="field-body">Family violence service</td>
 </tr>
-<tr class="field-even field"><th class="field-name">37:</th><td class="field-body">Gambling support service</td>
+<tr class="field-even field"><th class="field-name">34:</th><td class="field-body">Gambling support service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">38:</th><td class="field-body">Maternity services</td>
+<tr class="field-odd field"><th class="field-name">35:</th><td class="field-body">Maternity services</td>
 </tr>
-<tr class="field-even field"><th class="field-name">39:</th><td class="field-body">Peer support/self-help group</td>
+<tr class="field-even field"><th class="field-name">36:</th><td class="field-body">Peer support/self-help group</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">40:</th><td class="field-body">Private allied health provider</td>
+<tr class="field-odd field"><th class="field-name">37:</th><td class="field-body">Private allied health provider</td>
 </tr>
-<tr class="field-even field"><th class="field-name">41:</th><td class="field-body">Sexual Assault service</td>
+<tr class="field-even field"><th class="field-name">38:</th><td class="field-body">Sexual Assault service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">42:</th><td class="field-body">Financial counsellor</td>
+<tr class="field-odd field"><th class="field-name">39:</th><td class="field-body">Financial counsellor</td>
 </tr>
-<tr class="field-even field"><th class="field-name">43:</th><td class="field-body">Sexual health service</td>
+<tr class="field-even field"><th class="field-name">40:</th><td class="field-body">Sexual health service</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">44:</th><td class="field-body">Medical specialist</td>
+<tr class="field-odd field"><th class="field-name">41:</th><td class="field-body">Medical specialist</td>
 </tr>
-<tr class="field-even field"><th class="field-name">97:</th><td class="field-body">No Referral</td>
+<tr class="field-even field"><th class="field-name">97:</th><td class="field-body">No Recommendation</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
 </tr>
@@ -7917,13 +8195,13 @@ valid unicode characters.</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong></p>
 <p><strong>Guide for use</strong></p>
-<p>It is best to record the referral information as soon as the client is
+<p>It is best to record the recommendation information as soon as the client is
 referred to an agency/community service as it may be difficult to track this
 information later.</p>
 <p>To assist staff, service providers may find it useful to make a list of the
-agencies from which they most frequently send referrals and note the
-corresponding Source of Referral code.
-Report the Referral starting with the most relevant or urgent one first.</p>
+agencies from which they most frequently send recommendations and note the
+corresponding Source of Recommendation code.
+Report the Recommendation starting with the most relevant or urgent one first.</p>
 <p class="last"><strong>Purpose/context</strong>
 Program monitoring, service planning.</p>
 </td>
@@ -7932,14 +8210,14 @@ Program monitoring, service planning.</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-referral-out-status">
-<span id="dfn-twb-referral-out-status"></span><h5>TWB Referral Out - Status<a class="headerlink" href="#twb-referral-out-status" title="Permalink to this headline">¶</a></h5>
-<p>The status of a referral out made by the Service Provider on behalf of a client.</p>
+<div class="section" id="twb-recommendation-out-status">
+<span id="dfn-twb-recommendation-out-status"></span><h5>TWB Recommendation Out - Status<a class="headerlink" href="#twb-recommendation-out-status" title="Permalink to this headline">¶</a></h5>
+<p>The status of a recommendation out made by the Service Provider on behalf of a client.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_referral_out_status</p>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_recommendation_out_status</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
@@ -7952,30 +8230,28 @@ Program monitoring, service planning.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Service commenced</td>
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Client declined to take up recommendation</td>
 </tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Service completed</td>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Service commenced</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Waitlisted</td>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Service completed</td>
 </tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Referral not accepted</td>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Waitlisted</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Client declined to take up referral</td>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Client deceased prior to service commencement</td>
 </tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Client deceased prior to service commencement</td>
+<tr class="field-even field"><th class="field-name">98:</th><td class="field-body">Other</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-even field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
+<tr class="field-odd field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
 </tr>
 </tbody>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
-Mandatory where Service Contact- Referral out provider type 1-44 is present</p>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
+Mandatory where TWB Recommendation Out - Provider Type 1-41 is present</p>
 <p><strong>Guide for use</strong>
-Requires services to record the status of a referral out to an alternative service.</p>
+Requires services to record the status of a recommendation out to an alternative service.</p>
 <p class="last"><strong>Purpose/context</strong>
 Program monitoring, service planning, funding and accountability.
 Measurement of waiting times.</p>
@@ -7985,14 +8261,14 @@ Measurement of waiting times.</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-referral-out-tags">
-<span id="dfn-twb-referral-out-tags"></span><h5>TWB Referral Out - Tags<a class="headerlink" href="#twb-referral-out-tags" title="Permalink to this headline">¶</a></h5>
-<p>List of tags for TWB Referral Out.</p>
+<div class="section" id="twb-recommendation-out-tags">
+<span id="dfn-twb-recommendation-out-tags"></span><h5>TWB Recommendation Out - Tags<a class="headerlink" href="#twb-recommendation-out-tags" title="Permalink to this headline">¶</a></h5>
+<p>List of tags for TWB Recommendation Out.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_referral_out_tags</p>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_recommendation_out_tags</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
@@ -8015,14 +8291,14 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-referral-out-key">
-<span id="dfn-twb-referral-out-key"></span><h5>TWB Referral Out Key<a class="headerlink" href="#twb-referral-out-key" title="Permalink to this headline">¶</a></h5>
-<p>This is a number or code assigned to each referral out. The Referral Out Key is unique and stable for each referral out at the lvel of the organisation.</p>
+<div class="section" id="twb-recommendation-out-key">
+<span id="dfn-twb-recommendation-out-key"></span><h5>TWB Recommendation Out Key<a class="headerlink" href="#twb-recommendation-out-key" title="Permalink to this headline">¶</a></h5>
+<p>This is a number or code assigned to each recommendation out. The Recommendation Out Key is unique and stable for each recommendation out at the lvel of the organisation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">twb_referral_out_key</td>
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">twb_recommendation_out_key</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (2,50)</td>
 </tr>

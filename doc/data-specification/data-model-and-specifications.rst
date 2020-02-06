@@ -43,7 +43,7 @@ The Way Back adds the following records on top of PMHC MDS current specification
 - See :ref:`TWB-Episode data specifications <twb-episode-data-elements>` for Individual Services Data.
 - See :ref:`TWB-Primary Nominated Professional Contact data specifications <twb-pnpc-data-elements>` for Primary Nominated Professional Contact Data.
 - See :ref:`TWB-Critical Incident data specifications <twb-critical-incident-data-elements>` for Critical Incident Data.
-- See :ref:`TWB-Referral Out data specifications <twb-referral-out-data-elements>` for Referral Out Data.
+- See :ref:`TWB-Recommendation Out data specifications <twb-recommendation-out-data-elements>` for Recommendation Out Data.
 - See :ref:`Collection Occasion data specifications <collection-occasion-data-elements>` for Collection Occasions.
 - See :ref:`TWB-Plan data specifications <twb-plan-data-elements>` for Planning Data.
 - See :ref:`TWB-NI data specifications <twb-ni-data-elements>` for Needs Identification Data.
@@ -108,17 +108,17 @@ Critical Incidents are managed by the provider organisations via upload or data 
 
 ----------
 
-.. _twb-referral-out-data-elements:
+.. _twb-recommendation-out-data-elements:
 
-TWB-Referral Out
-~~~~~~~~~~~~~~~~
+TWB-Recommendation Out
+~~~~~~~~~~~~~~~~~~~~~~
 
-See :ref:`key-concepts-episode` for definition of a Referral Out.
+See :ref:`key-concepts-episode` for definition of a Recommendation Out.
 
-Referral Outs are managed by the provider organisations via upload or data entry.
+Recommendation Outs are managed by the provider organisations via upload or data entry.
 
-.. csv-table:: Referral Out record layout
-  :file: record/twb-referral-out.csv
+.. csv-table:: Recommendation Out record layout
+  :file: record/twb-recommendation-out.csv
   :header-rows: 1
 
 ----------

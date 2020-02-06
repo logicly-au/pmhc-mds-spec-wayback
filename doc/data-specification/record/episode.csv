@@ -31,7 +31,14 @@
 ",date,"—","The date the referrer made the referral."
 "`Episode - Principal Focus of Treatment Plan`_ (principal_focus)
 
-",string,yes,":7: Psychosocial"
+",string,yes,":1: Psychological therapy
+:2: Low intensity psychological intervention
+:3: Clinical care coordination
+:4: Complex care package
+:5: Child and youth-specific mental health services
+:6: Indigenous-specific mental health services
+:7: Other
+:8: Psychosocial Support"
 "`Episode - GP Mental Health Treatment Plan Flag`_ (mental_health_treatment_plan)
 
 ",string,yes,":1: Yes
@@ -154,22 +161,76 @@
 :999: Missing"
 "`Episode - Additional Diagnosis`_ (additional_diagnosis)
 
-",string,yes,":000: No additional diagnosis"
+",string,yes,":000: No additional diagnosis
+:100: Anxiety disorders (ATAPS)
+:101: Panic disorder
+:102: Agoraphobia
+:103: Social phobia
+:104: Generalised anxiety disorder
+:105: Obsessive-compulsive disorder
+:106: Post-traumatic stress disorder
+:107: Acute stress disorder
+:108: Other anxiety disorder
+:200: Affective (Mood) disorders (ATAPS)
+:201: Major depressive disorder
+:202: Dysthymia
+:203: Depressive disorder NOS
+:204: Bipolar disorder
+:205: Cyclothymic disorder
+:206: Other affective disorder
+:300: Substance use disorders (ATAPS)
+:301: Alcohol harmful use
+:302: Alcohol dependence
+:303: Other drug harmful use
+:304: Other drug dependence
+:305: Other substance use disorder
+:400: Psychotic disorders (ATAPS)
+:401: Schizophrenia
+:402: Schizoaffective disorder
+:403: Brief psychotic disorder
+:404: Other psychotic disorder
+:501: Separation anxiety disorder
+:502: Attention deficit hyperactivity disorder (ADHD)
+:503: Conduct disorder
+:504: Oppositional defiant disorder
+:505: Pervasive developmental disorder
+:506: Other disorder of childhood and adolescence
+:601: Adjustment disorder
+:602: Eating disorder
+:603: Somatoform disorder
+:604: Personality disorder
+:605: Other mental disorder
+:901: Anxiety symptoms
+:902: Depressive symptoms
+:903: Mixed anxiety and depressive symptoms
+:904: Stress related
+:905: Other
+:999: Missing"
 "`Episode - Medication - Antipsychotics (N05A)`_ (medication_antipsychotics)
 
-",string,yes,":9: Unknown"
+",string,yes,":1: Yes
+:2: No
+:9: Unknown"
 "`Episode - Medication - Anxiolytics (N05B)`_ (medication_anxiolytics)
 
-",string,yes,":9: Unknown"
+",string,yes,":1: Yes
+:2: No
+:9: Unknown"
 "`Episode - Medication - Hypnotics and sedatives (N05C)`_ (medication_hypnotics)
 
-",string,yes,":9: Unknown"
+",string,yes,":1: Yes
+:2: No
+:9: Unknown"
 "`Episode - Medication - Antidepressants (N06A)`_ (medication_antidepressants)
 
-",string,yes,":9: Unknown"
+",string,yes,":1: Yes
+:2: No
+:9: Unknown"
 "`Episode - Medication - Psychostimulants and nootropics (N06B)`_ (medication_psychostimulants)
 
-",string,yes,":9: Unknown"
+",string,yes,":1: Yes
+:2: No
+:9: Unknown"
 "`Episode - Referrer Profession`_ (referrer_profession)
 
 ",string,yes,":1: General Practitioner

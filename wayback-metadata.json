@@ -62,11 +62,11 @@
     "schema:description": "table/service-contact.rst",
     "tableSchema": "table/service-contact-metadata.json"
   }, {
-    "dc:title": "TWB Referral Out",
-    "url": "data/twb-referral-out.csv",
-    "schema:name": "twb-referral-out",
-    "schema:description": "table/twb-referral-out.rst",
-    "tableSchema": "table/twb-referral-out-metadata.json"
+    "dc:title": "TWB Recommendation Out",
+    "url": "data/twb-recommendation-out.csv",
+    "schema:name": "twb-recommendation-out",
+    "schema:description": "table/twb-recommendation-out.rst",
+    "tableSchema": "table/twb-recommendation-out-metadata.json"
   }, {
     "dc:title": "Collection Occasion",
     "url": "data/collection-occasions.csv",
@@ -242,11 +242,11 @@
     "url": "table/twb-episode/twb-method-of-suicide-attempt.csv",
     "tableSchema": "table/twb-episode/twb-method-of-suicide-attempt.json"
   }, {
-    "url": "table/twb-referral-out/twb-referral-out-provider-type.csv",
-    "tableSchema": "table/twb-referral-out/twb-referral-out-provider-type.json"
+    "url": "table/twb-recommendation-out/twb-recommendation-out-provider-type.csv",
+    "tableSchema": "table/twb-recommendation-out/twb-recommendation-out-provider-type.json"
   }, {
-    "url": "table/twb-referral-out/twb-referral-out-status.csv",
-    "tableSchema": "table/twb-referral-out/twb-referral-out-status.json"
+    "url": "table/twb-recommendation-out/twb-recommendation-out-status.csv",
+    "tableSchema": "table/twb-recommendation-out/twb-recommendation-out-status.json"
   }, {
     "url": "table/twb-pnpc/reason.csv",
     "tableSchema": "table/twb-pnpc/reason.json"

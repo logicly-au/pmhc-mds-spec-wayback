@@ -1,5 +1,5 @@
 {
-  "@id": "table/twb-referral-out/twb-referral-out-status.json",
+  "@id": "table/twb-recommendation-out/twb-recommendation-out-status.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",

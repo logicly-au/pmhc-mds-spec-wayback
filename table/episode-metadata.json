@@ -477,31 +477,31 @@
   }, {
     "columnReference": "medication_antipsychotics",
     "reference": {
-      "resource": "type/unknown.csv",
+      "resource": "type/boolean-unknown.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "medication_anxiolytics",
     "reference": {
-      "resource": "type/unknown.csv",
+      "resource": "type/boolean-unknown.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "medication_hypnotics",
     "reference": {
-      "resource": "type/unknown.csv",
+      "resource": "type/boolean-unknown.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "medication_antidepressants",
     "reference": {
-      "resource": "type/unknown.csv",
+      "resource": "type/boolean-unknown.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "medication_psychostimulants",
     "reference": {
-      "resource": "type/unknown.csv",
+      "resource": "type/boolean-unknown.csv",
       "columnReference": "id"
     }
   }, {

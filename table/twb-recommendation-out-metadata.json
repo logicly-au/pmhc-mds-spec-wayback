@@ -1,5 +1,5 @@
 {
-  "@id": "twb-referral-out-metadata.json",
+  "@id": "twb-recommendation-out-metadata.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "organisation_path",
@@ -16,10 +16,10 @@
     "required": true,
     "schema:formOrder": "1"
   },{
-     "name": "twb_referral_out_key",
-    "titles": [ "twb_referral_out_key" ],
-    "dc:title": "TWB Referral Out Key",
-    "schema:description": "This is a number or code assigned to each referral out. The Referral Out Key is unique and stable for each referral out at the lvel of the organisation.",
+     "name": "twb_recommendation_out_key",
+    "titles": [ "twb_recommendation_out_key" ],
+    "dc:title": "TWB Recommendation Out Key",
+    "schema:description": "This is a number or code assigned to each recommendation out. The Recommendation Out Key is unique and stable for each recommendation out at the lvel of the organisation.",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -44,11 +44,11 @@
     },
     "required": true
   },{
-    "name": "twb_referral_out_provider_type",
-    "titles": [ "twb_referral_out_provider_type" ],
-    "dc:title": "TWB Referral Out - Provider Type",
-    "schema:description": "The provider type of the referral out made for and on behalf of the client. ",
-    "schema:disambiguatingDescription": "table/twb-referral-out/twb-referral-out-provider-type.rst",
+    "name": "twb_recommendation_out_provider_type",
+    "titles": [ "twb_recommendation_out_provider_type" ],
+    "dc:title": "TWB Recommendation Out - Provider Type",
+    "schema:description": "The provider type of the recommendation out made for and on behalf of the client. ",
+    "schema:disambiguatingDescription": "table/twb-recommendation-out/twb-recommendation-out-provider-type.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -56,11 +56,11 @@
     },
     "required": true
   },{
-    "name": "twb_referral_out_status",
-    "titles": [ "twb_referral_out_status" ],
-    "dc:title": "TWB Referral Out - Status",
-    "schema:description": "The status of a referral out made by the Service Provider on behalf of a client.",
-    "schema:disambiguatingDescription": "table/twb-referral-out/twb-referral-out-status.rst",
+    "name": "twb_recommendation_out_status",
+    "titles": [ "twb_recommendation_out_status" ],
+    "dc:title": "TWB Recommendation Out - Status",
+    "schema:description": "The status of a recommendation out made by the Service Provider on behalf of a client.",
+    "schema:disambiguatingDescription": "table/twb-recommendation-out/twb-recommendation-out-status.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -68,10 +68,10 @@
     },
     "required": true
   },{
-    "name": "twb_referral_out_tags",
-    "titles": [ "twb_referral_out_tags" ],
-    "dc:title" : "TWB Referral Out - Tags",
-    "schema:description": "List of tags for TWB Referral Out.",
+    "name": "twb_recommendation_out_tags",
+    "titles": [ "twb_recommendation_out_tags" ],
+    "dc:title" : "TWB Recommendation Out - Tags",
+    "schema:description": "List of tags for TWB Recommendation Out.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -80,7 +80,7 @@
       },
     "required": false
   }],
-  "primaryKey": [ "organisation_path", "twb_referral_out_key" ],
+  "primaryKey": [ "organisation_path", "twb_recommendation_out_key" ],
   "foreignKeys": [{
     "columnReference": [ "organisation_path", "episode_key" ],
     "reference": {
@@ -88,15 +88,15 @@
       "columnReference": [ "organisation_path", "episode_key" ]
     }
   }, {
-    "columnReference": "twb_referral_out_provider_type",
+    "columnReference": "twb_recommendation_out_provider_type",
     "reference": {
-      "resource": "table/twb-referral-out/twb-referral-out-provider-type.csv",
+      "resource": "table/twb-recommendation-out/twb-recommendation-out-provider-type.csv",
       "columnReference": "id"
     }
   }, {
-    "columnReference": "twb_referral_out_status",
+    "columnReference": "twb_recommendation_out_status",
     "reference": {
-      "resource": "table/twb-referral-out/twb-referral-out-status.csv",
+      "resource": "table/twb-recommendation-out/twb-recommendation-out-status.csv",
       "columnReference": "id"
     }
   }]
