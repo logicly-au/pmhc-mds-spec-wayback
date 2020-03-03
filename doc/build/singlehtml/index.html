@@ -107,7 +107,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/data-model-and-specifications">Data Model and Specifications</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="index.html#data-model">Data model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#twb-record-formats">TWB Record formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#record-formats">Record Formats</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#twb-definitions">TWB Definitions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#definitions">Definitions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#download-specification-files">Download Specification Files</a></li>
@@ -325,7 +325,7 @@ person re-presents to the organisation.</p>
 <div class="section" id="twb-episode">
 <span id="key-concepts-twb-episode"></span><h4>TWB-Episode<a class="headerlink" href="#twb-episode" title="Permalink to this headline">¶</a></h4>
 <p>TWB-Episode is the record format for collecting TWB episode data.</p>
-<p>See <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB-Episode</span></a> for the data elements for TWB-Episode.</p>
+<p>See <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a> for the data elements for TWB-Episode.</p>
 </div>
 <div class="section" id="service-contact">
 <span id="key-concepts-service-contact"></span><h4>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h4>
@@ -344,9 +344,9 @@ frequent if clinically indicated and agreed by the client.</p>
 <li><a class="reference internal" href="index.html#k10p-data-elements"><span class="std std-ref">K10+ Measure</span></a></li>
 <li><a class="reference internal" href="index.html#who5-data-elements"><span class="std std-ref">WHO-5 Measure</span></a></li>
 <li><a class="reference internal" href="index.html#sidas-data-elements"><span class="std std-ref">SIDAS Measure</span></a></li>
-<li><a class="reference internal" href="index.html#mspss-data-elements"><span class="std std-ref">MSPSS Measure</span></a></li>
+<li><a class="reference internal" href="index.html#mspss-data-elements"><span class="std std-ref">MSPSS Measure - TO BE REPLACED!</span></a></li>
 </ul>
-<p>See <a class="reference internal" href="index.html#outcome-collection-occasion-data-elements"><span class="std std-ref">Collection Occasion Data Elements</span></a> data elements.</p>
+<p>See <span class="xref std std-ref">outcome-collection-occasion-data-elements</span> data elements.</p>
 </div>
 </div>
 <span id="document-data-specification/identifier-management"></span><div class="section" id="identifier-management">
@@ -357,7 +357,7 @@ the current PMHC MDS Identifier Management rules apply. These are available to b
 <div class="section" id="managing-keys">
 <h4>Managing  Keys<a class="headerlink" href="#managing-keys" title="Permalink to this headline">¶</a></h4>
 <p>The <a class="reference internal" href="index.html#dfn-twb-pnpc-key"><span class="std std-ref">TWB Primary Nominated Professional Contact Key</span></a>, <a class="reference internal" href="index.html#dfn-twb-critical-incident-key"><span class="std std-ref">TWB Critical Incident Key</span></a>,
-<span class="xref std std-ref">dfn-twb_referral_out_key</span>, <a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> and
+<a class="reference internal" href="index.html#dfn-twb-recommendation-out-key"><span class="std std-ref">TWB Recommendation Out Key</span></a>, <a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> and
 <a class="reference internal" href="index.html#dfn-measure-key"><span class="std std-ref">Measure Key</span></a> will be created and managed by Provider Organisations.</p>
 <p>The PMHC MDS specification requires each of these keys to be unique and stable
 at the Provider Organisation level. See above links for the specification requirements
@@ -410,28 +410,37 @@ Collection Occasion records.</p>
 <p><strong>Note:</strong> See <a class="reference internal" href="#data-model-diagram"><span class="std std-ref">TWB data model within the PMHC MDS</span></a> for more details about how
 Collection Occasion records fit into the overall structure.</p>
 </div>
+<div class="section" id="record-formats">
+<span id="id3"></span><h4>Record Formats<a class="headerlink" href="#record-formats" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="pmhc-mds-record-formats">
+<span id="pmhc-data-elements"></span><h5>PMHC MDS Record formats<a class="headerlink" href="#pmhc-mds-record-formats" title="Permalink to this headline">¶</a></h5>
+<p>As TWB is an extension of the Primary Mental Health Care Minimum Data Set
+(PMHC MDS), the current PMHC MDS Data model and specification record formats are
+available to be viewed at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#record-formats">https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#record-formats</a>.</p>
+</div>
 <div class="section" id="twb-record-formats">
-<span id="record-formats"></span><h4>TWB Record formats<a class="headerlink" href="#twb-record-formats" title="Permalink to this headline">¶</a></h4>
+<h5>TWB Record formats<a class="headerlink" href="#twb-record-formats" title="Permalink to this headline">¶</a></h5>
 <p>The Way Back adds the following records on top of PMHC MDS current specifications:</p>
 <ul class="simple">
 <li>See <a class="reference internal" href="#twb-episode-data-elements"><span class="std std-ref">TWB-Episode data specifications</span></a> for Individual Services Data.</li>
 <li>See <a class="reference internal" href="#twb-pnpc-data-elements"><span class="std std-ref">TWB-Primary Nominated Professional Contact data specifications</span></a> for Primary Nominated Professional Contact Data.</li>
 <li>See <a class="reference internal" href="#twb-critical-incident-data-elements"><span class="std std-ref">TWB-Critical Incident data specifications</span></a> for Critical Incident Data.</li>
 <li>See <a class="reference internal" href="#twb-recommendation-out-data-elements"><span class="std std-ref">TWB-Recommendation Out data specifications</span></a> for Recommendation Out Data.</li>
-<li>See <a class="reference internal" href="#id4"><span class="std std-ref">Collection Occasion data specifications</span></a> for Collection Occasions.</li>
+<li>See <a class="reference internal" href="#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion data specifications</span></a> for Collection Occasions.</li>
 <li>See <a class="reference internal" href="#twb-plan-data-elements"><span class="std std-ref">TWB-Plan data specifications</span></a> for Planning Data.</li>
 <li>See <a class="reference internal" href="#twb-ni-data-elements"><span class="std std-ref">TWB-NI data specifications</span></a> for Needs Identification Data.</li>
 <li>See <a class="reference internal" href="#k10p-data-elements"><span class="std std-ref">K10+ Measure data specifications</span></a>.</li>
 <li>See <a class="reference internal" href="#who5-data-elements"><span class="std std-ref">WHO-5 Measure data specifications</span></a>.</li>
 <li>See <a class="reference internal" href="#sidas-data-elements"><span class="std std-ref">SIDAS Measure data specifications</span></a>.</li>
 <li>See <a class="reference internal" href="#mspss-data-elements"><span class="std std-ref">MSPSS Measure data specifications</span></a>.</li>
+<li>See <a class="reference internal" href="#service-contact-data-elements"><span class="std std-ref">Service Contact data specifications</span></a> for Service Contact Data.</li>
 </ul>
-<div class="section" id="episode-data-elements">
-<span id="id3"></span><h5>Episode Data Elements<a class="headerlink" href="#episode-data-elements" title="Permalink to this headline">¶</a></h5>
-<p>See <a class="reference internal" href="index.html#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of an episode.</p>
-<p>Episodes are managed by the provider organisations via upload or data entry.</p>
+<div class="section" id="metadata">
+<span id="metadata-data-elements"></span><h6>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h6>
+<p>The Metadata table must be included in file uploads in order to identify
+the type and version of the uploaded data.</p>
 <table border="1" class="docutils" id="id8">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Episode record layout</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -446,712 +455,63 @@ Collection Occasion records fit into the overall structure.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
+<tr class="row-even"><td><a class="reference internal" href="#key">Key</a> (key)</td>
 <td>string</td>
 <td>yes</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
+<td>A metadata key name.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-key">Episode Key</a> (episode_key)</td>
-<td>string (2,50)</td>
-<td>yes</td>
-<td>This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#client-key">Client Key</a> (client_key)</td>
-<td>string (2,50)</td>
-<td>yes</td>
-<td>This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.</td>
-</tr>
-<tr class="row-odd"><td><p class="first"><a class="reference internal" href="#episode-end-date">Episode - End Date</a> (episode_end_date)</p>
-<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/614094">METeOR ID 614094</a></p>
-</td>
-<td>date</td>
-<td>—</td>
-<td>The date on which an <em>Episode of Care</em> is formally or administratively ended</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-client-consent-to-anonymised-data">Episode - Client Consent to Anonymised Data</a> (client_consent)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#value">Value</a> (value)</td>
 <td>string</td>
 <td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
+<td>The metadata value.</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-completion-status">Episode - Completion Status</a> (episode_completion_status)</td>
-<td>string</td>
-<td>—</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
+<p>For this version of the specification the required content is shown in the
+following table:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="54%" />
+<col width="46%" />
+</colgroup>
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">Episode open</td>
+<tr class="row-odd"><td>key</td>
+<td>value</td>
 </tr>
-<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Episode closed - treatment concluded</td>
+<tr class="row-even"><td>type</td>
+<td>WAYBACK</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Episode closed administratively - client could not be contacted</td>
-</tr>
-<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Episode closed administratively - client declined further contact</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Episode closed administratively - client moved out of area</td>
-</tr>
-<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Episode closed administratively - client referred elsewhere</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Episode closed administratively - other reason</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-referral-date">Episode - Referral Date</a> (referral_date)</td>
-<td>date</td>
-<td>—</td>
-<td>The date the referrer made the referral.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-principal-focus-of-treatment-plan">Episode - Principal Focus of Treatment Plan</a> (principal_focus)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Psychological therapy</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Low intensity psychological intervention</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Clinical care coordination</td>
-</tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Complex care package</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Child and youth-specific mental health services</td>
-</tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Indigenous-specific mental health services</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Psychosocial Support</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-gp-mental-health-treatment-plan-flag">Episode - GP Mental Health Treatment Plan Flag</a> (mental_health_treatment_plan)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Unknown</td>
-</tr>
-<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-homelessness-flag">Episode - Homelessness Flag</a> (homelessness)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Sleeping rough or in non-conventional accommodation</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Short-term or emergency accommodation</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Not homeless</td>
-</tr>
-<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated / Missing</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-area-of-usual-residence-postcode">Episode - Area of usual residence, postcode</a> (client_postcode)</p>
-<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">METeOR ID 429894</a></p>
-</td>
-<td>string</td>
-<td>yes</td>
-<td>The Australian postcode of the client.</td>
-</tr>
-<tr class="row-odd"><td><p class="first"><a class="reference internal" href="#episode-labour-force-status">Episode - Labour Force Status</a> (labour_force_status)</p>
-<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/621450">METeOR ID 621450</a></p>
-</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Employed</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Unemployed</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Not in the Labour Force</td>
-</tr>
-<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-employment-participation">Episode - Employment Participation</a> (employment_participation)</p>
-<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/269950">METeOR ID 269950</a></p>
-</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Full-time</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Part-time</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Not applicable - not in the labour force</td>
-</tr>
-<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><p class="first"><a class="reference internal" href="#episode-source-of-cash-income">Episode - Source of Cash Income</a> (income_source)</p>
-<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/386449">METeOR ID 386449</a></p>
-</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">N/A - Client aged less than 16 years</td>
-</tr>
-<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Disability Support Pension</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Other pension or benefit (not superannuation)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Paid employment</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Compensation payments</td>
-</tr>
-<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Other (e.g. superannuation, investments etc.)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Nil income</td>
-</tr>
-<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Not known</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-health-care-card">Episode - Health Care Card</a> (health_care_card)</p>
-<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/605149">METeOR ID 605149</a></p>
-</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Not Known</td>
-</tr>
-<tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Not stated</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-ndis-participant">Episode - NDIS Participant</a> (ndis_participant)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><p class="first"><a class="reference internal" href="#episode-marital-status">Episode - Marital Status</a> (marital_status)</p>
-<p class="last"><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/291045">METeOR ID 291045</a></p>
-</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Never married</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Widowed</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Divorced</td>
-</tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Separated</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Married (registered and de facto)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Not stated/inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-suicide-referral-flag">Episode - Suicide Referral Flag</a> (suicide_referral_flag)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-principal-diagnosis">Episode - Principal Diagnosis</a> (principal_diagnosis)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
-</tr>
-<tr class="field-even field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
-</tr>
-<tr class="field-even field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
-</tr>
-<tr class="field-even field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
-</tr>
-<tr class="field-even field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
-</tr>
-<tr class="field-even field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
-</tr>
-<tr class="field-even field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">905:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-even field"><th class="field-name">999:</th><td class="field-body">Missing</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-additional-diagnosis">Episode - Additional Diagnosis</a> (additional_diagnosis)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">000:</th><td class="field-body">No additional diagnosis</td>
-</tr>
-<tr class="field-even field"><th class="field-name">100:</th><td class="field-body">Anxiety disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">101:</th><td class="field-body">Panic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">102:</th><td class="field-body">Agoraphobia</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">103:</th><td class="field-body">Social phobia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">104:</th><td class="field-body">Generalised anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">105:</th><td class="field-body">Obsessive-compulsive disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">106:</th><td class="field-body">Post-traumatic stress disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">107:</th><td class="field-body">Acute stress disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">108:</th><td class="field-body">Other anxiety disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">200:</th><td class="field-body">Affective (Mood) disorders (ATAPS)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">201:</th><td class="field-body">Major depressive disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">202:</th><td class="field-body">Dysthymia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">203:</th><td class="field-body">Depressive disorder NOS</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">204:</th><td class="field-body">Bipolar disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">205:</th><td class="field-body">Cyclothymic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">206:</th><td class="field-body">Other affective disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">300:</th><td class="field-body">Substance use disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">301:</th><td class="field-body">Alcohol harmful use</td>
-</tr>
-<tr class="field-even field"><th class="field-name">302:</th><td class="field-body">Alcohol dependence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">303:</th><td class="field-body">Other drug harmful use</td>
-</tr>
-<tr class="field-even field"><th class="field-name">304:</th><td class="field-body">Other drug dependence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">305:</th><td class="field-body">Other substance use disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">400:</th><td class="field-body">Psychotic disorders (ATAPS)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">401:</th><td class="field-body">Schizophrenia</td>
-</tr>
-<tr class="field-even field"><th class="field-name">402:</th><td class="field-body">Schizoaffective disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">403:</th><td class="field-body">Brief psychotic disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">404:</th><td class="field-body">Other psychotic disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">501:</th><td class="field-body">Separation anxiety disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">502:</th><td class="field-body">Attention deficit hyperactivity disorder (ADHD)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">503:</th><td class="field-body">Conduct disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">504:</th><td class="field-body">Oppositional defiant disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">505:</th><td class="field-body">Pervasive developmental disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">506:</th><td class="field-body">Other disorder of childhood and adolescence</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">601:</th><td class="field-body">Adjustment disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">602:</th><td class="field-body">Eating disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">603:</th><td class="field-body">Somatoform disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">604:</th><td class="field-body">Personality disorder</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">605:</th><td class="field-body">Other mental disorder</td>
-</tr>
-<tr class="field-even field"><th class="field-name">901:</th><td class="field-body">Anxiety symptoms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">902:</th><td class="field-body">Depressive symptoms</td>
-</tr>
-<tr class="field-even field"><th class="field-name">903:</th><td class="field-body">Mixed anxiety and depressive symptoms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">904:</th><td class="field-body">Stress related</td>
-</tr>
-<tr class="field-even field"><th class="field-name">905:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">999:</th><td class="field-body">Missing</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-medication-antipsychotics-n05a">Episode - Medication - Antipsychotics (N05A)</a> (medication_antipsychotics)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-medication-anxiolytics-n05b">Episode - Medication - Anxiolytics (N05B)</a> (medication_anxiolytics)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-medication-hypnotics-and-sedatives-n05c">Episode - Medication - Hypnotics and sedatives (N05C)</a> (medication_hypnotics)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-medication-antidepressants-n06a">Episode - Medication - Antidepressants (N06A)</a> (medication_antidepressants)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-medication-psychostimulants-and-nootropics-n06b">Episode - Medication - Psychostimulants and nootropics (N06B)</a> (medication_psychostimulants)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Unknown</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-referrer-profession">Episode - Referrer Profession</a> (referrer_profession)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">General Practitioner</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Psychiatrist</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Obstetrician</td>
-</tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Paediatrician</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Other Medical Specialist</td>
-</tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Midwife</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Maternal Health Nurse</td>
-</tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Psychologist</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Mental Health Nurse</td>
-</tr>
-<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Social Worker</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Occupational therapist</td>
-</tr>
-<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Aboriginal Health Worker</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Educational professional</td>
-</tr>
-<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Early childhood service worker</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-even field"><th class="field-name">98:</th><td class="field-body">N/A - Self referral</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">99:</th><td class="field-body">Not stated</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-referrer-organisation-type">Episode - Referrer Organisation Type</a> (referrer_organisation_type)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">General Practice</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Medical Specialist Consulting Rooms</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Private practice</td>
-</tr>
-<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Public mental health service</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Public Hospital</td>
-</tr>
-<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Private Hospital</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Emergency Department</td>
-</tr>
-<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Community Health Centre</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Drug and Alcohol Service</td>
-</tr>
-<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Community Support Organisation NFP</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Indigenous Health Organisation</td>
-</tr>
-<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Child and Maternal Health</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Nursing Service</td>
-</tr>
-<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Telephone helpline</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Digital health service</td>
-</tr>
-<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Family Support Service</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">School</td>
-</tr>
-<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">Tertiary Education institution</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Housing service</td>
-</tr>
-<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">Centrelink</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">21:</th><td class="field-body">Other</td>
-</tr>
-<tr class="field-even field"><th class="field-name">98:</th><td class="field-body">N/A - Self referral</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">99:</th><td class="field-body">Not stated</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#episode-continuity-of-support">Episode - Continuity of Support</a> (continuity_of_support)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">No</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Not stated/inadequately described</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-tags">Episode - Tags</a> (episode_tags)</td>
-<td>string</td>
-<td>—</td>
-<td>List of tags for the episode.</td>
+<tr class="row-odd"><td>version</td>
+<td>2.0</td>
 </tr>
 </tbody>
 </table>
 <hr class="docutils" />
+</div>
+<div class="section" id="provider-organisation">
+<span id="provider-organisation-data-elements"></span><h6>Provider Organisation<a class="headerlink" href="#provider-organisation" title="Permalink to this headline">¶</a></h6>
+<p>Same as standard <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#provider-organisation-data-elements">PMHC MDS Provider Organisation</a>.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="practitioner">
+<span id="practitioner-data-elements"></span><h6>Practitioner<a class="headerlink" href="#practitioner" title="Permalink to this headline">¶</a></h6>
+<p>Same as standard <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#practitioner-data-elements">PMHC MDS Practitioner</a>.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="client">
+<span id="client-data-elements"></span><h6>Client<a class="headerlink" href="#client" title="Permalink to this headline">¶</a></h6>
+<p>Same as standard <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-data-elements">PMHC MDS Client</a>.</p>
+<hr class="docutils" />
+</div>
+<div class="section" id="episode">
+<span id="episode-data-elements"></span><h6>Episode<a class="headerlink" href="#episode" title="Permalink to this headline">¶</a></h6>
+<p>Same as standard <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-data-elements">PMHC MDS Episode</a>.</p>
+<hr class="docutils" />
+</div>
 <div class="section" id="twb-episode">
-<span id="twb-episode-data-elements"></span><h6>TWB-Episode<a class="headerlink" href="#twb-episode" title="Permalink to this headline">¶</a></h6>
+<span id="twb-episode-data-elements"></span><h6>TWB Episode<a class="headerlink" href="#twb-episode" title="Permalink to this headline">¶</a></h6>
+<p>See <a class="reference internal" href="index.html#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of an episode.</p>
+<p>TWB Episodes are managed by the provider organisations via upload or data entry.</p>
 <table border="1" class="docutils" id="id9">
 <caption><span class="caption-number">Table 2 </span><span class="caption-text">TWB Episode record layout</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -1376,7 +736,6 @@ Collection Occasion records fit into the overall structure.</p>
 </div>
 <div class="section" id="twb-primary-nominated-professional-contact">
 <span id="twb-pnpc-data-elements"></span><h6>TWB-Primary Nominated Professional Contact<a class="headerlink" href="#twb-primary-nominated-professional-contact" title="Permalink to this headline">¶</a></h6>
-<p>See <a class="reference internal" href="index.html#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of a Primary Nominated Professional Contact.</p>
 <p>Primary Nominated Professional Contacts are managed by the provider organisations via upload or data entry.</p>
 <table border="1" class="docutils" id="id10">
 <caption><span class="caption-number">Table 3 </span><span class="caption-text">Primary Nominated Professional Contact record layout</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
@@ -1440,7 +799,6 @@ Collection Occasion records fit into the overall structure.</p>
 </div>
 <div class="section" id="twb-critical-incident">
 <span id="twb-critical-incident-data-elements"></span><h6>TWB-Critical Incident<a class="headerlink" href="#twb-critical-incident" title="Permalink to this headline">¶</a></h6>
-<p>See <a class="reference internal" href="index.html#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of a Critical Incident.</p>
 <p>Critical Incidents are managed by the provider organisations via upload or data entry.</p>
 <table border="1" class="docutils" id="id11">
 <caption><span class="caption-number">Table 4 </span><span class="caption-text">Critical Incident record layout</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
@@ -1508,7 +866,6 @@ Collection Occasion records fit into the overall structure.</p>
 </div>
 <div class="section" id="twb-recommendation-out">
 <span id="twb-recommendation-out-data-elements"></span><h6>TWB-Recommendation Out<a class="headerlink" href="#twb-recommendation-out" title="Permalink to this headline">¶</a></h6>
-<p>See <a class="reference internal" href="index.html#key-concepts-episode"><span class="std std-ref">Episode</span></a> for definition of a Recommendation Out.</p>
 <p>Recommendation Outs are managed by the provider organisations via upload or data entry.</p>
 <table border="1" class="docutils" id="id12">
 <caption><span class="caption-number">Table 5 </span><span class="caption-text">Recommendation Out record layout</span><a class="headerlink" href="#id12" title="Permalink to this table">¶</a></caption>
@@ -1674,9 +1031,8 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 <hr class="docutils" />
 </div>
-</div>
 <div class="section" id="service-contact-data-elements">
-<span id="servive-contact-data-elements"></span><h5>Service Contact Data Elements<a class="headerlink" href="#service-contact-data-elements" title="Permalink to this headline">¶</a></h5>
+<span id="id4"></span><h6>Service Contact Data Elements<a class="headerlink" href="#service-contact-data-elements" title="Permalink to this headline">¶</a></h6>
 <p>See <a class="reference internal" href="index.html#key-concepts-service-contact"><span class="std std-ref">Service Contact</span></a> for definition of a service-contact.</p>
 <p>Service Contacts are managed by the provider organisations via upload or data entry.</p>
 <table border="1" class="docutils" id="id13">
@@ -1947,7 +1303,22 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#service-contact-tags">Service Contact - Tags</a> (service_contact_tags)</td>
+<tr class="row-even"><td><a class="reference internal" href="#service-contact-funding-source">Service Contact - Funding Source</a> (funding_source)</td>
+<td>string</td>
+<td>yes</td>
+<td><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">PHN funded</td>
+</tr>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">TWB</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#service-contact-tags">Service Contact - Tags</a> (service_contact_tags)</td>
 <td>string</td>
 <td>—</td>
 <td>List of tags for the service contact.</td>
@@ -1956,14 +1327,11 @@ Collection Occasion records fit into the overall structure.</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="collection-occasion-data-elements">
-<span id="outcome-collection-occasion-data-elements"></span><h5>Collection Occasion Data Elements<a class="headerlink" href="#collection-occasion-data-elements" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="collection-occasion">
+<span id="collection-occasion-data-elements"></span><h6>Collection Occasion<a class="headerlink" href="#collection-occasion" title="Permalink to this headline">¶</a></h6>
 <p>See <a class="reference internal" href="index.html#key-concepts-outcome-collection-occasion"><span class="std std-ref">Outcome Collection Occasion</span></a> for definition of an outcome
 collection occasion.</p>
 <p>Outcome collection occasions are managed by the provider organisations via upload or data entry.</p>
-<p>TWB requires the use of the following outcome collection occasion records.</p>
-<div class="section" id="collection-occasion">
-<span id="id4"></span><h6>Collection Occasion<a class="headerlink" href="#collection-occasion" title="Permalink to this headline">¶</a></h6>
 <table border="1" class="docutils" id="id14">
 <caption><span class="caption-number">Table 7 </span><span class="caption-text">Collection Occasions record layout</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -2684,8 +2052,8 @@ collection occasion.</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="mspss-measure">
-<span id="mspss-data-elements"></span><h6>MSPSS Measure<a class="headerlink" href="#mspss-measure" title="Permalink to this headline">¶</a></h6>
+<div class="section" id="mspss-measure-to-be-replaced">
+<span id="mspss-data-elements"></span><h6>MSPSS Measure - TO BE REPLACED!<a class="headerlink" href="#mspss-measure-to-be-replaced" title="Permalink to this headline">¶</a></h6>
 <table border="1" class="docutils" id="id20">
 <caption><span class="caption-number">Table 13 </span><span class="caption-text">MSPSS record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -3068,65 +2436,6 @@ collection occasion.</p>
 </tr>
 </tbody>
 </table>
-<hr class="docutils" />
-</div>
-</div>
-<div class="section" id="metadata">
-<span id="metadata-data-elements"></span><h5>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h5>
-<p>The Metadata table must be included in file uploads in order to identify
-the type and version of the uploaded data.</p>
-<table border="1" class="docutils" id="id21">
-<caption><span class="caption-number">Table 14 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
-<th class="head">Type (min,max)</th>
-<th class="head">Required</th>
-<th class="head">Format / Values</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#key">Key</a> (key)</td>
-<td>string</td>
-<td>yes</td>
-<td>A metadata key name.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#value">Value</a> (value)</td>
-<td>string</td>
-<td>yes</td>
-<td>The metadata value.</td>
-</tr>
-</tbody>
-</table>
-<p>For this version of the specification the required content is shown in the
-following table:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="54%" />
-<col width="46%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>key</td>
-<td>value</td>
-</tr>
-<tr class="row-even"><td>type</td>
-<td>wayback</td>
-</tr>
-<tr class="row-odd"><td>version</td>
-<td>2.0</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="pmhc-mds-record-formats">
-<span id="pmhc-data-elements"></span><h6>PMHC MDS Record Formats<a class="headerlink" href="#pmhc-mds-record-formats" title="Permalink to this headline">¶</a></h6>
-<p>As TWB is an extension of the Primary Mental Health Care Minimum Data Set
-(PMHC MDS), the current PMHC MDS Data model and specification record formats are
-available to be viewed at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#record-formats">https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#record-formats</a>.</p>
 <hr class="docutils" />
 </div>
 </div>
@@ -6603,6 +5912,38 @@ additional activity to be recorded.</p>
 </table>
 <hr class="docutils" />
 </div>
+<div class="section" id="service-contact-funding-source">
+<span id="dfn-funding-source"></span><h5>Service Contact - Funding Source<a class="headerlink" href="#service-contact-funding-source" title="Permalink to this headline">¶</a></h5>
+<p>The source of funding for a service contact</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">funding_source</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">PHN funded</td>
+</tr>
+<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">TWB</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
 <div class="section" id="service-contact-interpreter-used">
 <span id="dfn-service-contact-interpreter"></span><h5>Service Contact - Interpreter Used<a class="headerlink" href="#service-contact-interpreter-used" title="Permalink to this headline">¶</a></h5>
 <p>Whether an interpreter service was used during the Service Contact</p>
@@ -8704,7 +8045,7 @@ corresponding client in the clients file/worksheet.</p>
 <li>Each item is a column in the file/worksheet. The ‘Field Name’ must be used for
 the column headings. The columns must be kept in the same order.</li>
 <li>The second and subsequent rows must contain the data.</li>
-<li>Data elements for each file/worksheet are defined at <a class="reference internal" href="index.html#record-formats"><span class="std std-ref">TWB Record formats</span></a>.</li>
+<li>Data elements for each file/worksheet are defined at <a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a>.</li>
 <li>For data elements that allow multiple values, each value should be separated by a space; for example: <cite>1 3 6</cite>.</li>
 </ul>
 <p>All TWB data uploads must include a Metadata file/worksheet. See <a class="reference internal" href="#twb-metadata-format"><span class="std std-ref">TWB Metadata file</span></a>.</p>
@@ -8786,7 +8127,7 @@ at <a class="reference external" href="https://docs.pmhc-mds.com/data-specificat
 <span id="twb-only-episode-format"></span><h5>TWB only Episode file format<a class="headerlink" href="#twb-only-episode-file-format" title="Permalink to this headline">¶</a></h5>
 <p>The TWB episode file/worksheet is required to be uploaded each time.</p>
 <p>Data elements for the episode upload file/worksheet are defined at
-<a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB-Episode</span></a>.</p>
+<a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a>.</p>
 <p>Example TWB episode data:</p>
 <ul class="simple">
 <li><a class="reference external" href="../_static/twb-episodes.csv">CSV TWB episode file</a>.</li>
@@ -8934,7 +8275,7 @@ uploaded before the insertions/updates.</li>
 the current PMHC MDS Validations rules apply. These are available to be viewed at
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/validation-rules.html">https://docs.pmhc-mds.com/data-specification/validation-rules.html</a>.</p>
 <p>This document defines validation rules between TWB items and record types.
-The domain of individual TWB items is defined in <a class="reference internal" href="index.html#record-formats"><span class="std std-ref">TWB Record formats</span></a>.</p>
+The domain of individual TWB items is defined in <a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a>.</p>
 <div class="section" id="current-twb-validations">
 <span id="id2"></span><h4>Current TWB Validations<a class="headerlink" href="#current-twb-validations" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="twb-episode">
@@ -8954,7 +8295,7 @@ after <a class="reference external" href="https://docs.pmhc-mds.com/data-specifi
 <li><a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a> must not be
 before 1 January 2016 and must not be in the future</li>
 <li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB-Episode</span></a> data.</li>
+MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a> data.</li>
 </ol>
 </div>
 <div class="section" id="twb-ni">
@@ -8967,7 +8308,7 @@ after <a class="reference external" href="https://docs.pmhc-mds.com/data-specifi
 <li><a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a> must not be
 before 1 January 2016 and must not be in the future</li>
 <li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB-Episode</span></a> data.</li>
+MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a> data.</li>
 </ol>
 </div>
 <div class="section" id="who-5">
@@ -8980,7 +8321,7 @@ after <a class="reference external" href="https://docs.pmhc-mds.com/data-specifi
 <li><a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a> must not be
 before 1 January 2016 and must not be in the future</li>
 <li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB-Episode</span></a> data.</li>
+MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a> data.</li>
 </ol>
 </div>
 <div class="section" id="sidas">
@@ -8993,7 +8334,7 @@ after <a class="reference external" href="https://docs.pmhc-mds.com/data-specifi
 <li><a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be
 before 1 January 2016 and must not be in the future</li>
 <li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB-Episode</span></a> data.</li>
+MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a> data.</li>
 </ol>
 </div>
 <div class="section" id="mspss">
@@ -9006,7 +8347,7 @@ after <a class="reference external" href="https://docs.pmhc-mds.com/data-specifi
 <li><a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Measure Date</span></a> must not be
 before 1 January 2016 and must not be in the future</li>
 <li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB-Episode</span></a> data.</li>
+MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a> data.</li>
 </ol>
 </div>
 </div>

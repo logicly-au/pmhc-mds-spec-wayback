@@ -100,6 +100,10 @@
 ",string,yes,":1: No further services are planned for the client in the current episode
 :2: Further services are planned for the client in the current episode
 :3: Not known at this stage"
+"`Service Contact - Funding Source`_ (funding_source)
+
+",string,yes,":0: PHN funded
+:7: TWB"
 "`Service Contact - Tags`_ (service_contact_tags)
 
 ",string,"—","List of tags for the service contact."

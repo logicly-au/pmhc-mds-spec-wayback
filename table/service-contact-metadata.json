@@ -221,6 +221,17 @@
     },
     "required": true
   },{
+    "name": "funding_source",
+    "titles": [ "funding_source" ],
+    "dc:title": "Service Contact - Funding Source",
+    "schema:description": "The source of funding for a service contact",
+    "schema:dateCreated": "2018-10-12",
+    "schema:dateModified": "2016-10-12",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
     "name": "service_contact_tags",
     "titles": [ "service_contact_tags" ],
     "dc:title" : "Service Contact - Tags",
@@ -299,6 +310,12 @@
     "columnReference": "service_contact_final",
     "reference": {
       "resource": "table/service-contact/final.csv",
+      "columnReference": "id"
+    }
+  }, {
+    "columnReference": "funding_source",
+    "reference": {
+      "resource": "table/service-contact/funding-source.csv",
       "columnReference": "id"
     }
   }]

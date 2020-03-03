@@ -275,6 +275,9 @@
     "url": "table/service-contact/interpreter.csv",
     "tableSchema": "table/service-contact/interpreter.json"
   }, {
+    "url": "table/service-contact/funding-source.csv",
+    "tableSchema": "table/service-contact/funding-source.json"
+  }, {
     "url": "table/collection-occasion/reason.csv",
     "tableSchema": "table/collection-occasion/reason.json"
   }, {

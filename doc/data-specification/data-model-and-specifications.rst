@@ -35,8 +35,20 @@ Collection Occasion records fit into the overall structure.
 
 .. _record-formats:
 
+Record Formats
+--------------
+
+.. _pmhc-data-elements:
+
+PMHC MDS Record formats
+^^^^^^^^^^^^^^^^^^^^^^^
+
+As TWB is an extension of the Primary Mental Health Care Minimum Data Set
+(PMHC MDS), the current PMHC MDS Data model and specification record formats are
+available to be viewed at https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#record-formats.
+
 TWB Record formats
-------------------
+^^^^^^^^^^^^^^^^^^
 
 The Way Back adds the following records on top of PMHC MDS current specifications:
 
@@ -51,26 +63,77 @@ The Way Back adds the following records on top of PMHC MDS current specification
 - See :ref:`WHO-5 Measure data specifications <who5-data-elements>`.
 - See :ref:`SIDAS Measure data specifications <sidas-data-elements>`.
 - See :ref:`MSPSS Measure data specifications <mspss-data-elements>`.
+- See :ref:`Service Contact data specifications <service-contact-data-elements>` for Service Contact Data.
+
+.. _metadata-data-elements:
+
+Metadata
+~~~~~~~~
+
+The Metadata table must be included in file uploads in order to identify
+the type and version of the uploaded data.
+
+.. csv-table:: Metadata record layout
+   :file: record/metadata.csv
+   :header-rows: 1
+
+For this version of the specification the required content is shown in the
+following table:
+
++--------------+------------+
+| key          | value      |
++--------------+------------+
+| type         | WAYBACK    |
++--------------+------------+
+| version      | 2.0        |
++--------------+------------+
+
+----------
+
+.. _provider-organisation-data-elements:
+
+Provider Organisation
+~~~~~~~~~~~~~~~~~~~~~
+
+Same as standard `PMHC MDS Provider Organisation <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#provider-organisation-data-elements>`_.
+
+----------
+
+.. _practitioner-data-elements:
+
+Practitioner
+~~~~~~~~~~~~
+
+Same as standard `PMHC MDS Practitioner <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#practitioner-data-elements>`_.
+
+----------
+
+.. _client-data-elements:
+
+Client
+~~~~~~
+
+Same as standard `PMHC MDS Client <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-data-elements>`_.
+
+----------
 
 .. _episode-data-elements:
 
-Episode Data Elements
-^^^^^^^^^^^^^^^^^^^^^
+Episode
+~~~~~~~
 
-See :ref:`key-concepts-episode` for definition of an episode.
-
-Episodes are managed by the provider organisations via upload or data entry.
-
-.. csv-table:: Episode record layout
-  :file: record/episode.csv
-  :header-rows: 1
+Same as standard `PMHC MDS Episode <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-data-elements>`_.
 
 ----------
 
 .. _twb-episode-data-elements:
 
-TWB-Episode
+TWB Episode
 ~~~~~~~~~~~
+
+See :ref:`key-concepts-episode` for definition of an episode.
+
+TWB Episodes are managed by the provider organisations via upload or data entry.
 
 .. csv-table:: TWB Episode record layout
   :file: record/twb-episode.csv
@@ -82,8 +145,6 @@ TWB-Episode
 
 TWB-Primary Nominated Professional Contact
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-See :ref:`key-concepts-episode` for definition of a Primary Nominated Professional Contact.
 
 Primary Nominated Professional Contacts are managed by the provider organisations via upload or data entry.
 
@@ -98,8 +159,6 @@ Primary Nominated Professional Contacts are managed by the provider organisation
 TWB-Critical Incident
 ~~~~~~~~~~~~~~~~~~~~~
 
-See :ref:`key-concepts-episode` for definition of a Critical Incident.
-
 Critical Incidents are managed by the provider organisations via upload or data entry.
 
 .. csv-table:: Critical Incident record layout
@@ -113,8 +172,6 @@ Critical Incidents are managed by the provider organisations via upload or data 
 TWB-Recommendation Out
 ~~~~~~~~~~~~~~~~~~~~~~
 
-See :ref:`key-concepts-episode` for definition of a Recommendation Out.
-
 Recommendation Outs are managed by the provider organisations via upload or data entry.
 
 .. csv-table:: Recommendation Out record layout
@@ -123,10 +180,10 @@ Recommendation Outs are managed by the provider organisations via upload or data
 
 ----------
 
-.. _servive-contact-data-elements:
+.. _service-contact-data-elements:
 
 Service Contact Data Elements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 See :ref:`key-concepts-service-contact` for definition of a service-contact.
 
@@ -138,22 +195,15 @@ Service Contacts are managed by the provider organisations via upload or data en
 
 ----------
 
-.. _outcome-collection-occasion-data-elements:
+.. _collection-occasion-data-elements:
 
-Collection Occasion Data Elements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Collection Occasion
+~~~~~~~~~~~~~~~~~~~
 
 See :ref:`key-concepts-outcome-collection-occasion` for definition of an outcome
 collection occasion.
 
 Outcome collection occasions are managed by the provider organisations via upload or data entry.
-
-TWB requires the use of the following outcome collection occasion records.
-
-.. _collection-occasion-data-elements:
-
-Collection Occasion
-~~~~~~~~~~~~~~~~~~~
 
 .. csv-table:: Collection Occasions record layout
   :file: record/collection-occasion.csv
@@ -218,47 +268,12 @@ SIDAS Measure
 
 .. _mspss-data-elements:
 
-MSPSS Measure
-~~~~~~~~~~~~~
+MSPSS Measure - TO BE REPLACED!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. csv-table:: MSPSS record layout
   :file: record/mspss-measure.csv
   :header-rows: 1
-
-----------
-
-.. _metadata-data-elements:
-
-Metadata
-^^^^^^^^
-
-The Metadata table must be included in file uploads in order to identify
-the type and version of the uploaded data.
-
-.. csv-table:: Metadata record layout
-   :file: record/metadata.csv
-   :header-rows: 1
-
-For this version of the specification the required content is shown in the
-following table:
-
-+--------------+------------+
-| key          | value      |
-+--------------+------------+
-| type         | wayback    |
-+--------------+------------+
-| version      | 2.0        |
-+--------------+------------+
-
-.. _pmhc-data-elements:
-
-PMHC MDS Record Formats
-~~~~~~~~~~~~~~~~~~~~~~~
-
-As TWB is an extension of the Primary Mental Health Care Minimum Data Set
-(PMHC MDS), the current PMHC MDS Data model and specification record formats are
-available to be viewed at https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#record-formats.
-
 
 ----------
 

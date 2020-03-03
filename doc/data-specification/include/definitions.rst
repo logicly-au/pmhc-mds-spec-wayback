@@ -2443,6 +2443,25 @@ An indication of whether the Service Contact is the final for the current Episod
 
 ----------
 
+.. _dfn-funding_source:
+
+Service Contact - Funding Source
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The source of funding for a service contact
+
+:Field name: funding_source
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :0: PHN funded
+  :7: TWB
+
+----------
+
 .. _dfn-service_contact_interpreter:
 
 Service Contact - Interpreter Used
