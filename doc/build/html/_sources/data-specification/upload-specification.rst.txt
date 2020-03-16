@@ -326,7 +326,6 @@ Deleting records
   * TWB INI
   * WHO-5
   * SIDAS
-  * MSPSS
 
 * An extra optional "delete" column can be added to each of the supported
   upload files/worksheets.

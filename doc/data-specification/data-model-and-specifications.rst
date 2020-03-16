@@ -62,7 +62,6 @@ The Way Back adds the following records on top of PMHC MDS current specification
 - See :ref:`K10+ Measure data specifications <k10p-data-elements>`.
 - See :ref:`WHO-5 Measure data specifications <who5-data-elements>`.
 - See :ref:`SIDAS Measure data specifications <sidas-data-elements>`.
-- See :ref:`MSPSS Measure data specifications <mspss-data-elements>`.
 - See :ref:`Service Contact data specifications <service-contact-data-elements>` for Service Contact Data.
 
 .. _metadata-data-elements:
@@ -262,17 +261,6 @@ SIDAS Measure
 
 .. csv-table:: SIDAS record layout
   :file: record/sidas-measure.csv
-  :header-rows: 1
-
-----------
-
-.. _mspss-data-elements:
-
-MSPSS Measure - TO BE REPLACED!
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. csv-table:: MSPSS record layout
-  :file: record/mspss-measure.csv
   :header-rows: 1
 
 ----------

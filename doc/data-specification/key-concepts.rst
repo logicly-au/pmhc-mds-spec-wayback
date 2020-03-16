@@ -125,6 +125,5 @@ TWB will allow the following data records to be collected at a collection occasi
 * :ref:`k10p-data-elements`
 * :ref:`who5-data-elements`
 * :ref:`sidas-data-elements`
-* :ref:`mspss-data-elements`
 
-See :ref:`outcome-collection-occasion-data-elements` data elements.
+See :ref:`collection-occasion-data-elements` data elements.

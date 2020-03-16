@@ -79,20 +79,6 @@ Current TWB Validations
 4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC
    MDS and must be associated with :ref:`twb-episode-data-elements` data.
 
-.. _mspss-current-validations:
-
-7. MSPSS
-~~~~~~~~
-
-1. :ref:`Collection Occasion - Measure Date <dfn-collection_occasion_date>` must not be
-   before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_.
-2. :ref:`Collection Occasion - Measure Date <dfn-collection_occasion_date>` must not be
-   after `Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date>`_.
-3. :ref:`Collection Occasion - Measure Date <dfn-collection_occasion_date>` must not be
-   before 1 January 2016 and must not be in the future
-4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC
-   MDS and must be associated with :ref:`twb-episode-data-elements` data.
-
 .. _current-pmhc-validations:
 
 Current PMHC Validations
