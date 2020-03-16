@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Upload Specification &mdash; The Way Back Version 2.0 documentation</title>
+  <title>Upload Specification &mdash; The Way Back Version 3.0 documentation</title>
   
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                Version 2.0
+                Version 3.0
               </div>
             
           
@@ -236,20 +236,23 @@ for each format described <a class="reference internal" href="#twb-files-to-uplo
 </div>
 <div class="section" id="files-or-worksheets-to-upload">
 <span id="twb-files-to-upload"></span><h2>Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this headline">¶</a></h2>
-<p>The TWB upload format is  aligned with the
+<p>The TWB upload format is aligned with the
 <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2.0 upload format</a>.</p>
+<p>The TWB upload format adds additional values to support the TWB extension and also
+implements the Collection Occasion specification differently to allow more than
+one measure to be collected at each collection occasion.</p>
 <p>TWB files/worksheets can be uploaded to the PMHC MDS in one of two ways:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#upload-option-a"><span class="std std-ref">Option A: TWB data files only</span></a> - Option A is
-recommended for organisations who have not yet migrated their upload files from
-standard PMHC MDS v1 uploads. It allows these organisations to
+recommended for organisations who have not yet changed their standard upload
+files to include TWB data. It allows these organisations to
 do their normal PMHC MDS upload and then do a second upload for TWB data.
 Option A is also recommended for organisations who use Data Entry instead of
 upload for the PMHC MDS data, but who wish to upload TWB data.</li>
 <li><a class="reference internal" href="#upload-option-b"><span class="std std-ref">Option B: Combination of PMHC and TWB data files</span></a> -
 Option B is recommended for organisations who have already migrated their
-standard PMHC MDS uploads to v2.0. It allows both PMHC MDS and TWB data to be uploaded
-together in one upload.</li>
+standard PMHC MDS uploads to allow TWB uploads at the same time. It allows
+both PMHC MDS and TWB data to be uploaded together in one upload.</li>
 </ul>
 <div class="figure" id="id3">
 <span id="data-model-upload-diagram"></span><img alt="TWB Upload data model" src="../_images/twb_upload_reporting.svg" /><p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">TWB upload data model <em>within the PMHC MDS</em></span></p>
@@ -317,7 +320,7 @@ the column headings. The columns must be kept in the same order.</li>
 <p>All TWB data uploads must include a Metadata file/worksheet.
 - In the first row, the first cell must contain ‘key’ and the second cell must contain ‘value’
 - In the second row, the first cell must contain ‘type’ and the second cell must contain ‘WAYBACK’
-- In the third row, the first cell must contain ‘version’ and the second cell must contain ‘2.0’</p>
+- In the third row, the first cell must contain ‘version’ and the second cell must contain ‘3.0’</p>
 <p>i.e.:</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -332,7 +335,7 @@ the column headings. The columns must be kept in the same order.</li>
 <td>wayback</td>
 </tr>
 <tr class="row-odd"><td>version</td>
-<td>2.0</td>
+<td>3.0</td>
 </tr>
 </tbody>
 </table>

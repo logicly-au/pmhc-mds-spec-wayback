@@ -47,22 +47,26 @@ The filename of the Excel file doesn't matter as long as it has the file extensi
 Files or worksheets to upload
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The TWB upload format is  aligned with the
+The TWB upload format is aligned with the
 `PMHC MDS Version 2.0 upload format <https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format>`_.
+
+The TWB upload format adds additional values to support the TWB extension and also
+implements the Collection Occasion specification differently to allow more than
+one measure to be collected at each collection occasion.
 
 TWB files/worksheets can be uploaded to the PMHC MDS in one of two ways:
 
 * :ref:`Option A: TWB data files only <upload-option-A>` - Option A is
-  recommended for organisations who have not yet migrated their upload files from
-  standard PMHC MDS v1 uploads. It allows these organisations to
+  recommended for organisations who have not yet changed their standard upload
+  files to include TWB data. It allows these organisations to
   do their normal PMHC MDS upload and then do a second upload for TWB data.
   Option A is also recommended for organisations who use Data Entry instead of
   upload for the PMHC MDS data, but who wish to upload TWB data.
 
 * :ref:`Option B: Combination of PMHC and TWB data files <upload-option-B>` -
   Option B is recommended for organisations who have already migrated their
-  standard PMHC MDS uploads to v2.0. It allows both PMHC MDS and TWB data to be uploaded
-  together in one upload.
+  standard PMHC MDS uploads to allow TWB uploads at the same time. It allows
+  both PMHC MDS and TWB data to be uploaded together in one upload.
 
 .. _data-model-upload-diagram:
 
@@ -131,7 +135,7 @@ TWB Metadata file
 All TWB data uploads must include a Metadata file/worksheet.
 - In the first row, the first cell must contain 'key' and the second cell must contain 'value'
 - In the second row, the first cell must contain 'type' and the second cell must contain 'WAYBACK'
-- In the third row, the first cell must contain 'version' and the second cell must contain '2.0'
+- In the third row, the first cell must contain 'version' and the second cell must contain '3.0'
 
 i.e.:
 
@@ -140,7 +144,7 @@ i.e.:
 +--------------+------------+
 | type         | wayback    |
 +--------------+------------+
-| version      | 2.0        |
+| version      | 3.0        |
 +--------------+------------+
 
 Data elements for the TWB metadata upload file/worksheet are defined at

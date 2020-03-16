@@ -60,7 +60,7 @@ author = u'Strategic Data'
 
 def get_version():
 
-   version = 'v2.0'
+   version = 'v3.0'
 
    try:
       version = os.environ["GIT_VERSION"]
@@ -72,7 +72,7 @@ def get_version():
 # The short X.Y version.
 # version = get_version().lstrip('v').rstrip()
 
-version = "Version 2.0"
+version = "Version 3.0"
 
 # The full version, including alpha/beta/rc tags.
 release = version
