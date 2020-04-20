@@ -3,6 +3,8 @@ FROM ruby:2.3 as gembuilder
 RUN git clone https://github.com/strategicdata/csvlint.rb.git /build
 WORKDIR build
 
+RUN gem install activesupport -v 5.2
+
 RUN gem install -g && gem build csvlint.gemspec
 
 
@@ -18,6 +20,8 @@ WORKDIR /spec
 
 # Install csvlint gem + dependencies
 ENV LANG C.UTF-8
-RUN gem install ffi ./csvlint-0.4.0.2.gem
+RUN gem install ffi \
+    && gem install activesupport -v 5.2 \
+    && gem install ./csvlint-0.4.0.2.gem
 
 CMD ["csvlint", "--schema=nspt-metadata.json"]

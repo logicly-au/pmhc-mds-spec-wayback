@@ -1,4 +1,4 @@
-.. _twb_introduction:
+.. _twb-introduction:
 
 Introduction
 ============

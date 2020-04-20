@@ -12,7 +12,7 @@ The Way Back Support Service Minimum Data Set and Dictionary
 
    The main documentation for The Way Back is organised into several sections:
 
-   * :ref:`twb-docs`
+   * :ref:`twb-introduction`
    * :ref:`data-docs`
    * :ref:`resources-docs`
    * :ref:`twb-faqs`
@@ -39,7 +39,7 @@ The Way Back Support Service Minimum Data Set and Dictionary
    :caption: Table of Contents
    :maxdepth: 3
 
-   twb-docs/index
+   introduction
    data-specification/index
    resources/index
    faqs/index
