@@ -21,63 +21,64 @@ Current TWB Validations
 ~~~~~~~~~~~~~~
 
 1. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
-2. ``!wayback`` tag should be included in the `Episode - Tags <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags>`_ field of the corresponding PMHC episode, otherwise the system will automatically include it.
+2. ``!WAYBACK`` tag should be included in the `Episode - Tags <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags>`_ field of the corresponding PMHC episode, otherwise the system will automatically include it.
+
+.. _collection-occasion-current-validations:
+
+2. Collection Occasion
+~~~~~~~~~~~~~~~~~~~~~~
+
+1. The :ref:`Collection Occasion - Date <dfn-collection_occasion_date>`
+
+  * must not be before 1 January 2016
+  * must not be before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_.
+3. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
+   before
+2. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
+   after `Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date>`_.
+ and must not be in the future
+4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC
+   MDS and must be associated with :ref:`twb-episode-data-elements` data.
+
+.. _k10p-current-validations:
+
+3. K10+
+~~~~~~~~~~~
+
+1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+   MDS and must be associated with :ref:`collection-occasion-data-elements` data.
 
 .. _twb-plan-current-validations:
 
-3. TWB-Plan
+4. TWB-Plan
 ~~~~~~~~~~~
 
-1. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_.
-2. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   after `Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date>`_.
-3. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   before 1 January 2016 and must not be in the future
-4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC
-   MDS and must be associated with :ref:`twb-episode-data-elements` data.
+1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+   MDS and must be associated with :ref:`collection-occasion-data-elements` data.
 
 .. _twb-ni-current-validations:
 
-4. TWB-NI
+5. TWB-NI
 ~~~~~~~~~
 
-1. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_.
-2. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   after `Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date>`_.
-3. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   before 1 January 2016 and must not be in the future
-4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC
-   MDS and must be associated with :ref:`twb-episode-data-elements` data.
+1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+   MDS and must be associated with :ref:`collection-occasion-data-elements` data.
 
 .. _who-5-current-validations:
 
-5. WHO-5
+6. WHO-5
 ~~~~~~~~
 
-1. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_.
-2. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   after `Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date>`_.
-3. :ref:`Collection Occasion - Date <dfn-collection_occasion_date>` must not be
-   before 1 January 2016 and must not be in the future
-4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC
-   MDS and must be associated with :ref:`twb-episode-data-elements` data.
+1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+   MDS and must be associated with :ref:`collection-occasion-data-elements` data.
 
 .. _sidas-twb-current-validations:
 
-6. SIDAS
+7. SIDAS
 ~~~~~~~~
 
-1. :ref:`Collection Occasion - Measure Date <dfn-collection_occasion_date>` must not be
-   before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_.
-2. :ref:`Collection Occasion - Measure Date <dfn-collection_occasion_date>` must not be
-   after `Episode - End Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date>`_.
-3. :ref:`Collection Occasion - Measure Date <dfn-collection_occasion_date>` must not be
-   before 1 January 2016 and must not be in the future
-4. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC
-   MDS and must be associated with :ref:`twb-episode-data-elements` data.
+1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+   MDS and must be associated with :ref:`collection-occasion-data-elements` data.
 
 .. _current-pmhc-validations:
 

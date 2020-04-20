@@ -64,10 +64,20 @@ The Way Back adds the following records on top of PMHC MDS current specification
 - See :ref:`SIDAS Measure data specifications <sidas-data-elements>`.
 - See :ref:`Service Contact data specifications <service-contact-data-elements>` for Service Contact Data.
 
+When uploading PMHC clients at the same time as TWB clients, the following records will
+also need to be supplied. **NB. These record specifications are different to the standard
+PMHC specifications. The TWB upload format separates collection occasion data into a separate Collection Occasion worksheet so that multiple
+measures can be collected at a single collection occasion.
+The TWB upload format aligns with a future PMHC MDS Version 3.0 file format. No date has been set for the release of the
+PMHC MDS Version 3.0 upload file format.**
+
+- See :ref:`K5 Measure data specifications <k5-data-elements>`.
+- See :ref:`SDQ Measure data specifications <sdq-data-elements>`.
+
 .. _metadata-data-elements:
 
 Metadata
-~~~~~~~~
+^^^^^^^^
 
 The Metadata table must be included in file uploads in order to identify
 the type and version of the uploaded data.
@@ -84,10 +94,8 @@ following table:
 +--------------+------------+
 | type         | WAYBACK    |
 +--------------+------------+
-| version      | 3.0        |
+| version      | 3          |
 +--------------+------------+
-
-----------
 
 .. _provider-organisation-data-elements:
 
@@ -239,6 +247,28 @@ K10+ Measure
 
 .. csv-table:: K10+ record layout
   :file: record/k10p-measure.csv
+  :header-rows: 1
+
+----------
+
+.. _k5-data-elements:
+
+K5 Measure
+~~~~~~~~~~
+
+.. csv-table:: K5 record layout
+  :file: record/k5-measure.csv
+  :header-rows: 1
+
+----------
+
+.. _sdq-data-elements:
+
+SDQ Measure
+~~~~~~~~~~~
+
+.. csv-table:: SDQ record layout
+  :file: record/sdq-measure.csv
   :header-rows: 1
 
 ----------

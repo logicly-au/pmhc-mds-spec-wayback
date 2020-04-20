@@ -1,3 +1,0 @@
-File Type,CSV filename,Excel worksheet name,Required
-:ref:`Client <nspt-client-format>`,clients.csv,Clients,Required
-:ref:`Episodes <nspt-episode-format>`,episodes.csv,Episodes,Required

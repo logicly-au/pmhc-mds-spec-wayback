@@ -5,7 +5,7 @@ services:
     build:
       context: ../
       dockerfile: ./csvlint/Dockerfile
-    image: docker.sdlocal.net/pmhcnspt/csvlint:master
+    image: docker.sdlocal.net/pmhcwayback/csvlint:master
     volumes:
       - ../data:/spec/data
 
