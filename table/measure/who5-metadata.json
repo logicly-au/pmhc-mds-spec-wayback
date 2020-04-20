@@ -134,7 +134,7 @@
   "foreignKeys": [{
     "columnReference": [ "organisation_path", "collection_occasion_key" ],
     "reference": {
-      "resource": "data/collection_occasions.csv",
+      "resource": "data/collection-occasions.csv",
       "columnReference": [ "organisation_path", "collection_occasion_key" ]
     }
   }, {

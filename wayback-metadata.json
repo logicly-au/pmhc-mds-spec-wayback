@@ -104,18 +104,6 @@
     "schema:description": "table/measure/twb-ni.rst",
     "tableSchema": "table/measure/twb-ni-metadata.json"
   }, {
-    "dc:title": "WHO-5 Measure",
-    "url": "data/who5.csv",
-    "schema:name": "who5-measure",
-    "schema:description": "table/measure/who5-measure.rst",
-    "tableSchema": "table/measure/who5-metadata.json"
-  }, {
-    "dc:title": "SIDAS Measure",
-    "url": "data/sidas.csv",
-    "schema:name": "sidas-measure",
-    "schema:description": "table/measure/sidas-measure.rst",
-    "tableSchema": "table/measure/sidas-metadata.json"
-  }, {
     "url": "type/gender.csv",
     "tableSchema": "type/gender.json"
   }, {
@@ -209,9 +197,6 @@
     "url": "table/twb-episode/twb-external-evaluator-contact-consent.csv",
     "tableSchema": "table/twb-episode/twb-external-evaluator-contact-consent.json"
   }, {
-    "url": "table/twb-episode/twb-critical-incident-type.csv",
-    "tableSchema": "table/twb-episode/twb-critical-incident-type.json"
-  }, {
     "url": "table/twb-episode/twb-eligibility-type.csv",
     "tableSchema": "table/twb-episode/twb-eligibility-type.json"
   }, {
@@ -298,6 +283,9 @@
   }, {
     "url": "table/measure/sdq/sdq-version.csv",
     "tableSchema": "table/measure/sdq/sdq-version.json"
+  }, {
+    "url": "table/measure/twb-ni/twb-ni-type.csv",
+    "tableSchema": "table/measure/twb-ni/twb-ni-type.json"
   }, {
     "url": "table/measure/twb-plan/twb-plan-type.csv",
     "tableSchema": "table/measure/twb-plan/twb-plan-type.json"

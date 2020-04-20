@@ -1,5 +1,5 @@
 {
-  "@id": "table/collection-occasion/twb-ni/twb-ni-type.json",
+  "@id": "twb-ni-type.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",

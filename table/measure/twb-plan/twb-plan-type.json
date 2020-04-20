@@ -1,5 +1,5 @@
 {
-  "@id": "table/collection-occasion/twb-plan/twb-plan-type.json",
+  "@id": "twb-plan-type.json",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
   "columns": [{
     "name": "id",
