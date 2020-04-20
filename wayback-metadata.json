@@ -93,13 +93,13 @@
     "tableSchema": "table/measure/sdq-metadata.json"
   }, {
     "dc:title": "TWB Plan",
-    "url": "data/twb-plan.csv",
+    "url": "data/twb-plans.csv",
     "schema:name": "twb-plan",
     "schema:description": "table/measure/twb-plan.rst",
     "tableSchema": "table/measure/twb-plan-metadata.json"
   }, {
     "dc:title": "TWB NI",
-    "url": "data/twb-ni.csv",
+    "url": "data/twb-nis.csv",
     "schema:name": "twb-ni",
     "schema:description": "table/measure/twb-ni.rst",
     "tableSchema": "table/measure/twb-ni-metadata.json"
