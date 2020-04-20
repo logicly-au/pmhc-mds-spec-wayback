@@ -101,22 +101,29 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#files-or-worksheets-to-upload">Files or worksheets to upload</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#option-a-uploading-twb-data-files-only">Option A: Uploading TWB data files only</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#option-b-uploading-both-pmhc-mds-and-twb-data-files">Option B: Uploading both PMHC MDS and TWB data files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#option-a-separate-pmhc-and-twb-uploads">Option A: Separate PMHC and TWB uploads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#option-b-one-upload-including-pmhc-and-twb-clients">Option B: One upload including PMHC and TWB clients</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#file-format">File format</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#twb-metadata-file">TWB Metadata file</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-organisation-file-format">TWB Organisation file format</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-only-episode-file-format">TWB only Episode file format</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-only-sidas-collection-occasion-file-format">TWB only SIDAS Collection Occasion file format</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#client-file-format-when-combined-with-twb-data">Client file format when combined with TWB data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#episode-file-format-when-combined-with-twb-data">Episode file format when combined with TWB data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#service-contact-file-format-when-combined-with-twb-data">Service Contact file format when combined with TWB data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k10-file-format-when-combined-with-twb-data">K10+ file format when combined with TWB data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#k5-file-format-when-combined-with-twb-data">K5 file format when combined with TWB data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sdq-file-format-when-combined-with-twb-data">SDQ file format when combined with TWB data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#practitioners-file-format-when-combined-with-twb-data">Practitioners file format when combined with TWB data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metadata-file">Metadata file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#organisation-file-format">Organisation file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#client-file-format">Client file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#episode-file-format">Episode file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-episode-file-format">TWB Episode file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-pnpc-file-format">TWB PNPC file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-critical-incident-file-format">TWB Critical Incident file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out-file-format">TWB Recommendation Out file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#collection-occasion-file-format">Collection Occasion file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k10-file-format">K10+ file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5-file-format">K5 file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq-file-format">SDQ file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#who-5-file-format">WHO-5 file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sidas-file-format">SIDAS file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-plan-file-format">TWB Plan file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-needs-identification-file-format">TWB Needs Identification file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#service-contact-file-format">Service Contact file format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practitioner-file-format">Practitioner file format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#deleting-records">Deleting records</a></li>
 </ul>
 </li>
@@ -236,42 +243,159 @@ for each format described <a class="reference internal" href="#twb-files-to-uplo
 </div>
 <div class="section" id="files-or-worksheets-to-upload">
 <span id="twb-files-to-upload"></span><h2>Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this headline">¶</a></h2>
-<p>The TWB upload format is aligned with the
+<p>The TWB upload format is slightly different to the
 <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2.0 upload format</a>.</p>
-<p>The TWB upload format adds additional values to support the TWB extension and also
-implements the Collection Occasion specification differently to allow more than
-one measure to be collected at each collection occasion.</p>
+<p>The TWB upload format separates collection occasion data into a separate
+Collection Occasions worksheet so that multiple measures can be collected
+at a single collection occasion.</p>
+<p>The TWB upload format aligns with a future PMHC MDS Version 3.0 file format. No
+date has been set for the release of the PMHC MDS Version 3.0 upload file format.</p>
+<p>In addition to the collection occasion/measure changes, the TWB upload format
+adds additional values to support the TWB extension.</p>
 <p>TWB files/worksheets can be uploaded to the PMHC MDS in one of two ways:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#upload-option-a"><span class="std std-ref">Option A: TWB data files only</span></a> - Option A is
+<li><a class="reference internal" href="#upload-option-a"><span class="std std-ref">Option A: Separate PMHC and TWB uploads</span></a> - Option A is
 recommended for organisations who have not yet changed their standard upload
 files to include TWB data. It allows these organisations to
 do their normal PMHC MDS upload and then do a second upload for TWB data.
 Option A is also recommended for organisations who use Data Entry instead of
 upload for the PMHC MDS data, but who wish to upload TWB data.</li>
-<li><a class="reference internal" href="#upload-option-b"><span class="std std-ref">Option B: Combination of PMHC and TWB data files</span></a> -
+<li><a class="reference internal" href="#upload-option-b"><span class="std std-ref">Option B: One upload including PMHC and TWB clients</span></a> -
 Option B is recommended for organisations who have already migrated their
 standard PMHC MDS uploads to allow TWB uploads at the same time. It allows
 both PMHC MDS and TWB data to be uploaded together in one upload.</li>
 </ul>
-<div class="figure" id="id3">
+<div class="figure" id="id4">
 <span id="data-model-upload-diagram"></span><img alt="TWB Upload data model" src="../_images/twb_upload_reporting.svg" /><p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">TWB upload data model <em>within the PMHC MDS</em></span></p>
 </div>
-<div class="section" id="option-a-uploading-twb-data-files-only">
-<span id="upload-option-a"></span><h3>Option A: Uploading TWB data files only<a class="headerlink" href="#option-a-uploading-twb-data-files-only" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="option-b-uploading-both-pmhc-mds-and-twb-data-files">
-<span id="upload-option-b"></span><h3>Option B: Uploading both PMHC MDS and TWB data files<a class="headerlink" href="#option-b-uploading-both-pmhc-mds-and-twb-data-files" title="Permalink to this headline">¶</a></h3>
-<p>For those organisations who are ready to change their
-standard PMHC MDS uploads, PMHC MDS and TWB uploads can be combined together
-in the one upload to the PMHC MDS.</p>
-<p>The following TWB data files can be included in the
-PMHC MDS</p>
-<p>However, all files must be internally consistent. An example of what this means
+<p>When uploading TWB data files only the following files/worksheets can be
+uploaded to the PMHC MDS:</p>
+<table border="1" class="docutils" id="id5">
+<caption><span class="caption-number">Table 15 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">File Type</th>
+<th class="head">CSV filename</th>
+<th class="head">Excel worksheet name</th>
+<th class="head">Required</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#metadata-format"><span class="std std-ref">Metadata</span></a></td>
+<td>metadata.csv</td>
+<td>Metadata</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#organisation-format"><span class="std std-ref">Organisations</span></a></td>
+<td>organisations.csv</td>
+<td>Organisations</td>
+<td>Optional and only available if the user has the Organisation Management role</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#client-format"><span class="std std-ref">Clients</span></a></td>
+<td>clients.csv</td>
+<td>Clients</td>
+<td>Optional</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#episode-format"><span class="std std-ref">Episodes</span></a></td>
+<td>episodes.csv</td>
+<td>Episodes</td>
+<td>Optional</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-format"><span class="std std-ref">TWB Episodes</span></a></td>
+<td>twb-episodes.csv</td>
+<td>TWB Episodes</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-pnpc-format"><span class="std std-ref">TWB Primary Nominated Professional Contacts</span></a></td>
+<td>twb-pcpcs.csv</td>
+<td>TWB PNPCs</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#twb-critical-incident-format"><span class="std std-ref">TWB Critical Incidents</span></a></td>
+<td>twb-critical-incidents.csv</td>
+<td>TWB Critical Incidents</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-recommendation-out-format"><span class="std std-ref">TWB Recommendation Outs</span></a></td>
+<td>twb-recommendation-outs.csv</td>
+<td>TWB Recommendation Outs</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#collection-occasion-format"><span class="std std-ref">Collection Occasions</span></a></td>
+<td>collection-occasions.csv</td>
+<td>Collection Occasions</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#k10p-format"><span class="std std-ref">K10+ Measures</span></a></td>
+<td>k10p.csv</td>
+<td>K10+</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#k5-format"><span class="std std-ref">K5 Measures</span></a></td>
+<td>k5.csv</td>
+<td>K5</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sdq-format"><span class="std std-ref">SDQ Measures</span></a></td>
+<td>sdq.csv</td>
+<td>SDQ</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#who5-format"><span class="std std-ref">WHO-5 Measures</span></a></td>
+<td>who5.csv</td>
+<td>WHO-5</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sidas-format"><span class="std std-ref">SIDAS Measures</span></a></td>
+<td>sidas.csv</td>
+<td>SIDAS</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#twb-plan-format"><span class="std std-ref">TWB Plans</span></a></td>
+<td>twb-plans.csv</td>
+<td>TWB Plans</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-ni-format"><span class="std std-ref">TWB Needs Identifications</span></a></td>
+<td>twb-nis.csv</td>
+<td>TWB NIs</td>
+<td>Required</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#service-contact-format"><span class="std std-ref">Service Contacts</span></a></td>
+<td>service-contacts.csv</td>
+<td>Service Contacts</td>
+<td>Required</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#practitioner-format"><span class="std std-ref">Practitioners</span></a></td>
+<td>practitioners.csv</td>
+<td>Practitioners</td>
+<td>Required the first time or when practitioner information changes. Optional otherwise.</td>
+</tr>
+</tbody>
+</table>
+<p>All files must be internally consistent. An example of what this means
 is that for every TWB episode, service contact and measures in an upload file,
 there must be a corresponding episode in the episodes file/worksheet.
 It also means that or every row in the episodes file/worksheet, there must be a
 corresponding client in the clients file/worksheet.</p>
+<div class="section" id="option-a-separate-pmhc-and-twb-uploads">
+<span id="upload-option-a"></span><h3>Option A: Separate PMHC and TWB uploads<a class="headerlink" href="#option-a-separate-pmhc-and-twb-uploads" title="Permalink to this headline">¶</a></h3>
+<p>When uploading standard PMHC clients and TWB clients separately, the upload
+for the standard PMHC clients should use the
+<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2.0 upload format</a>
+and the upload for the TWB clients should use the format as described in this document.</p>
+</div>
+<div class="section" id="option-b-one-upload-including-pmhc-and-twb-clients">
+<span id="upload-option-b"></span><h3>Option B: One upload including PMHC and TWB clients<a class="headerlink" href="#option-b-one-upload-including-pmhc-and-twb-clients" title="Permalink to this headline">¶</a></h3>
+<p>For those organisations who are ready to change their
+standard PMHC MDS uploads, PMHC MDS and TWB uploads can be combined together
+in the one upload to the PMHC MDS.</p>
+<p>In this instance, when reporting non TWB clients, please use <cite>0: PHN funded</cite> for <a class="reference internal" href="data-model-and-specifications.html#dfn-funding-source"><span class="std std-ref">Service Contact - Funding Source</span></a>.</p>
 </div>
 </div>
 <div class="section" id="file-format">
@@ -285,7 +409,7 @@ the column headings. The columns must be kept in the same order.</li>
 <li>Data elements for each file/worksheet are defined at <a class="reference internal" href="data-model-and-specifications.html#record-formats"><span class="std std-ref">Record Formats</span></a>.</li>
 <li>For data elements that allow multiple values, each value should be separated by a space; for example: <cite>1 3 6</cite>.</li>
 </ul>
-<p>All TWB data uploads must include a Metadata file/worksheet. See <a class="reference internal" href="#twb-metadata-format"><span class="std std-ref">TWB Metadata file</span></a>.</p>
+<p>All TWB data uploads must include a Metadata file/worksheet. See <a class="reference internal" href="#metadata-format"><span class="std std-ref">Metadata file</span></a>.</p>
 <p>Each of the below example files assumes the following organisation structure:</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -315,8 +439,8 @@ the column headings. The columns must be kept in the same order.</li>
 </tbody>
 </table>
 <p>Therefore the ‘Organisation Path’ for Test Provider Organisation is <code class="docutils literal notranslate"><span class="pre">PHN999:NFP01</span></code>.</p>
-<div class="section" id="twb-metadata-file">
-<span id="twb-metadata-format"></span><h3>TWB Metadata file<a class="headerlink" href="#twb-metadata-file" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="metadata-file">
+<span id="metadata-format"></span><h3>Metadata file<a class="headerlink" href="#metadata-file" title="Permalink to this headline">¶</a></h3>
 <p>All TWB data uploads must include a Metadata file/worksheet.
 - In the first row, the first cell must contain ‘key’ and the second cell must contain ‘value’
 - In the second row, the first cell must contain ‘type’ and the second cell must contain ‘WAYBACK’
@@ -332,7 +456,7 @@ the column headings. The columns must be kept in the same order.</li>
 <td>value</td>
 </tr>
 <tr class="row-even"><td>type</td>
-<td>wayback</td>
+<td>WAYBACK</td>
 </tr>
 <tr class="row-odd"><td>version</td>
 <td>3.0</td>
@@ -347,8 +471,8 @@ the column headings. The columns must be kept in the same order.</li>
 <li><a class="reference external" href="../_static/twb-metadata-upload.xlsx">XLSX TWB metadata worksheet</a>.</li>
 </ul>
 </div>
-<div class="section" id="twb-organisation-file-format">
-<span id="twb-organisation-format"></span><h3>TWB Organisation file format<a class="headerlink" href="#twb-organisation-file-format" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="organisation-file-format">
+<span id="organisation-format"></span><h3>Organisation file format<a class="headerlink" href="#organisation-file-format" title="Permalink to this headline">¶</a></h3>
 <p>This file is for PHN use only. The organisation file/worksheet is optional.
 This is similar to the standard
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/upload-specification.html#organisation-format">PMHC MDS Provider Organisation file/worksheet</a>.</p>
@@ -360,31 +484,9 @@ at <a class="reference external" href="https://docs.pmhc-mds.com/data-specificat
 <li><a class="reference external" href="../_static/twb-organisations-upload.xlsx">XLSX organisation worksheet</a>.</li>
 </ul>
 </div>
-<div class="section" id="twb-only-episode-file-format">
-<span id="twb-only-episode-format"></span><h3>TWB only Episode file format<a class="headerlink" href="#twb-only-episode-file-format" title="Permalink to this headline">¶</a></h3>
-<p>The TWB episode file/worksheet is required to be uploaded each time.</p>
-<p>Data elements for the episode upload file/worksheet are defined at
-<a class="reference internal" href="data-model-and-specifications.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a>.</p>
-<p>Example TWB episode data:</p>
-<ul class="simple">
-<li><a class="reference external" href="../_static/twb-episodes.csv">CSV TWB episode file</a>.</li>
-<li><a class="reference external" href="../_static/twb-episodes-upload.xlsx">XLSX TWB episode worksheet</a>.</li>
-</ul>
-</div>
-<div class="section" id="twb-only-sidas-collection-occasion-file-format">
-<span id="twb-only-sidas-format"></span><h3>TWB only SIDAS Collection Occasion file format<a class="headerlink" href="#twb-only-sidas-collection-occasion-file-format" title="Permalink to this headline">¶</a></h3>
-<p>The SIDAS file/worksheet is required to be uploaded each time.</p>
-<p>Data elements for the SIDAS collection occasion upload file/worksheet are defined
-at <a class="reference internal" href="data-model-and-specifications.html#sidas-data-elements"><span class="std std-ref">SIDAS Measure</span></a>.</p>
-<p>Example SIDAS data:</p>
-<ul class="simple">
-<li><a class="reference external" href="../_static/sidas.csv">CSV SIDAS file</a>.</li>
-<li><a class="reference external" href="../_static/twb-sidas-upload.xlsx">XLSX SIDAS worksheet</a>.</li>
-</ul>
-</div>
-<div class="section" id="client-file-format-when-combined-with-twb-data">
-<span id="twb-client-format"></span><h3>Client file format when combined with TWB data<a class="headerlink" href="#client-file-format-when-combined-with-twb-data" title="Permalink to this headline">¶</a></h3>
-<p>The client file/worksheet is required to be uploaded each time for PMHC/TWB combination files.</p>
+<div class="section" id="client-file-format">
+<span id="client-format"></span><h3>Client file format<a class="headerlink" href="#client-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The client file/worksheet is required to be uploaded each time.</p>
 <p>Data elements for the client upload file/worksheet are defined at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#client-data-elements">Client data elements</a>.</p>
 <p>Example client data:</p>
 <ul class="simple">
@@ -392,9 +494,9 @@ at <a class="reference internal" href="data-model-and-specifications.html#sidas-
 <li><a class="reference external" href="../_static/pmhc-clients-upload.xlsx">XLSX client worksheet</a>.</li>
 </ul>
 </div>
-<div class="section" id="episode-file-format-when-combined-with-twb-data">
-<span id="twb-episode-format"></span><h3>Episode file format when combined with TWB data<a class="headerlink" href="#episode-file-format-when-combined-with-twb-data" title="Permalink to this headline">¶</a></h3>
-<p>The episode file/worksheet is required to be uploaded each time for PMHC/TWB combination files.</p>
+<div class="section" id="episode-file-format">
+<span id="episode-format"></span><h3>Episode file format<a class="headerlink" href="#episode-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The episode file/worksheet is required to be uploaded each time.</p>
 <p>Data elements for the episode upload file/worksheet are defined
 at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-data-elements">Episode data elements</a>.</p>
 <p>Example episode data:</p>
@@ -403,58 +505,153 @@ at <a class="reference external" href="https://docs.pmhc-mds.com/data-specificat
 <li><a class="reference external" href="../_static/pmhc-episodes-upload.xlsx">XLSX episode worksheet</a>.</li>
 </ul>
 </div>
-<div class="section" id="service-contact-file-format-when-combined-with-twb-data">
-<span id="twb-service-contact-format"></span><h3>Service Contact file format when combined with TWB data<a class="headerlink" href="#service-contact-file-format-when-combined-with-twb-data" title="Permalink to this headline">¶</a></h3>
-<p>The service contact file/worksheet is required to be uploaded each time for
-PMHC/TWB combination files.</p>
+<div class="section" id="twb-episode-file-format">
+<span id="twb-episode-format"></span><h3>TWB Episode file format<a class="headerlink" href="#twb-episode-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The TWB episode file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the TWB Episode upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a>.</p>
+<p>Example TWB episode data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/twb-episodes.csv">CSV TWB episode file</a>.</li>
+<li><a class="reference external" href="../_static/twb-episodes-upload.xlsx">XLSX TWB episode worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="twb-pnpc-file-format">
+<span id="twb-pnpc-format"></span><h3>TWB PNPC file format<a class="headerlink" href="#twb-pnpc-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The TWB PNPC (Primary Nominated Professional Contacts) file/worksheet is
+required to be uploaded each time.</p>
+<p>Data elements for the TWB PNPC upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#twb-pnpc-data-elements"><span class="std std-ref">TWB-Primary Nominated Professional Contact</span></a>.</p>
+<p>Example TWB PNPC data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/twb-pnpcs.csv">CSV TWB PNPC file</a>.</li>
+<li><a class="reference external" href="../_static/twb-pnpcs-upload.xlsx">XLSX TWB PNPC worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="twb-critical-incident-file-format">
+<span id="twb-critical-incident-format"></span><h3>TWB Critical Incident file format<a class="headerlink" href="#twb-critical-incident-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The TWB Critical Incident file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the TWB Critical Incident upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#twb-critical-incident-data-elements"><span class="std std-ref">TWB-Critical Incident</span></a>.</p>
+<p>Example TWB Critical Incident data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/twb-critical-incidents.csv">CSV TWB Critical Incident file</a>.</li>
+<li><a class="reference external" href="../_static/twb-critical-incidents-upload.xlsx">XLSX TWB Critical Incident worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="twb-recommendation-out-file-format">
+<span id="twb-recommendation-out-format"></span><h3>TWB Recommendation Out file format<a class="headerlink" href="#twb-recommendation-out-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The TWB Recommendation Out file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the TWB Recommendation Out upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#twb-recommendation-out-data-elements"><span class="std std-ref">TWB-Recommendation Out</span></a>.</p>
+<p>Example TWB Recommendation Out data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/twb-recommendation-outs.csv">CSV TWB Recommendation Out file</a>.</li>
+<li><a class="reference external" href="../_static/twb-recommendation-outs-upload.xlsx">XLSX TWB Recommendation Out worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="collection-occasion-file-format">
+<span id="collection-occasion-format"></span><h3>Collection Occasion file format<a class="headerlink" href="#collection-occasion-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The Collection Occasion file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the Collection Occasion upload file/worksheet are defined at
+<a class="reference internal" href="data-model-and-specifications.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion</span></a>.</p>
+<p>Example Collection Occasion data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/collection-occasions.csv">CSV Collection Occasion file</a>.</li>
+<li><a class="reference external" href="../_static/collection-occasions-upload.xlsx">XLSX Collection Occasion worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="k10-file-format">
+<span id="k10p-format"></span><h3>K10+ file format<a class="headerlink" href="#k10-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The K10+ file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the K10+ upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#k10p-data-elements"><span class="std std-ref">K10+ Measure</span></a>.</p>
+<p>Example K10+ data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/k10ps.csv">CSV K10+ file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-k10ps-upload.xlsx">XLSX K10+ worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="k5-file-format">
+<span id="k5-format"></span><h3>K5 file format<a class="headerlink" href="#k5-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The K5 file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the K5 upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#k5-data-elements"><span class="std std-ref">K5 Measure</span></a>.</p>
+<p>Example K5 data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/k5s.csv">CSV K5 file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-k5s-upload.xlsx">XLSX K5 worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="sdq-file-format">
+<span id="sdq-format"></span><h3>SDQ file format<a class="headerlink" href="#sdq-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The SDQ file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the SDQ upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#sdq-data-elements"><span class="std std-ref">SDQ Measure</span></a>.</p>
+<p>Example SDQ data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/sdqs.csv">CSV SDQ file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-sdqs-upload.xlsx">XLSX SDQ worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="who-5-file-format">
+<span id="who5-format"></span><h3>WHO-5 file format<a class="headerlink" href="#who-5-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The WHO-5 file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the WHO-5 upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#who5-data-elements"><span class="std std-ref">WHO-5 Measure</span></a>.</p>
+<p>Example WHO-5 data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/who5s.csv">CSV WHO-5 file</a>.</li>
+<li><a class="reference external" href="../_static/who5s-upload.xlsx">XLSX WHO-5 worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="sidas-file-format">
+<span id="sidas-format"></span><h3>SIDAS file format<a class="headerlink" href="#sidas-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The SIDAS file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the SIDAS upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#sidas-data-elements"><span class="std std-ref">SIDAS Measure</span></a>.</p>
+<p>Example SIDAS data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/sidas.csv">CSV SIDAS file</a>.</li>
+<li><a class="reference external" href="../_static/sidas-upload.xlsx">XLSX SIDAS worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="twb-plan-file-format">
+<span id="twb-plan-format"></span><h3>TWB Plan file format<a class="headerlink" href="#twb-plan-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The TWB Plan file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the TWB Plan upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#twb-plan-data-elements"><span class="std std-ref">TWB Plan</span></a>.</p>
+<p>Example TWB Plan data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/twb-plans.csv">CSV TWB Plan file</a>.</li>
+<li><a class="reference external" href="../_static/twb-plans-upload.xlsx">XLSX TWB Plan worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="twb-needs-identification-file-format">
+<span id="twb-ni-format"></span><h3>TWB Needs Identification file format<a class="headerlink" href="#twb-needs-identification-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The TWB NI file/worksheet is required to be uploaded each time.</p>
+<p>Data elements for the TWB NI upload file/worksheet are defined
+at <a class="reference internal" href="data-model-and-specifications.html#twb-ni-data-elements"><span class="std std-ref">TWB NI</span></a>.</p>
+<p>Example TWB Plan data:</p>
+<ul class="simple">
+<li><a class="reference external" href="../_static/twb-nis.csv">CSV TWB NI file</a>.</li>
+<li><a class="reference external" href="../_static/twb-nis-upload.xlsx">XLSX TWB NI worksheet</a>.</li>
+</ul>
+</div>
+<div class="section" id="service-contact-file-format">
+<span id="service-contact-format"></span><h3>Service Contact file format<a class="headerlink" href="#service-contact-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The service contact file/worksheet is required to be uploaded each time.</p>
 <p>Data elements for the service contact upload file/worksheet are defined
-at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#service-contact-data-elements">Service Contact data elements</a>.</p>
+at <a class="reference internal" href="data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Data Elements</span></a>.</p>
 <p>Example service contact data:</p>
 <ul class="simple">
 <li><a class="reference external" href="../_static/service-contacts.csv">CSV service contact file</a>.</li>
 <li><a class="reference external" href="../_static/pmhc-service-contacts-upload.xlsx">XLSX service contact worksheet</a>.</li>
 </ul>
 </div>
-<div class="section" id="k10-file-format-when-combined-with-twb-data">
-<span id="twb-k10p-format"></span><h3>K10+ file format when combined with TWB data<a class="headerlink" href="#k10-file-format-when-combined-with-twb-data" title="Permalink to this headline">¶</a></h3>
-<p>The K10+ file/worksheet is required to be uploaded each time for
-PMHC/TWB combination files.</p>
-<p>Data elements for the K10+ upload file/worksheet are defined
-at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#k10">K10+ data elements</a>.</p>
-<p>Example K10+ data:</p>
-<ul class="simple">
-<li><a class="reference external" href="../_static/k10p.csv">CSV K10+ file</a>.</li>
-<li><a class="reference external" href="../_static/pmhc-k10p-upload.xlsx">XLSX K10+ worksheet</a>.</li>
-</ul>
-</div>
-<div class="section" id="k5-file-format-when-combined-with-twb-data">
-<span id="twb-k5-format"></span><h3>K5 file format when combined with TWB data<a class="headerlink" href="#k5-file-format-when-combined-with-twb-data" title="Permalink to this headline">¶</a></h3>
-<p>The K5 file/worksheet is required to be uploaded each time for
-PMHC/TWB combination files.</p>
-<p>Data elements for the K5 upload file/worksheet are defined
-at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#k5">K5 data elements</a>.</p>
-<p>Example K5 data:</p>
-<ul class="simple">
-<li><a class="reference external" href="../_static/k5.csv">CSV K5 file</a>.</li>
-<li><a class="reference external" href="../_static/pmhc-k5-upload.xlsx">XLSX K5 worksheet</a>.</li>
-</ul>
-</div>
-<div class="section" id="sdq-file-format-when-combined-with-twb-data">
-<span id="twb-sdq-format"></span><h3>SDQ file format when combined with TWB data<a class="headerlink" href="#sdq-file-format-when-combined-with-twb-data" title="Permalink to this headline">¶</a></h3>
-<p>The SDQ file/worksheet is required to be uploaded each time for
-PMHC/TWB combination files.</p>
-<p>Data elements for the SDQ upload file/worksheet are defined
-at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#sdq">SDQ data elements</a>.</p>
-<p>Example SDQ data:</p>
-<ul class="simple">
-<li><a class="reference external" href="../_static/sdq.csv">CSV SDQ file</a>.</li>
-<li><a class="reference external" href="../_static/pmhc-sdq-upload.xlsx">XLSX SDQ worksheet</a>.</li>
-</ul>
-</div>
-<div class="section" id="practitioners-file-format-when-combined-with-twb-data">
-<span id="twb-practitioner-format"></span><h3>Practitioners file format when combined with TWB data<a class="headerlink" href="#practitioners-file-format-when-combined-with-twb-data" title="Permalink to this headline">¶</a></h3>
-<p>When uploaded as part of a combined PMHC/TWB upload, the Practitioner
-file/worksheet is required for the first upload and when practitioner
+<div class="section" id="practitioner-file-format">
+<span id="practitioner-format"></span><h3>Practitioner file format<a class="headerlink" href="#practitioner-file-format" title="Permalink to this headline">¶</a></h3>
+<p>The Practitioner file/worksheet is required for the first upload and when practitioner
 information changes. It is optional otherwise.</p>
 <p>Data elements for the Practitioner upload file/worksheet are defined
 at <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#practitioner-data-elements">Practitioner data elements</a>.</p>
@@ -465,17 +662,24 @@ at <a class="reference external" href="https://docs.pmhc-mds.com/data-specificat
 </ul>
 </div>
 <div class="section" id="deleting-records">
-<span id="id2"></span><h3>Deleting records<a class="headerlink" href="#deleting-records" title="Permalink to this headline">¶</a></h3>
+<span id="id3"></span><h3>Deleting records<a class="headerlink" href="#deleting-records" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Records of the following type can be deleted via upload:<ul>
+<li>Client</li>
+<li>Episode</li>
 <li>TWB Episode</li>
 <li>TWB Primary Nominated Professional Contact</li>
 <li>TWB Critical Incident</li>
-<li>TWB Referral Out</li>
-<li>TWB Plan</li>
-<li>TWB INI</li>
+<li>TWB Recommendation Out</li>
+<li>Collection Occasion</li>
+<li>K10+</li>
+<li>K5</li>
+<li>SDQ</li>
 <li>WHO-5</li>
 <li>SIDAS</li>
+<li>TWB Plan</li>
+<li>TWB INI</li>
+<li>Practitioner</li>
 </ul>
 </li>
 <li>An extra optional “delete” column can be added to each of the supported

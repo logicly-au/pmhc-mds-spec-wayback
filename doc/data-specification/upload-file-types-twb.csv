@@ -1,0 +1,19 @@
+File Type,CSV filename,Excel worksheet name,Required
+:ref:`Metadata <metadata-format>`,metadata.csv,Metadata,Required
+:ref:`Organisations <organisation-format>`,organisations.csv,Organisations,Optional and only available if the user has the Organisation Management role
+:ref:`Clients <client-format>`,clients.csv,Clients,Optional
+:ref:`Episodes <episode-format>`,episodes.csv,Episodes,Optional
+:ref:`TWB Episodes <twb-episode-format>`,twb-episodes.csv,TWB Episodes,Required
+:ref:`TWB Primary Nominated Professional Contacts <twb-pnpc-format>`,twb-pcpcs.csv,TWB PNPCs,Required
+:ref:`TWB Critical Incidents <twb-critical-incident-format>`,twb-critical-incidents.csv,TWB Critical Incidents,Required
+:ref:`TWB Recommendation Outs <twb-recommendation-out-format>`,twb-recommendation-outs.csv,TWB Recommendation Outs,Required
+:ref:`Collection Occasions <collection-occasion-format>`,collection-occasions.csv,Collection Occasions,Required
+:ref:`K10+ Measures <k10p-format>`,k10p.csv,K10+,Required
+:ref:`K5 Measures <k5-format>`,k5.csv,K5,Required
+:ref:`SDQ Measures <sdq-format>`,sdq.csv,SDQ,Required
+:ref:`WHO-5 Measures <who5-format>`,who5.csv,WHO-5,Required
+:ref:`SIDAS Measures <sidas-format>`,sidas.csv,SIDAS,Required
+:ref:`TWB Plans <twb-plan-format>`,twb-plans.csv,TWB Plans,Required
+:ref:`TWB Needs Identifications <twb-ni-format>`,twb-nis.csv,TWB NIs,Required
+:ref:`Service Contacts <service-contact-format>`,service-contacts.csv,Service Contacts,Required
+:ref:`Practitioners <practitioner-format>`,practitioners.csv,Practitioners,Required the first time or when practitioner information changes. Optional otherwise.

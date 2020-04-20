@@ -1,6 +1,0 @@
-File Type,CSV filename,Excel worksheet name,Required
-:ref:`Metadata <nspt-metadata-format>`,metadata.csv,Metadata,Required
-:ref:`Client <nspt-client-format>`,clients.csv,Clients,Required
-:ref:`Episodes <nspt-episode-format>`,episodes.csv,Episodes,Required
-:ref:`NSPT Episodes <nspt-only-episode-format>`,nspt-episodes.csv,NSPT Episodes,Required
-:ref:`NSPT SIDAS Collection Occasions <nspt-only-sidas-format>`,sidas.csv,SIDAS,Required
