@@ -4401,6 +4401,41 @@ The primary nominated professional of the client for contact regarding participa
 
 ----------
 
+.. _dfn-twb_primary_nominated_professional_consent_date:
+
+TWB Episode - Primary Nominated Professional Consent Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What date did you receive consent from the client to contact their Primary Nominated Professional?
+
+:Field name: twb_primary_nominated_professional_consent_date
+
+:Data type: date
+
+:Required: yes
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  If a client does not wish for anyone to be advised please use the date 09099999.
+  
+  - The contact date must not be before 1st January 2019.
+  
+  - The contact date must not be in the future.
+  
+  **Reporting requirements**
+  Mandatory where Episode—TWB Consent type =1
+  
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  
+
+----------
+
 .. _dfn-twb_sexual_orientation:
 
 TWB Episode - Sexual Orientation
@@ -4474,41 +4509,6 @@ Do you have a transgender history, experience, or identity?
   **Note**
   Transgender:  The term transgender is used to describe people whose gender
   identity does not align with the sex they were assigned at birth.
-  
-
-----------
-
-.. _dfn-twb_primary_nominated_professional_consent_date:
-
-TWB Episode - TWB Primary Nominated Professional Consent Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-What date did you receive consent from the client to contact their Primary Nominated Professional?
-
-:Field name: twb_primary_nominated_professional_consent_date
-
-:Data type: date
-
-:Required: yes
-:Notes:
-  For Date fields, data must be recorded in compliance with the standard format
-  used across the National Health Data Dictionary; specifically, dates must be
-  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
-  necessary to pad out a value. For instance, 13th March 2008 would appear as
-  13032008.
-  
-  If a client does not wish for anyone to be advised please use the date 09099999.
-  
-  - The contact date must not be before 1st January 2019.
-  
-  - The contact date must not be in the future.
-  
-  **Reporting requirements**
-  Mandatory where Episode—TWB Consent type =1
-  
-  
-  **Purpose/context**
-  Program monitoring, service planning.
   
 
 ----------
