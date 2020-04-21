@@ -45,7 +45,7 @@
     "tableSchema": "table/twb-episode-metadata.json"
   }, {
     "dc:title": "TWB Primary Nominated Professional Contact",
-    "url": "data/twb-primary-nominated-professional-contacts.csv",
+    "url": "data/twb-pnpcs.csv",
     "schema:name": "twb-primary-nominated-professional-contact",
     "schema:description": "table/twb-primary-nominated-professional-contact.rst",
     "tableSchema": "table/twb-primary-nominated-professional-contact-metadata.json"
@@ -63,7 +63,7 @@
     "tableSchema": "table/service-contact-metadata.json"
   }, {
     "dc:title": "TWB Recommendation Out",
-    "url": "data/twb-recommendation-out.csv",
+    "url": "data/twb-recommendation-outs.csv",
     "schema:name": "twb-recommendation-out",
     "schema:description": "table/twb-recommendation-out.rst",
     "tableSchema": "table/twb-recommendation-out-metadata.json"
@@ -103,6 +103,18 @@
     "schema:name": "twb-ni",
     "schema:description": "table/measure/twb-ni.rst",
     "tableSchema": "table/measure/twb-ni-metadata.json"
+  }, {
+    "dc:title": "WHO-5 Measure",
+    "url": "data/who5.csv",
+    "schema:name": "who5-measure",
+    "schema:description": "table/measure/who5-measure.rst",
+    "tableSchema": "table/measure/who5-metadata.json"
+  }, {
+    "dc:title": "SIDAS Measure",
+    "url": "data/sidas.csv",
+    "schema:name": "sidas-measure",
+    "schema:description": "table/measure/sidas-measure.rst",
+    "tableSchema": "table/measure/sidas-metadata.json"
   }, {
     "url": "type/gender.csv",
     "tableSchema": "type/gender.json"

@@ -4551,7 +4551,28 @@ The identified needs of the client at commencement or review of the service.
 :Required: yes
 
 :Domain:
-  
+  :1: Self-care and diet (Incl. Self-Neglect)
+  :2: Mental Health
+  :3: Safety to Self/Others
+  :4: Accommodation
+  :5: Financial
+  :6: Daily Structure and Interests
+  :7: Stigma and Harassment
+  :8: Social Contacts
+  :9: Close Relationships (Incl. Carer, If Applicable)
+  :10: Language and Culture
+  :11: Physical Health and Disability
+  :12: Daily Living
+  :13: Employment
+  :14: Information About Condition and Treatment
+  :15: Alcohol and Drugs
+  :16: Childcare and Parenting
+  :17: Educational Needs (Incl. Literacy &  Numeracy)
+  :18: Transport
+  :19: Sexual Issues
+  :20: Spirituality
+  :98: Other
+  :99: Not stated/Inadequately described
   Multiple space separated values allowed
 :Notes:
   **Reporting requirements**

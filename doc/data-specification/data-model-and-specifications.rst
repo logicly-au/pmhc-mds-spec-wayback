@@ -182,7 +182,7 @@ TWB-Recommendation Out
 Recommendation Outs are managed by the provider organisations via upload or data entry.
 
 .. csv-table:: Recommendation Out record layout
-  :file: record/twb-recommendation-out.csv
+  :file: record/twb-recommendation-outs.csv
   :header-rows: 1
 
 ----------
