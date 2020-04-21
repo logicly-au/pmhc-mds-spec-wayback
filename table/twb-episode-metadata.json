@@ -112,6 +112,21 @@
     },
     "required": true
   },{
+    "name": "twb_primary_nominated_professional_consent_date",
+    "titles": [ "twb_primary_nominated_professional_consent_date" ],
+    "dc:title": "TWB Episode - TWB Primary Nominated Professional Consent Date",
+    "schema:description": "What date did you receive consent from the client to contact their Primary Nominated Professional?",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional-consent-date.rst",
+    "schema:dateCreated": "2020-04-21",
+    "schema:dateModified": "2020-04-21",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
     "name": "twb_previous_suicide_attempts",
     "titles": [ "twb_previous_suicide_attempts" ],
     "dc:title": "TWB Episode - Previous suicide attempts",
