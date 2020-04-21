@@ -114,7 +114,7 @@
   },{
     "name": "twb_primary_nominated_professional_consent_date",
     "titles": [ "twb_primary_nominated_professional_consent_date" ],
-    "dc:title": "TWB Episode - TWB Primary Nominated Professional Consent Date",
+    "dc:title": "TWB Episode - Primary Nominated Professional Consent Date",
     "schema:description": "What date did you receive consent from the client to contact their Primary Nominated Professional?",
     "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional-consent-date.rst",
     "schema:dateCreated": "2020-04-21",
