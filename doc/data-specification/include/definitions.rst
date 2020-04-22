@@ -4111,7 +4111,7 @@ The date of the critical incident.
   
   If the date of the critical incident is unknown, 09099999 should be used.
   
-  - The critical incident date must not be before 1st January 2016.
+  - The critical incident date must not be before 1st January 2019.
   
   - The critical incident date must not be in the future.
   
@@ -4392,8 +4392,13 @@ The primary nominated professional of the client for contact regarding participa
   Mandatory where Episode—TWB Consent type =1
   
   **Guide for use**
-  The primary nominated professional of the client is the professional or support worker that the client consents to be advised of their participation in The Way Back Support Service.
-  If a client does not wish for anyone to be advised then code 97 indicates no consent.
+  The primary nominated professional of the client is the professional or
+  support worker that the client consents to be advised of their participation
+  in The Way Back Support Service.
+  
+  If a client does not wish for anyone to be advised then code 99 indicates no
+  consent in conjunction with 09099999 for :ref:`dfn-twb_primary_nominated_professional_consent_date`
+  indicates no consent.
   
   **Purpose/context**
   Program monitoring, service planning.
@@ -4422,9 +4427,9 @@ What date did you receive consent from the client to contact their Primary Nomin
   
   If a client does not wish for anyone to be advised please use the date 09099999.
   
-  - The contact date must not be before 1st January 2019.
+  - The consent date must not be before 1st January 2019.
   
-  - The contact date must not be in the future.
+  - The consent date must not be in the future.
   
   **Reporting requirements**
   Mandatory where Episode—TWB Consent type =1
@@ -4789,7 +4794,7 @@ The date of contact between a service provider and the clients primary nominated
   
   If the date of the contact is unknown, 09099999 should be used.
   
-  - The contact date must not be before 1st January 2016.
+  - The contact date must not be before 1st January 2019.
   
   - The contact date must not be in the future.
   

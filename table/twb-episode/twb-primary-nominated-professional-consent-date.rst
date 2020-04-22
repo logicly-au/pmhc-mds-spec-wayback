@@ -6,9 +6,9 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 
 If a client does not wish for anyone to be advised please use the date 09099999.
 
-- The contact date must not be before 1st January 2019.
+- The consent date must not be before 1st January 2019.
 
-- The contact date must not be in the future.
+- The consent date must not be in the future.
 
 **Reporting requirements**
 Mandatory where Episode—TWB Consent type =1

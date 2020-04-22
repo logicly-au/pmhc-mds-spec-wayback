@@ -6,7 +6,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 
 If the date of the critical incident is unknown, 09099999 should be used.
 
-- The critical incident date must not be before 1st January 2016.
+- The critical incident date must not be before 1st January 2019.
 
 - The critical incident date must not be in the future.
 
