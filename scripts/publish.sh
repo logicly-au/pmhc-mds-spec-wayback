@@ -2,8 +2,10 @@
 
 git remote | grep -q publish
 
-if [[ "$?" != "0" ]]; then
-  git remote add publish git@github.com:strategicdata/pmhc-mds-spec-wayback.git
+if [[ "$?" == "0" ]]; then
+  git remote remove publish
 fi
+
+git remote add publish git@github.com:strategicdata/pmhc-mds-spec-wayback.git
 
 git push publish
