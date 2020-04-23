@@ -6,7 +6,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 
 If the date of the contact is unknown, 09099999 should be used.
 
-- The contact date must not be before 1st January 2016.
+- The contact date must not be before 1st January 2019.
 
 - The contact date must not be in the future.
 

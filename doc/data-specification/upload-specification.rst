@@ -307,8 +307,8 @@ at :ref:`k10p-data-elements`.
 
 Example K10+ data:
 
-- `CSV K10+ file <../_static/k10ps.csv>`_.
-- `XLSX K10+ worksheet <../_static/pmhc-k10ps-upload.xlsx>`_.
+- `CSV K10+ file <../_static/k10p.csv>`_.
+- `XLSX K10+ worksheet <../_static/pmhc-k10p-upload.xlsx>`_.
 
 .. _k5-format:
 
@@ -322,8 +322,8 @@ at :ref:`k5-data-elements`.
 
 Example K5 data:
 
-- `CSV K5 file <../_static/k5s.csv>`_.
-- `XLSX K5 worksheet <../_static/pmhc-k5s-upload.xlsx>`_.
+- `CSV K5 file <../_static/k5.csv>`_.
+- `XLSX K5 worksheet <../_static/pmhc-k5-upload.xlsx>`_.
 
 .. _sdq-format:
 
@@ -337,8 +337,8 @@ at :ref:`sdq-data-elements`.
 
 Example SDQ data:
 
-- `CSV SDQ file <../_static/sdqs.csv>`_.
-- `XLSX SDQ worksheet <../_static/pmhc-sdqs-upload.xlsx>`_.
+- `CSV SDQ file <../_static/sdq.csv>`_.
+- `XLSX SDQ worksheet <../_static/pmhc-sdq-upload.xlsx>`_.
 
 .. _who5-format:
 
@@ -352,8 +352,8 @@ at :ref:`who5-data-elements`.
 
 Example WHO-5 data:
 
-- `CSV WHO-5 file <../_static/who5s.csv>`_.
-- `XLSX WHO-5 worksheet <../_static/who5s-upload.xlsx>`_.
+- `CSV WHO-5 file <../_static/who5.csv>`_.
+- `XLSX WHO-5 worksheet <../_static/who5-upload.xlsx>`_.
 
 .. _sidas-format:
 
@@ -481,4 +481,3 @@ TWB Episode data
 
 - `XLSX delete file containing only TWB worksheets <../_static/twb-upload-delete.xlsx>`_.
 - `CSV delete TWB episode file <../_static/twb-episodes-delete.csv>`_.
-- `CSV delete SIDAS file <../_static/sidas-delete.csv>`_.

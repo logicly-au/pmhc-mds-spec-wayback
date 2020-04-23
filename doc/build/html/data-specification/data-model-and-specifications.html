@@ -244,6 +244,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-method-of-suicide-attempt">TWB Episode - Method of suicide attempt</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional">TWB Episode - Primary Nominated Professional</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional-consent-date">TWB Episode - Primary Nominated Professional Consent Date</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-sexual-orientation">TWB Episode - Sexual Orientation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-transgender-status">TWB Episode - Transgender Status</a></li>
@@ -642,7 +643,12 @@ following table:</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a> (twb_previous_suicide_attempts)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional-consent-date">TWB Episode - Primary Nominated Professional Consent Date</a> (twb_primary_nominated_professional_consent_date)</td>
+<td>date</td>
+<td>yes</td>
+<td>What date did you receive consent from the client to contact their Primary Nominated Professional?</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a> (twb_previous_suicide_attempts)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
@@ -663,7 +669,7 @@ following table:</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-episode-method-of-suicide-attempt">TWB Episode - Method of suicide attempt</a> (twb_method_of_suicide_attempt)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-method-of-suicide-attempt">TWB Episode - Method of suicide attempt</a> (twb_method_of_suicide_attempt)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
@@ -690,7 +696,7 @@ following table:</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a> (twb_episode_tags)</td>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a> (twb_episode_tags)</td>
 <td>string</td>
 <td>—</td>
 <td>List of tags for the TWB Episode.</td>
@@ -1452,7 +1458,58 @@ collection occasion.</p>
 <tr class="row-odd"><td><a class="reference internal" href="#twb-ni-type">TWB NI - Type</a> (twb_ni_type)</td>
 <td>string</td>
 <td>yes</td>
-<td>Multiple space separated values allowed</td>
+<td><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Self-care and diet (Incl. Self-Neglect)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Mental Health</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Safety to Self/Others</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Accommodation</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Financial</td>
+</tr>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Daily Structure and Interests</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Stigma and Harassment</td>
+</tr>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Social Contacts</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Close Relationships (Incl. Carer, If Applicable)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Language and Culture</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Physical Health and Disability</td>
+</tr>
+<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Daily Living</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Employment</td>
+</tr>
+<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Information About Condition and Treatment</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Alcohol and Drugs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Childcare and Parenting</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">Educational Needs (Incl. Literacy &amp;  Numeracy)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">Transport</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Sexual Issues</td>
+</tr>
+<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">Spirituality</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-even field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
+</tr>
+</tbody>
+</table>
+<p class="last">Multiple space separated values allowed</p>
+</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#twb-ni-tags">TWB NI - Tags</a> (twb_ni_tags)</td>
 <td>string</td>
@@ -9028,7 +9085,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
 <p>If the date of the critical incident is unknown, 09099999 should be used.</p>
 <ul class="simple">
-<li>The critical incident date must not be before 1st January 2016.</li>
+<li>The critical incident date must not be before 1st January 2019.</li>
 <li>The critical incident date must not be in the future.</li>
 </ul>
 <p><strong>Reporting requirements</strong>
@@ -9419,8 +9476,48 @@ to die as a result of the behaviour; might not result in injury.</p>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
 Mandatory where Episode—TWB Consent type =1</p>
 <p><strong>Guide for use</strong>
-The primary nominated professional of the client is the professional or support worker that the client consents to be advised of their participation in The Way Back Support Service.
-If a client does not wish for anyone to be advised then code 97 indicates no consent.</p>
+The primary nominated professional of the client is the professional or
+support worker that the client consents to be advised of their participation
+in The Way Back Support Service.</p>
+<p>If a client does not wish for anyone to be advised then code 99 indicates no
+consent in conjunction with 09099999 for <a class="reference internal" href="#dfn-twb-primary-nominated-professional-consent-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Consent Date</span></a>
+indicates no consent.</p>
+<p class="last"><strong>Purpose/context</strong>
+Program monitoring, service planning.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="twb-episode-primary-nominated-professional-consent-date">
+<span id="dfn-twb-primary-nominated-professional-consent-date"></span><h3>TWB Episode - Primary Nominated Professional Consent Date<a class="headerlink" href="#twb-episode-primary-nominated-professional-consent-date" title="Permalink to this headline">¶</a></h3>
+<p>What date did you receive consent from the client to contact their Primary Nominated Professional?</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_primary_nominated_professional_consent_date</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
+used across the National Health Data Dictionary; specifically, dates must be
+of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+necessary to pad out a value. For instance, 13th March 2008 would appear as
+13032008.</p>
+<p>If a client does not wish for anyone to be advised please use the date 09099999.</p>
+<ul class="simple">
+<li>The consent date must not be before 1st January 2019.</li>
+<li>The consent date must not be in the future.</li>
+</ul>
+<p><strong>Reporting requirements</strong>
+Mandatory where Episode—TWB Consent type =1</p>
 <p class="last"><strong>Purpose/context</strong>
 Program monitoring, service planning.</p>
 </td>
@@ -9629,7 +9726,57 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">Multiple space separated values allowed</p>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Self-care and diet (Incl. Self-Neglect)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Mental Health</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Safety to Self/Others</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Accommodation</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Financial</td>
+</tr>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Daily Structure and Interests</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Stigma and Harassment</td>
+</tr>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Social Contacts</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Close Relationships (Incl. Carer, If Applicable)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Language and Culture</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Physical Health and Disability</td>
+</tr>
+<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Daily Living</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Employment</td>
+</tr>
+<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Information About Condition and Treatment</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Alcohol and Drugs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Childcare and Parenting</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">Educational Needs (Incl. Literacy &amp;  Numeracy)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">Transport</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Sexual Issues</td>
+</tr>
+<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">Spirituality</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-even field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
+</tr>
+</tbody>
+</table>
+<p>Multiple space separated values allowed</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
@@ -9826,7 +9973,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
 <p>If the date of the contact is unknown, 09099999 should be used.</p>
 <ul class="simple">
-<li>The contact date must not be before 1st January 2016.</li>
+<li>The contact date must not be before 1st January 2019.</li>
 <li>The contact date must not be in the future.</li>
 </ul>
 <p><strong>Reporting requirements</strong>
@@ -10470,7 +10617,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <p>Available for software developers designing extracts for TWB, please
 click the link below to download TWB Specification files for the PMHC MDS:</p>
 <ul class="simple">
-<li><code class="xref download docutils literal notranslate"><span class="pre">TWB</span> <span class="pre">Specification</span> <span class="pre">zip</span></code></li>
+<li><a class="reference download internal" download="" href="../_downloads/39a73717742538aa7b1251dad94ebb8b/wayback-spec-meta.zip"><code class="xref download docutils literal notranslate"><span class="pre">TWB</span> <span class="pre">Specification</span> <span class="pre">zip</span></code></a></li>
 </ul>
 </div>
 </div>

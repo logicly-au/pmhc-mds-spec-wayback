@@ -73,11 +73,11 @@
   "foreignKeys": [{
     "columnReference": [ "organisation_path", "collection_occasion_key" ],
     "reference": {
-      "resource": "data/collection_occasions.csv",
+      "resource": "data/collection-occasions.csv",
       "columnReference": [ "organisation_path", "collection_occasion_key" ]
     }
   }, {
-    "columnReference": "twb_ini_type",
+    "columnReference": "twb_ni_type",
     "reference": {
       "resource": "table/measure/twb-ni/twb-ni-type.csv",
       "columnReference": "id"

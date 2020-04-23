@@ -122,8 +122,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/change-log">Data Specification Change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#version-3-0">16/3/2019 - Version 3.0</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#version-2-0">8/7/2019 - Version 2.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#version-3-0">27/4/2020 - Version 3.0</a></li>
 </ul>
 </li>
 </ul>
@@ -677,7 +676,12 @@ following table:</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a> (twb_previous_suicide_attempts)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional-consent-date">TWB Episode - Primary Nominated Professional Consent Date</a> (twb_primary_nominated_professional_consent_date)</td>
+<td>date</td>
+<td>yes</td>
+<td>What date did you receive consent from the client to contact their Primary Nominated Professional?</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a> (twb_previous_suicide_attempts)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
@@ -698,7 +702,7 @@ following table:</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-episode-method-of-suicide-attempt">TWB Episode - Method of suicide attempt</a> (twb_method_of_suicide_attempt)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-method-of-suicide-attempt">TWB Episode - Method of suicide attempt</a> (twb_method_of_suicide_attempt)</td>
 <td>string</td>
 <td>yes</td>
 <td><table class="first last docutils field-list" frame="void" rules="none">
@@ -725,7 +729,7 @@ following table:</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a> (twb_episode_tags)</td>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a> (twb_episode_tags)</td>
 <td>string</td>
 <td>—</td>
 <td>List of tags for the TWB Episode.</td>
@@ -1487,7 +1491,58 @@ collection occasion.</p>
 <tr class="row-odd"><td><a class="reference internal" href="#twb-ni-type">TWB NI - Type</a> (twb_ni_type)</td>
 <td>string</td>
 <td>yes</td>
-<td>Multiple space separated values allowed</td>
+<td><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Self-care and diet (Incl. Self-Neglect)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Mental Health</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Safety to Self/Others</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Accommodation</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Financial</td>
+</tr>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Daily Structure and Interests</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Stigma and Harassment</td>
+</tr>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Social Contacts</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Close Relationships (Incl. Carer, If Applicable)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Language and Culture</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Physical Health and Disability</td>
+</tr>
+<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Daily Living</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Employment</td>
+</tr>
+<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Information About Condition and Treatment</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Alcohol and Drugs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Childcare and Parenting</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">Educational Needs (Incl. Literacy &amp;  Numeracy)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">Transport</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Sexual Issues</td>
+</tr>
+<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">Spirituality</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-even field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
+</tr>
+</tbody>
+</table>
+<p class="last">Multiple space separated values allowed</p>
+</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#twb-ni-tags">TWB NI - Tags</a> (twb_ni_tags)</td>
 <td>string</td>
@@ -9063,7 +9118,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
 <p>If the date of the critical incident is unknown, 09099999 should be used.</p>
 <ul class="simple">
-<li>The critical incident date must not be before 1st January 2016.</li>
+<li>The critical incident date must not be before 1st January 2019.</li>
 <li>The critical incident date must not be in the future.</li>
 </ul>
 <p><strong>Reporting requirements</strong>
@@ -9454,8 +9509,48 @@ to die as a result of the behaviour; might not result in injury.</p>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
 Mandatory where Episode—TWB Consent type =1</p>
 <p><strong>Guide for use</strong>
-The primary nominated professional of the client is the professional or support worker that the client consents to be advised of their participation in The Way Back Support Service.
-If a client does not wish for anyone to be advised then code 97 indicates no consent.</p>
+The primary nominated professional of the client is the professional or
+support worker that the client consents to be advised of their participation
+in The Way Back Support Service.</p>
+<p>If a client does not wish for anyone to be advised then code 99 indicates no
+consent in conjunction with 09099999 for <a class="reference internal" href="#dfn-twb-primary-nominated-professional-consent-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Consent Date</span></a>
+indicates no consent.</p>
+<p class="last"><strong>Purpose/context</strong>
+Program monitoring, service planning.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="twb-episode-primary-nominated-professional-consent-date">
+<span id="dfn-twb-primary-nominated-professional-consent-date"></span><h5>TWB Episode - Primary Nominated Professional Consent Date<a class="headerlink" href="#twb-episode-primary-nominated-professional-consent-date" title="Permalink to this headline">¶</a></h5>
+<p>What date did you receive consent from the client to contact their Primary Nominated Professional?</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_primary_nominated_professional_consent_date</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
+used across the National Health Data Dictionary; specifically, dates must be
+of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+necessary to pad out a value. For instance, 13th March 2008 would appear as
+13032008.</p>
+<p>If a client does not wish for anyone to be advised please use the date 09099999.</p>
+<ul class="simple">
+<li>The consent date must not be before 1st January 2019.</li>
+<li>The consent date must not be in the future.</li>
+</ul>
+<p><strong>Reporting requirements</strong>
+Mandatory where Episode—TWB Consent type =1</p>
 <p class="last"><strong>Purpose/context</strong>
 Program monitoring, service planning.</p>
 </td>
@@ -9664,7 +9759,57 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">Multiple space separated values allowed</p>
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Self-care and diet (Incl. Self-Neglect)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Mental Health</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3:</th><td class="field-body">Safety to Self/Others</td>
+</tr>
+<tr class="field-even field"><th class="field-name">4:</th><td class="field-body">Accommodation</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5:</th><td class="field-body">Financial</td>
+</tr>
+<tr class="field-even field"><th class="field-name">6:</th><td class="field-body">Daily Structure and Interests</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7:</th><td class="field-body">Stigma and Harassment</td>
+</tr>
+<tr class="field-even field"><th class="field-name">8:</th><td class="field-body">Social Contacts</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9:</th><td class="field-body">Close Relationships (Incl. Carer, If Applicable)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">10:</th><td class="field-body">Language and Culture</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">11:</th><td class="field-body">Physical Health and Disability</td>
+</tr>
+<tr class="field-even field"><th class="field-name">12:</th><td class="field-body">Daily Living</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">13:</th><td class="field-body">Employment</td>
+</tr>
+<tr class="field-even field"><th class="field-name">14:</th><td class="field-body">Information About Condition and Treatment</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">15:</th><td class="field-body">Alcohol and Drugs</td>
+</tr>
+<tr class="field-even field"><th class="field-name">16:</th><td class="field-body">Childcare and Parenting</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">17:</th><td class="field-body">Educational Needs (Incl. Literacy &amp;  Numeracy)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">18:</th><td class="field-body">Transport</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">19:</th><td class="field-body">Sexual Issues</td>
+</tr>
+<tr class="field-even field"><th class="field-name">20:</th><td class="field-body">Spirituality</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">Other</td>
+</tr>
+<tr class="field-even field"><th class="field-name">99:</th><td class="field-body">Not stated/Inadequately described</td>
+</tr>
+</tbody>
+</table>
+<p>Multiple space separated values allowed</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
@@ -9861,7 +10006,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
 <p>If the date of the contact is unknown, 09099999 should be used.</p>
 <ul class="simple">
-<li>The contact date must not be before 1st January 2016.</li>
+<li>The contact date must not be before 1st January 2019.</li>
 <li>The contact date must not be in the future.</li>
 </ul>
 <p><strong>Reporting requirements</strong>
@@ -10505,7 +10650,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <p>Available for software developers designing extracts for TWB, please
 click the link below to download TWB Specification files for the PMHC MDS:</p>
 <ul class="simple">
-<li><code class="xref download docutils literal notranslate"><span class="pre">TWB</span> <span class="pre">Specification</span> <span class="pre">zip</span></code></li>
+<li><a class="reference download internal" download="" href="_downloads/39a73717742538aa7b1251dad94ebb8b/wayback-spec-meta.zip"><code class="xref download docutils literal notranslate"><span class="pre">TWB</span> <span class="pre">Specification</span> <span class="pre">zip</span></code></a></li>
 </ul>
 </div>
 </div>
@@ -10619,7 +10764,7 @@ uploaded to the PMHC MDS:</p>
 <td>Required</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#twb-pnpc-format"><span class="std std-ref">TWB Primary Nominated Professional Contacts</span></a></td>
-<td>twb-pcpcs.csv</td>
+<td>twb-pnpcs.csv</td>
 <td>TWB PNPCs</td>
 <td>Required</td>
 </tr>
@@ -10875,8 +11020,8 @@ required to be uploaded each time.</p>
 at <a class="reference internal" href="index.html#k10p-data-elements"><span class="std std-ref">K10+ Measure</span></a>.</p>
 <p>Example K10+ data:</p>
 <ul class="simple">
-<li><a class="reference external" href="../_static/k10ps.csv">CSV K10+ file</a>.</li>
-<li><a class="reference external" href="../_static/pmhc-k10ps-upload.xlsx">XLSX K10+ worksheet</a>.</li>
+<li><a class="reference external" href="../_static/k10p.csv">CSV K10+ file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-k10p-upload.xlsx">XLSX K10+ worksheet</a>.</li>
 </ul>
 </div>
 <div class="section" id="k5-file-format">
@@ -10886,8 +11031,8 @@ at <a class="reference internal" href="index.html#k10p-data-elements"><span clas
 at <a class="reference internal" href="index.html#k5-data-elements"><span class="std std-ref">K5 Measure</span></a>.</p>
 <p>Example K5 data:</p>
 <ul class="simple">
-<li><a class="reference external" href="../_static/k5s.csv">CSV K5 file</a>.</li>
-<li><a class="reference external" href="../_static/pmhc-k5s-upload.xlsx">XLSX K5 worksheet</a>.</li>
+<li><a class="reference external" href="../_static/k5.csv">CSV K5 file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-k5-upload.xlsx">XLSX K5 worksheet</a>.</li>
 </ul>
 </div>
 <div class="section" id="sdq-file-format">
@@ -10897,8 +11042,8 @@ at <a class="reference internal" href="index.html#k5-data-elements"><span class=
 at <a class="reference internal" href="index.html#sdq-data-elements"><span class="std std-ref">SDQ Measure</span></a>.</p>
 <p>Example SDQ data:</p>
 <ul class="simple">
-<li><a class="reference external" href="../_static/sdqs.csv">CSV SDQ file</a>.</li>
-<li><a class="reference external" href="../_static/pmhc-sdqs-upload.xlsx">XLSX SDQ worksheet</a>.</li>
+<li><a class="reference external" href="../_static/sdq.csv">CSV SDQ file</a>.</li>
+<li><a class="reference external" href="../_static/pmhc-sdq-upload.xlsx">XLSX SDQ worksheet</a>.</li>
 </ul>
 </div>
 <div class="section" id="who-5-file-format">
@@ -10908,8 +11053,8 @@ at <a class="reference internal" href="index.html#sdq-data-elements"><span class
 at <a class="reference internal" href="index.html#who5-data-elements"><span class="std std-ref">WHO-5 Measure</span></a>.</p>
 <p>Example WHO-5 data:</p>
 <ul class="simple">
-<li><a class="reference external" href="../_static/who5s.csv">CSV WHO-5 file</a>.</li>
-<li><a class="reference external" href="../_static/who5s-upload.xlsx">XLSX WHO-5 worksheet</a>.</li>
+<li><a class="reference external" href="../_static/who5.csv">CSV WHO-5 file</a>.</li>
+<li><a class="reference external" href="../_static/who5-upload.xlsx">XLSX WHO-5 worksheet</a>.</li>
 </ul>
 </div>
 <div class="section" id="sidas-file-format">
@@ -11010,7 +11155,6 @@ uploaded before the insertions/updates.</li>
 <ul class="simple">
 <li><a class="reference external" href="../_static/twb-upload-delete.xlsx">XLSX delete file containing only TWB worksheets</a>.</li>
 <li><a class="reference external" href="../_static/twb-episodes-delete.csv">CSV delete TWB episode file</a>.</li>
-<li><a class="reference external" href="../_static/sidas-delete.csv">CSV delete SIDAS file</a>.</li>
 </ul>
 </div>
 </div>
@@ -11030,72 +11174,112 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <ol class="arabic simple">
 <li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
 <li><code class="docutils literal notranslate"><span class="pre">!WAYBACK</span></code> tag should be included in the <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags">Episode - Tags</a> field of the corresponding PMHC episode, otherwise the system will automatically include it.</li>
+<li>The <a class="reference internal" href="index.html#dfn-twb-primary-nominated-professional-consent-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Consent Date</span></a><ul>
+<li>must not be before 1 January 2019</li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
+<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
+<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
+<li>and must not be in the future</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="twb-primary-nominated-professional-contact">
+<span id="twb-primary-nominated-professional-contact-current-validations"></span><h5>2. TWB Primary Nominated Professional Contact<a class="headerlink" href="#twb-primary-nominated-professional-contact" title="Permalink to this headline">¶</a></h5>
+<ol class="arabic simple">
+<li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
+<li>The <a class="reference internal" href="index.html#dfn-twb-pnpc-date"><span class="std std-ref">TWB PNPC - Date</span></a><ul>
+<li>must not be before 1 January 2019</li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
+<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
+<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
+<li>and must not be in the future</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="twb-critical-incident">
+<span id="twb-critical-incident-current-validations"></span><h5>3. TWB Critical Incident<a class="headerlink" href="#twb-critical-incident" title="Permalink to this headline">¶</a></h5>
+<ol class="arabic simple">
+<li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
+<li>The <a class="reference internal" href="index.html#dfn-twb-critical-incident-date"><span class="std std-ref">TWB Critical Incident - Date</span></a><ul>
+<li>must not be before 1 January 2019</li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
+<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
+<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
+<li>and must not be in the future</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="twb-recommendation-out">
+<span id="twb-recommendation-out-current-validations"></span><h5>4. TWB Recommendation Out<a class="headerlink" href="#twb-recommendation-out" title="Permalink to this headline">¶</a></h5>
+<ol class="arabic simple">
+<li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
 </ol>
 </div>
 <div class="section" id="collection-occasion">
-<span id="collection-occasion-current-validations"></span><h5>2. Collection Occasion<a class="headerlink" href="#collection-occasion" title="Permalink to this headline">¶</a></h5>
+<span id="collection-occasion-current-validations"></span><h5>5. Collection Occasion<a class="headerlink" href="#collection-occasion" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic simple">
-<li>The <a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
+<li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
+<li>The <a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a><ul>
 <li>must not be before 1 January 2016</li>
-<li>must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a>.</li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
+<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
+<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
+<li>and must not be in the future</li>
 </ul>
-</div></blockquote>
-<ol class="arabic simple" start="3">
-<li><a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a> must not be
-before</li>
-</ol>
-<ol class="arabic simple" start="2">
-<li><a class="reference internal" href="index.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a> must not be
-after <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-end-date">Episode - End Date</a>.</li>
-</ol>
-<blockquote>
-<div>and must not be in the future</div></blockquote>
-<ol class="arabic simple" start="4">
-<li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a> data.</li>
+</li>
 </ol>
 </div>
 <div class="section" id="k10">
-<span id="k10p-current-validations"></span><h5>3. K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h5>
+<span id="k10p-current-validations"></span><h5>6. K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic simple">
 <li><a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion</span></a> data.</li>
+MDS.</li>
+<li>If both item scores and a total score are specified, the item scores must
+add up to the total score (as per <a class="reference internal" href="index.html#dfn-k10p-score"><span class="std std-ref">Scoring the K10+</span></a>).</li>
+</ol>
+</div>
+<div class="section" id="who-5">
+<span id="who-5-current-validations"></span><h5>7. WHO-5<a class="headerlink" href="#who-5" title="Permalink to this headline">¶</a></h5>
+<ol class="arabic simple">
+<li><a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
+MDS.</li>
+<li>If both item scores and a total score are specified, the item scores must
+add up to the total score.</li>
+</ol>
+</div>
+<div class="section" id="sidas">
+<span id="sidas-twb-current-validations"></span><h5>8. SIDAS<a class="headerlink" href="#sidas" title="Permalink to this headline">¶</a></h5>
+<ol class="arabic simple">
+<li><a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
+MDS.</li>
+<li>If both item scores and a total score are specified, the item scores must
+add up to the total score.</li>
 </ol>
 </div>
 <div class="section" id="twb-plan">
-<span id="twb-plan-current-validations"></span><h5>4. TWB-Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h5>
+<span id="twb-plan-current-validations"></span><h5>9. TWB-Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic simple">
 <li><a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion</span></a> data.</li>
+MDS.</li>
 </ol>
 </div>
 <div class="section" id="twb-ni">
 <span id="twb-ni-current-validations"></span><h5>5. TWB-NI<a class="headerlink" href="#twb-ni" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic simple">
 <li><a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion</span></a> data.</li>
-</ol>
-</div>
-<div class="section" id="who-5">
-<span id="who-5-current-validations"></span><h5>6. WHO-5<a class="headerlink" href="#who-5" title="Permalink to this headline">¶</a></h5>
-<ol class="arabic simple">
-<li><a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion</span></a> data.</li>
-</ol>
-</div>
-<div class="section" id="sidas">
-<span id="sidas-twb-current-validations"></span><h5>7. SIDAS<a class="headerlink" href="#sidas" title="Permalink to this headline">¶</a></h5>
-<ol class="arabic simple">
-<li><a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS and must be associated with <a class="reference internal" href="index.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion</span></a> data.</li>
+MDS.</li>
 </ol>
 </div>
 </div>
 <div class="section" id="current-pmhc-validations">
-<span id="id3"></span><h4>Current PMHC Validations<a class="headerlink" href="#current-pmhc-validations" title="Permalink to this headline">¶</a></h4>
+<span id="id15"></span><h4>Current PMHC Validations<a class="headerlink" href="#current-pmhc-validations" title="Permalink to this headline">¶</a></h4>
 <p>TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
 the current PMHC MDS Validations rules may apply, depending on how you add your
 TWB data. The current PMHC MDS validations rules are available to be viewed at
@@ -11105,13 +11289,7 @@ TWB data. The current PMHC MDS validations rules are available to be viewed at
 <span id="document-data-specification/change-log"></span><div class="section" id="data-specification-change-log">
 <span id="data-spec-changelog"></span><h3>Data Specification Change log<a class="headerlink" href="#data-specification-change-log" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="version-3-0">
-<h4>16/3/2019 - Version 3.0<a class="headerlink" href="#version-3-0" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li>Removed the MSPSS</li>
-</ul>
-</div>
-<div class="section" id="version-2-0">
-<h4>8/7/2019 - Version 2.0<a class="headerlink" href="#version-2-0" title="Permalink to this headline">¶</a></h4>
+<h4>27/4/2020 - Version 3.0<a class="headerlink" href="#version-3-0" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>Initial release</li>
 </ul>

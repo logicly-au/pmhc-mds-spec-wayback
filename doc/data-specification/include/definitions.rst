@@ -4111,7 +4111,7 @@ The date of the critical incident.
   
   If the date of the critical incident is unknown, 09099999 should be used.
   
-  - The critical incident date must not be before 1st January 2016.
+  - The critical incident date must not be before 1st January 2019.
   
   - The critical incident date must not be in the future.
   
@@ -4392,8 +4392,48 @@ The primary nominated professional of the client for contact regarding participa
   Mandatory where Episode—TWB Consent type =1
   
   **Guide for use**
-  The primary nominated professional of the client is the professional or support worker that the client consents to be advised of their participation in The Way Back Support Service.
-  If a client does not wish for anyone to be advised then code 97 indicates no consent.
+  The primary nominated professional of the client is the professional or
+  support worker that the client consents to be advised of their participation
+  in The Way Back Support Service.
+  
+  If a client does not wish for anyone to be advised then code 99 indicates no
+  consent in conjunction with 09099999 for :ref:`dfn-twb_primary_nominated_professional_consent_date`
+  indicates no consent.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  
+
+----------
+
+.. _dfn-twb_primary_nominated_professional_consent_date:
+
+TWB Episode - Primary Nominated Professional Consent Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What date did you receive consent from the client to contact their Primary Nominated Professional?
+
+:Field name: twb_primary_nominated_professional_consent_date
+
+:Data type: date
+
+:Required: yes
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  If a client does not wish for anyone to be advised please use the date 09099999.
+  
+  - The consent date must not be before 1st January 2019.
+  
+  - The consent date must not be in the future.
+  
+  **Reporting requirements**
+  Mandatory where Episode—TWB Consent type =1
+  
   
   **Purpose/context**
   Program monitoring, service planning.
@@ -4551,8 +4591,31 @@ The identified needs of the client at commencement or review of the service.
 :Required: yes
 
 :Domain:
+  :1: Self-care and diet (Incl. Self-Neglect)
+  :2: Mental Health
+  :3: Safety to Self/Others
+  :4: Accommodation
+  :5: Financial
+  :6: Daily Structure and Interests
+  :7: Stigma and Harassment
+  :8: Social Contacts
+  :9: Close Relationships (Incl. Carer, If Applicable)
+  :10: Language and Culture
+  :11: Physical Health and Disability
+  :12: Daily Living
+  :13: Employment
+  :14: Information About Condition and Treatment
+  :15: Alcohol and Drugs
+  :16: Childcare and Parenting
+  :17: Educational Needs (Incl. Literacy &  Numeracy)
+  :18: Transport
+  :19: Sexual Issues
+  :20: Spirituality
+  :98: Other
+  :99: Not stated/Inadequately described
   
   Multiple space separated values allowed
+  
 :Notes:
   **Reporting requirements**
   The Needs Identification (NI) is a screening process where the psychosocial
@@ -4733,7 +4796,7 @@ The date of contact between a service provider and the clients primary nominated
   
   If the date of the contact is unknown, 09099999 should be used.
   
-  - The contact date must not be before 1st January 2016.
+  - The contact date must not be before 1st January 2019.
   
   - The contact date must not be in the future.
   

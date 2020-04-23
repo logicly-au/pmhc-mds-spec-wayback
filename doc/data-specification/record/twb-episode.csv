@@ -50,6 +50,9 @@
 :6: Mental Health Social Worker
 :98: Other
 :99: Not stated/Inadequately described"
+"`TWB Episode - Primary Nominated Professional Consent Date`_ (twb_primary_nominated_professional_consent_date)
+
+",date,yes,"What date did you receive consent from the client to contact their Primary Nominated Professional?"
 "`TWB Episode - Previous suicide attempts`_ (twb_previous_suicide_attempts)
 
 ",string,yes,":1: No

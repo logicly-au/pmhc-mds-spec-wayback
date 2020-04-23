@@ -45,7 +45,7 @@
     "tableSchema": "table/twb-episode-metadata.json"
   }, {
     "dc:title": "TWB Primary Nominated Professional Contact",
-    "url": "data/twb-primary-nominated-professional-contacts.csv",
+    "url": "data/twb-pnpcs.csv",
     "schema:name": "twb-primary-nominated-professional-contact",
     "schema:description": "table/twb-primary-nominated-professional-contact.rst",
     "tableSchema": "table/twb-primary-nominated-professional-contact-metadata.json"
@@ -63,7 +63,7 @@
     "tableSchema": "table/service-contact-metadata.json"
   }, {
     "dc:title": "TWB Recommendation Out",
-    "url": "data/twb-recommendation-out.csv",
+    "url": "data/twb-recommendation-outs.csv",
     "schema:name": "twb-recommendation-out",
     "schema:description": "table/twb-recommendation-out.rst",
     "tableSchema": "table/twb-recommendation-out-metadata.json"
@@ -209,9 +209,6 @@
     "url": "table/twb-episode/twb-external-evaluator-contact-consent.csv",
     "tableSchema": "table/twb-episode/twb-external-evaluator-contact-consent.json"
   }, {
-    "url": "table/twb-episode/twb-critical-incident-type.csv",
-    "tableSchema": "table/twb-episode/twb-critical-incident-type.json"
-  }, {
     "url": "table/twb-episode/twb-eligibility-type.csv",
     "tableSchema": "table/twb-episode/twb-eligibility-type.json"
   }, {
@@ -298,6 +295,9 @@
   }, {
     "url": "table/measure/sdq/sdq-version.csv",
     "tableSchema": "table/measure/sdq/sdq-version.json"
+  }, {
+    "url": "table/measure/twb-ni/twb-ni-type.csv",
+    "tableSchema": "table/measure/twb-ni/twb-ni-type.json"
   }, {
     "url": "table/measure/twb-plan/twb-plan-type.csv",
     "tableSchema": "table/measure/twb-plan/twb-plan-type.json"

@@ -4,7 +4,7 @@ The Way Back Support Service Minimum Data Set and Dictionary
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
 
-.. only:: builder_html or builder_readthedoc
+.. only:: builder_html or builder_readthedocs
 
    As The Way Back Support Service Minimum Data Set is an
    extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS), the
@@ -20,7 +20,7 @@ The Way Back Support Service Minimum Data Set and Dictionary
    .. The LINK TO THE PDF will only appear in the online HTML version
       (make.sh html) and not in PDF itself (or any other renderings)
 
-   .. only:: builder_html or builder_readthedoc
+   .. only:: builder_html or builder_readthedocs
 
       Download this specification as a :download:`PDF </_static/WAYBACK.pdf>`.
 

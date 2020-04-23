@@ -20,7 +20,7 @@ GetOptions (
 ) or die("Error in command line arguments\n");
 
 my $src = "$doc_dir/build/singlehtml";
-my $dst = "$doc_dir/build/html/_downloads";
+my $dst = "$doc_dir/_static";
 my $output_file = "$dst/$spec_name.pdf";
 
 $spec_name   || die 'You must specify a spec name';
@@ -48,8 +48,9 @@ fixLinks( $tree );
 
 write_file( $src . '/index_pdf.html', $tree->as_HTML());
 
-
+say "Altering CSS font references";
 # Fix the font references in CSS
+
 # prince does not like path separators in added files
 #  we remove the leading ../ and replace any others with a dash
 my $replacement = 'my $a = $1; $a =~ s|\.\./||g; $a =~ s|/|-|g; "url(" . $a . ")";';
