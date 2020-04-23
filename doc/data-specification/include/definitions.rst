@@ -4613,7 +4613,9 @@ The identified needs of the client at commencement or review of the service.
   :20: Spirituality
   :98: Other
   :99: Not stated/Inadequately described
+  
   Multiple space separated values allowed
+  
 :Notes:
   **Reporting requirements**
   The Needs Identification (NI) is a screening process where the psychosocial

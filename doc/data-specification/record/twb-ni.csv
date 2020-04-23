@@ -32,7 +32,9 @@
 :20: Spirituality
 :98: Other
 :99: Not stated/Inadequately described
-Multiple space separated values allowed"
+
+Multiple space separated values allowed
+"
 "`TWB NI - Tags`_ (twb_ni_tags)
 
 ",string,"—","List of tags for the collection occasion."
