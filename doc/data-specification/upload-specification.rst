@@ -452,7 +452,7 @@ Deleting records
   * WHO-5
   * SIDAS
   * TWB Plan
-  * TWB INI
+  * TWB NI
   * Practitioner
 
 * An extra optional "delete" column can be added to each of the supported

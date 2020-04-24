@@ -19,7 +19,7 @@
     "titles": [ "twb_ni_key" ],
     "dc:title": "TWB NI Key",
     "schema:description": "This is a number or code assigned to each instance of a TWB NI. The TWB NI Key is unique and stable for each instance of a TWB NI at the level of the organisation.",
-    "schema:disambiguatingDescription": "table/measure/key.rst",
+    "schema:disambiguatingDescription": "table/measure/twb-ni/twb-ni-key.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",

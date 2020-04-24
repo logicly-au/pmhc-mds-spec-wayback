@@ -29,7 +29,7 @@ In developing a Support Plan, discussion with clients should consider warning
 signs, strengths, support mechanisms and strategies that have enabled them to
 take the next steps.
 
-A Support Plan must be completed with a client within two weeks of their 
+A Support Plan must be completed with a client within two weeks of their
 consenting to participate in the service. To identify a client’s needs and
 build an understanding of what support will be of benefit, all Support Tools
 and Measures should be completed prior to completing the Support Plan.
@@ -40,7 +40,7 @@ Service Exit. Each review must be documented.
 All Way Back service providers must work with their clients to collaboratively
 develop a support plan that articulates:
 
-* The client’s needs based on the INI
+* The client’s needs based on the NI
 * The client’s goals in response to needs identified
 * Proposed actions, referrals and interventions
 

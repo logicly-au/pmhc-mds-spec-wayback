@@ -19,7 +19,7 @@
     "titles": [ "twb_plan_key" ],
     "dc:title": "TWB Plan Key",
     "schema:description": "This is a number or code assigned to each instance of a TWB Plan. The TWB Plan Key is unique and stable for each instance of a measure at the level of the organisation.",
-    "schema:disambiguatingDescription": "table/measure/key.rst",
+    "schema:disambiguatingDescription": "table/measure/twb-plan/twb-plan-key.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
     "schema:dateModified": "2016-06-22",

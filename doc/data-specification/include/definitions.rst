@@ -4629,7 +4629,7 @@ The identified needs of the client at commencement or review of the service.
   receives care, other needs or circumstances may be identified which require
   attention by other disciplines. External referral or re-entry onto the
   waiting list to access the other disciplines may then occur. This question
-  allows for more than one response. The INI must be administered at a minimum
+  allows for more than one response. The NI must be administered at a minimum
   at the following points of service participation:
   
   * At the start of The Way Back
@@ -4652,7 +4652,7 @@ This is a number or code assigned to each instance of a TWB NI. The TWB NI Key i
 
 :Required: yes
 :Notes:
-  Measure keys are case sensitive and must be valid unicode characters.
+  TWB NI keys are case sensitive and must be valid unicode characters.
   
 
 ----------
@@ -4705,7 +4705,7 @@ The type of plan.
   signs, strengths, support mechanisms and strategies that have enabled them to
   take the next steps.
   
-  A Support Plan must be completed with a client within two weeks of their 
+  A Support Plan must be completed with a client within two weeks of their
   consenting to participate in the service. To identify a client’s needs and
   build an understanding of what support will be of benefit, all Support Tools
   and Measures should be completed prior to completing the Support Plan.
@@ -4716,7 +4716,7 @@ The type of plan.
   All Way Back service providers must work with their clients to collaboratively
   develop a support plan that articulates:
   
-  * The client’s needs based on the INI
+  * The client’s needs based on the NI
   * The client’s goals in response to needs identified
   * Proposed actions, referrals and interventions
   
@@ -4770,7 +4770,7 @@ This is a number or code assigned to each instance of a TWB Plan. The TWB Plan K
 
 :Required: yes
 :Notes:
-  Measure keys are case sensitive and must be valid unicode characters.
+  TWB Plan keys are case sensitive and must be valid unicode characters.
   
 
 ----------

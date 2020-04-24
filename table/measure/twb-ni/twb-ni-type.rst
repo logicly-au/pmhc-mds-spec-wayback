@@ -10,7 +10,7 @@ survey intervention. However, Needs Identification is ongoing and as a client
 receives care, other needs or circumstances may be identified which require
 attention by other disciplines. External referral or re-entry onto the
 waiting list to access the other disciplines may then occur. This question
-allows for more than one response. The INI must be administered at a minimum
+allows for more than one response. The NI must be administered at a minimum
 at the following points of service participation:
 
 * At the start of The Way Back
