@@ -3877,16 +3877,7 @@ The main type of service provided in the service contact, as represented by the 
 
 :Domain:
   :0: No contact took place
-  :1: Assessment
-  :2: Structured psychological intervention
-  :3: Other psychological intervention
-  :4: Clinical care coordination/liaison
-  :5: Clinical nursing services
-  :6: Child or youth specific assistance NEC
-  :7: Suicide prevention specific assistance NEC
-  :8: Cultural specific assistance NEC
   :9: Psychosocial support
-  :98: ATAPS
 :Notes:
   Describes the main type of service delivered in the contact, selected from a
   defined list of categories.  Service providers are required
@@ -4124,34 +4115,6 @@ The date of the critical incident.
   **Purpose/context**
   Program monitoring, service planning, funding and accountability.
   Measurement of waiting times.
-  
-
-----------
-
-.. _dfn-twb_critical_incident_tags:
-
-TWB Critical Incident - Tags
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-List of tags for the TWB Critical Incident.
-
-:Field name: twb_critical_incident_tags
-
-:Data type: string
-
-:Required: no
-:Notes:
-  A comma separated list of tags.
-  
-  Organisations can use this field to tag records in order to partition them as
-  per local requirements.
-  
-  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
-  nurse required, pending-outcome-1`` would all be legitimate.
-  
-  Tags beginning with an exclamation mark (!) are reserved for future use by the
-  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
   
 
 ----------
@@ -4462,34 +4425,6 @@ How do you describe your sexual orientation?
   :5: Questioning
   :6: Other
   :9: Not stated
-
-----------
-
-.. _dfn-twb_episode_tags:
-
-TWB Episode - Tags
-^^^^^^^^^^^^^^^^^^
-
-List of tags for the TWB Episode.
-
-:Field name: twb_episode_tags
-
-:Data type: string
-
-:Required: no
-:Notes:
-  A comma separated list of tags.
-  
-  Organisations can use this field to tag records in order to partition them as
-  per local requirements.
-  
-  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
-  nurse required, pending-outcome-1`` would all be legitimate.
-  
-  Tags beginning with an exclamation mark (!) are reserved for future use by the
-  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-  
 
 ----------
 
@@ -4839,34 +4774,6 @@ The reason for the contact.
 
 ----------
 
-.. _dfn-twb_pnpc_tags:
-
-TWB PNPC - Tags
-^^^^^^^^^^^^^^^
-
-List of tags for the TWB PNPC.
-
-:Field name: twb_pnpc_tags
-
-:Data type: string
-
-:Required: no
-:Notes:
-  A comma separated list of tags.
-  
-  Organisations can use this field to tag records in order to partition them as
-  per local requirements.
-  
-  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
-  nurse required, pending-outcome-1`` would all be legitimate.
-  
-  Tags beginning with an exclamation mark (!) are reserved for future use by the
-  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
-  
-
-----------
-
 .. _dfn-twb_pnpc_key:
 
 TWB Primary Nominated Professional Contact Key
@@ -4995,34 +4902,6 @@ The status of a recommendation out made by the Service Provider on behalf of a c
   **Purpose/context**
   Program monitoring, service planning, funding and accountability.
   Measurement of waiting times.
-  
-
-----------
-
-.. _dfn-twb_recommendation_out_tags:
-
-TWB Recommendation Out - Tags
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-List of tags for TWB Recommendation Out.
-
-:Field name: twb_recommendation_out_tags
-
-:Data type: string
-
-:Required: no
-:Notes:
-  A comma separated list of tags.
-  
-  Organisations can use this field to tag records in order to partition them as
-  per local requirements.
-  
-  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
-  nurse required, pending-outcome-1`` would all be legitimate.
-  
-  Tags beginning with an exclamation mark (!) are reserved for future use by the
-  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
   
 
 ----------
@@ -5188,33 +5067,6 @@ I woke up feeling fresh and rested
   :9: Not stated / Missing
 :Notes:
   When reporting total score use ‘9 - Not stated / Missing’ 
-  
-
-----------
-
-.. _dfn-who5_raw_score:
-
-WHO-5 - Raw Score
-^^^^^^^^^^^^^^^^^
-
-The WHO-5 raw score.
-
-:Field name: who5_raw_score
-
-:Data type: integer
-
-:Required: yes
-
-:Domain:
-  0 - 25, 99 = Not stated / Missing
-:Notes:
-  The WHO-5 Raw score is calculated by totalling the figures of the five answers.
-  The raw score ranges from 0 to 25, 0 representing worst possible and
-  25 representing best possible quality of life.
-  
-  For the Raw score, the missing value used should be 99.
-  
-  When reporting individual item scores use ‘99 - Not stated / Missing’
   
 
 ----------

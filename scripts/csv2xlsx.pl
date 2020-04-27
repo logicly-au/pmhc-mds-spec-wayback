@@ -35,64 +35,94 @@ unless (defined($csv_dir)) {
 
 my %csvfiles;
 my $t = tie( %csvfiles, 'Tie::IxHash' );
-my $workbook;
-if ($delete) {
-  %csvfiles = (
-      'Clients'          => "$csv_dir/clients-delete.csv",
-      'Episodes'         => "$csv_dir/episodes-delete.csv",
-      'Service Contacts' => "$csv_dir/service-contacts-delete.csv",
-      'K10+'             => "$csv_dir/k10p-delete.csv",
-      'K5'               => "$csv_dir/k5-delete.csv",
-      'SDQ'              => "$csv_dir/sdq-delete.csv",
-      'Practitioners'    => "$csv_dir/practitioners-delete.csv",
-  );
 
-  # Create a new Excel workbook
-  $workbook  = Excel::Writer::XLSX->new( "$csv_dir/pmhc-upload-delete.xlsx" );
-} else {
-  %csvfiles = (
-      'Clients'          => "$csv_dir/clients.csv",
-      'Episodes'         => "$csv_dir/episodes.csv",
-      'Service Contacts' => "$csv_dir/service-contacts.csv",
-      'K10+'             => "$csv_dir/k10p.csv",
-      'K5'               => "$csv_dir/k5.csv",
-      'SDQ'              => "$csv_dir/sdq.csv",
-      'Practitioners'    => "$csv_dir/practitioners.csv",
-  );
+%csvfiles = (
+    'Metadata'                => "metadata",
+    'Organisations'           => "organisations",
+    'Clients'                 => "clients",
+    'Episodes'                => "episodes",
+    'TWB Episodes'            => "twb-episodes",
+    'TWB PNPCs'               => "twb-pnpcs",
+    'TWB Critical Incidents'  => "twb-critical-incidents",
+    'TWB Recommendation Outs' => "twb-recommendation-outs",
+    'Collection Occasions'    => "collection-occasions",
+    'K10+'                    => "k10p",
+    'K5'                      => "k5",
+    'SDQ'                     => "sdq",
+    'WHO-5'                   => "who5",
+    'SIDAS'                   => "sidas",
+    'TWB Plans'               => "twb-plans",
+    'TWB NIs'                 => "twb-nis",
+    'Service Contacts'        => "service-contacts",
+    'Practitioners'           => "practitioners",
+);
 
-  # Create a new Excel workbook
-  $workbook  = Excel::Writer::XLSX->new( "$csv_dir/pmhc-upload.xlsx" );
-}
-
-# Create a new CSV parsing object
-my $csv = Text::CSV_XS->new;
-
-foreach my $file ( keys( %csvfiles ) ) {
-  # Add a worksheet
-  my $worksheet = $workbook->add_worksheet( $file );
-
-  # Open the Comma Separated Variable file
-  print STDERR "CSV file: " . $csvfiles{$file} . "\n";
-  open( CSVFILE, $csvfiles{$file} ) or die "$ARGV[0]: $!";
-
-  # Row and column are zero indexed
-  my $row = 0;
-
-  while (<CSVFILE>) {
-    if ( $csv->parse($_) ) {
-      my @Fld = $csv->fields;
-
-      my $col = 0;
-      foreach my $token (@Fld) {
-          $worksheet->write( $row, $col, $token );
-          $col++;
-      }
-      $row++;
-    } else {
-      my $err = $csv->error_input;
-      print "Text::CSV_XS parse() failed on argument: ", $err, "\n";
-    }
-  }
-}
+make_workbooks();
+make_delete_workbook();
 
 exit( 0 );
+
+sub make_workbooks {
+  foreach my $worksheet ( keys( %csvfiles ) ) {
+    my $filename = 'WAYBACK-3-0-' . $csvfiles{$worksheet} . '.xlsx';
+    create_workbook ( $filename, $worksheet );
+  }
+
+  return;
+}
+
+sub make_delete_workbook {
+  my %delete_csvfiles = %csvfiles;
+  my $worksheet = 'TWB Episodes';
+  $csvfiles{$worksheet} = "twb-episodes-delete";
+  my $filename = 'WAYBACK-3-0-' . $csvfiles{$worksheet} . '.xlsx';
+  create_workbook( $filename, $worksheet );
+}
+
+sub create_workbook {
+
+  my ( $filename, $active_worksheet ) = ( @_ );
+
+  print STDERR "Filename: " . $filename . "\n";
+  # Create a new Excel workbook
+  my $workbook  = Excel::Writer::XLSX->new( "$csv_dir/$filename" );
+
+  # Create a new CSV parsing object
+  my $csv = Text::CSV_XS->new;
+
+  foreach my $worksheet_name ( keys( %csvfiles ) ) {
+    # Add a worksheet
+    my $worksheet = $workbook->add_worksheet( $worksheet_name );
+
+    # Open the Comma Separated Variable file
+    my $csvfile = "$csv_dir/" . $csvfiles{$worksheet_name} . ".csv";
+    print STDERR "CSV file: $csvfile\n";
+    open( CSVFILE, $csvfile ) or die "$ARGV[0]: $!";
+
+    # Row and column are zero indexed
+    my $row = 0;
+
+    while (<CSVFILE>) {
+      if ( $csv->parse($_) ) {
+        my @Fld = $csv->fields;
+
+        my $col = 0;
+        foreach my $token (@Fld) {
+          $worksheet->write( $row, $col, $token );
+          $col++;
+        }
+        $row++;
+      } else {
+        my $err = $csv->error_input;
+        print "Text::CSV_XS parse() failed on argument: ", $err, "\n";
+      }
+    }
+  }
+
+  print "Active worksheet: $active_worksheet\n";
+  my $worksheet = $workbook->get_worksheet_by_name( $active_worksheet );
+  $worksheet->activate();
+  $workbook->close();
+
+  return;
+}

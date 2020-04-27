@@ -105,20 +105,6 @@
     },
     "required": true
   },{
-    "name": "who5_raw_score",
-    "titles": [ "who5_raw_score" ],
-    "dc:title" : "WHO-5 - Raw Score",
-    "schema:description": "The WHO-5 raw score.",
-    "schema:disambiguatingDescription": "table/measure/who5/raw-score.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "null": "99",
-    "datatype": {
-      "base": "integer",
-      "minimum": 0,
-      "maximum": 25
-      }
-  },{
     "name": "who5_tags",
     "titles": [ "who5_tags" ],
     "dc:title" : "WHO-5 - Tags",

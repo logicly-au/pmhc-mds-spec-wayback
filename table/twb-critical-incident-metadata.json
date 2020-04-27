@@ -70,17 +70,6 @@
     },
     "required": true,
     "schema:dateMissingUnknown": "9999-09-09"
-  },{
-    "name": "twb_critical_incident_tags",
-    "titles": [ "twb_critical_incident_tags" ],
-    "dc:title" : "TWB Critical Incident - Tags",
-    "schema:description": "List of tags for the TWB Critical Incident.",
-    "schema:disambiguatingDescription": "type/tags.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "string"
-      }
   }],
   "primaryKey": [ "organisation_path", "twb_critical_incident_key" ],
   "foreignKeys": [{

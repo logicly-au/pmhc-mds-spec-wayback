@@ -15,6 +15,3 @@
 "`TWB PNPC - Date`_ (twb_pnpc_date)
 
 ",date,yes,"The date of contact between a service provider and the clients primary nominated professional."
-"`TWB PNPC - Tags`_ (twb_pnpc_tags)
-
-",string,"—","List of tags for the TWB PNPC."
