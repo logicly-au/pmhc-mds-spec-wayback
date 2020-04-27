@@ -3877,6 +3877,14 @@ The main type of service provided in the service contact, as represented by the 
 
 :Domain:
   :0: No contact took place
+  :1: Assessment
+  :2: Structured psychological intervention
+  :3: Other psychological intervention
+  :4: Clinical care coordination/liaison
+  :5: Clinical nursing services
+  :6: Child or youth specific assistance NEC
+  :7: Suicide prevention specific assistance NEC
+  :8: Cultural specific assistance NEC
   :9: Psychosocial support
 :Notes:
   Describes the main type of service delivered in the contact, selected from a
