@@ -150,17 +150,6 @@
       "base": "string"
     },
     "required": true
-  },{
-    "name": "twb_episode_tags",
-    "titles": [ "twb_episode_tags" ],
-    "dc:title" : "TWB Episode - Tags",
-    "schema:description": "List of tags for the TWB Episode.",
-    "schema:disambiguatingDescription": "type/tags.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "string"
-      }
   }],
   "primaryKey": [ "organisation_path", "episode_key" ],
   "foreignKeys": [{

@@ -53,9 +53,6 @@
 :4: Most of the time
 :5: All of the time
 :9: Not stated / Missing"
-"`WHO-5 - Raw Score`_ (who5_raw_score)
-
-",integer,yes,"0 - 25, 99 = Not stated / Missing"
 "`WHO-5 - Tags`_ (who5_tags)
 
 ",string,"—","List of tags for the collection occasion."

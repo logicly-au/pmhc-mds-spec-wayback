@@ -235,7 +235,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#sidas-question-5">SIDAS - Question 5</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sidas-tags">SIDAS - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-critical-incident-date">TWB Critical Incident - Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-critical-incident-tags">TWB Critical Incident - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-critical-incident-type">TWB Critical Incident - Type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-critical-incident-key">TWB Critical Incident Key</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-eligibility-type">TWB Episode - Eligibility Type</a></li>
@@ -246,7 +245,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional">TWB Episode - Primary Nominated Professional</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional-consent-date">TWB Episode - Primary Nominated Professional Consent Date</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-sexual-orientation">TWB Episode - Sexual Orientation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-transgender-status">TWB Episode - Transgender Status</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-veteran">TWB Episode - Veteran</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-ni-tags">TWB NI - Tags</a></li>
@@ -257,11 +255,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#twb-plan-key">TWB Plan Key</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-pnpc-date">TWB PNPC - Date</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-pnpc-reason">TWB PNPC - Reason</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-pnpc-tags">TWB PNPC - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-primary-nominated-professional-contact-key">TWB Primary Nominated Professional Contact Key</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out-provider-type">TWB Recommendation Out - Provider Type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out-status">TWB Recommendation Out - Status</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out-tags">TWB Recommendation Out - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out-key">TWB Recommendation Out Key</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#value">Value</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#who-5-question-1">WHO-5 - Question 1</a></li>
@@ -269,7 +265,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#who-5-question-3">WHO-5 - Question 3</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#who-5-question-4">WHO-5 - Question 4</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#who-5-question-5">WHO-5 - Question 5</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#who-5-raw-score">WHO-5 - Raw Score</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#who-5-tags">WHO-5 - Tags</a></li>
 </ul>
 </li>
@@ -696,11 +691,6 @@ following table:</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-episode-tags">TWB Episode - Tags</a> (twb_episode_tags)</td>
-<td>string</td>
-<td>—</td>
-<td>List of tags for the TWB Episode.</td>
-</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -758,11 +748,6 @@ following table:</p>
 <td>date</td>
 <td>yes</td>
 <td>The date of contact between a service provider and the clients primary nominated professional.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-pnpc-tags">TWB PNPC - Tags</a> (twb_pnpc_tags)</td>
-<td>string</td>
-<td>—</td>
-<td>List of tags for the TWB PNPC.</td>
 </tr>
 </tbody>
 </table>
@@ -825,11 +810,6 @@ following table:</p>
 <td>date</td>
 <td>yes</td>
 <td>The date of the critical incident.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-critical-incident-tags">TWB Critical Incident - Tags</a> (twb_critical_incident_tags)</td>
-<td>string</td>
-<td>—</td>
-<td>List of tags for the TWB Critical Incident.</td>
 </tr>
 </tbody>
 </table>
@@ -993,11 +973,6 @@ following table:</p>
 </table>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-recommendation-out-tags">TWB Recommendation Out - Tags</a> (twb_recommendation_out_tags)</td>
-<td>string</td>
-<td>—</td>
-<td>List of tags for TWB Recommendation Out.</td>
-</tr>
 </tbody>
 </table>
 <hr class="docutils" />
@@ -1058,25 +1033,7 @@ following table:</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
-<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Assessment</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Structured psychological intervention</td>
-</tr>
-<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Other psychological intervention</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Clinical care coordination/liaison</td>
-</tr>
-<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Clinical nursing services</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Child or youth specific assistance NEC</td>
-</tr>
-<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Suicide prevention specific assistance NEC</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">Cultural specific assistance NEC</td>
-</tr>
 <tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Psychosocial support</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">ATAPS</td>
 </tr>
 </tbody>
 </table>
@@ -3191,12 +3148,7 @@ collection occasion.</p>
 </table>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#who-5-raw-score">WHO-5 - Raw Score</a> (who5_raw_score)</td>
-<td>integer</td>
-<td>yes</td>
-<td>0 - 25, 99 = Not stated / Missing</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#who-5-tags">WHO-5 - Tags</a> (who5_tags)</td>
+<tr class="row-even"><td><a class="reference internal" href="#who-5-tags">WHO-5 - Tags</a> (who5_tags)</td>
 <td>string</td>
 <td>—</td>
 <td>List of tags for the collection occasion.</td>
@@ -8805,31 +8757,13 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">0:</th><td class="field-body">No contact took place</td>
 </tr>
-<tr class="field-even field"><th class="field-name">1:</th><td class="field-body">Assessment</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body">Structured psychological intervention</td>
-</tr>
-<tr class="field-even field"><th class="field-name">3:</th><td class="field-body">Other psychological intervention</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">4:</th><td class="field-body">Clinical care coordination/liaison</td>
-</tr>
-<tr class="field-even field"><th class="field-name">5:</th><td class="field-body">Clinical nursing services</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">6:</th><td class="field-body">Child or youth specific assistance NEC</td>
-</tr>
-<tr class="field-even field"><th class="field-name">7:</th><td class="field-body">Suicide prevention specific assistance NEC</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">8:</th><td class="field-body">Cultural specific assistance NEC</td>
-</tr>
 <tr class="field-even field"><th class="field-name">9:</th><td class="field-body">Psychosocial support</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">98:</th><td class="field-body">ATAPS</td>
 </tr>
 </tbody>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Describes the main type of service delivered in the contact, selected from a
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Describes the main type of service delivered in the contact, selected from a
 defined list of categories.  Service providers are required
 to report on Service Type for all Service Contacts.</p>
 <dl class="last docutils">
@@ -9095,36 +9029,6 @@ Requires services to record the date and time of when a critical incident was re
 <p class="last"><strong>Purpose/context</strong>
 Program monitoring, service planning, funding and accountability.
 Measurement of waiting times.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
-<div class="section" id="twb-critical-incident-tags">
-<span id="dfn-twb-critical-incident-tags"></span><h3>TWB Critical Incident - Tags<a class="headerlink" href="#twb-critical-incident-tags" title="Permalink to this headline">¶</a></h3>
-<p>List of tags for the TWB Critical Incident.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_critical_incident_tags</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">no</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
-<p>Organisations can use this field to tag records in order to partition them as
-per local requirements.</p>
-<p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
-<span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
-<p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -9568,36 +9472,6 @@ Program monitoring, service planning.</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-episode-tags">
-<span id="dfn-twb-episode-tags"></span><h3>TWB Episode - Tags<a class="headerlink" href="#twb-episode-tags" title="Permalink to this headline">¶</a></h3>
-<p>List of tags for the TWB Episode.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_episode_tags</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">no</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
-<p>Organisations can use this field to tag records in order to partition them as
-per local requirements.</p>
-<p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
-<span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
-<p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
 <div class="section" id="twb-episode-transgender-status">
 <span id="dfn-twb-transgender-status"></span><h3>TWB Episode - Transgender Status<a class="headerlink" href="#twb-episode-transgender-status" title="Permalink to this headline">¶</a></h3>
 <p>Do you have a transgender history, experience, or identity?</p>
@@ -10032,36 +9906,6 @@ Program monitoring, service planning, funding and accountability.</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-pnpc-tags">
-<span id="dfn-twb-pnpc-tags"></span><h3>TWB PNPC - Tags<a class="headerlink" href="#twb-pnpc-tags" title="Permalink to this headline">¶</a></h3>
-<p>List of tags for the TWB PNPC.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_pnpc_tags</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">no</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
-<p>Organisations can use this field to tag records in order to partition them as
-per local requirements.</p>
-<p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
-<span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
-<p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
 <div class="section" id="twb-primary-nominated-professional-contact-key">
 <span id="dfn-twb-pnpc-key"></span><h3>TWB Primary Nominated Professional Contact Key<a class="headerlink" href="#twb-primary-nominated-professional-contact-key" title="Permalink to this headline">¶</a></h3>
 <p>This is a number or code assigned to each primary nominated professional contact. The Primary Nominated Professional Contact Key is unique and stable for each Primary Nominated Professional Contact at the level of the organisation.</p>
@@ -10256,36 +10100,6 @@ Requires services to record the status of a recommendation out to an alternative
 <p class="last"><strong>Purpose/context</strong>
 Program monitoring, service planning, funding and accountability.
 Measurement of waiting times.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
-<div class="section" id="twb-recommendation-out-tags">
-<span id="dfn-twb-recommendation-out-tags"></span><h3>TWB Recommendation Out - Tags<a class="headerlink" href="#twb-recommendation-out-tags" title="Permalink to this headline">¶</a></h3>
-<p>List of tags for TWB Recommendation Out.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_recommendation_out_tags</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">no</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">A comma separated list of tags.</p>
-<p>Organisations can use this field to tag records in order to partition them as
-per local requirements.</p>
-<p>Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-spaces, and <code class="docutils literal notranslate"><span class="pre">!</span></code>. Leading and trailing spaces will be stripped. e.g. <code class="docutils literal notranslate"><span class="pre">priority!,</span>
-<span class="pre">nurse</span> <span class="pre">required,</span> <span class="pre">pending-outcome-1</span></code> would all be legitimate.</p>
-<p class="last">Tags beginning with an exclamation mark (!) are reserved for future use by the
-Department. e.g. <code class="docutils literal notranslate"><span class="pre">!reserved,</span> <span class="pre">!</span> <span class="pre">reserved,</span> <span class="pre">!department-use-only</span></code>.</p>
 </td>
 </tr>
 </tbody>
@@ -10545,36 +10359,6 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">When reporting total score use ‘9 - Not stated / Missing’</p>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
-<div class="section" id="who-5-raw-score">
-<span id="dfn-who5-raw-score"></span><h3>WHO-5 - Raw Score<a class="headerlink" href="#who-5-raw-score" title="Permalink to this headline">¶</a></h3>
-<p>The WHO-5 raw score.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">who5_raw_score</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">integer</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><p class="first">0 - 25, 99 = Not stated / Missing</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The WHO-5 Raw score is calculated by totalling the figures of the five answers.
-The raw score ranges from 0 to 25, 0 representing worst possible and
-25 representing best possible quality of life.</p>
-<p>For the Raw score, the missing value used should be 99.</p>
-<p class="last">When reporting individual item scores use ‘99 - Not stated / Missing’</p>
 </td>
 </tr>
 </tbody>
