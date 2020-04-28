@@ -32,7 +32,7 @@ Data release and confidentiality
 
 All data collection and reporting requirements are required to comply with
 relevant Commonwealth, State and Territory Information Privacy and Health
-Records regulations. Clients will be informed that some de-identified of the
+Records regulations. Clients will be informed that some de-identified portions of the
 information collected through The Way Back Support Service will be utilised
 for Commonwealth, State and Territory planning and statistical purposes.
 Appropriate consent and ethics approval processes will be adhered to.

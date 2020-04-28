@@ -106,17 +106,16 @@ See :ref:`twb-episode-data-elements` for the data elements for TWB-Episode.
 Service Contact
 ---------------
 
-PMHC Service Contact data linked to an :ref:`key-concepts-episode` will be used in TWB.
+Service Contact data linked to an :ref:`key-concepts-episode` will be used in TWB.
 
-.. _key-concepts-outcome-collection-occasion:
+.. _key-concepts-collection-occasion:
 
-Outcome Collection Occasion
----------------------------
+Collection Occasion
+-------------------
 
 A Collection Occasion is defined as an occasion during an Episode of Care when
-the required outcome measures are to be collected. At a minimum, collection of
-outcome data is required at both Episode Start and Episode End, but may be more
-frequent if clinically indicated and agreed by the client.
+the required Service Activities are required to be collected. At a minimum, collection
+is required at both Episode Start and Episode End.
 
 TWB will allow the following data records to be collected at a collection occasion:
 

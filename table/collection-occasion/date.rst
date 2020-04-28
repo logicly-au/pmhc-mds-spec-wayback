@@ -4,8 +4,8 @@ of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.
 
-If the date the measure was given is unknown, 09099999 should be used.
+If the date the activity was performed is unknown, 09099999 should be used.
 
-- The measure date must not be before 1st January 2016.
+- The collection date must not be before 1st January 2016.
 
-- The measure date must not be in the future.
+- The collection date must not be in the future.

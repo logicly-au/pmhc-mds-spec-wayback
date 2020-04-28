@@ -16,8 +16,6 @@ review and update of a safety plan should be recorded.
 
 **2 - Support Plan**
 
-Mandatory when Episode TWB consent type = 1
-
 A support plan articulates:
 
 * the client’s **needs** as assessed using the Support Tools
@@ -40,12 +38,6 @@ Service Exit. Each review must be documented.
 All Way Back service providers must work with their clients to collaboratively
 develop a support plan that articulates:
 
-* The client’s needs based on the NI
+* The client’s needs
 * The client’s goals in response to needs identified
 * Proposed actions, referrals and interventions
-
-The support plan must be reviewed on a regular basis and at a minimum at the following points of service participation:
-
-* At the start of The Way Back
-* At the six-week or mid-point of the expected support period
-* At exit from the service

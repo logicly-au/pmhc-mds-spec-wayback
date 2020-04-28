@@ -1,21 +1,6 @@
 Definitions
 -----------
 
-.. _dfn-client_key:
-
-Client Key
-^^^^^^^^^^
-
-This is a number or code assigned to each individual referred to the commissioned organisation. The client identifier is unique and stable for each individual at the level of the PMHC top level organisation.
-
-:Field name: client_key
-
-:Data type: string (2,50)
-
-:Required: yes
-
-----------
-
 .. _dfn-collection_occasion_date:
 
 Collection Occasion - Date
@@ -35,11 +20,11 @@ The date of the collection occasion.
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
   
-  If the date the measure was given is unknown, 09099999 should be used.
+  If the date the activity was performed is unknown, 09099999 should be used.
   
-  - The measure date must not be before 1st January 2016.
+  - The collection date must not be before 1st January 2016.
   
-  - The measure date must not be in the future.
+  - The collection date must not be in the future.
   
 
 ----------
@@ -49,7 +34,7 @@ The date of the collection occasion.
 Collection Occasion - Reason
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The reason for the collection of the outcome measures on the identified Outcome Collection Occasion.
+The reason for the collection of the service activities on the identified Collection Occasion.
 
 :Field name: reason_for_collection
 
@@ -62,13 +47,28 @@ The reason for the collection of the outcome measures on the identified Outcome 
   :2: Review
   :3: Episode end
 :Notes:
+  At a minimum, collection of outcome measures and plans are required at the
+  Episode Start, Review and End.
+  
+  TWB will allow the following data records to be collected at a collection occasion:
+  
+  *	Safety Plan
+  *	Support Plan
+  *	Needs Identification
+  * Outcome Measures (K10, WHO-5, SIDAS )
+  
   1 - Episode start
-    Refers to an outcome measure undertaken at the beginning of an Episode of Care. For the purposes of the PMHC MDS protocol, episodes may start at the point of first Service Contact with a new client who has not been seen previously by the organisation, or a first contact for a new Episode of Care for a client who has received services from the organisation in a previous Episode of Care that has been completed.
+    Refers to a service activity undertaken at the beginning of an Episode of
+    Care. For the purposes of the PMHC MDS protocol, episodes may start at the
+    point of first Service Contact with a new client who has not been seen
+    previously by the organisation, or a first contact for a new Episode of
+    Care for a client who has received services from the organisation in a
+    previous Episode of Care that has been completed.
   
   2 - Review
-    Refers to an outcome measure undertaken during the course of an Episode of
-    Care that post-dates Episode Start and pre-dates Episode End. An outcome
-    measure may be undertaken at Review for a number of reasons including:
+    Refers to a service activity undertaken during the course of an Episode of
+    Care that post-dates Episode Start and pre-dates Episode End. A service
+    activity may be undertaken at Review for a number of reasons including:
   
     - in response to critical clinical events or changes in the client’s mental
       health status;
@@ -76,7 +76,7 @@ The reason for the collection of the outcome measures on the identified Outcome 
     - other situations where a review may be indicated.
   
   3 - Episode end
-    Refers to the outcome measures collected at the end of an Episode of Care.
+    Refers to the service activities collected at the end of an Episode of Care.
   
 
 ----------
@@ -114,7 +114,7 @@ List of tags for the collection occasion.
 Collection Occasion Key
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.
+This is a number or code assigned to each collection occasion of service activities. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.
 
 :Field name: collection_occasion_key
 
@@ -127,514 +127,12 @@ This is a number or code assigned to each collection occasion of outcome measure
 
 ----------
 
-.. _dfn-additional_diagnosis:
-
-Episode - Additional Diagnosis
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The main additional condition or complaint co-existing with the Principal Diagnosis or arising during the episode of care.
-
-:Field name: additional_diagnosis
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :000: No additional diagnosis
-  :100: Anxiety disorders (ATAPS)
-  :101: Panic disorder
-  :102: Agoraphobia
-  :103: Social phobia
-  :104: Generalised anxiety disorder
-  :105: Obsessive-compulsive disorder
-  :106: Post-traumatic stress disorder
-  :107: Acute stress disorder
-  :108: Other anxiety disorder
-  :200: Affective (Mood) disorders (ATAPS)
-  :201: Major depressive disorder
-  :202: Dysthymia
-  :203: Depressive disorder NOS
-  :204: Bipolar disorder
-  :205: Cyclothymic disorder
-  :206: Other affective disorder
-  :300: Substance use disorders (ATAPS)
-  :301: Alcohol harmful use
-  :302: Alcohol dependence
-  :303: Other drug harmful use
-  :304: Other drug dependence
-  :305: Other substance use disorder
-  :400: Psychotic disorders (ATAPS)
-  :401: Schizophrenia
-  :402: Schizoaffective disorder
-  :403: Brief psychotic disorder
-  :404: Other psychotic disorder
-  :501: Separation anxiety disorder
-  :502: Attention deficit hyperactivity disorder (ADHD)
-  :503: Conduct disorder
-  :504: Oppositional defiant disorder
-  :505: Pervasive developmental disorder
-  :506: Other disorder of childhood and adolescence
-  :601: Adjustment disorder
-  :602: Eating disorder
-  :603: Somatoform disorder
-  :604: Personality disorder
-  :605: Other mental disorder
-  :901: Anxiety symptoms
-  :902: Depressive symptoms
-  :903: Mixed anxiety and depressive symptoms
-  :904: Stress related
-  :905: Other
-  :999: Missing
-:Notes:
-  Additional Diagnosis gives information on conditions that are significant in
-  terms of treatment required and resources used during the episode of care.
-  Additional diagnoses should be interpreted as conditions that affect client
-  management in terms of requiring any of the following:
-  
-  -	Commencement, alteration or adjustment of therapeutic treatment
-  -	Diagnostic procedures
-  -	Increased clinical care and/or monitoring
-  
-  Where the client one or more comorbid mental health conditions in addition to
-  the condition coded as the Principal Diagnosis, record the main condition as
-  the Additional Diagnosis. 
-  
-  The following responses have been added to allow mapping of ATAPS data to PMHC
-  format.
-  
-  - 100: Anxiety disorders (ATAPS)
-  - 200: Affective (Mood) disorders (ATAPS)
-  - 300: Substance use disorders (ATAPS)
-  - 400: Psychotic disorders (ATAPS)
-  
-  *Note: These four codes should only be used for Episodes that are migrated
-  from ATAPS MDS sources that cannot be described by any other Diagnosis.
-  It is expected that the majority of Episodes delivered to clients
-  from 1st July, 2017 can be assigned to other diagnoses.*
-  
-  These responses will only be allowed on episodes where the original
-  ATAPS referral date was before 1 July 2017
-  
-  These responses will only be allowed on episodes with the !ATAPS flag.
-  
-  For further notes on the recording of diagnosis codes see Principal Diagnosis.
-  
-
-----------
-
-.. _dfn-client_postcode:
-
-Episode - Area of usual residence, postcode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The Australian postcode of the client.
-
-:Field name: client_postcode
-
-:Data type: string
-
-:Required: yes
-:Notes:
-  A valid Australian postcode or 9999 if the postcode is unknown or the client
-  has not provided sufficient information to confirm their current residential
-  address.
-  
-  The full list of Australian Postcodes can be found at `Australia Post
-  <http://www.auspost.com.au/>`_.
-  
-  When collecting the postcode of a person's usual place of residence, the ABS
-  recommends that 'usual' be defined as: 'the place where the person has or
-  intends to live for 6 months or more, or the place that the person regards as
-  their main residence, or where the person has no other residence, the place
-  they currently reside.'
-  
-  Postcodes are deemed valid if they are in the range 0200-0299, 0800-9999.
-  
-
-:Source: `METeOR ID 429894 <http://meteor.aihw.gov.au/content/index.phtml/itemId/429894>`__
-
-----------
-
-.. _dfn-client_consent:
-
-Episode - Client Consent to Anonymised Data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indication that the client has consented to their anonymised data being provided to the Department of Health for statistical purposes in planning and improving mental health services.
-
-:Field name: client_consent
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-:Notes:
-  1 - Yes
-      The client has consented to their anonymised data being provided to the
-      Department of Health for statistical purposes in planning and improving
-      mental health services. The client's data will be included in reports and
-      extracts accessible by the Department of Health.
-  
-  2 - No
-      The client has not consented to their anonymised data being provided to the
-      Department of Health for statistical purposes in planning and improving
-      mental health services. The client's data will be excluded from reports and
-      extracts accessible by the Department of Health.
-  
-  All data can be uploaded, regardless of consent flag.
-  
-  All data will be available to PHNs to extract for their own internal data evaluation purposes.
-  
-
-----------
-
-.. _dfn-episode_completion_status:
-
-Episode - Completion Status
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indication of the completion status of an *Episode of Care*.
-
-:Field name: episode_completion_status
-
-:Data type: string
-
-:Required: no
-
-:Domain:
-  :0: Episode open
-  :1: Episode closed - treatment concluded
-  :2: Episode closed administratively - client could not be contacted
-  :3: Episode closed administratively - client declined further contact
-  :4: Episode closed administratively - client moved out of area
-  :5: Episode closed administratively - client referred elsewhere
-  :6: Episode closed administratively - other reason
-:Notes:
-  In order to use code 1 (Episode closed - treatment concluded) the client must have at least one service contact. All other codes may be applicable even when the client has no service contacts.
-  
-  0 or Blank - Episode open
-    The client still requires treatment and further service contacts are
-    required.
-  
-  1 - Episode closed - treatment concluded
-    No further service contacts are planned as the client no longer requires
-    treatment.
-  
-  2 - Episode closed administratively - client could not be contacted
-    Further service contacts were planned but the client could no longer be
-    contacted.
-  
-  3 - Episode closed administratively - client declined further contact
-    Further service contacts were planned but the client declined further treatment.
-  
-  4 - Episode closed administratively - client moved out of area
-    Further service contacts were planned but the client moved out of the area
-    without a referral elsewhere. Where a client was referred somewhere else
-    *Episode Completion Status* should be recorded as code 5 (Episode closed
-    administratively - client referred elsewhere).
-  
-  5 - Episode closed administratively - client referred elsewhere
-    Where a client still requires treatment, but a different service has been
-    deemed appropriate or a client has moved out of the area so has moved to a
-    different provider.
-  
-  6 - Episode closed administratively - other reason
-    Where a client is no longer being given treatment but the reason for
-    conclusion is not covered above.
-  
-  *Episode Completion Status* interacts with two other data items in the PMHC MDS
-  - *Service Contact - Final*, and *Episode End Date*.
-  
-  *Service Contact - Final*
-    Collection of data for *Service Contacts* includes a *Service Contact -
-    Final* item that requires the service provider to indicate whether further
-    Service Contacts are planned. Where this item is recorded as 'no further
-    services planned', the *Episode Completion Status* should be recorded as code
-    1 (Episode closed - treatment concluded) code 3 (Episode closed
-    administratively - client declined further contact), code 4 (Episode closed
-    administratively - client moved out of area), or code 5 (Episode closed
-    administratively - client referred elsewhere). Selection of coding option
-    should be that which best describes the circumstances of the episode ending.
-  
-  *Episode End Date*
-    Where a Final Service Contact is recorded *Episode End Date* should be
-    recorded as the date of the final Service Contact.
-  
-
-----------
-
-.. _dfn-continuity_of_support:
-
-Episode - Continuity of Support
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Is the client a Continuity of Support Client?
-
-:Field name: continuity_of_support
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Not stated/inadequately described
-:Notes:
-  *Introduced 1 July 2019*
-  
-  Similar challenges to Psychosocial Support are faced with the Continuity of
-  Support initiative. The important issues here are:
-  
-  * The proposed changes to be made for the Psychosocial Support measure should
-    accommodate most requirements for Continuity of Support clients.
-  * The one important difference is that CoS clients are a highly specific
-    cohort – those currently in Commonwealth funded PIR, PHaMS and D2DL measures
-    found to be ineligible for the NDIS.  These clients should be readily identified.
-  * CoS clients need to have a marker in the PMHC MDS data that allows the cohort
-    to be identified for separate reporting.
-  
-  1 - Yes
-    The person was a client of the Personal Helpers and Mentors (PHaMs),
-    Partners In recovery (PIR) and/or Day to Day Living (D2DL) programs and has
-    been found to be ineligible for the National Disability Insurance Scheme
-    (NDIS).
-  
-  2 - No
-  
-  9 - Not stated/inadequately described
-  
-  It is expected that most **new clients** recorded as CoS clients will have
-  their episodes classified as Psychosocial Support.
-  
-  For existing clients who have an active (not closed) episode of care who
-  become CoS clients after 1 July 2019, there is no need to close the current
-  episode.  PHNs may however wish to change the Principal Focus of Treatment
-  Plan to Psychosocial Support if this better reflects the overall episode goals.
-  Alternatively, PHNs may choose to close the existing episode and commence a
-  new episode.  This decision can be made locally.
-  
-  Services delivered under the new CoS arrangements should be coded as
-  Psychosocial Support in the Service Contact Type field. This is not intended
-  to restrict CoS clients to only Psychosocial Support services.  Contact Types
-  delivered to CoS clients can vary across the full range (e.g., they could
-  receive psychological therapy-type service contacts).  However, where services
-  are delivered under the CoS arrangements it is essential that they be coded
-  as  Psychosocial Support contacts to enable monitoring and reporting of the
-  new CoS measure.
-  
-  As the new measure does not commence until 1 July 2019, all clients in
-  active episodes prior to that date should be coded as ‘No’.  This will be
-  implemented by Strategic Data in the PMHC MDS as a system-wide change for all
-  existing clients in active episodes as at 30 June 2019.  Changes made to those
-  existing clients from 1 July 2019 can then be made locally.
-  
-
-----------
-
-.. _dfn-employment_participation:
-
-Episode - Employment Participation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether a person in paid employment is employed full-time or part-time, as represented by a code.
-
-:Field name: employment_participation
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Full-time
-  :2: Part-time
-  :3: Not applicable - not in the labour force
-  :9: Not stated/inadequately described
-:Notes:
-  Applies only to people whose labour force status is employed. (See metadata
-  item Labour Force Status, for a definition of 'employed'). Paid employment
-  includes persons who performed some work for wages or salary, in cash or in
-  kind, and persons temporarily absent from a paid employment job but who
-  retained a formal attachment to that job.
-  
-  1 - Full-time
-    Employed persons are working full-time if they:
-    (a) usually work 35 hours or more in a week (in all paid jobs) or
-    (b) although usually working less than 35 hours a week, actually worked 35
-    hours or more during the reference period.
-  
-  2 - Part-time
-    Employed persons are working part-time if they usually work less than 35
-    hours a week (in all paid jobs) and either did so during the reference
-    period, or were not at work in the reference period.
-  
-  9 - Not stated / inadequately described
-    Is not to be used on primary collection forms. It is primarily for use in
-    administrative collections when transferring data from data sets where the
-    item has not been collected.
-  
-
-:Source: `METeOR ID 269950 <http://meteor.aihw.gov.au/content/index.phtml/itemId/269950>`__
-
-----------
-
-.. _dfn-episode_end_date:
-
-Episode - End Date
-^^^^^^^^^^^^^^^^^^
-
-The date on which an *Episode of Care* is formally or administratively ended
-
-:Field name: episode_end_date
-
-:Data type: date
-
-:Required: no
-:Notes:
-  - The episode end date must not be before 1st January 2016.
-  
-  - The episode end date must not be in the future.
-  
-  An *Episode of Care* may be ended in one of two ways:
-  
-  - clinically, consequent upon conclusion of treatment for the client and
-    discharge from care; or
-  
-  - administratively (statistically), where contact with the client has been lost
-    by the organisation prior to completion of treatment or other factors
-    prevented treatment being completed.
-  
-  *Episode End Date* interacts with two other data items in the PMHC MDS - *Service
-  Contact - Final*, and *Episode Completion Status*.
-  
-  *Service Contact - Final*
-    Collection of data for *Service Contacts* includes a *Service Contact - Final*
-    item that requires the service provider to indicate whether further *Service
-    Contacts* are planned. Where this item is recorded as ‘no further services
-    planned’, the date of the final *Service Contact* should be recorded as the
-    *Episode End Date*.
-  
-  *Episode Completion Status*
-    This field should be recorded as 'Episode closed treatment concluded' when a
-    *Service Contact - Final* is recorded. The *Episode Completion Status* field
-    can also be manually recorded to allow for administrative closure of episodes
-    (e.g., contact has been lost with a client over a prolonged period - see
-    *Episode Completion Status* for additional guidance). Where an episode is
-    closed administratively, the *Episode End Date* should be recorded as the
-    date on which the organisation made the decision to close episode.
-  
-
-:Source: `METeOR ID 614094 <http://meteor.aihw.gov.au/content/index.phtml/itemId/614094>`__
-
-----------
-
-.. _dfn-mental_health_treatment_plan:
-
-Episode - GP Mental Health Treatment Plan Flag
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indication of whether a client has a GP mental health treatment plan. A GP should be involved in a referral where appropriate however a mental health treatment plan is not mandatory.
-
-:Field name: mental_health_treatment_plan
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :3: Unknown
-  :9: Not stated/inadequately described
-
-----------
-
-.. _dfn-health_care_card:
-
-Episode - Health Care Card
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indication of whether the person is a current holder of a Health Care Card that entitles them to arrange of concessions for Government funded health services.
-
-:Field name: health_care_card
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :3: Not Known
-  :9: Not stated
-:Notes:
-  Details on the Australian Government Health Care Card are available at:
-  https://www.humanservices.gov.au/customer/services/centrelink/health-care-card
-  
-
-:Source: `METeOR ID 605149 <http://meteor.aihw.gov.au/content/index.phtml/itemId/605149>`__
-
-----------
-
-.. _dfn-homelessness:
-
-Episode - Homelessness Flag
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-An indication of whether the client has been homeless in the 4 weeks prior to the current service episode.
-
-:Field name: homelessness
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Sleeping rough or in non-conventional accommodation
-  :2: Short-term or emergency accommodation
-  :3: Not homeless
-  :9: Not stated / Missing
-:Notes:
-  1	- Sleeping rough or in non-conventional accommodation
-    Includes sleeping on the streets, in a park, in cars or railway carriages,
-    under bridges or other similar ‘rough’ accommodation
-  
-  2	- Short-term or emergency accommodation
-    Includes sleeping in short-term accommodation, emergency accommodation, due
-    to a lack of other options. This may include refuges; crisis shelters; couch
-    surfing; living temporarily with friends and relatives; insecure
-    accommodation on a short term basis; emergency accommodation arranged in
-    hotels, motels etc by a specialist homelessness agency.
-  
-  3	- Not homeless
-    Includes sleeping in own accommodation/rental accommodation or living with
-    friends or relatives on a stable, long term basis
-  
-  9	- Not stated / Missing
-    Not stated / Missing
-  
-  Select the code that best fits the client’s sleeping arrangements over the
-  preceding 4 weeks. Where multiple options apply (e.g., client has experienced
-  more than one of the sleeping arrangements over the previous 4 weeks) the
-  following coding hierarchy should be followed:
-  
-  - If code 1 applied at any time over the 4 week period, code 1
-  - If code 2 but not code 1 applied at any time over the 4 week period, code 2
-  - Otherwise Code 3 applies
-  
-
-----------
-
 .. _dfn-episode_key:
 
 Episode Key
 ^^^^^^^^^^^
 
-This is a number or code assigned to each episode. The Episode Key is unique and stable for each episode at the level of the organisation.
+This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.
 
 :Field name: episode_key
 
@@ -650,669 +148,6 @@ This is a number or code assigned to each episode. The Episode Key is unique and
   
   A recommended approach for the creation of Episode Keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
-  
-
-----------
-
-.. _dfn-labour_force_status:
-
-Episode - Labour Force Status
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The self-reported status the person currently has in being either in the labour force (employed/unemployed) or not in the labour force, as represented by a code.
-
-:Field name: labour_force_status
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Employed
-  :2: Unemployed
-  :3: Not in the Labour Force
-  :9: Not stated/inadequately described
-:Notes:
-  1 - Employed
-    Employed persons are those aged 15 years and over who met one of the following
-    criteria during the reference week:
-  
-    - Worked for one hour or more for pay, profit, commission or payment in kind,
-      in a job or business or son a farm (employees and owner managers of
-      incorporated or unincorporated enterprises).
-    - Worked for one hour or more without pay in a family business or on a farm
-      (contributing family workers).
-    - Were employees who had a job but were not at work and were:
-  
-      - away from work for less than four weeks up to the end of the reference
-        week; or
-      - away from work for more than four weeks up to the end of the reference
-        week and
-      - received pay for some or all of the four week period to the end of the
-        reference week; or
-      - away from work as a standard work or shift arrangement; or
-      - on strike or locked out; or
-      - on workers’ compensation and expected to return to their job.
-    - Were owner managers who had a job, business or farm, but were not at work.
-  
-  2 - Unemployed
-    Unemployed persons are those aged 15 years and over who were not employed
-    during the reference week, and:
-  
-    - had actively looked for full time or part time work at any time in the
-      four weeks up to the end of the reference week and were available for
-      work in the reference week; or
-    - were waiting to start a new job within four weeks from the end of the
-      reference week and could have started in the reference week if the job
-      had been available then.
-  
-  Actively looked for work includes:
-  
-    - written, telephoned or applied to an employer for work;
-    - had an interview with an employer for work;
-    - answered an advertisement for a job;
-    - checked or registered with a Job Services Australia provider or any other
-      employment agency;
-    - taken steps to purchase or start your own business;
-    - advertised or tendered for work; and
-    - contacted friends or relatives in order to obtain work.
-  
-  3 - Not in the labour force
-    Persons not in the labour force are those aged 15 years and over who were
-    not in the categories employed or unemployed, as defined, during the
-    reference week. They include people who undertook unpaid household duties
-    or other voluntary work only, were retired, voluntarily inactive and those
-    permanently unable to work.
-  
-
-:Source: `METeOR ID 621450 <http://meteor.aihw.gov.au/content/index.phtml/itemId/621450>`__
-
-----------
-
-.. _dfn-marital_status:
-
-Episode - Marital Status
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-A person's current relationship status in terms of a couple relationship or, for those not in a couple relationship, the existence of a current or previous registered marriage, as represented by a code.
-
-:Field name: marital_status
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Never married
-  :2: Widowed
-  :3: Divorced
-  :4: Separated
-  :5: Married (registered and de facto)
-  :6: Not stated/inadequately described
-:Notes:
-  Refers to the current marital status of a person.
-  
-  2 - Widowed
-    This code usually refers to registered marriages but when self-reported may
-    also refer to de facto marriages.
-  
-  4 - Separated
-    This code refers to registered marriages but when self-reported may also
-    refer to de facto marriages.
-  
-  5 - Married (registered and de facto)
-    Includes people who have been divorced or widowed but have since
-    re-married, and should be generally accepted as applicable to all de facto
-    couples, including of the same sex.
-  
-  6 - Not stated/inadequately described
-    This code is not for use on primary collection forms. It is primarily for
-    use in administrative collections when transferring data from data sets
-    where the item has not been collected.
-  
-
-:Source: `METeOR ID 291045 <http://meteor.aihw.gov.au/content/index.phtml/itemId/291045>`__
-
-----------
-
-.. _dfn-medication_antidepressants:
-
-Episode - Medication - Antidepressants (N06A)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed antidepressants for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_antidepressants
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N06A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the depressive disorders.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N06A
-  
-
-----------
-
-.. _dfn-medication_antipsychotics:
-
-Episode - Medication - Antipsychotics (N05A)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed antipsychotics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_antipsychotics
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05A class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the treatment of psychotic
-  disorders.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05A
-  
-
-----------
-
-.. _dfn-medication_anxiolytics:
-
-Episode - Medication - Anxiolytics (N05B)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed anxiolytics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_anxiolytics
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed for the treatment of disorders
-  associated with anxiety and tension.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05B
-  
-
-----------
-
-.. _dfn-medication_hypnotics:
-
-Episode - Medication - Hypnotics and sedatives (N05C)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed hypnotics and sedatives for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_hypnotics
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N05C class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed to have mainly sedative or hypnotic
-  actions. Hypnotic drugs are used to induce sleep and treat severe insomnia.
-  Sedative drugs are prescribed to reduce excitability or anxiety.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N05C
-  
-
-----------
-
-.. _dfn-medication_psychostimulants:
-
-Episode - Medication - Psychostimulants and nootropics (N06B)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Whether the client is taking prescribed psychostimulants and nootropics for a mental health condition as assessed at intake assessment, as represented by a code.
-
-:Field name: medication_psychostimulants
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-:Notes:
-  The N06B class of drugs a therapeutic subgroup of the Anatomical Therapeutic
-  Chemical Classification System, a system of alphanumeric codes developed by the
-  World Health Organisation (WHO) for the classification of drugs and other
-  medical products. It covers drugs designed to attention-deficit hyperactivity
-  disorder (ADHD) and to improve impaired cognitive abilities.
-  
-  Details of drugs included in the category can be found here:
-  http://www.whocc.no/atc_ddd_index/?code=N06B
-  
-
-----------
-
-.. _dfn-ndis_participant:
-
-Episode - NDIS Participant
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Is the client a participant in the National Disability Insurance Scheme?, as represented by a code.
-
-:Field name: ndis_participant
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Not stated/inadequately described
-
-----------
-
-.. _dfn-principal_diagnosis:
-
-Episode - Principal Diagnosis
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The Principal Diagnosis is the diagnosis established after study to be chiefly responsible for occasioning the client's care during the current Episode of Care.
-
-:Field name: principal_diagnosis
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :100: Anxiety disorders (ATAPS)
-  :101: Panic disorder
-  :102: Agoraphobia
-  :103: Social phobia
-  :104: Generalised anxiety disorder
-  :105: Obsessive-compulsive disorder
-  :106: Post-traumatic stress disorder
-  :107: Acute stress disorder
-  :108: Other anxiety disorder
-  :200: Affective (Mood) disorders (ATAPS)
-  :201: Major depressive disorder
-  :202: Dysthymia
-  :203: Depressive disorder NOS
-  :204: Bipolar disorder
-  :205: Cyclothymic disorder
-  :206: Other affective disorder
-  :300: Substance use disorders (ATAPS)
-  :301: Alcohol harmful use
-  :302: Alcohol dependence
-  :303: Other drug harmful use
-  :304: Other drug dependence
-  :305: Other substance use disorder
-  :400: Psychotic disorders (ATAPS)
-  :401: Schizophrenia
-  :402: Schizoaffective disorder
-  :403: Brief psychotic disorder
-  :404: Other psychotic disorder
-  :501: Separation anxiety disorder
-  :502: Attention deficit hyperactivity disorder (ADHD)
-  :503: Conduct disorder
-  :504: Oppositional defiant disorder
-  :505: Pervasive developmental disorder
-  :506: Other disorder of childhood and adolescence
-  :601: Adjustment disorder
-  :602: Eating disorder
-  :603: Somatoform disorder
-  :604: Personality disorder
-  :605: Other mental disorder
-  :901: Anxiety symptoms
-  :902: Depressive symptoms
-  :903: Mixed anxiety and depressive symptoms
-  :904: Stress related
-  :905: Other
-  :999: Missing
-:Notes:
-  Diagnoses are grouped into 7 major categories:
-  
-  - 1xx - Anxiety disorders
-  - 2xx - Affective (Mood) disorders
-  - 3xx - Substance use disorders
-  - 4xx - Psychotic disorder
-  - 5xx - Disorders with onset usually occurring in childhood and adolescence not listed elsewhere
-  - 6xx - Other mental disorder
-  - 9xx - No formal mental disorder but subsyndromal problem
-  
-  The Principal Diagnosis should be determined by the treating or supervising
-  clinical practitioner who is responsible for providing, or overseeing, services
-  delivered to the client during their current episode of care. Each episode of
-  care must have a Principal Diagnosis recorded and may have an Additional
-  Diagnoses. In some instances the client’s Principal Diagnosis may not be clear
-  at initial contact and require a period of contact before a reliable diagnosis
-  can be made. If a client has more than one diagnosis, the Principal Diagnosis
-  should reflect the main presenting problem. Any secondary diagnosis should be
-  recorded under the Additional Diagnosis field.
-  
-  The coding options developed for the PMHC MDS have been selected to balance
-  comprehensiveness and brevity. They comprise a mix of the most prevalent mental
-  disorders in the Australian adult, child and adolescent population,
-  supplemented by less prevalent conditions that may be experienced by clients of
-  PHN-commissioned mental health services. The diagnosis options are based on an
-  abbreviated set of clinical terms and groupings specified in the Diagnostic and
-  Statistical Manual of Mental Disorders Fourth Edition (DSM-IV-TR). These code
-  list summarises the approximate 300 unique mental health disorder codes in the
-  full DSM-IV to a set to 9 major categories, and 37 individual codes. Diagnoses
-  are grouped under higher level categories, based on the DSM-IV. Code numbers
-  have been assigned specifically for the PMHC MDS to create a logical ordering
-  but are capable of being mapped to both DSM-IV and ICD-10 codes.
-  
-  Options for recording Principal Diagnosis include the broad category ‘No formal
-  mental disorder but subsyndromal problem’ (codes commencing with 9). These
-  codes should be used for clients who present with problems that do not meet
-  threshold criteria for a formal diagnosis - for example, people experiencing
-  subsyndromal symptoms who may be at risk of progressing to a more severe
-  symptom level.
-  
-  Reference: Diagnostic and Statistical Manual of Mental Disorders, Fourth
-  Edition, Text Revision. Copyright 2000 American Psychiatric Association.
-  
-  The following responses have been added to allow mapping of ATAPS data to PMHC 
-  format.
-  
-  - 100: Anxiety disorders (ATAPS)
-  - 200: Affective (Mood) disorders (ATAPS)
-  - 300: Substance use disorders (ATAPS)
-  - 400: Psychotic disorders (ATAPS)
-  
-  *Note: These four codes should only be used for Episodes that are migrated 
-  from ATAPS MDS sources that cannot be described by any other Diagnosis. 
-  It is expected that the majority of Episodes delivered to clients 
-  from 1st July, 2017 can be assigned to other diagnoses.*
-  
-  These responses will only be allowed on episodes where the original 
-  ATAPS referral date was before 1 July 2017
-  
-  These responses will only be allowed on episodes with the !ATAPS flag.
-  
-
-----------
-
-.. _dfn-principal_focus:
-
-Episode - Principal Focus of Treatment Plan
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The range of activities that best describes the overall services intended to be delivered to the client throughout the course of the episode. For most clients, this will equate to the activities that account for most time spent by the service provider.
-
-:Field name: principal_focus
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Psychological therapy
-  :2: Low intensity psychological intervention
-  :3: Clinical care coordination
-  :4: Complex care package
-  :5: Child and youth-specific mental health services
-  :6: Indigenous-specific mental health services
-  :7: Other
-  :8: Psychosocial Support
-:Notes:
-  Describes the main focus of the services to be delivered to the client for the
-  current Episode of Care.
-  
-  For TWB episodes only the following value can be used:
-  
-  7 - Other
-     The treatment plan for the client is primarily based around services
-     that cannot be described by other categories. This response must be used for
-     Way Back services.
-  
-  Where a client is being delivered TWB services and accessing another
-  support service within the same Service Provider the full ranges of responses
-  allowed for standard PMHC MDS episodes is available.
-  
-
-----------
-
-.. _dfn-referral_date:
-
-Episode - Referral Date
-^^^^^^^^^^^^^^^^^^^^^^^
-
-The date the referrer made the referral.
-
-:Field name: referral_date
-
-:Data type: date
-
-:Required: no
-:Notes:
-  For Date fields, data must be recorded in compliance with the standard format
-  used across the National Health Data Dictionary; specifically, dates must be
-  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
-  necessary to pad out a value. For instance, 13th March 2008 would appear as
-  13032008.
-  
-  - The referral date must not be before 1st January 2014.
-  
-  - The referral date must not be in the future.
-  
-
-----------
-
-.. _dfn-referrer_organisation_type:
-
-Episode - Referrer Organisation Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Type of organisation in which the referring professional is based.
-
-:Field name: referrer_organisation_type
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: General Practice
-  :2: Medical Specialist Consulting Rooms
-  :3: Private practice
-  :4: Public mental health service
-  :5: Public Hospital
-  :6: Private Hospital
-  :7: Emergency Department
-  :8: Community Health Centre
-  :9: Drug and Alcohol Service
-  :10: Community Support Organisation NFP
-  :11: Indigenous Health Organisation
-  :12: Child and Maternal Health
-  :13: Nursing Service
-  :14: Telephone helpline
-  :15: Digital health service
-  :16: Family Support Service
-  :17: School
-  :18: Tertiary Education institution
-  :19: Housing service
-  :20: Centrelink
-  :21: Other
-  :98: N/A - Self referral
-  :99: Not stated
-:Notes:
-  Medical Specialist Consulting Rooms includes private medical practitioner rooms
-  in public or private hospital or other settings.
-  
-  Public mental health service refers to a state- or territory-funded specialised
-  mental health services (i.e., specialised mental health care delivered in
-  public acute and psychiatric hospital settings, community mental health care
-  services, and s specialised residential mental health care services).
-  
-  Not applicable should only be selected in instances of Self referral.
-  
-
-----------
-
-.. _dfn-referrer_profession:
-
-Episode - Referrer Profession
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Profession of the provider who referred the client.
-
-:Field name: referrer_profession
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: General Practitioner
-  :2: Psychiatrist
-  :3: Obstetrician
-  :4: Paediatrician
-  :5: Other Medical Specialist
-  :6: Midwife
-  :7: Maternal Health Nurse
-  :8: Psychologist
-  :9: Mental Health Nurse
-  :10: Social Worker
-  :11: Occupational therapist
-  :12: Aboriginal Health Worker
-  :13: Educational professional
-  :14: Early childhood service worker
-  :15: Other
-  :98: N/A - Self referral
-  :99: Not stated
-:Notes:
-  New arrangements for some services delivered in primary mental health care
-  allows clients to refer themselves for treatment. Therefore, 'Self'
-  is a response option included within 'Referrer profession'.
-  
-
-----------
-
-.. _dfn-income_source:
-
-Episode - Source of Cash Income
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The source from which a person derives the greatest proportion of his/her income, as represented by a code.
-
-:Field name: income_source
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :0: N/A - Client aged less than 16 years
-  :1: Disability Support Pension
-  :2: Other pension or benefit (not superannuation)
-  :3: Paid employment
-  :4: Compensation payments
-  :5: Other (e.g. superannuation, investments etc.)
-  :6: Nil income
-  :7: Not known
-  :9: Not stated/inadequately described
-:Notes:
-  This data standard is not applicable to person's aged less than 16 years.
-  
-  This item refers to the source by which a person derives most (equal to or
-  greater than 50%) of his/her income. If the person has multiple sources of
-  income and none are equal to or greater than 50%, the one which contributes
-  the largest percentage should be counted.
-  
-  This item refers to a person's own main source of income, not that of a
-  partner or of other household members. If it is difficult to determine a
-  'main source of income' over the reporting period (i.e. it may vary over
-  time) please report the main source of income during the reference week.
-  
-  Code 7 'Not known' should only be recorded when it has not been possible for
-  the service user or their carer/family/advocate to provide the information
-  (i.e. they have been asked but do not know).
-  
-
-:Source: `METeOR ID 386449 <http://meteor.aihw.gov.au/content/index.phtml/itemId/386449>`__
-
-----------
-
-.. _dfn-suicide_referral_flag:
-
-Episode - Suicide Referral Flag
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Identifies those individuals where a recent history of suicide attempt, or suicide risk, was a factor noted in the referral that underpinned the person's needs for assistance at entry to the episode, as represented by a code.
-
-:Field name: suicide_referral_flag
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Yes
-  :2: No
-  :9: Unknown
-
-----------
-
-.. _dfn-episode_tags:
-
-Episode - Tags
-^^^^^^^^^^^^^^
-
-List of tags for the episode.
-
-:Field name: episode_tags
-
-:Data type: string
-
-:Required: no
-:Notes:
-  A comma separated list of tags.
-  
-  Organisations can use this field to tag records in order to partition them as
-  per local requirements.
-  
-  Tags can contain lower case letters (or will get lowercased), numbers, dashes,
-  spaces, and ``!``. Leading and trailing spaces will be stripped. e.g. ``priority!,
-  nurse required, pending-outcome-1`` would all be legitimate.
-  
-  Tags beginning with an exclamation mark (!) are reserved for future use by the
-  Department. e.g. ``!reserved, ! reserved, !department-use-only``.
   
 
 ----------
@@ -4197,7 +3032,7 @@ This is a number or code assigned to each critical incident. The Critical Incide
 TWB Episode - Eligibility Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The criteria by which the client is eligible for service.
+The criteria by which a client is assessed as being eligible for the Way Back Support service.
 
 :Field name: twb_eligibility_type
 
@@ -4214,7 +3049,7 @@ The criteria by which the client is eligible for service.
   1 - Primary Eligibility Criteria
     The primary eligibility criteria are met when a person is referred to
     The Way Back after presenting to a hospital emergency department or
-    community mental health service12 following a suicide attempt. A suicide
+    community mental health service following a suicide attempt. A suicide
     attempt is defined as a “non-fatal self-directed potentially injurious
     behaviour with any intent to die as a result of the behaviour”. A suicide
     attempt may or may not result in physical injury and may or may not result
@@ -4226,7 +3061,7 @@ The criteria by which the client is eligible for service.
     mental health service in or following a suicidal crisis and whose risk of
     suicide is identified as imminent. A suicidal crisis is defined as a
     person experiencing distress, suicidal thoughts and articulating an intent
-    to die. A suicidal crisis may or may not result in a hospital admission. 
+    to die. A suicidal crisis may or may not result in a hospital admission.
   
   **Reporting requirements**
   Mandatory – All clients
@@ -4259,7 +3094,10 @@ The status of whether the client has consented to be contacted by external evalu
   :2: Not consented to be contacted by external evaluators
   :9: Not stated/Inadequately described
 :Notes:
-  
+  **Guide for use**
+  If the client consents to be contacted for the evaluation, this does not mean
+  they have to take part in any activities and can choose to withdraw their
+  consent at any time.
   
 
 ----------
@@ -4282,8 +3120,8 @@ Do you wish to disclose intersex status?
   :2: No
   :3: Does not want to disclose
 :Notes:
-  **Note**
-  Intersex: The term intersex is used to describe people who are born with sex
+  **Guide for use**
+  The term intersex is used to describe people who are born with sex
   characteristics, including genitals, gonads and chromosome patterns, that do
   not fit typical binary notions of male and female bodies
   
@@ -4323,7 +3161,7 @@ For clients referred to The Way Back for a suicide attempt, what was the method 
 TWB Episode - Previous suicide attempts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?
+Has the client attempted suicide in the past 12 months or within their lifetime?
 
 :Field name: twb_previous_suicide_attempts
 
@@ -4338,12 +3176,10 @@ Has the client made a suicide attempt and/or experienced suicidal ideation in th
   :7: Not known
   :9: Not stated/Inadequately described
 :Notes:
-  1 – Suicide attempt
-    A non-fatal, self-directed, potentially injurious behaviour with an intent
-    to die as a result of the behaviour; might not result in injury.
-  
-  2 – Suicidal ideation
-    Thinking about, considering, or planning suicide.
+  **Guide for use**
+  A suicide attempt is described as a non-fatal, self-directed, potentially
+  injurious behaviour with an intent to die as a result of the behaviour;
+  might not result in injury.
   
 
 ----------
@@ -4353,7 +3189,7 @@ Has the client made a suicide attempt and/or experienced suicidal ideation in th
 TWB Episode - Primary Nominated Professional
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The primary nominated professional of the client for contact regarding participation in the service.
+What is the profession of the primary professional nominated by the client? 
 
 :Field name: twb_primary_nominated_professional
 
@@ -4429,7 +3265,7 @@ What date did you receive consent from the client to contact their Primary Nomin
 TWB Episode - Sexual Orientation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-How do you describe your sexual orientation?
+How does the client describe their sexual orientation?
 
 :Field name: twb_sexual_orientation
 
@@ -4466,9 +3302,12 @@ Do you have a transgender history, experience, or identity?
   :2: No
   :3: Does not want to disclose
 :Notes:
-  **Note**
-  Transgender:  The term transgender is used to describe people whose gender
+  **Guide for use**
+  The term transgender is used to describe people whose gender
   identity does not align with the sex they were assigned at birth.
+  
+  Non-binary genders also fit under this umbrella term, as well as under
+  the term gender diverse. 
   
 
 ----------
@@ -4546,26 +3385,25 @@ The identified needs of the client at commencement or review of the service.
 :Required: yes
 
 :Domain:
-  :1: Self-care and diet (Incl. Self-Neglect)
-  :2: Mental Health
-  :3: Safety to Self/Others
-  :4: Accommodation
-  :5: Financial
-  :6: Daily Structure and Interests
-  :7: Stigma and Harassment
-  :8: Social Contacts
-  :9: Close Relationships (Incl. Carer, If Applicable)
-  :10: Language and Culture
-  :11: Physical Health and Disability
-  :12: Daily Living
-  :13: Employment
-  :14: Information About Condition and Treatment
-  :15: Alcohol and Drugs
-  :16: Childcare and Parenting
-  :17: Educational Needs (Incl. Literacy &  Numeracy)
-  :18: Transport
-  :19: Sexual Issues
-  :20: Spirituality
+  :1: Health (Physical)
+  :2: Self-esteem
+  :3: Mental Health Condition
+  :4: Home
+  :5: Education/Employment
+  :6: Sexual/Physical/Emotional Abuse
+  :7: Marital/De facto Relationship
+  :8: Financial Problems
+  :9: Sexual Identity/Orientation
+  :10: Sense of Self
+  :11: Loss of Hope
+  :12: Drugs/Alcohol
+  :13: Family History Mental Health Problems
+  :14: Family History Suicide /Attempt
+  :15: Other knowledge of suicide
+  :16: Grief and Loss
+  :17: Social support/sense of belonging
+  :18: Coping/problem solving ability
+  :19: Cultural identity
   :98: Other
   :99: Not stated/Inadequately described
   
@@ -4577,15 +3415,9 @@ The identified needs of the client at commencement or review of the service.
   needs of a client are identified. It provides the basis for the creation of a
   Support Plan and is considered a useful way to help understand client support
   needs and service goals.  The needs identified through this process should
-  inform the client’s goals and referrals to community-based services.
+  inform the client’s goals and recommendations to community-based services.
   
-  Needs identification can occur via phone, face-to-face interaction or written
-  survey intervention. However, Needs Identification is ongoing and as a client
-  receives care, other needs or circumstances may be identified which require
-  attention by other disciplines. External referral or re-entry onto the
-  waiting list to access the other disciplines may then occur. This question
-  allows for more than one response. The NI must be administered at a minimum
-  at the following points of service participation:
+  The NI must be administered at a minimum at the following points of service participation:
   
   * At the start of The Way Back
   * At the six-week or mid-point of the expected support period
@@ -4647,8 +3479,6 @@ The type of plan.
   
   **2 - Support Plan**
   
-  Mandatory when Episode TWB consent type = 1
-  
   A support plan articulates:
   
   * the client’s **needs** as assessed using the Support Tools
@@ -4671,15 +3501,9 @@ The type of plan.
   All Way Back service providers must work with their clients to collaboratively
   develop a support plan that articulates:
   
-  * The client’s needs based on the NI
+  * The client’s needs
   * The client’s goals in response to needs identified
   * Proposed actions, referrals and interventions
-  
-  The support plan must be reviewed on a regular basis and at a minimum at the following points of service participation:
-  
-  * At the start of The Way Back
-  * At the six-week or mid-point of the expected support period
-  * At exit from the service
   
 
 ----------
@@ -4759,9 +3583,13 @@ The date of contact between a service provider and the clients primary nominated
   Mandatory where Episode—Primary Nominated Professional =  1 - 12
   
   **Guide for use**
-  Requires services to record the date of each contact with the primary nominated professional identified by the client.
-  At a minimum written advice (email or letter) advising of the client’s participation in The Way Back Support Service must be sent to the primary nominated professional on commencement of the service and at service end.
-  The contact date is the date of the service provider initiates or responds to a communication with the primary nominated professional.
+  Requires services to record the date of each contact with the primary
+  nominated professional identified by the client. At a minimum written
+  advice (email or letter) advising of the client’s participation in The
+  Way Back Support Service must be sent to the primary nominated professional
+  within 3 business days of entry and exit of service. The contact date is the
+  date of the service provider initiates or responds to a communication with
+  the primary nominated professional.
   
   **Purpose/context**
   Program monitoring, service planning, funding and accountability.
@@ -4818,7 +3646,7 @@ This is a number or code assigned to each primary nominated professional contact
 TWB Recommendation Out - Provider Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The provider type of the recommendation out made for and on behalf of the client. 
+What type of external service(s) has the client been recommended to from The Way Back during their Episode of care?
 
 :Field name: twb_recommendation_out_provider_type
 
@@ -4896,7 +3724,7 @@ The provider type of the recommendation out made for and on behalf of the client
 TWB Recommendation Out - Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The status of a recommendation out made by the Service Provider on behalf of a client.
+What is the current status of external service recommendations made to the client?
 
 :Field name: twb_recommendation_out_status
 
