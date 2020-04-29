@@ -42,7 +42,6 @@ my $t = tie( %csvfiles, 'Tie::IxHash' );
     'Clients'                 => "clients",
     'Episodes'                => "episodes",
     'TWB Episodes'            => "twb-episodes",
-    'TWB PNPCs'               => "twb-pnpcs",
     'TWB Critical Incidents'  => "twb-critical-incidents",
     'TWB Recommendation Outs' => "twb-recommendation-outs",
     'Collection Occasions'    => "collection-occasions",

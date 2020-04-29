@@ -31,13 +31,7 @@ Current TWB Validations
    * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
    * and must not be in the future
 
-.. _twb-primary-nominated-professional-contact-current-validations:
-
-2. TWB Primary Nominated Professional Contact
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
-2. The :ref:`dfn-twb_pnpc_date`
+4. The :ref:`dfn-twb_primary_nominated_professional_contact_entry_date`
 
    * must not be before 1 January 2019
    * and must not be before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_
@@ -46,9 +40,19 @@ Current TWB Validations
    * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
    * and must not be in the future
 
+5. The :ref:`dfn-twb_primary_nominated_professional_contact_exit_date`
+
+   * must not be before 1 January 2019
+   * and must not be before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_
+   * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
+   * and must not be before :ref:`dfn-twb_primary_nominated_professional_contact_entry_date`
+   * and must not be after `Episode - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date>`_
+   * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
+   * and must not be in the future
+
 .. _twb-critical-incident-current-validations:
 
-3. TWB Critical Incident
+4. TWB Critical Incident
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
@@ -63,14 +67,14 @@ Current TWB Validations
 
 .. _twb-recommendation-out-current-validations:
 
-4. TWB Recommendation Out
+5. TWB Recommendation Out
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
 
 .. _collection-occasion-current-validations:
 
-5. Collection Occasion
+6. Collection Occasion
 ~~~~~~~~~~~~~~~~~~~~~~
 
 1. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
@@ -85,7 +89,7 @@ Current TWB Validations
 
 .. _k10p-current-validations:
 
-6. K10+
+7. K10+
 ~~~~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
@@ -95,7 +99,7 @@ Current TWB Validations
 
 .. _who-5-current-validations:
 
-7. WHO-5
+8. WHO-5
 ~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
@@ -105,7 +109,7 @@ Current TWB Validations
 
 .. _sidas-twb-current-validations:
 
-8. SIDAS
+9. SIDAS
 ~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
@@ -116,16 +120,16 @@ Current TWB Validations
 
 .. _twb-plan-current-validations:
 
-9. TWB-Plan
-~~~~~~~~~~~
+10. TWB-Plan
+~~~~~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
    MDS.
 
 .. _twb-ni-current-validations:
 
-5. TWB-NI
-~~~~~~~~~
+11. TWB-NI
+~~~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
    MDS.

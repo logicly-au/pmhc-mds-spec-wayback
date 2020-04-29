@@ -216,6 +216,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional">TWB Episode - Primary Nominated Professional</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional-consent-date">TWB Episode - Primary Nominated Professional Consent Date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional-contact-entry-date">TWB Episode - Primary Nominated Professional Contact Entry Date</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-episode-primary-nominated-professional-contact-exit-date">TWB Episode - Primary Nominated Professional Contact Exit Date</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-sexual-orientation">TWB Episode - Sexual Orientation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-transgender-status">TWB Episode - Transgender Status</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-episode-veteran">TWB Episode - Veteran</a></li>
@@ -225,9 +227,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#twb-plan-plan-type">TWB Plan - Plan Type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-plan-tags">TWB Plan - Tags</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-plan-key">TWB Plan Key</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-pnpc-date">TWB PNPC - Date</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-pnpc-reason">TWB PNPC - Reason</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-primary-nominated-professional-contact-key">TWB Primary Nominated Professional Contact Key</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out-provider-type">TWB Recommendation Out - Provider Type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out-status">TWB Recommendation Out - Status</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out-key">TWB Recommendation Out Key</a></li>
@@ -440,7 +439,6 @@ allowed for standard PMHC MDS episodes is available.</p>
 <p>The Way Back adds the following records on top of PMHC MDS current specifications:</p>
 <ul class="simple">
 <li>See <a class="reference internal" href="#twb-episode-data-elements"><span class="std std-ref">TWB-Episode data specifications</span></a> for Individual Services Data.</li>
-<li>See <a class="reference internal" href="#twb-pnpc-data-elements"><span class="std std-ref">TWB-Primary Nominated Professional Contact data specifications</span></a> for Primary Nominated Professional Contact Data.</li>
 <li>See <a class="reference internal" href="#twb-critical-incident-data-elements"><span class="std std-ref">TWB-Critical Incident data specifications</span></a> for Critical Incident Data.</li>
 <li>See <a class="reference internal" href="#twb-recommendation-out-data-elements"><span class="std std-ref">TWB-Recommendation Out data specifications</span></a> for Recommendation Out Data.</li>
 <li>See <a class="reference internal" href="#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion data specifications</span></a> for Collection Occasions.</li>
@@ -707,6 +705,16 @@ following table:</p>
 <td>yes</td>
 <td>What date did you receive consent from the client to contact their Primary Nominated Professional?</td>
 </tr>
+<tr class="row-even"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional-contact-entry-date">TWB Episode - Primary Nominated Professional Contact Entry Date</a> (twb_primary_nominated_professional_contact_entry_date)</td>
+<td>date</td>
+<td>yes</td>
+<td>What date did you contact their Primary Nominated Professional at entry to TWB?</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional-contact-exit-date">TWB Episode - Primary Nominated Professional Contact Exit Date</a> (twb_primary_nominated_professional_contact_exit_date)</td>
+<td>date</td>
+<td>yes</td>
+<td>What date did you contact their Primary Nominated Professional at exit from TWB?</td>
+</tr>
 <tr class="row-even"><td><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a> (twb_previous_suicide_attempts)</td>
 <td>string</td>
 <td>yes</td>
@@ -759,69 +767,11 @@ following table:</p>
 </table>
 <hr class="docutils" />
 </div>
-<div class="section" id="twb-primary-nominated-professional-contact">
-<span id="twb-pnpc-data-elements"></span><h4>TWB-Primary Nominated Professional Contact<a class="headerlink" href="#twb-primary-nominated-professional-contact" title="Permalink to this headline">¶</a></h4>
-<p>Primary Nominated Professional Contacts are managed by the provider organisations via upload or data entry.</p>
-<table border="1" class="docutils" id="id15">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Primary Nominated Professional Contact record layout</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Data Element (Field Name)</th>
-<th class="head">Type (min,max)</th>
-<th class="head">Required</th>
-<th class="head">Format / Values</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#organisation-path">Organisation Path</a> (organisation_path)</td>
-<td>string</td>
-<td>yes</td>
-<td>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-primary-nominated-professional-contact-key">TWB Primary Nominated Professional Contact Key</a> (twb_pnpc_key)</td>
-<td>string (2,50)</td>
-<td>yes</td>
-<td>This is a number or code assigned to each primary nominated professional contact. The Primary Nominated Professional Contact Key is unique and stable for each Primary Nominated Professional Contact at the level of the organisation.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#episode-key">Episode Key</a> (episode_key)</td>
-<td>string (2,50)</td>
-<td>yes</td>
-<td>This is a number or code assigned to each PMHC MDS episode. The Episode Key is unique and stable for each episode at the level of the organisation. This key must link to an existing episode within the PMHC MDS.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twb-pnpc-reason">TWB PNPC - Reason</a> (twb_pnpc_reason)</td>
-<td>string</td>
-<td>yes</td>
-<td><table class="first last docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Entry</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Exit</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#twb-pnpc-date">TWB PNPC - Date</a> (twb_pnpc_date)</td>
-<td>date</td>
-<td>yes</td>
-<td>The date of contact between a service provider and the clients primary nominated professional.</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
 <div class="section" id="twb-critical-incident">
 <span id="twb-critical-incident-data-elements"></span><h4>TWB-Critical Incident<a class="headerlink" href="#twb-critical-incident" title="Permalink to this headline">¶</a></h4>
 <p>Critical Incidents are managed by the provider organisations via upload or data entry.</p>
-<table border="1" class="docutils" id="id16">
-<caption><span class="caption-number">Table 4 </span><span class="caption-text">Critical Incident record layout</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id15">
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Critical Incident record layout</span><a class="headerlink" href="#id15" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -882,8 +832,8 @@ following table:</p>
 <div class="section" id="twb-recommendation-out">
 <span id="twb-recommendation-out-data-elements"></span><h4>TWB-Recommendation Out<a class="headerlink" href="#twb-recommendation-out" title="Permalink to this headline">¶</a></h4>
 <p>Recommendation Outs are managed by the provider organisations via upload or data entry.</p>
-<table border="1" class="docutils" id="id17">
-<caption><span class="caption-number">Table 5 </span><span class="caption-text">Recommendation Out record layout</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id16">
+<caption><span class="caption-number">Table 4 </span><span class="caption-text">Recommendation Out record layout</span><a class="headerlink" href="#id16" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1046,8 +996,8 @@ following table:</p>
 <p>See <a class="reference internal" href="key-concepts.html#key-concepts-service-contact"><span class="std std-ref">Service Contact</span></a> for definition of a service-contact.</p>
 <p>Service Contacts are managed by the provider organisations via upload or data entry.</p>
 <p>TWB adds an extra field <a class="reference internal" href="#dfn-funding-source"><span class="std std-ref">Service Contact - Funding Source</span></a> to the standard PMHC Service Contact.</p>
-<table border="1" class="docutils" id="id18">
-<caption><span class="caption-number">Table 6 </span><span class="caption-text">Service Contact record layout</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id17">
+<caption><span class="caption-number">Table 5 </span><span class="caption-text">Service Contact record layout</span><a class="headerlink" href="#id17" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1341,8 +1291,8 @@ following table:</p>
 <p>See <a class="reference internal" href="key-concepts.html#key-concepts-collection-occasion"><span class="std std-ref">Collection Occasion</span></a> for definition of a
 collection occasion.</p>
 <p>Collection occasions are managed by the provider organisations via upload or data entry.</p>
-<table border="1" class="docutils" id="id19">
-<caption><span class="caption-number">Table 7 </span><span class="caption-text">Collection Occasions record layout</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id18">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">Collection Occasions record layout</span><a class="headerlink" href="#id18" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1405,8 +1355,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="twb-plan">
 <span id="twb-plan-data-elements"></span><h4>TWB Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id20">
-<caption><span class="caption-number">Table 8 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id19">
+<caption><span class="caption-number">Table 7 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id19" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1462,8 +1412,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="twb-ni">
 <span id="twb-ni-data-elements"></span><h4>TWB NI<a class="headerlink" href="#twb-ni" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id21">
-<caption><span class="caption-number">Table 9 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id20">
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1558,8 +1508,8 @@ collection occasion.</p>
 </div>
 <div class="section" id="k10-measure">
 <span id="k10p-data-elements"></span><h4>K10+ Measure<a class="headerlink" href="#k10-measure" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id22">
-<caption><span class="caption-number">Table 10 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id21">
+<caption><span class="caption-number">Table 9 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1878,8 +1828,8 @@ collection occasion.</p>
 support service within the same Service Provider and K5 may be collected.</p>
 <p><strong>Please note:</strong> The format for reporting the K5 with TWB data is different than
 for standard PMHC MDS as explained at <a class="reference internal" href="upload-specification.html#twb-files-to-upload"><span class="std std-ref">Files or worksheets to upload</span></a>.</p>
-<table border="1" class="docutils" id="id23">
-<caption><span class="caption-number">Table 11 </span><span class="caption-text">K5 record layout</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id22">
+<caption><span class="caption-number">Table 10 </span><span class="caption-text">K5 record layout</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -2045,8 +1995,8 @@ for standard PMHC MDS as explained at <a class="reference internal" href="upload
 support service within the same Service Provider and SDQ may be collected.</p>
 <p><strong>Please note:</strong> The format for reporting the SDQ with TWB data is different than
 for standard PMHC MDS as explained at <a class="reference internal" href="upload-specification.html#twb-files-to-upload"><span class="std std-ref">Files or worksheets to upload</span></a>.</p>
-<table border="1" class="docutils" id="id24">
-<caption><span class="caption-number">Table 12 </span><span class="caption-text">SDQ record layout</span><a class="headerlink" href="#id24" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id23">
+<caption><span class="caption-number">Table 11 </span><span class="caption-text">SDQ record layout</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -3081,8 +3031,8 @@ for standard PMHC MDS as explained at <a class="reference internal" href="upload
 </div>
 <div class="section" id="who-5-measure">
 <span id="who5-data-elements"></span><h4>WHO-5 Measure<a class="headerlink" href="#who-5-measure" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id25">
-<caption><span class="caption-number">Table 13 </span><span class="caption-text">WHO-5 record layout</span><a class="headerlink" href="#id25" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id24">
+<caption><span class="caption-number">Table 12 </span><span class="caption-text">WHO-5 record layout</span><a class="headerlink" href="#id24" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -3248,8 +3198,8 @@ for standard PMHC MDS as explained at <a class="reference internal" href="upload
 </div>
 <div class="section" id="sidas-measure">
 <span id="sidas-data-elements"></span><h4>SIDAS Measure<a class="headerlink" href="#sidas-measure" title="Permalink to this headline">¶</a></h4>
-<table border="1" class="docutils" id="id26">
-<caption><span class="caption-number">Table 14 </span><span class="caption-text">SIDAS record layout</span><a class="headerlink" href="#id26" title="Permalink to this table">¶</a></caption>
+<table border="1" class="docutils" id="id25">
+<caption><span class="caption-number">Table 13 </span><span class="caption-text">SIDAS record layout</span><a class="headerlink" href="#id25" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -7909,6 +7859,75 @@ Program monitoring, service planning.</p>
 </table>
 <hr class="docutils" />
 </div>
+<div class="section" id="twb-episode-primary-nominated-professional-contact-entry-date">
+<span id="dfn-twb-primary-nominated-professional-contact-entry-date"></span><h3>TWB Episode - Primary Nominated Professional Contact Entry Date<a class="headerlink" href="#twb-episode-primary-nominated-professional-contact-entry-date" title="Permalink to this headline">¶</a></h3>
+<p>What date did you contact their Primary Nominated Professional at entry to TWB?</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_primary_nominated_professional_contact_entry_date</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
+used across the National Health Data Dictionary; specifically, dates must be
+of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+necessary to pad out a value. For instance, 13th March 2008 would appear as
+13032008.</p>
+<p>If a client does not wish for anyone to be advised please use the date 09099999.</p>
+<ul class="simple">
+<li>The entry date must not be before 1st January 2019.</li>
+<li>The entry date must not be in the future.</li>
+</ul>
+<p class="last"><strong>Purpose/context</strong>
+Program monitoring, service planning.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
+<div class="section" id="twb-episode-primary-nominated-professional-contact-exit-date">
+<span id="dfn-twb-primary-nominated-professional-contact-exit-date"></span><h3>TWB Episode - Primary Nominated Professional Contact Exit Date<a class="headerlink" href="#twb-episode-primary-nominated-professional-contact-exit-date" title="Permalink to this headline">¶</a></h3>
+<p>What date did you contact their Primary Nominated Professional at exit from TWB?</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_primary_nominated_professional_contact_exit_date</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
+used across the National Health Data Dictionary; specifically, dates must be
+of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+necessary to pad out a value. For instance, 13th March 2008 would appear as
+13032008.</p>
+<p>If a client does not wish for anyone to be advised please use the date 09099999.</p>
+<ul class="simple">
+<li>The exit date must not be before 1st January 2019.</li>
+<li>The exit date must not be in the future.</li>
+<li>The exit date must not be before the entry date.</li>
+</ul>
+<p class="last"><strong>Purpose/context</strong>
+Program monitoring, service planning.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</div>
 <div class="section" id="twb-episode-sexual-orientation">
 <span id="dfn-twb-sexual-orientation"></span><h3>TWB Episode - Sexual Orientation<a class="headerlink" href="#twb-episode-sexual-orientation" title="Permalink to this headline">¶</a></h3>
 <p>How does the client describe their sexual orientation?</p>
@@ -8285,112 +8304,6 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">yes</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">TWB Plan keys are case sensitive and must be valid unicode characters.</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
-<div class="section" id="twb-pnpc-date">
-<span id="dfn-twb-pnpc-date"></span><h3>TWB PNPC - Date<a class="headerlink" href="#twb-pnpc-date" title="Permalink to this headline">¶</a></h3>
-<p>The date of contact between a service provider and the clients primary nominated professional.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_pnpc_date</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">date</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">For Date fields, data must be recorded in compliance with the standard format
-used across the National Health Data Dictionary; specifically, dates must be
-of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
-necessary to pad out a value. For instance, 13th March 2008 would appear as
-13032008.</p>
-<p>If the date of the contact is unknown, 09099999 should be used.</p>
-<ul class="simple">
-<li>The contact date must not be before 1st January 2019.</li>
-<li>The contact date must not be in the future.</li>
-</ul>
-<p><strong>Reporting requirements</strong>
-Mandatory where Episode—Primary Nominated Professional =  1 - 12</p>
-<p><strong>Guide for use</strong>
-Requires services to record the date of each contact with the primary
-nominated professional identified by the client. At a minimum written
-advice (email or letter) advising of the client’s participation in The
-Way Back Support Service must be sent to the primary nominated professional
-within 3 business days of entry and exit of service. The contact date is the
-date of the service provider initiates or responds to a communication with
-the primary nominated professional.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning, funding and accountability.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
-<div class="section" id="twb-pnpc-reason">
-<span id="dfn-twb-pnpc-reason"></span><h3>TWB PNPC - Reason<a class="headerlink" href="#twb-pnpc-reason" title="Permalink to this headline">¶</a></h3>
-<p>The reason for the contact.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body"><p class="first">twb_pnpc_reason</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body"><p class="first">string</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">1:</th><td class="field-body">Entry</td>
-</tr>
-<tr class="field-even field"><th class="field-name">2:</th><td class="field-body">Exit</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first last docutils">
-<dt>1 - Entry</dt>
-<dd><p class="first last">Refers to a contact with the Primary Nominated Professional at entry to TWS.</p>
-</dd>
-<dt>2 - Exit</dt>
-<dd><p class="first last">Refers to a contact with the Primary Nominated Professional at exit from TWS.</p>
-</dd>
-</dl>
-</td>
-</tr>
-</tbody>
-</table>
-<hr class="docutils" />
-</div>
-<div class="section" id="twb-primary-nominated-professional-contact-key">
-<span id="dfn-twb-pnpc-key"></span><h3>TWB Primary Nominated Professional Contact Key<a class="headerlink" href="#twb-primary-nominated-professional-contact-key" title="Permalink to this headline">¶</a></h3>
-<p>This is a number or code assigned to each primary nominated professional contact. The Primary Nominated Professional Contact Key is unique and stable for each Primary Nominated Professional Contact at the level of the organisation.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Field name:</th><td class="field-body">twb_pnpc_key</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Data type:</th><td class="field-body">string (2,50)</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body">yes</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body">Primary Nominated Professional Contact keys are case sensitive and must be
-valid unicode characters.</td>
 </tr>
 </tbody>
 </table>

@@ -3260,6 +3260,68 @@ What date did you receive consent from the client to contact their Primary Nomin
 
 ----------
 
+.. _dfn-twb_primary_nominated_professional_contact_entry_date:
+
+TWB Episode - Primary Nominated Professional Contact Entry Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What date did you contact their Primary Nominated Professional at entry to TWB?
+
+:Field name: twb_primary_nominated_professional_contact_entry_date
+
+:Data type: date
+
+:Required: yes
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  If a client does not wish for anyone to be advised please use the date 09099999.
+  
+  - The entry date must not be before 1st January 2019.
+  
+  - The entry date must not be in the future.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  
+
+----------
+
+.. _dfn-twb_primary_nominated_professional_contact_exit_date:
+
+TWB Episode - Primary Nominated Professional Contact Exit Date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What date did you contact their Primary Nominated Professional at exit from TWB?
+
+:Field name: twb_primary_nominated_professional_contact_exit_date
+
+:Data type: date
+
+:Required: yes
+:Notes:
+  For Date fields, data must be recorded in compliance with the standard format
+  used across the National Health Data Dictionary; specifically, dates must be
+  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
+  necessary to pad out a value. For instance, 13th March 2008 would appear as
+  13032008.
+  
+  If a client does not wish for anyone to be advised please use the date 09099999.
+  
+  - The exit date must not be before 1st January 2019.
+  - The exit date must not be in the future.
+  - The exit date must not be before the entry date.
+  
+  **Purpose/context**
+  Program monitoring, service planning.
+  
+
+----------
+
 .. _dfn-twb_sexual_orientation:
 
 TWB Episode - Sexual Orientation
@@ -3550,93 +3612,6 @@ This is a number or code assigned to each instance of a TWB Plan. The TWB Plan K
 :Required: yes
 :Notes:
   TWB Plan keys are case sensitive and must be valid unicode characters.
-  
-
-----------
-
-.. _dfn-twb_pnpc_date:
-
-TWB PNPC - Date
-^^^^^^^^^^^^^^^
-
-The date of contact between a service provider and the clients primary nominated professional.
-
-:Field name: twb_pnpc_date
-
-:Data type: date
-
-:Required: yes
-:Notes:
-  For Date fields, data must be recorded in compliance with the standard format
-  used across the National Health Data Dictionary; specifically, dates must be
-  of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
-  necessary to pad out a value. For instance, 13th March 2008 would appear as
-  13032008.
-  
-  If the date of the contact is unknown, 09099999 should be used.
-  
-  - The contact date must not be before 1st January 2019.
-  
-  - The contact date must not be in the future.
-  
-  **Reporting requirements**
-  Mandatory where Episode—Primary Nominated Professional =  1 - 12
-  
-  **Guide for use**
-  Requires services to record the date of each contact with the primary
-  nominated professional identified by the client. At a minimum written
-  advice (email or letter) advising of the client’s participation in The
-  Way Back Support Service must be sent to the primary nominated professional
-  within 3 business days of entry and exit of service. The contact date is the
-  date of the service provider initiates or responds to a communication with
-  the primary nominated professional.
-  
-  **Purpose/context**
-  Program monitoring, service planning, funding and accountability.
-  
-
-----------
-
-.. _dfn-twb_pnpc_reason:
-
-TWB PNPC - Reason
-^^^^^^^^^^^^^^^^^
-
-The reason for the contact.
-
-:Field name: twb_pnpc_reason
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: Entry
-  :2: Exit
-:Notes:
-  1 - Entry
-    Refers to a contact with the Primary Nominated Professional at entry to TWS.
-  2 - Exit
-    Refers to a contact with the Primary Nominated Professional at exit from TWS.
-  
-
-----------
-
-.. _dfn-twb_pnpc_key:
-
-TWB Primary Nominated Professional Contact Key
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This is a number or code assigned to each primary nominated professional contact. The Primary Nominated Professional Contact Key is unique and stable for each Primary Nominated Professional Contact at the level of the organisation.
-
-:Field name: twb_pnpc_key
-
-:Data type: string (2,50)
-
-:Required: yes
-:Notes:
-  Primary Nominated Professional Contact keys are case sensitive and must be
-  valid unicode characters.
   
 
 ----------

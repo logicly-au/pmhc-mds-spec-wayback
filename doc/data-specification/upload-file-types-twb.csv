@@ -4,7 +4,6 @@ File Type,CSV filename,Excel worksheet name,Required
 :ref:`Clients <client-format>`,clients.csv,Clients,Optional
 :ref:`Episodes <episode-format>`,episodes.csv,Episodes,Optional
 :ref:`TWB Episodes <twb-episode-format>`,twb-episodes.csv,TWB Episodes,Required
-:ref:`TWB Primary Nominated Professional Contacts <twb-pnpc-format>`,twb-pnpcs.csv,TWB PNPCs,Required
 :ref:`TWB Critical Incidents <twb-critical-incident-format>`,twb-critical-incidents.csv,TWB Critical Incidents,Required
 :ref:`TWB Recommendation Outs <twb-recommendation-out-format>`,twb-recommendation-outs.csv,TWB Recommendation Outs,Required
 :ref:`Collection Occasions <collection-occasion-format>`,collection-occasions.csv,Collection Occasions,Required

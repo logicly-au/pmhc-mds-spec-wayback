@@ -10,7 +10,7 @@ https://docs.pmhc-mds.com/data-specification/identifier-management.html.
 Managing  Keys
 ---------------
 
-The :ref:`dfn-twb_pnpc_key`, :ref:`dfn-twb_critical_incident_key`,
+The :ref:`dfn-twb_critical_incident_key`,
 :ref:`dfn-twb_recommendation_out_key`, :ref:`dfn-collection_occasion_key` and
 :ref:`dfn-measure_key` will be created and managed by Provider Organisations.
 

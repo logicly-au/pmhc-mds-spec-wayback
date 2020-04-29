@@ -53,6 +53,12 @@
 "`TWB Episode - Primary Nominated Professional Consent Date`_ (twb_primary_nominated_professional_consent_date)
 
 ",date,yes,"What date did you receive consent from the client to contact their Primary Nominated Professional?"
+"`TWB Episode - Primary Nominated Professional Contact Entry Date`_ (twb_primary_nominated_professional_contact_entry_date)
+
+",date,yes,"What date did you contact their Primary Nominated Professional at entry to TWB?"
+"`TWB Episode - Primary Nominated Professional Contact Exit Date`_ (twb_primary_nominated_professional_contact_exit_date)
+
+",date,yes,"What date did you contact their Primary Nominated Professional at exit from TWB?"
 "`TWB Episode - Previous suicide attempts`_ (twb_previous_suicide_attempts)
 
 ",string,yes,":1: No

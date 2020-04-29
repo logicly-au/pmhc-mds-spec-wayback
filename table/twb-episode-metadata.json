@@ -127,6 +127,36 @@
     "required": true,
     "schema:dateMissingUnknown": "9999-09-09"
   },{
+    "name": "twb_primary_nominated_professional_contact_entry_date",
+    "titles": [ "twb_primary_nominated_professional_contact_entry_date" ],
+    "dc:title": "TWB Episode - Primary Nominated Professional Contact Entry Date",
+    "schema:description": "What date did you contact their Primary Nominated Professional at entry to TWB?",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional-contact-entry-date.rst",
+    "schema:dateCreated": "2020-04-21",
+    "schema:dateModified": "2020-04-21",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "twb_primary_nominated_professional_contact_exit_date",
+    "titles": [ "twb_primary_nominated_professional_contact_exit_date" ],
+    "dc:title": "TWB Episode - Primary Nominated Professional Contact Exit Date",
+    "schema:description": "What date did you contact their Primary Nominated Professional at exit from TWB?",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional-contact-exit-date.rst",
+    "schema:dateCreated": "2020-04-21",
+    "schema:dateModified": "2020-04-21",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
     "name": "twb_previous_suicide_attempts",
     "titles": [ "twb_previous_suicide_attempts" ],
     "dc:title": "TWB Episode - Previous suicide attempts",

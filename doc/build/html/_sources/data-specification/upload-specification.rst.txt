@@ -234,22 +234,6 @@ Example TWB episode data:
 - `CSV TWB episode file <../_static/twb-episodes.csv>`_.
 - `XLSX TWB episode worksheet <../_static/WAYBACK-3-0-twb-episodes.xlsx>`_.
 
-.. _twb-pnpc-format:
-
-TWB PNPC file format
-~~~~~~~~~~~~~~~~~~~~
-
-The TWB PNPC (Primary Nominated Professional Contacts) file/worksheet is
-required to be uploaded each time.
-
-Data elements for the TWB PNPC upload file/worksheet are defined at
-:ref:`twb-pnpc-data-elements`.
-
-Example TWB PNPC data:
-
-- `CSV TWB PNPC file <../_static/twb-pnpcs.csv>`_.
-- `XLSX TWB PNPC worksheet <../_static/WAYBACK-3-0-twb-pnpcs.xlsx>`_.
-
 .. _twb-critical-incident-format:
 
 TWB Critical Incident file format
@@ -442,7 +426,6 @@ Deleting records
   * Client
   * Episode
   * TWB Episode
-  * TWB Primary Nominated Professional Contact
   * TWB Critical Incident
   * TWB Recommendation Out
   * Collection Occasion
