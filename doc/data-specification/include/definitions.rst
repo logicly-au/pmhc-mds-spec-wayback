@@ -3172,7 +3172,8 @@ Has the client attempted suicide in the past 12 months or within their lifetime?
 :Domain:
   :1: No
   :2: Previous attempt(s) made in the past 12 months
-  :3: Previous attempt(s) made within their lifetime
+  :3: Previous attempt(s) made prior to the last 12 months
+  :4: Previous attempts made both within and prior to the last 12 months
   :7: Not known
   :9: Not stated/Inadequately described
 :Notes:
