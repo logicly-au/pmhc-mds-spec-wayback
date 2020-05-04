@@ -173,7 +173,6 @@
     "titles": [ "twb_method_of_suicide_attempt" ],
     "dc:title": "TWB Episode - Method of suicide attempt",
     "schema:description": "Identifies the method of the most recent suicide attempt, as represented by a code.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-method-of-suicide-attempt.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {

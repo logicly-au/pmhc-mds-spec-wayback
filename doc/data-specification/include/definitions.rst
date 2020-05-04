@@ -3129,9 +3129,6 @@ Identifies the method of the most recent suicide attempt, as represented by a co
   :6: Intentional self-harm by jumping from a high place
   :98: Other
   :99: Not stated/Inadequately described
-:Notes:
-  
-  
 
 ----------
 
