@@ -1,5 +1,5 @@
-version: v0.0.1-51-g5843010
+version: v0.0.1-52-g6a22f34
 
-commit_hash: 58430108081ef56e417c3be8977e16bb1c182a3c
-commit_date: Mon May 4 15:52:36 2020
+commit_hash: 6a22f34a2c947688aa87e6ee45f48032187fe146
+commit_date: Mon May 4 16:10:43 2020
 
