@@ -59,7 +59,7 @@
     "name": "twb_critical_incident_date",
     "titles": [ "twb_critical_incident_date" ],
     "dc:title": "TWB Critical Incident - Date",
-    "schema:description": "The date of the critical incident.",
+    "schema:description": "The date the critical incident was reported to the Service Provider.",
     "schema:disambiguatingDescription": "table/twb-critical-incident/twb-critical-incident-date.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",

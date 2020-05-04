@@ -703,17 +703,17 @@ following table:</p>
 <tr class="row-odd"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional-consent-date">TWB Episode - Primary Nominated Professional Consent Date</a> (twb_primary_nominated_professional_consent_date)</td>
 <td>date</td>
 <td>yes</td>
-<td>What date did you receive consent from the client to contact their Primary Nominated Professional?</td>
+<td>The date that the client consented to having their Primary Nominated Professional contacted.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional-contact-entry-date">TWB Episode - Primary Nominated Professional Contact Entry Date</a> (twb_primary_nominated_professional_contact_entry_date)</td>
 <td>date</td>
 <td>yes</td>
-<td>What date did you contact their Primary Nominated Professional at entry to TWB?</td>
+<td>The date that the client’s Primary Nominated Professional was contacted after entry.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#twb-episode-primary-nominated-professional-contact-exit-date">TWB Episode - Primary Nominated Professional Contact Exit Date</a> (twb_primary_nominated_professional_contact_exit_date)</td>
 <td>date</td>
 <td>yes</td>
-<td>What date did you contact their Primary Nominated Professional at exit from TWB?</td>
+<td>The date that the client’s Primary Nominated Professional was contacted after client’s exit.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#twb-episode-previous-suicide-attempts">TWB Episode - Previous suicide attempts</a> (twb_previous_suicide_attempts)</td>
 <td>string</td>
@@ -825,7 +825,7 @@ following table:</p>
 <tr class="row-even"><td><a class="reference internal" href="#twb-critical-incident-date">TWB Critical Incident - Date</a> (twb_critical_incident_date)</td>
 <td>date</td>
 <td>yes</td>
-<td>The date of the critical incident.</td>
+<td>The date the critical incident was reported to the Service Provider.</td>
 </tr>
 </tbody>
 </table>
@@ -1415,7 +1415,7 @@ collection occasion.</p>
 <div class="section" id="twb-ni">
 <span id="twb-ni-data-elements"></span><h4>TWB NI<a class="headerlink" href="#twb-ni" title="Permalink to this headline">¶</a></h4>
 <table border="1" class="docutils" id="id20">
-<caption><span class="caption-number">Table 8 </span><span class="caption-text">TWB Plan record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 8 </span><span class="caption-text">TWB NI record layout</span><a class="headerlink" href="#id20" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -7430,7 +7430,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 </div>
 <div class="section" id="twb-critical-incident-date">
 <span id="dfn-twb-critical-incident-date"></span><h3>TWB Critical Incident - Date<a class="headerlink" href="#twb-critical-incident-date" title="Permalink to this headline">¶</a></h3>
-<p>The date of the critical incident.</p>
+<p>The date the critical incident was reported to the Service Provider.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7454,13 +7454,7 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <li>The critical incident date must not be before 1st January 2019.</li>
 <li>The critical incident date must not be in the future.</li>
 </ul>
-<p><strong>Reporting requirements</strong>
-Mandatory where critical incident type is present.</p>
-<p><strong>Guide for use</strong>
-Requires services to record the date and time of when a critical incident was reported.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning, funding and accountability.
-Measurement of waiting times.</p>
+<p class="last">Requires services to record the date and time of when a critical incident was reported.</p>
 </td>
 </tr>
 </tbody>
@@ -7501,13 +7495,11 @@ Measurement of waiting times.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
 Mandatory where a critical incident is reported.</p>
-<p><strong>Guide for use</strong>
+<p class="last"><strong>Guide for use</strong>
 It is acknowledged that due to the nature of the project and the reporting of
 suicide, Beyond Blue and stakeholders may not be advised of all critical
 incidents. It is also acknowledged that each Service Provider will have the
 appropriate management strategies in place for handling Critical Incidents.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning, funding and accountability.</p>
 </td>
 </tr>
 </tbody>
@@ -7536,7 +7528,7 @@ valid unicode characters.</td>
 </div>
 <div class="section" id="twb-episode-eligibility-type">
 <span id="dfn-twb-eligibility-type"></span><h3>TWB Episode - Eligibility Type<a class="headerlink" href="#twb-episode-eligibility-type" title="Permalink to this headline">¶</a></h3>
-<p>The criteria by which a client is assessed as being eligible for the Way Back Support service.</p>
+<p>The criteria by which a client is assessed as being eligible for the Way Back Support service, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7566,7 +7558,7 @@ valid unicode characters.</td>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first docutils">
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><dl class="first last docutils">
 <dt>1 - Primary Eligibility Criteria</dt>
 <dd><p class="first last">The primary eligibility criteria are met when a person is referred to
 The Way Back after presenting to a hospital emergency department or
@@ -7585,13 +7577,6 @@ person experiencing distress, suicidal thoughts and articulating an intent
 to die. A suicidal crisis may or may not result in a hospital admission.</p>
 </dd>
 </dl>
-<p><strong>Reporting requirements</strong>
-Mandatory – All clients</p>
-<p><strong>Guide for use</strong>
-It is best to record eligibility type when the client is referred to the service, when first in contact with the client or during an initial assessment.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning.
-Understanding service demand and presenting client profile.</p>
 </td>
 </tr>
 </tbody>
@@ -7600,7 +7585,7 @@ Understanding service demand and presenting client profile.</p>
 </div>
 <div class="section" id="twb-episode-external-evaluator-contact-consent">
 <span id="dfn-twb-external-evaluator-contact-consent"></span><h3>TWB Episode - External Evaluator Contact Consent<a class="headerlink" href="#twb-episode-external-evaluator-contact-consent" title="Permalink to this headline">¶</a></h3>
-<p>The status of whether the client has consented to be contacted by external evaluators.</p>
+<p>The status of whether the client has consented to be contacted by external evaluators, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7640,7 +7625,7 @@ consent at any time.</p>
 </div>
 <div class="section" id="twb-episode-intersex-status">
 <span id="dfn-twb-intersex-status"></span><h3>TWB Episode - Intersex Status<a class="headerlink" href="#twb-episode-intersex-status" title="Permalink to this headline">¶</a></h3>
-<p>Do you wish to disclose intersex status?</p>
+<p>An indication of whether the client has an intersex status, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7680,7 +7665,7 @@ not fit typical binary notions of male and female bodies</p>
 </div>
 <div class="section" id="twb-episode-method-of-suicide-attempt">
 <span id="dfn-twb-method-of-suicide-attempt"></span><h3>TWB Episode - Method of suicide attempt<a class="headerlink" href="#twb-episode-method-of-suicide-attempt" title="Permalink to this headline">¶</a></h3>
-<p>For clients referred to The Way Back for a suicide attempt, what was the method of their most recent attempt?</p>
+<p>Identifies the method of the most recent suicide attempt, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7726,7 +7711,7 @@ not fit typical binary notions of male and female bodies</p>
 </div>
 <div class="section" id="twb-episode-previous-suicide-attempts">
 <span id="dfn-twb-previous-suicide-attempts"></span><h3>TWB Episode - Previous suicide attempts<a class="headerlink" href="#twb-episode-previous-suicide-attempts" title="Permalink to this headline">¶</a></h3>
-<p>Has the client attempted suicide in the past 12 months or within their lifetime?</p>
+<p>Indicates whether the client has attempted suicide prior to this episode, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7760,8 +7745,7 @@ not fit typical binary notions of male and female bodies</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last"><strong>Guide for use</strong>
-A suicide attempt is described as a non-fatal, self-directed, potentially
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">A suicide attempt is described as a non-fatal, self-directed, potentially
 injurious behaviour with an intent to die as a result of the behaviour;
 might not result in injury.</p>
 </td>
@@ -7772,7 +7756,7 @@ might not result in injury.</p>
 </div>
 <div class="section" id="twb-episode-primary-nominated-professional">
 <span id="dfn-twb-primary-nominated-professional"></span><h3>TWB Episode - Primary Nominated Professional<a class="headerlink" href="#twb-episode-primary-nominated-professional" title="Permalink to this headline">¶</a></h3>
-<p>What is the profession of the primary professional nominated by the client?</p>
+<p>Identifies the profession of the primary professional nominated by the client, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7810,17 +7794,12 @@ might not result in injury.</p>
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
-Mandatory where Episode—TWB Consent type =1</p>
-<p><strong>Guide for use</strong>
-The primary nominated professional of the client is the professional or
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The primary nominated professional of the client is the professional or
 support worker that the client consents to be advised of their participation
 in The Way Back Support Service.</p>
-<p>If a client does not wish for anyone to be advised then code 99 indicates no
+<p class="last">If a client does not wish for anyone to be advised then code 99 indicates no
 consent in conjunction with 09099999 for <a class="reference internal" href="#dfn-twb-primary-nominated-professional-consent-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Consent Date</span></a>
 indicates no consent.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning.</p>
 </td>
 </tr>
 </tbody>
@@ -7829,7 +7808,7 @@ Program monitoring, service planning.</p>
 </div>
 <div class="section" id="twb-episode-primary-nominated-professional-consent-date">
 <span id="dfn-twb-primary-nominated-professional-consent-date"></span><h3>TWB Episode - Primary Nominated Professional Consent Date<a class="headerlink" href="#twb-episode-primary-nominated-professional-consent-date" title="Permalink to this headline">¶</a></h3>
-<p>What date did you receive consent from the client to contact their Primary Nominated Professional?</p>
+<p>The date that the client consented to having their Primary Nominated Professional contacted.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7849,14 +7828,10 @@ of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
 <p>If a client does not wish for anyone to be advised please use the date 09099999.</p>
-<ul class="simple">
+<ul class="last simple">
 <li>The consent date must not be before 1st January 2019.</li>
 <li>The consent date must not be in the future.</li>
 </ul>
-<p><strong>Reporting requirements</strong>
-Mandatory where Episode—TWB Consent type =1</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning.</p>
 </td>
 </tr>
 </tbody>
@@ -7865,7 +7840,7 @@ Program monitoring, service planning.</p>
 </div>
 <div class="section" id="twb-episode-primary-nominated-professional-contact-entry-date">
 <span id="dfn-twb-primary-nominated-professional-contact-entry-date"></span><h3>TWB Episode - Primary Nominated Professional Contact Entry Date<a class="headerlink" href="#twb-episode-primary-nominated-professional-contact-entry-date" title="Permalink to this headline">¶</a></h3>
-<p>What date did you contact their Primary Nominated Professional at entry to TWB?</p>
+<p>The date that the client’s Primary Nominated Professional was contacted after entry.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7889,8 +7864,12 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <li>The entry date must not be before 1st January 2019.</li>
 <li>The entry date must not be in the future.</li>
 </ul>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning.</p>
+<p class="last">Written advice (email or letter) advising of the client’s participation in
+The Way Back Support Service must be sent to the primary nominated professional
+on commencement of the service. The contact date is the date of the service
+provider initiates the communication with the primary nominated professional.
+There is a KPI requirement for this to take place within 3 business days of
+client consent.</p>
 </td>
 </tr>
 </tbody>
@@ -7899,7 +7878,7 @@ Program monitoring, service planning.</p>
 </div>
 <div class="section" id="twb-episode-primary-nominated-professional-contact-exit-date">
 <span id="dfn-twb-primary-nominated-professional-contact-exit-date"></span><h3>TWB Episode - Primary Nominated Professional Contact Exit Date<a class="headerlink" href="#twb-episode-primary-nominated-professional-contact-exit-date" title="Permalink to this headline">¶</a></h3>
-<p>What date did you contact their Primary Nominated Professional at exit from TWB?</p>
+<p>The date that the client’s Primary Nominated Professional was contacted after client’s exit.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7924,8 +7903,12 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <li>The exit date must not be in the future.</li>
 <li>The exit date must not be before the entry date.</li>
 </ul>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning.</p>
+<p class="last">Written advice (email or letter) advising of the client’s exit from The Way
+Back Support Service must be sent to the primary nominated professional at
+completion of the service. The contact date is the date of the service
+provider initiates the communication with the primary nominated professional.
+There is a KPI requirement that this occurs within 3 business days of an
+episode closure.</p>
 </td>
 </tr>
 </tbody>
@@ -7934,7 +7917,7 @@ Program monitoring, service planning.</p>
 </div>
 <div class="section" id="twb-episode-sexual-orientation">
 <span id="dfn-twb-sexual-orientation"></span><h3>TWB Episode - Sexual Orientation<a class="headerlink" href="#twb-episode-sexual-orientation" title="Permalink to this headline">¶</a></h3>
-<p>How does the client describe their sexual orientation?</p>
+<p>Identifies how the client describes their sexual orientation, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -7948,7 +7931,7 @@ Program monitoring, service planning.</p>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -7970,13 +7953,47 @@ Program monitoring, service planning.</p>
 </table>
 </td>
 </tr>
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">Sexual orientation encompasses several dimensions of sexuality including
+sexual identity, attraction and behavior, and refers to a person’s
+emotional, physical and/or sexual attraction to another person.</p>
+<p><strong>Definitions of terms</strong></p>
+<dl class="docutils">
+<dt>Lesbian</dt>
+<dd><p class="first last">The term lesbian is used to describe a person identifying as a woman who
+is romantically and/or sexually attracted to other women.</p>
+</dd>
+<dt>Gay</dt>
+<dd><p class="first last">The term gay is used to describe a person identifying as a man who is
+romantically and/or sexually attracted to other men.</p>
+</dd>
+<dt>Bisexual</dt>
+<dd><p class="first last">The term bisexual is used to describe a person of any gender who is
+romantically and/or sexually attracted to people or more than one gender.
+Some people who fit this description prefer the terms ‘queer’ or
+Pansexual, in recognition of more than two genders. It may also be
+defined as romantic or sexual attraction to people of any sex or gender
+identity, which is also known as pansexuality.</p>
+</dd>
+<dt>Asexual</dt>
+<dd><p class="first last">Asexual is a sexual orientation defined by a lack of sexual attraction to
+any person of any gender.</p>
+</dd>
+<dt>Questioning</dt>
+<dd><p class="first last">Is a process of exploration by people who may be unsure, still exploring,
+and concerned about applying a social label to themselves for various reasons.</p>
+</dd>
+</dl>
+<p class="last">More information on collecting LGBTI inclusive data collection can be found
+at: <a class="reference external" href="https://aidsaction.org.au/images/resource-library/LGBTIQ%20Inclusive%20Data%20Collection%20-%20a%20Guide.pdf">https://aidsaction.org.au/images/resource-library/LGBTIQ%20Inclusive%20Data%20Collection%20-%20a%20Guide.pdf</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 <hr class="docutils" />
 </div>
 <div class="section" id="twb-episode-transgender-status">
 <span id="dfn-twb-transgender-status"></span><h3>TWB Episode - Transgender Status<a class="headerlink" href="#twb-episode-transgender-status" title="Permalink to this headline">¶</a></h3>
-<p>Do you have a transgender history, experience, or identity?</p>
+<p>An indication of whether the client has a transgender history, experience or identity , as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -8004,8 +8021,7 @@ Program monitoring, service planning.</p>
 </table>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Guide for use</strong>
-The term transgender is used to describe people whose gender
+<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">The term transgender is used to describe people whose gender
 identity does not align with the sex they were assigned at birth.</p>
 <p class="last">Non-binary genders also fit under this umbrella term, as well as under
 the term gender diverse.</p>
@@ -8017,7 +8033,7 @@ the term gender diverse.</p>
 </div>
 <div class="section" id="twb-episode-veteran">
 <span id="dfn-twb-veteran"></span><h3>TWB Episode - Veteran<a class="headerlink" href="#twb-episode-veteran" title="Permalink to this headline">¶</a></h3>
-<p>Whether the client identifies as a veteran.</p>
+<p>An indication of whether the client identifies as a veteran, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -8031,7 +8047,7 @@ the term gender diverse.</p>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8043,15 +8059,6 @@ the term gender diverse.</p>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Report requirements</strong>
-Mandatory where Episode—TWB Consent type =1</p>
-<p><strong>Guide for use</strong>
-Clients are able to report their veteran status given that this may in some instances lead to a different level of service. The client’s recorded response should not be altered or annotated in any way.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning
-Understanding access and service utilisation of population groups.</p>
 </td>
 </tr>
 </tbody>
@@ -8228,13 +8235,17 @@ or requested by The Way Back service provider and updated as part of
 preliminary discussions with The Way Back clients.
 Where clients referred to The Way Back have not completed any safety planning
 prior to their referral this should be completed as a priority once the client
-has consented to participate in The Way Back. Safety Plans must be
-updated/developed within the first contact with the client and no later than
-the second contact.</p>
-<p>Safety plans should be reviewed with a client as needed. Each instance of the
-review and update of a safety plan should be recorded.</p>
+has consented to participate in The Way Back.</p>
+<p>Safety Plans must be updated/developed within the first contact with the
+client and no later than the second contact. Safety plans should be reviewed
+with a client as needed. Each instance of the review and update of a safety
+plan should be recorded.</p>
+<p>Service Providers should choose the most appropriate Support Plan template for
+their service. The TWB Tools and Templates provide a sample of one and there
+is also the BeyondNow app.</p>
 <p><strong>2 - Support Plan</strong></p>
-<p>A support plan articulates:</p>
+<p>All Way Back service providers must work collaboratively with their clients
+to develop a Support Plan that articulates:</p>
 <ul class="simple">
 <li>the client’s <strong>needs</strong> as assessed using the Support Tools</li>
 <li>the client’s <strong>goals</strong> of participating in The Way Back</li>
@@ -8243,21 +8254,15 @@ and goals including referrals to be made</li>
 </ul>
 <p>In developing a Support Plan, discussion with clients should consider warning
 signs, strengths, support mechanisms and strategies that have enabled them to
-take the next steps.</p>
-<p>A Support Plan must be completed with a client within two weeks of their
+take the next steps. Needs Identified in this process are to be grouped and
+reported in the TWB NI data collection.</p>
+<p class="last">A Support Plan must be completed with a client within two weeks of their
 consenting to participate in the service. To identify a client’s needs and
 build an understanding of what support will be of benefit, all Support Tools
 and Measures should be completed prior to completing the Support Plan.
 Support Plans are also required to be reviewed at 6 weeks, or a regular basis
 throughout the support period to ensure that strategies are current and upon
 Service Exit. Each review must be documented.</p>
-<p>All Way Back service providers must work with their clients to collaboratively
-develop a support plan that articulates:</p>
-<ul class="last simple">
-<li>The client’s needs</li>
-<li>The client’s goals in response to needs identified</li>
-<li>Proposed actions, referrals and interventions</li>
-</ul>
 </td>
 </tr>
 </tbody>
@@ -8315,7 +8320,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 </div>
 <div class="section" id="twb-recommendation-out-provider-type">
 <span id="dfn-twb-recommendation-out-provider-type"></span><h3>TWB Recommendation Out - Provider Type<a class="headerlink" href="#twb-recommendation-out-provider-type" title="Permalink to this headline">¶</a></h3>
-<p>What type of external service(s) has the client been recommended to from The Way Back during their Episode of care?</p>
+<p>Identifies the type of external service(s) that the client has been recommended to from the Way Back during their Episode of care, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -8425,17 +8430,13 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 </table>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong></p>
-<p><strong>Guide for use</strong></p>
-<p>It is best to record the recommendation information as soon as the client is
-referred to an agency/community service as it may be difficult to track this
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first">It is best to record the recommendation information as soon as the client is
+recommended to an agency/community service as it may be difficult to track this
 information later.</p>
-<p>To assist staff, service providers may find it useful to make a list of the
+<p class="last">To assist staff, service providers may find it useful to make a list of the
 agencies from which they most frequently send recommendations and note the
 corresponding Source of Recommendation code.
 Report the Recommendation starting with the most relevant or urgent one first.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning.</p>
 </td>
 </tr>
 </tbody>
@@ -8444,7 +8445,7 @@ Program monitoring, service planning.</p>
 </div>
 <div class="section" id="twb-recommendation-out-status">
 <span id="dfn-twb-recommendation-out-status"></span><h3>TWB Recommendation Out - Status<a class="headerlink" href="#twb-recommendation-out-status" title="Permalink to this headline">¶</a></h3>
-<p>What is the current status of external service recommendations made to the client?</p>
+<p>Identifies the final status of external service recommendations made to the client, as represented by a code.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -8458,7 +8459,7 @@ Program monitoring, service planning.</p>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -8478,15 +8479,6 @@ Program monitoring, service planning.</p>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Notes:</th><td class="field-body"><p class="first"><strong>Reporting requirements</strong>
-Mandatory where TWB Recommendation Out - Provider Type 1-41 is present</p>
-<p><strong>Guide for use</strong>
-Requires services to record the status of a recommendation out to an alternative service.</p>
-<p class="last"><strong>Purpose/context</strong>
-Program monitoring, service planning, funding and accountability.
-Measurement of waiting times.</p>
 </td>
 </tr>
 </tbody>

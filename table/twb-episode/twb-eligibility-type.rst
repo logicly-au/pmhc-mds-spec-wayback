@@ -14,13 +14,3 @@
   suicide is identified as imminent. A suicidal crisis is defined as a
   person experiencing distress, suicidal thoughts and articulating an intent
   to die. A suicidal crisis may or may not result in a hospital admission.
-
-**Reporting requirements**
-Mandatory – All clients
-
-**Guide for use**
-It is best to record eligibility type when the client is referred to the service, when first in contact with the client or during an initial assessment.
-
-**Purpose/context**
-Program monitoring, service planning.
-Understanding service demand and presenting client profile.

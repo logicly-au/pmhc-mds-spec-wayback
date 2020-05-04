@@ -331,7 +331,7 @@ $$$$$$$$
 TWB NI
 $$$$$$
 
-.. csv-table:: TWB Plan record layout
+.. csv-table:: TWB NI record layout
   :file: record/twb-ni.csv
   :header-rows: 1
 

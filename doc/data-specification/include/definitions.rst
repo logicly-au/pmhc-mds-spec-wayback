@@ -2941,7 +2941,7 @@ List of tags for the collection occasion.
 TWB Critical Incident - Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The date of the critical incident.
+The date the critical incident was reported to the Service Provider.
 
 :Field name: twb_critical_incident_date
 
@@ -2961,15 +2961,7 @@ The date of the critical incident.
   
   - The critical incident date must not be in the future.
   
-  **Reporting requirements**
-  Mandatory where critical incident type is present.
-  
-  **Guide for use**
   Requires services to record the date and time of when a critical incident was reported.
-  
-  **Purpose/context**
-  Program monitoring, service planning, funding and accountability.
-  Measurement of waiting times.
   
 
 ----------
@@ -3002,9 +2994,6 @@ The type of critical incident.
   incidents. It is also acknowledged that each Service Provider will have the
   appropriate management strategies in place for handling Critical Incidents.
   
-  **Purpose/context**
-  Program monitoring, service planning, funding and accountability.
-  
 
 ----------
 
@@ -3032,7 +3021,7 @@ This is a number or code assigned to each critical incident. The Critical Incide
 TWB Episode - Eligibility Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The criteria by which a client is assessed as being eligible for the Way Back Support service.
+The criteria by which a client is assessed as being eligible for the Way Back Support service, as represented by a code.
 
 :Field name: twb_eligibility_type
 
@@ -3063,16 +3052,6 @@ The criteria by which a client is assessed as being eligible for the Way Back Su
     person experiencing distress, suicidal thoughts and articulating an intent
     to die. A suicidal crisis may or may not result in a hospital admission.
   
-  **Reporting requirements**
-  Mandatory – All clients
-  
-  **Guide for use**
-  It is best to record eligibility type when the client is referred to the service, when first in contact with the client or during an initial assessment.
-  
-  **Purpose/context**
-  Program monitoring, service planning.
-  Understanding service demand and presenting client profile.
-  
 
 ----------
 
@@ -3081,7 +3060,7 @@ The criteria by which a client is assessed as being eligible for the Way Back Su
 TWB Episode - External Evaluator Contact Consent
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The status of whether the client has consented to be contacted by external evaluators.
+The status of whether the client has consented to be contacted by external evaluators, as represented by a code.
 
 :Field name: twb_external_evaluator_contact_consent
 
@@ -3107,7 +3086,7 @@ The status of whether the client has consented to be contacted by external evalu
 TWB Episode - Intersex Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Do you wish to disclose intersex status?
+An indication of whether the client has an intersex status, as represented by a code.
 
 :Field name: twb_intersex_status
 
@@ -3133,7 +3112,7 @@ Do you wish to disclose intersex status?
 TWB Episode - Method of suicide attempt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For clients referred to The Way Back for a suicide attempt, what was the method of their most recent attempt?
+Identifies the method of the most recent suicide attempt, as represented by a code.
 
 :Field name: twb_method_of_suicide_attempt
 
@@ -3161,7 +3140,7 @@ For clients referred to The Way Back for a suicide attempt, what was the method 
 TWB Episode - Previous suicide attempts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Has the client attempted suicide in the past 12 months or within their lifetime?
+Indicates whether the client has attempted suicide prior to this episode, as represented by a code.
 
 :Field name: twb_previous_suicide_attempts
 
@@ -3177,7 +3156,6 @@ Has the client attempted suicide in the past 12 months or within their lifetime?
   :7: Not known
   :9: Not stated/Inadequately described
 :Notes:
-  **Guide for use**
   A suicide attempt is described as a non-fatal, self-directed, potentially
   injurious behaviour with an intent to die as a result of the behaviour;
   might not result in injury.
@@ -3190,7 +3168,7 @@ Has the client attempted suicide in the past 12 months or within their lifetime?
 TWB Episode - Primary Nominated Professional
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What is the profession of the primary professional nominated by the client? 
+Identifies the profession of the primary professional nominated by the client, as represented by a code.
 
 :Field name: twb_primary_nominated_professional
 
@@ -3208,10 +3186,6 @@ What is the profession of the primary professional nominated by the client?
   :98: Other
   :99: Not stated/Inadequately described
 :Notes:
-  **Reporting requirements**
-  Mandatory where Episode—TWB Consent type =1
-  
-  **Guide for use**
   The primary nominated professional of the client is the professional or
   support worker that the client consents to be advised of their participation
   in The Way Back Support Service.
@@ -3219,9 +3193,6 @@ What is the profession of the primary professional nominated by the client?
   If a client does not wish for anyone to be advised then code 99 indicates no
   consent in conjunction with 09099999 for :ref:`dfn-twb_primary_nominated_professional_consent_date`
   indicates no consent.
-  
-  **Purpose/context**
-  Program monitoring, service planning.
   
 
 ----------
@@ -3231,7 +3202,7 @@ What is the profession of the primary professional nominated by the client?
 TWB Episode - Primary Nominated Professional Consent Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What date did you receive consent from the client to contact their Primary Nominated Professional?
+The date that the client consented to having their Primary Nominated Professional contacted.
 
 :Field name: twb_primary_nominated_professional_consent_date
 
@@ -3251,13 +3222,6 @@ What date did you receive consent from the client to contact their Primary Nomin
   
   - The consent date must not be in the future.
   
-  **Reporting requirements**
-  Mandatory where Episode—TWB Consent type =1
-  
-  
-  **Purpose/context**
-  Program monitoring, service planning.
-  
 
 ----------
 
@@ -3266,7 +3230,7 @@ What date did you receive consent from the client to contact their Primary Nomin
 TWB Episode - Primary Nominated Professional Contact Entry Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What date did you contact their Primary Nominated Professional at entry to TWB?
+The date that the client's Primary Nominated Professional was contacted after entry.
 
 :Field name: twb_primary_nominated_professional_contact_entry_date
 
@@ -3286,8 +3250,12 @@ What date did you contact their Primary Nominated Professional at entry to TWB?
   
   - The entry date must not be in the future.
   
-  **Purpose/context**
-  Program monitoring, service planning.
+  Written advice (email or letter) advising of the client’s participation in
+  The Way Back Support Service must be sent to the primary nominated professional
+  on commencement of the service. The contact date is the date of the service
+  provider initiates the communication with the primary nominated professional.
+  There is a KPI requirement for this to take place within 3 business days of
+  client consent. 
   
 
 ----------
@@ -3297,7 +3265,7 @@ What date did you contact their Primary Nominated Professional at entry to TWB?
 TWB Episode - Primary Nominated Professional Contact Exit Date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What date did you contact their Primary Nominated Professional at exit from TWB?
+The date that the client's Primary Nominated Professional was contacted after client's exit.
 
 :Field name: twb_primary_nominated_professional_contact_exit_date
 
@@ -3317,8 +3285,12 @@ What date did you contact their Primary Nominated Professional at exit from TWB?
   - The exit date must not be in the future.
   - The exit date must not be before the entry date.
   
-  **Purpose/context**
-  Program monitoring, service planning.
+  Written advice (email or letter) advising of the client’s exit from The Way
+  Back Support Service must be sent to the primary nominated professional at
+  completion of the service. The contact date is the date of the service
+  provider initiates the communication with the primary nominated professional.
+  There is a KPI requirement that this occurs within 3 business days of an
+  episode closure.    
   
 
 ----------
@@ -3328,7 +3300,7 @@ What date did you contact their Primary Nominated Professional at exit from TWB?
 TWB Episode - Sexual Orientation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-How does the client describe their sexual orientation?
+Identifies how the client describes their sexual orientation, as represented by a code.
 
 :Field name: twb_sexual_orientation
 
@@ -3344,6 +3316,40 @@ How does the client describe their sexual orientation?
   :5: Questioning
   :6: Other
   :9: Not stated
+:Notes:
+  Sexual orientation encompasses several dimensions of sexuality including
+  sexual identity, attraction and behavior, and refers to a person’s
+  emotional, physical and/or sexual attraction to another person.
+  
+  **Definitions of terms**
+  
+  Lesbian
+    The term lesbian is used to describe a person identifying as a woman who
+    is romantically and/or sexually attracted to other women.
+  
+  Gay
+    The term gay is used to describe a person identifying as a man who is
+    romantically and/or sexually attracted to other men.
+  
+  Bisexual
+    The term bisexual is used to describe a person of any gender who is
+    romantically and/or sexually attracted to people or more than one gender.
+    Some people who fit this description prefer the terms ‘queer’ or
+    Pansexual, in recognition of more than two genders. It may also be
+    defined as romantic or sexual attraction to people of any sex or gender
+    identity, which is also known as pansexuality.
+  
+  Asexual
+    Asexual is a sexual orientation defined by a lack of sexual attraction to
+    any person of any gender.
+  
+  Questioning
+    Is a process of exploration by people who may be unsure, still exploring,
+    and concerned about applying a social label to themselves for various reasons.
+  
+  More information on collecting LGBTI inclusive data collection can be found
+  at: https://aidsaction.org.au/images/resource-library/LGBTIQ%20Inclusive%20Data%20Collection%20-%20a%20Guide.pdf
+  
 
 ----------
 
@@ -3352,7 +3358,7 @@ How does the client describe their sexual orientation?
 TWB Episode - Transgender Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Do you have a transgender history, experience, or identity?
+An indication of whether the client has a transgender history, experience or identity , as represented by a code.
 
 :Field name: twb_transgender_status
 
@@ -3365,12 +3371,11 @@ Do you have a transgender history, experience, or identity?
   :2: No
   :3: Does not want to disclose
 :Notes:
-  **Guide for use**
   The term transgender is used to describe people whose gender
   identity does not align with the sex they were assigned at birth.
   
   Non-binary genders also fit under this umbrella term, as well as under
-  the term gender diverse. 
+  the term gender diverse.
   
 
 ----------
@@ -3380,7 +3385,7 @@ Do you have a transgender history, experience, or identity?
 TWB Episode - Veteran
 ^^^^^^^^^^^^^^^^^^^^^
 
-Whether the client identifies as a veteran.
+An indication of whether the client identifies as a veteran, as represented by a code.
 
 :Field name: twb_veteran
 
@@ -3392,17 +3397,6 @@ Whether the client identifies as a veteran.
   :1: Identifies as a veteran
   :2: Does not identify as a veteran
   :9: Not stated/Inadequately described
-:Notes:
-  **Report requirements**
-  Mandatory where Episode—TWB Consent type =1
-  
-  **Guide for use**
-  Clients are able to report their veteran status given that this may in some instances lead to a different level of service. The client’s recorded response should not be altered or annotated in any way.
-  
-  **Purpose/context**
-  Program monitoring, service planning
-  Understanding access and service utilisation of population groups.
-  
 
 ----------
 
@@ -3533,16 +3527,21 @@ The type of plan.
   preliminary discussions with The Way Back clients.
   Where clients referred to The Way Back have not completed any safety planning
   prior to their referral this should be completed as a priority once the client
-  has consented to participate in The Way Back. Safety Plans must be
-  updated/developed within the first contact with the client and no later than
-  the second contact.
+  has consented to participate in The Way Back.
   
-  Safety plans should be reviewed with a client as needed. Each instance of the
-  review and update of a safety plan should be recorded.
+  Safety Plans must be updated/developed within the first contact with the
+  client and no later than the second contact. Safety plans should be reviewed
+  with a client as needed. Each instance of the review and update of a safety
+  plan should be recorded.
+  
+  Service Providers should choose the most appropriate Support Plan template for
+  their service. The TWB Tools and Templates provide a sample of one and there
+  is also the BeyondNow app.
   
   **2 - Support Plan**
   
-  A support plan articulates:
+  All Way Back service providers must work collaboratively with their clients
+  to develop a Support Plan that articulates:
   
   * the client’s **needs** as assessed using the Support Tools
   * the client’s **goals** of participating in The Way Back
@@ -3551,7 +3550,8 @@ The type of plan.
   
   In developing a Support Plan, discussion with clients should consider warning
   signs, strengths, support mechanisms and strategies that have enabled them to
-  take the next steps.
+  take the next steps. Needs Identified in this process are to be grouped and
+  reported in the TWB NI data collection.
   
   A Support Plan must be completed with a client within two weeks of their
   consenting to participate in the service. To identify a client’s needs and
@@ -3560,13 +3560,6 @@ The type of plan.
   Support Plans are also required to be reviewed at 6 weeks, or a regular basis
   throughout the support period to ensure that strategies are current and upon
   Service Exit. Each review must be documented.
-  
-  All Way Back service providers must work with their clients to collaboratively
-  develop a support plan that articulates:
-  
-  * The client’s needs
-  * The client’s goals in response to needs identified
-  * Proposed actions, referrals and interventions
   
 
 ----------
@@ -3622,7 +3615,7 @@ This is a number or code assigned to each instance of a TWB Plan. The TWB Plan K
 TWB Recommendation Out - Provider Type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What type of external service(s) has the client been recommended to from The Way Back during their Episode of care?
+Identifies the type of external service(s) that the client has been recommended to from the Way Back during their Episode of care, as represented by a code.
 
 :Field name: twb_recommendation_out_provider_type
 
@@ -3676,21 +3669,14 @@ What type of external service(s) has the client been recommended to from The Way
   :98: Other
   :99: Not stated/Inadequately described
 :Notes:
-  **Reporting requirements**
-  
-  **Guide for use**
-  
   It is best to record the recommendation information as soon as the client is
-  referred to an agency/community service as it may be difficult to track this
+  recommended to an agency/community service as it may be difficult to track this
   information later.
   
   To assist staff, service providers may find it useful to make a list of the
   agencies from which they most frequently send recommendations and note the
   corresponding Source of Recommendation code.
-  Report the Recommendation starting with the most relevant or urgent one first. 
-  
-  **Purpose/context**
-  Program monitoring, service planning.
+  Report the Recommendation starting with the most relevant or urgent one first.
   
 
 ----------
@@ -3700,7 +3686,7 @@ What type of external service(s) has the client been recommended to from The Way
 TWB Recommendation Out - Status
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-What is the current status of external service recommendations made to the client?
+Identifies the final status of external service recommendations made to the client, as represented by a code.
 
 :Field name: twb_recommendation_out_status
 
@@ -3716,17 +3702,6 @@ What is the current status of external service recommendations made to the clien
   :5: Client deceased prior to service commencement
   :98: Other
   :99: Not stated/Inadequately described
-:Notes:
-  **Reporting requirements**
-  Mandatory where TWB Recommendation Out - Provider Type 1-41 is present
-  
-  **Guide for use**
-  Requires services to record the status of a recommendation out to an alternative service.
-  
-  **Purpose/context**
-  Program monitoring, service planning, funding and accountability.
-  Measurement of waiting times.
-  
 
 ----------
 

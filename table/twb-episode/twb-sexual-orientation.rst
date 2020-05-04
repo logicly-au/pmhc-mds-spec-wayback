@@ -1,4 +1,3 @@
-**Guide for use**
 Sexual orientation encompasses several dimensions of sexuality including
 sexual identity, attraction and behavior, and refers to a person’s
 emotional, physical and/or sexual attraction to another person.
@@ -15,9 +14,9 @@ Gay
 
 Bisexual
   The term bisexual is used to describe a person of any gender who is
-  romanticaly and/or sexually attracted to people or more than one gender.
-  Some peope who fit this description prefer the terms ‘queer’ or
-  Pansexual, in recognitiion of more than two genders. It may also be
+  romantically and/or sexually attracted to people or more than one gender.
+  Some people who fit this description prefer the terms ‘queer’ or
+  Pansexual, in recognition of more than two genders. It may also be
   defined as romantic or sexual attraction to people of any sex or gender
   identity, which is also known as pansexuality.
 

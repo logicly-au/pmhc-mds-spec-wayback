@@ -9,10 +9,3 @@ If a client does not wish for anyone to be advised please use the date 09099999.
 - The consent date must not be before 1st January 2019.
 
 - The consent date must not be in the future.
-
-**Reporting requirements**
-Mandatory where Episode—TWB Consent type =1
-
-
-**Purpose/context**
-Program monitoring, service planning.

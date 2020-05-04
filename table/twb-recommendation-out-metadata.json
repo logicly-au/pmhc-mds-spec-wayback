@@ -47,7 +47,7 @@
     "name": "twb_recommendation_out_provider_type",
     "titles": [ "twb_recommendation_out_provider_type" ],
     "dc:title": "TWB Recommendation Out - Provider Type",
-    "schema:description": "What type of external service(s) has the client been recommended to from The Way Back during their Episode of care?",
+    "schema:description": "Identifies the type of external service(s) that the client has been recommended to from the Way Back during their Episode of care, as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-recommendation-out/twb-recommendation-out-provider-type.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -59,8 +59,7 @@
     "name": "twb_recommendation_out_status",
     "titles": [ "twb_recommendation_out_status" ],
     "dc:title": "TWB Recommendation Out - Status",
-    "schema:description": "What is the current status of external service recommendations made to the client?",
-    "schema:disambiguatingDescription": "table/twb-recommendation-out/twb-recommendation-out-status.rst",
+    "schema:description": "Identifies the final status of external service recommendations made to the client, as represented by a code.",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {

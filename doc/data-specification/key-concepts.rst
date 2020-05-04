@@ -114,7 +114,7 @@ Collection Occasion
 -------------------
 
 A Collection Occasion is defined as an occasion during an Episode of Care when
-the required Service Activities are required to be collected. At a minimum, collection
+specific Service Activities are required to be collected. At a minimum, collection
 is required at both Episode Start and Episode End.
 
 TWB will allow the following data records to be collected at a collection occasion:
