@@ -96,7 +96,7 @@
     "name": "who5_item5",
     "titles": [ "who5_item5" ],
     "dc:title": "WHO-5 - Question 5",
-    "schema:description": "I woke up feeling fresh and rested",
+    "schema:description": "My daily life has been filled with things that interest me",
     "schema:disambiguatingDescription": "table/measure/who5/Q5.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",

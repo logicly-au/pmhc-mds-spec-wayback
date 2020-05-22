@@ -69,37 +69,47 @@ For TWB only episodes the response `9: Unknown` must be used.
 
 Where a client is being delivered TWB services and accessing another
 support service within the same Service Provider the
-`full range of Medication - Antidepressants (N06A) responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-antidepressants-n06a>`_
+`full range Medication - Antidepressants (N06A) of responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-antidepressants-n06a>`_
 allowed for standard PMHC MDS episodes is available.
 
-Episode - Medication - Antidepressants (N05A)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Episode - Medication - Antipsychotics (N05A)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For TWB only episodes the response `9: Unknown` must be used.
 
 Where a client is being delivered TWB services and accessing another
 support service within the same Service Provider the
-`full range Medication - Antidepressants (N05A) of responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-antidepressants-n05a>`_
+`full range Medication - Antipsychotics (N05A) of responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-antipsychotics-n05a>`_
 allowed for standard PMHC MDS episodes is available.
 
-Episode - Medication - Antidepressants (N05C)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Episode - Medication - Anxiolytics (N05B)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For TWB only episodes the response `9: Unknown` must be used.
 
 Where a client is being delivered TWB services and accessing another
 support service within the same Service Provider the
-`full range Medication - Antidepressants (N05C) of responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-antidepressants-n05c>`_
+`full range Medication - Anxiolytics (N05B) of responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-anxiolytics-n05b>`_
 allowed for standard PMHC MDS episodes is available.
 
-Episode - Medication - Antidepressants (N06B)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Episode - Medication - Hypnotics and sedatives (N05C)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For TWB only episodes the response `9: Unknown` must be used.
 
 Where a client is being delivered TWB services and accessing another
 support service within the same Service Provider the
-`full range Medication - Antidepressants (N06B) of responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-antidepressants-n06b>`_
+`full range Medication - Hypnotics and sedatives (N05C) of responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-hypnotics-and-sedatives-n05c>`_
+allowed for standard PMHC MDS episodes is available.
+
+Episode - Medication - Psychostimulants and nootropics (N06B)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For TWB only episodes the response `9: Unknown` must be used.
+
+Where a client is being delivered TWB services and accessing another
+support service within the same Service Provider the
+`full range of Medication - Psychostimulants and nootropics (N06B) responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-medication-psychostimulants-and-nootropics-n06b>`_
 allowed for standard PMHC MDS episodes is available.
 
 Episode - Principal Focus of Treatment Plan
