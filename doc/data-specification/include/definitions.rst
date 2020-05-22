@@ -3845,7 +3845,7 @@ I woke up feeling fresh and rested
 WHO-5 - Question 5
 ^^^^^^^^^^^^^^^^^^
 
-I woke up feeling fresh and rested
+My daily life has been filled with things that interest me
 
 :Field name: who5_item5
 
