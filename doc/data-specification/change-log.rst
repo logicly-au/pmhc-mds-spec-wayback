@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+25/5/2020
+---------
+
+* :ref:`validation-rules`
+
+  * :ref:`episode-twb-current-validations`
+
+    * Corrected ``!WAYBACK`` to ``!wayback``
+
 22/5/2020
 ---------
 

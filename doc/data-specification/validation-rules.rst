@@ -21,7 +21,7 @@ Current TWB Validations
 ~~~~~~~~~~~~~~
 
 1. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
-2. ``!WAYBACK`` tag should be included in the `Episode - Tags <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags>`_ field of the corresponding PMHC episode, otherwise the system will automatically include it.
+2. ``!wayback`` tag should be included in the `Episode - Tags <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags>`_ field of the corresponding PMHC episode, otherwise the system will automatically include it.
 3. The :ref:`dfn-twb_primary_nominated_professional_consent_date`
 
    * must not be before 1 January 2019
