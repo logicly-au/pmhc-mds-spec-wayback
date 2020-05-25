@@ -122,7 +122,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/change-log">Data Specification Change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id1">22/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id1">25/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">22/5/2020</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#version-3-0">27/4/2020 - Version 3.0</a></li>
 </ul>
 </li>
@@ -9358,7 +9359,7 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <span id="episode-twb-current-validations"></span><h5>1. TWB Episode<a class="headerlink" href="#twb-episode" title="Permalink to this headline">¶</a></h5>
 <ol class="arabic simple">
 <li><a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
-<li><code class="docutils literal notranslate"><span class="pre">!WAYBACK</span></code> tag should be included in the <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags">Episode - Tags</a> field of the corresponding PMHC episode, otherwise the system will automatically include it.</li>
+<li><code class="docutils literal notranslate"><span class="pre">!wayback</span></code> tag should be included in the <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags">Episode - Tags</a> field of the corresponding PMHC episode, otherwise the system will automatically include it.</li>
 <li>The <a class="reference internal" href="index.html#dfn-twb-primary-nominated-professional-consent-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Consent Date</span></a><ul>
 <li>must not be before 1 January 2019</li>
 <li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
@@ -9478,7 +9479,19 @@ TWB data. The current PMHC MDS validations rules are available to be viewed at
 <span id="document-data-specification/change-log"></span><div class="section" id="data-specification-change-log">
 <span id="data-spec-changelog"></span><h3>Data Specification Change log<a class="headerlink" href="#data-specification-change-log" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id1">
-<h4>22/5/2020<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<h4>25/5/2020<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#validation-rules"><span class="std std-ref">Validation Rules</span></a><ul>
+<li><a class="reference internal" href="index.html#episode-twb-current-validations"><span class="std std-ref">1. TWB Episode</span></a><ul>
+<li>Corrected <code class="docutils literal notranslate"><span class="pre">!WAYBACK</span></code> to <code class="docutils literal notranslate"><span class="pre">!wayback</span></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h4>22/5/2020<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
