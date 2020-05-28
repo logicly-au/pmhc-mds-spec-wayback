@@ -2961,7 +2961,7 @@ The date the critical incident was reported to the Service Provider.
   
   - The critical incident date must not be in the future.
   
-  Requires services to record the date and time of when a critical incident was reported.
+  Requires services to record the date of when a critical incident was reported.
   
 
 ----------

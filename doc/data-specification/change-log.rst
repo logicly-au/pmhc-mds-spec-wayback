@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+28/5/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Updated notes for :ref:`dfn-twb_critical_incident_date` so that only a date
+      is required, not a date and time
+
 25/5/2020
 ---------
 
