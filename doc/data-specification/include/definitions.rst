@@ -3458,6 +3458,11 @@ The identified needs of the client at commencement or review of the service.
   :17: Social support/sense of belonging
   :18: Coping/problem solving ability
   :19: Cultural identity
+  :20: Child rearing or care taking responsibilities
+  :21: Help-seeking behaviour
+  :22: Religion
+  :23: Self Care
+  :24: Daily Structure
   :98: Other
   :99: Not stated/Inadequately described
   

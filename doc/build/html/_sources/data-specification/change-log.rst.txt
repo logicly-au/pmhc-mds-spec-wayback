@@ -3,6 +3,21 @@
 Data Specification Change log
 =============================
 
+12/6/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * Added the following values to :ref:`dfn-twb_ni_type`:
+
+      * 20 - Child rearing or care taking responsibilities
+      * 21 - Help-seeking behaviour
+      * 22 - Religion
+      * 23 - Self Care
+      * 24 - Daily Structure
+
 28/5/2020
 ---------
 
