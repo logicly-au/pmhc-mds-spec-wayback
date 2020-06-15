@@ -3069,7 +3069,7 @@ The status of whether the client has consented to be contacted by external evalu
 :Required: yes
 
 :Domain:
-  :1: Consented to to be contacted by external evaluators
+  :1: Consented to be contacted by external evaluators
   :2: Not consented to be contacted by external evaluators
   :9: Not stated/Inadequately described
 :Notes:
