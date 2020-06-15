@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+15/6/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-twb_external_evaluator_contact_consent` - Fixed typo in
+      description of response 1: Consented to be contacted by external
+      evaluators
+      
 12/6/2020
 ---------
 
