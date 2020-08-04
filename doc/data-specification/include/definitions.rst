@@ -3249,10 +3249,10 @@ The date that the client's Primary Nominated Professional was contacted after en
   
   Written advice (email or letter) advising of the client’s participation in
   The Way Back Support Service must be sent to the primary nominated professional
-  on commencement of the service. The contact date is the date of the service
-  provider initiates the communication with the primary nominated professional.
-  There is a KPI requirement for this to take place within 3 business days of
-  client consent. 
+  on commencement of the service. The Contact Entry Date is the date the service
+  provider initiates the communication with the primary nominated professional,
+  the date the email or letter is sent. There is a KPI requirement for this to
+  take place within 3 business days of client consent.
   
 
 ----------
@@ -3283,11 +3283,11 @@ The date that the client's Primary Nominated Professional was contacted after cl
   - The exit date must not be before the entry date.
   
   Written advice (email or letter) advising of the client’s exit from The Way
-  Back Support Service must be sent to the primary nominated professional at
-  completion of the service. The contact date is the date of the service
-  provider initiates the communication with the primary nominated professional.
-  There is a KPI requirement that this occurs within 3 business days of an
-  episode closure.    
+  Back Support Service must be sent to the primary nominated professional on exit
+  of the service. The Contact Exit Date is the date the service
+  provider sends this information to the primary nominated professional, the date
+  the email or letter is sent. There is a KPI requirement that this occurs within
+  3 business days of client exit.
   
 
 ----------
