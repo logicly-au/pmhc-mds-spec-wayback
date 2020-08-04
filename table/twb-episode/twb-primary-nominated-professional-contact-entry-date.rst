@@ -12,7 +12,7 @@ If a client does not wish for anyone to be advised please use the date 09099999.
 
 Written advice (email or letter) advising of the client’s participation in
 The Way Back Support Service must be sent to the primary nominated professional
-on commencement of the service. The contact date is the date of the service
-provider initiates the communication with the primary nominated professional.
-There is a KPI requirement for this to take place within 3 business days of
-client consent. 
+on commencement of the service. The Contact Entry Date is the date the service
+provider initiates the communication with the primary nominated professional,
+the date the email or letter is sent. There is a KPI requirement for this to
+take place within 3 business days of client consent.
