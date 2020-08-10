@@ -60,6 +60,7 @@
     "titles": [ "twb_recommendation_out_status" ],
     "dc:title": "TWB Recommendation Out - Status",
     "schema:description": "Identifies the final status of external service recommendations made to the client, as represented by a code.",
+    "schema:disambiguatingDescription": "table/twb-recommendation-out/twb-recommendation-out-status.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
