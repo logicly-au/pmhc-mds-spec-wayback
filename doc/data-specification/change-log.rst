@@ -3,6 +3,31 @@
 Data Specification Change log
 =============================
 
+10/8/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-twb_primary_nominated_professional` - Updated value from
+      ``99: Not stated/Inadequately described`` to ``99: No one nominated``
+
+    * :ref:`dfn-twb_recommendation_out_status` - Added notes
+
+7/8/2020
+--------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-twb_primary_nominated_professional_contact_entry_date` -
+      Updated description
+
+    * :ref:`dfn-twb_primary_nominated_professional_contact_exit_date` -
+      Updated description
+
 15/6/2020
 ---------
 
@@ -13,7 +38,7 @@ Data Specification Change log
     * :ref:`dfn-twb_external_evaluator_contact_consent` - Fixed typo in
       description of response 1: Consented to be contacted by external
       evaluators
-      
+
 12/6/2020
 ---------
 

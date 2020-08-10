@@ -3181,7 +3181,7 @@ Identifies the profession of the primary professional nominated by the client, a
   :5: Psychology
   :6: Mental Health Social Worker
   :98: Other
-  :99: Not stated/Inadequately described
+  :99: No one nominated
 :Notes:
   The primary nominated professional of the client is the professional or
   support worker that the client consents to be advised of their participation
@@ -3704,6 +3704,11 @@ Identifies the final status of external service recommendations made to the clie
   :5: Client deceased prior to service commencement
   :98: Other
   :99: Not stated/Inadequately described
+:Notes:
+  It is only necessary to complete this field when initially recommending and
+  again, when closing the episode. There is no requirement to keep it updated
+  as a recommendation progresses.
+  
 
 ----------
 
