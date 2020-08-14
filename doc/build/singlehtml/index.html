@@ -122,13 +122,14 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/change-log">Data Specification Change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id1">10/8/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id2">7/8/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id3">15/6/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id4">12/6/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id5">28/5/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id6">25/5/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id7">22/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id1">12/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">10/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">7/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id4">15/6/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id5">12/6/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id6">28/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id7">25/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id8">22/5/2020</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#version-3-0">27/4/2020 - Version 3.0</a></li>
 </ul>
 </li>
@@ -413,12 +414,12 @@ the current PMHC MDS Data model and specification rules may apply. These are ava
 <div class="section" id="data-model">
 <span id="id2"></span><h4>Data model<a class="headerlink" href="#data-model" title="Permalink to this headline">¶</a></h4>
 <div class="figure" id="id11">
-<span id="data-model-diagram"></span><img alt="TWB &amp; PMHC data model" src="_images/data-model.svg" /><p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">TWB data model <em>within the PMHC MDS</em></span></p>
+<span id="data-model-diagram"></span><img alt="TWB &amp; PMHC data model" src="_images/data-model-v3.0.svg" /><p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">TWB data model <em>within the PMHC MDS</em></span></p>
 </div>
 <p><strong>Note:</strong> <a class="reference internal" href="#collection-occasion-diagram"><span class="std std-ref">TWB Collection Occasion data model</span></a> for more details about
 Collection Occasion records.</p>
 <div class="figure" id="id12">
-<span id="collection-occasion-diagram"></span><img alt="TWB Collection Occasion data model" src="_images/collection-occasion-data-model.svg" /><p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">TWB Collection Occasion data model</span></p>
+<span id="collection-occasion-diagram"></span><img alt="TWB Collection Occasion data model" src="_images/collection-occasion-data-model-v3.0.svg" /><p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">TWB Collection Occasion data model</span></p>
 </div>
 <p><strong>Note:</strong> See <a class="reference internal" href="#data-model-diagram"><span class="std std-ref">TWB data model within the PMHC MDS</span></a> for more details about how
 Collection Occasion records fit into the overall structure.</p>
@@ -9429,7 +9430,7 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
 <li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
 <li>and must not be before <a class="reference internal" href="index.html#dfn-twb-primary-nominated-professional-contact-entry-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Entry Date</span></a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
+<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
 <li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
 <li>and must not be in the future</li>
 </ul>
@@ -9525,7 +9526,29 @@ TWB data. The current PMHC MDS validations rules are available to be viewed at
 <span id="document-data-specification/change-log"></span><div class="section" id="data-specification-change-log">
 <span id="data-spec-changelog"></span><h3>Data Specification Change log<a class="headerlink" href="#data-specification-change-log" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id1">
-<h4>10/8/2020<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<h4>12/8/2020<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
+<li><a class="reference internal" href="index.html#data-model"><span class="std std-ref">Data model</span></a><ul>
+<li>Redesigned the data model diagram. No changes have been made to the
+underlying data model.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="index.html#validation-rules"><span class="std std-ref">Validation Rules</span></a><ul>
+<li><a class="reference internal" href="index.html#episode-twb-current-validations"><span class="std std-ref">1. TWB Episode</span></a><ul>
+<li>Updated the validation for <a class="reference internal" href="index.html#dfn-twb-primary-nominated-professional-contact-exit-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Exit Date</span></a>
+so that the <a class="reference internal" href="index.html#dfn-twb-primary-nominated-professional-contact-exit-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Exit Date</span></a>
+must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h4>10/8/2020<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9538,8 +9561,8 @@ TWB data. The current PMHC MDS validations rules are available to be viewed at
 </li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h4>7/8/2020<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id3">
+<h4>7/8/2020<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9553,8 +9576,8 @@ Updated description</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h4>15/6/2020<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id4">
+<h4>15/6/2020<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9567,8 +9590,8 @@ evaluators</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h4>12/6/2020<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id5">
+<h4>12/6/2020<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9586,8 +9609,8 @@ evaluators</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h4>28/5/2020<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id6">
+<h4>28/5/2020<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9599,8 +9622,8 @@ is required, not a date and time</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h4>25/5/2020<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id7">
+<h4>25/5/2020<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#validation-rules"><span class="std std-ref">Validation Rules</span></a><ul>
 <li><a class="reference internal" href="index.html#episode-twb-current-validations"><span class="std std-ref">1. TWB Episode</span></a><ul>
@@ -9611,8 +9634,8 @@ is required, not a date and time</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h4>22/5/2020<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id8">
+<h4>22/5/2020<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>

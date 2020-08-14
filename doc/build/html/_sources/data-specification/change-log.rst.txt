@@ -3,6 +3,25 @@
 Data Specification Change log
 =============================
 
+12/8/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-model`
+
+    * Redesigned the data model diagram. No changes have been made to the
+      underlying data model.
+
+* :ref:`validation-rules`
+
+  * :ref:`episode-twb-current-validations`
+
+    * Updated the validation for :ref:`dfn-twb_primary_nominated_professional_contact_exit_date`
+      so that the :ref:`dfn-twb_primary_nominated_professional_contact_exit_date`
+      must not be before `Episode - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date>`_
+
+
 10/8/2020
 ---------
 
