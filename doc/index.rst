@@ -1,7 +1,7 @@
 The Way Back Support Service Minimum Data Set and Dictionary
 ============================================================
 
-Version 3.0.1
+Version |version|
 
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
@@ -26,7 +26,7 @@ Version 3.0.1
 
    .. only:: builder_html or builder_readthedocs
 
-      Download this specification as a :download:`PDF </_static/WAYBACK.pdf>`.
+      Download this specification as a |download-pdf|.
 
    .. End of LINK TO THE PDF
 
