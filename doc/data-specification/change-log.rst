@@ -3,6 +3,17 @@
 Data Specification Change log
 =============================
 
+14/8/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-twb_critical_incident_date` - Updated description
+    
+    * :ref:`dfn-funding_source` - Updated description
+
 12/8/2020
 ---------
 
