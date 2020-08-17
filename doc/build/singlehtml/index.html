@@ -122,14 +122,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/change-log">Data Specification Change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id1">12/8/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id2">10/8/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id3">7/8/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id4">15/6/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id5">12/6/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id6">28/5/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id7">25/5/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id8">22/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id1">14/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">12/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">10/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id4">7/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id5">15/6/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id6">12/6/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id7">28/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id8">25/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id9">22/5/2020</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#version-3-0">27/4/2020 - Version 3.0</a></li>
 </ul>
 </li>
@@ -6950,7 +6951,7 @@ additional activity to be recorded.</p>
 <tr class="field-odd field"><th class="field-name">Required:</th><td class="field-body"><p class="first">yes</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first last docutils field-list" frame="void" rules="none">
+<tr class="field-even field"><th class="field-name">Domain:</th><td class="field-body"><table class="first docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -6960,6 +6961,11 @@ additional activity to be recorded.</p>
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Notes:</th><td class="field-body"><p class="first last">A client may be receiving care from both The Way Back and another service in
+the same episode. For all Service Contacts provided under The Way Back please
+select “TWB” for all other types of service please select “PHN Funded”.</p>
 </td>
 </tr>
 </tbody>
@@ -7557,12 +7563,12 @@ used across the National Health Data Dictionary; specifically, dates must be
 of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
-<p>If the date of the critical incident is unknown, 09099999 should be used.</p>
-<ul class="simple">
+<p>Requires services to record the date of when a critical incident was reported.</p>
+<p>If the reported date of the critical incident is unknown, 09099999 should be used.</p>
+<ul class="last simple">
 <li>The critical incident date must not be before 1st January 2019.</li>
 <li>The critical incident date must not be in the future.</li>
 </ul>
-<p class="last">Requires services to record the date of when a critical incident was reported.</p>
 </td>
 </tr>
 </tbody>
@@ -9526,7 +9532,20 @@ TWB data. The current PMHC MDS validations rules are available to be viewed at
 <span id="document-data-specification/change-log"></span><div class="section" id="data-specification-change-log">
 <span id="data-spec-changelog"></span><h3>Data Specification Change log<a class="headerlink" href="#data-specification-change-log" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id1">
-<h4>12/8/2020<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<h4>14/8/2020<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
+<li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
+<li><a class="reference internal" href="index.html#dfn-twb-critical-incident-date"><span class="std std-ref">TWB Critical Incident - Date</span></a> - Updated description</li>
+<li><a class="reference internal" href="index.html#dfn-funding-source"><span class="std std-ref">Service Contact - Funding Source</span></a> - Updated description</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h4>12/8/2020<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#data-model"><span class="std std-ref">Data model</span></a><ul>
@@ -9547,8 +9566,8 @@ must not be before <a class="reference external" href="https://docs.pmhc-mds.com
 </li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h4>10/8/2020<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id3">
+<h4>10/8/2020<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9561,8 +9580,8 @@ must not be before <a class="reference external" href="https://docs.pmhc-mds.com
 </li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h4>7/8/2020<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id4">
+<h4>7/8/2020<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9576,8 +9595,8 @@ Updated description</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h4>15/6/2020<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id5">
+<h4>15/6/2020<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9590,8 +9609,8 @@ evaluators</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h4>12/6/2020<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id6">
+<h4>12/6/2020<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9609,8 +9628,8 @@ evaluators</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h4>28/5/2020<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id7">
+<h4>28/5/2020<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
@@ -9622,8 +9641,8 @@ is required, not a date and time</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h4>25/5/2020<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id8">
+<h4>25/5/2020<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#validation-rules"><span class="std std-ref">Validation Rules</span></a><ul>
 <li><a class="reference internal" href="index.html#episode-twb-current-validations"><span class="std std-ref">1. TWB Episode</span></a><ul>
@@ -9634,8 +9653,8 @@ is required, not a date and time</li>
 </li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h4>22/5/2020<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id9">
+<h4>22/5/2020<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a><ul>
 <li><a class="reference internal" href="index.html#record-formats"><span class="std std-ref">Record Formats</span></a><ul>
