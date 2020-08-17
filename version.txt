@@ -1,5 +1,5 @@
-version: v0.0.1-78-ga43f87a
+version: v0.0.1-80-g8924830
 
-commit_hash: a43f87a9e9c3b1af7b0aba702ce06168e91157db
-commit_date: Mon Aug 10 12:48:30 2020
+commit_hash: 8924830cbdf48ac551ec66103036bb5ac497cb24
+commit_date: Fri Aug 14 10:02:58 2020
 

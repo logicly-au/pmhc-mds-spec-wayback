@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+17/8/2020 - Version 3.0.1
+-------------------------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`record-formats`
+
+    * :ref:`dfn-twb_transgender_status` - Added value '9 - Not stated/Unknown'
+    * :ref:`dfn-twb_intersex_status` - Added value '9 - Not stated/Unknown'
+
 12/8/2020
 ---------
 
