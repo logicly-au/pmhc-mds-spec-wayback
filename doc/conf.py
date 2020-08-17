@@ -60,7 +60,7 @@ author = u'Strategic Data'
 
 def get_version():
 
-   version = 'v3.0'
+   version = 'v3.0.1'
 
    try:
       version = os.environ["GIT_VERSION"]

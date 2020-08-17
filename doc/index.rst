@@ -1,6 +1,8 @@
 The Way Back Support Service Minimum Data Set and Dictionary
 ============================================================
 
+Version 3.0.1
+
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
 
