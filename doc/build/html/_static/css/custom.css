@@ -85,17 +85,17 @@ a.headerlink {
 @font-face{
     font-family:"Arial";
     font-style:normal;
-    src:local("Arial"),url(arial.ttf) format("truetype");
+    src:local("Arial"),url(fonts/arial.ttf) format("truetype");
 }
 @font-face{
     font-family:"Helvetica";
     font-style:normal;
-    src:local("Arial"),url(arial.ttf) format("truetype");
+    src:local("Arial"),url(fonts/arial.ttf) format("truetype");
 }
 
 /* Shrinks images to fit when using prince */
 @page {
-	prince-shrink-to-fit: auto 
+	prince-shrink-to-fit: auto
 }
 
 @media print {
@@ -103,4 +103,3 @@ a.headerlink {
 		max-height: 297mm;
 	}
 }
-
