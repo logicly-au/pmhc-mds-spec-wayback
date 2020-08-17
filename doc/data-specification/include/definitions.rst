@@ -3098,7 +3098,7 @@ An indication of whether the client has an intersex status, as represented by a 
   :1: Yes
   :2: No
   :3: Does not want to disclose
-  :9: Not stated/Unknown
+  :9: Not stated / Unknown
 :Notes:
   **Guide for use**
   The term intersex is used to describe people who are born with sex
@@ -3368,7 +3368,7 @@ An indication of whether the client has a transgender history, experience or ide
   :1: Yes
   :2: No
   :3: Does not want to disclose
-  :9: Not stated/Unknown
+  :9: Not stated / Unknown
 :Notes:
   The term transgender is used to describe people whose gender
   identity does not align with the sex they were assigned at birth.
