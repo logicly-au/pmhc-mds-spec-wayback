@@ -3,16 +3,23 @@
 Data Specification Change log
 =============================
 
-14/8/2020
+18/8/2020
 ---------
+
+    * :ref:`dfn-twb_critical_incident_date` - Updated description
+
+    * :ref:`dfn-funding_source` - Updated description
+
+17/8/2020 - Version 3.0.1
+-------------------------
 
 * :ref:`data-model-and-specifications`
 
   * :ref:`record-formats`
 
-    * :ref:`dfn-twb_critical_incident_date` - Updated description
-    
-    * :ref:`dfn-funding_source` - Updated description
+    * :ref:`dfn-twb_transgender_status` - Added value '9 - Not stated / Unknown'
+
+    * :ref:`dfn-twb_intersex_status` - Added value '9 - Not stated / Unknown'
 
 12/8/2020
 ---------
