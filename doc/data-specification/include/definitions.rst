@@ -2490,6 +2490,11 @@ The source of funding for a service contact
 :Domain:
   :0: PHN funded
   :7: TWB
+:Notes:
+  A client may be receiving care from both The Way Back and another service in
+  the same episode. For all Service Contacts provided under The Way Back please
+  select “TWB” for all other types of service please select “PHN Funded”.
+  
 
 ----------
 
@@ -2955,13 +2960,13 @@ The date the critical incident was reported to the Service Provider.
   necessary to pad out a value. For instance, 13th March 2008 would appear as
   13032008.
   
-  If the date of the critical incident is unknown, 09099999 should be used.
+  Requires services to record the date of when a critical incident was reported.
+  
+  If the reported date of the critical incident is unknown, 09099999 should be used.
   
   - The critical incident date must not be before 1st January 2019.
   
   - The critical incident date must not be in the future.
-  
-  Requires services to record the date of when a critical incident was reported.
   
 
 ----------
