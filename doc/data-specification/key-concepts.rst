@@ -101,7 +101,25 @@ TWB-Episode is the record format for collecting TWB episode data.
 
 See :ref:`twb-episode-data-elements` for the data elements for TWB-Episode.
 
+.. _key-concepts-twb-critical-incident:
 
+TWB-Critical Incidents
+----------------------
+
+A Critical Incident is a suicide attempt, suicide death or death by any
+other means of a client during the episode.
+
+.. _key-concepts-twb-ni:
+
+TWB-NI
+------
+
+A Support Plan must be completed with a client within two weeks of their first
+attended Service Contact. Creating a support plan requires working with the
+client to identify their needs. This is to build an understanding of what
+will be of benefit and help form the goals of their Support Plan. These
+identified needs will fall into one of the categories listed. Multiple needs
+may be identified and therefore added.
 
 .. _key-concepts-service-contact:
 
