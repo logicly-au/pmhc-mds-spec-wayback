@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-18/8/2020
+24/8/2020
 ---------
 
     * :ref:`dfn-twb_critical_incident_date` - Updated description
