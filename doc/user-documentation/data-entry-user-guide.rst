@@ -12,13 +12,13 @@ PMHC Client Data
 ^^^^^^^^^^^^^^^^
 
 For more detail on how to search, find, view, add, edit or delete Client PMHC data in the PMHC MDS,
-please visit the PMHC User Guide at https://docs.pmhc-mds.com/user-documentation/data-entry.html#client-data.
+please visit the PMHC User Guide at https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#client-data.
 
 PMHC Episodes
 ^^^^^^^^^^^^^
 
 For more detail on how to find, view, add, edit or delete Client PMHC Episode data in the PMHC MDS,
-please visit the PMHC User Guide at https://docs.pmhc-mds.com/user-documentation/data-entry.html#episodes.
+please visit the PMHC User Guide at https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#episodes.
 
 .. _twb-episode-data:
 
@@ -151,7 +151,8 @@ See Validation Rules - :ref:`TWB Episode <episode-twb-current-validations>`
 Deleting an TWB Episode
 -----------------------
 
-Removing the ``!wayback`` tag will delete an TWB Episode, along with deleteing the .
+Removing the ``!wayback`` tag will delete an TWB Episode, through :ref:`view-episodes`
+available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-episodes`.
 2. From the Client's Episode table, click the Episode Key.
