@@ -158,7 +158,7 @@ available on the Data Entry tab, by following these steps:
 1. Once :ref:`view-episodes`.
 2. From the Client's Episode table, click the Episode Key.
 3. Click Edit Details tab.
-4. Click on the cross on the ``!wayback`` tag will.
+4. Click on the cross on the ``!wayback`` tag to remove it.
 
 .. figure:: screen-shots/client-episodes-twb-tag.png
    :alt: Client Episodes Edit Details
