@@ -495,3 +495,16 @@ collection occasion will no longer be displayed.
 
     .. figure:: screen-shots/client-collection-occasions-measures-delete-successful.png
        :alt: Client Collection Occasion Data Delete Successful
+
+PMHC Service Contact Data
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For more detail on how to search, find, view, add, edit or delete Service Contact PMHC data in the PMHC MDS,
+please visit the PMHC User Guide at https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#service-contacts.
+
+  **Please note: TWB adds an extra field Service Contact - Funding Source to the standard PMHC Service Contact.**
+
+  For all Service Contacts provided under The Way Back please select “TWB”.
+
+    .. figure:: screen-shots/client-collection-service-contact-funding.png
+       :alt: Client Service Contact Funding Source
