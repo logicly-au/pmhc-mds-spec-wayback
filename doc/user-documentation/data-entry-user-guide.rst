@@ -381,7 +381,7 @@ available on the Data Entry tab, by following these steps:
 2. Firstly double check the measure is not already showing.
 3. Click the Add New Measure tab.
 
-.. figure:: screen-shots/client-collection-occasion-measures-add.png
+.. figure:: screen-shots/client-collection-occasions-measures-add.png
    :alt: Client Data Add Collection Occasions
 
 4. Select the Collection Occassion Measure type.
@@ -405,7 +405,7 @@ available on the Data Entry tab, by following these steps:
 You will receive confirmation that the Client's Measure details have been added,
 and it will now be displaying these new details in the View Measure tab.
 
-        .. figure:: screen-shots/client-collection-occasion-measures-saved-add.png
+        .. figure:: screen-shots/client-collection-occasions-measures-saved-add.png
            :alt: Client Data Saved Successfully
 
 If you receive an error message, the data will need to be corrected before the
@@ -436,7 +436,7 @@ available on the Data Entry tab, by following these steps:
 You will receive confirmation that the Client's Collection Occasions details have been saved,
 and it will now be displaying these new details in the View Collection Occasions Details tab.
 
-        .. figure:: screen-shots/client-SIDAS-saved-edit.png
+        .. figure:: screen-shots/client-collection-occasions-measures-saved-edit.png
            :alt: Client Data Saved Successfully
 
 If you receive an error message, the data will need to be corrected before the
@@ -453,7 +453,7 @@ available on the Data Entry tab, by following these steps:
 1. In step four when :ref:`edit-collection-occasion-measure`.
 2. From the Collection Occasion Edit Details tab, click the 'Edit Key' button.
 
-       .. figure:: screen-shots/client-collection-occasion-measures-edit-key.png
+       .. figure:: screen-shots/client-collection-occasions-measures-edit-key.png
           :alt: Client Data Edit Collection Occasion Key
 
 3. Type in the new collection occasion key and click 'Next'.
@@ -462,7 +462,7 @@ available on the Data Entry tab, by following these steps:
 You will receive confirmation that the Collection Occasion's key has been saved, and the screen
 will now be displaying the updated collection occasion key details in the Collection Occasions View Details tab.
 
-       .. figure:: screen-shots/client-collection-occasion-measures-edit-key-saved.png
+       .. figure:: screen-shots/client-collection-occasions-measures-edit-key-saved.png
           :alt: Collection Occasion Key Saved Successfully
 
 .. _delete-collection-occasion-measure:
@@ -484,12 +484,12 @@ available on the Data Entry tab, by following these steps:
 
 7. Click the blue 'Confirm' button to delete this collection occasion. (or click the orange 'Cancel' button if you decide not to delete this collection occasion data)
 
-  .. figure:: screen-shots/client-collection-occasion-measures-delete-confirm.png
+  .. figure:: screen-shots/client-collection-occasions-measures-delete-confirm.png
      :alt: Client Collection Occasion Data Confirm Delete
 
 After you click 'Confirm', you will receive confirmation that the collection occasion has
 been deleted, and you will be redirected to the :ref:`View Collection Occasions <view-collection-occasion-measure>` where the
 collection occasion will no longer be displayed.
 
-    .. figure:: screen-shots/client-collection-occasion-measures-delete-successful.png
+    .. figure:: screen-shots/client-collection-occasions-measures-delete-successful.png
        :alt: Client Collection Occasion Data Delete Successful
