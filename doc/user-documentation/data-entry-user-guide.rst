@@ -9,13 +9,13 @@ online User Guide for Data Entry is available to be viewed at
 https://docs.pmhc-mds.com/user-documentation/data-entry.html.
 
 PMHC Client Data
-----------------
+^^^^^^^^^^^^^^^^
 
 For more detail on how to search, find, view, add, edit or delete Client PMHC data in the PMHC MDS,
 please visit the PMHC User Guide at https://docs.pmhc-mds.com/user-documentation/data-entry.html#client-data.
 
 PMHC Episodes
--------------
+^^^^^^^^^^^^^
 
 For more detail on how to find, view, add, edit or delete Client PMHC Episode data in the PMHC MDS,
 please visit the PMHC User Guide at https://docs.pmhc-mds.com/user-documentation/data-entry.html#episodes.
@@ -163,11 +163,13 @@ Removing the ``!wayback`` tag will delete an TWB Episode, along with deleteing t
 
 5. Click the blue 'Save' button.
 
-Deleting the The Way Back Episode data will also delete the:
- * Primary Nominated Professional Contact,
- * Critical Incidents, and
- * Recommendation Outs.
-However any associated measures will be retained.
+   Deleting the The Way Back Episode data will also delete the:
+
+   * Primary Nominated Professional Contact,
+   * Critical Incidents, and
+   * Recommendation Outs.
+
+   However any associated measures will be retained.
 
         .. figure:: screen-shots/client-episodes-twb-delete.png
            :alt: Client Episodes TWB Delete Details
@@ -214,7 +216,7 @@ A page will display the Collection Occasions details as recorded via the
 .. _add-collection-occasion:
 
 Adding an TWB Client's Collection Occasions data
---------------------------------------------------------------
+------------------------------------------------
 
 You can add a Client's Collection Occasions through :ref:`view-collection-occasion`
 available on the Data Entry tab, by following these steps:
@@ -369,7 +371,7 @@ A page will display the Collection Occasions details as recorded via the
    :alt: Client Episode Collection Occasions Details View
 
 
-.. _add-collection-occasion:
+.. _add-collection-occasion-measure:
 
 Adding an Client's Collection Occasion Measures data
 ----------------------------------------------------
@@ -386,19 +388,19 @@ available on the Data Entry tab, by following these steps:
 
 4. Select the Collection Occassion Measure type.
 
-.. figure:: screen-shots/client-collection-occasions-measure-select.png
+.. figure:: screen-shots/client-collection-occasions-measures-select.png
    :alt: Client Data Add Collection Occasions Measure Select
 
-6. Choose the Score Type, if it isn't already pre-filled.
-7. Click the blue 'Next' button.
-5. Enter the Client's Measure details for the Collection Occassion. Mandatory fields are marked with an * .
+5. Choose the Score Type, if it isn't already pre-filled.
+6. Click the blue 'Next' button.
+7. Enter the Client's Measure details for the Collection Occassion. Mandatory fields are marked with an * .
 
-  - See :ref:`TWB-Plan data specifications <twb-plan-data-elements>` for Plan Data.
-  - See :ref:`TWB-NI data specifications <twb-ni-data-elements>` for Needs Identification Data.
-  - See :ref:`K10+ Measure data specifications <k10p-data-elements>`.
-  - See :ref:`WHO-5 Measure data specifications <who5-data-elements>`.
-  - See :ref:`SIDAS Measure data specifications <sidas-data-elements>`.
-  - See :ref:`Service Contact data specifications <service-contact-data-elements>` for Service Contact Data.
+  * See :ref:`TWB-Plan data specifications <twb-plan-data-elements>` for Plan Data.
+  * See :ref:`TWB-NI data specifications <twb-ni-data-elements>` for Needs Identification Data.
+  * See :ref:`K10+ Measure data specifications <k10p-data-elements>`.
+  * See :ref:`WHO-5 Measure data specifications <who5-data-elements>`.
+  * See :ref:`SIDAS Measure data specifications <sidas-data-elements>`.
+  * See :ref:`Service Contact data specifications <service-contact-data-elements>` for Service Contact Data.
 
 6. Click the blue 'Save' button. (If you decide not to add this client's measure, you can simply navigate away from this screen)
 
@@ -426,7 +428,7 @@ available on the Data Entry tab, by following these steps:
 4. Click Edit Measure
 5. Update the Client's Measure details. Mandatory fields are marked with an * .
 
-  *Please note: You can edit the Measure Key from this screen. See* :ref:`edit-measure-key`.
+  *Please note: You can edit the Measure Key from this screen. See* :ref:`edit-collection-occasion-measure-key`.
 
     .. figure:: screen-shots/client-collection-occasions-measures-edit.png
        :alt: Client Collection Occasions Edit Details
@@ -493,3 +495,16 @@ collection occasion will no longer be displayed.
 
     .. figure:: screen-shots/client-collection-occasions-measures-delete-successful.png
        :alt: Client Collection Occasion Data Delete Successful
+
+PMHC Service Contact Data
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For more detail on how to search, find, view, add, edit or delete Service Contact PMHC data in the PMHC MDS,
+please visit the PMHC User Guide at https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#service-contacts.
+
+  **Please note: TWB adds an extra field Service Contact - Funding Source to the standard PMHC Service Contact.**
+
+  For all Service Contacts provided under The Way Back please select “TWB”.
+
+    .. figure:: screen-shots/client-collection-service-contact-funding.png
+       :alt: Client Service Contact Funding Source
