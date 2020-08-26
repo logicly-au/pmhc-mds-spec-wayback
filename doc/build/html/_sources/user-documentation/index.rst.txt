@@ -11,5 +11,6 @@ The user guide is regularly updated to reflect each release communication.
 .. toctree::
 
    access-and-password-user-guide
+   data-entry-user-guide
    upload-user-guide
    video-library
