@@ -100,6 +100,7 @@ Add the Client's TWB Episode details. Mandatory fields are marked with an * . (S
    :alt: Client Episodes Edit Details
 
 You can also add the following information if available, or these can be added later:
+
 - See :ref:`TWB-Critical Incident data specifications <twb-critical-incident-data-elements>` for Critical Incident Data.
 - See :ref:`TWB-Recommendation Out data specifications <twb-recommendation-out-data-elements>` for Recommendation Out Data.
 
@@ -222,16 +223,16 @@ You can add a Client's Collection Occasions through :ref:`view-collection-occasi
 available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-collection-occasion`.
-2. Firstly double check the Collection Occasions is not already showing.
+2. Firstly double check the Collection Occasion is not already showing.
 3. Click the Add New Collection Occasion tab.
-4. Enter the Client's Collection Occasions details for the TWB episode. Mandatory fields are marked with an * . (Specification :ref:`Collection Occasions Data Elements <collection-occasion-data-elements>`)
+4. Enter the Client's Collection Occasion details for the TWB episode. Mandatory fields are marked with an * . (Specification :ref:`Collection Occasion Data Elements <collection-occasion-data-elements>`)
 
 .. figure:: screen-shots/client-collection-occasions-add.png
    :alt: Client Data Add Collection Occasions
 
 5. Click the blue 'Save' button. (If you decide not to add this client's episode, you can simply navigate away from this screen)
 
-You will receive confirmation that the Client's Collection Occasions details have been added,
+You will receive confirmation that the Client's Collection Occasion details have been added,
 and it will now be displaying these new details in the View Collection Occasions Details tab.
 
         .. figure:: screen-shots/saved.png
@@ -250,19 +251,19 @@ You can edit a Client's Collection Occasions through :ref:`view-collection-occas
 available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-collection-occasion`.
-2. Click the Collection Occasions Key.
+2. Click the Collection Occasion Key.
 3. Click Edit Details tab.
-4. Update the Client's Collection Occasions details. Mandatory fields are marked with an * .(Specification :ref:`Collection Occasions Data Elements <collection-occasion-data-elements>`)
+4. Update the Client's Collection Occasion details. Mandatory fields are marked with an * . (Specification :ref:`Collection Occasion Data Elements <collection-occasion-data-elements>`)
 
    *Please note: You can edit the Collection Occasion Key from this screen. See* :ref:`edit-collection-occasion-key`.
 
     .. figure:: screen-shots/client-collection-occasions-edit.png
-       :alt: Client Collection Occasions Edit Details
+       :alt: Client Collection Occasion Edit Details
 
 5. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
-You will receive confirmation that the Client's Collection Occasions details have been saved,
-and it will now be displaying these new details in the View Collection Occasions Details tab.
+You will receive confirmation that the Client's Collection Occasion details have been saved,
+and it will now be displaying these new details in the View Collection Occasion Details tab.
 
         .. figure:: screen-shots/saved.png
            :alt: Client Data Saved Successfully
@@ -275,7 +276,7 @@ record is saved and added to the PMHC MDS.
 Editing a Collection Occasion Key
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can edit an collection occasion's identification key through :ref:`view-episodes`
+You can edit a collection occasion's identification key through :ref:`view-episodes`
 available on the Data Entry tab, by following these steps:
 
 1. In step four when :ref:`edit-collection-occasion`.
@@ -303,7 +304,7 @@ You can delete a Client's Collection Occasions through ':ref:`view-collection-oc
 available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-collection-occasion`.
-2. Click the Collection Occasions Key.
+2. Click the Collection Occasion Key.
 3. Click the red 'Delete' button.
 4. You will either be displayed a Confirm Delete screen or a Cannot Delete screen
 
@@ -348,7 +349,7 @@ Collection Occasion Measures
 Viewing a Client's Collection Occasion Measures for an Episode
 --------------------------------------------------------------
 
-You can view a Client's Measures added to a Collection Occasions through :ref:`view-collection-occasion`
+You can view a Client's Measures added to a Collection Occasion through :ref:`view-collection-occasion`
 available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`Viewing the Collection Occasion <view-collection-occasion>`.
@@ -364,7 +365,7 @@ A table will display all the Measures linked to this Client's Episode Collection
 .. figure:: screen-shots/client-collection-occasions-measures-view.png
    :alt: Client Episode Collection Occasions Details View
 
-A page will display the Collection Occasions details as recorded via the
+A page will display the Collection Occasion details as recorded via the
 :ref:`Collection Occasion Data Elements <collection-occasion-data-elements>`.
 
 .. figure:: screen-shots/client-collection-occasions-measures-details.png
@@ -376,7 +377,7 @@ A page will display the Collection Occasions details as recorded via the
 Adding an Client's Collection Occasion Measures data
 ----------------------------------------------------
 
-You can add a Client's Measure for a Collection Occasions through :ref:`view-collection-occasion`
+You can add a Client's Measure for a Collection Occasion through :ref:`view-collection-occasion`
 available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-collection-occasion`.
@@ -419,7 +420,7 @@ record is saved and added to the PMHC MDS.
 Editing a Client's Measures for a Collection Occasion
 -----------------------------------------------------
 
-You can edit a Client's Measure for a Collection Occasions through :ref:`view-collection-occasion`
+You can edit a Client's Measure for a Collection Occasion through :ref:`view-collection-occasion`
 available on the Data Entry tab, by following these steps:
 
 1. Once :ref:`view-collection-occasion`.
@@ -436,7 +437,7 @@ available on the Data Entry tab, by following these steps:
 6. Click the blue 'Save' button. (If you decide not to save changes, you can simply navigate away from this screen)
 
 You will receive confirmation that the Client's Collection Occasions details have been saved,
-and it will now be displaying these new details in the View Collection Occasions Details tab.
+and it will now be displaying these new details in the View Collection Occasion Details tab.
 
         .. figure:: screen-shots/client-collection-occasions-measures-saved-edit.png
            :alt: Client Data Saved Successfully
@@ -462,7 +463,7 @@ available on the Data Entry tab, by following these steps:
 4. Double check the new key is correct and click save. (If it is incorrect, click back to re-enter the key or click the 'cross' in the top right to cancel this key change request)
 
 You will receive confirmation that the Collection Occasion's key has been saved, and the screen
-will now be displaying the updated collection occasion key details in the Collection Occasions View Details tab.
+will now be displaying the updated collection occasion key details in the Collection Occasion View Details tab.
 
        .. figure:: screen-shots/client-collection-occasions-measures-edit-key-saved.png
           :alt: Collection Occasion Key Saved Successfully
@@ -482,19 +483,19 @@ available on the Data Entry tab, by following these steps:
 5. Click the red 'Delete' button.
 6. You will be displayed a 'Confirm Deletion' screen.
 
-  **Please note: Once the collection occasion is deleted, you will not be able to recover this collection occasion data.**
+  **Please note: Once the measure is deleted, you will not be able to recover this measure data.**
 
-7. Click the blue 'Confirm' button to delete this collection occasion. (or click the orange 'Cancel' button if you decide not to delete this collection occasion data)
+7. Click the blue 'Confirm' button to delete this measure. (or click the orange 'Cancel' button if you decide not to delete this measure data)
 
   .. figure:: screen-shots/client-collection-occasions-measures-delete-confirm.png
-     :alt: Client Collection Occasion Data Confirm Delete
+     :alt: Client Measure Data Confirm Delete
 
-After you click 'Confirm', you will receive confirmation that the collection occasion has
-been deleted, and you will be redirected to the :ref:`View Collection Occasions <view-collection-occasion-measure>` where the
-collection occasion will no longer be displayed.
+After you click 'Confirm', you will receive confirmation that the measure has
+been deleted, and you will be redirected to the :ref:`View Measures <view-collection-occasion-measure>` where the
+measure will no longer be displayed.
 
     .. figure:: screen-shots/client-collection-occasions-measures-delete-successful.png
-       :alt: Client Collection Occasion Data Delete Successful
+       :alt: Client Measure Data Delete Successful
 
 PMHC Service Contact Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^
