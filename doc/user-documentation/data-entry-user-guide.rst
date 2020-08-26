@@ -388,14 +388,14 @@ available on the Data Entry tab, by following these steps:
 .. figure:: screen-shots/client-collection-occasions-measures-add.png
    :alt: Client Data Add Collection Occasions
 
-4. Select the Collection Occassion Measure type.
+4. Select the Collection Occasion Measure type.
 
 .. figure:: screen-shots/client-collection-occasions-measures-select.png
    :alt: Client Data Add Collection Occasions Measure Select
 
 5. Choose the Score Type, if it isn't already pre-filled.
 6. Click the blue 'Next' button.
-7. Enter the Client's Measure details for the Collection Occassion. Mandatory fields are marked with an * .
+7. Enter the Client's Measure details for the Collection Occasion. Mandatory fields are marked with an * .
 
   * See :ref:`TWB-Plan data specifications <twb-plan-data-elements>` for Plan Data.
   * See :ref:`TWB-NI data specifications <twb-ni-data-elements>` for Needs Identification Data.
