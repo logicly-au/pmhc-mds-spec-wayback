@@ -99,9 +99,9 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/identifier-management">Identifier Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#managing-keys">Managing  Keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#managing-keys">Managing Keys</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#managing-pmhc-mds-episode-key">Managing PMHC MDS Episode Key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#identifying-twb-episode-data-records">Identifying TWB-Episode data records</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#identifier-pmhc-twb-episode-tag">Identifying TWB-Episode data records</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/data-model-and-specifications">Data Model and Specifications</a><ul>
@@ -397,7 +397,7 @@ is required at both Episode Start and Episode End.</p>
 the current PMHC MDS Identifier Management rules apply. These are available to be viewed at
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/identifier-management.html">https://docs.pmhc-mds.com/data-specification/identifier-management.html</a>.</p>
 <div class="section" id="managing-keys">
-<h4>Managing  Keys<a class="headerlink" href="#managing-keys" title="Permalink to this headline">¶</a></h4>
+<span id="identifier-managing-keys"></span><h4>Managing Keys<a class="headerlink" href="#managing-keys" title="Permalink to this headline">¶</a></h4>
 <p>The <a class="reference internal" href="index.html#dfn-twb-critical-incident-key"><span class="std std-ref">TWB Critical Incident Key</span></a>,
 <a class="reference internal" href="index.html#dfn-twb-recommendation-out-key"><span class="std std-ref">TWB Recommendation Out Key</span></a>, <a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> and
 <a class="reference internal" href="index.html#dfn-measure-key"><span class="std std-ref">Measure Key</span></a> will be created and managed by Provider Organisations.</p>
@@ -411,7 +411,7 @@ the Provider Organisation.</p>
 providing that a key does not change once it is assigned.</p>
 </div>
 <div class="section" id="managing-pmhc-mds-episode-key">
-<h4>Managing PMHC MDS Episode Key<a class="headerlink" href="#managing-pmhc-mds-episode-key" title="Permalink to this headline">¶</a></h4>
+<span id="identifier-pmhc-episode-keys"></span><h4>Managing PMHC MDS Episode Key<a class="headerlink" href="#managing-pmhc-mds-episode-key" title="Permalink to this headline">¶</a></h4>
 <p>Each TWB Episode record needs to record the corresponding <a class="reference internal" href="index.html#dfn-episode-key"><span class="std std-ref">PMHC MDS episode key</span></a>
 in order to link it to an existing episode within the PMHC data and facilitate
 adding/updating/deleting each item when uploading/entering TWB data.</p>
@@ -423,8 +423,8 @@ adding/updating/deleting each item when uploading/entering TWB data.</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="identifying-twb-episode-data-records">
-<h4>Identifying TWB-Episode data records<a class="headerlink" href="#identifying-twb-episode-data-records" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="identifier-pmhc-twb-episode-tag">
+<span id="identifying-twb-episode-data-records"></span><h4>Identifying TWB-Episode data records<a class="headerlink" href="#identifier-pmhc-twb-episode-tag" title="Permalink to this headline">¶</a></h4>
 <p>To enable the PMHC MDS to add a TWB-Episode record to a PMHC Episode, the ‘<strong>!wayback</strong>’
 tag must be included on the ‘Tags’ field of all TWB-Episode data records. If not
 included, the system will automatically include it.</p>
@@ -9807,11 +9807,11 @@ exist within the PMHC MDS, is available at <a class="reference external" href="h
 <tbody valign="top">
 <tr class="row-even"><td>Stage One - TWB released</td>
 <td>Upload</td>
-<td>A user with the Upload role can upload PMHC &amp; TWB data to the associated organisation</td>
+<td>A user with the Upload role can upload PMHC &amp; TWB data to the associated organisation.</td>
 </tr>
-<tr class="row-odd"><td>Stage Two - TWB under development</td>
+<tr class="row-odd"><td>Stage Two - TWB released</td>
 <td>Data Entry</td>
-<td>A user with the Data Entry role can enter PMHC data from the associated organisation. TWB extension data entry forms are under development</td>
+<td>A user with the Data Entry role can enter PMHC data from the associated organisation. See <a class="reference internal" href="index.html#identifier-pmhc-twb-episode-tag"><span class="std std-ref">Identifying TWB-Episode data records</span></a></td>
 </tr>
 <tr class="row-even"><td>Stage Three - TWB under development</td>
 <td>Reporting</td>
@@ -10201,7 +10201,6 @@ available on the Data Entry tab, by following these steps:</p>
 <li>See <a class="reference internal" href="index.html#k10p-data-elements"><span class="std std-ref">K10+ Measure data specifications</span></a>.</li>
 <li>See <a class="reference internal" href="index.html#who5-data-elements"><span class="std std-ref">WHO-5 Measure data specifications</span></a>.</li>
 <li>See <a class="reference internal" href="index.html#sidas-data-elements"><span class="std std-ref">SIDAS Measure data specifications</span></a>.</li>
-<li>See <a class="reference internal" href="index.html#service-contact-data-elements"><span class="std std-ref">Service Contact data specifications</span></a> for Service Contact Data.</li>
 </ul>
 </div></blockquote>
 <ol class="arabic simple" start="6">
@@ -10314,6 +10313,7 @@ measure will no longer be displayed.</p>
 please visit the PMHC User Guide at <a class="reference external" href="https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#service-contacts">https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#service-contacts</a>.</p>
 <blockquote>
 <div><p><strong>Please note: TWB adds an extra field Service Contact - Funding Source to the standard PMHC Service Contact.</strong></p>
+<p>Update the Client’s Service Contact details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="index.html#service-contact-data-elements"><span class="std std-ref">Service Contact Data Elements</span></a>)</p>
 <p>For all Service Contacts provided under The Way Back please select “TWB”.</p>
 <blockquote>
 <div><div class="figure">

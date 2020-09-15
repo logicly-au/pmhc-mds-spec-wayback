@@ -93,9 +93,9 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Specification</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="key-concepts.html">Key Concepts</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Identifier Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#managing-keys">Managing  Keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#managing-keys">Managing Keys</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#managing-pmhc-mds-episode-key">Managing PMHC MDS Episode Key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#identifying-twb-episode-data-records">Identifying TWB-Episode data records</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#identifier-pmhc-twb-episode-tag">Identifying TWB-Episode data records</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="data-model-and-specifications.html">Data Model and Specifications</a></li>
@@ -180,7 +180,7 @@
 the current PMHC MDS Identifier Management rules apply. These are available to be viewed at
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/identifier-management.html">https://docs.pmhc-mds.com/data-specification/identifier-management.html</a>.</p>
 <div class="section" id="managing-keys">
-<h2>Managing  Keys<a class="headerlink" href="#managing-keys" title="Permalink to this headline">¶</a></h2>
+<span id="identifier-managing-keys"></span><h2>Managing Keys<a class="headerlink" href="#managing-keys" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-critical-incident-key"><span class="std std-ref">TWB Critical Incident Key</span></a>,
 <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-recommendation-out-key"><span class="std std-ref">TWB Recommendation Out Key</span></a>, <a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> and
 <a class="reference internal" href="data-model-and-specifications.html#dfn-measure-key"><span class="std std-ref">Measure Key</span></a> will be created and managed by Provider Organisations.</p>
@@ -194,7 +194,7 @@ the Provider Organisation.</p>
 providing that a key does not change once it is assigned.</p>
 </div>
 <div class="section" id="managing-pmhc-mds-episode-key">
-<h2>Managing PMHC MDS Episode Key<a class="headerlink" href="#managing-pmhc-mds-episode-key" title="Permalink to this headline">¶</a></h2>
+<span id="identifier-pmhc-episode-keys"></span><h2>Managing PMHC MDS Episode Key<a class="headerlink" href="#managing-pmhc-mds-episode-key" title="Permalink to this headline">¶</a></h2>
 <p>Each TWB Episode record needs to record the corresponding <a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">PMHC MDS episode key</span></a>
 in order to link it to an existing episode within the PMHC data and facilitate
 adding/updating/deleting each item when uploading/entering TWB data.</p>
@@ -206,8 +206,8 @@ adding/updating/deleting each item when uploading/entering TWB data.</p>
 </dd>
 </dl>
 </div>
-<div class="section" id="identifying-twb-episode-data-records">
-<h2>Identifying TWB-Episode data records<a class="headerlink" href="#identifying-twb-episode-data-records" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="identifier-pmhc-twb-episode-tag">
+<span id="identifying-twb-episode-data-records"></span><h2>Identifying TWB-Episode data records<a class="headerlink" href="#identifier-pmhc-twb-episode-tag" title="Permalink to this headline">¶</a></h2>
 <p>To enable the PMHC MDS to add a TWB-Episode record to a PMHC Episode, the ‘<strong>!wayback</strong>’
 tag must be included on the ‘Tags’ field of all TWB-Episode data records. If not
 included, the system will automatically include it.</p>

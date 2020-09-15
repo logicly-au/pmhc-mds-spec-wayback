@@ -402,7 +402,7 @@ available on the Data Entry tab, by following these steps:
   * See :ref:`K10+ Measure data specifications <k10p-data-elements>`.
   * See :ref:`WHO-5 Measure data specifications <who5-data-elements>`.
   * See :ref:`SIDAS Measure data specifications <sidas-data-elements>`.
-  * See :ref:`Service Contact data specifications <service-contact-data-elements>` for Service Contact Data.
+
 
 6. Click the blue 'Save' button. (If you decide not to add this client's measure, you can simply navigate away from this screen)
 
@@ -505,6 +505,8 @@ For more detail on how to search, find, view, add, edit or delete Service Contac
 please visit the PMHC User Guide at https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#service-contacts.
 
   **Please note: TWB adds an extra field Service Contact - Funding Source to the standard PMHC Service Contact.**
+
+  Update the Client's Service Contact details. Mandatory fields are marked with an * . (Specification :ref:`Service Contact Data Elements <service-contact-data-elements>`)
 
   For all Service Contacts provided under The Way Back please select “TWB”.
 
