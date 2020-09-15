@@ -7,8 +7,10 @@ TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS
 the current PMHC MDS Identifier Management rules apply. These are available to be viewed at
 https://docs.pmhc-mds.com/data-specification/identifier-management.html.
 
-Managing  Keys
----------------
+.. _identifier_managing_keys:
+
+Managing Keys
+-------------
 
 The :ref:`dfn-twb_critical_incident_key`,
 :ref:`dfn-twb_recommendation_out_key`, :ref:`dfn-collection_occasion_key` and
@@ -25,6 +27,8 @@ the Provider Organisation.
 Where data is being exported from client systems, these keys can be auto generated,
 providing that a key does not change once it is assigned.
 
+.. _identifier_pmhc_episode_keys:
+
 Managing PMHC MDS Episode Key
 -----------------------------
 
@@ -34,6 +38,8 @@ adding/updating/deleting each item when uploading/entering TWB data.
 
 See below links for the specification requirements for these data elements:
  - :ref:`dfn-episode_key`
+
+.. _identifier_pmhc_twb_episode_tag:
 
 Identifying TWB-Episode data records
 ------------------------------------
