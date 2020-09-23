@@ -3,8 +3,20 @@
 Data Specification Change log
 =============================
 
+23/9/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+    * :ref:`dfn-organisation_path` - Updated reference to `Parent Organisation`
+      to `Commissioning Organisation`
+
+    * :ref:`collection-occasion-data-elements` - Added missing Episode Key Format/Values
+
 24/8/2020
 ---------
+
+* :ref:`data-model-and-specifications`
 
     * :ref:`dfn-twb_critical_incident_date` - Updated description
 
