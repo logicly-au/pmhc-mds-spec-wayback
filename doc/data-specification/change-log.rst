@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+25/9/2020
+---------
+
+* :ref:`validation-rules`
+
+  * :ref:`twb-recommendation-out-current-validations`
+
+     * Added the validation for one :ref:`dfn-twb_recommendation_out_provider_type` per Episode
+
 23/9/2020
 ---------
 
