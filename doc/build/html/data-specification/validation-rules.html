@@ -22,10 +22,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -196,34 +196,37 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <div class="section" id="twb-episode">
 <span id="episode-twb-current-validations"></span><h3>1. TWB Episode<a class="headerlink" href="#twb-episode" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
-<li><code class="docutils literal notranslate"><span class="pre">!wayback</span></code> tag should be included in the <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags">Episode - Tags</a> field of the corresponding PMHC episode, otherwise the system will automatically include it.</li>
-<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-primary-nominated-professional-consent-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Consent Date</span></a><ul>
-<li>must not be before 1 January 2019</li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
-<li>and must not be in the future</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">!wayback</span></code> tag should be included in the <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags">Episode - Tags</a> field of the corresponding PMHC episode, otherwise the system will automatically include it.</p></li>
+<li><p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-primary-nominated-professional-consent-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Consent Date</span></a></p>
+<ul class="simple">
+<li><p>must not be before 1 January 2019</p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></p></li>
+<li><p>and must not be in the future</p></li>
 </ul>
 </li>
-<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-primary-nominated-professional-contact-entry-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Entry Date</span></a><ul>
-<li>must not be before 1 January 2019</li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
-<li>and must not be in the future</li>
+<li><p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-primary-nominated-professional-contact-entry-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Entry Date</span></a></p>
+<ul class="simple">
+<li><p>must not be before 1 January 2019</p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></p></li>
+<li><p>and must not be in the future</p></li>
 </ul>
 </li>
-<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-primary-nominated-professional-contact-exit-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Exit Date</span></a><ul>
-<li>must not be before 1 January 2019</li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
-<li>and must not be before <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-primary-nominated-professional-contact-entry-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Entry Date</span></a></li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
-<li>and must not be in the future</li>
+<li><p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-primary-nominated-professional-contact-exit-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Exit Date</span></a></p>
+<ul class="simple">
+<li><p>must not be before 1 January 2019</p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></p></li>
+<li><p>and must not be before <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-primary-nominated-professional-contact-entry-date"><span class="std std-ref">TWB Episode - Primary Nominated Professional Contact Entry Date</span></a></p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></p></li>
+<li><p>and must not be in the future</p></li>
 </ul>
 </li>
 </ol>
@@ -231,14 +234,15 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <div class="section" id="twb-critical-incident">
 <span id="twb-critical-incident-current-validations"></span><h3>4. TWB Critical Incident<a class="headerlink" href="#twb-critical-incident" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
-<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-critical-incident-date"><span class="std std-ref">TWB Critical Incident - Date</span></a><ul>
-<li>must not be before 1 January 2019</li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
-<li>and must not be in the future</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</p></li>
+<li><p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-critical-incident-date"><span class="std std-ref">TWB Critical Incident - Date</span></a></p>
+<ul class="simple">
+<li><p>must not be before 1 January 2019</p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></p></li>
+<li><p>and must not be in the future</p></li>
 </ul>
 </li>
 </ol>
@@ -246,20 +250,22 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <div class="section" id="twb-recommendation-out">
 <span id="twb-recommendation-out-current-validations"></span><h3>5. TWB Recommendation Out<a class="headerlink" href="#twb-recommendation-out" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</p></li>
+<li><p>TWB Recommendation Outs for an Episode must have unique <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-recommendation-out-provider-type"><span class="std std-ref">TWB Recommendation Out - Provider Type</span></a>.</p></li>
 </ol>
 </div>
 <div class="section" id="collection-occasion">
 <span id="collection-occasion-current-validations"></span><h3>6. Collection Occasion<a class="headerlink" href="#collection-occasion" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</li>
-<li>The <a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a><ul>
-<li>must not be before 1 January 2016</li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></li>
-<li>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></li>
-<li>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></li>
-<li>and must not be in the future</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</p></li>
+<li><p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a></p>
+<ul class="simple">
+<li><p>must not be before 1 January 2016</p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></p></li>
+<li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></p></li>
+<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></p></li>
+<li><p>and must not be in the future</p></li>
 </ul>
 </li>
 </ol>
@@ -267,42 +273,42 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <div class="section" id="k10">
 <span id="k10p-current-validations"></span><h3>7. K10+<a class="headerlink" href="#k10" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS.</li>
-<li>If both item scores and a total score are specified, the item scores must
-add up to the total score (as per <a class="reference internal" href="data-model-and-specifications.html#dfn-k10p-score"><span class="std std-ref">Scoring the K10+</span></a>).</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
+MDS.</p></li>
+<li><p>If both item scores and a total score are specified, the item scores must
+add up to the total score (as per <a class="reference internal" href="data-model-and-specifications.html#dfn-k10p-score"><span class="std std-ref">Scoring the K10+</span></a>).</p></li>
 </ol>
 </div>
 <div class="section" id="who-5">
 <span id="who-5-current-validations"></span><h3>8. WHO-5<a class="headerlink" href="#who-5" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS.</li>
-<li>If both item scores and a total score are specified, the item scores must
-add up to the total score.</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
+MDS.</p></li>
+<li><p>If both item scores and a total score are specified, the item scores must
+add up to the total score.</p></li>
 </ol>
 </div>
 <div class="section" id="sidas">
 <span id="sidas-twb-current-validations"></span><h3>9. SIDAS<a class="headerlink" href="#sidas" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS.</li>
-<li>If both item scores and a total score are specified, the item scores must
-add up to the total score.</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
+MDS.</p></li>
+<li><p>If both item scores and a total score are specified, the item scores must
+add up to the total score.</p></li>
 </ol>
 </div>
 <div class="section" id="twb-plan">
 <span id="twb-plan-current-validations"></span><h3>10. TWB-Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS.</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
+MDS.</p></li>
 </ol>
 </div>
 <div class="section" id="twb-ni">
 <span id="twb-ni-current-validations"></span><h3>11. TWB-NI<a class="headerlink" href="#twb-ni" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
-MDS.</li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
+MDS.</p></li>
 </ol>
 </div>
 </div>

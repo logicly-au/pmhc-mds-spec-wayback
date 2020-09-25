@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+25/9/2020
+---------
+
+* :ref:`validation-rules`
+
+  * :ref:`twb-recommendation-out-current-validations`
+
+     * Added the validation for TWB Recommendation Outs for an Episode must
+       have unique :ref:`dfn-twb_recommendation_out_provider_type`.
+
 23/9/2020
 ---------
 
