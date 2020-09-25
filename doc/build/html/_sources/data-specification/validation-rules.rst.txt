@@ -71,7 +71,7 @@ Current TWB Validations
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. :ref:`dfn-episode_key` must be an existing PMHC episode within the PMHC MDS.
-2. One :ref:`dfn-twb_recommendation_out_provider_type` is allowed per Episode.
+2. TWB Recommendation Outs for an Episode must have unique :ref:`dfn-twb_recommendation_out_provider_type`.
 
 .. _collection-occasion-current-validations:
 

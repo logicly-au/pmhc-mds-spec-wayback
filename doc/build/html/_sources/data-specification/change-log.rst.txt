@@ -10,7 +10,8 @@ Data Specification Change log
 
   * :ref:`twb-recommendation-out-current-validations`
 
-     * Added the validation for one :ref:`dfn-twb_recommendation_out_provider_type` per Episode
+     * Added the validation for TWB Recommendation Outs for an Episode must
+       have unique :ref:`dfn-twb_recommendation_out_provider_type`.
 
 23/9/2020
 ---------
