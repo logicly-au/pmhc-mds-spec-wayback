@@ -14,7 +14,11 @@ https://docs.pmhc-mds.com/projects/user-documentation/en/latest/reporting.html.
 How to produce a Wayback report
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can produce a system report by completing the fields in the **Reports** tab by
+The Way Back Quarterly reporting function allows users to automatically populate
+The Way Back Quarterly Report using data contained in the PMHC MDS. This spreadsheet
+will then require some manual completion before providing to Beyond Blue or your PHN.
+
+You can produce this report by completing the fields in the **Reports** tab by
 following these steps:
 
 1. Navigate to the **Reports** tab
