@@ -13,4 +13,5 @@ The user guide is regularly updated to reflect each release communication.
    access-and-password-user-guide
    data-entry-user-guide
    upload-user-guide
+   reports-user-guide
    video-library
