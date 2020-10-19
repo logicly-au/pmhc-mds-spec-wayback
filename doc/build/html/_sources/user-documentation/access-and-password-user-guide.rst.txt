@@ -4,7 +4,7 @@ Access & Passwords
 ==================
 
 The Way Back (TWB) is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
-current PMHC MDS Data online User Guide is available to be viewed for the following information.
+current PMHC MDS online User Guide is available to be viewed for the following information.
 
 .. _home:
 

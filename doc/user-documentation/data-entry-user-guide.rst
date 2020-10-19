@@ -4,7 +4,7 @@ Data Entry
 ==========
 
 The Way Back (TWB) Support Service Minimum Data Set is an extension of the
-Primary Mental Health Care Minimum Data Set (PMHC MDS); current PMHC MDS Data
+Primary Mental Health Care Minimum Data Set (PMHC MDS); current PMHC MDS
 online User Guide for Data Entry is available to be viewed at
 https://docs.pmhc-mds.com/user-documentation/data-entry.html.
 
