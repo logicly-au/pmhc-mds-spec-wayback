@@ -45,7 +45,13 @@ You can produce the Wayback report by following these steps:
 .. figure:: screen-shots/reports-message-download.png
    :alt: PMHC MDS File Selected
 
-10. The report will be downloaded to your computer
+10. An Excel spreadsheet will be downloaded to your computer
+
+11. The spreadsheet will then require some manual completion of information
+not available to the PMHC-MDS system.
+
+12. Once complete send it on to Beyond Blue or your PHN.
+
 
 .. _system-report-types:
 
