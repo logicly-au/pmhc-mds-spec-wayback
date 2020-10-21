@@ -32,22 +32,22 @@ and 'Forgotten or Expired Password', is available at https://docs.pmhc-mds.com/p
 MDS Roles available for TWB Users
 ---------------------------------
 
-Access to the PMHC MDS is based around roles. What users see once they are logged
-in will depend upon what roles they have been assigned. The roles that currently
+Access to the PMHC MDS is based around roles. What tabs a user sees once they are logged
+in will depend upon what roles they have been assigned. Roles that currently
 exist within the PMHC MDS, is available at https://docs.pmhc-mds.com/projects/user-documentation/en/latest/users.html#users-roles.
 
-The Way Back (TWB) extension will be available on the following roles through the next stages of development:
+The Way Back (TWB) extension is available for the following roles:
 
-+----------------------------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| **TWB Development Stage**              | **Feature**                | **Role and Tasks allowed**                                                                                                                          |
-+========================================+============================+=====================================================================================================================================================+
-| TWB Stage One - released               | Upload                     | A user with the *Upload* role can upload PMHC & TWB data to the associated organisation.                                                            |
-+----------------------------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| TWB Stage Two - released               | Data Entry                 | A user with the *Data Entry* role can enter PMHC data from the associated organisation. See :ref:`identifier_pmhc_twb_episode_tag`                  |
-+----------------------------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| TWB Stage Three - released             | Reports                    | A user with the *Reporting* or *Aggregate Reporting* role can run standard PMHC reports and Wayback report for the associated organisation.         |
-+                                        +----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                        | Data Extract               | A user with the *Reporting* role can download the PMHC and TWB data from the associated organisation.                                               |
-+----------------------------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-
-There is no further planned development scheduled for The Way Back (TWB) extension.
++-----------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Role**              | **Feature tab**            | **Tasks allowed**                                                                                                                                   |
++=======================+============================+=====================================================================================================================================================+
+| Upload                | Upload                     | A user with the *Upload* role can upload PMHC & TWB data to the associated organisation.                                                            |
++-----------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Data Entry            | Data Entry                 | A user with the *Data Entry* role can enter PMHC & TWB data to the associated organisation. See :ref:`identifier_pmhc_twb_episode_tag`              |
++-----------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Aggregate Reporting   | Reports                    | A user with the *Aggregate Reporting* role can run standard PMHC reports and the Wayback report for the associated organisation.                    |
++-----------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Reporting             | Reports                    | A user with the *Reporting* role can run standard PMHC reports and the Wayback report for the associated organisation.                              |
++                       +----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+|                       | Data Extract               | A user with the *Reporting* role can download the PMHC and TWB data from the associated organisation.                                               |
++-----------------------+----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
