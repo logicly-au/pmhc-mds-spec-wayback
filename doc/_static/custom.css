@@ -104,3 +104,7 @@ a.headerlink {
 	}
 }
 
+/* Fixes definition list styling */
+dt {
+    float:left;
+}
