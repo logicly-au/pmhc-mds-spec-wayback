@@ -3351,7 +3351,7 @@ Identifies how the client describes their sexual orientation, as represented by 
     and concerned about applying a social label to themselves for various reasons.
   
   More information on collecting LGBTI inclusive data collection can be found
-  at: https://aidsaction.org.au/images/resource-library/LGBTIQ%20Inclusive%20Data%20Collection%20-%20a%20Guide.pdf
+  at: https://meridianact.org.au/wp-content/uploads/LGBTIQ-Inclusive-Data-Collection-a-Guide.pdf
   
 
 ----------
