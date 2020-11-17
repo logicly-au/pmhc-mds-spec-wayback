@@ -104,7 +104,7 @@ a.headerlink {
 	}
 }
 
-/* Fixes definition list styling */
-dt {
-    float:left;
+/* Styles DL/DT/DD elements correctly */
+td > dl.field-list.simple > dt, dd > dl.field-list.simple > dt {
+    float:left
 }
