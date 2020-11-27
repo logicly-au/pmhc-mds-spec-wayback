@@ -280,7 +280,7 @@ The relevant episodes here are those where the first and second attended
 service contacts fall within the reporting period, and the the episode has an
 initial collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
-equal to 1 - Safety Plan. The numerator is the subset of these episodes for
+equal to `1: Safety Plan`. The numerator is the subset of these episodes for
 which the collection occasion date is before or on the same day as the second
 attended contact.
 
@@ -291,6 +291,6 @@ The relevant episodes here are those where there the first attended service
 contact is within the reporting period, and the the episode has an initial
 collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
-equal to 2 - Support Plan. The numerator is the subset of these episodes for
+equal to `2: Support Plan`. The numerator is the subset of these episodes for
 which the collection occasion date is not more than 10 days after the initial
 service contact.
