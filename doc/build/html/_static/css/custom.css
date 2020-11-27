@@ -103,3 +103,8 @@ a.headerlink {
 		max-height: 297mm;
 	}
 }
+
+/* Styles DL/DT/DD elements correctly */
+td > dl.field-list.simple > dt, dd > dl.field-list.simple > dt {
+    float:left
+}
