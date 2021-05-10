@@ -3,6 +3,27 @@
 Data Specification Change log
 =============================
 
+3/5/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-model` - Updated to allow K5 to be used for Aboriginal and
+    Torres Strait Islander clients
+
+  * :ref:`twb-data-elements` - Updated to allow K5 to be used for Aboriginal and
+    Torres Strait Islander clients
+
+  * :ref:`k5-data-elements` - Updated to allow K5 to be used for Aboriginal and
+    Torres Strait Islander clients
+
+* :ref:`upload_specification`
+
+  * :ref:`twb-file-format`
+
+    * :ref:`sdq-format` - Provided more information about providing this file 
+      for TWB only and TWB and PMHC combined uploads
+
 25/9/2020
 ---------
 
