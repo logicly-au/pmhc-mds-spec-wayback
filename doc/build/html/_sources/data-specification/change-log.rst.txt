@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+25/3/2021
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`sidas-data-elements`
+
+    * Added SIDAS scoring details
+
 25/9/2020
 ---------
 
