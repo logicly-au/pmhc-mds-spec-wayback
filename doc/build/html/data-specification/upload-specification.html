@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Upload Specification &mdash; The Way Back 3.0.1 documentation</title>
+  <title>Upload Specification &mdash; The Way Back 3.0.2 documentation</title>
   
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                3.0.1
+                3.0.2
               </div>
             
           
@@ -569,6 +569,11 @@ at <a class="reference internal" href="data-model-and-specifications.html#k5-dat
 <div class="section" id="sdq-file-format">
 <span id="sdq-format"></span><h3>SDQ file format<a class="headerlink" href="#sdq-file-format" title="Permalink to this headline">¶</a></h3>
 <p>The SDQ file/worksheet is required to be uploaded each time.</p>
+<p>When <em>only TWB</em> clients are uploaded, this file/worksheet is still required,
+but will only contain a row for the headers. No data should be supplied.</p>
+<p>When <em>both TWB and PMHC</em> clients are uploaded, this file/worksheet will contain
+data but only for PMHC clients. There should not be SDQ’s recorded against TWB
+clients.</p>
 <p>Data elements for the SDQ upload file/worksheet are defined
 at <a class="reference internal" href="data-model-and-specifications.html#sdq-data-elements"><span class="std std-ref">SDQ Measure</span></a>.</p>
 <p>Example SDQ data:</p>

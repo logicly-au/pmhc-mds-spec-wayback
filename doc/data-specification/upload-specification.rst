@@ -316,6 +316,13 @@ SDQ file format
 
 The SDQ file/worksheet is required to be uploaded each time.
 
+When *only TWB* clients are uploaded, this file/worksheet is still required,
+but will only contain a row for the headers. No data should be supplied.
+
+When *both TWB and PMHC* clients are uploaded, this file/worksheet will contain
+data but only for PMHC clients. There should not be SDQ's recorded against TWB
+clients.
+
 Data elements for the SDQ upload file/worksheet are defined
 at :ref:`sdq-data-elements`.
 
