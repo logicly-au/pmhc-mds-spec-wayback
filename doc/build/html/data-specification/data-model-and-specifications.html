@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Model and Specifications &mdash; The Way Back 3.0.1 documentation</title>
+  <title>Data Model and Specifications &mdash; The Way Back 3.0.2 documentation</title>
   
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                3.0.1
+                3.0.2
               </div>
             
           
@@ -443,7 +443,7 @@ allowed for standard PMHC MDS episodes is available.</p>
 </div>
 </div>
 <div class="section" id="twb-record-formats">
-<h3>TWB Record formats<a class="headerlink" href="#twb-record-formats" title="Permalink to this headline">¶</a></h3>
+<span id="twb-data-elements"></span><h3>TWB Record formats<a class="headerlink" href="#twb-record-formats" title="Permalink to this headline">¶</a></h3>
 <p>The Way Back adds the following records on top of PMHC MDS current specifications:</p>
 <ul class="simple">
 <li><p>See <a class="reference internal" href="#twb-episode-data-elements"><span class="std std-ref">TWB-Episode data specifications</span></a> for Individual Services Data.</p></li>
@@ -453,6 +453,7 @@ allowed for standard PMHC MDS episodes is available.</p>
 <li><p>See <a class="reference internal" href="#twb-plan-data-elements"><span class="std std-ref">TWB-Plan data specifications</span></a> for Plan Data.</p></li>
 <li><p>See <a class="reference internal" href="#twb-ni-data-elements"><span class="std std-ref">TWB-NI data specifications</span></a> for Needs Identification Data.</p></li>
 <li><p>See <a class="reference internal" href="#k10p-data-elements"><span class="std std-ref">K10+ Measure data specifications</span></a>.</p></li>
+<li><p>See <a class="reference internal" href="#k5-data-elements"><span class="std std-ref">K5 Measure data specifications</span></a>.</p></li>
 <li><p>See <a class="reference internal" href="#who5-data-elements"><span class="std std-ref">WHO-5 Measure data specifications</span></a>.</p></li>
 <li><p>See <a class="reference internal" href="#sidas-data-elements"><span class="std std-ref">SIDAS Measure data specifications</span></a>.</p></li>
 <li><p>See <a class="reference internal" href="#service-contact-data-elements"><span class="std std-ref">Service Contact data specifications</span></a> for Service Contact Data.</p></li>
@@ -464,7 +465,6 @@ measures can be collected at a single collection occasion.
 The TWB upload format aligns with a future PMHC MDS Version 3.0 file format. No date has been set for the release of the
 PMHC MDS Version 3.0 upload file format.</strong></p>
 <ul class="simple">
-<li><p>See <a class="reference internal" href="#k5-data-elements"><span class="std std-ref">K5 Measure data specifications</span></a>.</p></li>
 <li><p>See <a class="reference internal" href="#sdq-data-elements"><span class="std std-ref">SDQ Measure data specifications</span></a>.</p></li>
 </ul>
 <div class="section" id="metadata">
@@ -1622,6 +1622,10 @@ collection occasion.</p>
 </div>
 <div class="section" id="k10-measure">
 <span id="k10p-data-elements"></span><h4>K10+ Measure<a class="headerlink" href="#k10-measure" title="Permalink to this headline">¶</a></h4>
+<p>For TWB, either the K10+ needs to be supplied or in the case of Aboriginal and
+Torres Strait Islander clients the K5 can be supplied instead.</p>
+<p><strong>Please note:</strong> The format for reporting the K10+ in TWB uploads is different than
+for standard PMHC MDS as explained at <a class="reference internal" href="upload-specification.html#twb-files-to-upload"><span class="std std-ref">Files or worksheets to upload</span></a>.</p>
 <table class="docutils align-default" id="id21">
 <caption><span class="caption-number">Table 9 </span><span class="caption-text">K10+ record layout</span><a class="headerlink" href="#id21" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -1959,10 +1963,9 @@ collection occasion.</p>
 </div>
 <div class="section" id="k5-measure">
 <span id="k5-data-elements"></span><h4>K5 Measure<a class="headerlink" href="#k5-measure" title="Permalink to this headline">¶</a></h4>
-<p>For TWB only episodes the K5 is not required.</p>
-<p>Where a client is being delivered TWB services and accessing another
-support service within the same Service Provider and K5 may be collected.</p>
-<p><strong>Please note:</strong> The format for reporting the K5 with TWB data is different than
+<p>For TWB, either the K10+ needs to be supplied or in the case of Aboriginal and
+Torres Strait Islander clients the K5 can be supplied instead.</p>
+<p><strong>Please note:</strong> The format for reporting the K5 in TWB uploads is different than
 for standard PMHC MDS as explained at <a class="reference internal" href="upload-specification.html#twb-files-to-upload"><span class="std std-ref">Files or worksheets to upload</span></a>.</p>
 <table class="docutils align-default" id="id22">
 <caption><span class="caption-number">Table 10 </span><span class="caption-text">K5 record layout</span><a class="headerlink" href="#id22" title="Permalink to this table">¶</a></caption>
@@ -2138,8 +2141,8 @@ for standard PMHC MDS as explained at <a class="reference internal" href="upload
 <span id="sdq-data-elements"></span><h4>SDQ Measure<a class="headerlink" href="#sdq-measure" title="Permalink to this headline">¶</a></h4>
 <p>For TWB only episodes the SDQ is not required.</p>
 <p>Where a client is being delivered TWB services and accessing another
-support service within the same Service Provider and SDQ may be collected.</p>
-<p><strong>Please note:</strong> The format for reporting the SDQ with TWB data is different than
+support service within the same Service Provider an SDQ may be collected.</p>
+<p><strong>Please note:</strong> The format for reporting the SDQ in TWB uploads is different than
 for standard PMHC MDS as explained at <a class="reference internal" href="upload-specification.html#twb-files-to-upload"><span class="std std-ref">Files or worksheets to upload</span></a>.</p>
 <table class="docutils align-default" id="id23">
 <caption><span class="caption-number">Table 11 </span><span class="caption-text">SDQ record layout</span><a class="headerlink" href="#id23" title="Permalink to this table">¶</a></caption>
