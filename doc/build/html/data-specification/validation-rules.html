@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Validation Rules &mdash; The Way Back 3.0.1 documentation</title>
+  <title>Validation Rules &mdash; The Way Back 3.0.2 documentation</title>
   
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                3.0.1
+                3.0.2
               </div>
             
           
@@ -102,10 +102,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#twb-recommendation-out">5. TWB Recommendation Out</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#collection-occasion">6. Collection Occasion</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#k10">7. K10+</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#who-5">8. WHO-5</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sidas">9. SIDAS</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-plan">10. TWB-Plan</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#twb-ni">11. TWB-NI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k5">8. K5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#who-5">9. WHO-5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sidas">10. SIDAS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-plan">11. TWB-Plan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twb-ni">12. TWB-NI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sdq">13. SDQ</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#current-pmhc-validations">Current PMHC Validations</a></li>
@@ -279,8 +281,17 @@ MDS.</p></li>
 add up to the total score (as per <a class="reference internal" href="data-model-and-specifications.html#dfn-k10p-score"><span class="std std-ref">Scoring the K10+</span></a>).</p></li>
 </ol>
 </div>
+<div class="section" id="k5">
+<span id="k5-current-validations"></span><h3>8. K5<a class="headerlink" href="#k5" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
+MDS.</p></li>
+<li><p>If both item scores and a total score are specified, the item scores must
+add up to the total score (as per <a class="reference internal" href="data-model-and-specifications.html#dfn-k5-score"><span class="std std-ref">Scoring the K5</span></a>).</p></li>
+</ol>
+</div>
 <div class="section" id="who-5">
-<span id="who-5-current-validations"></span><h3>8. WHO-5<a class="headerlink" href="#who-5" title="Permalink to this headline">¶</a></h3>
+<span id="who-5-current-validations"></span><h3>9. WHO-5<a class="headerlink" href="#who-5" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
@@ -289,7 +300,7 @@ add up to the total score.</p></li>
 </ol>
 </div>
 <div class="section" id="sidas">
-<span id="sidas-twb-current-validations"></span><h3>9. SIDAS<a class="headerlink" href="#sidas" title="Permalink to this headline">¶</a></h3>
+<span id="sidas-twb-current-validations"></span><h3>10. SIDAS<a class="headerlink" href="#sidas" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
@@ -298,22 +309,43 @@ add up to the total score.</p></li>
 </ol>
 </div>
 <div class="section" id="twb-plan">
-<span id="twb-plan-current-validations"></span><h3>10. TWB-Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h3>
+<span id="twb-plan-current-validations"></span><h3>11. TWB-Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
 </ol>
 </div>
 <div class="section" id="twb-ni">
-<span id="twb-ni-current-validations"></span><h3>11. TWB-NI<a class="headerlink" href="#twb-ni" title="Permalink to this headline">¶</a></h3>
+<span id="twb-ni-current-validations"></span><h3>12. TWB-NI<a class="headerlink" href="#twb-ni" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
 </ol>
 </div>
+<div class="section" id="sdq">
+<span id="sdq-current-validations"></span><h3>13. SDQ<a class="headerlink" href="#sdq" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>SDQ records should only be uploaded as part of a joint PMHC + TWB upload.
+The SDQ does not form part of the data collected for TWB and should only
+be collected for PMHC only clients.</p></li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion
+within the PMHC MDS.</p></li>
+<li><p>Use the table at
+<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#sdq-data-elements">SDQ Data Elements</a>
+to validate the items that are used in each version of the SDQ.</p></li>
+<li><p>If both item scores and subscales are specified, the sum of the items must
+agree with the subscales score (as per
+<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#scoring-the-sdq">Scoring the SDQ</a>
+).</p></li>
+<li><p>If both subscales and total score are specified, the sum of the subscales
+must agree with the total score (as per
+<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#scoring-the-sdq">Scoring the SDQ</a>
+).</p></li>
+</ol>
+</div>
 </div>
 <div class="section" id="current-pmhc-validations">
-<span id="id19"></span><h2>Current PMHC Validations<a class="headerlink" href="#current-pmhc-validations" title="Permalink to this headline">¶</a></h2>
+<span id="id20"></span><h2>Current PMHC Validations<a class="headerlink" href="#current-pmhc-validations" title="Permalink to this headline">¶</a></h2>
 <p>TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
 the current PMHC MDS Validations rules may apply, depending on how you add your
 TWB data. The current PMHC MDS validations rules are available to be viewed at
