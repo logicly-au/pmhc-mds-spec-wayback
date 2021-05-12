@@ -416,6 +416,21 @@ $$$$$$$$$$$$$
 SIDAS Measure
 $$$$$$$$$$$$$
 
+Scoring the SIDAS
+~~~~~~~~~~~~~~~~~
+
+Total SIDAS scores are calculated as the sum of the five items, with
+controllability (item 2) reverse scored (10=0, 9=1, …, 0=10).
+Total scores range from 0 to 50.
+
+Respondents who respond “0 – Never” to the first item skip all remaining items
+and score a total of zero. The PMHC MDS enforces this by setting all other items
+to 0 when item 1 is scored as 0.
+
+If any item has not been completed, other than those who respond “0 – Never” to the
+first item (that is, has not been coded 0-10), it is excluded from the calculation and
+not counted as a valid item. If any item is missing, the Total Score is set as missing.
+
 .. csv-table:: SIDAS record layout
   :file: record/sidas-measure.csv
   :header-rows: 1

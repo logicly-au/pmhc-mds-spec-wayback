@@ -17,6 +17,8 @@ Data Specification Change log
   * :ref:`k5-data-elements` - Updated to allow K5 to be used for Aboriginal and
     Torres Strait Islander clients
 
+  * :ref:`sidas-data-elements` - Added SIDAS scoring details
+
 * :ref:`upload_specification`
 
   * :ref:`twb-file-format`

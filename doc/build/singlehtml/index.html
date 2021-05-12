@@ -3557,6 +3557,17 @@ for standard PMHC MDS as explained at <a class="reference internal" href="index.
 </div>
 <div class="section" id="sidas-measure">
 <span id="sidas-data-elements"></span><h6>SIDAS Measure<a class="headerlink" href="#sidas-measure" title="Permalink to this headline">¶</a></h6>
+<div class="section" id="scoring-the-sidas">
+<h7>Scoring the SIDAS<a class="headerlink" href="#scoring-the-sidas" title="Permalink to this headline">¶</a></h7>
+<p>Total SIDAS scores are calculated as the sum of the five items, with
+controllability (item 2) reverse scored (10=0, 9=1, …, 0=10).
+Total scores range from 0 to 50.</p>
+<p>Respondents who respond “0 – Never” to the first item skip all remaining items
+and score a total of zero. The PMHC MDS enforces this by setting all other items
+to 0 when item 1 is scored as 0.</p>
+<p>If any item has not been completed, other than those who respond “0 – Never” to the
+first item (that is, has not been coded 0-10), it is excluded from the calculation and
+not counted as a valid item. If any item is missing, the Total Score is set as missing.</p>
 <table class="docutils align-default" id="id25">
 <caption><span class="caption-number">Table 13 </span><span class="caption-text">SIDAS record layout</span><a class="headerlink" href="#id25" title="Permalink to this table">¶</a></caption>
 <colgroup>
@@ -3621,6 +3632,7 @@ for standard PMHC MDS as explained at <a class="reference internal" href="index.
 </tbody>
 </table>
 <hr class="docutils" />
+</div>
 </div>
 </div>
 </div>
@@ -7397,7 +7409,7 @@ such as community health centres.</p>
 <div class="section" id="sidas-question-1">
 <span id="dfn-sidas-item1"></span><h5>SIDAS - Question 1<a class="headerlink" href="#sidas-question-1" title="Permalink to this headline">¶</a></h5>
 <p>In the past month, how often have you had thoughts about suicide?</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>sidas_item1</p>
 </dd>
@@ -7412,6 +7424,9 @@ such as community health centres.</p>
 </dd>
 <dt class="field-odd">Notes</dt>
 <dd class="field-odd"><p>0 = Never, 10 = Always</p>
+<p>Respondents who respond “0 – Never” to the first item skip all remaining items
+and score a total of zero. The PMHC MDS enforces this by setting all other items
+to 0 when item 1 is scored as 0.</p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -7419,7 +7434,7 @@ such as community health centres.</p>
 <div class="section" id="sidas-question-2">
 <span id="dfn-sidas-item2"></span><h5>SIDAS - Question 2<a class="headerlink" href="#sidas-question-2" title="Permalink to this headline">¶</a></h5>
 <p>In the past month, how much control have you had over these thoughts?</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>sidas_item2</p>
 </dd>
@@ -7434,6 +7449,9 @@ such as community health centres.</p>
 </dd>
 <dt class="field-odd">Notes</dt>
 <dd class="field-odd"><p>0 = No control, 10 = Full control</p>
+<p>Controllability is reversed scored (10=0, 9=1, …, 0=10), however responses
+must not be reversed before entering data into the PMHC MDS. The PMHC MDS will
+reverse this item when calculating the total score.</p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -9552,6 +9570,7 @@ Torres Strait Islander clients</p></li>
 Torres Strait Islander clients</p></li>
 <li><p><a class="reference internal" href="index.html#k5-data-elements"><span class="std std-ref">K5 Measure</span></a> - Updated to allow K5 to be used for Aboriginal and
 Torres Strait Islander clients</p></li>
+<li><p><a class="reference internal" href="index.html#sidas-data-elements"><span class="std std-ref">SIDAS Measure</span></a> - Added SIDAS scoring details</p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="index.html#upload-specification"><span class="std std-ref">Upload Specification</span></a></p>
@@ -9820,7 +9839,7 @@ reporting requirements.</p>
 <p>The following document provides an example of each of the TWB outcome measures and an
 explanation of how it is scored.</p>
 <ul class="simple">
-<li><p><a class="reference download internal" download="" href="_downloads/20759da5e384daf68547805a9f4e346c/PMHC MDS - Scoring SIDAS.pdf"><code class="xref download docutils literal notranslate"><span class="pre">SIDAS</span> <span class="pre">Collection</span> <span class="pre">Occasion</span> <span class="pre">PDF</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/7d0698447ff0de565a7effb72170bbb7/PMHC MDS - Scoring SIDAS v2.pdf"><code class="xref download docutils literal notranslate"><span class="pre">SIDAS</span> <span class="pre">Collection</span> <span class="pre">Occasion</span> <span class="pre">PDF</span></code></a></p></li>
 </ul>
 </div>
 <div class="section" id="primary-mental-health-care-minimum-data-set">
