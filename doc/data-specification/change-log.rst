@@ -3,7 +3,7 @@
 Data Specification Change log
 =============================
 
-3/5/2020
+12/5/2020
 ---------
 
 * :ref:`data-model-and-specifications`
@@ -21,8 +21,18 @@ Data Specification Change log
 
   * :ref:`twb-file-format`
 
-    * :ref:`sdq-format` - Provided more information about providing this file 
+    * :ref:`sdq-format` - Provided more information about providing this file
       for TWB only and TWB and PMHC combined uploads
+
+* :ref:`validation-rules`
+
+  * :ref:`K5 <k5-current-validations>` - Added to allow K5 to be used for
+    Aboriginal and Torres Strait Islander clients
+
+  * :ref:`SDQ <sdq-current-validations>` - Added in order to explicitly state the
+    SDQ validations to be used with joint PMHC + TWB uploads. SDQ does not
+    form part of the data collected for TWB and should only be collected for
+    PMHC only clients.
 
 25/9/2020
 ---------
