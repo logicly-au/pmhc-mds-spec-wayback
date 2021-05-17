@@ -141,7 +141,8 @@ TWB will allow the following data records to be collected at a collection occasi
 
 * :ref:`twb-plan-data-elements`
 * :ref:`twb-ni-data-elements`
-* :ref:`k10p-data-elements`
+* :ref:`k10p-data-elements` or :ref:`k5-data-elements` in the case of
+  Aboriginal and Torres Strait Islander clients
 * :ref:`who5-data-elements`
 * :ref:`sidas-data-elements`
 

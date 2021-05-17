@@ -91,16 +91,26 @@ Current TWB Validations
 .. _k10p-current-validations:
 
 7. K10+
-~~~~~~~~~~~
+~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
    MDS.
 2. If both item scores and a total score are specified, the item scores must
    add up to the total score (as per :ref:`Scoring the K10+ <dfn-k10p_score>`).
 
+.. _k5-current-validations:
+
+8. K5
+~~~~~
+
+1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
+   MDS.
+2. If both item scores and a total score are specified, the item scores must
+   add up to the total score (as per :ref:`Scoring the K5 <dfn-k5_score>`).
+
 .. _who-5-current-validations:
 
-8. WHO-5
+9. WHO-5
 ~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
@@ -110,8 +120,8 @@ Current TWB Validations
 
 .. _sidas-twb-current-validations:
 
-9. SIDAS
-~~~~~~~~
+10. SIDAS
+~~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
    MDS.
@@ -121,7 +131,7 @@ Current TWB Validations
 
 .. _twb-plan-current-validations:
 
-10. TWB-Plan
+11. TWB-Plan
 ~~~~~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
@@ -129,11 +139,33 @@ Current TWB Validations
 
 .. _twb-ni-current-validations:
 
-11. TWB-NI
+12. TWB-NI
 ~~~~~~~~~~
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
    MDS.
+
+.. _sdq-current-validations:
+
+13. SDQ
+~~~~~~~
+
+1. SDQ records should only be uploaded as part of a joint PMHC + TWB upload.
+   The SDQ does not form part of the data collected for TWB and should only
+   be collected for PMHC only clients.
+2. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion
+   within the PMHC MDS.
+3. Use the table at
+   `SDQ Data Elements <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#sdq-data-elements>`_
+   to validate the items that are used in each version of the SDQ.
+4. If both item scores and subscales are specified, the sum of the items must
+   agree with the subscales score (as per
+   `Scoring the SDQ <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#scoring-the-sdq>`_
+   ).
+5. If both subscales and total score are specified, the sum of the subscales
+   must agree with the total score (as per
+   `Scoring the SDQ <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#scoring-the-sdq>`_
+   ).
 
 .. _current-pmhc-validations:
 

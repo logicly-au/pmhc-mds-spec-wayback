@@ -2826,6 +2826,10 @@ In the past month, how often have you had thoughts about suicide?
 :Notes:
   0 = Never, 10 = Always
   
+  Respondents who respond “0 – Never” to the first item skip all remaining items
+  and score a total of zero. The PMHC MDS enforces this by setting all other items
+  to 0 when item 1 is scored as 0.
+  
 
 ----------
 
@@ -2846,6 +2850,10 @@ In the past month, how much control have you had over these thoughts?
   0 - 10, 99 = Not stated / Missing
 :Notes:
   0 = No control, 10 = Full control
+  
+  Controllability is reversed scored (10=0, 9=1, …, 0=10), however responses
+  must not be reversed before entering data into the PMHC MDS. The PMHC MDS will
+  reverse this item when calculating the total score.
   
 
 ----------

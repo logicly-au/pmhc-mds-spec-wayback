@@ -3,6 +3,39 @@
 Data Specification Change log
 =============================
 
+12/5/2020
+---------
+
+* :ref:`data-model-and-specifications`
+
+  * :ref:`data-model` - Updated to allow K5 to be used for Aboriginal and
+    Torres Strait Islander clients
+
+  * :ref:`twb-data-elements` - Updated to allow K5 to be used for Aboriginal and
+    Torres Strait Islander clients
+
+  * :ref:`k5-data-elements` - Updated to allow K5 to be used for Aboriginal and
+    Torres Strait Islander clients
+
+  * :ref:`sidas-data-elements` - Added SIDAS scoring details
+
+* :ref:`upload_specification`
+
+  * :ref:`twb-file-format`
+
+    * :ref:`sdq-format` - Provided more information about providing this file
+      for TWB only and TWB and PMHC combined uploads
+
+* :ref:`validation-rules`
+
+  * :ref:`K5 <k5-current-validations>` - Added to allow K5 to be used for
+    Aboriginal and Torres Strait Islander clients
+
+  * :ref:`SDQ <sdq-current-validations>` - Added in order to explicitly state the
+    SDQ validations to be used with joint PMHC + TWB uploads. SDQ does not
+    form part of the data collected for TWB and should only be collected for
+    PMHC only clients.
+
 25/9/2020
 ---------
 

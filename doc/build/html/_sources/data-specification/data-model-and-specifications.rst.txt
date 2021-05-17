@@ -164,7 +164,7 @@ support service within the same Service Provider the
 `full range of Principal Focus of Treatment Plan responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-principal-focus-of-treatment-plan>`_
 allowed for standard PMHC MDS episodes is available.
 
-
+.. _twb-data-elements:
 
 TWB Record formats
 ^^^^^^^^^^^^^^^^^^
@@ -178,6 +178,7 @@ The Way Back adds the following records on top of PMHC MDS current specification
 - See :ref:`TWB-Plan data specifications <twb-plan-data-elements>` for Plan Data.
 - See :ref:`TWB-NI data specifications <twb-ni-data-elements>` for Needs Identification Data.
 - See :ref:`K10+ Measure data specifications <k10p-data-elements>`.
+- See :ref:`K5 Measure data specifications <k5-data-elements>`.
 - See :ref:`WHO-5 Measure data specifications <who5-data-elements>`.
 - See :ref:`SIDAS Measure data specifications <sidas-data-elements>`.
 - See :ref:`Service Contact data specifications <service-contact-data-elements>` for Service Contact Data.
@@ -189,7 +190,6 @@ measures can be collected at a single collection occasion.
 The TWB upload format aligns with a future PMHC MDS Version 3.0 file format. No date has been set for the release of the
 PMHC MDS Version 3.0 upload file format.**
 
-- See :ref:`K5 Measure data specifications <k5-data-elements>`.
 - See :ref:`SDQ Measure data specifications <sdq-data-elements>`.
 
 .. _metadata-data-elements:
@@ -352,6 +352,12 @@ $$$$$$
 K10+ Measure
 $$$$$$$$$$$$
 
+For TWB, either the K10+ needs to be supplied or in the case of Aboriginal and
+Torres Strait Islander clients the K5 can be supplied instead.
+
+**Please note:** The format for reporting the K10+ in TWB uploads is different than
+for standard PMHC MDS as explained at :ref:`twb-files-to-upload`.
+
 .. csv-table:: K10+ record layout
   :file: record/k10p-measure.csv
   :header-rows: 1
@@ -363,12 +369,10 @@ $$$$$$$$$$$$
 K5 Measure
 $$$$$$$$$$
 
-For TWB only episodes the K5 is not required.
+For TWB, either the K10+ needs to be supplied or in the case of Aboriginal and
+Torres Strait Islander clients the K5 can be supplied instead.
 
-Where a client is being delivered TWB services and accessing another
-support service within the same Service Provider and K5 may be collected.
-
-**Please note:** The format for reporting the K5 with TWB data is different than
+**Please note:** The format for reporting the K5 in TWB uploads is different than
 for standard PMHC MDS as explained at :ref:`twb-files-to-upload`.
 
 .. csv-table:: K5 record layout
@@ -385,9 +389,9 @@ $$$$$$$$$$$
 For TWB only episodes the SDQ is not required.
 
 Where a client is being delivered TWB services and accessing another
-support service within the same Service Provider and SDQ may be collected.
+support service within the same Service Provider an SDQ may be collected.
 
-**Please note:** The format for reporting the SDQ with TWB data is different than
+**Please note:** The format for reporting the SDQ in TWB uploads is different than
 for standard PMHC MDS as explained at :ref:`twb-files-to-upload`.
 
 .. csv-table:: SDQ record layout
@@ -411,6 +415,21 @@ $$$$$$$$$$$$$
 
 SIDAS Measure
 $$$$$$$$$$$$$
+
+Scoring the SIDAS
+~~~~~~~~~~~~~~~~~
+
+Total SIDAS scores are calculated as the sum of the five items, with
+controllability (item 2) reverse scored (10=0, 9=1, …, 0=10).
+Total scores range from 0 to 50.
+
+Respondents who respond “0 – Never” to the first item skip all remaining items
+and score a total of zero. The PMHC MDS enforces this by setting all other items
+to 0 when item 1 is scored as 0.
+
+If any item has not been completed, other than those who respond “0 – Never” to the
+first item (that is, has not been coded 0-10), it is excluded from the calculation and
+not counted as a valid item. If any item is missing, the Total Score is set as missing.
 
 .. csv-table:: SIDAS record layout
   :file: record/sidas-measure.csv
