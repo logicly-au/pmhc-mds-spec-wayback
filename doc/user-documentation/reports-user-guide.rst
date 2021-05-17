@@ -14,49 +14,56 @@ https://docs.pmhc-mds.com/projects/user-documentation/en/latest/reporting.html.
 How to produce a Wayback report
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Way Back Quarterly reporting function allows users to automatically populate
-The Way Back Quarterly Report using data contained in the PMHC MDS. This spreadsheet
-will then require some manual completion before providing to Beyond Blue or your PHN.
-
 You can produce the Wayback report by following these steps:
 
 1. Navigate to the **Reports** tab
-2. Click the **Wayback** tab
+2. Click the **Wayback** tab (NOTE: this tab will only be displayed when TWB data has been added to the PMHC MDS)
 
 .. figure:: screen-shots/reports-system.png
    :alt: Reports tab View
 
-3. Select the Financial Year
-4. Select the Reporting Period
+3. Select the :ref:`Report Type <system-report-types>`
+4. Select the Financial Year & Reporting Period, or Start/End Date & Reporting Level
 5. Select the name of the Provider Organisation from the drop down list, if not pre-filled
-6. Click the blue **Request** button
+6. Click the blue **View** button, or the selected format and click the **Download** button
+
+   Please note: for the W1, click the blue **Request** button
 
 .. figure:: screen-shots/reports-system-completed.png
    :alt: Reports tab View
 
-7. A dialogue box will be displayed, showing that the file is being requested from the server
+   A dialogue box will be displayed, showing that the file is being requested from the server
 
 .. figure:: screen-shots/reports-message-requesting.png
    :alt: PMHC MDS File Selected
 
-8. When the file is ready, a 'File ready for download' message will be displayed
-9. Click the blue **Download** button
+   When the file is ready, a 'File ready for download' message will be displayed
+   Click the blue **Download** button
 
 .. figure:: screen-shots/reports-message-download.png
    :alt: PMHC MDS File Selected
 
-10. An Excel spreadsheet will be downloaded to your computer
+   An Excel spreadsheet will be downloaded to your computer
 
-11. The spreadsheet will then require some manual completion of information
-not available to the PMHC-MDS system.
-
-12. Once complete send it on to Beyond Blue or your PHN.
+NOTE: The W1 spreadsheet will then require some manual completion of information
+not available to the PMHC-MDS system. Once complete send it on to Beyond Blue or
+your PHN.
 
 
 .. _system-report-types:
 
-Report Details
-^^^^^^^^^^^^^^
+Types of Wayback reports
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _category-w1:
+
+Report W1: Wayback Quarterly Report Template
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Way Back Quarterly reporting function allows users to automatically populate
+The Way Back Quarterly Report using data contained in the PMHC MDS. This spreadsheet
+will then require some manual completion of information not available to the
+PMHC-MDS system before providing to Beyond Blue or your PHN.
 
 Many of the items reported are summarised over two time periods - reporting
 period and year to date. The former is always a full quarter worth of data
@@ -294,3 +301,37 @@ collection occasion with a corresponding
 equal to `2: Support Plan`. The numerator is the subset of these episodes for
 which the collection occasion date is not more than 10 days after the initial
 service contact.
+
+.. _category-w2:
+
+Report W2 — High level summary of overall volumes by entity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This report is designed to provide a ‘one page’ view, with data aggregated for the specified reporting period, covering counts of clients, episodes and service contacts.
+
+Key specifications:
+
+* To be counted, a client must have had one or more Service Contacts in the
+  reporting period, defined for this report’s purposes as ‘Active Clients’.
+  Clients are counted uniquely regardless of number of Episodes to be counted
+  if one or more Service Contacts were recorded in the period — defined for this
+  report purpose as ‘Active Episodes’
+* All Service Contacts with the Funding Source value of "TWB" in the period are
+  reported except those that are flagged as ‘No Show’
+* All dates refer to date of service not date of data upload or data entry
+
+.. _category-w3:
+
+Report W3 - Data Quality Report: Missing TWB Episode data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Summary format provides a simple listing of missing/invalid data rates for
+relevant TWB Episode data elements.
+
+.. _category-w4:
+
+Report W4 - Data Quality Report: Missing TWB Needs Identification and Recommendation Outs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Summary format provides a simple listing of missing/invalid data rates for
+relevant TWB Needs Identification and TWB Recommendation Outs data elements.
