@@ -307,31 +307,36 @@ service contact.
 Report W2 — High level summary of overall volumes by entity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This report is designed to provide a ‘one page’ view, with data aggregated for the specified reporting period, covering counts of clients, episodes and service contacts.
+The W2 provides an overview of The Way Back activity undertaken during the reporting period. It uses the same assumptions as the standard A1 report. It is a ‘one page’ view, with data aggregated for the specified reporting period, covering counts of clients, episodes and service contacts.
 
 Key specifications:
 
-* To be counted, a client must have had one or more Service Contacts in the
-  reporting period, defined for this report’s purposes as ‘Active Clients’.
-  Clients are counted uniquely regardless of number of Episodes to be counted
-  if one or more Service Contacts were recorded in the period — defined for this
-  report purpose as ‘Active Episodes’
-* All Service Contacts with the Funding Source value of "TWB" in the period are
-  reported except those that are flagged as ‘No Show’
-* All dates refer to date of service not date of data upload or data entry
+* Data in this report is all associated with an active TWB_episode. This means the episode must appear in the TWB Episode table - a !Wayback tag on the main episode table is NOT sufficient - and must have a linked non-no show contact during the reporting period. Episodes so defined are what appears in the 'Active Episodes' column of the W2 report.
+* The 'Active Contacts' column counts all the non-no show contacts that occurred during the reporting period that were associated with an active episode.
+* 'Active Clients' counts the number of unique clients who were the recipient of services delivered as part of the active episodes.
 
 .. _category-w3:
 
 Report W3 - Data Quality Report: Missing TWB Episode data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Summary format provides a simple listing of missing/invalid data rates for
-relevant TWB Episode data elements.
+The W3 is a summary format report that provides a simple listing of missing/invalid data rates for relevant TWB Episode data elements. It is analogous to the standard A4 report that deals with the standard PMHC Episode elements with missing data.
+
+Key specifications:
+
+* As for the W2, data in this report is all associated with an active TWB_episode, however for this report and the W4 there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more non-no show contacts during the reporting period, for the W3 and W4 there must be at least TWO such contacts (i.e. non-no shows during the repoting period). The episode must appear in the TWB Episode table. This number is reported in the column labelled 'Number of active episodes in period'.
+* The 'Number of active episodes with missing data' column counts, separately for each of the TWB_Episode record elements, how many episodes have the pertinent missing value code. These missing value codes are listed ???? For the elements "Method of Suicide Attempt" and "Primary Nominated Professional" 'Other' (code 98) is counted as a missing value as well as code 99.
+* The '% Missing Data' column is a simple percentage of the active episodes that have missing data, calculated from the preceding two columns.
+
 
 .. _category-w4:
 
 Report W4 - Data Quality Report: Missing TWB Needs Identification and Recommendation Outs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Summary format provides a simple listing of missing/invalid data rates for
-relevant TWB Needs Identification and TWB Recommendation Outs data elements.
+The W4 is a summary format provides a simple listing of missing/invalid data rates for relevant TWB Needs Identification and TWB Recommendation Outs data elements. It does the same job for these elements as the W3 does for TWB_Episode elements, and uses the same assumptions.
+Key specifications:
+
+* As for the W2, data in this report is all associated with an active TWB_episode, however for this report and the W4 there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more non-no show contacts during the reporting period, for the W3 and W4 there must be at least TWO such contacts (i.e. non-no shows during the repoting period). The episode must appear in the TWB Episode table. This number is reported in the column labelled 'Number of active episodes in period'.
+* The 'Number of active episodes with missing data' column counts, separately for each of the WB_Episode record elements, how many episodes have the pertinent missing value code. For both elements ("Needs Identification" and "Recommendation Out") 'Other' (code 98) is counted as a missing value as well as code 99 ('Not stated/Inadequately described').
+* The '% Missing Data' column is a simple percentage of the active episodes that have missing data, calculated from the preceding two columns.
