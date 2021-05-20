@@ -311,7 +311,7 @@ The W2 provides an overview of The Way Back (TWB) activity undertaken during the
 
 Key specifications:
 
-* Data in this report is all associated with an Active TWB Episode, as shown in the 'Active Episodes' column counts. This means the episode must appear in the :ref:`TWB Episode table <data-model>`, and must have an Active Contact during the reporting period.
+* Data in this report is all associated with an Active TWB Episode, as shown in the 'Active Episodes' column counts. This means the episode must appear in the :ref:`TWB Episode table <data-model>`, and must have an Active Contact during the reporting period. A !`wayback` tag on the main episode table is NOT sufficient for the episode to be included in this report.
 * The 'Active Contacts' column counts all the `Attended Service Contacts <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact`_ (i.e. non-no show) that occurred during the reporting period that were associated with an Active TWB Episode.
 * The 'Active Clients' column counts the number of unique clients who were the recipient of services delivered as part of an Active TWB Episode.
 
