@@ -334,7 +334,7 @@ Key specifications:
 Report W4 - Data Quality Report: Missing TWB Needs Identification and Recommendation Outs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The W4 is a summary The Way Back (TWB) format provides a simple listing of missing/invalid data rates for relevant TWB Needs Identification and TWB Recommendation Outs data elements. It does the same job for these elements as the W3 does for TWB Episode data elements, and uses the same assumptions.
+The W4 is a summary The Way Back (TWB) format report that provides a simple listing of missing/invalid data rates for relevant TWB Needs Identification and TWB Recommendation Outs data elements. It does the same job for these elements as the W3 does for TWB Episode data elements, and uses the same assumptions.
 Key specifications:
 
 * As for the W2, data in this report is all associated with an Active TWB Episode; however, for this report there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more `Attended Service Contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact`_ during the reporting period, for the W3 and W4, there must be at least TWO such contacts (i.e. non-no shows) during the reporting period). The episode must appear in the :ref:`TWB Episode table <data-model>`. This number is reported in the column labelled 'Number of active episodes in period'.
