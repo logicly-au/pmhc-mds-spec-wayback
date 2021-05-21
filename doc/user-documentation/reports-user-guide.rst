@@ -55,6 +55,10 @@ your PHN.
 Types of Wayback reports
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. contents::
+   :local:
+   :depth: 2
+
 .. _category-w1:
 
 Report W1: Wayback Quarterly Report Template
@@ -76,7 +80,7 @@ July 1 of the earlier calendar year until either the end of the selected
 reporting period or the date the report was generated if the current quarter
 is selected.
 
-Data in this report is all associated with episodes that appear in the TWB Episode table - a !Wayback tag on the main episode table is NOT sufficient.
+Data in this report is all associated with episodes that appear in the :ref:`TWB Episode table <data-model>`, - a '**!wayback**' tag on the main episode table is NOT sufficient.
 
 The first section of the report explicitly details the dates covered by the
 reporting period and the year to date, as well as identifying the time at which
@@ -219,9 +223,9 @@ The specific measures of interest are the K5/K10+, the WHO-5, and the SIDAS.
 Information about these measures - including what constitutes a valid measure
 - can be accessed `in the Collection Occasion Key Concepts documentation <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/key-concepts.html#collection-occasion>`_.
 
-The two Kessler measures (k10+ and K5) are treated interchangeably in this section of the report.
+The two Kessler measures (K10+ and K5) are treated interchangeably in this section of the report.
 Additionally, for the 'Initial' and 'Exit' measures columns multiple measures of the same type are counted once only.
-So for example, 2 SIDAS marked as 'Final' for the same episode will only add 1 to the count. An episode with initial K5 and K10s also only adds 1 to the count of 'Initial Measures', however this combination also adds 1 to the count of "Number of Paired Measures During Period", provided at least one of the measures was taken during the reporting period.
+So for example, 2 SIDAS marked as 'Final' for the same episode will only add 1 to the count. An episode with initial K5 and K10+s also only adds 1 to the count of 'Initial Measures', however this combination also adds 1 to the count of "Number of Paired Measures During Period", provided at least one of the measures was taken during the reporting period.
 
 Although there should be no cases where an episode has multiple instances of
 a particular measure taken at any collection occasion identified as initial
@@ -316,7 +320,7 @@ The W2 provides an overview of The Way Back (TWB) activity undertaken during the
 
 Key specifications:
 
-* Data in this report is all associated with an Active TWB Episode, as shown in the 'Active Episodes' column counts. This means the episode must appear in the :ref:`TWB Episode table <data-model>`, and must have an Active Contact during the reporting period. A !`wayback` tag on the main episode table is NOT sufficient for the episode to be included in this report.
+* Data in this report is all associated with an Active TWB Episode, as shown in the 'Active Episodes' column counts. This means the episode must appear in the :ref:`TWB Episode table <data-model>`, and must have an Active Contact during the reporting period. A '**!wayback**' tag on the main episode table is NOT sufficient for the episode to be included in this report.
 * The 'Active Contacts' column counts all the `Attended Service Contacts <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_ (i.e. non-no show) that occurred during the reporting period that were associated with an Active TWB Episode.
 * The 'Active Clients' column counts the number of unique clients who were the recipient of services delivered as part of an Active TWB Episode.
 
