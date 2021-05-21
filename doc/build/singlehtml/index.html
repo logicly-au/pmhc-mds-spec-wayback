@@ -10466,18 +10466,18 @@ current PMHC MDS online User Guide for Reports is available to be viewed at
 <p>Please note: for the W1, click the blue <strong>Request</strong> button</p>
 </li>
 </ol>
-<div class="figure align-default" id="id8">
-<img alt="Reports tab View" src="_images/reports-system-completed.png" />
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">A dialogue box will be displayed, showing that the file is being requested from the server</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
-</div>
 <div class="figure align-default" id="id9">
-<img alt="PMHC MDS File Selected" src="_images/reports-message-requesting.png" />
-<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">When the file is ready, a ‘File ready for download’ message will be displayed
-Click the blue <strong>Download</strong> button</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+<img alt="Reports tab View" src="_images/reports-system-completed.png" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">A dialogue box will be displayed, showing that the file is being requested from the server</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id10">
+<img alt="PMHC MDS File Selected" src="_images/reports-message-requesting.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">When the file is ready, a ‘File ready for download’ message will be displayed
+Click the blue <strong>Download</strong> button</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="id11">
 <img alt="PMHC MDS File Selected" src="_images/reports-message-download.png" />
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">An Excel spreadsheet will be downloaded to your computer</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">An Excel spreadsheet will be downloaded to your computer</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
 </div>
 <p>NOTE: The W1 spreadsheet will then require some manual completion of information
 not available to the PMHC-MDS system. Once complete send it on to Beyond Blue or
@@ -10717,28 +10717,33 @@ service contact.</p>
 </div>
 <div class="section" id="report-w2-high-level-summary-of-overall-volumes-by-entity">
 <span id="category-w2"></span><h4>Report W2 — High level summary of overall volumes by entity<a class="headerlink" href="#report-w2-high-level-summary-of-overall-volumes-by-entity" title="Permalink to this headline">¶</a></h4>
-<p>This report is designed to provide a ‘one page’ view, with data aggregated for the specified reporting period, covering counts of clients, episodes and service contacts.</p>
+<p>The W2 provides an overview of The Way Back (TWB) activity undertaken during the reporting period. It uses the same assumptions as the standard A1 report. It is a ‘one page’ view, with data aggregated for the specified reporting period, covering counts of clients, episodes and service contacts.</p>
 <p>Key specifications:</p>
 <ul class="simple">
-<li><p>To be counted, a client must have had one or more Service Contacts in the
-reporting period, defined for this report’s purposes as ‘Active Clients’.
-Clients are counted uniquely regardless of number of Episodes to be counted
-if one or more Service Contacts were recorded in the period — defined for this
-report purpose as ‘Active Episodes’</p></li>
-<li><p>All Service Contacts with the Funding Source value of “TWB” in the period are
-reported except those that are flagged as ‘No Show’</p></li>
-<li><p>All dates refer to date of service not date of data upload or data entry</p></li>
+<li><p>Data in this report is all associated with an Active TWB Episode, as shown in the ‘Active Episodes’ column counts. This means the episode must appear in the <a class="reference internal" href="index.html#data-model"><span class="std std-ref">TWB Episode table</span></a>, and must have an Active Contact during the reporting period. A !`wayback` tag on the main episode table is NOT sufficient for the episode to be included in this report.</p></li>
+<li><p>The ‘Active Contacts’ column counts all the <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact">Attended Service Contacts</a> (i.e. non-no show) that occurred during the reporting period that were associated with an Active TWB Episode.</p></li>
+<li><p>The ‘Active Clients’ column counts the number of unique clients who were the recipient of services delivered as part of an Active TWB Episode.</p></li>
 </ul>
 </div>
 <div class="section" id="report-w3-data-quality-report-missing-twb-episode-data">
 <span id="category-w3"></span><h4>Report W3 - Data Quality Report: Missing TWB Episode data<a class="headerlink" href="#report-w3-data-quality-report-missing-twb-episode-data" title="Permalink to this headline">¶</a></h4>
-<p>Summary format provides a simple listing of missing/invalid data rates for
-relevant TWB Episode data elements.</p>
+<p>The W3 is a summary The Way Back (TWB) format report that provides a simple listing of missing/invalid data rates for relevant TWB Episode data elements. It is analogous to the <a class="reference external" href="https://docs.pmhc-mds.com/projects/user-documentation/en/latest/reporting.html#a4-data-quality-report-missing-and-invalid-episode-data">standard A4 report</a> that deals with the standard PMHC Episode elements with missing data.</p>
+<p>Key specifications:</p>
+<ul class="simple">
+<li><p>As for the W2, data in this report is all associated with an Active TWB Episode; however, for this report there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact">Attended Service Contact</a> during the reporting period, for the W3 and W4, there must be at least TWO such contacts (i.e. non-no shows) during the reporting period). The episode must appear in the <a class="reference internal" href="index.html#data-model"><span class="std std-ref">TWB Episode table</span></a>. This number is reported in the column labelled ‘Number of active episodes in period’.</p></li>
+<li><p>The ‘Number of active episodes with missing data’ column counts, separately for each of the TWB Episode record elements, how many episodes have the pertinent missing value code. For the elements “Method of Suicide Attempt” and “Primary Nominated Professional”, ‘Other’ (code 98) is counted as a missing value as well as ‘Not stated/Inadequately described’ (code 99).</p></li>
+<li><p>The ‘% Missing Data’ column is a simple percentage of the active episodes that have missing data, calculated from the preceding two columns.</p></li>
+</ul>
 </div>
 <div class="section" id="report-w4-data-quality-report-missing-twb-needs-identification-and-recommendation-outs">
 <span id="category-w4"></span><h4>Report W4 - Data Quality Report: Missing TWB Needs Identification and Recommendation Outs<a class="headerlink" href="#report-w4-data-quality-report-missing-twb-needs-identification-and-recommendation-outs" title="Permalink to this headline">¶</a></h4>
-<p>Summary format provides a simple listing of missing/invalid data rates for
-relevant TWB Needs Identification and TWB Recommendation Outs data elements.</p>
+<p>The W4 is a summary The Way Back (TWB) format report that provides a simple listing of missing/invalid data rates for relevant TWB Needs Identification and TWB Recommendation Outs data elements. It does the same job for these elements as the W3 does for TWB Episode data elements, and uses the same assumptions.
+Key specifications:</p>
+<ul class="simple">
+<li><p>As for the W2, data in this report is all associated with an Active TWB Episode; however, for this report there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact">Attended Service Contact</a> during the reporting period, for the W3 and W4, there must be at least TWO such contacts (i.e. non-no shows) during the reporting period). The episode must appear in the <a class="reference internal" href="index.html#data-model"><span class="std std-ref">TWB Episode table</span></a>. This number is reported in the column labelled ‘Number of active episodes in period’.</p></li>
+<li><p>The ‘Number of active episodes with missing data’ column counts, separately for each of the TWB Episode record elements, how many episodes have the pertinent missing value code. For both elements “Needs Identification” and “Recommendation Out”, ‘Other’ (code 98) is counted as a missing value as well as ‘Not stated/Inadequately described’ (code 99).</p></li>
+<li><p>The ‘% Missing Data’ column is a simple percentage of the active episodes that have missing data, calculated from the preceding two columns.</p></li>
+</ul>
 </div>
 </div>
 <span id="document-user-documentation/video-library"></span><div class="section" id="video-training-library">
