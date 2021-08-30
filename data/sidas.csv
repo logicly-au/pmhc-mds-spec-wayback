@@ -1,4 +1,4 @@
 organisation_path,measure_key,collection_occasion_key,sidas_item1,sidas_item2,sidas_item3,sidas_item4,sidas_item5,sidas_tags
 PHN999:NFP01,M09,CO04-1,1,2,3,4,5,tag1 tag2
 PHN999:NFP01,M10,CO05-1,9,9,9,9,9,tag1 tag2
-PHN999:NFP01,M11,CO05-1,0,99,90,98,98,tag1 tag2
+PHN999:NFP01,M11,CO05-1,0,99,99,98,98,tag1 tag2
