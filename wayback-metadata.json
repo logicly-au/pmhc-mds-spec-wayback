@@ -8,6 +8,7 @@
   },
   "schema:specification": {
     "schema:name": "wayback",
+    "schema:csvwSpecPath": "data-specification",
     "schema:version": "3.0"
   },
   "dc:modified": { "@value": "2019-07-05", "@type": "xsd:date"},
