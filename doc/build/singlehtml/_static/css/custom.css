@@ -108,3 +108,8 @@ a.headerlink {
 td > dl.field-list.simple > dt, dd > dl.field-list.simple > dt {
     float:left
 }
+
+/* Fixes spacing issue when DT element is longer than 2 characters */
+dt {
+    padding-right: 1rem;
+}
