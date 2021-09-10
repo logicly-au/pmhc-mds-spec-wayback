@@ -3,6 +3,16 @@
 Data Specification Change log
 =============================
 
+9/9/2021
+--------
+
+* :ref:`validation-rules`
+
+  * :ref:`Collection Occasion Current Validations <collection-occasion-current-validations>`
+
+    * Updated the :ref:`dfn-collection_occasion_date` validation so that it must not be
+      more than 7 days after `Episode - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date>`_
+
 12/5/2020
 ---------
 
