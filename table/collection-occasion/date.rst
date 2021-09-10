@@ -6,6 +6,4 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 
 If the date the activity was performed is unknown, 09099999 should be used.
 
-- The collection date must not be before 1st January 2016.
-
-- The collection date must not be in the future.
+See :ref:`Collection Occasion Current Validations <collection-occasion-current-validations>` for validation rules.
