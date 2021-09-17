@@ -424,8 +424,8 @@ controllability (item 2) reverse scored (10=0, 9=1, …, 0=10).
 Total scores range from 0 to 50.
 
 Respondents who respond “0 – Never” to the first item skip all remaining items
-and score a total of zero. The PMHC MDS enforces this by setting all other items
-to 0 when item 1 is scored as 0.
+and score a total of zero. Refer to :ref:`SIDAS Current Validations <sidas-twb-current-validations>`
+for information about how this is enforced in the PMHC MDS.
 
 If any item has not been completed, other than those who respond “0 – Never” to the
 first item (that is, has not been coded 0-10), it is excluded from the calculation and

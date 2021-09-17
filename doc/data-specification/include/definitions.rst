@@ -2922,8 +2922,8 @@ In the past month, how often have you had thoughts about suicide?
   0 = Never, 10 = Always
   
   Respondents who respond “0 – Never” to the first item skip all remaining items
-  and score a total of zero. The PMHC MDS enforces this by setting all other items
-  to 0 when item 1 is scored as 0.
+  and score a total of zero. Refer to :ref:`SIDAS Current Validations <sidas-twb-current-validations>`
+  for information about how this is enforced in the PMHC MDS.
   
 
 ----------

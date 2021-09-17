@@ -125,9 +125,8 @@ Current TWB Validations
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
    MDS.
-2. If both item scores and a total score are specified, the item scores must
-   add up to the total score.
 
+Future validations are planned for the SIDAS. See :ref:`Future SIDAS Validations <sidas-twb-future-validations>`.
 
 .. _twb-plan-current-validations:
 
@@ -176,3 +175,17 @@ TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS
 the current PMHC MDS Validations rules may apply, depending on how you add your
 TWB data. The current PMHC MDS validations rules are available to be viewed at
 https://docs.pmhc-mds.com/data-specification/validation-rules.html.
+
+.. _future-validations:
+
+Future Validations
+------------------
+
+.. _sidas-twb-future-validations:
+
+The following validation will be enforced in the last week of October 2021:
+
+1. SIDAS
+~~~~~~~~
+
+* When item 1 has the value “0 - Never” all other items must be set to “98 - Not Required”
