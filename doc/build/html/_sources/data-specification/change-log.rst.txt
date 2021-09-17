@@ -3,6 +3,18 @@
 Data Specification Change log
 =============================
 
+17/9/2021
+---------
+
+* :ref:`validation-rules`
+
+  * Added :ref:`future-validations`
+
+  * :ref:`sidas-twb-current-validations` - Removed validation for `If both item scores and a
+    total score are specified, the item scores must add up to the total score.`
+    as no total score is collected for SIDAS.
+
+
 9/9/2021
 --------
 

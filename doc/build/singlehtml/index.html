@@ -121,23 +121,25 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/validation-rules">Validation Rules</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="index.html#current-twb-validations">Current TWB Validations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#current-pmhc-validations">Current PMHC Validations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#future-validations">Future Validations</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#document-data-specification/change-log">Data Specification Change log</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id1">9/9/2021</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id2">12/5/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id3">25/9/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id4">23/9/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id5">24/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id1">17/9/2021</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id2">9/9/2021</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id3">12/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id4">25/9/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id5">23/9/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id6">24/8/2020</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#version-3-0-1">17/8/2020 - Version 3.0.1</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id6">12/8/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id8">10/8/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id9">7/8/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id10">15/6/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id11">12/6/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id12">28/5/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id13">25/5/2020</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#id14">22/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id7">12/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id9">10/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id10">7/8/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id11">15/6/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id12">12/6/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id13">28/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id14">25/5/2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#id15">22/5/2020</a></li>
 <li class="toctree-l3"><a class="reference internal" href="index.html#version-3-0">27/4/2020 - Version 3.0</a></li>
 </ul>
 </li>
@@ -3568,8 +3570,8 @@ for standard PMHC MDS as explained at <a class="reference internal" href="index.
 controllability (item 2) reverse scored (10=0, 9=1, …, 0=10).
 Total scores range from 0 to 50.</p>
 <p>Respondents who respond “0 – Never” to the first item skip all remaining items
-and score a total of zero. The PMHC MDS enforces this by setting all other items
-to 0 when item 1 is scored as 0.</p>
+and score a total of zero. Refer to <a class="reference internal" href="index.html#sidas-twb-current-validations"><span class="std std-ref">SIDAS Current Validations</span></a>
+for information about how this is enforced in the PMHC MDS.</p>
 <p>If any item has not been completed, other than those who respond “0 – Never” to the
 first item (that is, has not been coded 0-10), it is excluded from the calculation and
 not counted as a valid item. If any item is missing, the Total Score is set as missing.</p>
@@ -7427,8 +7429,8 @@ such as community health centres.</p>
 <dt class="field-odd">Notes</dt>
 <dd class="field-odd"><p>0 = Never, 10 = Always</p>
 <p>Respondents who respond “0 – Never” to the first item skip all remaining items
-and score a total of zero. The PMHC MDS enforces this by setting all other items
-to 0 when item 1 is scored as 0.</p>
+and score a total of zero. Refer to <a class="reference internal" href="index.html#sidas-twb-current-validations"><span class="std std-ref">SIDAS Current Validations</span></a>
+for information about how this is enforced in the PMHC MDS.</p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -9511,9 +9513,8 @@ add up to the total score.</p></li>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="index.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
-<li><p>If both item scores and a total score are specified, the item scores must
-add up to the total score.</p></li>
 </ol>
+<p>Future validations are planned for the SIDAS. See <a class="reference internal" href="#sidas-twb-future-validations"><span class="std std-ref">Future SIDAS Validations</span></a>.</p>
 </div>
 <div class="section" id="twb-plan">
 <span id="twb-plan-current-validations"></span><h5>11. TWB-Plan<a class="headerlink" href="#twb-plan" title="Permalink to this headline">¶</a></h5>
@@ -9558,11 +9559,34 @@ the current PMHC MDS Validations rules may apply, depending on how you add your
 TWB data. The current PMHC MDS validations rules are available to be viewed at
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/validation-rules.html">https://docs.pmhc-mds.com/data-specification/validation-rules.html</a>.</p>
 </div>
+<div class="section" id="future-validations">
+<span id="id21"></span><h4>Future Validations<a class="headerlink" href="#future-validations" title="Permalink to this headline">¶</a></h4>
+<p id="sidas-twb-future-validations">The following validation will be enforced in the last week of October 2021:</p>
+<div class="section" id="id22">
+<h5>1. SIDAS<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li><p>When item 1 has the value “0 - Never” all other items must be set to “98 - Not Required”</p></li>
+</ul>
+</div>
+</div>
 </div>
 <span id="document-data-specification/change-log"></span><div class="section" id="data-specification-change-log">
 <span id="data-spec-changelog"></span><h3>Data Specification Change log<a class="headerlink" href="#data-specification-change-log" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id1">
-<h4>9/9/2021<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<h4>17/9/2021<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference internal" href="index.html#validation-rules"><span class="std std-ref">Validation Rules</span></a></p>
+<ul>
+<li><p>Added <a class="reference internal" href="index.html#future-validations"><span class="std std-ref">Future Validations</span></a></p></li>
+<li><p><a class="reference internal" href="index.html#sidas-twb-current-validations"><span class="std std-ref">10. SIDAS</span></a> - Removed validation for <cite>If both item scores and a
+total score are specified, the item scores must add up to the total score.</cite>
+as no total score is collected for SIDAS.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h4>9/9/2021<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#validation-rules"><span class="std std-ref">Validation Rules</span></a></p>
 <ul>
@@ -9576,8 +9600,8 @@ more than 7 days after <a class="reference external" href="https://docs.pmhc-mds
 </li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h4>12/5/2020<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id3">
+<h4>12/5/2020<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <ul>
@@ -9612,8 +9636,8 @@ PMHC only clients.</p></li>
 </li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h4>25/9/2020<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id4">
+<h4>25/9/2020<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p><a class="reference internal" href="index.html#validation-rules"><span class="std std-ref">Validation Rules</span></a></p>
 <ul>
@@ -9629,8 +9653,8 @@ have unique <a class="reference internal" href="index.html#dfn-twb-recommendatio
 </li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h4>23/9/2020<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id5">
+<h4>23/9/2020<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <blockquote>
@@ -9643,8 +9667,8 @@ to <cite>Commissioning Organisation</cite></p></li>
 </li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h4>24/8/2020<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id6">
+<h4>24/8/2020<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <blockquote>
@@ -9671,8 +9695,8 @@ to <cite>Commissioning Organisation</cite></p></li>
 </li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h4>12/8/2020<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id7">
+<h4>12/8/2020<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <ul>
@@ -9697,8 +9721,8 @@ must not be before <a class="reference external" href="https://docs.pmhc-mds.com
 </li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h4>10/8/2020<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id9">
+<h4>10/8/2020<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <ul>
@@ -9713,8 +9737,8 @@ must not be before <a class="reference external" href="https://docs.pmhc-mds.com
 </li>
 </ul>
 </div>
-<div class="section" id="id9">
-<h4>7/8/2020<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id10">
+<h4>7/8/2020<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <ul>
@@ -9730,8 +9754,8 @@ Updated description</p></li>
 </li>
 </ul>
 </div>
-<div class="section" id="id10">
-<h4>15/6/2020<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id11">
+<h4>15/6/2020<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <ul>
@@ -9746,8 +9770,8 @@ evaluators</p></li>
 </li>
 </ul>
 </div>
-<div class="section" id="id11">
-<h4>12/6/2020<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id12">
+<h4>12/6/2020<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <ul>
@@ -9768,8 +9792,8 @@ evaluators</p></li>
 </li>
 </ul>
 </div>
-<div class="section" id="id12">
-<h4>28/5/2020<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id13">
+<h4>28/5/2020<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <ul>
@@ -9783,8 +9807,8 @@ is required, not a date and time</p></li>
 </li>
 </ul>
 </div>
-<div class="section" id="id13">
-<h4>25/5/2020<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id14">
+<h4>25/5/2020<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#validation-rules"><span class="std std-ref">Validation Rules</span></a></p>
 <ul>
@@ -9797,8 +9821,8 @@ is required, not a date and time</p></li>
 </li>
 </ul>
 </div>
-<div class="section" id="id14">
-<h4>22/5/2020<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id15">
+<h4>22/5/2020<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#data-model-and-specifications"><span class="std std-ref">Data Model and Specifications</span></a></p>
 <ul>
