@@ -53,7 +53,7 @@
     "schema:dateCreated": "2018-04-30",
     "schema:dateDeleted": "2018-04-30",
     "schema:dateModified": "2018-04-30",
-    "required": "true",
+    "required": true,
     "schema:domain": "0 - 10, 99 = Not stated / Missing",
     "datatype": {
       "base": "string",
@@ -67,7 +67,7 @@
     "schema:disambiguatingDescription": "table/measure/sidas/Q2.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateModified": "2021-08-20",
-    "required": "true",
+    "required": true,
     "schema:domain": "0 - 10, 98 = Not required, 99 = Not stated / Missing",
     "datatype": {
       "base": "string",
@@ -81,7 +81,7 @@
     "schema:disambiguatingDescription": "table/measure/sidas/Q3.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateModified": "2021-08-20",
-    "required": "true",
+    "required": true,
     "schema:domain": "0 - 10, 98 = Not required, 99 = Not stated / Missing",
     "datatype": {
       "base": "string",
@@ -95,7 +95,7 @@
     "schema:disambiguatingDescription": "table/measure/sidas/Q4.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateModified": "2021-08-20",
-    "required": "true",
+    "required": true,
     "schema:domain": "0 - 10, 98 = Not required, 99 = Not stated / Missing",
     "datatype": {
       "base": "string",
@@ -109,7 +109,7 @@
     "schema:disambiguatingDescription": "table/measure/sidas/Q5.rst",
     "schema:dateCreated": "2018-04-30",
     "schema:dateModified": "2021-08-20",
-    "required": "true",
+    "required": true,
     "schema:domain": "0 - 10, 98 = Not required, 99 = Not stated / Missing",
     "datatype": {
       "base": "string",
