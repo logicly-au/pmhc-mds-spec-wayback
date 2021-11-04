@@ -87,7 +87,8 @@ New Client Episodes
   This is the number of episodes commenced during the relevant period
   (reporting or YTD). A key concept here is the episode start date. This is
   defined as the date of the earliest contact, even if the client is a no-show,
-  but only if there is at least one attended contact during the reporting period.
+  but only if there is at least one `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
+  during the reporting period.
 
 Number of Completed Episodes (Exits)
   Any episode with an
@@ -283,24 +284,24 @@ is within 3 days of the
 Safety Plan Update / Development
 --------------------------------
 
-The relevant episodes here are those where the first and second attended
-service contacts fall within the reporting period, and the the episode has an
+The relevant episodes here are those where the first and second `attended service contacts <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
+fall within the reporting period, and the the episode has an
 initial collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
 equal to `1: Safety Plan`. The numerator is the subset of these episodes for
 which the collection occasion date is before or on the same day as the second
-attended contact.
+attended service contact.
 
 Support Plan Development
 ------------------------
 
-The relevant episodes here are those where there the first attended service
-contact is within the reporting period, and the the episode has an initial
+The relevant episodes here are those where there the first `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
+is within the reporting period, and the the episode has an initial
 collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
 equal to `2: Support Plan`. The numerator is the subset of these episodes for
 which the collection occasion date is not more than 10 days after the initial
-service contact.
+attended service contact.
 
 .. _category-w2:
 
