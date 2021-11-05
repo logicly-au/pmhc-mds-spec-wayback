@@ -87,7 +87,8 @@ New Client Episodes
   This is the number of episodes commenced during the relevant period
   (reporting or YTD). A key concept here is the episode start date. This is
   defined as the date of the earliest contact, even if the client is a no-show,
-  but only if there is at least one attended contact during the reporting period.
+  but only if there is at least one `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
+  during the reporting period.
 
 Number of Completed Episodes (Exits)
   Any episode with an
@@ -283,24 +284,24 @@ is within 3 days of the
 Safety Plan Update / Development
 --------------------------------
 
-The relevant episodes here are those where the first and second attended
-service contacts fall within the reporting period, and the the episode has an
+The relevant episodes here are those where the first and second `attended service contacts <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
+fall within the reporting period, and the the episode has an
 initial collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
 equal to `1: Safety Plan`. The numerator is the subset of these episodes for
 which the collection occasion date is before or on the same day as the second
-attended contact.
+attended service contact.
 
 Support Plan Development
 ------------------------
 
-The relevant episodes here are those where there the first attended service
-contact is within the reporting period, and the the episode has an initial
+The relevant episodes here are those where there the first `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
+is within the reporting period, and the the episode has an initial
 collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
 equal to `2: Support Plan`. The numerator is the subset of these episodes for
 which the collection occasion date is not more than 10 days after the initial
-service contact.
+attended service contact.
 
 .. _category-w2:
 
@@ -312,7 +313,7 @@ The W2 provides an overview of The Way Back (TWB) activity undertaken during the
 Key specifications:
 
 * Data in this report is all associated with an Active TWB Episode, as shown in the 'Active Episodes' column counts. This means the episode must appear in the :ref:`TWB Episode table <data-model>`, and must have an Active Contact during the reporting period. A !`wayback` tag on the main episode table is NOT sufficient for the episode to be included in this report.
-* The 'Active Contacts' column counts all the `Attended Service Contacts <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_ (i.e. non-no show) that occurred during the reporting period that were associated with an Active TWB Episode.
+* The 'Active Contacts' column counts all the `attended service contacts <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_ (i.e. non-no show) that occurred during the reporting period that were associated with an Active TWB Episode.
 * The 'Active Clients' column counts the number of unique clients who were the recipient of services delivered as part of an Active TWB Episode.
 
 .. _category-w3:
@@ -324,7 +325,7 @@ The W3 is a summary The Way Back (TWB) format report that provides a simple list
 
 Key specifications:
 
-* As for the W2, data in this report is all associated with an Active TWB Episode; however, for this report there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more `Attended Service Contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_ during the reporting period, for the W3 and W4, there must be at least TWO such contacts (i.e. non-no shows) during the reporting period). The episode must appear in the :ref:`TWB Episode table <data-model>`. This number is reported in the column labelled 'Number of active episodes in period'.
+* As for the W2, data in this report is all associated with an Active TWB Episode; however, for this report there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_ during the reporting period, for the W3 and W4, there must be at least TWO such contacts (i.e. non-no shows) during the reporting period). The episode must appear in the :ref:`TWB Episode table <data-model>`. This number is reported in the column labelled 'Number of active episodes in period'.
 * The 'Number of active episodes with missing data' column counts, separately for each of the TWB Episode record elements, how many episodes have the pertinent missing value code. For the elements "Method of Suicide Attempt" and "Primary Nominated Professional", 'Other' (code 98) is counted as a missing value as well as 'Not stated/Inadequately described' (code 99).
 * The '% Missing Data' column is a simple percentage of the active episodes that have missing data, calculated from the preceding two columns.
 
@@ -337,6 +338,6 @@ Report W4 - Data Quality Report: Missing TWB Needs Identification and Recommenda
 The W4 is a summary The Way Back (TWB) format report that provides a simple listing of missing/invalid data rates for relevant TWB Needs Identification and TWB Recommendation Outs data elements. It does the same job for these elements as the W3 does for TWB Episode data elements, and uses the same assumptions.
 Key specifications:
 
-* As for the W2, data in this report is all associated with an Active TWB Episode; however, for this report there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more `Attended Service Contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_ during the reporting period, for the W3 and W4, there must be at least TWO such contacts (i.e. non-no shows) during the reporting period). The episode must appear in the :ref:`TWB Episode table <data-model>`. This number is reported in the column labelled 'Number of active episodes in period'.
+* As for the W2, data in this report is all associated with an Active TWB Episode; however, for this report there is slightly tighter criteria regarding what it means to be active. Rather than the usual one or more `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_ during the reporting period, for the W3 and W4, there must be at least TWO such contacts (i.e. non-no shows) during the reporting period). The episode must appear in the :ref:`TWB Episode table <data-model>`. This number is reported in the column labelled 'Number of active episodes in period'.
 * The 'Number of active episodes with missing data' column counts, separately for each of the TWB Episode record elements, how many episodes have the pertinent missing value code. For both elements "Needs Identification" and "Recommendation Out", 'Other' (code 98) is counted as a missing value as well as 'Not stated/Inadequately described' (code 99).
 * The '% Missing Data' column is a simple percentage of the active episodes that have missing data, calculated from the preceding two columns.
