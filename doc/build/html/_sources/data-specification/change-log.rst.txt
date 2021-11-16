@@ -3,6 +3,15 @@
 Data Specification Change log
 =============================
 
+16/11/2021
+----------
+
+* :ref:`validation-rules`
+
+  * :ref:`sidas-twb-current-validations` - Added `When item 1 has the value
+    “0 - Never” all other items must be set to “98 - Not Required”` which
+    been in effect since 1 November 2021.
+
 17/9/2021
 ---------
 

@@ -125,8 +125,7 @@ Current TWB Validations
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
    MDS.
-
-Future validations are planned for the SIDAS. See :ref:`Future SIDAS Validations <sidas-twb-future-validations>`.
+2. When item 1 has the value “0 - Never” all other items must be set to “98 - Not Required”
 
 .. _twb-plan-current-validations:
 
@@ -181,11 +180,4 @@ https://docs.pmhc-mds.com/data-specification/validation-rules.html.
 Future Validations
 ------------------
 
-.. _sidas-twb-future-validations:
-
-The following validation will be enforced in the last week of October 2021:
-
-1. SIDAS
-~~~~~~~~
-
-* When item 1 has the value “0 - Never” all other items must be set to “98 - Not Required”
+There are currently no future validations planned.
