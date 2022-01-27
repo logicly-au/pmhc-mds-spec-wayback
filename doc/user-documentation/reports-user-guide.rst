@@ -248,8 +248,8 @@ episodes, not a number of people.  The ratio is presented as a percentage
 in the '% Achieved During' column.
 
 Business days are defined as Monday to Friday inclusive, unless they are
-listed in `this document <http://public_holidays.csv>`_ which has been derived
-from `information at the Digital Transformation Office <https://data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details?q=>`_.
+listed in Australian Public Holidays shown within the
+`information at the Digital Transformation Office <https://data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details?q=>`_.
 The business day calculator takes into account the jurisdiction (state or
 territory of the service). A week is defined as 5 business days.
 
