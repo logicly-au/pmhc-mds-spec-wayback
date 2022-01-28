@@ -47,7 +47,7 @@
     "name": "twb_recommendation_out_provider_type",
     "titles": [ "twb_recommendation_out_provider_type" ],
     "dc:title": "TWB Recommendation Out - Provider Type",
-    "schema:description": "The provider type of the recommendation out made for and on behalf of the client. ",
+    "schema:description": "Identifies the type of external service(s) that the client has been recommended to from the Way Back during their Episode of care, as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-recommendation-out/twb-recommendation-out-provider-type.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -59,7 +59,7 @@
     "name": "twb_recommendation_out_status",
     "titles": [ "twb_recommendation_out_status" ],
     "dc:title": "TWB Recommendation Out - Status",
-    "schema:description": "The status of a recommendation out made by the Service Provider on behalf of a client.",
+    "schema:description": "Identifies the final status of external service recommendations made to the client, as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-recommendation-out/twb-recommendation-out-status.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -67,18 +67,6 @@
       "base": "string"
     },
     "required": true
-  },{
-    "name": "twb_recommendation_out_tags",
-    "titles": [ "twb_recommendation_out_tags" ],
-    "dc:title" : "TWB Recommendation Out - Tags",
-    "schema:description": "List of tags for TWB Recommendation Out.",
-    "schema:disambiguatingDescription": "type/tags.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "string"
-      },
-    "required": false
   }],
   "primaryKey": [ "organisation_path", "twb_recommendation_out_key" ],
   "foreignKeys": [{

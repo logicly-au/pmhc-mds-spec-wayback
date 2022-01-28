@@ -6,6 +6,11 @@
     "schema:name": "Strategic Data Pty Ltd",
     "schema:url": { "@id": "http://www.strategicdata.com.au" }
   },
+  "schema:specification": {
+    "schema:name": "wayback",
+    "schema:csvwSpecPath": "data-specification",
+    "schema:version": "3.0"
+  },
   "dc:modified": { "@value": "2019-07-05", "@type": "xsd:date"},
   "tables": [{
     "dc:title": "Metadata",
@@ -43,12 +48,6 @@
     "schema:name": "twb-episode",
     "schema:description": "table/twb-episode.rst",
     "tableSchema": "table/twb-episode-metadata.json"
-  }, {
-    "dc:title": "TWB Primary Nominated Professional Contact",
-    "url": "data/twb-pnpcs.csv",
-    "schema:name": "twb-primary-nominated-professional-contact",
-    "schema:description": "table/twb-primary-nominated-professional-contact.rst",
-    "tableSchema": "table/twb-primary-nominated-professional-contact-metadata.json"
   }, {
     "dc:title": "TWB Critical Incident",
     "url": "data/twb-critical-incidents.csv",
@@ -238,9 +237,6 @@
   }, {
     "url": "table/twb-recommendation-out/twb-recommendation-out-status.csv",
     "tableSchema": "table/twb-recommendation-out/twb-recommendation-out-status.json"
-  }, {
-    "url": "table/twb-pnpc/reason.csv",
-    "tableSchema": "table/twb-pnpc/reason.json"
   }, {
     "url": "table/twb-critical-incident/type.csv",
     "tableSchema": "table/twb-critical-incident/type.json"

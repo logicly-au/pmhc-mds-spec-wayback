@@ -23,12 +23,14 @@
 
 ",string,yes,":1: Yes
 :2: No
-:3: Does not want to disclose"
+:3: Does not want to disclose
+:9: Not stated / Unknown"
 "`TWB Episode - Intersex Status`_ (twb_intersex_status)
 
 ",string,yes,":1: Yes
 :2: No
-:3: Does not want to disclose"
+:3: Does not want to disclose
+:9: Not stated / Unknown"
 "`TWB Episode - Eligibility Type`_ (twb_eligibility_type)
 
 ",string,yes,":1: Primary Criteria
@@ -37,7 +39,7 @@
 :99: Not stated/Inadequately described"
 "`TWB Episode - External Evaluator Contact Consent`_ (twb_external_evaluator_contact_consent)
 
-",string,yes,":1: Consented to to be contacted by external evaluators
+",string,yes,":1: Consented to be contacted by external evaluators
 :2: Not consented to be contacted by external evaluators
 :9: Not stated/Inadequately described"
 "`TWB Episode - Primary Nominated Professional`_ (twb_primary_nominated_professional)
@@ -49,15 +51,22 @@
 :5: Psychology
 :6: Mental Health Social Worker
 :98: Other
-:99: Not stated/Inadequately described"
+:99: No one nominated"
 "`TWB Episode - Primary Nominated Professional Consent Date`_ (twb_primary_nominated_professional_consent_date)
 
-",date,yes,"What date did you receive consent from the client to contact their Primary Nominated Professional?"
+",date,yes,"The date that the client consented to having their Primary Nominated Professional contacted."
+"`TWB Episode - Primary Nominated Professional Contact Entry Date`_ (twb_primary_nominated_professional_contact_entry_date)
+
+",date,yes,"The date that the client's Primary Nominated Professional was contacted after entry."
+"`TWB Episode - Primary Nominated Professional Contact Exit Date`_ (twb_primary_nominated_professional_contact_exit_date)
+
+",date,yes,"The date that the client's Primary Nominated Professional was contacted after client's exit."
 "`TWB Episode - Previous suicide attempts`_ (twb_previous_suicide_attempts)
 
 ",string,yes,":1: No
 :2: Previous attempt(s) made in the past 12 months
-:3: Previous attempt(s) made within their lifetime
+:3: Previous attempt(s) made prior to the last 12 months
+:4: Previous attempts made both within and prior to the last 12 months
 :7: Not known
 :9: Not stated/Inadequately described"
 "`TWB Episode - Method of suicide attempt`_ (twb_method_of_suicide_attempt)
@@ -70,6 +79,3 @@
 :6: Intentional self-harm by jumping from a high place
 :98: Other
 :99: Not stated/Inadequately described"
-"`TWB Episode - Tags`_ (twb_episode_tags)
-
-",string,"—","List of tags for the TWB Episode."

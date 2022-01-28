@@ -33,7 +33,7 @@
     "name": "collection_occasion_key",
     "titles": [ "collection_occasion_key" ],
     "dc:title": "Collection Occasion Key",
-    "schema:description": "This is a number or code assigned to each collection occasion of outcome measures. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
+    "schema:description": "This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.",
     "schema:disambiguatingDescription": "table/collection-occasion/key.rst",
     "schema:dateCreated": "2016-06-22",
     "schema:dateDeleted": "2016-06-22",
@@ -96,7 +96,7 @@
     "name": "who5_item5",
     "titles": [ "who5_item5" ],
     "dc:title": "WHO-5 - Question 5",
-    "schema:description": "I woke up feeling fresh and rested",
+    "schema:description": "My daily life has been filled with things that interest me",
     "schema:disambiguatingDescription": "table/measure/who5/Q5.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -104,20 +104,6 @@
       "base": "string"
     },
     "required": true
-  },{
-    "name": "who5_raw_score",
-    "titles": [ "who5_raw_score" ],
-    "dc:title" : "WHO-5 - Raw Score",
-    "schema:description": "The WHO-5 raw score.",
-    "schema:disambiguatingDescription": "table/measure/who5/raw-score.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "null": "99",
-    "datatype": {
-      "base": "integer",
-      "minimum": 0,
-      "maximum": 25
-      }
   },{
     "name": "who5_tags",
     "titles": [ "who5_tags" ],

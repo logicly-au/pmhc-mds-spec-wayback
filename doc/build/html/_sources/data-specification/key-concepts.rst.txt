@@ -101,28 +101,48 @@ TWB-Episode is the record format for collecting TWB episode data.
 
 See :ref:`twb-episode-data-elements` for the data elements for TWB-Episode.
 
+.. _key-concepts-twb-critical-incident:
+
+TWB-Critical Incidents
+----------------------
+
+A Critical Incident is a suicide attempt, suicide death or death by any
+other means of a client during the episode.
+
+.. _key-concepts-twb-ni:
+
+TWB-NI
+------
+
+A Support Plan must be completed with a client within two weeks of their first
+attended Service Contact. Creating a support plan requires working with the
+client to identify their needs. This is to build an understanding of what
+will be of benefit and help form the goals of their Support Plan. These
+identified needs will fall into one of the categories listed. Multiple needs
+may be identified and therefore added.
+
 .. _key-concepts-service-contact:
 
 Service Contact
 ---------------
 
-PMHC Service Contact data linked to an :ref:`key-concepts-episode` will be used in TWB.
+Service Contact data linked to an :ref:`key-concepts-episode` will be used in TWB.
 
-.. _key-concepts-outcome-collection-occasion:
+.. _key-concepts-collection-occasion:
 
-Outcome Collection Occasion
----------------------------
+Collection Occasion
+-------------------
 
 A Collection Occasion is defined as an occasion during an Episode of Care when
-the required outcome measures are to be collected. At a minimum, collection of
-outcome data is required at both Episode Start and Episode End, but may be more
-frequent if clinically indicated and agreed by the client.
+specific Service Activities are required to be collected. At a minimum, collection
+is required at both Episode Start and Episode End.
 
 TWB will allow the following data records to be collected at a collection occasion:
 
 * :ref:`twb-plan-data-elements`
 * :ref:`twb-ni-data-elements`
-* :ref:`k10p-data-elements`
+* :ref:`k10p-data-elements` or :ref:`k5-data-elements` in the case of
+  Aboriginal and Torres Strait Islander clients
 * :ref:`who5-data-elements`
 * :ref:`sidas-data-elements`
 

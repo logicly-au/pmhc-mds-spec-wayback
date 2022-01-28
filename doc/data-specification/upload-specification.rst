@@ -171,7 +171,7 @@ Example TWB metadata data:
 .. This is a comment. TWB metadata validation rules required!
 
 - `CSV TWB metadata file <../_static/metadata.csv>`_.
-- `XLSX TWB metadata worksheet <../_static/twb-metadata-upload.xlsx>`_.
+- `XLSX TWB metadata worksheet <../_static/WAYBACK-3-0-metadata.xlsx>`_.
 
 .. _organisation-format:
 
@@ -188,7 +188,7 @@ at `Provider Organisation data elements <https://docs.pmhc-mds.com/data-specific
 Example organisation data:
 
 - `CSV organisation file <../_static/organisations.csv>`_.
-- `XLSX organisation worksheet <../_static/twb-organisations-upload.xlsx>`_.
+- `XLSX organisation worksheet <../_static/WAYBACK-3-0-organisations.xlsx>`_.
 
 .. _client-format:
 
@@ -202,7 +202,7 @@ Data elements for the client upload file/worksheet are defined at `Client data e
 Example client data:
 
 - `CSV client file <../_static/clients.csv>`_.
-- `XLSX client worksheet <../_static/pmhc-clients-upload.xlsx>`_.
+- `XLSX client worksheet <../_static/WAYBACK-3-0-clients.xlsx>`_.
 
 .. _episode-format:
 
@@ -217,7 +217,7 @@ at `Episode data elements <https://docs.pmhc-mds.com/data-specification/data-mod
 Example episode data:
 
 - `CSV episode file <../_static/episodes.csv>`_.
-- `XLSX episode worksheet <../_static/pmhc-episodes-upload.xlsx>`_.
+- `XLSX episode worksheet <../_static/WAYBACK-3-0-episodes.xlsx>`_.
 
 .. _twb-episode-format:
 
@@ -232,23 +232,7 @@ Data elements for the TWB Episode upload file/worksheet are defined at
 Example TWB episode data:
 
 - `CSV TWB episode file <../_static/twb-episodes.csv>`_.
-- `XLSX TWB episode worksheet <../_static/twb-episodes-upload.xlsx>`_.
-
-.. _twb-pnpc-format:
-
-TWB PNPC file format
-~~~~~~~~~~~~~~~~~~~~
-
-The TWB PNPC (Primary Nominated Professional Contacts) file/worksheet is
-required to be uploaded each time.
-
-Data elements for the TWB PNPC upload file/worksheet are defined at
-:ref:`twb-pnpc-data-elements`.
-
-Example TWB PNPC data:
-
-- `CSV TWB PNPC file <../_static/twb-pnpcs.csv>`_.
-- `XLSX TWB PNPC worksheet <../_static/twb-pnpcs-upload.xlsx>`_.
+- `XLSX TWB episode worksheet <../_static/WAYBACK-3-0-twb-episodes.xlsx>`_.
 
 .. _twb-critical-incident-format:
 
@@ -263,7 +247,7 @@ Data elements for the TWB Critical Incident upload file/worksheet are defined at
 Example TWB Critical Incident data:
 
 - `CSV TWB Critical Incident file <../_static/twb-critical-incidents.csv>`_.
-- `XLSX TWB Critical Incident worksheet <../_static/twb-critical-incidents-upload.xlsx>`_.
+- `XLSX TWB Critical Incident worksheet <../_static/WAYBACK-3-0-twb-critical-incidents.xlsx>`_.
 
 .. _twb-recommendation-out-format:
 
@@ -278,7 +262,7 @@ Data elements for the TWB Recommendation Out upload file/worksheet are defined a
 Example TWB Recommendation Out data:
 
 - `CSV TWB Recommendation Out file <../_static/twb-recommendation-outs.csv>`_.
-- `XLSX TWB Recommendation Out worksheet <../_static/twb-recommendation-outs-upload.xlsx>`_.
+- `XLSX TWB Recommendation Out worksheet <../_static/WAYBACK-3-0-twb-recommendation-outs.xlsx>`_.
 
 .. _collection-occasion-format:
 
@@ -293,7 +277,7 @@ Data elements for the Collection Occasion upload file/worksheet are defined at
 Example Collection Occasion data:
 
 - `CSV Collection Occasion file <../_static/collection-occasions.csv>`_.
-- `XLSX Collection Occasion worksheet <../_static/collection-occasions-upload.xlsx>`_.
+- `XLSX Collection Occasion worksheet <../_static/WAYBACK-3-0-collection-occasions.xlsx>`_.
 
 .. _k10p-format:
 
@@ -308,7 +292,7 @@ at :ref:`k10p-data-elements`.
 Example K10+ data:
 
 - `CSV K10+ file <../_static/k10p.csv>`_.
-- `XLSX K10+ worksheet <../_static/pmhc-k10p-upload.xlsx>`_.
+- `XLSX K10+ worksheet <../_static/WAYBACK-3-0-k10p.xlsx>`_.
 
 .. _k5-format:
 
@@ -323,7 +307,7 @@ at :ref:`k5-data-elements`.
 Example K5 data:
 
 - `CSV K5 file <../_static/k5.csv>`_.
-- `XLSX K5 worksheet <../_static/pmhc-k5-upload.xlsx>`_.
+- `XLSX K5 worksheet <../_static/WAYBACK-3-0-k5.xlsx>`_.
 
 .. _sdq-format:
 
@@ -332,13 +316,20 @@ SDQ file format
 
 The SDQ file/worksheet is required to be uploaded each time.
 
+When *only TWB* clients are uploaded, this file/worksheet is still required,
+but will only contain a row for the headers. No data should be supplied.
+
+When *both TWB and PMHC* clients are uploaded, this file/worksheet will contain
+data but only for PMHC clients. There should not be SDQ's recorded against TWB
+clients.
+
 Data elements for the SDQ upload file/worksheet are defined
 at :ref:`sdq-data-elements`.
 
 Example SDQ data:
 
 - `CSV SDQ file <../_static/sdq.csv>`_.
-- `XLSX SDQ worksheet <../_static/pmhc-sdq-upload.xlsx>`_.
+- `XLSX SDQ worksheet <../_static/WAYBACK-3-0-sdq.xlsx>`_.
 
 .. _who5-format:
 
@@ -353,7 +344,7 @@ at :ref:`who5-data-elements`.
 Example WHO-5 data:
 
 - `CSV WHO-5 file <../_static/who5.csv>`_.
-- `XLSX WHO-5 worksheet <../_static/who5-upload.xlsx>`_.
+- `XLSX WHO-5 worksheet <../_static/WAYBACK-3-0-who5.xlsx>`_.
 
 .. _sidas-format:
 
@@ -368,7 +359,7 @@ at :ref:`sidas-data-elements`.
 Example SIDAS data:
 
 - `CSV SIDAS file <../_static/sidas.csv>`_.
-- `XLSX SIDAS worksheet <../_static/sidas-upload.xlsx>`_.
+- `XLSX SIDAS worksheet <../_static/WAYBACK-3-0-sidas.xlsx>`_.
 
 .. _twb-plan-format:
 
@@ -383,7 +374,7 @@ at :ref:`twb-plan-data-elements`.
 Example TWB Plan data:
 
 - `CSV TWB Plan file <../_static/twb-plans.csv>`_.
-- `XLSX TWB Plan worksheet <../_static/twb-plans-upload.xlsx>`_.
+- `XLSX TWB Plan worksheet <../_static/WAYBACK-3-0-twb-plans.xlsx>`_.
 
 .. _twb-ni-format:
 
@@ -398,7 +389,7 @@ at :ref:`twb-ni-data-elements`.
 Example TWB Plan data:
 
 - `CSV TWB NI file <../_static/twb-nis.csv>`_.
-- `XLSX TWB NI worksheet <../_static/twb-nis-upload.xlsx>`_.
+- `XLSX TWB NI worksheet <../_static/WAYBACK-3-0-twb-nis.xlsx>`_.
 
 .. _service-contact-format:
 
@@ -413,7 +404,7 @@ at :ref:`service-contact-data-elements`.
 Example service contact data:
 
 - `CSV service contact file <../_static/service-contacts.csv>`_.
-- `XLSX service contact worksheet <../_static/pmhc-service-contacts-upload.xlsx>`_.
+- `XLSX service contact worksheet <../_static/WAYBACK-3-0-service-contacts.xlsx>`_.
 
 
 .. _practitioner-format:
@@ -430,7 +421,7 @@ at `Practitioner data elements <https://docs.pmhc-mds.com/data-specification/dat
 Example Practitioner data:
 
 - `CSV practitioner file <../_static/practitioners.csv>`_.
-- `XLSX practitioner worksheet <../_static/pmhc-practitioners-upload.xlsx>`_.
+- `XLSX practitioner worksheet <../_static/WAYBACK-3-0-practitioners.xlsx>`_.
 
 .. _deleting-records:
 
@@ -442,7 +433,6 @@ Deleting records
   * Client
   * Episode
   * TWB Episode
-  * TWB Primary Nominated Professional Contact
   * TWB Critical Incident
   * TWB Recommendation Out
   * Collection Occasion
@@ -452,7 +442,7 @@ Deleting records
   * WHO-5
   * SIDAS
   * TWB Plan
-  * TWB INI
+  * TWB NI
   * Practitioner
 
 * An extra optional "delete" column can be added to each of the supported
@@ -479,5 +469,5 @@ Example TWB files showing how to delete via upload:
 TWB Episode data
 ################
 
-- `XLSX delete file containing only TWB worksheets <../_static/twb-upload-delete.xlsx>`_.
+- `XLSX delete file containing only TWB worksheets <../_static/WAYBACK-3-0-twb-Episodes-delete.xlsx>`_.
 - `CSV delete TWB episode file <../_static/twb-episodes-delete.csv>`_.

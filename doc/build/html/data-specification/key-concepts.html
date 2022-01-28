@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Key Concepts &mdash; The Way Back Version 3.0 documentation</title>
+  <title>Key Concepts &mdash; The Way Back 3.0.2 documentation</title>
   
 
   
@@ -22,10 +22,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -34,7 +34,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Identifier Management" href="identifier-management.html" />
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                Version 3.0
+                3.0.2
               </div>
             
           
@@ -99,8 +99,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#client">Client</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#episode">Episode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#twb-episode">TWB-Episode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#twb-critical-incidents">TWB-Critical Incidents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#twb-ni">TWB-NI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#service-contact">Service Contact</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#outcome-collection-occasion">Outcome Collection Occasion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collection-occasion">Collection Occasion</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="identifier-management.html">Identifier Management</a></li>
@@ -111,6 +113,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/index.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-documentation/index.html">User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">Frequently Asked Questions</a></li>
 </ul>
 
@@ -225,7 +228,7 @@ while others are collected at each <em>Service Contact</em>.</p>
 <p>Three business rules apply to how the <em>Episode of Care</em> concept is implemented
 across PHN-commissioned services:</p>
 <ul>
-<li><p class="first"><strong>One episode at a time for each client, defined at the level of the provider
+<li><p><strong>One episode at a time for each client, defined at the level of the provider
 organisation</strong></p>
 <p>While an individual may have multiple <em>Episodes of Care</em> over the course of
 their illness, they may be considered as being in only one episode at any
@@ -234,10 +237,9 @@ organisation</strong>. The implication is that the care provided by the
 organisation to an individual client at any point in time is subject to only
 one set of reporting requirements.</p>
 </li>
-<li><p class="first"><strong>Episodes commence at the point of first contact.</strong> The episode start date
-will be derived from the first service contact date.</p>
-</li>
-<li><p class="first"><strong>Discharge from care concludes the episode</strong></p>
+<li><p><strong>Episodes commence at the point of first contact.</strong> The episode start date
+will be derived from the first service contact date.</p></li>
+<li><p><strong>Discharge from care concludes the episode</strong></p>
 <p>Discharge may occur clinically or administratively in instances where contact
 has been lost with the client. A new episode is deemed to commence if the
 person re-presents to the organisation.</p>
@@ -249,23 +251,37 @@ person re-presents to the organisation.</p>
 <p>TWB-Episode is the record format for collecting TWB episode data.</p>
 <p>See <a class="reference internal" href="data-model-and-specifications.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode</span></a> for the data elements for TWB-Episode.</p>
 </div>
+<div class="section" id="twb-critical-incidents">
+<span id="key-concepts-twb-critical-incident"></span><h2>TWB-Critical Incidents<a class="headerlink" href="#twb-critical-incidents" title="Permalink to this headline">¶</a></h2>
+<p>A Critical Incident is a suicide attempt, suicide death or death by any
+other means of a client during the episode.</p>
+</div>
+<div class="section" id="twb-ni">
+<span id="key-concepts-twb-ni"></span><h2>TWB-NI<a class="headerlink" href="#twb-ni" title="Permalink to this headline">¶</a></h2>
+<p>A Support Plan must be completed with a client within two weeks of their first
+attended Service Contact. Creating a support plan requires working with the
+client to identify their needs. This is to build an understanding of what
+will be of benefit and help form the goals of their Support Plan. These
+identified needs will fall into one of the categories listed. Multiple needs
+may be identified and therefore added.</p>
+</div>
 <div class="section" id="service-contact">
 <span id="key-concepts-service-contact"></span><h2>Service Contact<a class="headerlink" href="#service-contact" title="Permalink to this headline">¶</a></h2>
-<p>PMHC Service Contact data linked to an <a class="reference internal" href="#key-concepts-episode"><span class="std std-ref">Episode</span></a> will be used in TWB.</p>
+<p>Service Contact data linked to an <a class="reference internal" href="#key-concepts-episode"><span class="std std-ref">Episode</span></a> will be used in TWB.</p>
 </div>
-<div class="section" id="outcome-collection-occasion">
-<span id="key-concepts-outcome-collection-occasion"></span><h2>Outcome Collection Occasion<a class="headerlink" href="#outcome-collection-occasion" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="collection-occasion">
+<span id="key-concepts-collection-occasion"></span><h2>Collection Occasion<a class="headerlink" href="#collection-occasion" title="Permalink to this headline">¶</a></h2>
 <p>A Collection Occasion is defined as an occasion during an Episode of Care when
-the required outcome measures are to be collected. At a minimum, collection of
-outcome data is required at both Episode Start and Episode End, but may be more
-frequent if clinically indicated and agreed by the client.</p>
+specific Service Activities are required to be collected. At a minimum, collection
+is required at both Episode Start and Episode End.</p>
 <p>TWB will allow the following data records to be collected at a collection occasion:</p>
 <ul class="simple">
-<li><a class="reference internal" href="data-model-and-specifications.html#twb-plan-data-elements"><span class="std std-ref">TWB Plan</span></a></li>
-<li><a class="reference internal" href="data-model-and-specifications.html#twb-ni-data-elements"><span class="std std-ref">TWB NI</span></a></li>
-<li><a class="reference internal" href="data-model-and-specifications.html#k10p-data-elements"><span class="std std-ref">K10+ Measure</span></a></li>
-<li><a class="reference internal" href="data-model-and-specifications.html#who5-data-elements"><span class="std std-ref">WHO-5 Measure</span></a></li>
-<li><a class="reference internal" href="data-model-and-specifications.html#sidas-data-elements"><span class="std std-ref">SIDAS Measure</span></a></li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#twb-plan-data-elements"><span class="std std-ref">TWB Plan</span></a></p></li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#twb-ni-data-elements"><span class="std std-ref">TWB NI</span></a></p></li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#k10p-data-elements"><span class="std std-ref">K10+ Measure</span></a> or <a class="reference internal" href="data-model-and-specifications.html#k5-data-elements"><span class="std std-ref">K5 Measure</span></a> in the case of
+Aboriginal and Torres Strait Islander clients</p></li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#who5-data-elements"><span class="std std-ref">WHO-5 Measure</span></a></p></li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#sidas-data-elements"><span class="std std-ref">SIDAS Measure</span></a></p></li>
 </ul>
 <p>See <a class="reference internal" href="data-model-and-specifications.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion</span></a> data elements.</p>
 </div>

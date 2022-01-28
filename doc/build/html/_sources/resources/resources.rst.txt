@@ -25,7 +25,7 @@ reporting requirements.
 The following document provides an example of each of the TWB outcome measures and an
 explanation of how it is scored.
 
-* :download:`SIDAS Collection Occasion PDF <PDF/PMHC MDS - Scoring SIDAS.pdf>`
+* :download:`SIDAS Collection Occasion PDF <PDF/PMHC MDS - Scoring SIDAS v2.pdf>`
 
 4. Primary Mental Health Care Minimum Data Set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

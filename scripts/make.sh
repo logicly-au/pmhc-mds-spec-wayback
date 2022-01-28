@@ -3,18 +3,21 @@
 # Exit if anything errors
 set -e
 
+source doc/version.conf
+export SPEC_VERSION
+
 source config.sh
 
 if [[ -z $RECORD_MATCH ]]; then
   RECORD_MATCH=".*"
 fi
 
-docker pull docker.sdlocal.net/csvw/metadata2rst:latest
+docker pull docker.sdlocal.net/csvw/metadata2rst:release
 docker pull stratdat/sphinx:production
 docker pull stratdat/sphinx-html2pdf:production
 
 
-docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:latest \
+docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:release \
   --meta=${METADATA_FILE} \
   --record_match "${RECORD_MATCH}"
 
@@ -46,7 +49,7 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
 docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
   stratdat/sphinx-html2pdf:production \
   /mnt/workdir/scripts/make-pdf.pl \
-  --spec-name ${SPEC_NAME} \
+  --spec-name "${SPEC_NAME}-${SPEC_VERSION}" \
   --doc-dir   "/mnt/workdir/doc"
 
 pushd .

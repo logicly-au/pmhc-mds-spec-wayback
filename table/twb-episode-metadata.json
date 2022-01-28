@@ -32,8 +32,7 @@
     "name": "twb_veteran",
     "titles": [ "twb_veteran" ],
     "dc:title": "TWB Episode - Veteran",
-    "schema:description": "Whether the client identifies as a veteran.",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-veteran.rst",
+    "schema:description": "An indication of whether the client identifies as a veteran, as represented by a code.",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -44,7 +43,8 @@
     "name": "twb_sexual_orientation",
     "titles": [ "twb_sexual_orientation" ],
     "dc:title": "TWB Episode - Sexual Orientation",
-    "schema:description": "How do you describe your sexual orientation?",
+    "schema:description": "Identifies how the client describes their sexual orientation, as represented by a code.",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-sexual-orientation.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
@@ -55,7 +55,7 @@
     "name": "twb_transgender_status",
     "titles": [ "twb_transgender_status" ],
     "dc:title": "TWB Episode - Transgender Status",
-    "schema:description": "Do you have a transgender history, experience, or identity?",
+    "schema:description": "An indication of whether the client has a transgender history, experience or identity , as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-transgender-status.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -67,7 +67,7 @@
     "name": "twb_intersex_status",
     "titles": [ "twb_intersex_status" ],
     "dc:title": "TWB Episode - Intersex Status",
-    "schema:description": "Do you wish to disclose intersex status?",
+    "schema:description": "An indication of whether the client has an intersex status, as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-intersex-status.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -79,7 +79,7 @@
     "name": "twb_eligibility_type",
     "titles": [ "twb_eligibility_type" ],
     "dc:title": "TWB Episode - Eligibility Type",
-    "schema:description": "The criteria by which the client is eligible for service.",
+    "schema:description": "The criteria by which a client is assessed as being eligible for the Way Back Support service, as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-eligibility-type.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -91,7 +91,7 @@
     "name": "twb_external_evaluator_contact_consent",
     "titles": [ "twb_external_evaluator_contact_consent" ],
     "dc:title": "TWB Episode - External Evaluator Contact Consent",
-    "schema:description": "The status of whether the client has consented to be contacted by external evaluators.",
+    "schema:description": "The status of whether the client has consented to be contacted by external evaluators, as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-external-evaluator-contact-consent.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -103,7 +103,7 @@
     "name": "twb_primary_nominated_professional",
     "titles": [ "twb_primary_nominated_professional" ],
     "dc:title": "TWB Episode - Primary Nominated Professional",
-    "schema:description": "The primary nominated professional of the client for contact regarding participation in the service.",
+    "schema:description": "Identifies the profession of the primary professional nominated by the client, as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -115,8 +115,38 @@
     "name": "twb_primary_nominated_professional_consent_date",
     "titles": [ "twb_primary_nominated_professional_consent_date" ],
     "dc:title": "TWB Episode - Primary Nominated Professional Consent Date",
-    "schema:description": "What date did you receive consent from the client to contact their Primary Nominated Professional?",
+    "schema:description": "The date that the client consented to having their Primary Nominated Professional contacted.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional-consent-date.rst",
+    "schema:dateCreated": "2020-04-21",
+    "schema:dateModified": "2020-04-21",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "twb_primary_nominated_professional_contact_entry_date",
+    "titles": [ "twb_primary_nominated_professional_contact_entry_date" ],
+    "dc:title": "TWB Episode - Primary Nominated Professional Contact Entry Date",
+    "schema:description": "The date that the client's Primary Nominated Professional was contacted after entry.",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional-contact-entry-date.rst",
+    "schema:dateCreated": "2020-04-21",
+    "schema:dateModified": "2020-04-21",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2019-01-01"
+    },
+    "required": true,
+    "schema:dateMissingUnknown": "9999-09-09"
+  },{
+    "name": "twb_primary_nominated_professional_contact_exit_date",
+    "titles": [ "twb_primary_nominated_professional_contact_exit_date" ],
+    "dc:title": "TWB Episode - Primary Nominated Professional Contact Exit Date",
+    "schema:description": "The date that the client's Primary Nominated Professional was contacted after client's exit.",
+    "schema:disambiguatingDescription": "table/twb-episode/twb-primary-nominated-professional-contact-exit-date.rst",
     "schema:dateCreated": "2020-04-21",
     "schema:dateModified": "2020-04-21",
     "datatype": {
@@ -130,7 +160,7 @@
     "name": "twb_previous_suicide_attempts",
     "titles": [ "twb_previous_suicide_attempts" ],
     "dc:title": "TWB Episode - Previous suicide attempts",
-    "schema:description": "Has the client made a suicide attempt and/or experienced suicidal ideation in their lifetime?",
+    "schema:description": "Indicates whether the client has attempted suicide prior to this episode, as represented by a code.",
     "schema:disambiguatingDescription": "table/twb-episode/twb-previous-suicide-attempts.rst",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
@@ -142,25 +172,13 @@
     "name": "twb_method_of_suicide_attempt",
     "titles": [ "twb_method_of_suicide_attempt" ],
     "dc:title": "TWB Episode - Method of suicide attempt",
-    "schema:description": "For clients referred to The Way Back for a suicide attempt, what was the method of their most recent attempt?",
-    "schema:disambiguatingDescription": "table/twb-episode/twb-method-of-suicide-attempt.rst",
+    "schema:description": "Identifies the method of the most recent suicide attempt, as represented by a code.",
     "schema:dateCreated": "2019-07-05",
     "schema:dateModified": "2019-07-05",
     "datatype": {
       "base": "string"
     },
     "required": true
-  },{
-    "name": "twb_episode_tags",
-    "titles": [ "twb_episode_tags" ],
-    "dc:title" : "TWB Episode - Tags",
-    "schema:description": "List of tags for the TWB Episode.",
-    "schema:disambiguatingDescription": "type/tags.rst",
-    "schema:dateCreated": "2019-07-05",
-    "schema:dateModified": "2019-07-05",
-    "datatype": {
-      "base": "string"
-      }
   }],
   "primaryKey": [ "organisation_path", "episode_key" ],
   "foreignKeys": [{

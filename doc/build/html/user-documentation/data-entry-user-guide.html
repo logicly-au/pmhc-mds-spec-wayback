@@ -1,0 +1,754 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Entry &mdash; The Way Back 3.0.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Upload User Guide" href="upload-user-guide.html" />
+    <link rel="prev" title="Access &amp; Passwords" href="access-and-password-user-guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> The Way Back
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data-specification/index.html">Data Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/index.html">Resources</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="access-and-password-user-guide.html">Access &amp; Passwords</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Data Entry</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pmhc-client-data">PMHC Client Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pmhc-episodes">PMHC Episodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#twb-episode">TWB-Episode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-client-s-pmhc-episode">Viewing a Client’s PMHC Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-a-client-s-twb-episode-data">Adding a Client’s TWB Episode data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-a-client-s-twb-episode-data">Editing a Client’s TWB-Episode data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-an-twb-episode">Deleting an TWB Episode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#collection-occasions">Collection Occasions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-client-s-collection-occasions-for-an-episode">Viewing a Client’s Collection Occasions for an Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-an-twb-client-s-collection-occasions-data">Adding an TWB Client’s Collection Occasions data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-a-client-s-collection-occasions-for-an-episode">Editing a Client’s Collection Occasions for an Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-a-collection-occasion">Deleting a Collection Occasion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#collection-occasion-measures">Collection Occasion Measures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#viewing-a-client-s-collection-occasion-measures-for-an-episode">Viewing a Client’s Collection Occasion Measures for an Episode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-an-client-s-collection-occasion-measures-data">Adding an Client’s Collection Occasion Measures data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-a-client-s-measures-for-a-collection-occasion">Editing a Client’s Measures for a Collection Occasion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-a-measure-from-a-collection-occasion">Deleting a Measure from a Collection Occasion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#pmhc-service-contact-data">PMHC Service Contact Data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upload-user-guide.html">Upload User Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reports-user-guide.html">Reports User Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="video-library.html">Video Training Library</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faqs/index.html">Frequently Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">The Way Back</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">User Guide</a> &raquo;</li>
+        
+      <li>Data Entry</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user-documentation/data-entry-user-guide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-entry">
+<span id="data-entry-user-docs"></span><h1>Data Entry<a class="headerlink" href="#data-entry" title="Permalink to this headline">¶</a></h1>
+<p>The Way Back (TWB) Support Service Minimum Data Set is an extension of the
+Primary Mental Health Care Minimum Data Set (PMHC MDS); current PMHC MDS
+online User Guide for Data Entry is available to be viewed at
+<a class="reference external" href="https://docs.pmhc-mds.com/user-documentation/data-entry.html">https://docs.pmhc-mds.com/user-documentation/data-entry.html</a>.</p>
+<div class="section" id="pmhc-client-data">
+<h2>PMHC Client Data<a class="headerlink" href="#pmhc-client-data" title="Permalink to this headline">¶</a></h2>
+<p>For more detail on how to search, find, view, add, edit or delete Client PMHC data in the PMHC MDS,
+please visit the PMHC User Guide at <a class="reference external" href="https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#client-data">https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#client-data</a>.</p>
+</div>
+<div class="section" id="pmhc-episodes">
+<h2>PMHC Episodes<a class="headerlink" href="#pmhc-episodes" title="Permalink to this headline">¶</a></h2>
+<p>For more detail on how to find, view, add, edit or delete Client PMHC Episode data in the PMHC MDS,
+please visit the PMHC User Guide at <a class="reference external" href="https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#episodes">https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#episodes</a>.</p>
+</div>
+<div class="section" id="twb-episode">
+<span id="twb-episode-data"></span><h2>TWB-Episode<a class="headerlink" href="#twb-episode" title="Permalink to this headline">¶</a></h2>
+<p>You can view a client’s episodes through Viewing a Client’s details available on the Data Entry tab, by following these steps:</p>
+<div class="section" id="viewing-a-client-s-pmhc-episode">
+<span id="view-episodes"></span><h3>Viewing a Client’s PMHC Episode<a class="headerlink" href="#viewing-a-client-s-pmhc-episode" title="Permalink to this headline">¶</a></h3>
+<p>You can view a client’s TWB episodes through viewing a client’s details
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Search for the client using one of the three search fields.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Search View" src="../_images/client-search-fields.png" />
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Click on the Client Key in blue displayed within the table list.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Search View" src="../_images/client-search-results.png" />
+</div>
+<ol class="arabic simple" start="3">
+<li><p>From the Client’s Summary tab, you can shortcut straight to an episode by clicking
+the Blue Episode Key displayed in the snapshot of the five most recent episodes.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Data Summary View" src="../_images/client-view-summary.png" />
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Alternately, if you would like to view all episodes you can click on the
+Episode Tab. The heading for this tab displays in brackets the total number of episodes recorded
+in the PMHC MDS for this client at Provider Organisations for which you have access.</p></li>
+</ol>
+<p>A table will display all the Client’s Episodes at Provider Organisations for which you have access.</p>
+<div class="figure align-default">
+<img alt="Client Data Summary View" src="../_images/client-episodes-summary.png" />
+</div>
+<p>A Drop down list is available to view:</p>
+<ul class="simple">
+<li><p>All Episodes</p></li>
+<li><p>Currently Open Episodes</p></li>
+<li><p>Closed Episodes</p></li>
+</ul>
+<div class="figure align-default">
+<img alt="Client Episodes Sort View" src="../_images/client-episodes-summary-sort.png" />
+</div>
+<p>To view the Client’s Episode details, click the Blue Episode Key.</p>
+<div class="figure align-default">
+<img alt="Client Episodes Details View" src="../_images/client-episodes-details.png" />
+</div>
+<p>A page will display the Client’s PMHC Episode details.</p>
+</div>
+<div class="section" id="adding-a-client-s-twb-episode-data">
+<span id="add-twb-episode"></span><h3>Adding a Client’s TWB Episode data<a class="headerlink" href="#adding-a-client-s-twb-episode-data" title="Permalink to this headline">¶</a></h3>
+<p>You can edit a Client’s PMHC Episode details through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client’s PMHC Episode</span></a>
+available on the Data Entry tab to add a Client’s TWB Episode data, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client’s PMHC Episode</span></a>.</p></li>
+<li><p>From the Client’s Episode table, click the Episode Key.</p></li>
+<li><p>Click Edit Details tab.</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">!wayback</span></code> in the ‘Tags’ fields and press tab</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Episodes TWB Tag" src="../_images/client-episodes-twb-tag.png" />
+</div>
+<p>5. Scroll to the bottom of the PMHC Episode
+Add the Client’s TWB Episode details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode Data Elements</span></a>)</p>
+<div class="figure align-default">
+<img alt="Client Episodes Edit Details" src="../_images/client-episodes-twb-add.png" />
+</div>
+<p>You can also add the following information if available, or these can be added later:</p>
+<ul class="simple">
+<li><p>See <a class="reference internal" href="../data-specification/data-model-and-specifications.html#twb-critical-incident-data-elements"><span class="std std-ref">TWB-Critical Incident data specifications</span></a> for Critical Incident Data.</p></li>
+<li><p>See <a class="reference internal" href="../data-specification/data-model-and-specifications.html#twb-recommendation-out-data-elements"><span class="std std-ref">TWB-Recommendation Out data specifications</span></a> for Recommendation Out Data.</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p>Click the blue ‘Save’ button. (If you decide not to add TWB data, you can simply navigate away from this screen)</p></li>
+</ol>
+<p>You will receive confirmation that the Client’s Episode details have been saved,
+and it will now be displaying.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Episode Data Saved Successfully" src="../_images/saved.png" />
+</div>
+</div></blockquote>
+<p>If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - <a class="reference internal" href="../data-specification/validation-rules.html#episode-twb-current-validations"><span class="std std-ref">TWB Episode</span></a></p>
+</div>
+<div class="section" id="editing-a-client-s-twb-episode-data">
+<span id="edit-twb-episode"></span><h3>Editing a Client’s TWB-Episode data<a class="headerlink" href="#editing-a-client-s-twb-episode-data" title="Permalink to this headline">¶</a></h3>
+<p>You can edit a Client’s PMHC Episode details through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client’s PMHC Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client’s PMHC Episode</span></a>.</p></li>
+<li><p>From the Client’s Episode table, click the Episode Key.</p></li>
+<li><p>Click Edit Details tab.</p></li>
+<li><p>Scroll to the bottom of the PMHC Episode.</p></li>
+</ol>
+<p>Update the Client’s TWB Episode details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#twb-episode-data-elements"><span class="std std-ref">TWB Episode Data Elements</span></a>)</p>
+<div class="figure align-default">
+<img alt="Client Episodes Edit Details" src="../_images/client-episodes-twb-edit.png" />
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Click the blue ‘Save’ button. (If you decide not to save changes, you can simply navigate away from this screen)</p></li>
+</ol>
+<p>You will receive confirmation that the Client’s TWB Episode details have been saved,
+and it will now be displaying these new details in the Episode View Details tab.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Episode Data Saved Successfully" src="../_images/saved.png" />
+</div>
+</div></blockquote>
+<p>If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.
+See Validation Rules - <a class="reference internal" href="../data-specification/validation-rules.html#episode-twb-current-validations"><span class="std std-ref">TWB Episode</span></a></p>
+</div>
+<div class="section" id="deleting-an-twb-episode">
+<span id="delete-twb-episode"></span><h3>Deleting an TWB Episode<a class="headerlink" href="#deleting-an-twb-episode" title="Permalink to this headline">¶</a></h3>
+<p>Removing the <code class="docutils literal notranslate"><span class="pre">!wayback</span></code> tag will delete an TWB Episode, through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client’s PMHC Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client’s PMHC Episode</span></a>.</p></li>
+<li><p>From the Client’s Episode table, click the Episode Key.</p></li>
+<li><p>Click Edit Details tab.</p></li>
+<li><p>Click on the cross on the <code class="docutils literal notranslate"><span class="pre">!wayback</span></code> tag to remove it.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Episodes Edit Details" src="../_images/client-episodes-twb-tag.png" />
+</div>
+<ol class="arabic" start="5">
+<li><p>Click the blue ‘Save’ button.</p>
+<p>Deleting the The Way Back Episode data will also delete the:</p>
+<ul class="simple">
+<li><p>Primary Nominated Professional Contact,</p></li>
+<li><p>Critical Incidents, and</p></li>
+<li><p>Recommendation Outs.</p></li>
+</ul>
+<p>However any associated measures will be retained.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Episodes TWB Delete Details" src="../_images/client-episodes-twb-delete.png" />
+</div>
+</div></blockquote>
+<p><strong>Please note: Once the collection occasion is deleted, you will not be able to recover this collection occasion data.</strong></p>
+</li>
+<li><p>Click the red ‘Confirm’ button to delete the data. (If you decide not to delete the data, you can click the blue ‘Cancel’ button)</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Episode Data Saved Successfully" src="../_images/saved.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="collection-occasions">
+<span id="collection-occasion-data"></span><h2>Collection Occasions<a class="headerlink" href="#collection-occasions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="viewing-a-client-s-collection-occasions-for-an-episode">
+<span id="view-collection-occasion"></span><h3>Viewing a Client’s Collection Occasions for an Episode<a class="headerlink" href="#viewing-a-client-s-collection-occasions-for-an-episode" title="Permalink to this headline">¶</a></h3>
+<p>You can view a client’s collection occasions through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client’s PMHC Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing the Client’s Episode</span></a>.</p></li>
+<li><p>Click the Episode Collection Occasions Tab.
+This tab displays in brackets the total number of collection occasions recorded
+in the PMHC MDS for this episode.</p></li>
+</ol>
+<p>A table will display all the Collection Occasions linked to this Client’s Episode.</p>
+<div class="figure align-default">
+<img alt="Client Episode Collection Occasions Table View" src="../_images/client-collection-occasions-view.png" />
+</div>
+<ol class="arabic simple" start="3">
+<li><p>To view the Collection Occasions details, click the Blue Collection Occasions Key.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Episode Collection Occasions Details View" src="../_images/client-collection-occasions-details.png" />
+</div>
+<p>A page will display the Collection Occasions details as recorded via the
+<a class="reference internal" href="../data-specification/data-model-and-specifications.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion Data Elements</span></a>.</p>
+</div>
+<div class="section" id="adding-an-twb-client-s-collection-occasions-data">
+<span id="add-collection-occasion"></span><h3>Adding an TWB Client’s Collection Occasions data<a class="headerlink" href="#adding-an-twb-client-s-collection-occasions-data" title="Permalink to this headline">¶</a></h3>
+<p>You can add a Client’s Collection Occasions through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>.</p></li>
+<li><p>Firstly double check the Collection Occasion is not already showing.</p></li>
+<li><p>Click the Add New Collection Occasion tab.</p></li>
+<li><p>Enter the Client’s Collection Occasion details for the TWB episode. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion Data Elements</span></a>)</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Data Add Collection Occasions" src="../_images/client-collection-occasions-add.png" />
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Click the blue ‘Save’ button. (If you decide not to add this client’s episode, you can simply navigate away from this screen)</p></li>
+</ol>
+<p>You will receive confirmation that the Client’s Collection Occasion details have been added,
+and it will now be displaying these new details in the View Collection Occasions Details tab.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Data Saved Successfully" src="../_images/saved.png" />
+</div>
+</div></blockquote>
+<p>If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.</p>
+</div>
+<div class="section" id="editing-a-client-s-collection-occasions-for-an-episode">
+<span id="edit-collection-occasion"></span><h3>Editing a Client’s Collection Occasions for an Episode<a class="headerlink" href="#editing-a-client-s-collection-occasions-for-an-episode" title="Permalink to this headline">¶</a></h3>
+<p>You can edit a Client’s Collection Occasions through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>.</p></li>
+<li><p>Click the Collection Occasion Key.</p></li>
+<li><p>Click Edit Details tab.</p></li>
+<li><p>Update the Client’s Collection Occasion details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion Data Elements</span></a>)</p>
+<p><em>Please note: You can edit the Collection Occasion Key from this screen. See</em> <a class="reference internal" href="#edit-collection-occasion-key"><span class="std std-ref">Editing a Collection Occasion Key</span></a>.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Collection Occasion Edit Details" src="../_images/client-collection-occasions-edit.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Click the blue ‘Save’ button. (If you decide not to save changes, you can simply navigate away from this screen)</p></li>
+</ol>
+<p>You will receive confirmation that the Client’s Collection Occasion details have been saved,
+and it will now be displaying these new details in the View Collection Occasion Details tab.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Data Saved Successfully" src="../_images/saved.png" />
+</div>
+</div></blockquote>
+<p>If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.</p>
+<div class="section" id="editing-a-collection-occasion-key">
+<span id="edit-collection-occasion-key"></span><h4>Editing a Collection Occasion Key<a class="headerlink" href="#editing-a-collection-occasion-key" title="Permalink to this headline">¶</a></h4>
+<p>You can edit a collection occasion’s identification key through <a class="reference internal" href="#view-episodes"><span class="std std-ref">Viewing a Client’s PMHC Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p>In step four when <a class="reference internal" href="#edit-collection-occasion"><span class="std std-ref">Editing a Client’s Collection Occasions for an Episode</span></a>.</p></li>
+<li><p>From the Collection Occasion Edit Details tab, click the ‘Edit Key’ button.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Data Edit Collection Occasion Key" src="../_images/client-collection-occasions-edit-key.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Type in the new collection occasion key and click ‘Next’.</p></li>
+<li><p>Double check the new key is correct and click save. (If it is incorrect, click back to re-enter the key or click the ‘cross’ in the top right to cancel this key change request)</p></li>
+</ol>
+<p>You will receive confirmation that the Collection Occasion’s key has been saved, and the screen
+will now be displaying the updated collection occasion key details in the Collection Occasions View Details tab.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Collection Occasion Key Saved Successfully" src="../_images/client-collection-occasions-edit-key-saved.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="deleting-a-collection-occasion">
+<span id="delete-collection-occasion"></span><h3>Deleting a Collection Occasion<a class="headerlink" href="#deleting-a-collection-occasion" title="Permalink to this headline">¶</a></h3>
+<p>You can delete a Client’s Collection Occasions through ‘<a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>’
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>.</p></li>
+<li><p>Click the Collection Occasion Key.</p></li>
+<li><p>Click the red ‘Delete’ button.</p></li>
+<li><p>You will either be displayed a Confirm Delete screen or a Cannot Delete screen</p></li>
+</ol>
+<div class="section" id="confirm-delete">
+<span id="delete-collection-occasion-confirm"></span><h4>Confirm Delete<a class="headerlink" href="#confirm-delete" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p><strong>Please note: Once the collection occasion is deleted, you will not be able to recover this collection occasion data.</strong></p>
+<ol class="arabic">
+<li><p>Click the blue ‘Confirm’ button to delete this collection occasion. (or click the orange ‘Cancel’ button if you decide not to delete this collection occasion data)</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Collection Occasion Data Confirm Delete" src="../_images/client-collection-occasions-delete-confirm.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>After you click Confirm, you will receive confirmation that the episode has been deleted, and you will be redirected to View Episodes where the episode will no longer be displayed.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Collection Occasion Data Delete Successful" src="../_images/client-collection-occasions-delete-successful.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="cannot-delete">
+<span id="delete-collection-occasion-cannot"></span><h4>Cannot Delete<a class="headerlink" href="#cannot-delete" title="Permalink to this headline">¶</a></h4>
+<p>If the collection occasion you are trying to delete has any measures, you will not be able to proceed with deleting this collection occasion until all the related records have been deleted.</p>
+<p>You can click on the link provided to view the client’s measures for this collection occasion, or click the orange Dismiss button</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Collection Occasion Data Delete Successful" src="../_images/client-collection-occasions-delete-cannot.png" />
+</div>
+</div></blockquote>
+<p>See <a class="reference internal" href="#delete-collection-occasion-measure"><span class="std std-ref">Deleting a Measure from a Collection Occasion</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="collection-occasion-measures">
+<span id="collection-occasion-measure-data"></span><h2>Collection Occasion Measures<a class="headerlink" href="#collection-occasion-measures" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="viewing-a-client-s-collection-occasion-measures-for-an-episode">
+<span id="view-collection-occasion-measure"></span><h3>Viewing a Client’s Collection Occasion Measures for an Episode<a class="headerlink" href="#viewing-a-client-s-collection-occasion-measures-for-an-episode" title="Permalink to this headline">¶</a></h3>
+<p>You can view a Client’s Measures added to a Collection Occasion through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing the Collection Occasion</span></a>.</p></li>
+<li><p>Scroll down to the Measures</p></li>
+</ol>
+<p>A table will display all the Measures linked to this Client’s Episode Collection Occasion.</p>
+<div class="figure align-default">
+<img alt="Client Episode Collection Occasions Table View" src="../_images/client-collection-occasions-details.png" />
+</div>
+<ol class="arabic simple" start="3">
+<li><p>To view the Measure details, click the Blue Measure Key.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Episode Collection Occasions Details View" src="../_images/client-collection-occasions-measures-view.png" />
+</div>
+<p>A page will display the Collection Occasion details as recorded via the
+<a class="reference internal" href="../data-specification/data-model-and-specifications.html#collection-occasion-data-elements"><span class="std std-ref">Collection Occasion Data Elements</span></a>.</p>
+<div class="figure align-default">
+<img alt="Client Episode Collection Occasions Details View" src="../_images/client-collection-occasions-measures-details.png" />
+</div>
+</div>
+<div class="section" id="adding-an-client-s-collection-occasion-measures-data">
+<span id="add-collection-occasion-measure"></span><h3>Adding an Client’s Collection Occasion Measures data<a class="headerlink" href="#adding-an-client-s-collection-occasion-measures-data" title="Permalink to this headline">¶</a></h3>
+<p>You can add a Client’s Measure for a Collection Occasion through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>.</p></li>
+<li><p>Firstly double check the measure is not already showing.</p></li>
+<li><p>Click the Add New Measure tab.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Data Add Collection Occasions" src="../_images/client-collection-occasions-measures-add.png" />
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Select the Collection Occasion Measure type.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Client Data Add Collection Occasions Measure Select" src="../_images/client-collection-occasions-measures-select.png" />
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Choose the Score Type, if it isn’t already pre-filled.</p></li>
+<li><p>Click the blue ‘Next’ button.</p></li>
+<li><p>Enter the Client’s Measure details for the Collection Occasion. Mandatory fields are marked with an * .</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>See <a class="reference internal" href="../data-specification/data-model-and-specifications.html#twb-plan-data-elements"><span class="std std-ref">TWB-Plan data specifications</span></a> for Plan Data.</p></li>
+<li><p>See <a class="reference internal" href="../data-specification/data-model-and-specifications.html#twb-ni-data-elements"><span class="std std-ref">TWB-NI data specifications</span></a> for Needs Identification Data.</p></li>
+<li><p>See <a class="reference internal" href="../data-specification/data-model-and-specifications.html#k10p-data-elements"><span class="std std-ref">K10+ Measure data specifications</span></a>.</p></li>
+<li><p>See <a class="reference internal" href="../data-specification/data-model-and-specifications.html#who5-data-elements"><span class="std std-ref">WHO-5 Measure data specifications</span></a>.</p></li>
+<li><p>See <a class="reference internal" href="../data-specification/data-model-and-specifications.html#sidas-data-elements"><span class="std std-ref">SIDAS Measure data specifications</span></a>.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>Click the blue ‘Save’ button. (If you decide not to add this client’s measure, you can simply navigate away from this screen)</p></li>
+</ol>
+<p>You will receive confirmation that the Client’s Measure details have been added,
+and it will now be displaying these new details in the View Measure tab.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Data Saved Successfully" src="../_images/client-collection-occasions-measures-saved-add.png" />
+</div>
+</div></blockquote>
+<p>If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.</p>
+</div>
+<div class="section" id="editing-a-client-s-measures-for-a-collection-occasion">
+<span id="edit-collection-occasion-measure"></span><h3>Editing a Client’s Measures for a Collection Occasion<a class="headerlink" href="#editing-a-client-s-measures-for-a-collection-occasion" title="Permalink to this headline">¶</a></h3>
+<p>You can edit a Client’s Measure for a Collection Occasion through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>.</p></li>
+<li><p>Scroll down to the Measures</p></li>
+<li><p>Click the Blue Measure Key.</p></li>
+<li><p>Click Edit Measure</p></li>
+<li><p>Update the Client’s Measure details. Mandatory fields are marked with an * .</p></li>
+</ol>
+<blockquote>
+<div><p><em>Please note: You can edit the Measure Key from this screen. See</em> <a class="reference internal" href="#edit-collection-occasion-measure-key"><span class="std std-ref">Editing a Measure Key</span></a>.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Collection Occasions Edit Details" src="../_images/client-collection-occasions-measures-edit.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>Click the blue ‘Save’ button. (If you decide not to save changes, you can simply navigate away from this screen)</p></li>
+</ol>
+<p>You will receive confirmation that the Client’s Collection Occasions details have been saved,
+and it will now be displaying these new details in the View Collection Occasion Details tab.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Data Saved Successfully" src="../_images/client-collection-occasions-measures-saved-edit.png" />
+</div>
+</div></blockquote>
+<p>If you receive an error message, the data will need to be corrected before the
+record is saved and added to the PMHC MDS.</p>
+<div class="section" id="editing-a-measure-key">
+<span id="edit-collection-occasion-measure-key"></span><h4>Editing a Measure Key<a class="headerlink" href="#editing-a-measure-key" title="Permalink to this headline">¶</a></h4>
+<p>You can edit an measure’s identification key through <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic">
+<li><p>In step four when <a class="reference internal" href="#edit-collection-occasion-measure"><span class="std std-ref">Editing a Client’s Measures for a Collection Occasion</span></a>.</p></li>
+<li><p>From the Collection Occasion Edit Details tab, click the ‘Edit Key’ button.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Data Edit Collection Occasion Key" src="../_images/client-collection-occasions-measures-edit-key.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Type in the new collection occasion key and click ‘Next’.</p></li>
+<li><p>Double check the new key is correct and click save. (If it is incorrect, click back to re-enter the key or click the ‘cross’ in the top right to cancel this key change request)</p></li>
+</ol>
+<p>You will receive confirmation that the Collection Occasion’s key has been saved, and the screen
+will now be displaying the updated collection occasion key details in the Collection Occasion View Details tab.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Collection Occasion Key Saved Successfully" src="../_images/client-collection-occasions-measures-edit-key-saved.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="deleting-a-measure-from-a-collection-occasion">
+<span id="delete-collection-occasion-measure"></span><h3>Deleting a Measure from a Collection Occasion<a class="headerlink" href="#deleting-a-measure-from-a-collection-occasion" title="Permalink to this headline">¶</a></h3>
+<p>You can delete a Client’s Measure from a Collection Occasion through ‘<a class="reference internal" href="#view-collection-occasion-measure"><span class="std std-ref">Viewing a Client’s Collection Occasion Measures for an Episode</span></a>’
+available on the Data Entry tab, by following these steps:</p>
+<ol class="arabic simple">
+<li><p>Once <a class="reference internal" href="#view-collection-occasion"><span class="std std-ref">Viewing a Client’s Collection Occasions for an Episode</span></a>.</p></li>
+<li><p>Scroll down to the Measures</p></li>
+<li><p>Click the Blue Measure Key.</p></li>
+<li><p>Click Edit Measure</p></li>
+<li><p>Click the red ‘Delete’ button.</p></li>
+<li><p>You will be displayed a ‘Confirm Deletion’ screen.</p></li>
+</ol>
+<blockquote>
+<div><p><strong>Please note: Once the measure is deleted, you will not be able to recover this measure data.</strong></p>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p>Click the blue ‘Confirm’ button to delete this measure. (or click the orange ‘Cancel’ button if you decide not to delete this measure data)</p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Measure Data Confirm Delete" src="../_images/client-collection-occasions-measures-delete-confirm.png" />
+</div>
+</div></blockquote>
+<p>After you click ‘Confirm’, you will receive confirmation that the measure has
+been deleted, and you will be redirected to the <a class="reference internal" href="#view-collection-occasion-measure"><span class="std std-ref">View Measures</span></a> where the
+measure will no longer be displayed.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Measure Data Delete Successful" src="../_images/client-collection-occasions-measures-delete-successful.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="pmhc-service-contact-data">
+<h2>PMHC Service Contact Data<a class="headerlink" href="#pmhc-service-contact-data" title="Permalink to this headline">¶</a></h2>
+<p>For more detail on how to search, find, view, add, edit or delete Service Contact PMHC data in the PMHC MDS,
+please visit the PMHC User Guide at <a class="reference external" href="https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#service-contacts">https://docs.pmhc-mds.com/projects/user-documentation/en/latest/data-entry.html#service-contacts</a>.</p>
+<blockquote>
+<div><p><strong>Please note: TWB adds an extra field Service Contact - Funding Source to the standard PMHC Service Contact.</strong></p>
+<p>Update the Client’s Service Contact details. Mandatory fields are marked with an * . (Specification <a class="reference internal" href="../data-specification/data-model-and-specifications.html#service-contact-data-elements"><span class="std std-ref">Service Contact Data Elements</span></a>)</p>
+<p>For all Service Contacts provided under The Way Back please select “TWB”.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Client Service Contact Funding Source" src="../_images/client-collection-service-contact-funding.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="upload-user-guide.html" class="btn btn-neutral float-right" title="Upload User Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="access-and-password-user-guide.html" class="btn btn-neutral float-left" title="Access &amp; Passwords" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Beyond Blue
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84023505-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

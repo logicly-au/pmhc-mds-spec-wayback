@@ -16,7 +16,4 @@
 :9: Not stated/Inadequately described"
 "`TWB Critical Incident - Date`_ (twb_critical_incident_date)
 
-",date,yes,"The date of the critical incident."
-"`TWB Critical Incident - Tags`_ (twb_critical_incident_tags)
-
-",string,"—","List of tags for the TWB Critical Incident."
+",date,yes,"The date the critical incident was reported to the Service Provider."
