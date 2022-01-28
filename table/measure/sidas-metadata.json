@@ -53,11 +53,11 @@
     "schema:dateCreated": "2018-04-30",
     "schema:dateDeleted": "2018-04-30",
     "schema:dateModified": "2018-04-30",
-    "null": "99",
+    "required": true,
+    "schema:domain": "0 - 10, 99 = Not stated / Missing",
     "datatype": {
-      "base": "integer",
-      "minimum": 0,
-      "maximum": 10
+      "base": "string",
+      "format": "^(0|1|2|3|4|5|6|7|8|9|10|99)$"
     }
   },{
     "name": "sidas_item2",
@@ -66,13 +66,12 @@
     "schema:description": "In the past month, how much control have you had over these thoughts?",
     "schema:disambiguatingDescription": "table/measure/sidas/Q2.rst",
     "schema:dateCreated": "2018-04-30",
-    "schema:dateDeleted": "2018-04-30",
-    "schema:dateModified": "2018-04-30",
-    "null": "99",
+    "schema:dateModified": "2021-08-20",
+    "required": true,
+    "schema:domain": "0 - 10, 98 = Not required, 99 = Not stated / Missing",
     "datatype": {
-      "base": "integer",
-      "minimum": 0,
-      "maximum": 10
+      "base": "string",
+      "format": "^(0|1|2|3|4|5|6|7|8|9|10|98|99)$"
     }
   },{
     "name": "sidas_item3",
@@ -81,13 +80,12 @@
     "schema:description": "In the past month, how close have you come to making an attempt?",
     "schema:disambiguatingDescription": "table/measure/sidas/Q3.rst",
     "schema:dateCreated": "2018-04-30",
-    "schema:dateDeleted": "2018-04-30",
-    "schema:dateModified": "2018-04-30",
-    "null": "99",
+    "schema:dateModified": "2021-08-20",
+    "required": true,
+    "schema:domain": "0 - 10, 98 = Not required, 99 = Not stated / Missing",
     "datatype": {
-      "base": "integer",
-      "minimum": 0,
-      "maximum": 10
+      "base": "string",
+      "format": "^(0|1|2|3|4|5|6|7|8|9|10|98|99)$"
     }
   },{
     "name": "sidas_item4",
@@ -96,13 +94,12 @@
     "schema:description": "In the past month, to what extent have you felt tormented by thoughts about suicide?",
     "schema:disambiguatingDescription": "table/measure/sidas/Q4.rst",
     "schema:dateCreated": "2018-04-30",
-    "schema:dateDeleted": "2018-04-30",
-    "schema:dateModified": "2018-04-30",
-    "null": "99",
+    "schema:dateModified": "2021-08-20",
+    "required": true,
+    "schema:domain": "0 - 10, 98 = Not required, 99 = Not stated / Missing",
     "datatype": {
-      "base": "integer",
-      "minimum": 0,
-      "maximum": 10
+      "base": "string",
+      "format": "^(0|1|2|3|4|5|6|7|8|9|10|98|99)$"
     }
   },{
     "name": "sidas_item5",
@@ -111,13 +108,12 @@
     "schema:description": "In the past month, how much have thoughts about suicide interfered with your ability to carry out daily activities, such as work, household tasks or social activities?",
     "schema:disambiguatingDescription": "table/measure/sidas/Q5.rst",
     "schema:dateCreated": "2018-04-30",
-    "schema:dateDeleted": "2018-04-30",
-    "schema:dateModified": "2018-04-30",
-    "null": "99",
+    "schema:dateModified": "2021-08-20",
+    "required": true,
+    "schema:domain": "0 - 10, 98 = Not required, 99 = Not stated / Missing",
     "datatype": {
-      "base": "integer",
-      "minimum": 0,
-      "maximum": 10
+      "base": "string",
+      "format": "^(0|1|2|3|4|5|6|7|8|9|10|98|99)$"
     }
   },{
     "name": "sidas_tags",

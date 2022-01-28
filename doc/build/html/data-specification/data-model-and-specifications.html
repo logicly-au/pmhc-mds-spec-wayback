@@ -1101,7 +1101,7 @@ following table:</p>
 <td><p>A unique identifier for a practitioner within the provider organisation.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#service-contact-date">Service Contact - Date</a> (service_contact_date)</p>
-<p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">METeOR ID 494356</a></p>
+<p>METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></p>
 </td>
 <td><p>date</p></td>
 <td><p>yes</p></td>
@@ -1145,7 +1145,7 @@ following table:</p>
 </td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#service-contact-postcode">Service Contact - Postcode</a> (service_contact_postcode)</p>
-<p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">METeOR ID 429894</a></p>
+<p>METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
 </td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
@@ -1290,7 +1290,7 @@ following table:</p>
 <td><p>0 - 999999.99</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#service-contact-client-participation-indicator">Service Contact - Client Participation Indicator</a> (service_contact_participation_indicator)</p>
-<p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">METeOR ID 494341</a></p>
+<p>METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">494341</a></p>
 </td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
@@ -3439,8 +3439,8 @@ for standard PMHC MDS as explained at <a class="reference internal" href="upload
 controllability (item 2) reverse scored (10=0, 9=1, …, 0=10).
 Total scores range from 0 to 50.</p>
 <p>Respondents who respond “0 – Never” to the first item skip all remaining items
-and score a total of zero. The PMHC MDS enforces this by setting all other items
-to 0 when item 1 is scored as 0.</p>
+and score a total of zero. Refer to <a class="reference internal" href="validation-rules.html#sidas-twb-current-validations"><span class="std std-ref">SIDAS Current Validations</span></a>
+for information about how this is enforced in the PMHC MDS.</p>
 <p>If any item has not been completed, other than those who respond “0 – Never” to the
 first item (that is, has not been coded 0-10), it is excluded from the calculation and
 not counted as a valid item. If any item is missing, the Total Score is set as missing.</p>
@@ -3476,29 +3476,29 @@ not counted as a valid item. If any item is missing, the Total Score is set as m
 <td><p>This is a number or code assigned to each collection occasion of service activity. The Collection Occasion Key is unique and stable for each collection occasion at the level of the organisation.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#sidas-question-1">SIDAS - Question 1</a> (sidas_item1)</p></td>
-<td><p>integer</p></td>
+<td><p>string</p></td>
 <td><p>yes</p></td>
 <td><p>0 - 10, 99 = Not stated / Missing</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#sidas-question-2">SIDAS - Question 2</a> (sidas_item2)</p></td>
-<td><p>integer</p></td>
+<td><p>string</p></td>
 <td><p>yes</p></td>
-<td><p>0 - 10, 99 = Not stated / Missing</p></td>
+<td><p>0 - 10, 98 = Not required, 99 = Not stated / Missing</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#sidas-question-3">SIDAS - Question 3</a> (sidas_item3)</p></td>
-<td><p>integer</p></td>
+<td><p>string</p></td>
 <td><p>yes</p></td>
-<td><p>0 - 10, 99 = Not stated / Missing</p></td>
+<td><p>0 - 10, 98 = Not required, 99 = Not stated / Missing</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#sidas-question-4">SIDAS - Question 4</a> (sidas_item4)</p></td>
-<td><p>integer</p></td>
+<td><p>string</p></td>
 <td><p>yes</p></td>
-<td><p>0 - 10, 99 = Not stated / Missing</p></td>
+<td><p>0 - 10, 98 = Not required, 99 = Not stated / Missing</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#sidas-question-5">SIDAS - Question 5</a> (sidas_item5)</p></td>
-<td><p>integer</p></td>
+<td><p>string</p></td>
 <td><p>yes</p></td>
-<td><p>0 - 10, 99 = Not stated / Missing</p></td>
+<td><p>0 - 10, 98 = Not required, 99 = Not stated / Missing</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#sidas-tags">SIDAS - Tags</a> (sidas_tags)</p></td>
 <td><p>string</p></td>
@@ -3537,10 +3537,7 @@ of fixed 8 column width in the format DDMMYYYY, with leading zeros used when
 necessary to pad out a value. For instance, 13th March 2008 would appear as
 13032008.</p>
 <p>If the date the activity was performed is unknown, 09099999 should be used.</p>
-<ul class="simple">
-<li><p>The collection date must not be before 1st January 2016.</p></li>
-<li><p>The collection date must not be in the future.</p></li>
-</ul>
+<p>See <a class="reference internal" href="validation-rules.html#collection-occasion-current-validations"><span class="std std-ref">Collection Occasion Current Validations</span></a> for validation rules.</p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -6675,8 +6672,8 @@ participating.</p>
 to attend, <a class="reference internal" href="#dfn-service-contact-participation-indicator"><span class="std std-ref">Service Contact - Client Participation Indicator</span></a> should be recorded
 as ‘1: Yes’ and <a class="reference internal" href="#dfn-service-contact-no-show"><span class="std std-ref">Service Contact - No Show</span></a> should be recorded as ‘1: Yes’.</p>
 </dd>
-<dt class="field-even">Source</dt>
-<dd class="field-even"><p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">METeOR ID 494341</a></p>
+<dt class="field-even">METeOR</dt>
+<dd class="field-even"><p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494341">494341</a></p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -6733,8 +6730,8 @@ necessary to pad out a value. For instance, 13th March 2008 would appear as
 <li><p>The service contact date must not be in the future.</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Source</dt>
-<dd class="field-odd"><p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">METeOR ID 494356</a></p>
+<dt class="field-odd">METeOR</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/494356">494356</a></p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -7098,8 +7095,8 @@ entered</p></li>
 range 0200-0299 or 0800-9999.</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Source</dt>
-<dd class="field-odd"><p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">METeOR ID 429894</a></p>
+<dt class="field-odd">METeOR</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/429894">429894</a></p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -7290,7 +7287,7 @@ such as community health centres.</p>
 <dd class="field-odd"><p>sidas_item1</p>
 </dd>
 <dt class="field-even">Data type</dt>
-<dd class="field-even"><p>integer</p>
+<dd class="field-even"><p>string</p>
 </dd>
 <dt class="field-odd">Required</dt>
 <dd class="field-odd"><p>yes</p>
@@ -7301,8 +7298,8 @@ such as community health centres.</p>
 <dt class="field-odd">Notes</dt>
 <dd class="field-odd"><p>0 = Never, 10 = Always</p>
 <p>Respondents who respond “0 – Never” to the first item skip all remaining items
-and score a total of zero. The PMHC MDS enforces this by setting all other items
-to 0 when item 1 is scored as 0.</p>
+and score a total of zero. Refer to <a class="reference internal" href="validation-rules.html#sidas-twb-current-validations"><span class="std std-ref">SIDAS Current Validations</span></a>
+for information about how this is enforced in the PMHC MDS.</p>
 </dd>
 </dl>
 <hr class="docutils" />
@@ -7315,13 +7312,13 @@ to 0 when item 1 is scored as 0.</p>
 <dd class="field-odd"><p>sidas_item2</p>
 </dd>
 <dt class="field-even">Data type</dt>
-<dd class="field-even"><p>integer</p>
+<dd class="field-even"><p>string</p>
 </dd>
 <dt class="field-odd">Required</dt>
 <dd class="field-odd"><p>yes</p>
 </dd>
 <dt class="field-even">Domain</dt>
-<dd class="field-even"><p>0 - 10, 99 = Not stated / Missing</p>
+<dd class="field-even"><p>0 - 10, 98 = Not required, 99 = Not stated / Missing</p>
 </dd>
 <dt class="field-odd">Notes</dt>
 <dd class="field-odd"><p>0 = No control, 10 = Full control</p>
@@ -7340,13 +7337,13 @@ reverse this item when calculating the total score.</p>
 <dd class="field-odd"><p>sidas_item3</p>
 </dd>
 <dt class="field-even">Data type</dt>
-<dd class="field-even"><p>integer</p>
+<dd class="field-even"><p>string</p>
 </dd>
 <dt class="field-odd">Required</dt>
 <dd class="field-odd"><p>yes</p>
 </dd>
 <dt class="field-even">Domain</dt>
-<dd class="field-even"><p>0 - 10, 99 = Not stated / Missing</p>
+<dd class="field-even"><p>0 - 10, 98 = Not required, 99 = Not stated / Missing</p>
 </dd>
 <dt class="field-odd">Notes</dt>
 <dd class="field-odd"><p>0 = Not close at all, 10 = Made an attempt</p>
@@ -7362,13 +7359,13 @@ reverse this item when calculating the total score.</p>
 <dd class="field-odd"><p>sidas_item4</p>
 </dd>
 <dt class="field-even">Data type</dt>
-<dd class="field-even"><p>integer</p>
+<dd class="field-even"><p>string</p>
 </dd>
 <dt class="field-odd">Required</dt>
 <dd class="field-odd"><p>yes</p>
 </dd>
 <dt class="field-even">Domain</dt>
-<dd class="field-even"><p>0 - 10, 99 = Not stated / Missing</p>
+<dd class="field-even"><p>0 - 10, 98 = Not required, 99 = Not stated / Missing</p>
 </dd>
 <dt class="field-odd">Notes</dt>
 <dd class="field-odd"><p>0 = Not at all, 10 = Extremely</p>
@@ -7384,13 +7381,13 @@ reverse this item when calculating the total score.</p>
 <dd class="field-odd"><p>sidas_item5</p>
 </dd>
 <dt class="field-even">Data type</dt>
-<dd class="field-even"><p>integer</p>
+<dd class="field-even"><p>string</p>
 </dd>
 <dt class="field-odd">Required</dt>
 <dd class="field-odd"><p>yes</p>
 </dd>
 <dt class="field-even">Domain</dt>
-<dd class="field-even"><p>0 - 10, 99 = Not stated / Missing</p>
+<dd class="field-even"><p>0 - 10, 98 = Not required, 99 = Not stated / Missing</p>
 </dd>
 <dt class="field-odd">Notes</dt>
 <dd class="field-odd"><p>0 = Not at all, 10 = Extremely</p>

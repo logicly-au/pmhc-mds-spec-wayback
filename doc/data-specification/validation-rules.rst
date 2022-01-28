@@ -84,7 +84,7 @@ Current TWB Validations
    * must not be before 1 January 2016
    * and must not be before `Episode - Referral Date <https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date>`_
    * and must not be before `Provider Organisation - Start Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date>`_
-   * and must not be after `Episode - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date>`_
+   * and must not be more than 7 days after `Episode - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date>`_
    * and must not be after `Provider Organisation - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date>`_
    * and must not be in the future
 
@@ -125,9 +125,7 @@ Current TWB Validations
 
 1. :ref:`dfn-collection_occasion_key` must be an existing Collection Occasion within the PMHC
    MDS.
-2. If both item scores and a total score are specified, the item scores must
-   add up to the total score.
-
+2. When item 1 has the value “0 - Never” all other items must be set to “98 - Not Required”
 
 .. _twb-plan-current-validations:
 
@@ -176,3 +174,10 @@ TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS
 the current PMHC MDS Validations rules may apply, depending on how you add your
 TWB data. The current PMHC MDS validations rules are available to be viewed at
 https://docs.pmhc-mds.com/data-specification/validation-rules.html.
+
+.. _future-validations:
+
+Future Validations
+------------------
+
+There are currently no future validations planned.

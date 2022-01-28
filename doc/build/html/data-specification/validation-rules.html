@@ -111,6 +111,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#current-pmhc-validations">Current PMHC Validations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#future-validations">Future Validations</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="change-log.html">Data Specification Change log</a></li>
@@ -265,7 +266,7 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 <li><p>must not be before 1 January 2016</p></li>
 <li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-referral-date">Episode - Referral Date</a></p></li>
 <li><p>and must not be before <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-start-date">Provider Organisation - Start Date</a></p></li>
-<li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></p></li>
+<li><p>and must not be more than 7 days after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date">Episode - End Date</a></p></li>
 <li><p>and must not be after <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#provider-organisation-end-date">Provider Organisation - End Date</a></p></li>
 <li><p>and must not be in the future</p></li>
 </ul>
@@ -304,8 +305,7 @@ add up to the total score.</p></li>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
-<li><p>If both item scores and a total score are specified, the item scores must
-add up to the total score.</p></li>
+<li><p>When item 1 has the value “0 - Never” all other items must be set to “98 - Not Required”</p></li>
 </ol>
 </div>
 <div class="section" id="twb-plan">
@@ -350,6 +350,10 @@ must agree with the total score (as per
 the current PMHC MDS Validations rules may apply, depending on how you add your
 TWB data. The current PMHC MDS validations rules are available to be viewed at
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/validation-rules.html">https://docs.pmhc-mds.com/data-specification/validation-rules.html</a>.</p>
+</div>
+<div class="section" id="future-validations">
+<span id="id21"></span><h2>Future Validations<a class="headerlink" href="#future-validations" title="Permalink to this headline">¶</a></h2>
+<p>There are currently no future validations planned.</p>
 </div>
 </div>
 

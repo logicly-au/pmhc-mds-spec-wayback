@@ -3,6 +3,37 @@
 Data Specification Change log
 =============================
 
+16/11/2021
+----------
+
+* :ref:`validation-rules`
+
+  * :ref:`sidas-twb-current-validations` - Added `When item 1 has the value
+    “0 - Never” all other items must be set to “98 - Not Required”` which
+    been in effect since 1 November 2021.
+
+17/9/2021
+---------
+
+* :ref:`validation-rules`
+
+  * Added :ref:`future-validations`
+
+  * :ref:`sidas-twb-current-validations` - Removed validation for `If both item scores and a
+    total score are specified, the item scores must add up to the total score.`
+    as no total score is collected for SIDAS.
+
+
+9/9/2021
+--------
+
+* :ref:`validation-rules`
+
+  * :ref:`Collection Occasion Current Validations <collection-occasion-current-validations>`
+
+    * Updated the :ref:`dfn-collection_occasion_date` validation so that it must not be
+      more than 7 days after `Episode - End Date <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#episode-end-date>`_
+
 12/5/2020
 ---------
 
