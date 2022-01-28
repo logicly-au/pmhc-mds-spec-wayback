@@ -245,6 +245,7 @@ years listed (e.g. <strong>2020 - 2021</strong>). The year to date figure is alw
 July 1 of the earlier calendar year until either the end of the selected
 reporting period or the date the report was generated if the current quarter
 is selected.</p>
+<p>Data in this report is all associated with episodes that appear in the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#data-model"><span class="std std-ref">TWB Episode table</span></a>, - a ‘<strong>!wayback</strong>’ tag on the main episode table is NOT sufficient.</p>
 <p>The first section of the report explicitly details the dates covered by the
 reporting period and the year to date, as well as identifying the time at which
 it was generated.</p>
@@ -367,9 +368,8 @@ measure there are three summary statistics:</p>
 reporting period</p></li>
 <li><p>The number of episodes with (valid) final measures collected during the
 reporting period</p></li>
-<li><p>The number of episodes with (valid) final measures collected during the
-reporting period that also have (valid) initial measures (not necessarily
-during the reporting period)</p></li>
+<li><p>The number of episodes with at least two (valid) outcome measures, at least one
+of which must be collected during the reporting period</p></li>
 </ol>
 <p>Information about collection occasions - including dates and reasons - is
 available <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#collection-occasion">in the Collection Occasion specification documentation</a>.
@@ -379,9 +379,12 @@ reporting purposes this can be either “inital” (i.e. start of the episode) o
 final (end of the episode). Note however that the collection occasion dates
 need not be the same as the episode start and end dates. Measures can be
 collected on any day.</p>
-<p>The specific measures of interest are the K10+, the WHO-5, and the SIDAS.
+<p>The specific measures of interest are the K5/K10+, the WHO-5, and the SIDAS.
 Information about these measures - including what constitutes a valid measure
 - can be accessed <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/key-concepts.html#collection-occasion">in the Collection Occasion Key Concepts documentation</a>.</p>
+<p>The two Kessler measures (K10+ and K5) are treated interchangeably in this section of the report.
+Additionally, for the ‘Initial’ and ‘Exit’ measures columns multiple measures of the same type are counted once only.
+So for example, 2 SIDAS marked as ‘Final’ for the same episode will only add 1 to the count. An episode with initial K5 and K10+s also only adds 1 to the count of ‘Initial Measures’, however this combination also adds 1 to the count of “Number of Paired Measures During Period”, provided at least one of the measures was taken during the reporting period.</p>
 <p>Although there should be no cases where an episode has multiple instances of
 a particular measure taken at any collection occasion identified as initial
 or final, if such an anomaly occurs the CO is still included as having the
@@ -407,8 +410,8 @@ column (‘Calc A’). Note that a population in this case means a count of
 episodes, not a number of people.  The ratio is presented as a percentage
 in the ‘% Achieved During’ column.</p>
 <p>Business days are defined as Monday to Friday inclusive, unless they are
-listed in <a class="reference external" href="http://public_holidays.csv">this document</a> which has been derived
-from <a class="reference external" href="https://data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details?q=">information at the Digital Transformation Office</a>.
+listed in Australian Public Holidays shown within the
+<a class="reference external" href="https://data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details?q=">information at the Digital Transformation Office</a>.
 The business day calculator takes into account the jurisdiction (state or
 territory of the service). A week is defined as 5 business days.</p>
 <div class="section" id="correspondence-with-primary-nominated-professional-on-entry-to-the-service">
@@ -464,8 +467,8 @@ attended service contact.</p>
 <p>The W2 provides an overview of The Way Back (TWB) activity undertaken during the reporting period. It uses the same assumptions as the standard A1 report. It is a ‘one page’ view, with data aggregated for the specified reporting period, covering counts of clients, episodes and service contacts.</p>
 <p>Key specifications:</p>
 <ul class="simple">
-<li><p>Data in this report is all associated with an Active TWB Episode, as shown in the ‘Active Episodes’ column counts. This means the episode must appear in the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#data-model"><span class="std std-ref">TWB Episode table</span></a>, and must have an Active Contact during the reporting period. A !`wayback` tag on the main episode table is NOT sufficient for the episode to be included in this report.</p></li>
-<li><p>The ‘Active Contacts’ column counts all the <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact">attended service contacts</a> (i.e. non-no show) that occurred during the reporting period that were associated with an Active TWB Episode.</p></li>
+<li><p>Data in this report is all associated with an Active TWB Episode, as shown in the ‘Active Episodes’ column counts. This means the episode must appear in the <a class="reference internal" href="../data-specification/data-model-and-specifications.html#data-model"><span class="std std-ref">TWB Episode table</span></a>, and must have an Active Contact during the reporting period. A ‘<strong>!wayback</strong>’ tag on the main episode table is NOT sufficient for the episode to be included in this report.</p></li>
+<li><p>The ‘Active Contacts’ column counts all the <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact">Attended Service Contacts</a> (i.e. non-no show) that occurred during the reporting period that were associated with an Active TWB Episode.</p></li>
 <li><p>The ‘Active Clients’ column counts the number of unique clients who were the recipient of services delivered as part of an Active TWB Episode.</p></li>
 </ul>
 </div>
