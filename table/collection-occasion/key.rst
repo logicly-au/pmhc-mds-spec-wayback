@@ -1,1 +1,1 @@
-Collection occasion keys are case sensitive and must be valid unicode characters.
+See `Identifier Management <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#identifier-management>`_

@@ -124,7 +124,7 @@ This is a number or code assigned to each collection occasion of service activit
 :Required: yes
 
 :Notes:
-  Collection occasion keys are case sensitive and must be valid unicode characters.
+  See `Identifier Management <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#identifier-management>`_
   
 
 ----------
@@ -151,6 +151,9 @@ This is a number or code assigned to each PMHC MDS episode. The Episode Key is u
   
   A recommended approach for the creation of Episode Keys is to compute `random
   UUIDs <https://en.wikipedia.org/wiki/Universally_unique_identifier>`_.
+  
+  See `Identifier Management <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#identifier-management>`_
+  and `Managing Practitioner, Episode and Service Contact Keys <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#managing-practitioner-episode-and-service-contact-keys>`_
   
 
 ----------
@@ -814,7 +817,7 @@ This is a number or code assigned to each instance of a measure. The Measure Key
 :Required: yes
 
 :Notes:
-  Measure keys are case sensitive and must be valid unicode characters.
+  See `Identifier Management <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#identifier-management>`_
   
 
 ----------
@@ -2897,7 +2900,8 @@ This is a number or code assigned to each service contact. The Service Contact K
 :Required: yes
 
 :Notes:
-  Service contact keys are case sensitive and must be valid unicode characters.
+  See `Identifier Management <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#identifier-management>`_
+  and `Managing Practitioner, Episode and Service Contact Keys <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#managing-practitioner-episode-and-service-contact-keys>`_
   
 
 ----------
@@ -3126,8 +3130,7 @@ This is a number or code assigned to each critical incident. The Critical Incide
 :Required: yes
 
 :Notes:
-  TWB Critical Incident keys are case sensitive and must be
-  valid unicode characters.
+  See `Identifier Management <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#identifier-management>`_
   
 
 ----------
@@ -3629,7 +3632,7 @@ This is a number or code assigned to each instance of a TWB NI. The TWB NI Key i
 :Required: yes
 
 :Notes:
-  TWB NI keys are case sensitive and must be valid unicode characters.
+  See `Identifier Management <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#identifier-management>`_
   
 
 ----------
@@ -3741,7 +3744,7 @@ This is a number or code assigned to each instance of a TWB Plan. The TWB Plan K
 :Required: yes
 
 :Notes:
-  TWB Plan keys are case sensitive and must be valid unicode characters.
+  See `Identifier Management <https://docs.pmhc-mds.com/projects/data-specification/en/v2/identifier-management.html#identifier-management>`_
   
 
 ----------
