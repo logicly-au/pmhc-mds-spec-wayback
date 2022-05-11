@@ -3,6 +3,14 @@
 Data Specification Change log
 =============================
 
+11/5/2022
+---------
+
+* :ref:`upload_specification`
+
+  * :ref:`deleting-records` - Corrected the link for downloading an example XLSX
+    file.
+
 16/11/2021
 ----------
 
