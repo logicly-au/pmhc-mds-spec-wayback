@@ -469,5 +469,5 @@ Example TWB files showing how to delete via upload:
 TWB Episode data
 ################
 
-- `XLSX delete file containing only TWB worksheets <../_static/WAYBACK-3-0-twb-Episodes-delete.xlsx>`_.
+- `XLSX delete file containing only TWB worksheets <../_static/WAYBACK-3-0-twb-episodes-delete.xlsx>`_.
 - `CSV delete TWB episode file <../_static/twb-episodes-delete.csv>`_.
