@@ -209,18 +209,18 @@ current PMHC MDS online User Guide for Reports is available to be viewed at
 <p>Please note: for the W1, click the blue <strong>Request</strong> button</p>
 </li>
 </ol>
-<div class="figure align-default" id="id12">
+<div class="figure align-default" id="id10">
 <img alt="Reports tab View" src="../_images/reports-system-completed.png" />
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">A dialogue box will be displayed, showing that the file is being requested from the server</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">A dialogue box will be displayed, showing that the file is being requested from the server</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure align-default" id="id13">
+<div class="figure align-default" id="id11">
 <img alt="PMHC MDS File Selected" src="../_images/reports-message-requesting.png" />
 <p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">When the file is ready, a ‘File ready for download’ message will be displayed
-Click the blue <strong>Download</strong> button</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+Click the blue <strong>Download</strong> button</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure align-default" id="id14">
+<div class="figure align-default" id="id12">
 <img alt="PMHC MDS File Selected" src="../_images/reports-message-download.png" />
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">An Excel spreadsheet will be downloaded to your computer</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">An Excel spreadsheet will be downloaded to your computer</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
 </div>
 <p>NOTE: The W1 spreadsheet will then require some manual completion of information
 not available to the PMHC-MDS system. Once complete send it on to Beyond Blue or
@@ -379,7 +379,7 @@ reporting purposes this can be either “inital” (i.e. start of the episode) o
 final (end of the episode). Note however that the collection occasion dates
 need not be the same as the episode start and end dates. Measures can be
 collected on any day.</p>
-<p>The specific measures of interest are the K5/K10+, the WHO-5, and the SIDAS.
+<p>The specific measures of interest are the K5/K10+ and the SIDAS. The WHO-5 was formerly reported but was removed in the report update of September 2022.
 Information about these measures - including what constitutes a valid measure
 - can be accessed <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/key-concepts.html#collection-occasion">in the Collection Occasion Key Concepts documentation</a>.</p>
 <p>The two Kessler measures (K10+ and K5) are treated interchangeably in this section of the report.
@@ -414,32 +414,6 @@ listed in Australian Public Holidays shown within the
 <a class="reference external" href="https://data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details?q=">information at the Digital Transformation Office</a>.
 The business day calculator takes into account the jurisdiction (state or
 territory of the service). A week is defined as 5 business days.</p>
-<div class="section" id="correspondence-with-primary-nominated-professional-on-entry-to-the-service">
-<h4>Correspondence with Primary Nominated Professional on Entry to the Service<a class="headerlink" href="#correspondence-with-primary-nominated-professional-on-entry-to-the-service" title="Permalink to this headline">¶</a></h4>
-<p>The reference population here is the number of episodes for which the client’s
-Primary Nominated Professional was contacted during the reporting period
-(described in more detail
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-episode-primary-nominated-professional-consent-date">in the TWB Episode - Primary Nominated Professional Consent Date documentation</a> ).
-This date is defined as the date that consent was obtained. The numerator is
-the number of these episodes for which correspondence was sent advising them
-of their client’s participation in The Way Back Support Service within three
-business days of consent being obtained. The business days is computed as
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-episode-primary-nominated-professional-contact-entry-date">TWB Episode - Primary Nominated Professional Contact Entry Date</a>
-minus
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-episode-primary-nominated-professional-consent-date">TWB Episode - Primary Nominated Professional Contact – Entry Date</a>.</p>
-</div>
-<div class="section" id="correspondence-with-primary-nominated-professional-on-exit-from-the-service">
-<h4>Correspondence with Primary Nominated Professional on Exit from the Service<a class="headerlink" href="#correspondence-with-primary-nominated-professional-on-exit-from-the-service" title="Permalink to this headline">¶</a></h4>
-<p>This is the equivalent of the above for notifying a PNP of a client’s _exit_
-from the service. The relevant population is all episodes with an end date
-during the reporting period and have a
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-episode-primary-nominated-professional">TWB Episode - Primary Nominated Professional</a>
-in the range 1-6 or 98. The numerator includes the subset of these episodes
-where the
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-episode-primary-nominated-professional-contact-exit-date">TWB Episode - Primary Nominated Professional Contact Exit Date</a>
-is within 3 days of the
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-end-date">Episode - End Date</a>.</p>
-</div>
 <div class="section" id="safety-plan-update-development">
 <h4>Safety Plan Update / Development<a class="headerlink" href="#safety-plan-update-development" title="Permalink to this headline">¶</a></h4>
 <p>The relevant episodes here are those where the first and second <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact">attended service contacts</a>
@@ -447,8 +421,7 @@ fall within the reporting period, and the the episode has an
 initial collection occasion with a corresponding
 <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type">TWB Plan - Plan Type</a>
 equal to <cite>1: Safety Plan</cite>. The numerator is the subset of these episodes for
-which the collection occasion date is before or on the same day as the second
-attended service contact.</p>
+which the collection occasion date is before or on the same day as the first contact. Prior to September 2022 it had to be on or before the date of the second attended service contact.</p>
 </div>
 <div class="section" id="support-plan-development">
 <h4>Support Plan Development<a class="headerlink" href="#support-plan-development" title="Permalink to this headline">¶</a></h4>
