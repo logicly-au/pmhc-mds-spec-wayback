@@ -220,7 +220,7 @@ final (end of the episode). Note however that the collection occasion dates
 need not be the same as the episode start and end dates. Measures can be
 collected on any day.
 
-The specific measures of interest are the K5/K10+ and the SIDAS. The , the WHO-5 was formerly reported but was removed in the report update of September 2022.
+The specific measures of interest are the K5/K10+ and the SIDAS. The WHO-5 was formerly reported but was removed in the report update of September 2022.
 Information about these measures - including what constitutes a valid measure
 - can be accessed `in the Collection Occasion Key Concepts documentation <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/key-concepts.html#collection-occasion>`_.
 
