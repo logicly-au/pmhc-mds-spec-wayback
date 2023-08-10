@@ -189,7 +189,8 @@ Service Contact Data
 """"""""""""""""""""
 
 The service contact section of the report is concerned exclusively with the
-`Service Contact - Modality <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#service-contact-modality)>`_.
+`Service Contact - Modality <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#service-contact-modality)>`_
+on `attended service contacts <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`.
 For all contacts in the relevant period it is a simple count of the number of
 contact each modality:
 
