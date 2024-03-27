@@ -279,7 +279,7 @@ Support Plan Development
 ------------------------
 
 The relevant episodes here are those where there the first `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
-is within the reporting period, and the the episode has an initial
+is within the reporting period, and the episode has an initial
 collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
 equal to `2: Support Plan`. The numerator is the subset of these episodes for
