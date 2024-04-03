@@ -3,7 +3,7 @@
 # Exit if anything errors
 set -e
 
-source doc/version.conf
+source doc/version.env
 export SPEC_VERSION
 
 source config.sh
@@ -13,7 +13,6 @@ if [[ -z $RECORD_MATCH ]]; then
 fi
 
 docker pull docker.sdlocal.net/csvw/metadata2rst:release
-docker pull stratdat/sphinx:production
 docker pull stratdat/sphinx-html2pdf:production
 
 
@@ -35,8 +34,11 @@ cp -rf ../data data-specification/_data
 GIT_VERSION=$(git describe --tags --always)
 
 echo "Building PDF"
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make singlehtml
+docker compose run \
+  --build \
+  -e GIT_VERSION \
+  --rm sphinx \
+  make singlehtml
 
 popd
 
@@ -55,7 +57,9 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
 pushd .
 cd doc
 
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make html
+docker compose run \
+  -e GIT_VERSION \
+  --rm sphinx \
+  make html
 
 popd
