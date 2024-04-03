@@ -279,7 +279,7 @@ Please note: Prior to September 2022 it had to be on or before the date of the s
 Support Plan Development
 ------------------------
 
-The relevant episodes here are those where there the first `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
+The relevant episodes here are those where the first `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
 is within the reporting period, and the episode has an initial
 collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
