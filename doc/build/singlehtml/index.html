@@ -381,7 +381,9 @@ Support clients (see below) may be reported as Psychosocial Support.</p>
 <p>Where a client is being delivered TWB services and accessing another
 support service within the same Service Provider the
 <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-principal-focus-of-treatment-plan">full range of Principal Focus of Treatment Plan responses</a>
-allowed for standard PMHC MDS episodes is available.</p>
+allowed for standard PMHC MDS episodes is available. The <em>8: Psychosocial Support</em> response has been removed from the
+Principal Focus of Treatment Plan in PMHC MDS Version 4.0 even though it is an allowed
+valued in the TWB extension for TWB only episodes.</p>
 </section>
 </section>
 </section>
@@ -8667,14 +8669,15 @@ for each format described <a class="reference internal" href="#twb-files-to-uplo
 </section>
 <section id="files-or-worksheets-to-upload">
 <span id="twb-files-to-upload"></span><h4>Files or worksheets to upload<a class="headerlink" href="#files-or-worksheets-to-upload" title="Permalink to this heading">¶</a></h4>
-<p>The TWB upload format is slightly different to the
+<p>The TWB upload format was slightly different to the previous
 <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2.0 upload format</a>.</p>
 <p>The TWB upload format separates collection occasion data into a separate
 Collection Occasions worksheet so that multiple measures can be collected
 at a single collection occasion.</p>
-<p>The TWB upload format aligns with a future PMHC MDS Version 3.0 file format. No
-date has been set for the release of the PMHC MDS Version 3.0 upload file format.</p>
-<p>In addition to the collection occasion/measure changes, the TWB upload format
+<p>The TWB upload format now aligns closer with a current <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#">PMHC MDS Version 4.0 upload file format</a>.</p>
+<p>However, the <em>8: Psychosocial Support</em> response has been removed from the
+Principal Focus of Treatment Plan in PMHC MDS Version 4.0. It is still an allowed
+valued in the TWB extension. In addition, the TWB upload format
 adds additional values to support the TWB extension.</p>
 <p>TWB files/worksheets can be uploaded to the PMHC MDS in one of two ways:</p>
 <ul class="simple">
@@ -8689,15 +8692,15 @@ Option B is recommended for organisations who have already migrated their
 standard PMHC MDS uploads to allow TWB uploads at the same time. It allows
 both PMHC MDS and TWB data to be uploaded together in one upload.</p></li>
 </ul>
-<figure class="align-default" id="id4">
+<figure class="align-default" id="id3">
 <span id="data-model-upload-diagram"></span><img alt="TWB Upload data model" src="_images/twb_upload_reporting.svg" /><figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">TWB upload data model <em>within the PMHC MDS</em></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">TWB upload data model <em>within the PMHC MDS</em></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>When uploading TWB data files only the following files/worksheets can be
 uploaded to the PMHC MDS:</p>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-number">Table 14 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-number">Table 14 </span><span class="caption-text">Summary of files to upload</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>File Type</p></th>
 <th class="head"><p>CSV filename</p></th>
@@ -8802,7 +8805,7 @@ corresponding client in the clients file/worksheet.</p>
 <span id="upload-option-a"></span><h5>Option A: Separate PMHC and TWB uploads<a class="headerlink" href="#option-a-separate-pmhc-and-twb-uploads" title="Permalink to this heading">¶</a></h5>
 <p>When uploading standard PMHC clients and TWB clients separately, the upload
 for the standard PMHC clients should use the
-<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format">PMHC MDS Version 2.0 upload format</a>
+<a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#">PMHC MDS Version 4.0 upload format</a>
 and the upload for the TWB clients should use the format as described in this document.</p>
 </section>
 <section id="option-b-one-upload-including-pmhc-and-twb-clients">
@@ -9060,7 +9063,7 @@ at <a class="reference external" href="https://docs.pmhc-mds.com/data-specificat
 </ul>
 </section>
 <section id="deleting-records">
-<span id="id3"></span><h5>Deleting records<a class="headerlink" href="#deleting-records" title="Permalink to this heading">¶</a></h5>
+<span id="id2"></span><h5>Deleting records<a class="headerlink" href="#deleting-records" title="Permalink to this heading">¶</a></h5>
 <ul class="simple">
 <li><p>Records of the following type can be deleted via upload:</p>
 <ul>
