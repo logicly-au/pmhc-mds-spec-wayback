@@ -162,7 +162,9 @@ For TWB only episodes the following value must be used:
 Where a client is being delivered TWB services and accessing another
 support service within the same Service Provider the
 `full range of Principal Focus of Treatment Plan responses <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#episode-principal-focus-of-treatment-plan>`_
-allowed for standard PMHC MDS episodes is available.
+allowed for standard PMHC MDS episodes is available. The *8: Psychosocial Support* response has been removed from the
+Principal Focus of Treatment Plan in PMHC MDS Version 4.0 even though it is an allowed
+valued in the TWB extension for TWB only episodes.
 
 .. _twb-data-elements:
 
