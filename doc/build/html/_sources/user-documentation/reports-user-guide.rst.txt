@@ -272,7 +272,7 @@ collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
 equal to `1: Safety Plan`. The numerator is the subset of these episodes for
 which the collection occasion date is before or on the same day as the first
-attended service contact. 
+attended service contact.
 
 Please note: Prior to September 2022 it had to be on or before the date of the second attended service contact.
 

@@ -10,9 +10,8 @@ prior to their referral this should be completed as a priority once the client
 has consented to participate in The Way Back.
 
 Safety Plans must be updated/developed within the first contact with the
-client and no later than the second contact. Safety plans should be reviewed
-with a client as needed. Each instance of the review and update of a safety
-plan should be recorded.
+client. Safety plans should be reviewed with a client as needed. Each instance of
+the review and update of a safety plan should be recorded.
 
 Service Providers should choose the most appropriate Support Plan template for
 their service. The TWB Tools and Templates provide a sample of one and there
