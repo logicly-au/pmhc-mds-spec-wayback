@@ -189,7 +189,8 @@ Service Contact Data
 """"""""""""""""""""
 
 The service contact section of the report is concerned exclusively with the
-`Service Contact - Modality <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#service-contact-modality)>`_.
+`Service Contact - Modality <https://docs.pmhc-mds.com/projects/data-specification/en/latest/data-model-and-specifications.html#service-contact-modality)>`_
+on `attended service contacts <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`.
 For all contacts in the relevant period it is a simple count of the number of
 contact each modality:
 
@@ -278,7 +279,7 @@ Please note: Prior to September 2022 it had to be on or before the date of the s
 Support Plan Development
 ------------------------
 
-The relevant episodes here are those where there the first `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
+The relevant episodes here are those where the first `attended service contact <https://docs.pmhc-mds.com/projects/data-specification/en/v2/data-model-and-specifications.html#attended-service-contact>`_
 is within the reporting period, and the episode has an initial
 collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_

@@ -47,17 +47,18 @@ The filename of the Excel file doesn't matter as long as it has the file extensi
 Files or worksheets to upload
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The TWB upload format is slightly different to the
+The TWB upload format was slightly different to the previous
 `PMHC MDS Version 2.0 upload format <https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format>`_.
 
 The TWB upload format separates collection occasion data into a separate
 Collection Occasions worksheet so that multiple measures can be collected
 at a single collection occasion.
 
-The TWB upload format aligns with a future PMHC MDS Version 3.0 file format. No
-date has been set for the release of the PMHC MDS Version 3.0 upload file format.
+The TWB upload format now aligns closer with a current `PMHC MDS Version 4.0 upload file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#>`_.
 
-In addition to the collection occasion/measure changes, the TWB upload format
+However, the *8: Psychosocial Support* response has been removed from the
+Principal Focus of Treatment Plan in PMHC MDS Version 4.0. It is still an allowed
+valued in the TWB extension. In addition, the TWB upload format
 adds additional values to support the TWB extension.
 
 TWB files/worksheets can be uploaded to the PMHC MDS in one of two ways:
@@ -101,7 +102,7 @@ Option A: Separate PMHC and TWB uploads
 
 When uploading standard PMHC clients and TWB clients separately, the upload
 for the standard PMHC clients should use the
-`PMHC MDS Version 2.0 upload format <https://docs.pmhc-mds.com/projects/data-specification/en/v2/upload-specification.html#file-format>`_
+`PMHC MDS Version 4.0 upload format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#>`_
 and the upload for the TWB clients should use the format as described in this document.
 
 .. _upload-option-B:
