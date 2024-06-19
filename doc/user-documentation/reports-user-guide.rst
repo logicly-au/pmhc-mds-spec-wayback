@@ -284,8 +284,10 @@ is within the reporting period, and the episode has an initial
 collection occasion with a corresponding
 `TWB Plan - Plan Type <https://docs.pmhc-mds.com/projects/data-specification-wayback/en/v3/data-specification/data-model-and-specifications.html#twb-plan-plan-type>`_
 equal to `2: Support Plan`. The numerator is the subset of these episodes for
-which the collection occasion date is not more than 10 days after the initial
-attended service contact.
+which the collection occasion date is not more than two weeks after the initial
+attended service contact. The PMHC MDS counts two weeks as 10 business days;
+therefore, Sundays and Saturdays are excluded as well as any public holidays in
+the state where the organisation resides.
 
 .. _category-w2:
 
