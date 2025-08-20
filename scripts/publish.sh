@@ -6,6 +6,6 @@ if [[ "$?" == "0" ]]; then
   git remote remove publish
 fi
 
-git remote add publish git@github.com:strategicdata/pmhc-mds-spec-wayback.git
+git remote add publish git@github.com:logicly-au/pmhc-mds-spec-wayback.git
 
 git push publish
