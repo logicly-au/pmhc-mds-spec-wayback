@@ -1,20 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="English" >
+<html class="writer-html5" lang="English" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Validation Rules &mdash; The Way Back 3.0.2 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=f244e02e" />
+
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=3f1046f2"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=aa781899"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -33,9 +35,6 @@
           <a href="../index.html" class="icon icon-home">
             The Way Back
           </a>
-              <div class="version">
-                3.0.2
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -105,16 +104,16 @@
            <div itemprop="articleBody">
              
   <section id="validation-rules">
-<span id="id1"></span><h1>Validation Rules<a class="headerlink" href="#validation-rules" title="Permalink to this heading">¶</a></h1>
+<span id="id1"></span><h1>Validation Rules<a class="headerlink" href="#validation-rules" title="Link to this heading"></a></h1>
 <p>TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
 the current PMHC MDS Validations rules apply. These are available to be viewed at
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/validation-rules.html">https://docs.pmhc-mds.com/data-specification/validation-rules.html</a>.</p>
 <p>This document defines validation rules between TWB items and record types.
 The domain of individual TWB items is defined in <a class="reference internal" href="data-model-and-specifications.html#record-formats"><span class="std std-ref">Record Formats</span></a>.</p>
 <section id="current-twb-validations">
-<span id="id2"></span><h2>Current TWB Validations<a class="headerlink" href="#current-twb-validations" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2>Current TWB Validations<a class="headerlink" href="#current-twb-validations" title="Link to this heading"></a></h2>
 <section id="twb-episode">
-<span id="episode-twb-current-validations"></span><h3>1. TWB Episode<a class="headerlink" href="#twb-episode" title="Permalink to this heading">¶</a></h3>
+<span id="episode-twb-current-validations"></span><h3>1. TWB Episode<a class="headerlink" href="#twb-episode" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">!wayback</span></code> tag should be included in the <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/data-model-and-specifications.html#episode-tags">Episode - Tags</a> field of the corresponding PMHC episode, otherwise the system will automatically include it.</p></li>
@@ -152,7 +151,7 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 </ol>
 </section>
 <section id="twb-critical-incident">
-<span id="twb-critical-incident-current-validations"></span><h3>4. TWB Critical Incident<a class="headerlink" href="#twb-critical-incident" title="Permalink to this heading">¶</a></h3>
+<span id="twb-critical-incident-current-validations"></span><h3>4. TWB Critical Incident<a class="headerlink" href="#twb-critical-incident" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</p></li>
 <li><p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-critical-incident-date"><span class="std std-ref">TWB Critical Incident - Date</span></a></p>
@@ -168,14 +167,14 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 </ol>
 </section>
 <section id="twb-recommendation-out">
-<span id="twb-recommendation-out-current-validations"></span><h3>5. TWB Recommendation Out<a class="headerlink" href="#twb-recommendation-out" title="Permalink to this heading">¶</a></h3>
+<span id="twb-recommendation-out-current-validations"></span><h3>5. TWB Recommendation Out<a class="headerlink" href="#twb-recommendation-out" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</p></li>
 <li><p>TWB Recommendation Outs for an Episode must have unique <a class="reference internal" href="data-model-and-specifications.html#dfn-twb-recommendation-out-provider-type"><span class="std std-ref">TWB Recommendation Out - Provider Type</span></a>.</p></li>
 </ol>
 </section>
 <section id="collection-occasion">
-<span id="collection-occasion-current-validations"></span><h3>6. Collection Occasion<a class="headerlink" href="#collection-occasion" title="Permalink to this heading">¶</a></h3>
+<span id="collection-occasion-current-validations"></span><h3>6. Collection Occasion<a class="headerlink" href="#collection-occasion" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-episode-key"><span class="std std-ref">Episode Key</span></a> must be an existing PMHC episode within the PMHC MDS.</p></li>
 <li><p>The <a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-date"><span class="std std-ref">Collection Occasion - Date</span></a></p>
@@ -191,7 +190,7 @@ The domain of individual TWB items is defined in <a class="reference internal" h
 </ol>
 </section>
 <section id="k10">
-<span id="k10p-current-validations"></span><h3>7. K10+<a class="headerlink" href="#k10" title="Permalink to this heading">¶</a></h3>
+<span id="k10p-current-validations"></span><h3>7. K10+<a class="headerlink" href="#k10" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
@@ -200,7 +199,7 @@ add up to the total score (as per <a class="reference internal" href="data-model
 </ol>
 </section>
 <section id="k5">
-<span id="k5-current-validations"></span><h3>8. K5<a class="headerlink" href="#k5" title="Permalink to this heading">¶</a></h3>
+<span id="k5-current-validations"></span><h3>8. K5<a class="headerlink" href="#k5" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
@@ -209,7 +208,7 @@ add up to the total score (as per <a class="reference internal" href="data-model
 </ol>
 </section>
 <section id="who-5">
-<span id="who-5-current-validations"></span><h3>9. WHO-5<a class="headerlink" href="#who-5" title="Permalink to this heading">¶</a></h3>
+<span id="who-5-current-validations"></span><h3>9. WHO-5<a class="headerlink" href="#who-5" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
@@ -218,7 +217,7 @@ add up to the total score.</p></li>
 </ol>
 </section>
 <section id="sidas">
-<span id="sidas-twb-current-validations"></span><h3>10. SIDAS<a class="headerlink" href="#sidas" title="Permalink to this heading">¶</a></h3>
+<span id="sidas-twb-current-validations"></span><h3>10. SIDAS<a class="headerlink" href="#sidas" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
@@ -226,21 +225,21 @@ MDS.</p></li>
 </ol>
 </section>
 <section id="twb-plan">
-<span id="twb-plan-current-validations"></span><h3>11. TWB-Plan<a class="headerlink" href="#twb-plan" title="Permalink to this heading">¶</a></h3>
+<span id="twb-plan-current-validations"></span><h3>11. TWB-Plan<a class="headerlink" href="#twb-plan" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
 </ol>
 </section>
 <section id="twb-ni">
-<span id="twb-ni-current-validations"></span><h3>12. TWB-NI<a class="headerlink" href="#twb-ni" title="Permalink to this heading">¶</a></h3>
+<span id="twb-ni-current-validations"></span><h3>12. TWB-NI<a class="headerlink" href="#twb-ni" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="data-model-and-specifications.html#dfn-collection-occasion-key"><span class="std std-ref">Collection Occasion Key</span></a> must be an existing Collection Occasion within the PMHC
 MDS.</p></li>
 </ol>
 </section>
 <section id="sdq">
-<span id="sdq-current-validations"></span><h3>13. SDQ<a class="headerlink" href="#sdq" title="Permalink to this heading">¶</a></h3>
+<span id="sdq-current-validations"></span><h3>13. SDQ<a class="headerlink" href="#sdq" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>SDQ records should only be uploaded as part of a joint PMHC + TWB upload.
 The SDQ does not form part of the data collected for TWB and should only
@@ -262,14 +261,14 @@ must agree with the total score (as per
 </section>
 </section>
 <section id="current-pmhc-validations">
-<span id="id20"></span><h2>Current PMHC Validations<a class="headerlink" href="#current-pmhc-validations" title="Permalink to this heading">¶</a></h2>
+<span id="id20"></span><h2>Current PMHC Validations<a class="headerlink" href="#current-pmhc-validations" title="Link to this heading"></a></h2>
 <p>TWB is an extension of the Primary Mental Health Care Minimum Data Set (PMHC MDS);
 the current PMHC MDS Validations rules may apply, depending on how you add your
 TWB data. The current PMHC MDS validations rules are available to be viewed at
 <a class="reference external" href="https://docs.pmhc-mds.com/data-specification/validation-rules.html">https://docs.pmhc-mds.com/data-specification/validation-rules.html</a>.</p>
 </section>
 <section id="future-validations">
-<span id="id21"></span><h2>Future Validations<a class="headerlink" href="#future-validations" title="Permalink to this heading">¶</a></h2>
+<span id="id21"></span><h2>Future Validations<a class="headerlink" href="#future-validations" title="Link to this heading"></a></h2>
 <p>There are currently no future validations planned.</p>
 </section>
 </section>

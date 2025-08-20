@@ -54,7 +54,7 @@ The TWB upload format separates collection occasion data into a separate
 Collection Occasions worksheet so that multiple measures can be collected
 at a single collection occasion.
 
-The TWB upload format now aligns closer with a current `PMHC MDS Version 4.0 upload file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#>`_.
+The TWB upload format now aligns closer with a current `PMHC MDS Version 4.1 upload file format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#>`_.
 
 However, the *8: Psychosocial Support* response has been removed from the
 Principal Focus of Treatment Plan in PMHC MDS Version 4.0. It is still an allowed
@@ -102,7 +102,7 @@ Option A: Separate PMHC and TWB uploads
 
 When uploading standard PMHC clients and TWB clients separately, the upload
 for the standard PMHC clients should use the
-`PMHC MDS Version 4.0 upload format <https://docs.pmhc-mds.com/projects/data-specification/en/v4/upload-specification.html#>`_
+`PMHC MDS Version 4.1 upload format <https://docs.pmhc-mds.com/projects/data-specification/en/v4.1/upload-specification.html#>`_
 and the upload for the TWB clients should use the format as described in this document.
 
 .. _upload-option-B:
