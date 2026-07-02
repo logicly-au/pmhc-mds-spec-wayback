@@ -4,11 +4,16 @@ The Way Back Support Service Minimum Data Set and Dictionary
 Version |version|
 
 .. warning::
-   
-   As of 18 December 2025, the PMHC MDS will accept uploads in both the newer (`version 5.0 <https://docs.pmhc-mds.com/projects/data-specification/en/v5.0/>`__)
-   format which includes The Way Back Support Service rebranded to Universal Aftercare, and this version 3.0 extension (`read more... <https://pmhc-mds.com/communications/#/2025/12/18/Release-of-Version-5-0-for-upload-and-data-entry/>`__).
-   This version 3.0 extension has been marked for end-of-life on 30 June 2026.
-   After this date uploads will no longer be accepted in the version 3.0 extension.
+
+   The Way Back extension is no longer supported. Its end-of-life was 30 June 2026.
+
+   Uploads are no longer be accepted in this format.
+
+   `Version 5.0 uploads have been accepted since December 2025 <https://pmhc-mds.com/communications/#/2025/12/18/Release-of-Version-5-0-for-upload-and-data-entry/>`_.
+
+   The `version 5.0 <https://docs.pmhc-mds.com/projects/data-specification/en/v5.0/>`__
+   core specification includes The Way Back Support Service rebranded to Universal
+   Aftercare.
 
 .. This INTRODUCTION will only appear in the online HTML version
    (make.sh html) and not in PDFs or any other renderings
