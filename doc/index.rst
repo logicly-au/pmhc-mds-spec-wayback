@@ -7,7 +7,7 @@ Version |version|
 
    The Way Back extension is no longer supported. Its end-of-life was 30 June 2026.
 
-   Uploads are no longer be accepted in this format.
+   Uploads are no longer accepted in this format.
 
    `Version 5.0 uploads have been accepted since December 2025 <https://pmhc-mds.com/communications/#/2025/12/18/Release-of-Version-5-0-for-upload-and-data-entry/>`_.
 
